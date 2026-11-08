@@ -1,0 +1,253 @@
+{
+  "Metadata": {
+    "title": "Mochi – suivi des règles privé sur iPhone",
+    "description": "Mochi est une application gratuite et privée de suivi des règles sur iPhone, avec prédictions du cycle, rappel de changement de protection, suivi de l’humeur, séries et 12 Mochi à collectionner."
+  },
+  "Navigation": {
+    "mainLabel": "Navigation principale",
+    "mobileLabel": "Navigation mobile",
+    "openMenu": "Ouvrir le menu de navigation",
+    "features": "Fonctionnalités",
+    "flavors": "Mochi",
+    "privacy": "Confidentialité",
+    "plus": "Mochi Plus",
+    "faq": "FAQ"
+  },
+  "LocaleSwitcher": {
+    "label": "Langue",
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "Common": {
+    "brand": "Mochi",
+    "brandHome": "Accueil Mochi",
+    "appStoreAria": "Télécharger Mochi sur l’App Store",
+    "download": "Télécharger sur l’App Store",
+    "downloadOn": "Télécharger dans",
+    "appStore": "l’App Store",
+    "free": "Gratuit",
+    "optional": "En option",
+    "backToTop": "Mochi : suivi des règles, retour en haut"
+  },
+  "Hero": {
+    "title1": "Le suivi des règles",
+    "title2": "mignon et privé",
+    "title3": "pour iPhone",
+    "body": "Mochi est une application gratuite sur iPhone qui prédit vos prochaines règles, vous rappelle quand changer de protection et transforme le suivi quotidien en jeu. Aucun compte requis.",
+    "mascotAlt": "Mochi, une mascotte rose et souriante, posée sur un coussin crème",
+    "phoneAlt": "Écran d’accueil de Mochi sur iPhone affichant le deuxième jour des règles et les raccourcis Règles, Humeur et Symptômes"
+  },
+  "Island": {
+    "title1": "Un rappel pour",
+    "title2": "changer de protection",
+    "title3": "dans la Dynamic Island",
+    "body": "Protection de jour, de nuit ou protège-slip, de 2 à 8 heures. Mochi affiche le compte à rebours sur l’accueil, dans la Dynamic Island et sur l’écran verrouillé.",
+    "phoneLabel": "Dynamic Island d’un iPhone affichant Mochi et un compte à rebours",
+    "timerPrefix": "Changement dans",
+    "countdownLabel": "Compte à rebours avant le changement de protection"
+  },
+  "Moods": {
+    "title1": "Notez votre ressenti.",
+    "title2": "Mochi le partage avec vous.",
+    "body": "Touchez Mochi pour noter votre humeur, vos symptômes et votre flux en quelques secondes.",
+    "phoneLabel": "Écran Aujourd’hui de Mochi avec les choix d’humeur et de symptômes",
+    "logToday": "Aujourd’hui",
+    "mood": "Humeur",
+    "symptoms": "Symptômes",
+    "moodNames": {
+      "happy": "Joyeux",
+      "sleepy": "Endormi",
+      "crampy": "Crampes",
+      "cozy": "Détendu"
+    },
+    "symptomNames": {
+      "cramps": "Crampes",
+      "bloating": "Ballonnements",
+      "headache": "Mal de tête",
+      "tired": "Fatigue"
+    }
+  },
+  "Flavors": {
+    "title1": "Gardez votre série,",
+    "title2": "collectionnez",
+    "title3": "12 Mochi",
+    "body": "Notez un peu chaque jour et de nouveaux Mochi rejoindront votre collection.",
+    "items": {
+      "strawberry": { "name": "Fraise", "unlock": "Départ" },
+      "classic": { "name": "Classique", "unlock": "Départ" },
+      "matcha": { "name": "Matcha", "unlock": "Départ" },
+      "ube": { "name": "Ube", "unlock": "Série de 7 jours" },
+      "mango": { "name": "Mangue", "unlock": "Série de 14 jours" },
+      "sesame": { "name": "Sésame", "unlock": "Série de 30 jours" },
+      "yuzu": { "name": "Yuzu", "unlock": "Série de 60 jours" },
+      "chocolate": { "name": "Chocolat", "unlock": "Série de 90 jours" },
+      "hojicha": { "name": "Hojicha", "unlock": "Série de 180 jours" },
+      "sakura": { "name": "Sakura", "unlock": "150 pétales" },
+      "peach": { "name": "Pêche", "unlock": "Défi anti-crampes" },
+      "coconut": { "name": "Coco", "unlock": "Défi semaine calme" }
+    }
+  },
+  "Predictions": {
+    "title1": "Des prédictions de règles",
+    "title2": "et d’ovulation adaptées",
+    "title3": "à votre rythme",
+    "body1": "Mochi analyse les cycles que vous notez pour estimer",
+    "body2": "vos prochaines règles, votre fenêtre fertile et votre ovulation.",
+    "disclaimer": "Les prédictions sont des estimations, pas un moyen de contraception.",
+    "phoneLabel": "Calendrier de cycle Mochi avec cinq jours de règles indiqués",
+    "cycle": "Cycle",
+    "month": "Mars 2025",
+    "weekdays": {
+      "sun": "Dim",
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Jeu",
+      "fri": "Ven",
+      "sat": "Sam"
+    },
+    "period": "Règles",
+    "fertileWindow": "Fenêtre fertile",
+    "ovulation": "Ovulation",
+    "nextPeriodIn": "Prochaines règles dans",
+    "nextPeriodValue": "12 jours",
+    "cycleLength": "Durée du cycle",
+    "cycleLengthValue": "28 jours",
+    "nextPeriod": "Prochaines règles",
+    "nextPeriodDate": "15 mars",
+    "mascotAlt": "Mochi heureux"
+  },
+  "Privacy": {
+    "title1": "Votre cycle reste",
+    "title2": "sur votre iPhone",
+    "body1": "Dates des règles, flux, symptômes et humeurs",
+    "body2": "ne sont jamais envoyés aux analyses, journaux ou rapports de plantage.",
+    "promises": {
+      "private": {
+        "title": "Privé",
+        "line1": "Reste sur",
+        "line2": "votre iPhone",
+        "badge1": "100 %",
+        "badge2": "Privé",
+        "badge3": "par conception"
+      },
+      "offline": {
+        "title": "Hors ligne",
+        "line1": "Toutes les fonctions,",
+        "line2": "sans connexion",
+        "badge1": "Fonctionne",
+        "badge2": "hors ligne",
+        "badge3": "toujours"
+      },
+      "account": {
+        "title": "Sans compte",
+        "line1": "Sauvegarde facultative,",
+        "line2": "seulement si vous le voulez",
+        "badge1": "Aucun compte",
+        "badge2": "requis",
+        "badge3": ""
+      }
+    },
+    "staysTitle": "Reste avec vous",
+    "stays": {
+      "dates": "Dates des règles et prédictions",
+      "logs": "Flux, symptômes et humeurs",
+      "reminders1": "Rappels de changement,",
+      "reminders2": "sur votre iPhone"
+    }
+  },
+  "Comparison": {
+    "title1": "Pourquoi",
+    "title2": "Mochi ?",
+    "caption": "Comparaison entre Mochi et une application de règles classique",
+    "mochi": "Mochi",
+    "typical": "Application classique",
+    "rows": {
+      "account": { "feature": "Compte obligatoire", "mochi": "Non", "typical": "Souvent" },
+      "offline": { "feature": "Fonctionne hors ligne", "mochi": "Oui", "typical": "Variable" },
+      "reminder": { "feature": "Rappel sur l’écran verrouillé", "mochi": "Oui", "typical": "Rare" },
+      "analytics": { "feature": "Données du cycle envoyées aux analyses", "mochi": "Jamais", "typical": "Variable" },
+      "rewards": { "feature": "Récompenses de suivi", "mochi": "Séries + 12 Mochi", "typical": "Rare" }
+    }
+  },
+  "Plans": {
+    "title1": "Téléchargement gratuit.",
+    "title2": "Mochi Plus",
+    "title3": "est facultatif.",
+    "freeName": "Mochi",
+    "freeLabel": "Gratuit",
+    "plusName": "Mochi Plus",
+    "freeFeatures": {
+      "tracking": "Suivi du cycle et prédictions",
+      "reminder": "Rappel de changement de protection",
+      "rewards": "Humeurs, séries et Mochi",
+      "offline": "Fonctionne hors ligne, sans compte"
+    },
+    "plusFeatures": {
+      "everything": "Tout ce qui est inclus dans Gratuit",
+      "flavors": "Les trois Mochi de départ et des Mochi supplémentaires",
+      "insights": "Des informations sur votre cycle"
+    }
+  },
+  "Account": {
+    "kicker": "Compte facultatif",
+    "title": "Utilisez Mochi maintenant. Sauvegardez quand vous voulez.",
+    "body": "Tout fonctionne sans compte. Créez un compte gratuit uniquement si vous souhaitez sauvegarder et synchroniser vos données sur un nouvel iPhone.",
+    "backup": "Sauvegarde du cycle",
+    "synced": "Synchronisé avec votre compte",
+    "imageAlt": "Mochi serrant un journal verrouillé"
+  },
+  "FAQ": {
+    "title1": "FAQ du",
+    "title2": "suivi des",
+    "title3": "règles",
+    "items": {
+      "what": {
+        "question": "Qu’est-ce que Mochi ?",
+        "answer": "Mochi est une application de suivi des règles sur iPhone avec une adorable mascotte. Elle prédit vos prochaines règles, vous rappelle quand changer de protection et récompense votre suivi quotidien avec 12 Mochi à collectionner."
+      },
+      "free": {
+        "question": "Mochi est-il gratuit ?",
+        "answer": "Oui. Le suivi du cycle, les prédictions, le rappel de changement, les humeurs, les séries et les Mochi de départ sont gratuits. Mochi Plus est facultatif."
+      },
+      "private": {
+        "question": "Mes données de règles sont-elles privées ?",
+        "answer": "Oui. Les dates de règles, le flux, les symptômes et les humeurs restent sur votre iPhone et ne sont jamais envoyés aux analyses, journaux ou rapports de plantage."
+      },
+      "offline": {
+        "question": "Mochi fonctionne-t-il sans compte ni Internet ?",
+        "answer": "Oui. Toutes les fonctions principales marchent hors ligne et aucun compte n’est requis. Un compte est facultatif pour la sauvegarde et la synchronisation."
+      },
+      "reminder": {
+        "question": "Comment fonctionne le rappel de changement ?",
+        "answer": "Choisissez une protection de jour, de nuit ou un protège-slip, puis une durée de 2 à 8 heures. Mochi affiche le compte à rebours sur l’accueil, dans la Dynamic Island et sur l’écran verrouillé."
+      },
+      "lockScreen": {
+        "question": "Mon écran verrouillé indiquera-t-il que j’ai mes règles ?",
+        "answer": "Non. L’activité en direct emploie des termes privés et discrets, sans jamais indiquer que vous avez vos règles."
+      },
+      "medical": {
+        "question": "Puis-je utiliser Mochi comme moyen de contraception ?",
+        "answer": "Non. Les prédictions de Mochi sont des estimations destinées au suivi des règles, pas à la contraception, au diagnostic ou au conseil médical."
+      }
+    }
+  },
+  "Closing": {
+    "title": "Dites bonjour à Mochi",
+    "body1": "Suivez votre cycle, collectionnez des Mochi adorables",
+    "body2": "et gardez un petit compagnon à chaque phase.",
+    "imageAlt": "Mochi posé sur un coussin",
+    "brand": "Mochi : suivi des règles"
+  },
+  "StructuredData": {
+    "offer": "Téléchargement gratuit. Abonnement Mochi Plus facultatif dans l’application.",
+    "features": {
+      "predictions": "Prédictions des règles et de l’ovulation",
+      "reminders": "Rappels de changement dans la Dynamic Island et sur l’écran verrouillé",
+      "logging": "Suivi de l’humeur, des symptômes et du flux",
+      "offline": "Utilisation hors ligne sans compte",
+      "backup": "Sauvegarde et synchronisation facultatives avec un compte",
+      "rewards": "Séries et 12 Mochi à collectionner"
+    }
+  }
+}
