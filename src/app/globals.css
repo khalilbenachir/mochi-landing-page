@@ -1,0 +1,188 @@
+/* Design tokens: the app's MochiColor palette (MochiDesign/Palette.swift). */
+:root {
+  --pink: #f2577c;
+  --pink-ink: #d2335c;
+  --pink-deep: #b0254b;
+  --pink-tint: #fde3ea;
+  --pink-soft: #f9c6d4;
+  --raspberry: #c93a60;
+
+  --teal: #45b5da;
+  --teal-light: #9fd9ec;
+  --teal-ink: #1a7fa6;
+  --teal-text: #14698a;
+  --teal-tint: #ddf1f9;
+  --follicular: #bfe6f3;
+
+  --indigo: #4b47b0;
+  --indigo-tint: #e6e5f7;
+
+  --orange: #f7b036;
+  --orange-ink: #8c5400;
+  --orange-deep: #5c3a00;
+  --orange-tint: #fef0d6;
+
+  --mint: #cff3e6;
+  --mint-ink: #1e6e4e;
+
+  --navy: #2e3a4d;
+  --navy-deep: #1f2a3a;
+  --body: #4a5568;
+  --grey-600: #6b7585;
+  --grey-500: #8a94a3;
+  --grey-300: #e3e7ec;
+  --grey-200: #eceff3;
+  --grey-150: #f1f3f6;
+  --grey-100: #f5f7fa;
+  --privacy-sky: #dcebf8;
+
+  --island-bg: #121014;
+  --island-grey: #8e8e93;
+
+  --font: "Nunito Variable", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --font-app: ui-rounded, "SF Pro Rounded", "Nunito Variable", system-ui, sans-serif;
+  --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--navy);
+  font-family: var(--font);
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--pink-ink);
+}
+a:hover {
+  color: var(--pink-deep);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Shared headings used by every section. */
+.eyebrow {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.h2 {
+  margin: 12px 0 0;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.02;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  color: var(--navy-deep);
+}
+.lead {
+  margin: 22px 0 0;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 700;
+  color: var(--body);
+}
+
+/* ---------- Motion, taken from the app's Mochi ---------- */
+
+@keyframes jelly {
+  0%, 100% { transform: scale(1, 1) translateY(0); }
+  30% { transform: scale(1.08, 0.9) translateY(4px); }
+  50% { transform: scale(0.94, 1.08) translateY(-14px); }
+  70% { transform: scale(1.03, 0.97) translateY(0); }
+}
+@keyframes shadow-squish {
+  0%, 100% { transform: scaleX(1); opacity: 1; }
+  50% { transform: scaleX(0.72); opacity: 0.55; }
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(0); }
+  50% { opacity: 1; transform: scale(1.1) rotate(45deg); }
+}
+@keyframes blob {
+  0%, 100% { border-radius: 58% 42% 55% 45% / 50% 60% 40% 50%; }
+  50% { border-radius: 42% 58% 40% 60% / 58% 42% 58% 42%; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(60px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.6) rotate(-8deg); }
+  to { opacity: 1; transform: none; }
+}
+
+.jelly { animation: jelly 2.6s ease-in-out infinite; transform-origin: 50% 100%; }
+.shadow-squish { animation: shadow-squish 2.6s ease-in-out infinite; }
+.bob { animation: bob 3s ease-in-out infinite; }
+.blob { animation: blob 9s ease-in-out infinite; }
+
+/* Scroll reveals: CSS scroll-driven animations, no JS. Browsers without support just show the content. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 28%;
+  }
+  .reveal-pop {
+    animation: pop-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

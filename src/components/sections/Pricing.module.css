@@ -1,0 +1,63 @@
+.section { position: relative; overflow: hidden; padding: 120px 0 110px; background: var(--pink-tint); }
+.blobA,
+.blobB { position: absolute; }
+.blobA { width: 620px; height: 620px; left: -200px; top: -120px; background: var(--pink-soft); }
+.blobB { width: 420px; height: 420px; right: -120px; bottom: -160px; background: var(--orange-tint); animation-delay: -3s; }
+
+.grid { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 56px; }
+
+.mochi {
+  position: relative;
+  display: flex;
+  flex: 1 1 380px;
+  align-items: flex-end;
+  justify-content: center;
+  height: 380px;
+}
+.shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  width: 260px;
+  height: 34px;
+  margin-left: -130px;
+  border-radius: 50%;
+  background: rgba(176, 37, 75, 0.16);
+}
+.mochiImg { position: relative; width: 360px; max-width: 100%; height: auto; margin-bottom: 26px; }
+
+.copy { flex: 1 1 560px; min-width: 0; }
+.title { margin: 0; font-size: clamp(44px, 6vw, 68px); letter-spacing: -2px; }
+.lead { max-width: 520px; margin: 16px 0 0; color: var(--navy); font-size: 21px; line-height: 1.5; }
+
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 34px; }
+.plan { position: relative; padding: 28px; border-radius: 32px; transition: transform 0.4s var(--spring), box-shadow 0.4s; }
+.plan:hover { transform: translateY(-8px) rotate(-1deg); }
+.plan ul { margin: 18px 0 20px; padding: 0; list-style: none; }
+.plan li { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 16px; line-height: 1.4; font-weight: 800; }
+.plan li svg { flex: none; margin-top: 2px; }
+.free { background: #fff; color: var(--navy-deep); box-shadow: 0 24px 50px -30px rgba(176, 37, 75, 0.45); }
+
+/* A rainbow border that keeps turning, in the four phase colors. */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes turn {
+  to { --angle: 360deg; }
+}
+.plus {
+  border: 4px solid transparent;
+  background: linear-gradient(#3f3ba0, #4b47b0) padding-box,
+    conic-gradient(from var(--angle), var(--pink), var(--orange), var(--teal), var(--teal-light), var(--pink)) border-box;
+  color: #fff;
+  animation: turn 5s linear infinite;
+}
+.peekA { position: absolute; right: 18px; top: -46px; }
+.peekB { position: absolute; right: 92px; top: -30px; animation-delay: -1.2s; }
+
+.kicker { margin: 0; font-size: 15px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; }
+.price { margin: 6px 0 0; font-size: clamp(32px, 3.4vw, 44px); line-height: 1; font-weight: 900; }
+.note { margin: 6px 0 0; font-size: 15px; opacity: 0.8; }
+.meta { margin: 18px 0 0; color: var(--body); font-size: 15px; }

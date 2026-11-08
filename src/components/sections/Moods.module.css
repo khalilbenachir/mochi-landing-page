@@ -1,0 +1,21 @@
+.section { padding: 110px 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin: 52px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  overflow: hidden;
+  padding: 18px 18px 22px;
+  border-radius: 32px;
+  transition: transform 0.4s var(--spring), box-shadow 0.4s;
+}
+.card:hover { transform: translateY(-8px) rotate(-1deg); box-shadow: 0 30px 50px -24px rgba(46, 58, 77, 0.35); }
+.frame { overflow: hidden; border-radius: 22px; background: #fff; }
+.clip { width: 100%; aspect-ratio: 1; object-fit: cover; transition: transform 0.5s var(--spring); }
+.card:hover .clip { transform: scale(1.07); }
+.name { margin: 16px 4px 0; color: var(--navy-deep); font-size: 20px; font-weight: 900; }
+.line { margin: 4px 4px 0; color: var(--body); font-size: 16px; }

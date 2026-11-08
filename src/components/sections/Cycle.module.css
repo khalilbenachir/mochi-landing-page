@@ -1,0 +1,27 @@
+.section { padding: 110px 0; }
+.grid { display: flex; flex-wrap: wrap; align-items: center; gap: 64px; }
+.copy { flex: 1 1 420px; min-width: 0; }
+.note {
+  margin: 18px 0 0;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--grey-100);
+  color: var(--body);
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+.cards {
+  display: grid;
+  flex: 1 1 440px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card { padding: 26px; border-radius: 32px; transition: transform 0.4s var(--spring), box-shadow 0.4s; }
+.card:hover { transform: translateY(-8px) rotate(-1deg); box-shadow: 0 30px 50px -24px rgba(46, 58, 77, 0.35); }
+.dot { display: block; width: 46px; height: 46px; border-radius: 50%; }
+.name { margin: 18px 0 0; font-size: 22px; font-weight: 900; }
+.text { margin: 4px 0 0; color: var(--body); font-size: 15px; }
