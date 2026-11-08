@@ -39,8 +39,8 @@
   },
   "Island": {
     "title1": "Un rappel pour",
-    "title2": "changer de protection",
-    "title3": "dans la Dynamic Island",
+    "title2": "changer de protection dans la",
+    "title3": "Dynamic Island",
     "body": "Protection de jour, de nuit ou protège-slip, de 2 à 8 heures. Mochi affiche le compte à rebours sur l’accueil, dans la Dynamic Island et sur l’écran verrouillé.",
     "phoneLabel": "Dynamic Island d’un iPhone affichant Mochi et un compte à rebours",
     "timerPrefix": "Changement dans",
@@ -88,9 +88,9 @@
     }
   },
   "Predictions": {
-    "title1": "Des prédictions de règles",
-    "title2": "et d’ovulation adaptées",
-    "title3": "à votre rythme",
+    "title1": "Des prédictions de",
+    "title2": "règles et d’ovulation",
+    "title3": "adaptées à votre rythme",
     "body1": "Mochi analyse les cycles que vous notez pour estimer",
     "body2": "vos prochaines règles, votre fenêtre fertile et votre ovulation.",
     "disclaimer": "Les prédictions sont des estimations, pas un moyen de contraception.",
@@ -120,8 +120,8 @@
   "Privacy": {
     "title1": "Votre cycle reste",
     "title2": "sur votre iPhone",
-    "body1": "Dates des règles, flux, symptômes et humeurs",
-    "body2": "ne sont jamais envoyés aux analyses, journaux ou rapports de plantage.",
+    "body1": "Dates des règles, flux, symptômes",
+    "body2": "et humeurs ne sont jamais envoyés aux analyses, journaux ou rapports de plantage.",
     "promises": {
       "private": {
         "title": "Privé",
@@ -234,8 +234,8 @@
   },
   "Closing": {
     "title": "Dites bonjour à Mochi",
-    "body1": "Suivez votre cycle, collectionnez des Mochi adorables",
-    "body2": "et gardez un petit compagnon à chaque phase.",
+    "body1": "Suivez votre cycle, collectionnez",
+    "body2": "des Mochi adorables et gardez un petit compagnon à chaque phase.",
     "imageAlt": "Mochi posé sur un coussin",
     "brand": "Mochi : suivi des règles"
   },
