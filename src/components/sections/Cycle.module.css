@@ -1,4 +1,4 @@
-.section { padding: 110px 0; }
+.section { padding: var(--section-space) 0; }
 .grid { display: flex; flex-wrap: wrap; align-items: center; gap: 64px; }
 .copy { flex: 1 1 420px; min-width: 0; }
 .note {
@@ -25,3 +25,7 @@
 .dot { display: block; width: 46px; height: 46px; border-radius: 50%; }
 .name { margin: 18px 0 0; font-size: 22px; font-weight: 900; }
 .text { margin: 4px 0 0; color: var(--body); font-size: 15px; }
+
+@media (max-width: 520px) {
+  .cards { grid-template-columns: 1fr; }
+}

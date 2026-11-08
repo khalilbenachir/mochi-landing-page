@@ -1,4 +1,4 @@
-.section { padding: 110px 0; }
+.section { padding: var(--section-space) 0; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

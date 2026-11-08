@@ -89,11 +89,11 @@ export const MOODS: readonly Mood[] = [
 ];
 
 export const NAV_LINKS = [
-  { href: "#change", label: "Pad change" },
-  { href: "#island", label: "Dynamic Island" },
-  { href: "#lock", label: "Lock Screen" },
-  { href: "#flavors", label: "Flavors" },
+  { href: "#why", label: "Why Mochi" },
+  { href: "#change", label: "Features" },
   { href: "#privacy", label: "Privacy" },
+  { href: "#plus", label: "Mochi Plus" },
+  { href: "#faq", label: "FAQ" },
 ] as const;
 
 /** Replace with the real App Store link once the app is live. */

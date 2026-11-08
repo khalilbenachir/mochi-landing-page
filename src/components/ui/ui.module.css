@@ -32,8 +32,9 @@
 .phone {
   position: relative;
   flex: none;
-  width: 300px;
-  height: 620px;
+  width: min(300px, calc(100vw - 44px));
+  aspect-ratio: 300 / 620;
+  height: auto;
   padding: 11px;
   border-radius: 52px;
   background: #0d0d10;

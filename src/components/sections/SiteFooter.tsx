@@ -24,7 +24,7 @@ export function SiteFooter() {
             </a>
           ))}
         </nav>
-        <p className={styles.legal}>Mochi is not a contraceptive and doesn&apos;t replace medical advice.</p>
+        <p className={styles.legal}>© {new Date().getFullYear()} Mochi. Predictions are estimates; Mochi is not contraception or medical advice.</p>
       </div>
     </footer>
   );

@@ -15,27 +15,27 @@ export function Hero() {
         <div className={styles.copy}>
           <p className={styles.badge}>
             <Icon name="sparkle" size={16} />
-            New: pad change reminder in the Dynamic Island
+            Free for iPhone · No account required
           </p>
           <h1 className={styles.title}>
-            Period tracking
+            Private period tracking
             <br />
             with a <span className={styles.shine}>little friend.</span>
           </h1>
           <p className={styles.lead}>
-            Mochi learns your rhythm, tells you when to change, and cheers every day you show up. Private by design.
-            Works fully offline.
+            Mochi is a free period tracker for iPhone that predicts your next period, reminds you when to change your pad,
+            and turns daily check-ins into streaks and collectible flavors. Private by design. Works fully offline.
           </p>
           <div className={styles.actions}>
             <ButtonLink href={APP_STORE_URL}>
               <Icon name="download" />
-              Download for iPhone
+              Download free
             </ButtonLink>
             <ButtonLink href="#island" variant="ghost">
               See it in action
             </ButtonLink>
           </div>
-          <p className={styles.meta}>iPhone · iOS 17+ · English, Español, Deutsch, Français</p>
+          <p className={styles.meta}>iPhone · iOS 17+ · Optional Mochi Plus · English, Español, Deutsch, Français</p>
         </div>
 
         <div className={styles.device}>

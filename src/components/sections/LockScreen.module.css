@@ -1,4 +1,4 @@
-.section { overflow: hidden; padding: 110px 0; background: var(--teal-tint); }
+.section { overflow: hidden; padding: var(--section-space) 0; background: var(--teal-tint); }
 .grid { display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 64px; }
 .device { display: flex; flex: 1 1 380px; justify-content: center; }
 .copy { flex: 1 1 440px; min-width: 0; }
@@ -91,4 +91,5 @@
 
 @media (max-width: 480px) {
   .cards { grid-template-columns: minmax(0, 1fr); }
+  .device { min-width: 0; }
 }

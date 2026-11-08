@@ -47,6 +47,9 @@
   --font: "Nunito Variable", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   --font-app: ui-rounded, "SF Pro Rounded", "Nunito Variable", system-ui, sans-serif;
   --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
+  --section-space: clamp(72px, 8vw, 112px);
+  --section-space-tight: clamp(48px, 6vw, 76px);
+  --page-gutter: clamp(18px, 4vw, 32px);
 }
 
 *,
@@ -57,6 +60,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -85,8 +89,10 @@ video {
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--page-gutter);
 }
+
+section[id] { scroll-margin-top: 92px; }
 
 .tnum {
   font-variant-numeric: tabular-nums;
@@ -123,6 +129,11 @@ video {
   line-height: 1.55;
   font-weight: 700;
   color: var(--body);
+}
+
+@media (max-width: 520px) {
+  .h2 { font-size: clamp(34px, 11vw, 44px); letter-spacing: -1px; }
+  .lead { margin-top: 18px; font-size: 18px; line-height: 1.5; }
 }
 
 /* ---------- Motion, taken from the app's Mochi ---------- */
@@ -170,19 +181,12 @@ video {
 .bob { animation: bob 3s ease-in-out infinite; }
 .blob { animation: blob 9s ease-in-out infinite; }
 
-/* Scroll reveals: CSS scroll-driven animations, no JS. Browsers without support just show the content. */
-@supports (animation-timeline: view()) {
-  .reveal {
-    animation: rise linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 28%;
-  }
-  .reveal-pop {
-    animation: pop-in linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-  }
-}
+/*
+ * Essential copy is never hidden before entering the viewport. This keeps full-page captures,
+ * browser agents, print views and non-standard renderers complete and readable.
+ */
+.reveal,
+.reveal-pop { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

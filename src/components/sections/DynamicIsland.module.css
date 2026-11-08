@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  padding: 110px 0 120px;
+  padding: var(--section-space) 0;
   background: var(--island-bg);
   color: #fff;
 }
@@ -96,4 +96,7 @@
 }
 @media (max-width: 440px) {
   .stage { transform: scale(0.82); }
+  .stageWrap { width: calc(100% + 36px); margin-left: -18px; }
+  .seg { border-radius: 24px; }
+  .seg button { padding-inline: 13px; font-size: 14px; }
 }

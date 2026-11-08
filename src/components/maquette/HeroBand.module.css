@@ -1,0 +1,171 @@
+/*
+ * Hero band, laid out on the maquette's own 1024 x 326 grid.
+ * On wide screens the stage keeps the maquette's aspect ratio and every size is expressed in
+ * maquette pixels (--u = 1/1024 of the stage width), so the composition scales as one poster.
+ * Below 1100px it switches to a stacked layout with real type sizes.
+ */
+.hero {
+  --hero-bg: #f44c80;
+  --ink: #0b121c;
+  --petal: #fbc4e1;
+  --sun: #ffd93d;
+  position: relative;
+  overflow: hidden;
+  background: var(--hero-bg);
+  color: #fff;
+}
+
+.stage {
+  --u: calc(100cqw / 1024);
+  position: relative;
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  aspect-ratio: 1024 / 326;
+  container-type: inline-size;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  z-index: 10;
+  inset: calc(6 * var(--u)) calc(49 * var(--u)) auto calc(55 * var(--u));
+  display: flex;
+  height: calc(36 * var(--u));
+  align-items: center;
+}
+.brand { display: flex; align-items: center; gap: calc(6 * var(--u)); color: #fff; font-size: calc(25 * var(--u)); font-weight: 950; letter-spacing: -0.02em; text-decoration: none; }
+.brand:hover { color: #fff; }
+.brand img { width: calc(42 * var(--u)); height: auto; }
+.nav { position: absolute; left: calc(225 * var(--u)); display: flex; gap: calc(45 * var(--u)); }
+.nav a { color: #fff; font-size: calc(14.5 * var(--u)); font-weight: 850; text-decoration: none; }
+.nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.headerCta { margin-left: auto; }
+.mobileMenu { display: none !important; }
+
+/* App Store badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(8 * var(--u));
+  height: calc(49 * var(--u));
+  padding-inline: calc(22 * var(--u)) calc(26 * var(--u));
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 0 calc(3 * var(--u)) 0 rgba(120, 18, 52, 0.18);
+  transition: transform 0.2s var(--spring, ease);
+}
+.badge:hover { color: var(--ink); transform: translateY(-2px); }
+.apple { width: calc(26 * var(--u)); height: calc(30 * var(--u)); flex: none; }
+.badgeText { display: grid; line-height: 1; text-align: left; }
+.badgeText small { font-size: calc(11 * var(--u)); font-weight: 800; }
+.badgeText strong { margin-top: calc(1 * var(--u)); font-size: calc(21 * var(--u)); font-weight: 950; letter-spacing: -0.02em; }
+.badgeCompact { gap: calc(5 * var(--u)); height: calc(29 * var(--u)); padding-inline: calc(14 * var(--u)) calc(16 * var(--u)); box-shadow: none; font-size: calc(10.5 * var(--u)); font-weight: 900; }
+.badgeCompact .apple { width: calc(15 * var(--u)); height: calc(17 * var(--u)); }
+.badgeDark { background: var(--ink); color: #fff; box-shadow: none; }
+.badgeDark:hover { color: #fff; }
+
+/* Copy */
+.copy { position: absolute; z-index: 5; left: calc(58 * var(--u)); top: calc(50 * var(--u)); width: calc(390 * var(--u)); }
+.copy h1 {
+  margin: 0;
+  color: #fff;
+  font-size: calc(41 * var(--u));
+  font-weight: 1000;
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  text-shadow: 0 calc(2 * var(--u)) 0 rgba(110, 16, 48, 0.22);
+}
+.copy h1 span { display: block; white-space: nowrap; }
+.copy p { margin: calc(8 * var(--u)) 0 0; width: calc(332 * var(--u)); font-size: calc(13.6 * var(--u)); font-weight: 650; line-height: 1.27; }
+.actions { display: flex; align-items: center; gap: calc(12 * var(--u)); margin-top: calc(13 * var(--u)); }
+.free { position: relative; display: block; width: calc(66 * var(--u)); }
+.free svg:first-child { display: block; width: 100%; height: auto; filter: drop-shadow(0 calc(2 * var(--u)) 0 rgba(110, 16, 48, 0.18)); }
+.stickerRays { position: absolute; right: calc(-20 * var(--u)); top: calc(4 * var(--u)); width: calc(22 * var(--u)); color: var(--sun); transform: scaleX(-1) rotate(10deg); }
+
+/* Artwork */
+.art { position: absolute; inset: 0; pointer-events: none; }
+.mascot { position: absolute; z-index: 2; left: calc(392 * var(--u)); top: calc(86 * var(--u)); width: calc(340 * var(--u)); height: auto; max-width: none; }
+.phone {
+  position: absolute;
+  z-index: 3;
+  left: calc(728 * var(--u));
+  top: calc(40 * var(--u));
+  width: calc(246 * var(--u));
+  height: auto;
+  max-width: none;
+  filter: drop-shadow(0 calc(10 * var(--u)) calc(14 * var(--u)) rgba(90, 10, 40, 0.28));
+}
+.sparkle { position: absolute; z-index: 4; color: #fff; }
+.sparkleA { left: calc(680 * var(--u)); top: calc(63 * var(--u)); width: calc(30 * var(--u)); }
+.sparkleB { left: calc(709 * var(--u)); top: calc(92 * var(--u)); width: calc(22 * var(--u)); }
+.mascotRays { position: absolute; z-index: 4; left: calc(405 * var(--u)); top: calc(118 * var(--u)); width: calc(48 * var(--u)); color: var(--sun); }
+.petal { position: absolute; z-index: 1; color: var(--petal); }
+.petalA { left: calc(380 * var(--u)); top: calc(238 * var(--u)); width: calc(30 * var(--u)); transform: rotate(-35deg); }
+.petalB { z-index: 4; left: calc(1000 * var(--u)); top: calc(182 * var(--u)); width: calc(22 * var(--u)); transform: rotate(40deg); }
+.petalC { z-index: 4; left: calc(964 * var(--u)); top: calc(204 * var(--u)); width: calc(30 * var(--u)); transform: rotate(-20deg); }
+.petalD { z-index: 4; left: calc(962 * var(--u)); top: calc(258 * var(--u)); width: calc(28 * var(--u)); transform: rotate(25deg); }
+
+/* Very wide screens: the pink keeps going, the poster stays centred. */
+@media (min-width: 1441px) {
+  .hero::before { position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 40%, transparent 60%, rgba(214, 40, 96, 0.25)); content: ""; }
+}
+
+/* Tablet and phone: stacked composition with real sizes. */
+@media (max-width: 1099px) {
+  .stage { --u: 1px; aspect-ratio: auto; container-type: normal; padding: 0 clamp(20px, 4vw, 40px); }
+  .header { position: relative; inset: auto; height: 72px; }
+  .brand { gap: 8px; font-size: 26px; }
+  .brand img { width: 44px; }
+  .nav { position: static; margin-left: auto; margin-right: 28px; gap: 28px; }
+  .nav a { font-size: 15px; }
+  .headerCta { margin-left: 0; }
+  .badgeCompact { height: 34px; font-size: 12px; }
+
+  .copy { position: relative; left: auto; top: auto; width: auto; max-width: 640px; margin: 18px auto 0; text-align: center; }
+  .copy h1 { font-size: clamp(42px, 8.4vw, 66px); }
+  .copy p { width: auto; max-width: 520px; margin: 14px auto 0; font-size: 17px; }
+  .actions { justify-content: center; margin-top: 20px; }
+  .actions .badge { height: 58px; }
+  .free { width: 78px; }
+
+  .art { position: relative; inset: auto; height: clamp(300px, 56vw, 470px); margin-top: 12px; }
+  .mascot { left: 50%; top: auto; bottom: -14%; width: min(66vw, 520px); transform: translateX(-72%); }
+  .phone { left: 50%; top: 8%; width: min(38vw, 300px); transform: translateX(28%); }
+  .sparkleA { left: calc(50% + min(4vw, 30px)); top: 4%; width: 30px; }
+  .sparkleB { left: calc(50% + min(8vw, 64px)); top: 13%; width: 20px; }
+  .mascotRays { left: calc(50% - min(44vw, 340px)); top: 18%; width: 44px; }
+  .petalA { left: 2%; top: 64%; width: 28px; }
+  .petalB { left: auto; right: 2%; top: 42%; width: 22px; }
+  .petalC { left: auto; right: 6%; top: 56%; width: 28px; }
+  .petalD { left: auto; right: 1%; top: 74%; width: 26px; }
+}
+
+@media (max-width: 760px) {
+  .nav, .headerCta { display: none; }
+  .mobileMenu { display: block !important; margin-left: auto; }
+  .header { height: 68px; }
+  .brand { font-size: 24px; }
+  .brand img { width: 40px; }
+  .copy { margin-top: 10px; }
+  .copy p { font-size: 16px; }
+  .actions { flex-wrap: wrap; }
+}
+
+@media (max-width: 480px) {
+  .copy h1 { font-size: 40px; }
+  .copy p { font-size: 15px; }
+  .actions .badge { height: 54px; padding-inline: 18px 22px; }
+  .badgeText strong { font-size: 19px; }
+  .art { height: 300px; }
+  .mascot { width: 76vw; transform: translateX(-70%); bottom: -10%; }
+  .phone { width: 41vw; transform: translateX(16%); }
+  .petalB, .petalC { display: none; }
+  .petalD { right: 2%; top: 80%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .badge { transition: none; }
+  .badge:hover { transform: none; }
+}

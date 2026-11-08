@@ -1,4 +1,4 @@
-.section { position: relative; overflow: hidden; padding: 110px 0 120px; background: var(--privacy-sky); }
+.section { position: relative; overflow: hidden; padding: var(--section-space) 0; background: var(--privacy-sky); }
 .tw { position: absolute; animation: twinkle 2.4s ease-in-out infinite; }
 
 .head { text-align: center; }
@@ -110,4 +110,10 @@
 
 @media (max-width: 820px) {
   .chip { display: none; }
+}
+@media (max-width: 520px) {
+  .cards { grid-template-columns: 1fr; }
+  .card { padding: 22px 18px; border-radius: 26px; }
+  .cardHead p:first-child { font-size: 19px; }
+  .list li { font-size: 15px; }
 }

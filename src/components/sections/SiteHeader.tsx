@@ -18,9 +18,15 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <ButtonLink href={APP_STORE_URL} className={styles.cta}>
-          Get Mochi
-        </ButtonLink>
+        <div className={styles.actions}>
+          <details className={styles.mobileMenu}>
+            <summary aria-label="Open navigation">Menu</summary>
+            <nav aria-label="Mobile">
+              {NAV_LINKS.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
+            </nav>
+          </details>
+          <ButtonLink href={APP_STORE_URL} className={styles.cta}>Get Mochi</ButtonLink>
+        </div>
       </div>
     </header>
   );
