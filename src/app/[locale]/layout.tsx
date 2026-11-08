@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import "@fontsource-variable/nunito";
 import { PLATFORM_COLORS } from "@/app/platform-colors";
 import { StructuredData } from "@/components/seo/StructuredData";
-import { PUBLIC_SITE_URL, SITE_NAME } from "@/features/landing/content/landing";
+import { LANDING_ASSETS } from "@/features/landing/content/assets";
+import { PUBLIC_SITE_URL, SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
 import { LOCALE_META, localePath, routing, type AppLocale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -17,6 +18,8 @@ type LocaleLayoutProps = {
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+const socialImageUrl = `${SITE_URL}${LANDING_ASSETS.socialCard}`;
 
 export async function generateMetadata({ params }: LocaleLayoutProps): Promise<Metadata> {
   const { locale: localeParam } = await params;
@@ -66,9 +69,11 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
         .filter((candidate) => candidate !== locale)
         .map((candidate) => LOCALE_META[candidate].ogLocale),
       url: canonical,
+      images: [{ url: socialImageUrl, width: 1200, height: 630, alt: SITE_NAME }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
+      images: [{ url: socialImageUrl, alt: SITE_NAME }],
       title: t("title"),
       description: t("description"),
     },

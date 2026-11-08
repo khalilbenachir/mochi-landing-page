@@ -1,17 +1,26 @@
-import { existsSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { FLAVOR_CATALOG } from "./product-catalog";
 import {
   FLAVOR_CARD_ASSETS,
+  LANDING_ASSETS,
   LANDING_ASSET_PATHS,
   MOOD_ASSETS,
   MOOD_IDS,
 } from "./assets";
 
+const PNG_SIGNATURE = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
+
+function readPngSize(assetPath: string) {
+  const bytes = readFileSync(join(process.cwd(), "public", assetPath.slice(1)));
+  expect([...bytes.subarray(0, 8)], `${assetPath} must have a PNG signature`).toEqual(PNG_SIGNATURE);
+  return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
+}
+
 describe("landing asset manifest", () => {
   it("declares existing files for all active landing assets", () => {
-    expect(LANDING_ASSET_PATHS).toHaveLength(25);
+    expect(LANDING_ASSET_PATHS).toHaveLength(28);
     for (const assetPath of LANDING_ASSET_PATHS) {
       expect(existsSync(join(process.cwd(), "public", assetPath.slice(1))), assetPath).toBe(true);
     }
@@ -35,6 +44,24 @@ describe("landing asset manifest", () => {
     expect({ undeclared: extra, missing }, "public/mochi must match LANDING_ASSET_PATHS").toEqual({
       undeclared: [],
       missing: [],
+    });
+  });
+
+  it("ships manifest icons whose bitmaps match their declared sizes", () => {
+    expect(readPngSize(LANDING_ASSETS.manifestIcon192), LANDING_ASSETS.manifestIcon192).toEqual({
+      width: 192,
+      height: 192,
+    });
+    expect(readPngSize(LANDING_ASSETS.manifestIcon512), LANDING_ASSETS.manifestIcon512).toEqual({
+      width: 512,
+      height: 512,
+    });
+  });
+
+  it("ships a 1200x630 social card bitmap", () => {
+    expect(readPngSize(LANDING_ASSETS.socialCard), LANDING_ASSETS.socialCard).toEqual({
+      width: 1200,
+      height: 630,
     });
   });
 });

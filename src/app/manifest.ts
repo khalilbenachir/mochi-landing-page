@@ -14,7 +14,8 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: PLATFORM_COLORS.manifestBackground.value,
     theme_color: PLATFORM_COLORS.manifestTheme.value,
     icons: [
-      { src: LANDING_ASSETS.appIcon, sizes: "512x512", type: "image/webp", purpose: "any" },
+      { src: LANDING_ASSETS.manifestIcon192, sizes: "192x192", type: "image/png", purpose: "any" },
+      { src: LANDING_ASSETS.manifestIcon512, sizes: "512x512", type: "image/png", purpose: "any" },
     ],
   };
 }
