@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { FAQ_IDS } from "@/features/landing/content/landing";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
+import { FaqAccordion } from "@/features/landing/components/sections/FaqAccordion";
 
 function Rays({ className }: { className?: string }) {
   return (
@@ -35,25 +36,13 @@ export function FaqSection() {
           </div>
         </div>
 
-        <div className="grid content-start gap-[calc(3.5*var(--u))] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-poster:w-full max-poster:max-w-[720px] max-poster:gap-[8px]">
-          {FAQ_IDS.map((id, index) => (
-            <details
-              key={id}
-              name="faq"
-              open={index === 0}
-              className="group rounded-[calc(10*var(--u))] bg-white [box-shadow:0_calc(2*var(--u))_calc(4*var(--u))_var(--color-faq-item-shadow)] max-poster:rounded-[14px]"
-            >
-              <summary className="flex min-h-[calc(19.5*var(--u))] cursor-pointer list-none items-center justify-between pl-[calc(23*var(--u))] pr-[calc(22*var(--u))] group-open:min-h-[calc(26*var(--u))] group-open:pl-[calc(19*var(--u))] focus-visible:rounded-[calc(10*var(--u))] focus-visible:[outline:3px_solid_var(--color-brand-rose)] focus-visible:outline-offset-2 max-poster:min-h-[50px] max-poster:gap-[14px] max-poster:py-[10px] max-poster:pl-[18px] max-poster:pr-[18px] max-poster:group-open:min-h-[50px] max-poster:group-open:pl-[18px] [&::-webkit-details-marker]:hidden">
-                <h3 className="m-0 text-[calc(13.6*var(--u))] font-[1000] tracking-[-0.01em] group-open:text-[calc(14.4*var(--u))] max-poster:text-[16px] max-poster:leading-[1.25] max-poster:group-open:text-[16px] max-phone:text-[15px] max-phone:group-open:text-[15px]">{t(`items.${id}.question`)}</h3>
-                <span
-                  className="relative h-[calc(11*var(--u))] w-[calc(11*var(--u))] flex-none before:absolute before:left-0 before:top-1/2 before:h-[calc(1.8*var(--u))] before:w-full before:rounded-[2px] before:bg-ink-navy before:content-[''] before:[transform:translateY(-50%)] before:[transition:transform_0.2s_ease] after:absolute after:left-0 after:top-1/2 after:h-[calc(1.8*var(--u))] after:w-full after:rounded-[2px] after:bg-ink-navy after:content-[''] after:[transform:translateY(-50%)_rotate(90deg)] after:[transition:transform_0.2s_ease] group-open:after:[transform:translateY(-50%)_rotate(0deg)] max-poster:h-[14px] max-poster:w-[14px] max-poster:before:h-[2px] max-poster:after:h-[2px] motion-reduce:before:[transition:none] motion-reduce:after:[transition:none]"
-                  aria-hidden="true"
-                />
-              </summary>
-              <p className="mb-0 mt-[calc(-5*var(--u))] mx-0 max-w-[calc(612*var(--u))] pb-[calc(9*var(--u))] pl-[calc(19*var(--u))] pr-[calc(22*var(--u))] pt-0 text-faq-answer-text text-[calc(12.2*var(--u))] font-[600] leading-[1.26] max-poster:mt-[-2px] max-poster:max-w-none max-poster:pb-[14px] max-poster:pl-[18px] max-poster:pr-[18px] max-poster:text-[15px] max-poster:leading-[1.4] max-phone:text-[14px]">{t(`items.${id}.answer`)}</p>
-            </details>
-          ))}
-        </div>
+        <FaqAccordion
+          items={FAQ_IDS.map((id) => ({
+            id,
+            question: t(`items.${id}.question`),
+            answer: t(`items.${id}.answer`),
+          }))}
+        />
       </PosterStage>
     </section>
   );

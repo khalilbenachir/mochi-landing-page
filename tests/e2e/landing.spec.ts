@@ -127,10 +127,12 @@ test.describe("localized landing routes", () => {
       expect(focused, "App Store CTA should be reachable using Tab").toBe(true);
     }
 
-    const secondQuestion = page.locator("#faq details").nth(1);
-    await secondQuestion.locator("summary").focus();
+    const firstQuestion = page.locator("#faq button[aria-expanded]").nth(0);
+    const secondQuestion = page.locator("#faq button[aria-expanded]").nth(1);
+    await secondQuestion.focus();
     await page.keyboard.press("Space");
-    await expect(secondQuestion).toHaveAttribute("open", "");
+    await expect(secondQuestion).toHaveAttribute("aria-expanded", "true");
+    await expect(firstQuestion).toHaveAttribute("aria-expanded", "false");
     assertClean();
   });
 });
@@ -178,8 +180,9 @@ for (const locale of ["en", "fr"] as const) {
     await page.locator("nextjs-portal").evaluateAll((portals) => portals.forEach((portal) => portal.remove()));
     await expect(page.locator("nextjs-portal")).toHaveCount(0);
     await waitForPageAssets(page);
-    await page.locator("#top details summary").click();
-    await expect(page.locator("#top details")).toHaveAttribute("open", "");
+    const menuButton = page.locator("#top header button[aria-expanded]");
+    await menuButton.click();
+    await expect(menuButton).toHaveAttribute("aria-expanded", "true");
     await expect(page).toHaveScreenshot(`${locale}-phone-menu-390x844.png`, { animations: "disabled" });
     assertClean();
   });
