@@ -1,0 +1,83 @@
+/* Pad change card, variant B. Sizes are iPhone points (the Home screen is scaled into the frame). */
+.card {
+  padding: 14px;
+  border-radius: 24px;
+  color: #fff;
+  font-family: var(--font-app);
+  box-shadow: 0 16px 30px -14px rgba(176, 37, 75, 0.55);
+  transition: background 0.45s;
+}
+.rose { background: var(--card-rose); }
+.dark { background: var(--card-dark); }
+
+.row { display: flex; align-items: center; gap: 12px; }
+
+.face {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  transition: box-shadow 0.45s;
+}
+.ringed { box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.35); }
+
+@keyframes badge-pop {
+  from { opacity: 0; transform: scale(0.4) rotate(-20deg); }
+  to { opacity: 1; transform: none; }
+}
+.badge {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  background: var(--navy);
+  color: #fff;
+  animation: badge-pop 0.45s cubic-bezier(0.3, 1.6, 0.5, 1) both;
+}
+
+.text { flex: 1; min-width: 0; }
+.text p { margin: 0; }
+.eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 0.7px; text-transform: uppercase; }
+.counterRow { display: flex; align-items: flex-end; gap: 8px; }
+.value { font-size: 24px; line-height: 1.1; font-weight: 900; }
+.detail { margin: 0 0 3px auto !important; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.title { font-size: 19px; line-height: 1.15; font-weight: 900; }
+.subtitle { margin-top: 3px !important; font-size: 12px; line-height: 1.35; font-weight: 700; }
+
+.progress { height: 7px; margin-top: 12px; overflow: hidden; border-radius: 4px; background: rgba(255, 255, 255, 0.3); }
+.progress i { display: block; height: 100%; border-radius: 4px; background: #fff; transition: width 0.6s; }
+
+.buttons { display: flex; gap: 8px; margin-top: 12px; }
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  border-radius: 999px;
+  font: 900 15px var(--font-app);
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.3, 1.6, 0.5, 1), color 0.3s;
+}
+.primary { flex: 1; border: 0; background: #fff; color: var(--card-ink); }
+.dark .primary { color: var(--card-dark); }
+.secondary { flex: none; padding: 0 16px; border: 2px solid #fff; background: transparent; color: #fff; }
+.primary:hover,
+.secondary:hover { transform: translateY(-2px) scale(1.03); }
+.primary:active,
+.secondary:active { transform: scale(0.95); }
+.primary:focus-visible,
+.secondary:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }

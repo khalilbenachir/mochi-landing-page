@@ -1,18 +1,7 @@
-"use client";
-
-import { ChangeFaces } from "@/components/ui/ChangeFaces";
 import { Icon } from "@/components/ui/Icon";
 import { MochiClip } from "@/components/ui/MochiClip";
-import { useChangeReminder } from "@/features/change-reminder/ChangeReminderProvider";
-import { HOUR, formatHoursMinutes, type ChangePhase } from "@/lib/change-timer";
+import { PadChangeCard } from "@/features/change-reminder/PadChangeCard";
 import styles from "./TodayScreen.module.css";
-
-/** `PillStyle` in ChangeReminderPill.swift. */
-const PILL: Record<ChangePhase, { fill: string; ink: string; caption: string; ring: string; track: string; btnFill: string; btnInk: string }> = {
-  calm: { fill: "var(--pink-tint)", ink: "var(--navy)", caption: "var(--pink-deep)", ring: "var(--pink)", track: "#fff", btnFill: "var(--navy)", btnInk: "#fff" },
-  soon: { fill: "var(--orange-tint)", ink: "var(--navy)", caption: "var(--orange-ink)", ring: "var(--orange)", track: "#fff", btnFill: "var(--navy)", btnInk: "#fff" },
-  due: { fill: "var(--raspberry)", ink: "#fff", caption: "#fff", ring: "#fff", track: "rgba(255,255,255,.35)", btnFill: "#fff", btnInk: "var(--navy)" },
-};
 
 /** Mon 2 – Sun 8: the period started Friday, today is Saturday (period day 2), Sunday is predicted. */
 const WEEK = ["M", "T", "W", "T", "F", "S", "S"].map((letter, i) => ({
@@ -23,8 +12,6 @@ const WEEK = ["M", "T", "W", "T", "F", "S", "S"].map((letter, i) => ({
   isPredicted: i === 6,
   isPeriod: i >= 4,
 }));
-
-const RING_LENGTH = 2 * Math.PI * 20;
 
 const CATEGORIES = [
   { title: "Flow", tint: "var(--pink-tint)", ink: "var(--pink-ink)", icon: <path d="M10 1c3 5 8 9 8 14a8 8 0 0 1-16 0c0-5 5-9 8-14z" fill="currentColor" transform="translate(2 0)" /> },
@@ -54,10 +41,6 @@ const CATEGORIES = [
  * phone frame, so every size matches the real screen.
  */
 export function TodayScreen() {
-  const { state, phase, face, left, markChanged } = useChangeReminder();
-  const pill = PILL[phase];
-  const hoursUp = Math.max(1, Math.round(state.total / HOUR));
-
   return (
     <div className={styles.app}>
       <div className={styles.scroll}>
@@ -89,42 +72,7 @@ export function TodayScreen() {
           </span>
         </div>
 
-        <div className={styles.changePill} style={{ background: pill.fill }}>
-          <div className={styles.pillMain}>
-            <div className={styles.ring}>
-              <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
-                <circle cx="24" cy="24" r="22" fill="#fff" />
-                <circle cx="24" cy="24" r="20" fill="none" stroke={pill.track} strokeWidth="4" />
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  fill="none"
-                  stroke={pill.ring}
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeDasharray={`${(left * RING_LENGTH).toFixed(1)} 200`}
-                  transform="rotate(-90 24 24)"
-                />
-              </svg>
-              <div className={styles.ringFace}>
-                <ChangeFaces face={face} width={30} height={24} />
-              </div>
-            </div>
-            <div>
-              <p className={styles.pillCaption} style={{ color: pill.caption }}>
-                {phase === "due" ? `${hoursUp} hours are up` : "Change your pad in"}
-              </p>
-              <p className={`tnum ${styles.pillTime}`} style={{ color: pill.ink }}>
-                {phase === "due" ? "Time to change" : formatHoursMinutes(state.remaining)}
-              </p>
-            </div>
-          </div>
-          <button type="button" className={styles.changedBtn} style={{ background: pill.btnFill, color: pill.btnInk }} onClick={markChanged}>
-            <Icon name="check" size={13} strokeWidth={4} />
-            Changed
-          </button>
-        </div>
+        <PadChangeCard className={styles.card} />
 
         <div className={styles.week}>
           {WEEK.map((d) => (

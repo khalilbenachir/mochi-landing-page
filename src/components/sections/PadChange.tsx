@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "@/components/ui/Button";
+import { useEffect, useState } from "react";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { useChangeReminder } from "@/features/change-reminder/ChangeReminderProvider";
-import { asset } from "@/content/mochi";
-import { MAX_HOURS, PAD_OPTIONS, padOption } from "@/lib/change-timer";
+import { PadChangeCard } from "@/features/change-reminder/PadChangeCard";
+import { CARD_STATES, type CardState } from "@/lib/change-timer";
 import styles from "./PadChange.module.css";
 
 const POINTS: { icon: IconName; tint: string; ink: string; text: string }[] = [
@@ -14,11 +13,35 @@ const POINTS: { icon: IconName; tint: string; ink: string; text: string }[] = [
   { icon: "lock", tint: "var(--indigo-tint)", ink: "var(--indigo)", text: "Stays on your iPhone. Never synced, never tracked" },
 ];
 
-const HOURS = Array.from({ length: MAX_HOURS - 1 }, (_, i) => i + 2);
+const STATE_INFO: Record<CardState, { label: string; caption: string }> = {
+  idle: { label: "Idle", caption: "On period days, Mochi offers the reminder right on Home. One tap starts it." },
+  running: { label: "Running", caption: "The countdown, when the next change is due, and how far along you are." },
+  due: { label: "Due", caption: "Time to change. Tap Changed when you’re done, or ask for 15 more minutes." },
+  snoozed: { label: "Snoozed", caption: "Mochi checks back in 15 minutes. Changed or Stop is always one tap away." },
+  overdue: { label: "Overdue", caption: "The card darkens and Mochi looks worried, so it’s hard to miss." },
+  fresh: { label: "Just changed", caption: "All fresh. The next reminder is set, with Undo in case you tapped by mistake." },
+};
+
+const TOUR_STEP_MS = 4000;
 
 export function PadChange() {
-  const { state, pickPad, pickHours, start } = useChangeReminder();
-  const current = padOption(state.pad);
+  const { state, show } = useChangeReminder();
+  const [touring, setTouring] = useState(true);
+
+  // Walk through all six states until the visitor taps something on the card or a chip.
+  useEffect(() => {
+    if (!touring || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(() => {
+      const next = CARD_STATES[(CARD_STATES.indexOf(state.card) + 1) % CARD_STATES.length];
+      if (next) show(next);
+    }, TOUR_STEP_MS);
+    return () => window.clearInterval(id);
+  }, [touring, state.card, show]);
+
+  const pick = (card: CardState) => {
+    setTouring(false);
+    show(card);
+  };
 
   return (
     <section id="change" className={styles.section}>
@@ -49,61 +72,30 @@ export function PadChange() {
           </ul>
         </div>
 
-        <div className={`reveal ${styles.sheetWrap}`}>
-          <div className={styles.sheet}>
-            <div className={styles.sheetHead}>
-              <Image src={asset.face.wondering} alt="" width={84} height={67} className="jelly" />
-              <div>
-                <p className={styles.sheetTitle}>Pad change reminder</p>
-                <p className={styles.sheetSub}>Lock Screen shows only Mochi and the time.</p>
-              </div>
+        <div className={`reveal ${styles.demoWrap}`}>
+          <div className={styles.demo}>
+            {/* Any tap on the card stops the tour, so the visitor stays in control. */}
+            <div className={styles.stage} onClickCapture={() => setTouring(false)}>
+              <PadChangeCard className={styles.card} />
             </div>
 
-            <fieldset className={styles.group}>
-              <legend className={styles.label}>What are you wearing?</legend>
-              <div className={styles.chips}>
-                {PAD_OPTIONS.map((p) => (
-                  <button
-                    key={p.id}
-                    type="button"
-                    className={`${styles.chip} ${p.id === state.pad ? styles.chipOn : ""}`}
-                    aria-pressed={p.id === state.pad}
-                    onClick={() => pickPad(p.id)}
-                  >
-                    {p.label}
-                  </button>
-                ))}
-              </div>
-              <p className={styles.hint}>{current.hint}</p>
-            </fieldset>
-
-            <fieldset className={styles.group}>
-              <legend className={styles.label}>Remind me after</legend>
-              <div className={styles.hours}>
-                {HOURS.map((h) => (
-                  <button
-                    key={h}
-                    type="button"
-                    className={`${styles.hour} ${h === state.hours ? styles.hourOn : ""}`}
-                    aria-pressed={h === state.hours}
-                    aria-label={`${h} hours`}
-                    disabled={h < current.minHours}
-                    onClick={() => pickHours(h)}
-                  >
-                    {h}h
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-
-            <p className={styles.tip}>
-              <Icon name="info" size={20} />
-              Change at least every 4 to 8 hours.
-            </p>
-            <Button block onClick={start} className={styles.start}>
-              Remind me in {state.hours} hours
-            </Button>
-            <p className={styles.try}>Try it: the phone and the Dynamic Island follow your choice.</p>
+            <div className={styles.states} role="group" aria-label="Card state">
+              {CARD_STATES.map((card, i) => (
+                <button
+                  key={card}
+                  type="button"
+                  className={`${styles.state} ${state.card === card ? styles.stateOn : ""}`}
+                  aria-pressed={state.card === card}
+                  onClick={() => pick(card)}
+                >
+                  {i + 1} · {STATE_INFO[card].label}
+                </button>
+              ))}
+            </div>
+            <p className={styles.caption}>{STATE_INFO[state.card].caption}</p>
+            <button type="button" className={styles.state} onClick={() => setTouring((t) => !t)}>
+              {touring ? "Pause tour" : "Play all states"}
+            </button>
           </div>
         </div>
       </div>
