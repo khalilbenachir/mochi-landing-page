@@ -1,0 +1,253 @@
+{
+  "Metadata": {
+    "title": "Mochi – private period tracker for iPhone",
+    "description": "Mochi is a free, private period tracker for iPhone with cycle predictions, an optional pad change reminder, mood logging, streaks and 12 collectible Mochi flavors."
+  },
+  "Navigation": {
+    "mainLabel": "Main navigation",
+    "mobileLabel": "Mobile navigation",
+    "openMenu": "Open navigation menu",
+    "features": "Features",
+    "flavors": "Flavors",
+    "privacy": "Privacy",
+    "plus": "Mochi Plus",
+    "faq": "FAQ"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "fr": "French"
+  },
+  "Common": {
+    "brand": "Mochi",
+    "brandHome": "Mochi home",
+    "appStoreAria": "Download Mochi on the App Store",
+    "download": "Download on the App Store",
+    "downloadOn": "Download on the",
+    "appStore": "App Store",
+    "free": "Free",
+    "optional": "Optional",
+    "backToTop": "Mochi: period tracker, back to top"
+  },
+  "Hero": {
+    "title1": "The cute, private",
+    "title2": "period tracker",
+    "title3": "for iPhone",
+    "body": "Mochi is a free period tracker for iPhone that predicts your next period, reminds you when to change your pad and turns daily check-ins into a game. No account needed.",
+    "mascotAlt": "Mochi, a smiling pink mochi mascot, resting on a cream cushion",
+    "phoneAlt": "Mochi home screen on iPhone showing Day 2 of a period with Period, Mood and Symptoms shortcuts"
+  },
+  "Island": {
+    "title1": "A pad change",
+    "title2": "reminder in your",
+    "title3": "Dynamic Island",
+    "body": "Day pad, overnight pad or liner, 2 to 8 hours. Mochi counts down on Home, in the Dynamic Island and on the Lock Screen.",
+    "phoneLabel": "iPhone Dynamic Island showing Mochi and a pad change countdown",
+    "timerPrefix": "Pad change in",
+    "countdownLabel": "Pad change countdown"
+  },
+  "Moods": {
+    "title1": "Log how you feel.",
+    "title2": "Mochi feels it with you.",
+    "body": "Tap Mochi to log your mood, symptoms and flow in seconds.",
+    "phoneLabel": "Mochi Log Today sheet with mood faces and symptom choices",
+    "logToday": "Log Today",
+    "mood": "Mood",
+    "symptoms": "Symptoms",
+    "moodNames": {
+      "happy": "Happy",
+      "sleepy": "Sleepy",
+      "crampy": "Crampy",
+      "cozy": "Cozy"
+    },
+    "symptomNames": {
+      "cramps": "Cramps",
+      "bloating": "Bloating",
+      "headache": "Headache",
+      "tired": "Tired"
+    }
+  },
+  "Flavors": {
+    "title1": "Keep your",
+    "title2": "streak, collect",
+    "title3": "12 Mochi flavors",
+    "body": "Log a little every day and new Mochi join your collection.",
+    "items": {
+      "strawberry": { "name": "Strawberry", "unlock": "Starter" },
+      "classic": { "name": "Classic", "unlock": "Starter" },
+      "matcha": { "name": "Matcha", "unlock": "Starter" },
+      "ube": { "name": "Ube", "unlock": "7-day streak" },
+      "mango": { "name": "Mango", "unlock": "14-day streak" },
+      "sesame": { "name": "Sesame", "unlock": "30-day streak" },
+      "yuzu": { "name": "Yuzu", "unlock": "60-day streak" },
+      "chocolate": { "name": "Chocolate", "unlock": "90-day streak" },
+      "hojicha": { "name": "Hojicha", "unlock": "180-day streak" },
+      "sakura": { "name": "Sakura", "unlock": "150 petals" },
+      "peach": { "name": "Peach", "unlock": "Cramp care challenge" },
+      "coconut": { "name": "Coconut", "unlock": "Calm week challenge" }
+    }
+  },
+  "Predictions": {
+    "title1": "Period and ovulation",
+    "title2": "predictions that learn",
+    "title3": "your rhythm",
+    "body1": "Mochi reads the cycles you log to estimate",
+    "body2": "your next period, fertile window and ovulation.",
+    "disclaimer": "Predictions are estimates, not birth control.",
+    "phoneLabel": "Mochi cycle calendar with a five-day period marked",
+    "cycle": "Cycle",
+    "month": "Mar 2025",
+    "weekdays": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    },
+    "period": "Period",
+    "fertileWindow": "Fertile window",
+    "ovulation": "Ovulation",
+    "nextPeriodIn": "Next period in",
+    "nextPeriodValue": "12 days",
+    "cycleLength": "Cycle length",
+    "cycleLengthValue": "28 days",
+    "nextPeriod": "Next period",
+    "nextPeriodDate": "Mar 15",
+    "mascotAlt": "Happy Mochi"
+  },
+  "Privacy": {
+    "title1": "Your cycle stays",
+    "title2": "on your iPhone",
+    "body1": "Period dates, flow, symptoms and moods",
+    "body2": "never go to analytics, logs or crash reports.",
+    "promises": {
+      "private": {
+        "title": "Private",
+        "line1": "Stays on",
+        "line2": "your iPhone",
+        "badge1": "100%",
+        "badge2": "Private",
+        "badge3": "by design"
+      },
+      "offline": {
+        "title": "Works offline",
+        "line1": "Every core feature,",
+        "line2": "signed out",
+        "badge1": "Works",
+        "badge2": "Offline",
+        "badge3": "always"
+      },
+      "account": {
+        "title": "No account",
+        "line1": "Backup optional,",
+        "line2": "only if you want it",
+        "badge1": "No account",
+        "badge2": "needed",
+        "badge3": ""
+      }
+    },
+    "staysTitle": "Stays with you",
+    "stays": {
+      "dates": "Period dates and predictions",
+      "logs": "Flow, symptoms and moods",
+      "reminders1": "Pad change reminders,",
+      "reminders2": "on your iPhone"
+    }
+  },
+  "Comparison": {
+    "title1": "Why",
+    "title2": "Mochi?",
+    "caption": "Mochi compared with a typical period app",
+    "mochi": "Mochi",
+    "typical": "Typical period app",
+    "rows": {
+      "account": { "feature": "Account required", "mochi": "No", "typical": "Often" },
+      "offline": { "feature": "Works offline", "mochi": "Yes", "typical": "Varies" },
+      "reminder": { "feature": "Pad reminder on Lock Screen", "mochi": "Yes", "typical": "Rare" },
+      "analytics": { "feature": "Cycle data sent to analytics", "mochi": "Never", "typical": "Varies" },
+      "rewards": { "feature": "Rewards for logging", "mochi": "Streaks + 12 flavors", "typical": "Rare" }
+    }
+  },
+  "Plans": {
+    "title1": "Free to download.",
+    "title2": "Mochi Plus",
+    "title3": "is optional.",
+    "freeName": "Mochi",
+    "freeLabel": "Free",
+    "plusName": "Mochi Plus",
+    "freeFeatures": {
+      "tracking": "Cycle tracking and predictions",
+      "reminder": "Pad change reminder",
+      "rewards": "Moods, streaks and flavors",
+      "offline": "Works offline, no account"
+    },
+    "plusFeatures": {
+      "everything": "Everything in Free",
+      "flavors": "All three starter Mochi plus extra flavors",
+      "insights": "Insights into your cycle"
+    }
+  },
+  "Account": {
+    "kicker": "Optional account",
+    "title": "Use Mochi now. Back up when you want.",
+    "body": "Everything works without an account. Create a free account only when you want backup and sync for a new iPhone.",
+    "backup": "Cycle backup",
+    "synced": "Synced to your account",
+    "imageAlt": "Mochi hugging a locked diary"
+  },
+  "FAQ": {
+    "title1": "Period",
+    "title2": "tracker",
+    "title3": "FAQ",
+    "items": {
+      "what": {
+        "question": "What is Mochi?",
+        "answer": "Mochi is a period tracker app for iPhone with a cute mascot. It predicts your next period, reminds you when to change your pad and rewards daily check-ins with 12 collectible flavors."
+      },
+      "free": {
+        "question": "Is Mochi free?",
+        "answer": "Yes. Cycle tracking, predictions, the pad change reminder, moods, streaks and starter flavors are free. Mochi Plus is optional."
+      },
+      "private": {
+        "question": "Is my period data private?",
+        "answer": "Yes. Period dates, flow, symptoms and moods stay on your iPhone and are never sent to analytics, logs or crash reports."
+      },
+      "offline": {
+        "question": "Does Mochi work without an account or internet?",
+        "answer": "Yes. Every core feature works offline and no account is required. An account is optional if you want backup and sync."
+      },
+      "reminder": {
+        "question": "How does the pad change reminder work?",
+        "answer": "Choose a day pad, overnight pad or liner and a duration from 2 to 8 hours. Mochi counts down on Home, in the Dynamic Island and on the Lock Screen."
+      },
+      "lockScreen": {
+        "question": "Will my Lock Screen show that I'm on my period?",
+        "answer": "No. The Live Activity uses private, discreet wording and never states that you are on your period."
+      },
+      "medical": {
+        "question": "Can I use Mochi as birth control?",
+        "answer": "No. Mochi's predictions are estimates for period awareness, not contraception, diagnosis or medical advice."
+      }
+    }
+  },
+  "Closing": {
+    "title": "Say hi to Mochi",
+    "body1": "Track your cycle, collect cute flavors and have",
+    "body2": "a little friend with you through every phase.",
+    "imageAlt": "Mochi resting on a cushion",
+    "brand": "Mochi: period tracker"
+  },
+  "StructuredData": {
+    "offer": "Free to download. Optional Mochi Plus subscription available in the app.",
+    "features": {
+      "predictions": "Period and ovulation predictions",
+      "reminders": "Pad change reminders in the Dynamic Island and on the Lock Screen",
+      "logging": "Mood, symptom and flow logging",
+      "offline": "Offline use without an account",
+      "backup": "Optional account backup and sync",
+      "rewards": "Streaks and 12 collectible Mochi flavors"
+    }
+  }
+}

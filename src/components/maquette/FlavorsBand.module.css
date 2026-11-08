@@ -1,0 +1,97 @@
+/*
+ * Section 4, on the maquette's 1024 x 212 grid (--u = 1/1024 of the stage width) on wide screens.
+ * Below 1100px: copy on top, then a 4- or 3-column card grid with real sizes.
+ */
+.band {
+  --band-bg: #feab29;
+  --ink: #26304a;
+  --sun: #ffe14d;
+  position: relative;
+  overflow: hidden;
+  background: var(--band-bg);
+  color: #fff;
+}
+
+.stage {
+  --u: calc(100cqw / 1024);
+  position: relative;
+  width: min(100%, 1440px);
+  margin-inline: auto;
+  aspect-ratio: 1024 / 212;
+  container-type: inline-size;
+}
+
+/* Copy */
+.copy { position: absolute; z-index: 2; left: calc(47 * var(--u)); top: calc(13 * var(--u)); }
+.copy h2 { margin: 0; color: #fff; font-size: calc(31 * var(--u)); font-weight: 1000; line-height: 1.03; letter-spacing: -0.015em; }
+.copy h2 span { display: block; white-space: nowrap; }
+.copy p { margin: calc(11 * var(--u)) 0 0; width: calc(215 * var(--u)); font-size: calc(15.5 * var(--u)); font-weight: 700; line-height: 1.3; }
+.rays { position: absolute; left: calc(262 * var(--u)); top: calc(12 * var(--u)); width: calc(36 * var(--u)); color: var(--sun); }
+
+/* Cards */
+.grid {
+  position: absolute;
+  left: calc(324 * var(--u));
+  top: calc(11 * var(--u));
+  display: grid;
+  width: calc(663 * var(--u));
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: calc(86 * var(--u)) calc(99 * var(--u));
+  gap: calc(7 * var(--u));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(6 * var(--u));
+  border-radius: calc(12 * var(--u));
+  background: #fffaf7;
+  color: var(--ink);
+  box-shadow: 0 calc(3 * var(--u)) calc(6 * var(--u)) rgba(150, 80, 0, 0.18);
+  text-align: center;
+}
+.card img { width: calc(62 * var(--u)); height: auto; margin-bottom: calc(3 * var(--u)); transition: transform 0.3s var(--spring, ease); }
+.card:hover img { transform: translateY(calc(-3 * var(--u))) rotate(-4deg); }
+.name { display: flex; align-items: center; gap: calc(3 * var(--u)); font-size: calc(12.4 * var(--u)); font-weight: 1000; letter-spacing: -0.01em; white-space: nowrap; }
+.icon { width: calc(16 * var(--u)); height: calc(16 * var(--u)); flex: none; }
+.emoji { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: calc(14.5 * var(--u)); line-height: 1; }
+.pill {
+  white-space: nowrap;
+  margin-top: calc(4 * var(--u));
+  padding: calc(2 * var(--u)) calc(8 * var(--u));
+  border-radius: calc(8 * var(--u));
+  font-size: calc(9.6 * var(--u));
+  font-weight: 900;
+  line-height: 1.12;
+}
+.pillWrap { max-width: calc(78 * var(--u)); white-space: normal; }
+
+/* Tablet and phone */
+@media (max-width: 1099px) {
+  .stage { --u: 1px; aspect-ratio: auto; container-type: normal; padding: 36px clamp(16px, 4vw, 40px) 40px; }
+  .copy { position: relative; left: auto; top: auto; max-width: 640px; margin: 0 auto; text-align: center; }
+  .copy h2 { font-size: clamp(36px, 6.4vw, 52px); }
+  .copy h2 span { display: inline; }
+  .copy p { width: auto; max-width: 420px; margin: 14px auto 0; font-size: 17px; }
+  .rays { display: none; }
+  .grid { --u: calc(min(100vw - 32px, 760px) / 445); position: relative; left: auto; top: auto; width: 100%; max-width: 760px; margin: 26px auto 0; grid-template-columns: repeat(4, 1fr); grid-template-rows: none; grid-auto-rows: calc(100 * var(--u)); }
+}
+
+@media (max-width: 640px) {
+  .grid { --u: calc((100vw - 32px) / 330); grid-template-columns: repeat(3, 1fr); grid-auto-rows: calc(102 * var(--u)); }
+}
+
+@media (max-width: 480px) {
+  .stage { padding-top: 30px; padding-bottom: 30px; }
+  .copy h2 { font-size: 32px; }
+  .copy p { font-size: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card img { transition: none; }
+  .card:hover img { transform: none; }
+}
