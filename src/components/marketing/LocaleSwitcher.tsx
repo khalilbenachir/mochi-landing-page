@@ -1,37 +1,64 @@
 import { useLocale, useTranslations } from "next-intl";
-import { localeSwitchPath, routing } from "@/i18n/routing";
+import { LOCALE_META, localeSwitchPath, routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
+import { LocaleMenu, type LocaleOption } from "./LocaleMenu";
 
 type LocaleSwitcherProps = {
+  /** `dropdown` for the header; `list` for inline use inside another menu (no nested popover). */
+  variant?: "dropdown" | "list";
   className?: string;
 };
 
-export function LocaleSwitcher({ className }: LocaleSwitcherProps) {
+const OPTIONS: readonly LocaleOption[] = routing.locales.map((locale) => ({
+  locale,
+  name: LOCALE_META[locale].name,
+  short: LOCALE_META[locale].short,
+  href: localeSwitchPath(locale),
+}));
+
+export function LocaleSwitcher({ variant = "dropdown", className }: LocaleSwitcherProps) {
   const locale = useLocale();
   const t = useTranslations("LocaleSwitcher");
+  const current = OPTIONS.find((option) => option.locale === locale) ?? OPTIONS[0]!;
+
+  if (variant === "dropdown") {
+    return (
+      <LocaleMenu
+        current={current}
+        options={OPTIONS}
+        label={t("label")}
+        triggerLabel={t("change", { language: current.name })}
+        className={className}
+      />
+    );
+  }
 
   return (
-    <nav
-      aria-label={t("label")}
-      className={cn(
-        "inline-flex items-center rounded-full border border-white/35 bg-black/10 p-1 text-xs font-black backdrop-blur-sm",
-        className,
-      )}
-    >
-      {routing.locales.map((candidate) => (
-        <a
-          key={candidate}
-          href={localeSwitchPath(candidate)}
-          aria-current={locale === candidate ? "page" : undefined}
-          aria-label={t(candidate)}
-          className={cn(
-            "rounded-full px-2 py-1 text-white no-underline transition-colors hover:bg-white/15 hover:text-white",
-            locale === candidate && "bg-white text-mochi-pink-ink hover:bg-white hover:text-mochi-pink-ink",
-          )}
-        >
-          {candidate.toUpperCase()}
-        </a>
-      ))}
+    <nav aria-label={t("label")} className={cn("grid gap-[6px]", className)}>
+      <p className="m-0 px-[6px] text-[12px] font-black uppercase tracking-[0.06em] text-ink-navy/60" aria-hidden="true">
+        {t("label")}
+      </p>
+      <ul className="m-0 grid list-none grid-cols-2 gap-[6px] p-0">
+        {OPTIONS.map((option) => {
+          const active = option.locale === current.locale;
+          return (
+            <li key={option.locale} className="grid">
+              <a
+                href={option.href}
+                hrefLang={option.locale}
+                lang={option.locale}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "grid min-h-[40px] place-items-center rounded-[12px] px-[8px] py-[6px] text-center text-[13px] font-[850] leading-[1.15] text-ink-navy no-underline bg-hero-locale-mobile-bg hover:text-ink-navy",
+                  active && "bg-brand-coral text-white hover:text-white",
+                )}
+              >
+                {option.name}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }

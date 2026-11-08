@@ -62,14 +62,16 @@ function Petal({ className }: { className?: string }) {
 export function FreeSticker({ className }: { className?: string }) {
   const t = useTranslations("Common");
   const label = t("free").toUpperCase();
-  // Longer words (GRATUIT) get a smaller size and a fixed run so they stay inside the blob.
+  // The blob fits about 64 units of text: scale the size down with the word length
+  // (FREE 24, GRATIS 19, GRATUIT 16) and pin longer words to that run so no locale spills out.
   const long = label.length > 5;
+  const fontSize = Math.max(13, Math.min(24, Math.round(112 / label.length)));
 
   return (
-    <span className={className} aria-label={t("free")}>
+    <span className={className} role="img" aria-label={t("free")}>
       <svg viewBox="0 0 100 64" aria-hidden="true">
         <path className="fill-sun" d="M14 12c6-6 14-3 19-7 6-4 13-5 19-1 6-3 14-2 19 2 7 0 13 4 15 10 6 4 8 11 5 17 2 7-1 13-7 16-3 6-10 9-17 8-6 4-14 4-20 1-7 2-14 0-18-5-7-1-12-6-12-13-5-5-5-12 0-17-1-5 2-9 7-11Z" />
-        <text className="fill-ink-black" x="50" y={long ? 39 : 41} textAnchor="middle" fontSize={long ? 16 : 24} fontWeight="1000" fontFamily="inherit" transform="rotate(-9 50 34)" textLength={long ? 64 : undefined} lengthAdjust={long ? "spacingAndGlyphs" : undefined}>{label}</text>
+        <text className="fill-ink-black" x="50" y={Math.round(33 + fontSize * 0.35)} textAnchor="middle" fontSize={fontSize} fontWeight="1000" fontFamily="inherit" transform="rotate(-9 50 34)" textLength={long ? 64 : undefined} lengthAdjust={long ? "spacingAndGlyphs" : undefined}>{label}</text>
       </svg>
       <Rays className="absolute right-[calc(-20*var(--u))] top-[calc(4*var(--u))] w-[calc(22*var(--u))] text-sun [transform:scaleX(-1)_rotate(10deg)]" />
     </span>
@@ -147,7 +149,7 @@ function Header() {
           </a>
         ))}
       </nav>
-      <LocaleSwitcher className="ml-auto max-nav:hidden" />
+      <LocaleSwitcher variant="dropdown" className="ml-auto max-nav:hidden" />
       <div className="ml-[calc(10*var(--u))] max-poster:ml-[12px] max-nav:hidden"><AppStoreBadge compact /></div>
       <MobileMenu label={navigation("openMenu")} navLabel={navigation("mobileLabel")}>
         {MOBILE_NAV.map((item) => (
@@ -159,7 +161,7 @@ function Header() {
             {navigation(item.key)}
           </a>
         ))}
-        <LocaleSwitcher className="mt-2 mx-auto mb-[2px] border-hero-locale-mobile-border bg-hero-locale-mobile-bg [&_a]:text-ink-navy [&_a:hover]:text-ink-navy [&_a[aria-current=page]]:bg-brand-coral [&_a[aria-current=page]]:text-white" />
+        <LocaleSwitcher variant="list" className="mt-2 mb-[2px]" />
         <AppStoreBadge dark className="mt-2 justify-center" />
       </MobileMenu>
     </header>

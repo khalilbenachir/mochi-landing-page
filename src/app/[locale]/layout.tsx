@@ -6,7 +6,7 @@ import "@fontsource-variable/nunito";
 import { PLATFORM_COLORS } from "@/app/platform-colors";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { PUBLIC_SITE_URL, SITE_NAME } from "@/features/landing/content/landing";
-import { localePath, routing, type AppLocale } from "@/i18n/routing";
+import { LOCALE_META, localePath, routing, type AppLocale } from "@/i18n/routing";
 import "../globals.css";
 
 type LocaleLayoutProps = {
@@ -25,9 +25,12 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
   const locale = localeParam as AppLocale;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const canonical = localePath(locale);
-  const languageAlternates = Object.fromEntries(
-    routing.locales.map((supportedLocale) => [supportedLocale, localePath(supportedLocale)]),
-  );
+  const languageAlternates = {
+    ...Object.fromEntries(
+      routing.locales.map((supportedLocale) => [supportedLocale, localePath(supportedLocale)]),
+    ),
+    "x-default": localePath(routing.defaultLocale),
+  };
 
   return {
     ...(PUBLIC_SITE_URL ? { metadataBase: new URL(PUBLIC_SITE_URL) } : {}),
@@ -58,8 +61,10 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
       description: t("description"),
       type: "website",
       siteName: SITE_NAME,
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      locale: LOCALE_META[locale].ogLocale,
+      alternateLocale: routing.locales
+        .filter((candidate) => candidate !== locale)
+        .map((candidate) => LOCALE_META[candidate].ogLocale),
       url: canonical,
     },
     twitter: {

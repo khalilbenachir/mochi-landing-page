@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { useId, useRef, useState, type ReactNode } from "react";
+import { useDismiss } from "@/lib/use-dismiss";
 import { cn } from "@/lib/utils";
 
 const BAR = "block h-[3px] w-[22px] rounded-[3px] bg-hero-menu-icon [transition:transform_0.3s_var(--ease-smooth),opacity_0.2s_ease]";
@@ -15,23 +16,10 @@ export function MobileMenu({ label, navLabel, children }: { label: string; navLa
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
 
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key !== "Escape") return;
-      setOpen(false);
-      buttonRef.current?.focus();
-    };
-    const onPointer = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
-    };
-    document.addEventListener("keydown", onKey);
-    document.addEventListener("pointerdown", onPointer);
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.removeEventListener("pointerdown", onPointer);
-    };
-  }, [open]);
+  useDismiss(rootRef, open, (reason) => {
+    setOpen(false);
+    if (reason === "escape") buttonRef.current?.focus();
+  });
 
   return (
     <div ref={rootRef} data-open={open ? "" : undefined} className="group hidden! max-nav:relative max-nav:z-30 max-nav:ml-auto max-nav:block!">

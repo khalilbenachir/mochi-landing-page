@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { APP_STORE_URL, FAQ_IDS, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
-import { localePath, type AppLocale } from "@/i18n/routing";
+import { LOCALE_META, localePath, type AppLocale } from "@/i18n/routing";
 
 type StructuredDataProps = {
   locale: AppLocale;
@@ -39,7 +39,7 @@ export async function StructuredData({ locale }: StructuredDataProps) {
         offers: {
           "@type": "Offer",
           price: "0",
-          priceCurrency: locale === "fr" ? "EUR" : "USD",
+          priceCurrency: LOCALE_META[locale].currency,
           description: structured("offer"),
         },
         featureList: STRUCTURED_FEATURE_IDS.map((id) => structured(`features.${id}`)),

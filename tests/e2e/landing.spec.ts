@@ -1,6 +1,10 @@
 import { expect, test, type Page } from "@playwright/test";
 import { baseOrigin } from "./origin";
 
+const LOCALES = ["en", "fr", "de", "es", "pt-BR", "pt-PT"] as const;
+type Locale = (typeof LOCALES)[number];
+const localeUrl = (locale: Locale) => (locale === "en" ? "/" : `/${locale}`);
+
 const sectionIds = [
   "top",
   "features",
@@ -82,17 +86,19 @@ test.describe("localized landing routes", () => {
     assertClean();
   });
 
-  test("locale: /fr renders French content at the localized URL", async ({ page }) => {
-    const assertClean = watchPageErrors(page);
-    const response = await page.goto("/fr");
+  for (const locale of LOCALES.filter((candidate) => candidate !== "en")) {
+    test(`locale: /${locale} renders localized content at the localized URL`, async ({ page }) => {
+      const assertClean = watchPageErrors(page);
+      const response = await page.goto(`/${locale}`);
 
-    await waitForPageAssets(page);
-    expect(response?.status()).toBe(200);
-    await expect(page).toHaveURL((url) => url.pathname === "/fr");
-    await expect(page.locator("html")).toHaveAttribute("lang", "fr");
-    await expect(page.locator("main")).toHaveCount(1);
-    assertClean();
-  });
+      await waitForPageAssets(page);
+      expect(response?.status()).toBe(200);
+      await expect(page).toHaveURL((url) => url.pathname === `/${locale}`);
+      await expect(page.locator("html")).toHaveAttribute("lang", locale);
+      await expect(page.locator("main")).toHaveCount(1);
+      assertClean();
+    });
+  }
 
   test("landmarks: all eleven bands and the footer stay in composition order", async ({ page }) => {
     const assertClean = watchPageErrors(page);
@@ -137,6 +143,63 @@ test.describe("localized landing routes", () => {
   });
 });
 
+test.describe("language switcher", () => {
+  test("desktop: dropdown lists every language and navigates to the choice", async ({ page }) => {
+    const assertClean = watchPageErrors(page);
+    await page.setViewportSize({ width: 1440, height: 1200 });
+    await page.goto("/");
+    await waitForPageAssets(page);
+
+    const trigger = page.locator("#top header nav button[aria-expanded]").first();
+    const options = trigger.locator("xpath=..").locator("ul a");
+    await expect(trigger).toHaveAttribute("aria-expanded", "false");
+    await trigger.click();
+    await expect(trigger).toHaveAttribute("aria-expanded", "true");
+    await expect(options).toHaveCount(LOCALES.length);
+    await expect(options.and(page.locator("[aria-current=page]"))).toHaveText("English");
+
+    await page.keyboard.press("Escape");
+    await expect(trigger).toHaveAttribute("aria-expanded", "false");
+    await expect(trigger).toBeFocused();
+
+    await trigger.press("ArrowDown");
+    await expect(trigger).toHaveAttribute("aria-expanded", "true");
+    await expect(options.first()).toBeFocused();
+
+    await options.filter({ hasText: "Deutsch" }).click();
+    await expect(page).toHaveURL((url) => url.pathname === "/de");
+    await expect(page.locator("html")).toHaveAttribute("lang", "de");
+    assertClean();
+  });
+
+  test("phone: burger menu shows every language inline", async ({ page }) => {
+    const assertClean = watchPageErrors(page);
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/es");
+    await waitForPageAssets(page);
+
+    await page.locator("#top header button[aria-expanded]:visible").click();
+    const links = page.locator("#top header a[hreflang]:visible");
+    await expect(links).toHaveCount(LOCALES.length);
+    await expect(links.filter({ hasText: "Español" })).toHaveAttribute("aria-current", "page");
+    await links.filter({ hasText: "Português (Brasil)" }).click();
+    await expect(page).toHaveURL((url) => url.pathname === "/pt-BR");
+    assertClean();
+  });
+});
+
+for (const locale of LOCALES) {
+  test(`layout: ${locale} never scrolls horizontally`, async ({ page }) => {
+    for (const width of [390, 759, 1099, 1440]) {
+      await page.setViewportSize({ width, height: 1000 });
+      await page.goto(localeUrl(locale));
+      await waitForPageAssets(page);
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      expect(overflow, `${locale} at ${width}px`).toBeLessThanOrEqual(0);
+    }
+  });
+}
+
 const visualCases = [
   { name: "desktop", width: 1440, height: 1200 },
   { name: "poster-transition", width: 1099, height: 1000 },
@@ -145,7 +208,7 @@ const visualCases = [
   { name: "wide", width: 1600, height: 1200 },
 ];
 
-for (const locale of ["en", "fr"] as const) {
+for (const locale of LOCALES) {
   for (const viewport of visualCases) {
     test(`visual: ${locale} ${viewport.name} ${viewport.width}x${viewport.height}`, async ({ page }) => {
       const assertClean = watchPageErrors(page);
@@ -153,7 +216,7 @@ for (const locale of ["en", "fr"] as const) {
       await page.clock.install({ time: new Date("2026-11-08T12:00:00Z") });
       await page.clock.pauseAt(new Date("2026-11-08T12:00:00Z"));
       await page.setViewportSize({ width: viewport.width, height: viewport.height });
-      await page.goto(locale === "en" ? "/" : "/fr");
+      await page.goto(localeUrl(locale));
       // Keep Next.js's development toolbar out of visual baselines without changing app CSS.
       await page.addStyleTag({ content: "nextjs-portal { display: none !important; }" });
       await page.locator("nextjs-portal").evaluateAll((portals) => portals.forEach((portal) => portal.remove()));
@@ -169,18 +232,18 @@ for (const locale of ["en", "fr"] as const) {
   }
 }
 
-for (const locale of ["en", "fr"] as const) {
+for (const locale of LOCALES) {
   test(`visual: ${locale} phone menu 390x844`, async ({ page }) => {
     const assertClean = watchPageErrors(page);
     await page.clock.install({ time: new Date("2026-11-08T12:00:00Z") });
     await page.clock.pauseAt(new Date("2026-11-08T12:00:00Z"));
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(locale === "en" ? "/" : "/fr");
+    await page.goto(localeUrl(locale));
     await page.addStyleTag({ content: "nextjs-portal { display: none !important; }" });
     await page.locator("nextjs-portal").evaluateAll((portals) => portals.forEach((portal) => portal.remove()));
     await expect(page.locator("nextjs-portal")).toHaveCount(0);
     await waitForPageAssets(page);
-    const menuButton = page.locator("#top header button[aria-expanded]");
+    const menuButton = page.locator("#top header button[aria-expanded]:visible");
     await menuButton.click();
     await expect(menuButton).toHaveAttribute("aria-expanded", "true");
     await expect(page).toHaveScreenshot(`${locale}-phone-menu-390x844.png`, { animations: "disabled" });

@@ -44,7 +44,7 @@ function Badge({ lines }: { lines: readonly string[] }) {
 function PromiseIcon({ name }: { name: "lock" | "offline" | "cloud" }) {
   return (
     <span className="mt-[calc(1*var(--u))] grid h-[calc(32*var(--u))] w-[calc(32*var(--u))] place-items-center rounded-[50%] bg-white" aria-hidden="true">
-      <svg className="h-[62%] w-[62%]" viewBox="0 0 24 24">
+      <svg className="h-[62%] w-[62%]" viewBox="0 0 24 24" aria-hidden="true">
         <g className="stroke-ink-deep" fill="none" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           {name === "lock" && <><rect x="5" y="10.5" width="14" height="10" rx="2.2" /><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" /><path d="M12 14.5v2.5" /></>}
           {name === "offline" && <><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 15.8a5 5 0 0 1 6.8 0" /><circle className="fill-ink-deep" cx="12" cy="19" r="1" /><path d="M4 3.5 20 20.5" /></>}
@@ -91,7 +91,7 @@ export function PrivacySection() {
 
         <div className="relative z-1 ml-[calc(43*var(--u))] mt-[calc(4*var(--u))] -mb-[calc(var(--section-space)+17*var(--u))] w-[calc(86*var(--u))] self-end [grid-area:2/1] max-poster:[--u:calc(min(100vw-32px,420px)/236)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[10px] max-poster:h-[calc(46*var(--u))] max-poster:w-[calc(80*var(--u))] max-poster:overflow-visible max-poster:[clip-path:inset(-40px_-40px_0_-40px)]" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
-          <svg className="absolute left-[calc(48*var(--u))] top-[calc(17*var(--u))] w-[calc(32*var(--u))] [filter:drop-shadow(0_calc(1*var(--u))_0_var(--color-privacy-hug-shadow))]" viewBox="0 0 24 24"><path className="fill-brand-rose" d="M12 21.2C5.4 16.6 2 13 2 8.8 2 5.7 4.4 3.4 7.3 3.4c2 0 3.6 1 4.7 2.6 1.1-1.6 2.7-2.6 4.7-2.6 2.9 0 5.3 2.3 5.3 5.4 0 4.2-3.4 7.8-10 12.4Z" /><path className="fill-privacy-hug-highlight" d="M6.5 6.4c1.2-.8 2.6-.4 3.1.4-.9.1-1.9.6-2.6 1.6-.5-.5-.8-1.3-.5-2Z" /></svg>
+          <svg className="absolute left-[calc(48*var(--u))] top-[calc(17*var(--u))] w-[calc(32*var(--u))] [filter:drop-shadow(0_calc(1*var(--u))_0_var(--color-privacy-hug-shadow))]" viewBox="0 0 24 24" aria-hidden="true"><path className="fill-brand-rose" d="M12 21.2C5.4 16.6 2 13 2 8.8 2 5.7 4.4 3.4 7.3 3.4c2 0 3.6 1 4.7 2.6 1.1-1.6 2.7-2.6 4.7-2.6 2.9 0 5.3 2.3 5.3 5.4 0 4.2-3.4 7.8-10 12.4Z" /><path className="fill-privacy-hug-highlight" d="M6.5 6.4c1.2-.8 2.6-.4 3.1.4-.9.1-1.9.6-2.6 1.6-.5-.5-.8-1.3-.5-2Z" /></svg>
           <Rays className="absolute left-[calc(90*var(--u))] top-[calc(5*var(--u))] w-[calc(24*var(--u))] text-privacy-gold max-poster:hidden" />
         </div>
 
