@@ -18,7 +18,7 @@ const LEAVES = Array.from({ length: 7 }, (_, i) => {
 
 function Laurel({ side }: { side: "left" | "right" }) {
   return (
-    <svg className={cn("h-[calc(52*var(--u))] w-[calc(26*var(--u))] flex-none overflow-visible", side === "right" && "[transform:scaleX(-1)]")} viewBox="0 0 30 60" aria-hidden="true">
+    <svg className={cn("h-[calc(46*var(--u))] w-[calc(23*var(--u))] flex-none overflow-visible", side === "right" && "[transform:scaleX(-1)]")} viewBox="0 0 30 60" aria-hidden="true">
       <path d="M20 58Q-7 32 18 4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
       {LEAVES.map((leaf, i) => (
         <g key={i} transform={`translate(${leaf.x} ${leaf.y}) rotate(${leaf.angle}) scale(${leaf.s})`}>
@@ -33,9 +33,9 @@ function Laurel({ side }: { side: "left" | "right" }) {
 
 function Badge({ lines }: { lines: readonly string[] }) {
   return (
-    <div className="mt-[calc(14*var(--u))] flex h-[calc(50*var(--u))] items-center justify-center gap-[calc(1*var(--u))] text-privacy-gold">
+    <div className="mt-[calc(14*var(--u))] flex min-h-[calc(50*var(--u))] items-center justify-center gap-[calc(1*var(--u))] text-privacy-gold">
       <Laurel side="left" />
-      <p className="m-0 grid min-w-[calc(56*var(--u))] text-[calc(12*var(--u))] leading-[1.12] text-white">{lines.map((line, index) => index < 2 ? <b key={line} className="whitespace-nowrap font-[1000]">{line}</b> : line ? <span key={line} className="font-[650]">{line}</span> : null)}</p>
+      <p className="relative z-1 -mx-[calc(5*var(--u))] m-0 grid min-w-[calc(56*var(--u))] text-[calc(11*var(--u))] leading-[1.12] text-white">{lines.map((line, index) => index < 2 ? <b key={line} className="whitespace-nowrap font-[1000]">{line}</b> : line ? <span key={line} className="text-[calc(10*var(--u))] font-[650]">{line}</span> : null)}</p>
       <Laurel side="right" />
     </div>
   );
@@ -79,34 +79,34 @@ export function PrivacySection() {
 
   return (
     <section id="privacy" className="relative overflow-hidden bg-privacy-band text-white">
-      <PosterStage className="aspect-[1024/152] max-poster:px-[clamp(16px,4vw,40px)] max-poster:pb-0 max-poster:pt-[36px] max-phone:pt-[30px]">
-        <div className="absolute z-2 left-[calc(52*var(--u))] top-[calc(5*var(--u))] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:max-w-[640px] max-poster:mx-auto max-poster:text-center">
-          <h2 className="m-0 text-white text-[calc(33.5*var(--u))] font-[1000] leading-[0.98] tracking-[-0.015em] max-poster:text-[clamp(34px,6vw,50px)] max-phone:text-[32px]">
-            <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title1")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
+      <PosterStage className="grid items-center justify-start pl-[calc(52*var(--u))] [grid-template-columns:calc(318*var(--u))_calc(360*var(--u))_auto] [grid-template-rows:1fr_auto] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
+        <div className="relative z-2 self-start pr-[calc(22*var(--u))] [grid-area:1/1] max-poster:pr-0 max-poster:max-w-[640px] max-poster:mx-auto max-poster:text-center">
+          <h2 className="poster:text-balance m-0 text-white text-[calc(33.5*var(--u))] font-[1000] leading-[0.98] tracking-[-0.015em] max-poster:text-[clamp(34px,6vw,50px)] max-phone:text-[32px]">
+            <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span>
           </h2>
-          <p className="mt-[calc(5*var(--u))] mb-0 mx-0 text-privacy-body-text text-[calc(14.6*var(--u))] font-[650] leading-[1.2] max-poster:max-w-[480px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">
-            <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("body1")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("body2")}</span>
+          <p className="poster:text-balance mt-[calc(5*var(--u))] mb-0 mx-0 text-privacy-body-text text-[calc(14.6*var(--u))] font-[650] leading-[1.2] max-poster:max-w-[480px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">
+            <span className="block max-poster:inline">{t("body1")}</span> <span className="block max-poster:inline">{t("body2")}</span>
           </p>
         </div>
 
-        <div className="absolute z-1 left-[calc(95*var(--u))] top-[calc(107*var(--u))] w-[calc(86*var(--u))] max-poster:[--u:calc(min(100vw-32px,420px)/236)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:mb-0 max-poster:mt-[10px] max-poster:h-[calc(46*var(--u))] max-poster:w-[calc(80*var(--u))] max-poster:overflow-visible max-poster:[clip-path:inset(-40px_-40px_0_-40px)]" aria-hidden="true">
+        <div className="relative z-1 ml-[calc(43*var(--u))] mt-[calc(4*var(--u))] -mb-[calc(var(--section-space)+17*var(--u))] w-[calc(86*var(--u))] self-end [grid-area:2/1] max-poster:[--u:calc(min(100vw-32px,420px)/236)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[10px] max-poster:h-[calc(46*var(--u))] max-poster:w-[calc(80*var(--u))] max-poster:overflow-visible max-poster:[clip-path:inset(-40px_-40px_0_-40px)]" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
           <svg className="absolute left-[calc(48*var(--u))] top-[calc(17*var(--u))] w-[calc(32*var(--u))] [filter:drop-shadow(0_calc(1*var(--u))_0_var(--color-privacy-hug-shadow))]" viewBox="0 0 24 24"><path className="fill-brand-rose" d="M12 21.2C5.4 16.6 2 13 2 8.8 2 5.7 4.4 3.4 7.3 3.4c2 0 3.6 1 4.7 2.6 1.1-1.6 2.7-2.6 4.7-2.6 2.9 0 5.3 2.3 5.3 5.4 0 4.2-3.4 7.8-10 12.4Z" /><path className="fill-privacy-hug-highlight" d="M6.5 6.4c1.2-.8 2.6-.4 3.1.4-.9.1-1.9.6-2.6 1.6-.5-.5-.8-1.3-.5-2Z" /></svg>
           <Rays className="absolute left-[calc(90*var(--u))] top-[calc(5*var(--u))] w-[calc(24*var(--u))] text-privacy-gold max-poster:hidden" />
         </div>
 
-        <ul className="absolute left-[calc(370*var(--u))] top-[calc(5*var(--u))] m-0 grid w-[calc(360*var(--u))] list-none p-0 [grid-template-columns:repeat(3,1fr)] max-poster:[--u:calc(min(100vw-32px,600px)/360)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:mb-0 max-poster:mt-[30px]">
+        <ul className="relative m-0 grid [grid-area:1/2/3/3] w-[calc(360*var(--u))] list-none p-0 [grid-template-columns:repeat(3,minmax(0,1fr))] max-poster:[--u:calc(min(100vw-32px,600px)/360)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[30px]">
           {PROMISES.map((item) => (
             <li key={item.id} className="relative flex flex-col items-center text-center not-first:before:absolute not-first:before:left-0 not-first:before:top-[calc(10*var(--u))] not-first:before:h-[calc(62*var(--u))] not-first:before:[border-left:calc(1*var(--u))_solid_var(--color-privacy-promise-divider)] not-first:before:content-['']">
               <PromiseIcon name={item.icon} />
               <b className="mt-[calc(4*var(--u))] text-[calc(12.8*var(--u))] font-[1000]">{t(`promises.${item.id}.title`)}</b>
-              <span className="mt-[calc(1*var(--u))] text-privacy-promise-detail-text text-[calc(10.4*var(--u))] font-[650] leading-[1.22]">{t(`promises.${item.id}.line1`)}<br />{t(`promises.${item.id}.line2`)}</span>
+              <span className="mt-[calc(1*var(--u))] flex-1 text-privacy-promise-detail-text text-[calc(10.4*var(--u))] font-[650] leading-[1.22]"><span className="block">{t(`promises.${item.id}.line1`)}</span><span className="block text-balance">{t(`promises.${item.id}.line2`)}</span></span>
               <Badge lines={[t(`promises.${item.id}.badge1`), t(`promises.${item.id}.badge2`), t(`promises.${item.id}.badge3`)]} />
             </li>
           ))}
         </ul>
 
-        <div className="absolute left-[calc(742*var(--u))] top-[calc(8*var(--u))] h-[calc(133*var(--u))] w-[calc(236*var(--u))] pb-0 pl-[calc(18*var(--u))] pr-[calc(16*var(--u))] pt-[calc(12*var(--u))] rounded-[calc(14*var(--u))] bg-white text-ink-deep max-poster:[--u:calc(min(100vw-32px,330px)/236)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:mt-[28px] max-poster:mb-0 max-poster:h-auto max-poster:pb-[calc(14*var(--u))]">
+        <div className="relative ml-[calc(12*var(--u))] w-[calc(236*var(--u))] [grid-area:1/3/3/4] pb-[calc(14*var(--u))] pl-[calc(18*var(--u))] pr-[calc(16*var(--u))] pt-[calc(12*var(--u))] rounded-[calc(14*var(--u))] bg-white text-ink-deep max-poster:[--u:calc(min(100vw-32px,330px)/236)] max-poster:mx-auto max-poster:mt-[28px] max-poster:mb-0">
           <h3 className="mt-0 mx-0 mb-[calc(8*var(--u))] text-[calc(21.5*var(--u))] font-[1000] tracking-[-0.01em]">{t("staysTitle")}</h3>
           <ul className="m-0 grid list-none gap-[calc(7*var(--u))] p-0">
             {STAYS.map((line) => (

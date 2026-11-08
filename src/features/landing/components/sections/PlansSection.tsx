@@ -33,7 +33,7 @@ function Heart({ className }: { className?: string }) {
 }
 
 const RAYS = "absolute z-2 text-sun-ray max-poster:hidden";
-const PLAN = "absolute z-2 top-[calc(31*var(--u))] h-[calc(126*var(--u))] pb-0 pl-[calc(16*var(--u))] pr-[calc(18*var(--u))] pt-[calc(13*var(--u))] rounded-[calc(12*var(--u))] max-poster:[--u:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:h-auto max-poster:w-[calc(262*var(--u))] max-poster:pb-[calc(14*var(--u))]";
+const PLAN = "relative z-2 pb-[calc(14*var(--u))] pl-[calc(16*var(--u))] pr-[calc(18*var(--u))] pt-[calc(13*var(--u))] rounded-[calc(12*var(--u))] max-poster:[--u:calc(min(100vw-32px,420px)/262)] max-poster:w-[calc(262*var(--u))]";
 const PLAN_TITLE = "mt-0 mx-0 mb-[calc(10*var(--u))] flex items-center gap-[calc(5*var(--u))] text-[calc(19.5*var(--u))] font-[1000] tracking-[-0.02em] whitespace-nowrap";
 const PLAN_ITEM = "flex items-start gap-[calc(10*var(--u))] text-[calc(11*var(--u))] font-[800] leading-[1.2]";
 
@@ -44,28 +44,28 @@ export function PlansSection() {
 
   return (
     <section id="plus" className="relative overflow-visible bg-plans-band text-ink-navy">
-      <PosterStage grid="800" className="aspect-[800/170] max-poster:grid max-poster:justify-items-center max-poster:px-[clamp(16px,4vw,40px)] max-poster:pb-[40px] max-poster:pt-[36px] max-phone:pb-[32px] max-phone:pt-[30px]">
-        <h2 className="absolute z-2 left-[calc(31*var(--u))] top-[calc(31*var(--u))] m-0 text-[calc(26.5*var(--u))] font-[1000] leading-[1.2] tracking-[-0.02em] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
-          <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title1")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title2")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title3")}</span>
+      <PosterStage grid="800" className="grid [grid-template-columns:calc(281*var(--u))_calc(223*var(--u))_calc(268*var(--u))] max-poster:grid-cols-1 max-poster:justify-items-center max-poster:px-[clamp(16px,4vw,40px)]">
+        <h2 className="poster:text-balance relative z-2 my-0 mr-0 ml-[calc(31*var(--u))] self-start text-[calc(26.5*var(--u))] font-[1000] leading-[1.2] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
+          <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span> <span className="block max-poster:inline">{t("title3")}</span>
         </h2>
-        <Rays className={cn(RAYS, "left-[calc(208*var(--u))] top-[calc(74*var(--u))] w-[calc(26*var(--u))]")} flip />
-        <Heart className="absolute left-[calc(222*var(--u))] top-[calc(121*var(--u))] w-[calc(28*var(--u))] [transform:rotate(10deg)] max-poster:hidden" />
-        <div className="absolute left-[calc(102*var(--u))] top-[calc(125*var(--u))] h-[calc(45*var(--u))] w-[calc(104*var(--u))] overflow-hidden max-poster:hidden" aria-hidden="true">
+        <Rays className={cn(RAYS, "left-[calc(208*var(--u))] top-[calc(69*var(--u))] w-[calc(26*var(--u))]")} flip />
+        <Heart className="absolute left-[calc(222*var(--u))] bottom-[calc(24*var(--u))] w-[calc(28*var(--u))] [transform:rotate(10deg)] max-poster:hidden" />
+        <div className="absolute left-[calc(102*var(--u))] bottom-0 h-[calc(45*var(--u))] w-[calc(104*var(--u))] overflow-hidden max-poster:hidden" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
         </div>
 
-        <div className={cn(PLAN, "left-[calc(281*var(--u))] w-[calc(223*var(--u))] bg-white [box-shadow:0_calc(3*var(--u))_calc(10*var(--u))_var(--color-plans-free-shadow)] max-poster:mt-[24px]")}>
+        <div className={cn(PLAN, "w-[calc(223*var(--u))] bg-white [box-shadow:0_calc(3*var(--u))_calc(10*var(--u))_var(--color-plans-free-shadow)] max-poster:mt-[24px]")}>
           <h3 className={PLAN_TITLE}>{t("freeName")} — <span className="inline-grid h-[calc(22*var(--u))] place-items-center rounded-[999px] bg-brand-coral px-[calc(12*var(--u))] text-[calc(15*var(--u))] text-white">{t("freeLabel")}</span></h3>
           <ul className="m-0 grid list-none gap-[calc(6*var(--u))] p-0">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><Check />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-1 left-[calc(553*var(--u))] top-[calc(-17*var(--u))] flex w-[calc(146*var(--u))] max-poster:[--u:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mb-[calc(-12*var(--u))] max-poster:mt-[22px]" aria-hidden="true">
+        <div className="absolute z-1 left-[calc(553*var(--u))] top-[calc(var(--section-space)-48*var(--u))] flex w-[calc(146*var(--u))] max-poster:[--u:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mb-[calc(-12*var(--u))] max-poster:mt-[22px]" aria-hidden="true">
           <Rays className={cn(RAYS, "left-[calc(-22*var(--u))] top-[calc(6*var(--u))] w-[calc(20*var(--u))]")} />
           <Image className="h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.chocolate} alt="" width={380} height={262} sizes="8vw" />
           <Image className="ml-[calc(-2*var(--u))] h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.hojicha} alt="" width={380} height={262} sizes="8vw" />
           <Rays className={cn(RAYS, "right-[calc(-26*var(--u))] top-[calc(8*var(--u))] w-[calc(20*var(--u))]")} flip />
         </div>
-        <div className={cn(PLAN, "left-[calc(510*var(--u))] w-[calc(262*var(--u))] bg-plans-plus-bg text-white")}>
+        <div className={cn(PLAN, "ml-[calc(6*var(--u))] w-[calc(262*var(--u))] bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-[calc(22*var(--u))] place-items-center rounded-[calc(7*var(--u))] bg-white px-[calc(10*var(--u))] text-[calc(12.5*var(--u))] text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>
           <ul className="m-0 grid list-none gap-[calc(8*var(--u))] p-0 pr-[calc(52*var(--u))]">{PLUS_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><Check />{t(`plusFeatures.${id}`)}</li>)}</ul>
         </div>

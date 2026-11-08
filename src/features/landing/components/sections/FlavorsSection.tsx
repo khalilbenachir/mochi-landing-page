@@ -22,16 +22,16 @@ export function FlavorsSection() {
 
   return (
     <section id="flavors" className="relative overflow-hidden bg-flavors-band text-white">
-      <PosterStage className="aspect-[1024/212] max-poster:px-[clamp(16px,4vw,40px)] max-poster:pb-[40px] max-poster:pt-[36px] max-phone:pb-[30px] max-phone:pt-[30px]">
-        <div className="absolute z-2 left-[calc(47*var(--u))] top-[calc(13*var(--u))] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:my-0 max-poster:max-w-[640px] max-poster:text-center">
-          <h2 className="m-0 text-white text-[calc(31*var(--u))] font-[1000] leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[32px]">
-            <span className="block whitespace-nowrap max-poster:inline">{t("title1")}</span> <span className="block whitespace-nowrap max-poster:inline">{t("title2")}</span> <span className="block whitespace-nowrap max-poster:inline">{t("title3")}</span>
+      <PosterStage className="grid items-start px-[calc(47*var(--u))] [grid-template-columns:calc(277*var(--u))_calc(663*var(--u))] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
+        <div className="relative z-2 pr-[calc(12*var(--u))] pt-[calc(2*var(--u))] max-poster:pr-0 max-poster:mx-auto max-poster:max-w-[640px] max-poster:pt-0 max-poster:text-center">
+          <h2 className="poster:text-balance m-0 text-white text-[calc(31*var(--u))] font-[1000] leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[32px]">
+            <span className="block max-poster:inline max-poster:whitespace-nowrap">{t("title1")}</span> <span className="block max-poster:inline max-poster:whitespace-nowrap">{t("title2")}</span> <span className="block max-poster:inline max-poster:whitespace-nowrap">{t("title3")}</span>
           </h2>
           <p className="mt-[calc(11*var(--u))] mb-0 mx-0 w-[calc(215*var(--u))] text-[calc(15.5*var(--u))] font-[700] leading-[1.3] max-poster:w-auto max-poster:max-w-[420px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
-        <Rays className="absolute left-[calc(262*var(--u))] top-[calc(12*var(--u))] w-[calc(36*var(--u))] text-flavors-sun max-poster:hidden" />
+        <Rays className="absolute left-[calc(262*var(--u))] top-[calc(4*var(--u))] w-[calc(36*var(--u))] text-flavors-sun max-poster:hidden" />
 
-        <ul className="absolute left-[calc(324*var(--u))] top-[calc(11*var(--u))] grid w-[calc(663*var(--u))] [grid-template-columns:repeat(6,1fr)] [grid-template-rows:calc(86*var(--u))_calc(99*var(--u))] gap-[calc(7*var(--u))] m-0 p-0 list-none max-poster:[--u:calc(min(100vw-32px,760px)/445)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:w-full max-poster:max-w-[760px] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto max-poster:[grid-template-columns:repeat(4,1fr)] max-poster:[grid-template-rows:none] max-poster:[grid-auto-rows:calc(100*var(--u))] max-tablet:[--u:calc((100vw-32px)/330)] max-tablet:[grid-template-columns:repeat(3,1fr)] max-tablet:[grid-auto-rows:calc(102*var(--u))]">
+        <ul className="grid w-[calc(663*var(--u))] [grid-template-columns:repeat(6,1fr)] [grid-template-rows:calc(86*var(--u))_calc(99*var(--u))] gap-[calc(7*var(--u))] m-0 p-0 list-none max-poster:[--u:calc(min(100vw-32px,760px)/445)] max-poster:w-full max-poster:max-w-[760px] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto max-poster:[grid-template-columns:repeat(4,1fr)] max-poster:[grid-template-rows:none] max-poster:[grid-auto-rows:calc(100*var(--u))] max-tablet:[--u:calc((100vw-32px)/330)] max-tablet:[grid-template-columns:repeat(3,1fr)] max-tablet:[grid-auto-rows:calc(102*var(--u))]">
           {FLAVOR_CATALOG.map((flavor) => (
             <li
               key={flavor.id}
