@@ -15,8 +15,7 @@
   },
   "LocaleSwitcher": {
     "label": "Langue",
-    "en": "Anglais",
-    "fr": "Français"
+    "change": "Changer de langue, actuelle : {language}"
   },
   "Common": {
     "brand": "Mochi",

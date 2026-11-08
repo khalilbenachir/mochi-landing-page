@@ -1,0 +1,252 @@
+{
+  "Metadata": {
+    "title": "Mochi – privater Periodentracker fürs iPhone",
+    "description": "Mochi ist ein kostenloser, privater Periodentracker fürs iPhone mit Zyklusprognosen, optionaler Erinnerung zum Bindenwechsel, Stimmungstagebuch, Serien und 12 sammelbaren Mochi-Sorten."
+  },
+  "Navigation": {
+    "mainLabel": "Hauptnavigation",
+    "mobileLabel": "Mobile Navigation",
+    "openMenu": "Navigationsmenü öffnen",
+    "features": "Funktionen",
+    "flavors": "Sorten",
+    "privacy": "Datenschutz",
+    "plus": "Mochi Plus",
+    "faq": "FAQ"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache",
+    "change": "Sprache ändern, aktuell: {language}"
+  },
+  "Common": {
+    "brand": "Mochi",
+    "brandHome": "Mochi Startseite",
+    "appStoreAria": "Mochi im App Store laden",
+    "download": "Laden im App Store",
+    "downloadOn": "Laden im",
+    "appStore": "App Store",
+    "free": "Gratis",
+    "optional": "Optional",
+    "backToTop": "Mochi: Periodentracker, nach oben"
+  },
+  "Hero": {
+    "title1": "Der süße, private",
+    "title2": "Periodentracker",
+    "title3": "fürs iPhone",
+    "body": "Mochi ist ein kostenloser Periodentracker fürs iPhone, der deine nächste Periode vorhersagt, dich an den Bindenwechsel erinnert und den täglichen Check-in zum Spiel macht. Kein Konto nötig.",
+    "mascotAlt": "Mochi, ein lächelndes rosa Mochi-Maskottchen, auf einem cremefarbenen Kissen",
+    "phoneAlt": "Mochi-Startbildschirm auf dem iPhone mit Tag 2 der Periode und den Kurzbefehlen Periode, Stimmung und Symptome"
+  },
+  "Island": {
+    "title1": "Erinnerung zum",
+    "title2": "Bindenwechsel in",
+    "title3": "der Dynamic Island",
+    "body": "Tagesbinde, Nachtbinde oder Slipeinlage, 2 bis 8 Stunden. Mochi zählt auf dem Home-Bildschirm, in der Dynamic Island und auf dem Sperrbildschirm herunter.",
+    "phoneLabel": "iPhone Dynamic Island mit Mochi und einem Countdown zum Bindenwechsel",
+    "timerPrefix": "Wechsel in",
+    "countdownLabel": "Countdown zum Bindenwechsel"
+  },
+  "Moods": {
+    "title1": "Wie fühlst du dich?",
+    "title2": "Mochi fühlt mit dir.",
+    "body": "Tippe auf Mochi, um Stimmung, Symptome und Blutung in Sekunden einzutragen.",
+    "phoneLabel": "Mochi-Ansicht Heute eintragen mit Stimmungsgesichtern und Symptomauswahl",
+    "logToday": "Heute eintragen",
+    "mood": "Stimmung",
+    "symptoms": "Symptome",
+    "moodNames": {
+      "happy": "Fröhlich",
+      "sleepy": "Müde",
+      "crampy": "Krämpfe",
+      "cozy": "Gemütlich"
+    },
+    "symptomNames": {
+      "cramps": "Krämpfe",
+      "bloating": "Blähbauch",
+      "headache": "Kopfweh",
+      "tired": "Erschöpft"
+    }
+  },
+  "Flavors": {
+    "title1": "Halte deine",
+    "title2": "Serie, sammle",
+    "title3": "12 Mochi-Sorten",
+    "body": "Trag jeden Tag ein bisschen ein und neue Mochi kommen in deine Sammlung.",
+    "items": {
+      "strawberry": { "name": "Erdbeere", "unlock": "Start" },
+      "classic": { "name": "Klassik", "unlock": "Start" },
+      "matcha": { "name": "Matcha", "unlock": "Start" },
+      "ube": { "name": "Ube", "unlock": "7-Tage-Serie" },
+      "mango": { "name": "Mango", "unlock": "14-Tage-Serie" },
+      "sesame": { "name": "Sesam", "unlock": "30-Tage-Serie" },
+      "yuzu": { "name": "Yuzu", "unlock": "60-Tage-Serie" },
+      "chocolate": { "name": "Schoko", "unlock": "90-Tage-Serie" },
+      "hojicha": { "name": "Hojicha", "unlock": "180-Tage-Serie" },
+      "sakura": { "name": "Sakura", "unlock": "150 Blüten" },
+      "peach": { "name": "Pfirsich", "unlock": "Krampf-Challenge" },
+      "coconut": { "name": "Kokos", "unlock": "Ruhige Woche" }
+    }
+  },
+  "Predictions": {
+    "title1": "Perioden- und",
+    "title2": "Eisprungprognosen,",
+    "title3": "die mitlernen",
+    "body1": "Mochi liest deine eingetragenen Zyklen, um",
+    "body2": "nächste Periode, fruchtbare Tage und Eisprung zu schätzen.",
+    "disclaimer": "Prognosen sind Schätzungen, keine Verhütung.",
+    "phoneLabel": "Mochi-Zykluskalender mit einer markierten fünftägigen Periode",
+    "cycle": "Zyklus",
+    "month": "März 2025",
+    "weekdays": {
+      "sun": "So",
+      "mon": "Mo",
+      "tue": "Di",
+      "wed": "Mi",
+      "thu": "Do",
+      "fri": "Fr",
+      "sat": "Sa"
+    },
+    "period": "Periode",
+    "fertileWindow": "Fruchtbare Tage",
+    "ovulation": "Eisprung",
+    "nextPeriodIn": "Nächste Periode in",
+    "nextPeriodValue": "12 Tagen",
+    "cycleLength": "Zykluslänge",
+    "cycleLengthValue": "28 Tage",
+    "nextPeriod": "Nächste Periode",
+    "nextPeriodDate": "15. März",
+    "mascotAlt": "Fröhlicher Mochi"
+  },
+  "Privacy": {
+    "title1": "Dein Zyklus bleibt",
+    "title2": "auf dem iPhone",
+    "body1": "Periodendaten, Blutung, Symptome und Stimmungen",
+    "body2": "landen nie in Analysen, Logs oder Absturzberichten.",
+    "promises": {
+      "private": {
+        "title": "Privat",
+        "line1": "Bleibt auf",
+        "line2": "deinem iPhone",
+        "badge1": "100 %",
+        "badge2": "Privat",
+        "badge3": "by Design"
+      },
+      "offline": {
+        "title": "Offline",
+        "line1": "Alle Kernfunktionen,",
+        "line2": "ohne Anmeldung",
+        "badge1": "Läuft",
+        "badge2": "Offline",
+        "badge3": "immer"
+      },
+      "account": {
+        "title": "Kein Konto",
+        "line1": "Backup optional,",
+        "line2": "nur wenn du willst",
+        "badge1": "Kein Konto",
+        "badge2": "nötig",
+        "badge3": ""
+      }
+    },
+    "staysTitle": "Bleibt bei dir",
+    "stays": {
+      "dates": "Periodendaten und Prognosen",
+      "logs": "Blutung, Symptome, Stimmungen",
+      "reminders1": "Wechsel-Erinnerungen,",
+      "reminders2": "auf deinem iPhone"
+    }
+  },
+  "Comparison": {
+    "title1": "Warum",
+    "title2": "Mochi?",
+    "caption": "Mochi im Vergleich mit einer typischen Perioden-App",
+    "mochi": "Mochi",
+    "typical": "Typische Perioden-App",
+    "rows": {
+      "account": { "feature": "Konto erforderlich", "mochi": "Nein", "typical": "Oft" },
+      "offline": { "feature": "Funktioniert offline", "mochi": "Ja", "typical": "Teils" },
+      "reminder": { "feature": "Erinnerung im Sperrbildschirm", "mochi": "Ja", "typical": "Selten" },
+      "analytics": { "feature": "Zyklusdaten in Analysen", "mochi": "Nie", "typical": "Teils" },
+      "rewards": { "feature": "Belohnung fürs Eintragen", "mochi": "Serien + 12 Sorten", "typical": "Selten" }
+    }
+  },
+  "Plans": {
+    "title1": "Gratis laden.",
+    "title2": "Mochi Plus",
+    "title3": "ist optional.",
+    "freeName": "Mochi",
+    "freeLabel": "Gratis",
+    "plusName": "Mochi Plus",
+    "freeFeatures": {
+      "tracking": "Zyklustracking und Prognosen",
+      "reminder": "Erinnerung zum Bindenwechsel",
+      "rewards": "Stimmungen, Serien und Sorten",
+      "offline": "Offline, ohne Konto"
+    },
+    "plusFeatures": {
+      "everything": "Alles aus Gratis",
+      "flavors": "Alle drei Start-Mochi plus Extra-Sorten",
+      "insights": "Einblicke in deinen Zyklus"
+    }
+  },
+  "Account": {
+    "kicker": "Optionales Konto",
+    "title": "Nutze Mochi sofort. Sichere, wann du willst.",
+    "body": "Alles funktioniert ohne Konto. Erstelle nur dann ein kostenloses Konto, wenn du Backup und Sync für ein neues iPhone möchtest.",
+    "backup": "Zyklus-Backup",
+    "synced": "Mit deinem Konto synchronisiert",
+    "imageAlt": "Mochi umarmt ein verschlossenes Tagebuch"
+  },
+  "FAQ": {
+    "title1": "Perioden-",
+    "title2": "tracker",
+    "title3": "FAQ",
+    "items": {
+      "what": {
+        "question": "Was ist Mochi?",
+        "answer": "Mochi ist eine Periodentracker-App fürs iPhone mit einem süßen Maskottchen. Sie sagt deine nächste Periode voraus, erinnert dich an den Bindenwechsel und belohnt tägliche Check-ins mit 12 sammelbaren Sorten."
+      },
+      "free": {
+        "question": "Ist Mochi kostenlos?",
+        "answer": "Ja. Zyklustracking, Prognosen, die Erinnerung zum Bindenwechsel, Stimmungen, Serien und die Start-Sorten sind kostenlos. Mochi Plus ist optional."
+      },
+      "private": {
+        "question": "Sind meine Periodendaten privat?",
+        "answer": "Ja. Periodendaten, Blutung, Symptome und Stimmungen bleiben auf deinem iPhone und werden nie an Analysen, Logs oder Absturzberichte gesendet."
+      },
+      "offline": {
+        "question": "Funktioniert Mochi ohne Konto oder Internet?",
+        "answer": "Ja. Alle Kernfunktionen laufen offline und du brauchst kein Konto. Ein Konto ist optional, wenn du Backup und Sync möchtest."
+      },
+      "reminder": {
+        "question": "Wie funktioniert die Erinnerung zum Bindenwechsel?",
+        "answer": "Wähle Tagesbinde, Nachtbinde oder Slipeinlage und eine Dauer von 2 bis 8 Stunden. Mochi zählt auf dem Home-Bildschirm, in der Dynamic Island und auf dem Sperrbildschirm herunter."
+      },
+      "lockScreen": {
+        "question": "Zeigt mein Sperrbildschirm, dass ich meine Periode habe?",
+        "answer": "Nein. Die Live-Aktivität nutzt private, diskrete Formulierungen und verrät nie, dass du deine Periode hast."
+      },
+      "medical": {
+        "question": "Kann ich Mochi zur Verhütung nutzen?",
+        "answer": "Nein. Mochis Prognosen sind Schätzungen, die dir helfen, deine Periode im Blick zu behalten. Sie sind keine Verhütung, Diagnose oder medizinische Beratung."
+      }
+    }
+  },
+  "Closing": {
+    "title": "Sag Hallo zu Mochi",
+    "body1": "Tracke deinen Zyklus, sammle süße Sorten und hab",
+    "body2": "einen kleinen Freund an deiner Seite, in jeder Phase.",
+    "imageAlt": "Mochi auf einem Kissen",
+    "brand": "Mochi: Periodentracker"
+  },
+  "StructuredData": {
+    "offer": "Kostenlos laden. Optionales Mochi Plus Abo in der App erhältlich.",
+    "features": {
+      "predictions": "Perioden- und Eisprungprognosen",
+      "reminders": "Erinnerungen zum Bindenwechsel in der Dynamic Island und auf dem Sperrbildschirm",
+      "logging": "Stimmungs-, Symptom- und Blutungstagebuch",
+      "offline": "Offline-Nutzung ohne Konto",
+      "backup": "Optionales Konto-Backup und Sync",
+      "rewards": "Serien und 12 sammelbare Mochi-Sorten"
+    }
+  }
+}

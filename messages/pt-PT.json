@@ -1,0 +1,252 @@
+{
+  "Metadata": {
+    "title": "Mochi – registo do período privado para iPhone",
+    "description": "Mochi é uma app gratuita e privada para registar o período no iPhone, com previsões do ciclo, lembrete opcional para trocar o penso, registo do humor, sequências e 12 sabores de Mochi colecionáveis."
+  },
+  "Navigation": {
+    "mainLabel": "Navegação principal",
+    "mobileLabel": "Navegação móvel",
+    "openMenu": "Abrir o menu de navegação",
+    "features": "Funcionalidades",
+    "flavors": "Sabores",
+    "privacy": "Privacidade",
+    "plus": "Mochi Plus",
+    "faq": "FAQ"
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma",
+    "change": "Mudar idioma, atual: {language}"
+  },
+  "Common": {
+    "brand": "Mochi",
+    "brandHome": "Início do Mochi",
+    "appStoreAria": "Descarregar o Mochi na App Store",
+    "download": "Descarregar na App Store",
+    "downloadOn": "Descarregar na",
+    "appStore": "App Store",
+    "free": "Grátis",
+    "optional": "Opcional",
+    "backToTop": "Mochi: registo do período, voltar ao topo"
+  },
+  "Hero": {
+    "title1": "O registo do",
+    "title2": "período fofo",
+    "title3": "e privado",
+    "body": "Mochi é uma app gratuita para iPhone que prevê o teu próximo período, lembra-te quando trocar o penso e transforma o registo diário num jogo. Sem precisar de conta.",
+    "mascotAlt": "Mochi, uma mascote cor-de-rosa sorridente, a descansar numa almofada creme",
+    "phoneAlt": "Ecrã inicial do Mochi no iPhone a mostrar o dia 2 do período com os atalhos Período, Humor e Sintomas"
+  },
+  "Island": {
+    "title1": "Lembrete para",
+    "title2": "trocar o penso",
+    "title3": "na Dynamic Island",
+    "body": "Penso de dia, de noite ou diário, de 2 a 8 horas. O Mochi faz a contagem decrescente no Início, na Dynamic Island e no ecrã bloqueado.",
+    "phoneLabel": "Dynamic Island do iPhone a mostrar o Mochi e uma contagem decrescente para trocar o penso",
+    "timerPrefix": "Troca em",
+    "countdownLabel": "Contagem decrescente para trocar o penso"
+  },
+  "Moods": {
+    "title1": "Regista como te sentes.",
+    "title2": "O Mochi sente contigo.",
+    "body": "Toca no Mochi para registar o humor, os sintomas e o fluxo em segundos.",
+    "phoneLabel": "Ecrã Registar hoje do Mochi com caras de humor e opções de sintomas",
+    "logToday": "Registar hoje",
+    "mood": "Humor",
+    "symptoms": "Sintomas",
+    "moodNames": {
+      "happy": "Feliz",
+      "sleepy": "Com sono",
+      "crampy": "Com cólicas",
+      "cozy": "Aconchego"
+    },
+    "symptomNames": {
+      "cramps": "Cólicas",
+      "bloating": "Inchaço",
+      "headache": "Dor de cabeça",
+      "tired": "Cansaço"
+    }
+  },
+  "Flavors": {
+    "title1": "Mantém a tua",
+    "title2": "sequência e junta",
+    "title3": "12 Mochis fofos",
+    "body": "Regista um pouco todos os dias e novos Mochi juntam-se à tua coleção.",
+    "items": {
+      "strawberry": { "name": "Morango", "unlock": "Inicial" },
+      "classic": { "name": "Clássico", "unlock": "Inicial" },
+      "matcha": { "name": "Matcha", "unlock": "Inicial" },
+      "ube": { "name": "Ube", "unlock": "Sequência de 7 dias" },
+      "mango": { "name": "Manga", "unlock": "Sequência de 14 dias" },
+      "sesame": { "name": "Sésamo", "unlock": "Sequência de 30 dias" },
+      "yuzu": { "name": "Yuzu", "unlock": "Sequência de 60 dias" },
+      "chocolate": { "name": "Chocolate", "unlock": "Sequência de 90 dias" },
+      "hojicha": { "name": "Hojicha", "unlock": "Sequência de 180 dias" },
+      "sakura": { "name": "Sakura", "unlock": "150 pétalas" },
+      "peach": { "name": "Pêssego", "unlock": "Desafio anticólicas" },
+      "coconut": { "name": "Coco", "unlock": "Desafio semana calma" }
+    }
+  },
+  "Predictions": {
+    "title1": "Previsões do período",
+    "title2": "e da ovulação que",
+    "title3": "aprendem o teu ritmo",
+    "body1": "O Mochi lê os ciclos que registas para estimar",
+    "body2": "o teu próximo período, janela fértil e ovulação.",
+    "disclaimer": "As previsões são estimativas, não contraceção.",
+    "phoneLabel": "Calendário do ciclo do Mochi com um período de cinco dias assinalado",
+    "cycle": "Ciclo",
+    "month": "Mar 2025",
+    "weekdays": {
+      "sun": "Dom",
+      "mon": "Seg",
+      "tue": "Ter",
+      "wed": "Qua",
+      "thu": "Qui",
+      "fri": "Sex",
+      "sat": "Sáb"
+    },
+    "period": "Período",
+    "fertileWindow": "Janela fértil",
+    "ovulation": "Ovulação",
+    "nextPeriodIn": "Próximo período em",
+    "nextPeriodValue": "12 dias",
+    "cycleLength": "Duração do ciclo",
+    "cycleLengthValue": "28 dias",
+    "nextPeriod": "Próximo período",
+    "nextPeriodDate": "15 de mar",
+    "mascotAlt": "Mochi feliz"
+  },
+  "Privacy": {
+    "title1": "O teu ciclo fica",
+    "title2": "no teu iPhone",
+    "body1": "Datas do período, fluxo, sintomas e humor",
+    "body2": "nunca vão para análises, registos ou relatórios de falhas.",
+    "promises": {
+      "private": {
+        "title": "Privado",
+        "line1": "Fica no",
+        "line2": "teu iPhone",
+        "badge1": "100%",
+        "badge2": "Privado",
+        "badge3": "por design"
+      },
+      "offline": {
+        "title": "Funciona offline",
+        "line1": "Todas as funções,",
+        "line2": "sem sessão iniciada",
+        "badge1": "Funciona",
+        "badge2": "Offline",
+        "badge3": "sempre"
+      },
+      "account": {
+        "title": "Sem conta",
+        "line1": "Cópia opcional,",
+        "line2": "só se quiseres",
+        "badge1": "Sem conta",
+        "badge2": "necessária",
+        "badge3": ""
+      }
+    },
+    "staysTitle": "Fica contigo",
+    "stays": {
+      "dates": "Datas e previsões",
+      "logs": "Fluxo, sintomas e humor",
+      "reminders1": "Lembretes de troca,",
+      "reminders2": "no teu iPhone"
+    }
+  },
+  "Comparison": {
+    "title1": "Porquê o",
+    "title2": "Mochi?",
+    "caption": "O Mochi comparado com uma app de período típica",
+    "mochi": "Mochi",
+    "typical": "App de período típica",
+    "rows": {
+      "account": { "feature": "Exige conta", "mochi": "Não", "typical": "Muitas vezes" },
+      "offline": { "feature": "Funciona offline", "mochi": "Sim", "typical": "Varia" },
+      "reminder": { "feature": "Lembrete no ecrã bloqueado", "mochi": "Sim", "typical": "Raro" },
+      "analytics": { "feature": "Dados do ciclo para análises", "mochi": "Nunca", "typical": "Varia" },
+      "rewards": { "feature": "Prémios por registar", "mochi": "Sequências + 12 sabores", "typical": "Raro" }
+    }
+  },
+  "Plans": {
+    "title1": "Descarrega grátis.",
+    "title2": "Mochi Plus",
+    "title3": "é opcional.",
+    "freeName": "Mochi",
+    "freeLabel": "Grátis",
+    "plusName": "Mochi Plus",
+    "freeFeatures": {
+      "tracking": "Ciclo e previsões",
+      "reminder": "Lembrete para trocar o penso",
+      "rewards": "Humor, sequências e sabores",
+      "offline": "Offline, sem conta"
+    },
+    "plusFeatures": {
+      "everything": "Tudo o que está no Grátis",
+      "flavors": "Os três Mochi iniciais e sabores extra",
+      "insights": "Informações sobre o teu ciclo"
+    }
+  },
+  "Account": {
+    "kicker": "Conta opcional",
+    "title": "Usa o Mochi já. Faz cópia quando quiseres.",
+    "body": "Tudo funciona sem conta. Cria uma conta gratuita só se quiseres cópia de segurança e sincronização para um novo iPhone.",
+    "backup": "Cópia do ciclo",
+    "synced": "Sincronizado com a tua conta",
+    "imageAlt": "Mochi a abraçar um diário trancado"
+  },
+  "FAQ": {
+    "title1": "Dúvidas",
+    "title2": "sobre o",
+    "title3": "Mochi",
+    "items": {
+      "what": {
+        "question": "O que é o Mochi?",
+        "answer": "O Mochi é uma app para registar o período no iPhone com uma mascote fofa. Prevê o teu próximo período, lembra-te quando trocar o penso e recompensa o registo diário com 12 sabores colecionáveis."
+      },
+      "free": {
+        "question": "O Mochi é gratuito?",
+        "answer": "Sim. O registo do ciclo, as previsões, o lembrete para trocar o penso, o humor, as sequências e os sabores iniciais são gratuitos. O Mochi Plus é opcional."
+      },
+      "private": {
+        "question": "Os meus dados do período são privados?",
+        "answer": "Sim. As datas do período, o fluxo, os sintomas e o humor ficam no teu iPhone e nunca são enviados para análises, registos ou relatórios de falhas."
+      },
+      "offline": {
+        "question": "O Mochi funciona sem conta nem internet?",
+        "answer": "Sim. Todas as funções principais funcionam offline e não é preciso conta. A conta é opcional se quiseres cópia de segurança e sincronização."
+      },
+      "reminder": {
+        "question": "Como funciona o lembrete para trocar o penso?",
+        "answer": "Escolhe penso de dia, de noite ou diário e uma duração de 2 a 8 horas. O Mochi faz a contagem decrescente no Início, na Dynamic Island e no ecrã bloqueado."
+      },
+      "lockScreen": {
+        "question": "O meu ecrã bloqueado vai mostrar que estou com o período?",
+        "answer": "Não. A Atividade em direto usa um texto privado e discreto e nunca diz que estás com o período."
+      },
+      "medical": {
+        "question": "Posso usar o Mochi como contraceção?",
+        "answer": "Não. As previsões do Mochi são estimativas para conheceres o teu período, não contraceção, diagnóstico nem aconselhamento médico."
+      }
+    }
+  },
+  "Closing": {
+    "title": "Diz olá ao Mochi",
+    "body1": "Regista o teu ciclo, coleciona sabores fofos e tem",
+    "body2": "um pequeno amigo contigo em todas as fases.",
+    "imageAlt": "Mochi a descansar numa almofada",
+    "brand": "Mochi: registo do período"
+  },
+  "StructuredData": {
+    "offer": "Grátis para descarregar. Subscrição opcional do Mochi Plus disponível na app.",
+    "features": {
+      "predictions": "Previsões do período e da ovulação",
+      "reminders": "Lembretes para trocar o penso na Dynamic Island e no ecrã bloqueado",
+      "logging": "Registo do humor, sintomas e fluxo",
+      "offline": "Utilização offline sem conta",
+      "backup": "Cópia de segurança e sincronização opcionais com conta",
+      "rewards": "Sequências e 12 sabores de Mochi colecionáveis"
+    }
+  }
+}
