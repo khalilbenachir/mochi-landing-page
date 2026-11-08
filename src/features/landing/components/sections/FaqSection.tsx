@@ -32,7 +32,7 @@ export function FaqSection() {
           </h2>
           <div className="absolute bottom-[calc(-1*var(--section-space))] left-[calc(64*var(--u))] w-[calc(140*var(--u))] max-poster:static max-poster:w-0" aria-hidden="true">
             <Image className="h-auto w-full max-poster:hidden" src={LANDING_ASSETS.faces.wondering} alt="" width={460} height={368} sizes="14vw" />
-            <svg className="absolute bottom-[calc(10*var(--u))] right-[calc(-6*var(--u))] w-[calc(38*var(--u))] [filter:drop-shadow(0_calc(1*var(--u))_0_var(--color-faq-heart-shadow))] [transform:rotate(-8deg)] max-poster:hidden" viewBox="0 0 24 24"><path className="fill-faq-heart" d="M12 21.2C5.4 16.6 2 13 2 8.8 2 5.7 4.4 3.4 7.3 3.4c2 0 3.6 1 4.7 2.6 1.1-1.6 2.7-2.6 4.7-2.6 2.9 0 5.3 2.3 5.3 5.4 0 4.2-3.4 7.8-10 12.4Z" /></svg>
+            <svg className="absolute bottom-[calc(10*var(--u))] right-[calc(-6*var(--u))] w-[calc(38*var(--u))] [filter:drop-shadow(0_calc(1*var(--u))_0_var(--color-faq-heart-shadow))] [transform:rotate(-8deg)] max-poster:hidden" viewBox="0 0 24 24" aria-hidden="true"><path className="fill-faq-heart" d="M12 21.2C5.4 16.6 2 13 2 8.8 2 5.7 4.4 3.4 7.3 3.4c2 0 3.6 1 4.7 2.6 1.1-1.6 2.7-2.6 4.7-2.6 2.9 0 5.3 2.3 5.3 5.4 0 4.2-3.4 7.8-10 12.4Z" /></svg>
           </div>
         </div>
 
