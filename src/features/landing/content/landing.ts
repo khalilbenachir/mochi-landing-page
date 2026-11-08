@@ -1,11 +1,12 @@
+import { resolveSiteOrigin } from "./site-url";
+
 export const SITE_NAME = "Mochi";
 
-const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-
-/** Public origin used by metadata, JSON-LD and the sitemap. */
-export const PUBLIC_SITE_URL = configuredSiteUrl
-  ? configuredSiteUrl.replace(/\/$/, "")
-  : undefined;
+/** Public origin used by metadata, JSON-LD and the sitemap. Required in production builds. */
+export const PUBLIC_SITE_URL = resolveSiteOrigin({
+  value: process.env.NEXT_PUBLIC_SITE_URL,
+  nodeEnv: process.env.NODE_ENV,
+});
 
 export const SITE_URL = PUBLIC_SITE_URL ?? "http://localhost:3000";
 

@@ -15,22 +15,28 @@ npm install
 npm run dev        # http://localhost:3000
 ```
 
-For production, set the public site URL so canonical metadata, `robots.txt` and `sitemap.xml` use
-the deployed domain:
+Production builds require `NEXT_PUBLIC_SITE_URL`: `npm run build` fails without it. The value must be
+an absolute root origin such as `https://example.com`, with no path, query, or hash. It drives
+canonical metadata, `robots.txt`, `sitemap.xml`, and JSON-LD:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://your-domain.example npm run build
 ```
 
+`npm run build:test` is the deterministic local/CI build used by `npm run check`; it builds against
+`http://localhost:3100`. `npm run test:e2e` also builds against that Playwright origin.
+
 | Script | What it does |
 |---|---|
 | `npm run dev` | Dev server with fast refresh |
-| `npm run build` | Create the optimized production build and prerender every locale |
+| `npm run build` | Create the optimized production build and prerender every locale (requires `NEXT_PUBLIC_SITE_URL`) |
+| `npm run build:test` | Production build against `http://localhost:3100` (used by checks and e2e) |
 | `npm run start` | Serve the production build |
 | `npm run lint` | ESLint (Next.js core web vitals + TypeScript rules) |
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm test` | Vitest checks for assets, messages, theme tokens, and style policy |
 | `npm run test:e2e` | Production build + Playwright route, keyboard, and EN/FR visual tests |
+| `npm run test:seo` | Production build + focused SEO/crawler contract check (metadata, JSON-LD, robots, sitemap, manifest, icons) |
 | `npm run test:e2e:update` | Re-record visual baselines (only for reviewed, intentional visual changes) |
 | `npm run check` | All policy, type, lint, unit, and build checks |
 | `npm run check:styles` | Style-policy tests only |
