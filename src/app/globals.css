@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -27,53 +26,11 @@
   --pink: #f2577c;
   --pink-ink: #d2335c;
   --pink-deep: #b0254b;
-  --pink-tint: #fde3ea;
-  --pink-soft: #f9c6d4;
-  --raspberry: #c93a60;
-
-  --teal: #45b5da;
-  --teal-light: #9fd9ec;
-  --teal-ink: #1a7fa6;
-  --teal-text: #14698a;
-  --teal-tint: #ddf1f9;
-  --follicular: #bfe6f3;
-
-  --indigo: #4b47b0;
-  --indigo-tint: #e6e5f7;
-
-  --orange: #f7b036;
-  --orange-ink: #8c5400;
-  --orange-deep: #5c3a00;
-  --orange-tint: #fef0d6;
-
-  --mint: #cff3e6;
-  --mint-ink: #1e6e4e;
 
   --navy: #2e3a4d;
-  --navy-deep: #1f2a3a;
-  --body: #4a5568;
-  --grey-600: #6b7585;
-  --grey-500: #8a94a3;
-  --grey-300: #e3e7ec;
-  --grey-200: #eceff3;
-  --grey-150: #f1f3f6;
-  --grey-100: #f5f7fa;
-  --privacy-sky: #dcebf8;
-
-  /* Pad change card (variant B). */
-  --card-rose: #b4485f;
-  --card-dark: #8a2d45;
-  --card-ink: #a33a55;
-
-  --island-bg: #121014;
-  --island-grey: #8e8e93;
 
   --font: "Nunito Variable", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
-  --font-app: ui-rounded, "SF Pro Rounded", "Nunito Variable", system-ui, sans-serif;
   --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
-  --section-space: clamp(72px, 8vw, 112px);
-  --section-space-tight: clamp(48px, 6vw, 76px);
-  --page-gutter: clamp(18px, 4vw, 32px);
 }
 
 @theme inline {
@@ -96,12 +53,6 @@
   --color-ring: var(--ring);
   --color-mochi-pink: var(--pink);
   --color-mochi-pink-ink: var(--pink-ink);
-  --color-mochi-pink-soft: var(--pink-soft);
-  --color-mochi-teal: var(--teal);
-  --color-mochi-indigo: var(--indigo);
-  --color-mochi-orange: var(--orange);
-  --color-mochi-mint: var(--mint);
-  --color-mochi-navy: var(--navy);
   --font-sans: var(--font);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -110,141 +61,214 @@
   --ease-spring: var(--spring);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 92px;
-}
-
-body {
-  margin: 0;
-  background: #fff;
-  color: var(--navy);
-  font-family: var(--font);
-  font-weight: 700;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-a {
-  color: var(--pink-ink);
-}
-a:hover {
-  color: var(--pink-deep);
-}
-
-img,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-.wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--page-gutter);
-}
-
-section[id] { scroll-margin-top: 92px; }
-
-.tnum {
-  font-variant-numeric: tabular-nums;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-/* Shared headings used by every section. */
-.eyebrow {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.h2 {
-  margin: 12px 0 0;
-  font-size: clamp(36px, 5vw, 56px);
-  line-height: 1.02;
-  font-weight: 900;
-  letter-spacing: -1.5px;
-  color: var(--navy-deep);
-}
-.lead {
-  margin: 22px 0 0;
-  font-size: 20px;
-  line-height: 1.55;
-  font-weight: 700;
-  color: var(--body);
-}
-
-@media (max-width: 520px) {
-  .h2 { font-size: clamp(34px, 11vw, 44px); letter-spacing: -1px; }
-  .lead { margin-top: 18px; font-size: 18px; line-height: 1.5; }
-}
-
-/* ---------- Motion, taken from the app's Mochi ---------- */
-
-@keyframes jelly {
-  0%, 100% { transform: scale(1, 1) translateY(0); }
-  30% { transform: scale(1.08, 0.9) translateY(4px); }
-  50% { transform: scale(0.94, 1.08) translateY(-14px); }
-  70% { transform: scale(1.03, 0.97) translateY(0); }
-}
-@keyframes shadow-squish {
-  0%, 100% { transform: scaleX(1); opacity: 1; }
-  50% { transform: scaleX(0.72); opacity: 0.55; }
-}
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-@keyframes twinkle {
-  0%, 100% { opacity: 0.2; transform: scale(0.6) rotate(0); }
-  50% { opacity: 1; transform: scale(1.1) rotate(45deg); }
-}
-@keyframes blob {
-  0%, 100% { border-radius: 58% 42% 55% 45% / 50% 60% 40% 50%; }
-  50% { border-radius: 42% 58% 40% 60% / 58% 42% 58% 42%; }
-}
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-@keyframes fade-in {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: none; }
-}
-@keyframes rise {
-  from { opacity: 0; transform: translateY(60px) scale(0.97); }
-  to { opacity: 1; transform: none; }
-}
-@keyframes pop-in {
-  from { opacity: 0; transform: scale(0.6) rotate(-8deg); }
-  to { opacity: 1; transform: none; }
-}
-
-.jelly { animation: jelly 2.6s ease-in-out infinite; transform-origin: 50% 100%; }
-.shadow-squish { animation: shadow-squish 2.6s ease-in-out infinite; }
-.bob { animation: bob 3s ease-in-out infinite; }
-.blob { animation: blob 9s ease-in-out infinite; }
-
 /*
- * Essential copy is never hidden before entering the viewport. This keeps full-page captures,
- * browser agents, print views and non-standard renderers complete and readable.
+ * Landing design tokens. Every color used by the landing lives here and nowhere else
+ * (except browser metadata in src/app/platform-colors.ts). `static` makes Tailwind emit
+ * every variable so CSS Modules can reference them while the migration is in progress.
  */
-.reveal,
-.reveal-pop { opacity: 1; }
+@theme static {
+  /* Breakpoints: max-phone = max-width 480px, max-nav = 760px, max-tablet = 640px, max-poster = 1099px,
+     min-wide = min-width 1441px. */
+  --breakpoint-phone: 30.0625rem;
+  --breakpoint-nav: 47.5625rem;
+  --breakpoint-tablet: 40.0625rem;
+  --breakpoint-poster: 68.75rem;
+  --breakpoint-wide: 90.0625rem;
+
+  /* Motion */
+  --animate-squish: squish 0.55s var(--spring, ease-out);
+  @keyframes squish {
+    0% { transform: scale(1, 1); }
+    30% { transform: scale(1.12, 0.86); }
+    55% { transform: scale(0.94, 1.08); }
+    80% { transform: scale(1.03, 0.98); }
+    100% { transform: scale(1, 1); }
+  }
+
+  /* Shared */
+  --color-sun: #ffd93d;
+  --color-sun-ray: #ffd23d;
+  --color-ink-navy: #172a4f;
+  --color-ink-black: #0b121c;
+  --color-ink-slate: #26304a;
+  --color-ink-deep: #1d2b4a;
+  --color-brand-coral: #ef4a7a;
+  --color-brand-rose: #f2558a;
+  --color-cycle-period: #ef4a7a;
+  --color-cycle-next-period: #f2558a;
+  --color-cycle-fertile: #fbc6dc;
+  --color-cycle-ovulation: #9b6be6;
+  --color-cycle-length: #9b7bea;
+
+  /* Landing page */
+  --color-landing-canvas: #f7f4ef;
+  --color-landing-account-band: #fff4e8;
+  --color-landing-account-text: #16284c;
+  --color-landing-account-card-shadow: rgba(79, 54, 103, 0.14);
+  --color-landing-account-icon: #574cc2;
+  --color-landing-account-caption: #767d8c;
+  --color-landing-account-badge-bg: #c8f3e8;
+  --color-landing-account-badge-text: #1e6e4e;
+
+  /* Hero */
+  --color-hero-band: #f44c80;
+  --color-hero-petal: #fbc4e1;
+  --color-hero-locale-mobile-border: rgba(23, 42, 79, 0.18);
+  --color-hero-locale-mobile-bg: #f7d6e2;
+  --color-hero-badge-shadow: rgba(120, 18, 52, 0.18);
+  --color-hero-title-shadow: rgba(110, 16, 48, 0.22);
+  --color-hero-sticker-shadow: rgba(110, 16, 48, 0.18);
+  --color-hero-phone-shadow: rgba(90, 10, 40, 0.28);
+  --color-hero-vignette: rgba(214, 40, 96, 0.25);
+  --color-hero-menu-icon: #ef356c;
+  --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);
+  --color-hero-menu-link-border: #eee;
+  --color-hero-menu-link-text: #172647;
+
+  /* Island */
+  --color-island-band: #4743b1;
+  --color-island-screen: #f5cee0;
+  --color-island-drop: #f2497a;
+  --color-island-phone-border: #e9e8f0;
+  --color-island-phone-bg: #0b0b0f;
+  --color-island-phone-shadow: #b9b7c6;
+  --color-island-phone-shadow-2: rgba(15, 10, 60, 0.35);
+  --color-island-screen-top: #f7d3e4;
+  --color-island-screen-bottom: #f2c4da;
+  --color-island-screen-text: #111;
+  --color-island-cloud-bg: rgba(255, 255, 255, 0.28);
+  --color-island-cloud-alt-bg: rgba(255, 255, 255, 0.2);
+  --color-island-notch-shadow: rgba(80, 20, 50, 0.25);
+
+  /* Mood */
+  --color-mood-band: #2fb6e3;
+  --color-mood-pill-shadow: rgba(10, 80, 120, 0.15);
+  --color-mood-phone-border: #ddd7f0;
+  --color-mood-phone-bg: #0b0b0f;
+  --color-mood-phone-shadow: #b6b0cf;
+  --color-mood-phone-shadow-2: rgba(8, 60, 100, 0.3);
+  --color-mood-screen-bg: #fdfbfe;
+  --color-mood-face-shadow: rgba(70, 40, 110, 0.18);
+  --color-mood-symptom-cramps: #ec3f78;
+  --color-mood-symptom-bloating: #7a55d6;
+  --color-mood-symptom-headache: #8a5be0;
+  --color-mood-symptom-tired: #5b4fc9;
+  --color-mood-chip-cramps: #fde0ea;
+  --color-mood-chip-violet: #ece2fb;
+  --color-mood-face-joy: #f2497a;
+  --color-mood-face-calm: #fbdcea;
+  --color-mood-face-sad: #dcccf6;
+
+  /* Flavors */
+  --color-flavors-band: #feab29;
+  --color-flavors-sun: #ffe14d;
+  --color-flavors-card-bg: #fffaf7;
+  --color-flavors-card-shadow: rgba(150, 80, 0, 0.18);
+  --color-flavors-pill-starter: #fbe9a8;
+  --color-flavors-pill-classic: #fbd5cf;
+  --color-flavors-pill-matcha: #d4f0c8;
+  --color-flavors-pill-streak: #fcd5de;
+  --color-flavors-pill-petals: #fbd0e3;
+  --color-flavors-pill-challenge: #fcd2dd;
+
+  /* Prediction */
+  --color-prediction-band: #bff3e6;
+  --color-prediction-body-text: #24365a;
+  --color-prediction-note-text: #2d3f61;
+  --color-prediction-phone-border: #c9ccd6;
+  --color-prediction-phone-bg: #0d0e12;
+  --color-prediction-phone-shadow: rgba(20, 80, 70, 0.22);
+  --color-prediction-calendar-label: #6f7789;
+  --color-prediction-card-shadow: rgba(20, 90, 80, 0.14);
+  --color-prediction-ring-1: #f04f86;
+  --color-prediction-ring-2: #f37fae;
+  --color-prediction-ring-3: #c58ce9;
+  --color-prediction-ring-4: #a28ff0;
+  --color-prediction-ring-5: #8c9ff0;
+  --color-prediction-ring-6: #f9d6e6;
+  --color-prediction-ring-7: #fbe3ee;
+  --color-prediction-ring-8: #f04f86;
+  --color-prediction-fact-divider: #f0eef3;
+  --color-prediction-mascot-bg: #93dbea;
+
+  /* Privacy */
+  --color-privacy-band: #213459;
+  --color-privacy-gold: #f2c62f;
+  --color-privacy-body-text: #e3e9f6;
+  --color-privacy-hug-shadow: rgba(150, 20, 60, 0.35);
+  --color-privacy-promise-divider: rgba(255, 255, 255, 0.28);
+  --color-privacy-promise-detail-text: #eef2fb;
+  --color-privacy-hug-highlight: #ff8db3;
+
+  /* Comparison */
+  --color-comparison-matcha-bg: #bfe3f6;
+  --color-comparison-mochi-head-bg: #ef5f8d;
+  --color-comparison-typical-head-bg: #e9eaf0;
+  --color-comparison-row-header-border: #d7dae2;
+  --color-comparison-row-divider: #e3e5eb;
+  --color-comparison-mochi-cell-bg: #fbdae7;
+  --color-comparison-typical-cell-bg: #f4f5f8;
+  --color-comparison-mochi-cell-border: #f0bcd0;
+
+  /* Plans */
+  --color-plans-band: #f7d6ea;
+  --color-plans-free-shadow: rgba(150, 60, 110, 0.12);
+  --color-plans-plus-bg: #3f3c9a;
+  --color-plans-price-pill-text: #2e2b78;
+
+  /* FAQ */
+  --color-faq-band: #fef2e6;
+  --color-faq-question-text: #a06be6;
+  --color-faq-heart-shadow: rgba(200, 60, 110, 0.3);
+  --color-faq-item-shadow: rgba(80, 50, 40, 0.18);
+  --color-faq-answer-text: #3a4462;
+  --color-faq-heart: #f585ad;
+
+  /* Closing */
+  --color-closing-band: #f74c80;
+  --color-closing-store-bg: #0b0b0d;
+  --color-closing-brand-divider: #c9ccd4;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+  }
+
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--navy);
+    font-family: var(--font);
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: var(--pink-ink);
+  }
+  a:hover {
+    color: var(--pink-deep);
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  section[id] {
+    scroll-margin-top: 92px;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

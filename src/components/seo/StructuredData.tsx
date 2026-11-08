@@ -1,11 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { APP_STORE_URL, asset } from "@/content/mochi";
-import {
-  FAQ_IDS,
-  SITE_NAME,
-  SITE_URL,
-  STRUCTURED_FEATURE_IDS,
-} from "@/content/landing";
+import { LANDING_ASSETS } from "@/features/landing/content/assets";
+import { APP_STORE_URL, FAQ_IDS, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
 import { localePath, type AppLocale } from "@/i18n/routing";
 
 type StructuredDataProps = {
@@ -39,7 +34,7 @@ export async function StructuredData({ locale }: StructuredDataProps) {
         description: metadata("description"),
         applicationCategory: "HealthApplication",
         operatingSystem: "iOS 17 or later",
-        image: `${SITE_URL}${asset.appIcon}`,
+        image: `${SITE_URL}${LANDING_ASSETS.appIcon}`,
         url: APP_STORE_URL.startsWith("http") ? APP_STORE_URL : pageUrl,
         offers: {
           "@type": "Offer",
