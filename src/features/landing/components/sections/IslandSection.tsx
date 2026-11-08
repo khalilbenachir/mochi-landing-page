@@ -44,18 +44,18 @@ export function IslandSection() {
 
   return (
     <section id="features" className="relative overflow-hidden bg-island-band text-white">
-      <PosterStage className="aspect-[1024/160] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-0 max-poster:pt-[36px] max-phone:pt-[30px]">
-        <div className="absolute z-3 left-[calc(58*var(--u))] top-[calc(8*var(--u))] w-[calc(320*var(--u))] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:w-auto max-poster:max-w-[640px] max-poster:mx-auto max-poster:my-0 max-poster:text-center">
-          <h2 className="m-0 text-white text-[calc(31*var(--u))] font-[1000] leading-[0.95] tracking-[-0.015em] max-poster:text-[clamp(38px,7vw,54px)] max-phone:text-[36px]">
-            <span className="block whitespace-nowrap">{t("title1")}</span> <span className="block whitespace-nowrap">{t("title2")}</span> <span className="block whitespace-nowrap">{t("title3")}</span>
+      <PosterStage bleed="bottom" className="grid px-[calc(58*var(--u))] [grid-template-columns:calc(320*var(--u))_1fr] max-poster:block max-poster:px-[clamp(20px,4vw,40px)]">
+        <div className="relative z-3 self-center max-poster:max-w-[640px] max-poster:mx-auto max-poster:text-center">
+          <h2 className="poster:text-balance m-0 max-w-[calc(295*var(--u))] text-white text-[calc(31*var(--u))] max-poster:max-w-none font-[1000] leading-[0.95] tracking-[-0.015em] max-poster:text-[clamp(38px,7vw,54px)] max-phone:text-[36px]">
+            <span className="block">{t("title1")}</span> <span className="block">{t("title2")}</span> <span className="block">{t("title3")}</span>
           </h2>
           <p className="mt-[calc(7*var(--u))] mb-0 mx-0 w-[calc(290*var(--u))] text-[calc(12.6*var(--u))] font-[650] leading-[1.27] max-poster:w-auto max-poster:max-w-[520px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <Rays className="absolute z-2 text-sun left-[calc(358*var(--u))] top-[calc(26*var(--u))] w-[calc(38*var(--u))] max-poster:hidden" />
+        <Rays className="absolute z-2 text-sun left-[calc(358*var(--u))] top-[calc(46*var(--u))] w-[calc(38*var(--u))] max-poster:hidden" />
 
         <div
-          className="absolute z-1 left-[calc(425*var(--u))] top-[calc(20*var(--u))] h-[calc(200*var(--u))] w-[calc(512*var(--u))] p-[calc(11*var(--u))] border-solid border-island-phone-border [border-width:calc(4*var(--u))_calc(4*var(--u))_0] rounded-[calc(92*var(--u))_calc(92*var(--u))_0_0] bg-island-phone-bg [box-shadow:0_0_0_calc(1*var(--u))_var(--color-island-phone-shadow),0_calc(10*var(--u))_calc(30*var(--u))_var(--color-island-phone-shadow-2)] max-poster:[--u:calc(min(100vw-24px,620px)/512)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:mt-[30px] max-poster:mb-0 max-poster:h-[calc(150*var(--u))] max-phone:[--u:calc((100vw+40px)/512)] max-phone:mx-[-40px] max-phone:h-[calc(130*var(--u))]"
+          className="relative z-1 ml-[calc(47*var(--u))] -mb-[calc(var(--section-space)+60*var(--u))] mt-[calc(12*var(--u))] self-end h-[calc(200*var(--u))] w-[calc(512*var(--u))] p-[calc(11*var(--u))] border-solid border-island-phone-border [border-width:calc(4*var(--u))_calc(4*var(--u))_0] rounded-[calc(92*var(--u))_calc(92*var(--u))_0_0] bg-island-phone-bg [box-shadow:0_0_0_calc(1*var(--u))_var(--color-island-phone-shadow),0_calc(10*var(--u))_calc(30*var(--u))_var(--color-island-phone-shadow-2)] max-poster:[--u:calc(min(100vw-24px,620px)/512)] max-poster:mx-auto max-poster:mt-[30px] max-poster:mb-0 max-poster:h-[calc(150*var(--u))] max-phone:[--u:calc((100vw+40px)/512)] max-phone:mx-[-40px] max-phone:h-[calc(130*var(--u))]"
           role="img"
           aria-label={t("phoneLabel")}
         >
@@ -78,7 +78,7 @@ export function IslandSection() {
           </div>
         </div>
 
-        <Rays className="absolute z-2 text-sun left-[calc(944*var(--u))] top-[calc(30*var(--u))] w-[calc(40*var(--u))] max-poster:hidden" />
+        <Rays className="absolute z-2 text-sun left-[calc(944*var(--u))] top-[calc(50*var(--u))] w-[calc(40*var(--u))] max-poster:hidden" />
       </PosterStage>
     </section>
   );

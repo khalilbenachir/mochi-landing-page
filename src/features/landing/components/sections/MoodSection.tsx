@@ -17,28 +17,28 @@ const MOODS = [
     id: "happy",
     width: 377,
     height: 327,
-    item: "left-[calc(397*var(--u))] w-[calc(98*var(--u))] max-poster:left-0",
+    item: "w-[calc(98*var(--u))] max-poster:left-0",
     image: "mr-[calc(-6*var(--u))]",
   },
   {
     id: "sleepy",
     width: 362,
     height: 361,
-    item: "left-[calc(500*var(--u))] w-[calc(94*var(--u))] max-poster:left-[calc(103*var(--m))]",
+    item: "w-[calc(94*var(--u))] max-poster:left-[calc(103*var(--m))]",
     image: "",
   },
   {
     id: "crampy",
     width: 363,
     height: 360,
-    item: "left-[calc(598*var(--u))] w-[calc(94*var(--u))] max-poster:left-[calc(201*var(--m))]",
+    item: "w-[calc(94*var(--u))] max-poster:left-[calc(201*var(--m))]",
     image: "",
   },
   {
     id: "cozy",
     width: 399,
     height: 337,
-    item: "left-[calc(697*var(--u))] w-[calc(104*var(--u))] max-poster:left-[calc(300*var(--m))]",
+    item: "w-[calc(104*var(--u))] max-poster:left-[calc(300*var(--m))]",
     image: "ml-[calc(-4*var(--u))]",
   },
 ] as const;
@@ -123,7 +123,7 @@ function LogTodayPhone() {
 
   return (
     <div
-      className="absolute z-2 left-[calc(824*var(--u))] top-[calc(-16*var(--u))] h-[calc(176*var(--u))] w-[calc(172*var(--u))] p-[calc(6*var(--u))] border-solid border-mood-phone-border [border-width:calc(3*var(--u))] rounded-[calc(30*var(--u))] bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--u))_var(--color-mood-phone-shadow),0_calc(8*var(--u))_calc(18*var(--u))_var(--color-mood-phone-shadow-2)] [transform:rotate(4.5deg)] max-poster:[--u:calc(min(62vw,290px)/172)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:h-[calc(150*var(--u))] max-poster:mt-[26px] max-poster:mb-[calc(-12*var(--u))] max-poster:mx-auto max-poster:rounded-b-none"
+      className="relative z-2 ml-[calc(23*var(--u))] -mb-[calc(var(--section-space)+28*var(--u))] self-end h-[calc(176*var(--u))] w-[calc(172*var(--u))] p-[calc(6*var(--u))] border-solid border-mood-phone-border [border-width:calc(3*var(--u))] rounded-[calc(30*var(--u))] bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--u))_var(--color-mood-phone-shadow),0_calc(8*var(--u))_calc(18*var(--u))_var(--color-mood-phone-shadow-2)] [transform:rotate(4.5deg)] max-poster:[--u:calc(min(62vw,290px)/172)] max-poster:h-[calc(150*var(--u))] max-poster:mt-[26px] max-poster:mb-[calc(-12*var(--u))] max-poster:mx-auto max-poster:rounded-b-none"
       role="img"
       aria-label={t("phoneLabel")}
     >
@@ -173,20 +173,20 @@ export function MoodSection() {
 
   return (
     <section id="moods" className="relative overflow-hidden bg-mood-band text-white">
-      <PosterStage className="aspect-[1024/132] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-0 max-poster:pt-[36px] max-phone:pt-[30px]">
-        <div className="absolute z-3 left-[calc(58*var(--u))] top-[calc(12*var(--u))] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:my-0 max-poster:max-w-[640px] max-poster:text-center">
-          <h2 className="m-0 text-white text-[calc(28*var(--u))] font-[1000] leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[30px]">
-            <span className="block whitespace-nowrap max-poster:whitespace-normal max-phone:whitespace-nowrap">{t("title1")}</span> <span className="block whitespace-nowrap max-poster:whitespace-normal max-phone:whitespace-nowrap">{t("title2")}</span>
+      <PosterStage bleed="bottom" className="grid items-center px-[calc(58*var(--u))] [grid-template-columns:calc(339*var(--u))_calc(404*var(--u))_1fr] max-poster:block max-poster:px-[clamp(20px,4vw,40px)]">
+        <div className="relative z-3 pr-[calc(16*var(--u))] max-poster:mx-auto max-poster:max-w-[640px] max-poster:pr-0 max-poster:text-center">
+          <h2 className="text-balance m-0 text-white text-[calc(28*var(--u))] font-[1000] leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[30px]">
+            <span className="block">{t("title1")}</span> <span className="block">{t("title2")}</span>
           </h2>
           <p className="mt-[calc(9*var(--u))] mb-0 mx-0 w-[calc(252*var(--u))] text-[calc(12.8*var(--u))] font-[650] leading-[1.3] max-poster:w-auto max-poster:max-w-[460px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <ul className="m-0 p-0 list-none max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
+        <ul className="m-0 flex justify-between p-0 list-none max-poster:block max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
           {MOODS.map((mood) => (
             <li
               key={mood.id}
               className={cn(
-                "group absolute z-2 top-0 flex h-[calc(122*var(--u))] flex-col items-center justify-end max-poster:[--u:var(--m)]",
+                "group relative z-2 flex h-[calc(122*var(--u))] flex-col items-center justify-end max-poster:absolute max-poster:top-0 max-poster:[--u:var(--m)]",
                 mood.item,
               )}
             >

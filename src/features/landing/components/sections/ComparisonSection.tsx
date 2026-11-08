@@ -46,17 +46,20 @@ export function ComparisonSection() {
 
   return (
     <section id="why" className="relative overflow-hidden bg-white text-ink-navy">
-      <PosterStage grid="800" className="aspect-[800/170] max-poster:px-[clamp(16px,4vw,40px)] max-poster:pb-[40px] max-poster:pt-[36px] max-phone:pb-[32px] max-phone:pt-[30px]">
-        <Rays className={cn(RAYS, "left-[calc(40*var(--u))] top-[calc(28*var(--u))] w-[calc(36*var(--u))]")} />
-        <h2 className="absolute z-2 left-[calc(88*var(--u))] top-[calc(46*var(--u))] m-0 text-[calc(35*var(--u))] font-[1000] leading-[1.12] tracking-[-0.02em] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
-          <span className="block max-poster:inline max-poster:whitespace-normal">{t("title1")}</span> <span className="ml-[calc(17*var(--u))] block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
+      <PosterStage grid="800" className="grid [grid-template-columns:calc(270*var(--u))_calc(504*var(--u))] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
+        <Rays className={cn(RAYS, "left-[calc(40*var(--u))] top-[calc(43*var(--u))] w-[calc(36*var(--u))]")} />
+        <h2 className="relative z-2 my-0 mr-0 ml-[calc(88*var(--u))] self-center text-[calc(35*var(--u))] font-[1000] leading-[1.12] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
+          <span className="relative block w-fit max-poster:inline max-poster:whitespace-normal">
+            {t("title1")}
+            {/* Sits 41u past "Why"; longer words (Pourquoi) push it along, keeping a 12u gap. */}
+            <Rays className={cn(RAYS, "left-[max(calc(100%+12*var(--u)),calc(116*var(--u)))] top-[calc(20.71*var(--u))] w-[calc(28*var(--u))]")} flip />
+          </span> <span className="ml-[calc(17*var(--u))] block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
         </h2>
-        <Rays className={cn(RAYS, "left-[calc(204*var(--u))] top-[calc(64*var(--u))] w-[calc(28*var(--u))]")} flip />
-        <div className="absolute z-1 left-[calc(12*var(--u))] top-[calc(97*var(--u))] w-[calc(100*var(--u))] after:absolute after:left-[-12%] after:right-[-14%] after:bottom-[calc(-5*var(--u))] after:h-[calc(12*var(--u))] after:rounded-[50%] after:bg-comparison-matcha-bg after:content-[''] max-poster:hidden" aria-hidden="true">
+        <div className="absolute z-1 left-[calc(12*var(--u))] top-[calc(112*var(--u))] w-[calc(100*var(--u))] after:absolute after:left-[-12%] after:right-[-14%] after:bottom-[calc(-5*var(--u))] after:h-[calc(12*var(--u))] after:rounded-[50%] after:bg-comparison-matcha-bg after:content-[''] max-poster:hidden" aria-hidden="true">
           <Image className="relative z-1 h-auto w-full" src={FLAVOR_CARD_ASSETS.matcha} alt="" width={380} height={262} sizes="12vw" />
         </div>
 
-        <table className="absolute left-[calc(270*var(--u))] top-[calc(11*var(--u))] w-[calc(504*var(--u))] border-separate border-spacing-0 text-[calc(10.6*var(--u))] max-poster:[--u:calc(min(100vw-32px,720px)/504)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--u:1px] max-tablet:w-full max-tablet:text-[13px]">
+        <table className="relative w-[calc(504*var(--u))] border-separate border-spacing-0 text-[calc(10.6*var(--u))] max-poster:[--u:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--u:1px] max-tablet:w-full max-tablet:text-[13px]">
           <caption className="sr-only">{t("caption")}</caption>
           <thead>
             <tr>

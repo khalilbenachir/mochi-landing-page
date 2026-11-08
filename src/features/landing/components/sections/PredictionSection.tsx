@@ -43,7 +43,7 @@ function CyclePhone() {
 
   return (
     <div
-      className="absolute z-1 left-[calc(414*var(--u))] top-[calc(9*var(--u))] h-[calc(175*var(--u))] w-[calc(190*var(--u))] p-[calc(5*var(--u))] border-solid [border-width:calc(2*var(--u))] border-prediction-phone-border rounded-[calc(28*var(--u))_calc(28*var(--u))_0_0] bg-prediction-phone-bg [box-shadow:0_calc(6*var(--u))_calc(16*var(--u))_var(--color-prediction-phone-shadow)] max-poster:[--u:calc(min(44vw,300px)/190)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[28px] max-poster:h-[calc(168*var(--u))] max-poster:self-end max-phone:[--u:calc((100vw-42px)*0.52/190)]"
+      className="relative z-1 -mb-[calc(var(--section-space)+16*var(--u))] self-end h-[calc(175*var(--u))] w-[calc(190*var(--u))] p-[calc(5*var(--u))] border-solid [border-width:calc(2*var(--u))] border-prediction-phone-border rounded-[calc(28*var(--u))_calc(28*var(--u))_0_0] bg-prediction-phone-bg [box-shadow:0_calc(6*var(--u))_calc(16*var(--u))_var(--color-prediction-phone-shadow)] max-poster:[--u:calc(min(44vw,300px)/190)] max-poster:mb-0 max-poster:mt-[28px] max-poster:h-[calc(168*var(--u))] max-poster:self-end max-phone:[--u:calc((100vw-42px)*0.52/190)]"
       role="img"
       aria-label={t("phoneLabel")}
     >
@@ -85,7 +85,7 @@ function NextPeriodCard() {
   const t = useTranslations("Predictions");
 
   return (
-    <div className="absolute left-[calc(637*var(--u))] top-[calc(13*var(--u))] h-[calc(141*var(--u))] w-[calc(177*var(--u))] px-[calc(12*var(--u))] pb-0 pt-[calc(8*var(--u))] rounded-[calc(16*var(--u))] bg-white [box-shadow:0_calc(4*var(--u))_calc(14*var(--u))_var(--color-prediction-card-shadow)] max-poster:[--u:calc(min(44vw,300px)/177)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[28px] max-poster:self-center max-phone:[--u:calc((100vw-42px)*0.48/177)]">
+    <div className="relative ml-[calc(33*var(--u))] h-[calc(141*var(--u))] w-[calc(177*var(--u))] px-[calc(12*var(--u))] pb-0 pt-[calc(8*var(--u))] rounded-[calc(16*var(--u))] bg-white [box-shadow:0_calc(4*var(--u))_calc(14*var(--u))_var(--color-prediction-card-shadow)] max-poster:[--u:calc(min(44vw,300px)/177)] max-poster:ml-0 max-poster:mt-[28px] max-poster:self-center max-phone:[--u:calc((100vw-42px)*0.48/177)]">
       <div className="mx-auto my-0 grid h-[calc(98*var(--u))] w-[calc(98*var(--u))] place-items-center rounded-[50%] bg-[conic-gradient(from_-8deg,var(--color-prediction-ring-1)_0deg,var(--color-prediction-ring-2)_60deg,var(--color-prediction-ring-3)_120deg,var(--color-prediction-ring-4)_170deg,var(--color-prediction-ring-5)_215deg,var(--color-prediction-ring-6)_225deg,var(--color-prediction-ring-7)_345deg,var(--color-prediction-ring-8)_360deg)]">
         <div className="grid h-[calc(81*var(--u))] w-[calc(81*var(--u))] place-content-center rounded-[50%] bg-white text-center leading-[1.05]">
           <small className="text-[calc(9.6*var(--u))] font-[900]">{t("nextPeriodIn")}</small>
@@ -106,20 +106,20 @@ export function PredictionSection() {
 
   return (
     <section id="predictions" className="relative overflow-hidden bg-prediction-band text-ink-navy">
-      <PosterStage className="aspect-[1024/168] max-poster:grid max-poster:[grid-template-columns:auto_auto] max-poster:justify-center max-poster:gap-x-[20px] max-poster:px-[clamp(16px,4vw,40px)] max-poster:pb-0 max-poster:pt-[36px] max-phone:gap-x-[10px] max-phone:pt-[30px]">
-        <div className="absolute z-2 left-[calc(51*var(--u))] top-[calc(12*var(--u))] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:[grid-column:1/-1] max-poster:max-w-[640px] max-poster:mx-auto max-poster:text-center">
-          <h2 className="m-0 text-ink-navy text-[calc(29.5*var(--u))] font-[1000] leading-[0.96] tracking-[-0.015em] max-poster:text-[clamp(34px,6vw,50px)] max-phone:text-[31px]">
-            <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title1")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title2")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("title3")}</span>
+      <PosterStage bleed="bottom" className="grid items-center justify-start pl-[calc(51*var(--u))] [grid-template-columns:calc(363*var(--u))_auto_auto_auto] max-poster:[grid-template-columns:auto_auto] max-poster:justify-center max-poster:gap-x-[20px] max-poster:px-[clamp(16px,4vw,40px)] max-phone:gap-x-[10px]">
+        <div className="relative z-2 pr-[calc(16*var(--u))] max-poster:pr-0 max-poster:[grid-column:1/-1] max-poster:max-w-[640px] max-poster:mx-auto max-poster:text-center">
+          <h2 className="poster:text-balance m-0 max-w-[calc(315*var(--u))] text-ink-navy text-[calc(29.5*var(--u))] max-poster:max-w-none font-[1000] leading-[0.96] tracking-[-0.015em] max-poster:text-[clamp(34px,6vw,50px)] max-phone:text-[31px]">
+            <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span> <span className="block max-poster:inline">{t("title3")}</span>
           </h2>
-          <p className="mt-[calc(7*var(--u))] mb-0 mx-0 text-prediction-body-text text-[calc(13.4*var(--u))] font-[650] leading-[1.22] max-poster:w-auto max-poster:max-w-[480px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">
-            <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("body1")}</span> <span className="block whitespace-nowrap max-poster:inline max-poster:whitespace-normal">{t("body2")}</span>
+          <p className="poster:text-balance mt-[calc(7*var(--u))] mb-0 mx-0 text-prediction-body-text text-[calc(13.4*var(--u))] font-[650] leading-[1.22] max-poster:w-auto max-poster:max-w-[480px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">
+            <span className="block max-poster:inline">{t("body1")}</span> <span className="block max-poster:inline">{t("body2")}</span>
           </p>
           <small className="mt-[calc(7*var(--u))] block text-prediction-note-text text-[calc(11.6*var(--u))] italic font-[600] max-poster:text-[14px]">{t("disclaimer")}</small>
         </div>
-        <Rays className="absolute left-[calc(372*var(--u))] top-[calc(13*var(--u))] w-[calc(34*var(--u))] text-sun max-poster:hidden" />
+        <Rays className="absolute left-[calc(372*var(--u))] top-[calc(29*var(--u))] w-[calc(34*var(--u))] text-sun max-poster:hidden" />
         <CyclePhone />
         <NextPeriodCard />
-        <div className="absolute left-[calc(836*var(--u))] top-[calc(56*var(--u))] w-[calc(130*var(--u))] after:absolute after:left-[-6%] after:right-[-6%] after:bottom-[calc(-6*var(--u))] after:h-[calc(14*var(--u))] after:rounded-[50%] after:bg-prediction-mascot-bg after:content-[''] after:opacity-85 max-poster:hidden">
+        <div className="relative ml-[calc(22*var(--u))] mb-[calc(6*var(--u))] self-end w-[calc(130*var(--u))] after:absolute after:left-[-6%] after:right-[-6%] after:bottom-[calc(-6*var(--u))] after:h-[calc(14*var(--u))] after:rounded-[50%] after:bg-prediction-mascot-bg after:content-[''] after:opacity-85 max-poster:hidden">
           <Heart className="absolute z-2 text-cycle-next-period right-[calc(-4*var(--u))] top-[calc(-24*var(--u))] w-[calc(22*var(--u))] [transform:rotate(-12deg)]" />
           <Heart className="absolute z-2 text-cycle-next-period right-[calc(-24*var(--u))] top-[calc(-2*var(--u))] w-[calc(20*var(--u))] [transform:rotate(14deg)]" />
           <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.predictMochi} alt={t("mascotAlt")} width={368} height={264} sizes="(max-width: 1099px) 40vw, 15vw" />
