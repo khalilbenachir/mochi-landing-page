@@ -8,3 +8,6 @@ next-env.d.ts
 coverage/
 playwright-report/
 test-results/
+
+# Design reference images (local only, never deployed)
+design/

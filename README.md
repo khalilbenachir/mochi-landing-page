@@ -58,7 +58,7 @@ src/
 messages/                 English source messages and French translations
 public/mochi/             app assets plus the optimized transparent hero cutout
 tests/e2e/                Playwright routes, keyboard, and visual baselines
-design/references/        design reference images (untracked, never deployed)
+design/references/        design reference images (gitignored, never deployed)
 ```
 
 Principles:
