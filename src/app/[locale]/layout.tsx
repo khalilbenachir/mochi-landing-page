@@ -3,8 +3,9 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "@fontsource-variable/nunito";
+import { PLATFORM_COLORS } from "@/app/platform-colors";
 import { StructuredData } from "@/components/seo/StructuredData";
-import { PUBLIC_SITE_URL, SITE_NAME } from "@/content/landing";
+import { PUBLIC_SITE_URL, SITE_NAME } from "@/features/landing/content/landing";
 import { localePath, routing, type AppLocale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -70,7 +71,7 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
 }
 
 export const viewport: Viewport = {
-  themeColor: "#FDE3EA",
+  themeColor: PLATFORM_COLORS.browserTheme.value,
 };
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {

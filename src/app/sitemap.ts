@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/content/landing";
+import { SITE_URL } from "@/features/landing/content/landing";
 import { localePath, routing } from "@/i18n/routing";
 
 export const dynamic = "force-static";

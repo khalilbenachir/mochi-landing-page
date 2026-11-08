@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { MaquetteLanding } from "@/components/maquette/MaquetteLanding";
+import { LandingPage } from "@/features/landing/components/LandingPage";
 import type { AppLocale } from "@/i18n/routing";
 
 type HomePageProps = {
@@ -10,5 +10,5 @@ export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <MaquetteLanding />;
+  return <LandingPage />;
 }

@@ -1,6 +1,6 @@
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
+import type { ButtonHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
@@ -9,13 +9,9 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90",
-        primary: "bg-primary text-primary-foreground shadow-[0_8px_0_var(--pink-deep)] hover:-translate-y-0.5",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         outline: "border border-border bg-background hover:bg-accent hover:text-accent-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        light: "bg-white text-indigo-800 shadow-[0_8px_0_#2c2878] hover:-translate-y-0.5",
-        island: "bg-[#ff8fb1] text-[#2a0e17] shadow-[0_8px_0_#c9607f] hover:-translate-y-0.5",
-        dim: "bg-white/10 text-white hover:bg-white/15",
         link: "text-primary underline-offset-4 hover:underline",
         unstyled: "",
       },
@@ -25,14 +21,6 @@ export const buttonVariants = cva(
         lg: "h-11 rounded-md px-8 text-base",
         icon: "size-10 rounded-md",
         unstyled: "",
-      },
-      block: {
-        true: "w-full",
-        false: "",
-      },
-      large: {
-        true: "min-h-15 px-8 text-lg",
-        false: "",
       },
     },
     defaultVariants: {
@@ -48,24 +36,8 @@ export interface ButtonProps
   asChild?: boolean;
 }
 
-export function Button({ className, variant, size, block, large, asChild = false, ...props }: ButtonProps) {
+export function Button({ className, variant, size, asChild = false, ...props }: ButtonProps) {
   const Component = asChild ? Slot : "button";
 
-  return <Component className={cn(buttonVariants({ variant, size, block, large }), className)} {...props} />;
-}
-
-export function ButtonLink({
-  className,
-  variant,
-  size,
-  block,
-  large,
-  ...props
-}: AnchorHTMLAttributes<HTMLAnchorElement> & VariantProps<typeof buttonVariants>) {
-  return (
-    <a
-      className={cn(buttonVariants({ variant, size, block, large }), className)}
-      {...props}
-    />
-  );
+  return <Component className={cn(buttonVariants({ variant, size }), className)} {...props} />;
 }

@@ -1,9 +1,0 @@
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-.section { overflow: hidden; padding: 26px 0 30px; }
-.track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
-.track:hover { animation-play-state: paused; }
-.row { display: flex; align-items: center; gap: 46px; padding-right: 46px; }
-.item { display: flex; align-items: center; gap: 46px; font-size: 30px; font-weight: 900; }
