@@ -76,15 +76,15 @@ export function FreeSticker({ className }: { className?: string }) {
 }
 
 const appStoreBadge = cva(
-  "inline-flex items-center gap-[calc(8*var(--u))] h-[calc(49*var(--u))] [padding-inline:calc(22*var(--u))_calc(26*var(--u))] rounded-full bg-white text-ink-black no-underline [box-shadow:0_calc(3*var(--u))_0_var(--color-hero-badge-shadow)] [transition:transform_0.2s_var(--spring,ease)] hover:text-ink-black hover:[transform:translateY(-2px)] motion-reduce:transition-none motion-reduce:hover:[transform:none]",
+  "inline-flex items-center gap-[calc(8*var(--u))] h-[calc(49*var(--u))] [padding-inline:calc(22*var(--u))_calc(26*var(--u))] rounded-full bg-white text-ink-black no-underline [box-shadow:0_calc(3*var(--u))_0_var(--color-hero-badge-shadow)] transition-[transform,box-shadow] duration-250 ease-smooth hover:text-ink-black hover:[transform:translateY(-2px)] hover:[box-shadow:0_calc(3*var(--u)+2px)_0_var(--color-hero-badge-shadow)] active:duration-100 active:[transform:translateY(1px)] active:[box-shadow:0_calc(3*var(--u)-1px)_0_var(--color-hero-badge-shadow)] motion-reduce:hover:[transform:none] motion-reduce:active:[transform:none]",
   {
     variants: {
       compact: {
-        true: "gap-[calc(5*var(--u))] h-[calc(29*var(--u))] [padding-inline:calc(14*var(--u))_calc(16*var(--u))] [box-shadow:none] text-[calc(10.5*var(--u))] font-black max-poster:h-[34px] max-poster:text-[12px]",
+        true: "gap-[calc(5*var(--u))] h-[calc(29*var(--u))] [padding-inline:calc(14*var(--u))_calc(16*var(--u))] [box-shadow:none] hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.96)] text-[calc(10.5*var(--u))] font-black max-poster:h-[34px] max-poster:text-[12px]",
         false: "",
       },
       dark: {
-        true: "bg-ink-black text-white [box-shadow:none] hover:text-white",
+        true: "bg-ink-black text-white [box-shadow:none] hover:text-white hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.98)]",
         false: "",
       },
     },
