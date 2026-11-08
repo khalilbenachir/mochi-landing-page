@@ -36,6 +36,11 @@
   --grey-100: #f5f7fa;
   --privacy-sky: #dcebf8;
 
+  /* Pad change card (variant B). */
+  --card-rose: #b4485f;
+  --card-dark: #8a2d45;
+  --card-ink: #a33a55;
+
   --island-bg: #121014;
   --island-grey: #8e8e93;
 
