@@ -5,6 +5,7 @@ import { LocaleSwitcher } from "@/components/marketing/LocaleSwitcher";
 import { Button } from "@/components/ui/Button";
 import { APP_STORE_URL } from "@/features/landing/content/landing";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
+import { MobileMenu } from "@/features/landing/components/sections/MobileMenu";
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
@@ -148,32 +149,19 @@ function Header() {
       </nav>
       <LocaleSwitcher className="ml-auto max-nav:hidden" />
       <div className="ml-[calc(10*var(--u))] max-poster:ml-[12px] max-nav:hidden"><AppStoreBadge compact /></div>
-      <details className="hidden! max-nav:relative max-nav:z-30 max-nav:ml-auto max-nav:block!">
-        <summary
-          className="list-none [&::-webkit-details-marker]:hidden max-nav:grid max-nav:h-[48px] max-nav:w-[48px] max-nav:place-content-center max-nav:gap-[5px] max-nav:rounded-[15px] max-nav:bg-white max-nav:cursor-pointer"
-          aria-label={navigation("openMenu")}
-        >
-          <i className="block h-[3px] w-[22px] rounded-[3px] bg-hero-menu-icon" />
-          <i className="block h-[3px] w-[22px] rounded-[3px] bg-hero-menu-icon" />
-          <i className="block h-[3px] w-[22px] rounded-[3px] bg-hero-menu-icon" />
-        </summary>
-        <nav
-          className="absolute right-0 top-[56px] grid w-[min(290px,calc(100vw-40px))] overflow-hidden p-2 rounded-[20px] bg-white [box-shadow:0_20px_50px_var(--color-hero-mobile-menu-nav-shadow)]"
-          aria-label={navigation("mobileLabel")}
-        >
-          {MOBILE_NAV.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="px-[14px] py-3 border-b border-hero-menu-link-border text-hero-menu-link-text font-[900] no-underline"
-            >
-              {navigation(item.key)}
-            </a>
-          ))}
-          <LocaleSwitcher className="mt-2 mx-auto mb-[2px] border-hero-locale-mobile-border bg-hero-locale-mobile-bg [&_a]:text-ink-navy [&_a:hover]:text-ink-navy [&_a[aria-current=page]]:bg-brand-coral [&_a[aria-current=page]]:text-white" />
-          <AppStoreBadge dark className="mt-2 justify-center" />
-        </nav>
-      </details>
+      <MobileMenu label={navigation("openMenu")} navLabel={navigation("mobileLabel")}>
+        {MOBILE_NAV.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="px-[14px] py-3 border-b border-hero-menu-link-border text-hero-menu-link-text font-[900] no-underline"
+          >
+            {navigation(item.key)}
+          </a>
+        ))}
+        <LocaleSwitcher className="mt-2 mx-auto mb-[2px] border-hero-locale-mobile-border bg-hero-locale-mobile-bg [&_a]:text-ink-navy [&_a:hover]:text-ink-navy [&_a[aria-current=page]]:bg-brand-coral [&_a[aria-current=page]]:text-white" />
+        <AppStoreBadge dark className="mt-2 justify-center" />
+      </MobileMenu>
     </header>
   );
 }
