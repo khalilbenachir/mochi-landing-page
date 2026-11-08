@@ -149,7 +149,7 @@ function Header() {
           </a>
         ))}
       </nav>
-      <LocaleSwitcher className="ml-auto max-nav:hidden" />
+      <LocaleSwitcher variant="dropdown" className="ml-auto max-nav:hidden" />
       <div className="ml-[calc(10*var(--u))] max-poster:ml-[12px] max-nav:hidden"><AppStoreBadge compact /></div>
       <MobileMenu label={navigation("openMenu")} navLabel={navigation("mobileLabel")}>
         {MOBILE_NAV.map((item) => (
@@ -161,7 +161,7 @@ function Header() {
             {navigation(item.key)}
           </a>
         ))}
-        <LocaleSwitcher className="mt-2 mx-auto mb-[2px] border-hero-locale-mobile-border bg-hero-locale-mobile-bg [&_a]:text-ink-navy [&_a:hover]:text-ink-navy [&_a[aria-current=page]]:bg-brand-coral [&_a[aria-current=page]]:text-white" />
+        <LocaleSwitcher variant="list" className="mt-2 mb-[2px]" />
         <AppStoreBadge dark className="mt-2 justify-center" />
       </MobileMenu>
     </header>
