@@ -238,6 +238,22 @@
     "imageAlt": "Mochi auf einem Kissen",
     "brand": "Mochi: Periodentracker"
   },
+  "Footer": {
+    "navLabel": "Rechtliches und Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "disclaimer": "Mochi ist kein Verhütungsmittel und ersetzt keine medizinische Beratung."
+  },
+  "NotFound": {
+    "metadataTitle": "Seite nicht gefunden | Mochi",
+    "metadataDescription": "Diese Mochi-Seite wurde nicht gefunden.",
+    "code": "Fehler 404",
+    "title": "Ups, diese Seite ist weggerollt",
+    "body": "Mochi hat überall gesucht, aber nichts gefunden. Zurück auf den richtigen Weg.",
+    "home": "Zurück zur Startseite",
+    "mascotAlt": "Mochi schaut ratlos"
+  },
   "StructuredData": {
     "offer": "Kostenlos laden. Optionales Mochi Plus Abo in der App erhältlich.",
     "features": {

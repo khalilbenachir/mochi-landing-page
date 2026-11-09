@@ -238,6 +238,22 @@
     "imageAlt": "Mochi descansando em uma almofada",
     "brand": "Mochi: app de menstruação"
   },
+  "Footer": {
+    "navLabel": "Links legais e contato",
+    "privacy": "Política de privacidade",
+    "terms": "Termos",
+    "contact": "Contato",
+    "disclaimer": "O Mochi não é um método contraceptivo e não substitui orientação médica."
+  },
+  "NotFound": {
+    "metadataTitle": "Página não encontrada | Mochi",
+    "metadataDescription": "Esta página do Mochi não foi encontrada.",
+    "code": "Erro 404",
+    "title": "Ops, esta página saiu rolando",
+    "body": "O Mochi procurou por toda parte, mas não encontrou. Vamos voltar para o caminho certo.",
+    "home": "Voltar ao início",
+    "mascotAlt": "O Mochi parece confuso"
+  },
   "StructuredData": {
     "offer": "Download grátis. Assinatura opcional do Mochi Plus disponível no app.",
     "features": {

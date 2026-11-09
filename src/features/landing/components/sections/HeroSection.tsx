@@ -1,37 +1,12 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
-import { LocaleSwitcher } from "@/components/marketing/LocaleSwitcher";
-import { Button } from "@/components/ui/Button";
-import { APP_STORE_URL } from "@/features/landing/content/landing";
+import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
-import { MobileMenu } from "@/features/landing/components/sections/MobileMenu";
-import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
-
-const NAV = [
-  { href: "#features", key: "features" },
-  { href: "#flavors", key: "flavors" },
-  { href: "#privacy", key: "privacy" },
-  { href: "#faq", key: "faq" },
-] as const;
-
-const MOBILE_NAV = [
-  ...NAV.slice(0, 3),
-  { href: "#plus", key: "plus" as const },
-  NAV[3],
-] as const;
+import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 
 /** Mascot art for the hero. Swap this one path to change the illustration. */
 export const HERO_MASCOT = { src: LANDING_ASSETS.heroMochi, width: 1400, height: 1120 } as const;
-
-export function AppleLogo({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" />
-    </svg>
-  );
-}
 
 function Sparkle({ className }: { className?: string }) {
   return (
@@ -78,96 +53,6 @@ export function FreeSticker({ className }: { className?: string }) {
   );
 }
 
-const appStoreBadge = cva(
-  "inline-flex items-center gap-[calc(8*var(--u))] h-[calc(49*var(--u))] [padding-inline:calc(22*var(--u))_calc(26*var(--u))] rounded-full bg-white text-ink-black no-underline [box-shadow:0_calc(3*var(--u))_0_var(--color-hero-badge-shadow)] transition-[transform,box-shadow] duration-250 ease-smooth hover:text-ink-black hover:[transform:translateY(-2px)] hover:[box-shadow:0_calc(3*var(--u)+2px)_0_var(--color-hero-badge-shadow)] active:duration-100 active:[transform:translateY(1px)] active:[box-shadow:0_calc(3*var(--u)-1px)_0_var(--color-hero-badge-shadow)] motion-reduce:hover:[transform:none] motion-reduce:active:[transform:none]",
-  {
-    variants: {
-      compact: {
-        true: "gap-[calc(5*var(--u))] h-[calc(29*var(--u))] [padding-inline:calc(14*var(--u))_calc(16*var(--u))] [box-shadow:none] hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.96)] text-[calc(10.5*var(--u))] font-black max-poster:h-[34px] max-poster:text-[12px]",
-        false: "",
-      },
-      dark: {
-        true: "bg-ink-black text-white [box-shadow:none] hover:text-white hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.98)]",
-        false: "",
-      },
-    },
-    defaultVariants: { compact: false, dark: false },
-  },
-);
-
-const appleLogo = cva("flex-none", {
-  variants: {
-    compact: {
-      true: "w-[calc(15*var(--u))] h-[calc(17*var(--u))]",
-      false: "w-[calc(26*var(--u))] h-[calc(30*var(--u))]",
-    },
-  },
-});
-
-export function AppStoreBadge({ compact = false, dark = false, className }: { compact?: boolean; dark?: boolean; className?: string }) {
-  const t = useTranslations("Common");
-
-  return (
-    <Button asChild variant="unstyled" size="unstyled" className={cn(appStoreBadge({ compact, dark }), className)}>
-      <a href={APP_STORE_URL} aria-label={t("appStoreAria")}>
-        <AppleLogo className={appleLogo({ compact })} />
-        {compact ? (
-          <span>{t("download")}</span>
-        ) : (
-          <span className="grid text-left leading-none">
-            <small className="text-[calc(11*var(--u))] font-[800]">{t("downloadOn")}</small>
-            <strong className="mt-[calc(1*var(--u))] text-[calc(21*var(--u))] font-[950] tracking-[-0.02em] max-phone:text-[19px]">{t("appStore")}</strong>
-          </span>
-        )}
-      </a>
-    </Button>
-  );
-}
-
-function Header() {
-  const navigation = useTranslations("Navigation");
-  const common = useTranslations("Common");
-
-  return (
-    <header className="relative z-10 ml-[calc(55*var(--u))] mr-[calc(49*var(--u))] flex h-[calc(36*var(--u))] items-center max-poster:mx-0 max-poster:h-[72px] max-nav:h-[68px]">
-      <a
-        href="#top"
-        className="flex items-center gap-[calc(6*var(--u))] text-white text-[calc(25*var(--u))] font-[950] tracking-[-0.02em] no-underline hover:text-white max-poster:gap-[8px] max-poster:text-[26px] max-nav:text-[24px]"
-        aria-label={common("brandHome")}
-      >
-        <Image className="w-[calc(42*var(--u))] h-auto max-poster:w-[44px] max-nav:w-[40px]" src={LANDING_ASSETS.faces.happy} alt="" width={58} height={46} priority />
-        <span>{common("brand")}</span>
-      </a>
-      <nav className="absolute left-[calc(225*var(--u))] flex gap-[calc(45*var(--u))] max-poster:static max-poster:ml-auto max-poster:mr-[28px] max-poster:gap-[28px] max-nav:hidden" aria-label={navigation("mainLabel")}>
-        {NAV.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            className="text-white text-[calc(14.5*var(--u))] font-[850] no-underline hover:text-white hover:underline hover:underline-offset-4 max-poster:text-[15px]"
-          >
-            {navigation(item.key)}
-          </a>
-        ))}
-      </nav>
-      <LocaleSwitcher variant="dropdown" className="ml-auto max-nav:hidden" />
-      <div className="ml-[calc(10*var(--u))] max-poster:ml-[12px] max-nav:hidden"><AppStoreBadge compact /></div>
-      <MobileMenu label={navigation("openMenu")} navLabel={navigation("mobileLabel")}>
-        {MOBILE_NAV.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            className="px-[14px] py-3 border-b border-hero-menu-link-border text-hero-menu-link-text font-[900] no-underline"
-          >
-            {navigation(item.key)}
-          </a>
-        ))}
-        <LocaleSwitcher variant="list" className="mt-2 mb-[2px]" />
-        <AppStoreBadge dark className="mt-2 justify-center" />
-      </MobileMenu>
-    </header>
-  );
-}
-
 export function HeroSection() {
   const t = useTranslations("Hero");
 
@@ -177,7 +62,7 @@ export function HeroSection() {
       className="relative overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:content-[''] min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]"
     >
       <PosterStage bleed="bottom" className="pt-[calc(6*var(--u))] max-poster:pt-0 max-poster:px-[clamp(20px,4vw,40px)]">
-        <Header />
+        <SiteHeader />
 
         <div className="mt-[calc(14*var(--u))] grid pl-[calc(58*var(--u))] [grid-template-columns:calc(390*var(--u))_1fr] max-poster:mt-0 max-poster:block max-poster:pl-0">
         <div className="relative z-5 self-center max-poster:max-w-[640px] max-poster:mx-auto max-poster:mt-[18px] max-poster:text-center max-nav:mt-[10px]">

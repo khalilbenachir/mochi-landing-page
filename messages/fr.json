@@ -238,6 +238,22 @@
     "imageAlt": "Mochi posé sur un coussin",
     "brand": "Mochi : suivi des règles"
   },
+  "Footer": {
+    "navLabel": "Liens juridiques et contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions",
+    "contact": "Contact",
+    "disclaimer": "Mochi n’est pas un moyen de contraception et ne remplace pas un avis médical."
+  },
+  "NotFound": {
+    "metadataTitle": "Page introuvable | Mochi",
+    "metadataDescription": "Cette page Mochi est introuvable.",
+    "code": "Erreur 404",
+    "title": "Oups, cette page a roulé trop loin",
+    "body": "Mochi a cherché partout, sans la trouver. Revenons sur la bonne voie.",
+    "home": "Retour à l’accueil",
+    "mascotAlt": "Mochi a l’air perplexe"
+  },
   "StructuredData": {
     "offer": "Téléchargement gratuit. Abonnement Mochi Plus facultatif dans l’application.",
     "features": {

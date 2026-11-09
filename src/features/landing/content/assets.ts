@@ -13,6 +13,7 @@ export const LANDING_ASSETS = {
   islandMochi: "/mochi/island-mochi.webp",
   manifestIcon192: "/mochi/app-icon-192.png",
   manifestIcon512: "/mochi/app-icon-512.png",
+  notFoundMascot: "/mochi/not-found-mascot.png",
   predictMochi: "/mochi/predict-mochi.webp",
   socialCard: "/mochi/social-card.png",
 } as const;
