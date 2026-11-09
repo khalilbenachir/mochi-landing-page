@@ -33,7 +33,7 @@ for (const locale of routing.locales) {
 }
 
 /** `npm run build:test` pins these, so the page always renders the configured-launch state. */
-const TEST_CONTACT_EMAIL = "privacy@example.test";
+const TEST_CONTACT_EMAIL = "test@mochi.app";
 
 test("every policy section is readable without JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });

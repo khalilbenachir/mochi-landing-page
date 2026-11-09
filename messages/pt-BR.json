@@ -347,5 +347,84 @@
       "backup": "Backup e sincronização opcionais com conta",
       "rewards": "Sequências e 12 sabores de Mochi colecionáveis"
     }
+  },
+  "TermsOfUse": {
+    "metadataTitle": "Termos de uso | Mochi",
+    "metadataDescription": "As regras simples para usar o Mochi: previsões do ciclo, assinaturas opcionais do Mochi Plus, seu conteúdo e contato.",
+    "eyebrow": "Termos",
+    "title": "Termos de uso",
+    "intro": "As regras simples para usar o Mochi.\nCurtas, acolhedoras e fáceis de entender.",
+    "updated": "Última atualização: {date}",
+    "heroAlt": "Um Mochi rosa sorridente usa óculos redondos e segura um pergaminho.",
+    "short": "A versão resumida",
+    "onThisPage": "Nesta página",
+    "callout": "As previsões do Mochi são estimativas. Não são um método contraceptivo e não substituem a orientação de um médico.",
+    "contactTitle": "Dúvidas sobre estes termos?",
+    "contactEmail": "Envie um e-mail para {email}",
+    "contactButton": "Fale com a gente",
+    "privacyLink": "Leia nossa política de privacidade",
+    "subscriptionsLink": "Como gerenciar ou cancelar uma assinatura da Apple",
+    "cards": {
+      "medical": {
+        "title": "Não é orientação\nmédica",
+        "body": "O Mochi ajuda a acompanhar, não faz diagnósticos."
+      },
+      "contraception": {
+        "title": "Não é\ncontraceptivo",
+        "body": "Previsões são estimativas, nunca contracepção."
+      },
+      "plus": {
+        "title": "Mochi Plus\né opcional",
+        "body": "Cobrado pela Apple. Cancele nos Ajustes."
+      },
+      "privacy": {
+        "title": "Seus dados\nsão seus",
+        "body": "Veja nossa política de privacidade."
+      }
+    },
+    "sections": {
+      "using": {
+        "nav": "Usando o Mochi",
+        "title": "Usando o Mochi",
+        "body": "O Mochi é um app de acompanhamento menstrual para iPhone que ajuda você a registrar seu ciclo, sintomas, humor e muito mais, receber previsões, configurar lembretes úteis (como trocar o absorvente) e colecionar sabores fofos com check-ins diários.",
+        "detail": "Ao usar o Mochi, você concorda com estes Termos de Uso. Se não concordar, não use o app."
+      },
+      "health": {
+        "nav": "Aviso de saúde",
+        "title": "Aviso de saúde",
+        "body": "O Mochi serve apenas para o bem-estar geral e o acompanhamento do ciclo. Não é um dispositivo médico e não oferece orientação médica, diagnósticos ou tratamentos. Procure sempre um profissional de saúde qualificado se tiver preocupações com sua saúde ou dúvidas sobre seu ciclo.",
+        "detail": "O Mochi pode ajudar a identificar padrões e estimar sua próxima menstruação, janela fértil e dia de ovulação com base no que você registra. Essas estimativas podem não ser precisas para todas as pessoas."
+      },
+      "subscriptions": {
+        "nav": "Assinaturas do Mochi Plus",
+        "title": "Assinaturas do Mochi Plus",
+        "body": "O Mochi Plus é opcional. Antes de assinar, a tela de compra da App Store mostra o preço, o período de cobrança e qualquer oferta aplicável. A Apple processa o pagamento pela sua Conta Apple.",
+        "detail": "Assinaturas recorrentes são renovadas até o cancelamento. Gerencie ou cancele a sua no iPhone em Ajustes > seu nome > Assinaturas. Apagar o Mochi não cancela uma assinatura."
+      },
+      "content": {
+        "nav": "Seu conteúdo",
+        "title": "Seu conteúdo",
+        "body": "Seus registros de ciclo, sintomas, humor e outras informações que você insere pertencem a você. Você mantém a propriedade do seu conteúdo ao usar o Mochi.",
+        "detail": "Nossa política de privacidade explica como suas informações são tratadas, incluindo o backup opcional. Proteja seu dispositivo e as contas que você utiliza."
+      },
+      "acceptable-use": {
+        "nav": "Uso aceitável",
+        "title": "Uso aceitável",
+        "body": "Use o Mochi para acompanhar seu próprio ciclo e de acordo com a legislação aplicável. Utilize o app e seus recursos com responsabilidade.",
+        "detail": "Não faça uso indevido do app, não interrompa seu funcionamento, não tente contornar sua segurança e não acesse informações de outras pessoas sem permissão."
+      },
+      "changes": {
+        "nav": "Alterações nos termos",
+        "title": "Alterações nos termos",
+        "body": "Podemos atualizar estes termos conforme o Mochi evolui. A data no início desta página mostra quando esta versão foi atualizada pela última vez.",
+        "detail": "Revise os termos quando o app mudar. Estes termos não retiram os direitos que você tem de acordo com a legislação de defesa do consumidor aplicável."
+      },
+      "contact": {
+        "nav": "Contato",
+        "title": "Fale com a gente",
+        "body": "Se você tiver dúvidas sobre estes termos ou precisar de ajuda com o Mochi, entre em contato pelo e-mail abaixo.",
+        "detail": "Evite incluir informações sensíveis de saúde na sua mensagem. Para dúvidas sobre sua saúde, procure um profissional de saúde qualificado."
+      }
+    }
   }
 }

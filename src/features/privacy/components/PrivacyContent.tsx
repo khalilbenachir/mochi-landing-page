@@ -10,7 +10,7 @@ type PrivacyContentProps = {
   sections: PolicySectionCopy[];
   navLabel: string;
   callout: string;
-  email: string | null;
+  email: string;
 };
 
 function subscribeToHash(onChange: () => void) {
@@ -58,7 +58,7 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
               href={`#${id}`}
               aria-current={selected === id ? "location" : undefined}
               className={cn(
-                "group flex min-h-47 items-center gap-20 rounded-u-13 px-18 py-10 text-u-14.5 font-heavy leading-[1.25] tracking-[-0.01em] text-ink-navy transition-colors hover:bg-policy-pink focus-visible:outline-2 focus-visible:outline-brand-coral focus-visible:outline-offset-2 max-poster:text-[15px] max-nav:gap-[10px] max-nav:px-[10px]",
+                "group flex min-h-47 items-center gap-20 rounded-u-13 px-18 py-10 text-u-14.5 font-heavy leading-[1.25] tracking-[-0.01em] text-ink-navy hover:bg-policy-pink focus-visible:outline-2 focus-visible:outline-brand-coral focus-visible:outline-offset-2 max-poster:text-[15px] max-nav:gap-[10px] max-nav:px-[10px]",
                 selected === id && "bg-policy-pink text-mochi-pink-ink",
               )}
             >
@@ -84,7 +84,7 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
                 <p className="border-l border-mochi-pink-ink/40 pl-26 max-nav:pl-[18px]">{callout}</p>
               </div>
             ) : null}
-            {id === "contact" && email ? (
+            {id === "contact" ? (
               <a href={`mailto:${email}`} className="mt-20 inline-flex max-w-full items-center gap-10 rounded-full bg-brand-coral px-24 py-13 wrap-anywhere font-black text-white hover:bg-mochi-pink-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral">
                 <PolicyIcon id="contact" className="size-22" />{email}
               </a>

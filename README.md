@@ -57,6 +57,8 @@ src/
     seo/                  localized schema.org graph
     ui/                   reusable shadcn primitives
   features/
+    legal/
+      components/         shared summary cards/headings and contact banner for Privacy and Terms
     landing/
       components/         landing composition and sections, styled with Tailwind utilities
         shared/           `PosterStage`, the poster coordinate system
@@ -78,6 +80,8 @@ Principles:
 - **Feature ownership is explicit.** Landing components, catalog data, site configuration and the
   static asset manifest live under `features/landing`; reusable primitives and locale infrastructure
   stay shared.
+- **Shared legal presentation.** `features/legal/components` owns the summary cards/headings and
+  contact banner used by Privacy and Terms. Each page supplies its translated content and artwork.
 - **Facts are separate from language.** Stable product IDs and asset facts live in the landing
   feature's `content/`, while all active user-facing copy lives in `messages/`.
 - **Search and agent readable.** Product facts are visible in semantic HTML and mirrored in honest
@@ -118,7 +122,7 @@ Principles:
 
 Playwright covers localized routes, keyboard behavior, metadata, crawler endpoints, and full-page
 baselines at 1600, 1440, 1099, 759 and 390px, plus the open phone menu and the privacy reader.
-Privacy layout checks also cover 320 and 800px. Shared asset preparation waits for hydration before
+Privacy and Terms layout checks also cover 320 and 800px. Shared asset preparation waits for hydration before
 preloading lazy artwork, preventing image-attribute changes from racing React hydration.
 Baselines change only for reviewed, intentional visual changes (`npm run test:e2e:update`).
 
@@ -127,7 +131,7 @@ Baselines change only for reviewed, intentional visual changes (`npm run test:e2
 - Set `NEXT_PUBLIC_APP_STORE_URL` to the real App Store destination.
 - Set `NEXT_PUBLIC_CONTACT_EMAIL` to the real contact address.
 - Set `NEXT_PUBLIC_SITE_URL` to the final production origin.
-- Supply the approved Terms of Use text or URL; the Terms route is not yet implemented.
+- Review and approve the draft Terms of Use copy in all six languages before launch.
 
 ## Privacy page
 
@@ -146,13 +150,26 @@ Privacy components and copy contracts live in `src/features/privacy/`; localized
 `POLICY_UPDATED_AT` in `src/features/privacy/content/policy.ts` is a deliberate policy date, not a
 build timestamp.
 
+## Terms page
+
+`/terms` and each locale's `/terms` route follow the Privacy workflow, with a turquoise illustrated
+hero, yellow summary band, seven always-readable sections, a hash-aware reader and a contact
+banner. The footer's existing Terms link now opens this page. Language switching preserves the
+Terms route, and the data summary links to the localized Privacy policy.
+
+Components, stable anchors, the deliberate `TERMS_UPDATED_AT` date, artwork provenance and draft
+copy notes live in `src/features/terms/`. All six translations live in `messages/`. The new
+transparent scroll-holding mascot is optimized under `public/terms-art/`; the contact illustration
+reuses Privacy's peeking Mochi. Contact uses the same configured address as Privacy.
+The plain-language Terms copy is a draft for owner/legal review before launch.
+
 ### Environment
 
 Copy `.env.example` to `.env` or `.env.local` (both git-ignored). Every value is inlined into the
 public bundle.
 
 - `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` are required for production builds; the
-  build fails without them, so the `[YOUR EMAIL]` placeholder only ever appears in development.
+  build fails without them. Outside production the contact address falls back to `test@mochi.app`.
 - Until `NEXT_PUBLIC_APP_STORE_URL` is set, App Store buttons open the localized home download section.
-- `npm run build:test` pins all three (`privacy@example.test`, no App Store URL), so tests and
+- `npm run build:test` pins all three (`test@mochi.app`, no App Store URL), so tests and
   visual baselines do not depend on your local `.env`.

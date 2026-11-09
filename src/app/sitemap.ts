@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/features/landing/content/landing";
+import { LEGAL_PAGE_SLUGS } from "@/features/legal/pages";
 import { localePath, localeRoutePath, routing, type AppLocale } from "@/i18n/routing";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "privacy"].flatMap((slug) => {
+  return ["", ...LEGAL_PAGE_SLUGS].flatMap((slug) => {
     const urlFor = (locale: AppLocale) => `${SITE_URL}${slug ? localeRoutePath(locale, slug) : localePath(locale)}`;
     const languages = {
       ...Object.fromEntries(routing.locales.map((locale) => [locale, urlFor(locale)])),

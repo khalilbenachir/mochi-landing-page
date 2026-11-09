@@ -7,6 +7,7 @@ import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
 import { LANDING_ASSETS } from "../../src/features/landing/content/assets";
 import { FAQ_IDS, STRUCTURED_FEATURE_IDS } from "../../src/features/landing/content/landing";
+import { LEGAL_PAGE_SLUGS } from "../../src/features/legal/pages";
 import { LOCALE_META, localePath, localeRoutePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
 
@@ -223,18 +224,18 @@ test.describe("crawler endpoints", () => {
     expect(body).not.toMatch(/<lastmod>/i);
 
     const blocks = [...body.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1] ?? "");
-    expect(blocks).toHaveLength(routing.locales.length * 2);
+    expect(blocks).toHaveLength(routing.locales.length * 3);
 
     const locs = blocks.map((block) => {
       const found = [...block.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] ?? "");
       expect(found).toHaveLength(1);
       return norm(must(found[0]));
     });
-    expect(sorted(locs)).toEqual(sorted(routing.locales.flatMap((locale) => [pageUrl(locale), new URL(localeRoutePath(locale, "privacy"), baseOrigin).href])));
+    expect(sorted(locs)).toEqual(sorted(routing.locales.flatMap((locale) => [pageUrl(locale), ...LEGAL_PAGE_SLUGS.map((slug) => new URL(localeRoutePath(locale, slug), baseOrigin).href)])));
 
     for (const block of blocks) {
-      const privacy = /<loc>[^<]*\/privacy<\/loc>/.test(block);
-      const expectedUrl = (locale: AppLocale) => privacy ? new URL(localeRoutePath(locale, "privacy"), baseOrigin).href : pageUrl(locale);
+      const slug = LEGAL_PAGE_SLUGS.find((candidate) => new RegExp(`<loc>[^<]*/${candidate}</loc>`).test(block));
+      const expectedUrl = (locale: AppLocale) => slug ? new URL(localeRoutePath(locale, slug), baseOrigin).href : pageUrl(locale);
       const expectedAlternates: Record<string, string> = {
         ...Object.fromEntries(routing.locales.map((locale) => [locale, expectedUrl(locale)])),
         "x-default": expectedUrl(routing.defaultLocale),
