@@ -93,12 +93,24 @@ Principles:
 - No CSS Modules, custom class selectors, or inline styles.
 - Colors exist only as `--color-*` tokens in the `@theme static` block of `globals.css` (enforced by
   `style-policy.test.ts` and `theme.test.ts`).
-- Poster geometry uses `PosterStage` plus `calc(N*var(--u))` arbitrary values.
+- Poster geometry: inside a `PosterStage`, Tailwind's `--spacing` is one poster unit (1/1024 or
+  1/800 of the poster width, 1px below the poster breakpoint). So `mt-14`, `w-98` and `-left-68` are
+  maquette pixels, `text-u-41` / `rounded-u-12` do the same for type and radii, and off-quarter
+  values use `[calc(13.6*var(--spacing))]` or `text-u-[13.6]`. Tailwind's default 4px scale does
+  not apply inside a stage: write fixed sizes as `p-[8px]`.
+- Prefer native utilities over arbitrary properties: `-rotate-35`, `-translate-x-1/2`,
+  `-scale-x-100`, `grid-cols-[...]`, `rounded-full`. Transition `translate`/`rotate`/`scale`
+  (not `transform`) when animating them.
+- Don't restate preflight (`m-0`, `list-none`, `no-underline`); links inherit their color.
+- Reduced motion is handled once in `globals.css`; only add `motion-reduce:` to cancel a hover
+  transform, never to drop a transition or animation.
 - Breakpoints: `max-poster` (<=1099px), `max-nav` (<=760px), `max-tablet` (<=640px), `max-phone`
   (<=480px), `min-wide` (>=1441px). Never use arbitrary `max-[...]` variants.
 - Shadows and filters with `calc()` use arbitrary properties (`[box-shadow:...]`), never `shadow-[...]`.
 - Per-ID colors come from typed static records in `visual-variants.ts`.
-- Style `Button asChild` links through `Button`'s `className`.
+- Calls to action use `Button` from `features/landing/components/shared` (`variant="pill"`, `"flat"` or `"store"`), sized through `className`.
+- Shared decorative SVGs (rays, hearts, sparkles, petals, status icons) live in
+  `features/landing/components/shared/decor.tsx`.
 
 ## Visual tests
 
