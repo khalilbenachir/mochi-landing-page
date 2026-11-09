@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { StoreBadge } from "./AppStoreBadges";
 import { PosterStage } from "./PosterStage";
+import { SpreadOrCenter } from "./SpreadOrCenter";
 
 const FOOTER_LINKS = [
   { key: "privacy", slug: "privacy" },
@@ -11,9 +12,10 @@ const FOOTER_LINKS = [
 ] as const;
 
 /**
- * Two rows: brand + App Store badge, then the centered legal links and disclaimer. Nothing sets a fixed height
- * and the brand may wrap, so long localized names (e.g. "Mochi: calendario menstrual") never run
- * under the badge.
+ * Two rows: brand + App Store badge, then legal links + disclaimer. The second row sits at the
+ * edges (links left, disclaimer right) while both fit on one line and centers once it wraps.
+ * Nothing sets a fixed height and the brand may wrap, so long localized names
+ * (e.g. "Mochi: calendario menstrual") never run under the badge.
  */
 export function SiteFooter({ homePath }: { homePath: string }) {
   const t = useTranslations("Closing");
@@ -33,8 +35,8 @@ export function SiteFooter({ homePath }: { homePath: string }) {
           <div className="justify-self-end max-phone:hidden">
             <StoreBadge placement="footer" />
           </div>
-          <div className="col-span-full mt-12 flex flex-col items-center gap-6 text-center max-poster:mt-[16px] max-poster:gap-[8px] max-phone:mt-[20px]">
-            <nav className="flex flex-wrap justify-center gap-x-18 gap-y-[6px]" aria-label={footer("navLabel")}>
+          <SpreadOrCenter className="col-span-full mt-12 items-center justify-between gap-x-32 gap-y-6 data-stacked:justify-center max-poster:mt-[16px] max-poster:gap-y-[8px] max-phone:mt-[20px]">
+            <nav className="flex max-w-full shrink-0 flex-wrap gap-x-18 gap-y-[6px] group-data-stacked/spread:justify-center" aria-label={footer("navLabel")}>
               {FOOTER_LINKS.map((item) => (
                 <a
                   key={item.key}
@@ -45,10 +47,10 @@ export function SiteFooter({ homePath }: { homePath: string }) {
                 </a>
               ))}
             </nav>
-            <p className="max-w-500 text-balance text-u-8.5 font-bold leading-[1.25] text-ink-navy/70 max-poster:max-w-[520px] max-poster:text-[10px]">
+            <p className="max-w-full shrink-0 text-balance text-right text-u-8.5 font-bold leading-[1.25] text-ink-navy/70 group-data-stacked/spread:text-center max-poster:text-[10px]">
               {footer("disclaimer")}
             </p>
-          </div>
+          </SpreadOrCenter>
         </div>
       </PosterStage>
     </footer>
