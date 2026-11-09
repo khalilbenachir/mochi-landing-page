@@ -2,24 +2,23 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { FLAVOR_CARD_ASSETS } from "@/features/landing/content/assets";
 import { COMPARISON_ROW_IDS } from "@/features/landing/content/landing";
+import { Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { cn } from "@/lib/utils";
 
-function Rays({ className, flip = false }: { className?: string; flip?: boolean }) {
-  return (
-    <svg className={cn(className, flip && "[transform:scaleX(-1)]")} viewBox="0 0 40 40" aria-hidden="true">
-      <g fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="4.5">
-        <path d="M24 4 28 15" /><path d="M8 13 18 20" /><path d="M5 30 17 29" />
-      </g>
-    </svg>
-  );
-}
+type RowIconName = "user" | "wifi" | "bell" | "chart" | "gift";
 
-const ROW_ICONS = ["user", "wifi", "bell", "chart", "gift"] as const;
+const ROW_ICONS = {
+  account: "user",
+  offline: "wifi",
+  reminder: "bell",
+  analytics: "chart",
+  rewards: "gift",
+} as const satisfies Record<(typeof COMPARISON_ROW_IDS)[number], RowIconName>;
 
-function RowIcon({ name }: { name: (typeof ROW_ICONS)[number] }) {
+function RowIcon({ name }: { name: RowIconName }) {
   return (
-    <svg className="h-[calc(14*var(--u))] w-[calc(14*var(--u))] flex-none max-tablet:h-[15px] max-tablet:w-[15px]" viewBox="0 0 24 24" aria-hidden="true">
+    <svg className="size-14 flex-none max-tablet:size-[15px]" viewBox="0 0 24 24" aria-hidden="true">
       <g className="fill-ink-deep">
         {name === "user" && <><circle cx="12" cy="7.5" r="4.5" /><path d="M3.5 21c0-4.7 3.8-7.5 8.5-7.5s8.5 2.8 8.5 7.5Z" /></>}
         {name === "wifi" && <><path d="M12 20.5 9.4 17.6a3.6 3.6 0 0 1 5.2 0Z" /><path d="M5.8 13.4a8.8 8.8 0 0 1 12.4 0l-1.9 1.9a6.1 6.1 0 0 0-8.6 0Z" /><path d="M2.2 9.8a13.9 13.9 0 0 1 19.6 0l-1.9 1.9a11.2 11.2 0 0 0-15.8 0Z" /></>}
@@ -33,12 +32,12 @@ function RowIcon({ name }: { name: (typeof ROW_ICONS)[number] }) {
 }
 
 const RAYS = "absolute z-2 text-sun-ray max-poster:hidden";
-const CELL = "h-[calc(23.4*var(--u))] p-0 text-center max-tablet:h-auto";
+const CELL = "h-[calc(23.4*var(--spacing))] text-center max-tablet:h-auto";
 const CELL_PAD = "max-tablet:px-[6px] max-tablet:py-[10px]";
-const HEAD = "h-[calc(26*var(--u))] text-[calc(12.6*var(--u))] font-[1000] rounded-[calc(9*var(--u))_calc(9*var(--u))_0_0] max-tablet:h-[40px] max-tablet:p-[6px] max-tablet:text-[13px] max-tablet:leading-[1.15] max-tablet:rounded-[10px_10px_0_0]";
-const ROW_HEAD = "flex items-center gap-[calc(10*var(--u))] pl-[calc(15*var(--u))] [border-left:calc(1*var(--u))_solid_var(--color-comparison-row-header-border)] font-[800] text-left whitespace-nowrap max-tablet:gap-[8px] max-tablet:pb-[10px] max-tablet:pl-[10px] max-tablet:pr-[6px] max-tablet:pt-[10px] max-tablet:whitespace-normal max-tablet:leading-[1.2]";
-const ROW_DIVIDER = "[box-shadow:inset_0_calc(-1*var(--u))_0_var(--color-comparison-row-divider)]";
-const BODY_CELL = "text-[calc(11*var(--u))] max-tablet:text-[13px] max-tablet:leading-[1.2]";
+const HEAD = "h-26 text-u-[12.6] font-max rounded-t-[calc(9*var(--spacing))] max-tablet:h-[40px] max-tablet:p-[6px] max-tablet:text-[13px] max-tablet:leading-[1.15] max-tablet:rounded-t-[10px]";
+const ROW_HEAD = "flex items-center gap-10 pl-15 border-l-[length:calc(1*var(--spacing))] border-l-comparison-row-header-border font-extrabold text-left whitespace-nowrap max-tablet:gap-[8px] max-tablet:pl-[10px] max-tablet:pr-[6px] max-tablet:py-[10px] max-tablet:whitespace-normal max-tablet:leading-[1.2]";
+const ROW_DIVIDER = "[box-shadow:inset_0_calc(-1*var(--spacing))_0_var(--color-comparison-row-divider)]";
+const BODY_CELL = "text-u-11 max-tablet:text-[13px] max-tablet:leading-[1.2]";
 
 /** "Why Mochi?": Mochi against a typical period app. */
 export function ComparisonSection() {
@@ -46,26 +45,26 @@ export function ComparisonSection() {
 
   return (
     <section id="why" className="relative overflow-hidden bg-white text-ink-navy">
-      <PosterStage grid="800" className="grid [grid-template-columns:calc(270*var(--u))_calc(504*var(--u))] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
-        <Rays className={cn(RAYS, "left-[calc(40*var(--u))] top-[calc(43*var(--u))] w-[calc(36*var(--u))]")} />
-        <h2 className="relative z-2 my-0 mr-0 ml-[calc(88*var(--u))] self-center text-[calc(35*var(--u))] font-[1000] leading-[1.12] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
+      <PosterStage grid="800" className="grid grid-cols-[calc(270*var(--spacing))_calc(504*var(--spacing))] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
+        <Rays shape="burst" className={cn(RAYS, "left-40 top-43 w-36")} />
+        <h2 className="relative z-2 ml-88 self-center text-u-35 font-max leading-[1.12] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
           <span className="relative block w-fit max-poster:inline max-poster:whitespace-normal">
             {t("title1")}
             {/* Sits 41u past "Why"; longer words (Pourquoi) push it along, keeping a 12u gap. */}
-            <Rays className={cn(RAYS, "left-[max(calc(100%+12*var(--u)),calc(116*var(--u)))] top-[calc(20.71*var(--u))] w-[calc(28*var(--u))]")} flip />
-          </span> <span className="ml-[calc(17*var(--u))] block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
+            <Rays shape="burst" className={cn(RAYS, "left-[max(calc(100%+12*var(--spacing)),calc(116*var(--spacing)))] top-[calc(20.71*var(--spacing))] w-28")} flip />
+          </span> <span className="ml-17 block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
         </h2>
-        <div className="absolute z-1 left-[calc(12*var(--u))] top-[calc(112*var(--u))] w-[calc(100*var(--u))] after:absolute after:left-[-12%] after:right-[-14%] after:bottom-[calc(-5*var(--u))] after:h-[calc(12*var(--u))] after:rounded-[50%] after:bg-comparison-matcha-bg after:content-[''] max-poster:hidden" aria-hidden="true">
+        <div className="absolute z-1 left-12 top-112 w-100 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-matcha-bg max-poster:hidden" aria-hidden="true">
           <Image className="relative z-1 h-auto w-full" src={FLAVOR_CARD_ASSETS.matcha} alt="" width={380} height={262} sizes="12vw" />
         </div>
 
-        <table className="relative w-[calc(504*var(--u))] border-separate border-spacing-0 text-[calc(10.6*var(--u))] max-poster:[--u:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--u:1px] max-tablet:w-full max-tablet:text-[13px]">
+        <table className="relative w-504 border-separate border-spacing-0 text-u-[10.6] max-poster:[--spacing:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--spacing:1px] max-tablet:w-full max-tablet:text-[13px]">
           <caption className="sr-only">{t("caption")}</caption>
           <thead>
             <tr>
               <td className={cn(CELL, CELL_PAD)} />
-              <th scope="col" className={cn(CELL, HEAD, "w-[calc(123*var(--u))] bg-comparison-mochi-head-bg text-white max-tablet:w-[26%]")}>{t("mochi")}</th>
-              <th scope="col" className={cn(CELL, HEAD, "w-[calc(147*var(--u))] bg-comparison-typical-head-bg text-ink-navy max-tablet:w-[28%]")}>{t("typical")}</th>
+              <th scope="col" className={cn(CELL, HEAD, "w-123 bg-comparison-mochi-head-bg text-white max-tablet:w-[26%]")}>{t("mochi")}</th>
+              <th scope="col" className={cn(CELL, HEAD, "w-147 bg-comparison-typical-head-bg text-ink-navy max-tablet:w-[28%]")}>{t("typical")}</th>
             </tr>
           </thead>
           <tbody>
@@ -79,20 +78,20 @@ export function ComparisonSection() {
                     className={cn(
                       CELL,
                       ROW_HEAD,
-                      first && "[border-top:calc(1*var(--u))_solid_var(--color-comparison-row-header-border)] rounded-tl-[calc(8*var(--u))] max-tablet:rounded-tl-[10px]",
-                      last && "[border-bottom:calc(1*var(--u))_solid_var(--color-comparison-row-header-border)] rounded-bl-[calc(8*var(--u))] max-tablet:rounded-bl-[10px]",
+                      first && "border-t-[length:calc(1*var(--spacing))] border-t-comparison-row-header-border rounded-tl-[calc(8*var(--spacing))] max-tablet:rounded-tl-[10px]",
+                      last && "border-b-[length:calc(1*var(--spacing))] border-b-comparison-row-header-border rounded-bl-[calc(8*var(--spacing))] max-tablet:rounded-bl-[10px]",
                       !last && ROW_DIVIDER,
                     )}
                   >
-                    <RowIcon name={ROW_ICONS[i] ?? "gift"} />{t(`rows.${id}.feature`)}
+                    <RowIcon name={ROW_ICONS[id]} />{t(`rows.${id}.feature`)}
                   </th>
                   <td
                     className={cn(
                       CELL,
                       CELL_PAD,
                       BODY_CELL,
-                      "bg-comparison-mochi-cell-bg font-[900]",
-                      last && "[border-bottom:calc(1*var(--u))_solid_var(--color-comparison-mochi-cell-border)]",
+                      "bg-comparison-mochi-cell-bg font-black",
+                      last && "border-b-[length:calc(1*var(--spacing))] border-b-comparison-mochi-cell-border",
                       !last && ROW_DIVIDER,
                     )}
                   >
@@ -103,8 +102,8 @@ export function ComparisonSection() {
                       CELL,
                       CELL_PAD,
                       BODY_CELL,
-                      "[border-right:calc(1*var(--u))_solid_var(--color-comparison-row-header-border)] bg-comparison-typical-cell-bg font-[650]",
-                      last && "[border-bottom:calc(1*var(--u))_solid_var(--color-comparison-row-header-border)] rounded-br-[calc(8*var(--u))] max-tablet:rounded-br-[10px]",
+                      "border-r-[length:calc(1*var(--spacing))] border-r-comparison-row-header-border bg-comparison-typical-cell-bg font-demibold",
+                      last && "border-b-[length:calc(1*var(--spacing))] border-b-comparison-row-header-border rounded-br-[calc(8*var(--spacing))] max-tablet:rounded-br-[10px]",
                       !last && ROW_DIVIDER,
                     )}
                   >

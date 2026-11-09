@@ -42,8 +42,7 @@
     "title3": "der Dynamic Island",
     "body": "Tagesbinde, Nachtbinde oder Slipeinlage, 2 bis 8 Stunden. Mochi zählt auf dem Home-Bildschirm, in der Dynamic Island und auf dem Sperrbildschirm herunter.",
     "phoneLabel": "iPhone Dynamic Island mit Mochi und einem Countdown zum Bindenwechsel",
-    "timerPrefix": "Wechsel in",
-    "countdownLabel": "Countdown zum Bindenwechsel"
+    "timerPrefix": "Wechsel in"
   },
   "Moods": {
     "title1": "Wie fühlst du dich?",

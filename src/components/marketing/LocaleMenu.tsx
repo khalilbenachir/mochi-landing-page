@@ -90,7 +90,7 @@ export function LocaleMenu({ current, options, label, triggerLabel, className }:
         <Globe className="size-[15px]" strokeWidth={2.4} aria-hidden="true" />
         <span>{current.short}</span>
         <ChevronDown
-          className="size-[13px] transition-transform duration-250 ease-smooth group-data-open:[transform:rotate(180deg)]"
+          className="size-[13px] transition-transform duration-250 ease-smooth group-data-open:rotate-180"
           strokeWidth={3}
           aria-hidden="true"
         />
@@ -102,7 +102,7 @@ export function LocaleMenu({ current, options, label, triggerLabel, className }:
         onClick={(event) => {
           if ((event.target as Element).closest("a")) setOpen(false);
         }}
-        className="invisible absolute right-0 top-[calc(100%+8px)] z-30 m-0 grid w-max min-w-[208px] origin-top-right list-none rounded-[18px] bg-white p-[6px] opacity-0 [box-shadow:0_20px_50px_var(--color-hero-mobile-menu-nav-shadow)] [transform:translateY(-6px)_scale(0.96)] [transition:opacity_0.18s_ease,transform_0.22s_ease,visibility_0s_linear_0.22s] group-data-open:visible group-data-open:opacity-100 group-data-open:[transform:none] group-data-open:[transition:opacity_0.22s_ease,transform_0.32s_var(--ease-smooth),visibility_0s] motion-reduce:[transition:none] motion-reduce:group-data-open:[transition:none]"
+        className="invisible absolute right-0 top-[calc(100%+8px)] z-30 grid w-max min-w-[208px] origin-top-right rounded-[18px] bg-white p-[6px] opacity-0 [box-shadow:0_20px_50px_var(--color-hero-mobile-menu-nav-shadow)] -translate-y-[6px] scale-96 [transition:opacity_0.18s_ease,translate_0.22s_ease,scale_0.22s_ease,visibility_0s_linear_0.22s] group-data-open:visible group-data-open:opacity-100 group-data-open:translate-none group-data-open:scale-100 group-data-open:[transition:opacity_0.22s_ease,translate_0.32s_var(--ease-smooth),scale_0.32s_var(--ease-smooth),visibility_0s]"
       >
         {options.map((option) => {
           const active = option.locale === current.locale;
@@ -114,8 +114,8 @@ export function LocaleMenu({ current, options, label, triggerLabel, className }:
                 lang={option.locale}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "flex items-center justify-between gap-4 rounded-[12px] px-[12px] py-[9px] text-[14px] font-[850] text-ink-navy no-underline outline-none transition-colors hover:bg-hero-locale-mobile-bg hover:text-ink-navy focus-visible:bg-hero-locale-mobile-bg focus-visible:text-ink-navy",
-                  active && "text-mochi-pink-ink hover:text-mochi-pink-ink focus-visible:text-mochi-pink-ink",
+                  "flex items-center justify-between gap-[16px] rounded-[12px] px-[12px] py-[9px] text-[14px] font-heavy text-ink-navy outline-none transition-colors hover:bg-hero-locale-mobile-bg focus-visible:bg-hero-locale-mobile-bg",
+                  active && "text-mochi-pink-ink",
                 )}
               >
                 <span>{option.name}</span>

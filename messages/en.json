@@ -42,8 +42,7 @@
     "title3": "Dynamic Island",
     "body": "Day pad, overnight pad or liner, 2 to 8 hours. Mochi counts down on Home, in the Dynamic Island and on the Lock Screen.",
     "phoneLabel": "iPhone Dynamic Island showing Mochi and a pad change countdown",
-    "timerPrefix": "Pad change in",
-    "countdownLabel": "Pad change countdown"
+    "timerPrefix": "Pad change in"
   },
   "Moods": {
     "title1": "Log how you feel.",

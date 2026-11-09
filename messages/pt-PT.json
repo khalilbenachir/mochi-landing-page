@@ -42,8 +42,7 @@
     "title3": "na Dynamic Island",
     "body": "Penso de dia, de noite ou diário, de 2 a 8 horas. O Mochi faz a contagem decrescente no Início, na Dynamic Island e no ecrã bloqueado.",
     "phoneLabel": "Dynamic Island do iPhone a mostrar o Mochi e uma contagem decrescente para trocar o penso",
-    "timerPrefix": "Troca em",
-    "countdownLabel": "Contagem decrescente para trocar o penso"
+    "timerPrefix": "Troca em"
   },
   "Moods": {
     "title1": "Regista como te sentes.",

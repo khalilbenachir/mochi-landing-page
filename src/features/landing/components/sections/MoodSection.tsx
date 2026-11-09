@@ -8,7 +8,7 @@ import {
   SYMPTOM_IDS,
   type MoodTone,
 } from "@/features/landing/content/visual-variants";
-import { StatusIcons } from "./IslandSection";
+import { StatusIcons } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { cn } from "@/lib/utils";
 
@@ -17,36 +17,36 @@ const MOODS = [
     id: "happy",
     width: 377,
     height: 327,
-    item: "w-[calc(98*var(--u))] max-poster:left-0",
-    image: "mr-[calc(-6*var(--u))]",
+    item: "w-98 max-poster:left-0",
+    image: "-mr-6",
   },
   {
     id: "sleepy",
     width: 362,
     height: 361,
-    item: "w-[calc(94*var(--u))] max-poster:left-[calc(103*var(--m))]",
+    item: "w-94 max-poster:left-[calc(103*var(--m))]",
     image: "",
   },
   {
     id: "crampy",
     width: 363,
     height: 360,
-    item: "w-[calc(94*var(--u))] max-poster:left-[calc(201*var(--m))]",
+    item: "w-94 max-poster:left-[calc(201*var(--m))]",
     image: "",
   },
   {
     id: "cozy",
     width: 399,
     height: 337,
-    item: "w-[calc(104*var(--u))] max-poster:left-[calc(300*var(--m))]",
-    image: "ml-[calc(-4*var(--u))]",
+    item: "w-104 max-poster:left-[calc(300*var(--m))]",
+    image: "-ml-4",
   },
 ] as const;
 
 /* Mood faces for the Log Today sheet, drawn to match the app's mood picker. */
 function MoodFace({ tone }: { tone: MoodTone }) {
   return (
-    <svg className={cn("h-[85%] w-[85%]", MOOD_FACE_CLASS[tone].ink)} viewBox="0 0 24 24" aria-hidden="true">
+    <svg className={cn("size-[85%]", MOOD_FACE_CLASS[tone].ink)} viewBox="0 0 24 24" aria-hidden="true">
       <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         {tone === "joy" && (
           <>
@@ -85,13 +85,13 @@ function SymptomIcon({
 }) {
   if (name === "cramps")
     return (
-      <svg className="h-[70%] w-[70%]" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="size-[70%]" viewBox="0 0 24 24" aria-hidden="true">
         <path className="fill-mood-symptom-cramps" d="M13.5 3 6.5 13h5l-1.5 8 7.5-10.5h-5L13.5 3Z" />
       </svg>
     );
   if (name === "bloating")
     return (
-      <svg className="h-[70%] w-[70%]" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="size-[70%]" viewBox="0 0 24 24" aria-hidden="true">
         <g className="stroke-mood-symptom-bloating" fill="none" strokeWidth="1.8" strokeLinecap="round">
           <path d="M5 9q1.75-2 3.5 0t3.5 0 3.5 0 3.5 0" />
           <path d="M5 14q1.75-2 3.5 0t3.5 0 3.5 0 3.5 0" />
@@ -100,12 +100,12 @@ function SymptomIcon({
     );
   if (name === "headache")
     return (
-      <svg className="h-[70%] w-[70%]" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="size-[70%]" viewBox="0 0 24 24" aria-hidden="true">
         <path className="fill-mood-symptom-headache" d="M5 16.5c0-5.2 3.1-8.5 7-8.5s7 3.3 7 8.5Z" />
       </svg>
     );
   return (
-    <svg className="h-[70%] w-[70%]" viewBox="0 0 24 24" aria-hidden="true">
+    <svg className="size-[70%]" viewBox="0 0 24 24" aria-hidden="true">
       <text className="fill-mood-symptom-tired" x="6" y="17" fontSize="11" fontWeight="900">
         z
       </text>
@@ -118,24 +118,24 @@ function SymptomIcon({
 
 function LogTodayPhone() {
   const t = useTranslations("Moods");
-  const sheetLabel = "mt-[calc(7*var(--u))] mr-0 mb-[calc(4*var(--u))] ml-[calc(2*var(--u))] text-[calc(9*var(--u))] font-[1000]";
-  const row = "flex justify-between m-0 px-[calc(2*var(--u))] py-0 list-none";
+  const sheetLabel = "mt-7 mb-4 ml-2 text-u-9 font-max";
+  const row = "flex justify-between px-2";
 
   return (
     <div
-      className="relative z-2 ml-[calc(23*var(--u))] -mb-[calc(var(--section-space)+28*var(--u))] self-end h-[calc(176*var(--u))] w-[calc(172*var(--u))] p-[calc(6*var(--u))] border-solid border-mood-phone-border [border-width:calc(3*var(--u))] rounded-[calc(30*var(--u))] bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--u))_var(--color-mood-phone-shadow),0_calc(8*var(--u))_calc(18*var(--u))_var(--color-mood-phone-shadow-2)] [transform:rotate(4.5deg)] max-poster:[--u:calc(min(62vw,290px)/172)] max-poster:h-[calc(150*var(--u))] max-poster:mt-[26px] max-poster:mb-[calc(-12*var(--u))] max-poster:mx-auto max-poster:rounded-b-none"
+      className="relative z-2 ml-23 -mb-[calc(var(--section-space)+28*var(--spacing))] self-end h-176 w-172 p-6 border-mood-phone-border border-[length:calc(3*var(--spacing))] rounded-u-30 bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--spacing))_var(--color-mood-phone-shadow),0_calc(8*var(--spacing))_calc(18*var(--spacing))_var(--color-mood-phone-shadow-2)] rotate-[4.5deg] max-poster:[--spacing:calc(min(62vw,290px)/172)] max-poster:h-150 max-poster:mt-[26px] max-poster:-mb-12 max-poster:mx-auto max-poster:rounded-b-none"
       role="img"
       aria-label={t("phoneLabel")}
     >
-      <div className="h-full overflow-hidden px-[calc(11*var(--u))] pt-[calc(7*var(--u))] pb-0 rounded-[calc(24*var(--u))] bg-mood-screen-bg text-ink-slate" aria-hidden="true">
-        <div className="relative flex h-[calc(12*var(--u))] items-center justify-between px-[calc(4*var(--u))]">
-          <b className="text-[calc(6.5*var(--u))] font-[900]">9:41</b>
-          <i className="absolute left-[50%] top-[calc(-1*var(--u))] h-[calc(10*var(--u))] w-[calc(36*var(--u))] rounded-[999px] bg-black [transform:translateX(-50%)]" />
-          <StatusIcons className="h-auto w-[calc(26*var(--u))] text-ink-slate" />
+      <div className="h-full overflow-hidden px-11 pt-7 rounded-u-24 bg-mood-screen-bg text-ink-slate" aria-hidden="true">
+        <div className="relative flex h-12 items-center justify-between px-4">
+          <b className="text-u-6.5 font-black">9:41</b>
+          <i className="absolute left-1/2 -top-1 h-10 w-36 rounded-full bg-black -translate-x-1/2" />
+          <StatusIcons className="h-auto w-26 text-ink-slate" />
         </div>
-        <div className="relative flex items-center justify-center mt-[calc(5*var(--u))]">
-          <span className="absolute left-[calc(2*var(--u))] top-[50%] text-[calc(13*var(--u))] font-[700] leading-none [transform:translateY(-55%)]">×</span>
-          <b className="text-[calc(11*var(--u))] font-[1000] tracking-[-0.01em]">{t("logToday")}</b>
+        <div className="relative flex items-center justify-center mt-5">
+          <span className="absolute left-2 top-1/2 text-u-13 font-bold leading-none -translate-y-[55%]">×</span>
+          <b className="text-u-11 font-max tracking-[-0.01em]">{t("logToday")}</b>
         </div>
         <p className={sheetLabel}>{t("mood")}</p>
         <ul className={row}>
@@ -143,7 +143,7 @@ function LogTodayPhone() {
             <li
               key={tone}
               className={cn(
-                "grid h-[calc(21*var(--u))] w-[calc(21*var(--u))] place-items-center rounded-[50%] [box-shadow:0_calc(1*var(--u))_calc(3*var(--u))_var(--color-mood-face-shadow)]",
+                "grid size-21 place-items-center rounded-full [box-shadow:0_calc(1*var(--spacing))_calc(3*var(--spacing))_var(--color-mood-face-shadow)]",
                 MOOD_FACE_CLASS[tone].chip,
               )}
             >
@@ -154,8 +154,8 @@ function LogTodayPhone() {
         <p className={sheetLabel}>{t("symptoms")}</p>
         <ul className={row}>
           {SYMPTOM_IDS.map((id) => (
-            <li key={id} className="grid justify-items-center gap-[calc(2*var(--u))] text-[calc(5*var(--u))] font-[900]">
-              <span className={cn("grid h-[calc(21*var(--u))] w-[calc(21*var(--u))] place-items-center rounded-[50%]", SYMPTOM_CHIP_CLASS[id])}>
+            <li key={id} className="grid justify-items-center gap-2 text-u-5 font-black">
+              <span className={cn("grid size-21 place-items-center rounded-full", SYMPTOM_CHIP_CLASS[id])}>
                 <SymptomIcon name={id} />
               </span>
               {t(`symptomNames.${id}`)}
@@ -173,32 +173,32 @@ export function MoodSection() {
 
   return (
     <section id="moods" className="relative overflow-hidden bg-mood-band text-white">
-      <PosterStage bleed="bottom" className="grid items-center px-[calc(58*var(--u))] [grid-template-columns:calc(339*var(--u))_calc(404*var(--u))_1fr] max-poster:block max-poster:px-[clamp(20px,4vw,40px)]">
-        <div className="relative z-3 pr-[calc(16*var(--u))] max-poster:mx-auto max-poster:max-w-[640px] max-poster:pr-0 max-poster:text-center">
-          <h2 className="text-balance m-0 text-white text-[calc(28*var(--u))] font-[1000] leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[30px]">
+      <PosterStage bleed="bottom" className="grid items-center px-58 grid-cols-[calc(339*var(--spacing))_calc(404*var(--spacing))_1fr] max-poster:block max-poster:px-[clamp(20px,4vw,40px)]">
+        <div className="relative z-3 pr-16 max-poster:mx-auto max-poster:max-w-[640px] max-poster:pr-0 max-poster:text-center">
+          <h2 className="text-balance text-white text-u-28 font-max leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[30px]">
             <span className="block">{t("title1")}</span> <span className="block">{t("title2")}</span>
           </h2>
-          <p className="mt-[calc(9*var(--u))] mb-0 mx-0 w-[calc(252*var(--u))] text-[calc(12.8*var(--u))] font-[650] leading-[1.3] max-poster:w-auto max-poster:max-w-[460px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
+          <p className="mt-9 w-252 text-u-[12.8] font-demibold leading-[1.3] max-poster:w-auto max-poster:max-w-[460px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <ul className="m-0 flex justify-between p-0 list-none max-poster:block max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
+        <ul className="flex justify-between max-poster:block max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
           {MOODS.map((mood) => (
             <li
               key={mood.id}
               className={cn(
-                "group relative z-2 flex h-[calc(122*var(--u))] flex-col items-center justify-end max-poster:absolute max-poster:top-0 max-poster:[--u:var(--m)]",
+                "group relative z-2 flex h-122 flex-col items-center justify-end max-poster:absolute max-poster:top-0 max-poster:[--spacing:var(--m)]",
                 mood.item,
               )}
             >
               <Image
-                className={cn("h-auto w-full origin-[50%_100%] cursor-pointer group-hover:animate-squish motion-reduce:group-hover:animate-none", mood.image)}
+                className={cn("h-auto w-full origin-[50%_100%] cursor-pointer group-hover:animate-squish", mood.image)}
                 src={MOOD_ASSETS[mood.id]}
                 alt={`${t(`moodNames.${mood.id}`)} Mochi`}
                 width={mood.width}
                 height={mood.height}
                 sizes="(max-width: 1099px) 24vw, 10vw"
               />
-              <span className="relative z-1 inline-flex items-center gap-[calc(4*var(--u))] h-[calc(22*var(--u))] mt-[calc(-3*var(--u))] pl-[calc(8*var(--u))] pr-[calc(11*var(--u))] rounded-[999px] bg-white text-ink-slate text-[calc(12*var(--u))] font-[900] whitespace-nowrap [box-shadow:0_calc(2*var(--u))_0_var(--color-mood-pill-shadow)]">{t(`moodNames.${mood.id}`)}</span>
+              <span className="relative z-1 inline-flex items-center gap-4 h-22 -mt-3 pl-8 pr-11 rounded-full bg-white text-ink-slate text-u-12 font-black whitespace-nowrap [box-shadow:0_calc(2*var(--spacing))_0_var(--color-mood-pill-shadow)]">{t(`moodNames.${mood.id}`)}</span>
             </li>
           ))}
         </ul>
