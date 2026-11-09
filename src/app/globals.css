@@ -194,6 +194,13 @@
   --color-policy-blue: #27b5dc;
   --color-policy-shadow: rgba(23, 42, 79, 0.07);
 
+  /* Terms of use */
+  --color-terms-hero: #30b3cf;
+  --color-terms-summary: #ffb32c;
+  --color-terms-orange: #fa9400;
+  --color-terms-callout: #ffedce;
+  --color-terms-rays: #fff18b;
+
   /* Comparison */
   --color-comparison-matcha-bg: #bfe3f6;
   --color-comparison-mochi-head-bg: #ef5f8d;

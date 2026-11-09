@@ -347,5 +347,84 @@
       "backup": "Optional account backup and sync",
       "rewards": "Streaks and 12 collectible Mochi flavors"
     }
+  },
+  "TermsOfUse": {
+    "metadataTitle": "Terms of use | Mochi",
+    "metadataDescription": "The simple rules for using Mochi: cycle predictions, optional Mochi Plus subscriptions, your content and getting in touch.",
+    "eyebrow": "Terms",
+    "title": "Terms of use",
+    "intro": "The simple rules for using Mochi.\nShort, friendly and written for humans.",
+    "updated": "Last updated: {date}",
+    "heroAlt": "A smiling pink Mochi wearing round glasses and holding a parchment scroll.",
+    "short": "The short version",
+    "onThisPage": "On this page",
+    "callout": "Mochi’s predictions are estimates. They are not birth control and don’t replace advice from a doctor.",
+    "contactTitle": "Questions about these terms?",
+    "contactEmail": "Email us at {email}",
+    "contactButton": "Contact us",
+    "privacyLink": "Read our privacy policy",
+    "subscriptionsLink": "How to manage or cancel an Apple subscription",
+    "cards": {
+      "medical": {
+        "title": "Not medical\nadvice",
+        "body": "Mochi helps you track, it doesn’t diagnose."
+      },
+      "contraception": {
+        "title": "Not birth\ncontrol",
+        "body": "Predictions are estimates, never contraception."
+      },
+      "plus": {
+        "title": "Mochi Plus\nis optional",
+        "body": "Billed by Apple, cancel anytime in Settings."
+      },
+      "privacy": {
+        "title": "Your data\nis yours",
+        "body": "See our privacy policy."
+      }
+    },
+    "sections": {
+      "using": {
+        "nav": "Using Mochi",
+        "title": "Using Mochi",
+        "body": "Mochi is a period tracking app for iPhone that helps you log your cycle, symptoms, moods and more, get predictions and set helpful reminders (such as a pad change reminder), and collect cute flavors through daily check-ins.",
+        "detail": "By using Mochi, you agree to these Terms of Use. If you don’t agree with them, please don’t use the app."
+      },
+      "health": {
+        "nav": "Health disclaimer",
+        "title": "Health disclaimer",
+        "body": "Mochi is for general wellness and cycle tracking only. It is not a medical device and does not provide medical advice, diagnosis or treatment. Always contact a qualified healthcare professional if you have any health concerns or questions about your cycle.",
+        "detail": "Mochi can help you spot patterns and estimate your next period, fertile window and ovulation day based on the information you log, but these are estimates and may not be accurate for everyone."
+      },
+      "subscriptions": {
+        "nav": "Mochi Plus subscriptions",
+        "title": "Mochi Plus subscriptions",
+        "body": "Mochi Plus is optional. Before you subscribe, the App Store purchase screen shows the price, billing period and any offer that applies. Apple handles payment through your Apple Account.",
+        "detail": "Recurring subscriptions renew until canceled. Manage or cancel yours in iPhone Settings > your name > Subscriptions. Deleting Mochi does not cancel a subscription."
+      },
+      "content": {
+        "nav": "Your content",
+        "title": "Your content",
+        "body": "The cycle entries, symptoms, moods and other information you log are yours. You keep ownership of your content when you use Mochi.",
+        "detail": "Our privacy policy explains how your information is handled, including optional backup. Please keep your device and any account you use secure."
+      },
+      "acceptable-use": {
+        "nav": "Acceptable use",
+        "title": "Acceptable use",
+        "body": "Use Mochi for your own personal cycle tracking and in accordance with applicable law. Please use the app and its features responsibly.",
+        "detail": "Do not misuse or disrupt the app, try to bypass its security, or access someone else’s information without their permission."
+      },
+      "changes": {
+        "nav": "Changes to these terms",
+        "title": "Changes to these terms",
+        "body": "We may update these terms as Mochi evolves. The date at the top of this page shows when this version was last updated.",
+        "detail": "Please review the terms when the app changes. Nothing in these terms takes away rights you have under applicable consumer law."
+      },
+      "contact": {
+        "nav": "Contact",
+        "title": "Get in touch",
+        "body": "If you have a question about these terms or need help with Mochi, contact us using the email address below.",
+        "detail": "Please avoid including sensitive health information in your message. For questions about your health, contact a qualified healthcare professional."
+      }
+    }
   }
 }
