@@ -17,7 +17,7 @@ export function SiteFooter({ homePath }: { homePath: string }) {
   const routeHref = (slug: string) => (homePath === "/" ? `/${slug}` : `${homePath}/${slug}`);
 
   return (
-    <footer className="relative bg-mochi-pink pt-[32px]">
+    <footer className="relative bg-hero-band pt-[32px]">
       <PosterStage spacing="none">
         <div className="grid h-108 grid-cols-[auto_1fr_auto] items-center rounded-t-[calc(22*var(--spacing))] bg-white py-9 px-126 max-poster:relative max-poster:z-2 max-poster:h-[150px] max-poster:px-[20px] max-poster:py-[22px] max-poster:rounded-t-[24px] max-phone:min-h-[196px] max-phone:h-auto max-phone:grid-cols-1">
           <a href={`${homePath}#top`} className="col-start-1 row-start-1 flex items-center gap-20 text-ink-black max-poster:gap-[14px] max-phone:justify-self-center" aria-label={common("backToTop")}>

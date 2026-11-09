@@ -77,7 +77,7 @@
   --color-ink-black: #0b121c;
   --color-ink-slate: #26304a;
   --color-ink-deep: #1d2b4a;
-  --color-brand-coral: #ef4a7a;
+  --color-brand-coral: var(--color-hero-band);
   --color-brand-rose: #f2558a;
   --color-cycle-period: #ef4a7a;
   --color-cycle-next-period: #f2558a;
