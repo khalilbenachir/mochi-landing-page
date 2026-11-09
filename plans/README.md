@@ -12,6 +12,11 @@ The SEO planning pass was added by the `improve` skill on 2026-11-08 at commit
 icons, remove false sitemap freshness, add a branded social card, and enforce the full
 localized crawler contract over HTTP.
 
+The localized 404 planning pass was added by the `improve` skill on 2026-11-09 at
+commit `03101c3`. Plan 013 adds a real localized catch-all 404, keeps landing-only
+metadata and structured data on the home route, and reuses the existing Mochi shell
+and wondering mascot without introducing another generated asset.
+
 Execute in order. Each executor must read its plan fully, run every verification gate,
 honor every STOP condition, and update its status row here when done.
 
@@ -43,6 +48,7 @@ those files exist at `0fa9683`). Review baselines are git tree snapshots, not co
 | [010](./010-remove-false-sitemap-freshness.md) | Stop reporting every page as newly modified on every build | P2 | S | 008 recommended | DONE (reviewed, approved first pass; uncommitted) |
 | [011](./011-add-branded-social-preview.md) | Add a deterministic branded social preview image | P2 | M | 008, 009 | DONE (final card regenerated with built-in ImageGen from the approved ChatGPT visual references; exact 1200×630 asset is uncommitted; snapshot `e8bca3b5` predates the final image) |
 | [012](./012-test-seo-crawler-contract.md) | Test the production SEO and crawler contract over HTTP | P1 | M | 008, 009, 010, 011 | DONE (reviewed, approved first pass; 20 SEO tests, full e2e 73 passed, no snapshot changes; uncommitted; snapshot `3107ff00`) |
+| [013](./013-build-localized-mochi-404.md) | Ship a localized Mochi 404 page | P1 | M | — | DONE (reviewed; generated mascot revision; 55 unit/policy tests and 96 e2e tests pass; uncommitted) |
 
 Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 `REJECTED: <reason>`.
@@ -73,6 +79,9 @@ Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 - 011 depends on 008 for absolute image URLs and on 009 for the asset-test convention.
 - 012 lands last so its HTTP assertions cover the final metadata, robots, sitemap,
   manifest, icons, social preview, and localized JSON-LD together.
+- 013 is independent of the completed SEO sequence but assumes the current localized
+  layout, Tailwind poster primitives, asset manifest, and Playwright visual guardrails.
+  Its metadata move must preserve every assertion established by 012.
 
 ## Findings represented by these plans
 
@@ -99,6 +108,18 @@ Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 - `src/app/manifest.ts` declares the 256×256 WebP app icon as 512×512.
 - Localized pages have no deterministic Open Graph or Twitter preview image.
 - `src/app/sitemap.ts` publishes the build clock as `lastModified` for every locale.
+
+### 404 direction represented by plan 013
+
+- Unknown navigational URLs currently render Next.js's generic `/_not-found` UI.
+- A localized not-found route needs an explicit `[...rest]` page that calls
+  `notFound()`; rendering a styled component directly would incorrectly return 200.
+- Landing metadata and `MobileApplication` / `FAQPage` JSON-LD currently live in the
+  locale layout, so adding another localized page would make those signals leak onto
+  the error document unless they move to the home route.
+- The existing 460×368 wondering Mochi face already matches the requested 404 concept;
+  generating a second mascot asset would add brand and asset-manifest risk without a
+  material visual benefit.
 
 ## Findings considered and rejected
 
@@ -148,3 +169,10 @@ The 2026-11-08 SEO pass covered repository-controlled metadata, localized canoni
 alternate signals, JSON-LD, robots, sitemap, manifest/icon assets, social previews, and
 testability. It did not cover a live domain, CDN/WAF bot policy, DNS, Search Console,
 backlinks, indexing/rank outcomes, external preview caches, or a full content strategy.
+
+The 2026-11-09 404 pass covered navigational unknown routes matched by the existing
+locale middleware, localized recovery copy, route-specific metadata ownership, shell
+reuse, responsive composition, accessibility, and visual/e2e verification. It did not
+cover missing static assets or other dot-containing paths excluded by middleware, the
+experimental global-not-found convention, runtime exception pages, legal/help routes,
+or a redesign of the landing page.
