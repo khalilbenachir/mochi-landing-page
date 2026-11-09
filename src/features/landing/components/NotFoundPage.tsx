@@ -29,20 +29,20 @@ export function NotFoundPage() {
 
             <div
               data-testid="not-found-art"
-              className="relative flex h-250 w-720 max-w-full items-end justify-center max-poster:h-[clamp(190px,37vw,310px)] max-poster:w-[min(100%,820px)] max-phone:h-[180px]"
+              className="relative flex h-250 w-640 max-w-full items-end justify-center max-poster:h-[clamp(190px,34vw,280px)] max-poster:w-[min(100%,820px)] max-phone:h-[180px]"
             >
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 -mr-15 text-u-250 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:-mr-[10px] max-poster:text-[clamp(150px,32vw,260px)] max-phone:-mr-[7px] max-phone:text-[124px]"
+                className="relative z-1 -mr-15 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:-mr-[10px] max-poster:text-[clamp(130px,28vw,225px)] max-phone:-mr-[7px] max-phone:text-[110px]"
               >
                 4
               </span>
 
-              <div className="relative z-2 -mb-4 w-280 flex-none max-poster:mb-[-5px] max-poster:w-[clamp(175px,33vw,280px)] max-phone:w-[150px]">
+              <div className="relative z-2 -mb-4 w-220 flex-none max-poster:mb-[-5px] max-poster:w-[clamp(150px,29vw,240px)] max-phone:w-[135px]">
                 <span
                   aria-hidden="true"
-                  className="absolute -top-42 left-1/2 z-3 text-u-70 font-max leading-none text-island-band [text-shadow:0_calc(3*var(--spacing))_0_white] -translate-x-1/2 rotate-8 max-poster:-top-[45px] max-poster:text-[58px] max-phone:-top-[36px] max-phone:text-[46px]"
+                  className="absolute -top-32 left-1/2 z-3 text-u-54 font-max leading-none text-island-band [text-shadow:0_calc(3*var(--spacing))_0_white] -translate-x-1/2 rotate-8 max-poster:-top-[36px] max-poster:text-[50px] max-phone:-top-[30px] max-phone:text-[40px]"
                 >
                   ?
                 </span>
@@ -55,14 +55,14 @@ export function NotFoundPage() {
                   width={1254}
                   height={1254}
                   priority
-                  sizes="(max-width: 480px) 150px, (max-width: 1099px) 33vw, 28vw"
+                  sizes="(max-width: 480px) 135px, (max-width: 1099px) 29vw, 22vw"
                 />
               </div>
 
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 -ml-8 text-u-250 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:-ml-[6px] max-poster:text-[clamp(150px,32vw,260px)] max-phone:-ml-[4px] max-phone:text-[124px]"
+                className="relative z-1 -ml-8 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:-ml-[6px] max-poster:text-[clamp(130px,28vw,225px)] max-phone:-ml-[4px] max-phone:text-[110px]"
               >
                 4
               </span>
@@ -70,14 +70,14 @@ export function NotFoundPage() {
 
             <h1
               data-testid="not-found-title"
-              className="mt-22 max-w-850 text-u-51 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(38px,7vw,62px)] max-phone:mt-[24px] max-phone:text-[38px]"
+              className="mt-22 max-w-850 text-u-44 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(34px,6vw,54px)] max-phone:mt-[24px] max-phone:text-[34px]"
             >
               <span className="sr-only">{t("code")}: </span>
               {t("title")}
             </h1>
             <p
               data-testid="not-found-body"
-              className="mt-10 max-w-900 text-u-17 font-bold leading-[1.35] max-poster:mt-[14px] max-poster:flex max-poster:min-h-[2.7em] max-poster:max-w-[900px] max-poster:items-center max-poster:justify-center max-poster:text-[18px] max-nav:max-w-[650px] max-phone:min-h-[4.05em] max-phone:text-[16px]"
+              className="mt-10 max-w-900 text-u-16 font-bold leading-[1.35] max-poster:mt-[14px] max-poster:flex max-poster:min-h-[2.7em] max-poster:max-w-[900px] max-poster:items-center max-poster:justify-center max-poster:text-[17px] max-nav:max-w-[650px] max-phone:min-h-[4.05em] max-phone:text-[16px]"
             >
               {t("body")}
             </p>
@@ -89,11 +89,11 @@ export function NotFoundPage() {
               <Button
                 asChild
                 variant="pill"
-                className="h-49 px-32 text-u-17 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-hero-band max-poster:h-[58px] max-poster:px-[32px] max-poster:text-[18px] max-phone:w-[min(100%,310px)]"
+                className="h-42 px-26 text-u-15 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-hero-band max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
               >
                 <Link data-testid="not-found-home" href={homeHref}>{t("home")}</Link>
               </Button>
-              <AppStoreBadge className="max-poster:h-[58px] max-phone:w-[min(100%,310px)] max-phone:justify-center max-phone:ps-[18px] max-phone:pe-[22px]" />
+              <AppStoreBadge className="h-42 gap-6 ps-18 pe-22 [&_svg]:h-26 [&_svg]:w-22 [&_small]:text-u-9.5 [&_strong]:text-u-18 max-poster:h-[48px] max-phone:w-[min(100%,260px)] max-phone:[&_strong]:text-[17px]" />
             </div>
           </div>
         </PosterStage>
