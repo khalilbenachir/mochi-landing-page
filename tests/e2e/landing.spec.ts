@@ -1,5 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 import { baseOrigin } from "./origin";
+import { waitForPageAssets } from "./assets";
 
 const LOCALES = ["en", "fr", "de", "es", "pt-BR", "pt-PT"] as const;
 type Locale = (typeof LOCALES)[number];
@@ -15,7 +16,7 @@ async function expectLocalizedFooter(page: Page, locale: Locale) {
   expect(await footer.locator("nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual([
     `${routePrefix}/privacy`,
     `${routePrefix}/terms`,
-    `${routePrefix}/contact`,
+    `${routePrefix}/privacy#contact`,
   ]);
   await expect(footer.locator("nav a")).toHaveCount(3);
   await expect(footer.locator("p")).toBeVisible();
@@ -67,17 +68,6 @@ function watchPageErrors(page: Page) {
     expect(errors, "page errors and console errors").toEqual([]);
     expect(sameOriginResourceErrors, "failed same-origin documents and images").toEqual([]);
   };
-}
-
-async function waitForPageAssets(page: Page) {
-  await page.evaluate(async () => {
-    await document.fonts.ready;
-    const images = Array.from(document.images);
-    images.forEach((image) => {
-      image.loading = "eager";
-    });
-    await Promise.all(images.map((image) => image.decode()));
-  });
 }
 
 test.describe("localized landing routes", () => {

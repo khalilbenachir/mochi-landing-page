@@ -253,6 +253,90 @@
     "home": "Back to home",
     "mascotAlt": "Mochi looks puzzled"
   },
+  "PrivacyPolicy": {
+    "metadataTitle": "Privacy policy | Mochi",
+    "metadataDescription": "Your cycle is yours. Learn what Mochi keeps on your iPhone, what it never shares, and how optional backup works.",
+    "eyebrow": "Privacy",
+    "title": "Privacy policy",
+    "intro": "Your cycle is yours. Here’s exactly what Mochi keeps on your iPhone and what it never shares.",
+    "updated": "Last updated: {date}",
+    "heroAlt": "A happy pink Mochi protects a locked purple diary under a blue glass dome",
+    "short": "In short",
+    "onThisPage": "On this page",
+    "help": "Help",
+    "contactTitle": "Questions about your privacy?",
+    "contactEmail": "Email us at {email}",
+    "contactButton": "Contact us",
+    "callout": "Period dates, flow, symptoms, moods, sex, tests and pregnancy logs never leave your iPhone unless you turn on backup.",
+    "cards": {
+      "device": {
+        "title": "Stays on\nyour iPhone",
+        "body": "Cycle, flow, symptoms and moods live in a local database."
+      },
+      "account": {
+        "title": "No account\nneeded",
+        "body": "Every feature works signed out and offline."
+      },
+      "analytics": {
+        "title": "Never in\nanalytics",
+        "body": "No dates or cycle data in analytics, logs or crash reports."
+      },
+      "backup": {
+        "title": "Optional\nEU backup",
+        "body": "Only if you turn it on, locked to you."
+      }
+    },
+    "sections": {
+      "collect": {
+        "nav": "What we collect",
+        "title": "What we collect",
+        "body": "Mochi collects only the information you choose to add in the app, such as your period dates, flow, symptoms, moods, sex, tests and pregnancy logs. This data is used to give you cycle predictions, reminders and a personalized experience (like your streaks and collectible flavors).",
+        "detail": "We do not collect or require your name, email or any other personal information to use the app. You can enjoy all core features without creating an account."
+      },
+      "device": {
+        "nav": "What stays on your iPhone",
+        "title": "What stays on your iPhone",
+        "body": "Your cycle data lives in a local database on your iPhone. It’s used only by Mochi to show your cycle, make predictions and keep your streaks and flavors.",
+        "detail": "You stay in control. Your data is not sent to analytics, logs or crash reports. It only leaves your iPhone if you choose to turn on backup, in which case it’s encrypted and linked only to you."
+      },
+      "analytics": {
+        "nav": "Analytics",
+        "title": "Never in analytics",
+        "body": "Your period dates, flow, symptoms, moods, sex, tests and pregnancy logs are never included in analytics, logs or crash reports.",
+        "detail": "Your private entries are used by Mochi on your iPhone to support the features you choose to use."
+      },
+      "backup": {
+        "nav": "Backup and sync",
+        "title": "Backup and sync",
+        "body": "Backup is optional. If you choose to turn it on, your backup is encrypted, stored in the EU and linked only to you.",
+        "detail": "You can use Mochi’s core features offline and without an account. Your cycle data stays on your iPhone unless you choose backup."
+      },
+      "subscriptions": {
+        "nav": "Subscriptions",
+        "title": "Subscriptions",
+        "body": "Mochi Plus is an optional subscription. You can keep using the free core features without subscribing.",
+        "detail": "App Store purchases and subscription management are handled through Apple. A subscription does not change how Mochi keeps your cycle entries private."
+      },
+      "rights": {
+        "nav": "Your rights",
+        "title": "You stay in control",
+        "body": "You decide what information to add to Mochi. All core features work without creating an account or enabling backup.",
+        "detail": "If you have questions about your information or want help with a privacy request, contact us using the details below."
+      },
+      "children": {
+        "nav": "Children",
+        "title": "Children’s privacy",
+        "body": "The same privacy approach applies to cycle entries: they stay on the iPhone unless optional backup is enabled.",
+        "detail": "If you are a parent or guardian with a question about privacy, please contact us. Avoid including sensitive health information in your message."
+      },
+      "contact": {
+        "nav": "Contact",
+        "title": "Let’s talk about privacy",
+        "body": "Questions about this policy or how Mochi handles your information? We’re here to help.",
+        "detail": "Please avoid including period dates, symptoms or other health information in your message."
+      }
+    }
+  },
   "StructuredData": {
     "offer": "Free to download. Optional Mochi Plus subscription available in the app.",
     "features": {

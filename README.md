@@ -25,6 +25,8 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.example npm run build
 
 `npm run build:test` is the deterministic local/CI build used by `npm run check`; it builds against
 `http://localhost:3100`. `npm run test:e2e` also builds against that Playwright origin.
+Development output lives in `.next-dev/`; production output lives in `.next/`, so running a
+build or browser suite does not overwrite chunks used by an open development preview.
 
 | Script | What it does |
 |---|---|
@@ -114,12 +116,43 @@ Principles:
 
 ## Visual tests
 
-17 Playwright tests cover routes, keyboard behavior and EN/FR full-page baselines at 1600, 1440,
-1099, 759 and 390px, plus the open phone menu. Baselines change only for reviewed, intentional
-visual changes (`npm run test:e2e:update`).
+Playwright covers localized routes, keyboard behavior, metadata, crawler endpoints, and full-page
+baselines at 1600, 1440, 1099, 759 and 390px, plus the open phone menu and the privacy reader.
+Privacy layout checks also cover 320 and 800px. Shared asset preparation waits for hydration before
+preloading lazy artwork, preventing image-attribute changes from racing React hydration.
+Baselines change only for reviewed, intentional visual changes (`npm run test:e2e:update`).
 
 ## Before launch
 
-- Set `APP_STORE_URL` in `src/features/landing/content/landing.ts`.
+- Set `NEXT_PUBLIC_APP_STORE_URL` to the real App Store destination.
+- Set `NEXT_PUBLIC_CONTACT_EMAIL` to the real contact address.
 - Set `NEXT_PUBLIC_SITE_URL` to the final production origin.
-- Add the production privacy, terms and help routes to the footer.
+- Supply the approved Terms of Use text or URL; the Terms route is not yet implemented.
+
+## Privacy page
+
+`/privacy` (and each locale's `/privacy` route) has an illustrated hero, mint summary cards, a
+section reader and a contact banner. All eight sections are always rendered and visible, so the full
+policy reads without JavaScript and stays searchable. A small client island highlights the section
+named by the URL hash in the sticky "On this page" list and moves focus to its heading; direct URLs
+and browser history work. Changing language keeps the privacy route.
+
+Every page shares one `SiteHeader` (its Privacy link opens `/privacy`) and one `SiteFooter`,
+rendered once by the locale layout. The footer's Contact link opens `/privacy#contact`.
+
+Privacy components and copy contracts live in `src/features/privacy/`; localized copy lives in
+`messages/`. Its illustrations live in `public/privacy-art/`, separate from the landing's
+`public/mochi/` manifest; generation prompts and sizes are recorded in `src/features/privacy/README.md`.
+`POLICY_UPDATED_AT` in `src/features/privacy/content/policy.ts` is a deliberate policy date, not a
+build timestamp.
+
+### Environment
+
+Copy `.env.example` to `.env` or `.env.local` (both git-ignored). Every value is inlined into the
+public bundle.
+
+- `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` are required for production builds; the
+  build fails without them, so the `[YOUR EMAIL]` placeholder only ever appears in development.
+- Until `NEXT_PUBLIC_APP_STORE_URL` is set, App Store buttons open the localized home download section.
+- `npm run build:test` pins all three (`privacy@example.test`, no App Store URL), so tests and
+  visual baselines do not depend on your local `.env`.

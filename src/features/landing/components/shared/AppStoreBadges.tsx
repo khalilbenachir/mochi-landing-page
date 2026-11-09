@@ -1,8 +1,15 @@
 import { cva } from "class-variance-authority";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "./Button";
 import { APP_STORE_URL } from "@/features/landing/content/landing";
 import { cn } from "@/lib/utils";
+import { localePath } from "@/i18n/routing";
+
+/** Until the App Store URL is configured, every page can reach the home download section. */
+function useAppStoreHref() {
+  const locale = useLocale();
+  return APP_STORE_URL === "#get" ? `${localePath(locale)}#get` : APP_STORE_URL;
+}
 
 export function AppleLogo({ className }: { className?: string }) {
   return (
@@ -38,10 +45,11 @@ const appleLogo = cva("flex-none", {
 
 export function AppStoreBadge({ compact = false, dark = false, className }: { compact?: boolean; dark?: boolean; className?: string }) {
   const t = useTranslations("Common");
+  const href = useAppStoreHref();
 
   return (
     <Button asChild variant={compact || dark ? "flat" : "pill"} className={cn(appStoreBadge({ compact, dark }), className)}>
-      <a href={APP_STORE_URL} aria-label={t("appStoreAria")}>
+      <a href={href} aria-label={t("appStoreAria")}>
         <AppleLogo className={appleLogo({ compact })} />
         {compact ? (
           <span>{t("download")}</span>
@@ -79,10 +87,11 @@ const STORE_BADGE = {
 
 export function StoreBadge({ placement }: { placement: "band" | "footer" }) {
   const t = useTranslations("Common");
+  const href = useAppStoreHref();
 
   return (
     <Button asChild variant="store" className={STORE_BADGE.root({ placement })}>
-      <a href={APP_STORE_URL} aria-label={t("appStoreAria")}>
+      <a href={href} aria-label={t("appStoreAria")}>
         <AppleLogo className={STORE_BADGE.apple({ placement })} />
         <span className="grid text-left leading-none">
           <small className={STORE_BADGE.small({ placement })}>{t("downloadOn")}</small>

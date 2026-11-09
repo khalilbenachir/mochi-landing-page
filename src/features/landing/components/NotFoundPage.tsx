@@ -19,7 +19,7 @@ export function NotFoundPage() {
       <section className="relative flex-1 overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]">
         <PosterStage
           spacing="none"
-          className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pt-6 pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pt-0 max-poster:pb-[44px] max-phone:min-h-[700px]"
+          className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
         >
           <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
 

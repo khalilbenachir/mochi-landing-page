@@ -18,7 +18,7 @@ export function HeroSection() {
       id="top"
       className="relative overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]"
     >
-      <PosterStage bleed="bottom" className="pt-6 max-poster:pt-0 max-poster:px-[clamp(20px,4vw,40px)]">
+      <PosterStage bleed="bottom" className="pt-0 max-poster:px-[clamp(20px,4vw,40px)]">
         <SiteHeader />
 
         <div className="mt-14 grid pl-58 grid-cols-[calc(390*var(--spacing))_1fr] max-poster:mt-0 max-poster:block max-poster:pl-0">

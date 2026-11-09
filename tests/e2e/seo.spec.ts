@@ -7,7 +7,7 @@ import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
 import { LANDING_ASSETS } from "../../src/features/landing/content/assets";
 import { FAQ_IDS, STRUCTURED_FEATURE_IDS } from "../../src/features/landing/content/landing";
-import { LOCALE_META, localePath, routing, type AppLocale } from "../../src/i18n/routing";
+import { LOCALE_META, localePath, localeRoutePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
 
 const MESSAGES = { en, fr, de, es, "pt-BR": ptBR, "pt-PT": ptPT } satisfies Record<
@@ -165,6 +165,9 @@ test.describe("structured data", () => {
       expect(website.description).toBe(MESSAGES[locale].Metadata.description);
       expect(app.description).toBe(MESSAGES[locale].Metadata.description);
 
+      // `npm run build:test` leaves NEXT_PUBLIC_APP_STORE_URL empty, so the app URL is the page itself.
+      expect(app.url).toBe(pageUrl(locale));
+
       const urls = collectUrlFields(doc);
       expect(urls.length).toBeGreaterThan(0);
       for (const url of urls) {
@@ -220,20 +223,22 @@ test.describe("crawler endpoints", () => {
     expect(body).not.toMatch(/<lastmod>/i);
 
     const blocks = [...body.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1] ?? "");
-    expect(blocks).toHaveLength(routing.locales.length);
+    expect(blocks).toHaveLength(routing.locales.length * 2);
 
     const locs = blocks.map((block) => {
       const found = [...block.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] ?? "");
       expect(found).toHaveLength(1);
       return norm(must(found[0]));
     });
-    expect(sorted(locs)).toEqual(sorted(routing.locales.map(pageUrl)));
+    expect(sorted(locs)).toEqual(sorted(routing.locales.flatMap((locale) => [pageUrl(locale), new URL(localeRoutePath(locale, "privacy"), baseOrigin).href])));
 
-    const expectedAlternates: Record<string, string> = {
-      ...Object.fromEntries(routing.locales.map((l) => [l, pageUrl(l)])),
-      "x-default": pageUrl(routing.defaultLocale),
-    };
     for (const block of blocks) {
+      const privacy = /<loc>[^<]*\/privacy<\/loc>/.test(block);
+      const expectedUrl = (locale: AppLocale) => privacy ? new URL(localeRoutePath(locale, "privacy"), baseOrigin).href : pageUrl(locale);
+      const expectedAlternates: Record<string, string> = {
+        ...Object.fromEntries(routing.locales.map((locale) => [locale, expectedUrl(locale)])),
+        "x-default": expectedUrl(routing.defaultLocale),
+      };
       const links = [...block.matchAll(/<xhtml:link\b([^>]*)\/?>/g)].map((m) => m[1] ?? "");
       const pairs = links.map((attrs): [string, string] => [
         /hreflang="([^"]+)"/.exec(attrs)?.[1] ?? "",

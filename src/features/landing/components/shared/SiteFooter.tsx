@@ -7,7 +7,7 @@ import { PosterStage } from "./PosterStage";
 const FOOTER_LINKS = [
   { key: "privacy", slug: "privacy" },
   { key: "terms", slug: "terms" },
-  { key: "contact", slug: "contact" },
+  { key: "contact", slug: "privacy#contact" },
 ] as const;
 
 export function SiteFooter({ homePath }: { homePath: string }) {
@@ -17,13 +17,13 @@ export function SiteFooter({ homePath }: { homePath: string }) {
   const routeHref = (slug: string) => (homePath === "/" ? `/${slug}` : `${homePath}/${slug}`);
 
   return (
-    <footer className="relative bg-mochi-pink">
+    <footer className="relative bg-mochi-pink pt-[32px]">
       <PosterStage spacing="none">
-        <div className="grid h-108 grid-cols-[auto_1fr_auto] items-center rounded-t-[calc(22*var(--spacing))] bg-white py-9 px-126 max-poster:relative max-poster:z-2 max-poster:h-[150px] max-poster:px-[20px] max-poster:py-[22px] max-poster:rounded-t-[24px] max-phone:h-[196px] max-phone:grid-cols-1">
+        <div className="grid h-108 grid-cols-[auto_1fr_auto] items-center rounded-t-[calc(22*var(--spacing))] bg-white py-9 px-126 max-poster:relative max-poster:z-2 max-poster:h-[150px] max-poster:px-[20px] max-poster:py-[22px] max-poster:rounded-t-[24px] max-phone:min-h-[196px] max-phone:h-auto max-phone:grid-cols-1">
           <a href={`${homePath}#top`} className="col-start-1 row-start-1 flex items-center gap-20 text-ink-black max-poster:gap-[14px] max-phone:justify-self-center" aria-label={common("backToTop")}>
             <Image className="size-50 rounded-u-13 max-poster:size-[46px] max-poster:rounded-[12px]" src={LANDING_ASSETS.appIcon} alt="" width={256} height={256} />
             <i className="h-26 w-1.5 bg-closing-brand-divider" aria-hidden="true" />
-            <b className="whitespace-nowrap text-u-24.5 font-max tracking-[-0.02em] max-poster:text-[20px]">{t("brand")}</b>
+            <b className="whitespace-nowrap text-u-24.5 font-max tracking-[-0.02em] max-poster:text-[20px] max-phone:min-w-0 max-phone:whitespace-normal">{t("brand")}</b>
           </a>
           <div className="col-start-3 row-start-1 justify-self-end max-phone:hidden">
             <StoreBadge placement="footer" />

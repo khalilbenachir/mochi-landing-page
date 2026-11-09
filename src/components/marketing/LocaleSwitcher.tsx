@@ -7,6 +7,8 @@ type LocaleSwitcherProps = {
   /** `dropdown` for the header; `list` for inline use inside another menu (no nested popover). */
   variant?: "dropdown" | "list";
   className?: string;
+  /** Keep the selected page when changing language. */
+  route?: string;
 };
 
 const OPTIONS: readonly LocaleOption[] = routing.locales.map((locale) => ({
@@ -16,16 +18,17 @@ const OPTIONS: readonly LocaleOption[] = routing.locales.map((locale) => ({
   href: localeSwitchPath(locale),
 }));
 
-export function LocaleSwitcher({ variant = "dropdown", className }: LocaleSwitcherProps) {
+export function LocaleSwitcher({ variant = "dropdown", className, route = "" }: LocaleSwitcherProps) {
   const locale = useLocale();
   const t = useTranslations("LocaleSwitcher");
-  const current = OPTIONS.find((option) => option.locale === locale) ?? OPTIONS[0]!;
+  const options = route ? OPTIONS.map((option) => ({ ...option, href: `${option.href}${route}` })) : OPTIONS;
+  const current = options.find((option) => option.locale === locale) ?? options[0]!;
 
   if (variant === "dropdown") {
     return (
       <LocaleMenu
         current={current}
-        options={OPTIONS}
+        options={options}
         label={t("label")}
         triggerLabel={t("change", { language: current.name })}
         className={className}
@@ -39,7 +42,7 @@ export function LocaleSwitcher({ variant = "dropdown", className }: LocaleSwitch
         {t("label")}
       </p>
       <ul className="grid grid-cols-2 gap-[6px]">
-        {OPTIONS.map((option) => {
+        {options.map((option) => {
           const active = option.locale === current.locale;
           return (
             <li key={option.locale} className="grid">
