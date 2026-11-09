@@ -79,4 +79,30 @@ describe("style policy", () => {
     const hits = scan(sources, /\b(max|min)-\[|\b(drop-shadow|text-shadow|shadow)-\[/);
     expect(hits, "use named breakpoints and [box-shadow:...] arbitrary properties").toEqual([]);
   });
+
+  it("rule 7: poster units and native utilities", () => {
+    // This file spells out the patterns it forbids.
+    const code = sources.filter((f) => rel(f) !== "src/app/style-policy.test.ts");
+    // Poster coordinates are spacing utilities (`mt-14`) now; `--u` is gone.
+    const legacyUnit = scan(code, /var\(--u\)|\[--u:/);
+    expect(legacyUnit, "use spacing utilities inside PosterStage (mt-14, text-u-41)").toEqual([]);
+    // A quarter-step multiple of --spacing in brackets has a bare utility form.
+    const spacingUtility =
+      /(^|[\s"':])-?(m[trblxyse]?|p[trblxyse]?|gap(-[xy])?|[wh]|size|(min|max)-[wh]|top|left|right|bottom|inset(-[xy])?|translate-[xy])-\[calc\(-?\d+(\.(25|5|75))?\*var\(--spacing\)\)\]/;
+    expect(scan(code, spacingUtility), "write mt-[calc(14*var(--spacing))] as mt-14").toEqual([]);
+    const posterType = /(^|[\s"':])(text|rounded)-\[calc\([\d.]+\*var\(--spacing\)\)\]/;
+    expect(scan(code, posterType), "write text-[calc(12*var(--spacing))] as text-u-12").toEqual([]);
+    const transforms = scan(code, /\[transform:/);
+    expect(transforms, "use rotate-*, translate-*, scale-* utilities").toEqual([]);
+  });
+
+  it("rule 8: shared components size in pixels", () => {
+    // PosterStage redefines --spacing, so inside a stage `p-4` is 4 poster units, not 16px.
+    // Components outside the landing feature render in and out of stages: they must not
+    // depend on the spacing scale. Zero is the same at any unit and stays allowed.
+    const shared = sources.filter((f) => rel(f).startsWith("src/components/"));
+    const spacingScale =
+      /(^|[\s"'`:])-?(m[trblxyse]?|p[trblxyse]?|gap(-[xy])?|space-[xy]|[wh]|size|(min|max)-[wh]|top|left|right|bottom|start|end|inset(-[xy])?|translate-[xy]|scroll-[mp][trblxyse]?|indent|leading)-([1-9]\d*(\.\d+)?|0\.\d+)(?=[\s"'`]|$)/;
+    expect(scan(shared, spacingScale), "write p-4 as p-[16px] in src/components").toEqual([]);
+  });
 });

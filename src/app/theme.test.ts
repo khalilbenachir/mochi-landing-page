@@ -73,7 +73,7 @@ describe("theme", () => {
     const codeSources = filesUnder(/\.(ts|tsx)$/).map((f) => readFileSync(f, "utf8"));
     const dead = declared.filter((name) => {
       const inCss = cssSources.some((s) => s.includes(`var(--color-${name})`) || s.includes(`var(--color-${name},`));
-      const utility = new RegExp(`\\b(bg|text|fill|stroke|border|from|via|to|outline|ring|decoration)-${name}(?![\\w-])`);
+      const utility = new RegExp(`\\b(bg|text|fill|stroke|border(?:-[xytrblse])?|from|via|to|outline|ring|decoration)-${name}(?![\\w-])`);
       const inCode = codeSources.some((s) => s.includes(`var(--color-${name})`) || s.includes(`var(--color-${name},`));
       return !inCss && !inCode && !codeSources.some((s) => utility.test(s));
     });
