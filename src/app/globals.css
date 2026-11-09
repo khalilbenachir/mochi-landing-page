@@ -108,6 +108,8 @@
   --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);
   --color-hero-menu-link-border: #eee;
   --color-hero-menu-link-text: #172647;
+  --color-hero-menu-link-hover-bg: #fdecf1;
+  --color-hero-menu-button-shadow: rgba(120, 18, 52, 0.22);
 
   /* Island */
   --color-island-band: #4743b1;
