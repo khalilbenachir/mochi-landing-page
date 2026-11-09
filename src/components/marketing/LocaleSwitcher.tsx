@@ -35,10 +35,10 @@ export function LocaleSwitcher({ variant = "dropdown", className }: LocaleSwitch
 
   return (
     <nav aria-label={t("label")} className={cn("grid gap-[6px]", className)}>
-      <p className="m-0 px-[6px] text-[12px] font-black uppercase tracking-[0.06em] text-ink-navy/60" aria-hidden="true">
+      <p className="px-[6px] text-[12px] font-black uppercase tracking-[0.06em] text-ink-navy/60" aria-hidden="true">
         {t("label")}
       </p>
-      <ul className="m-0 grid list-none grid-cols-2 gap-[6px] p-0">
+      <ul className="grid grid-cols-2 gap-[6px]">
         {OPTIONS.map((option) => {
           const active = option.locale === current.locale;
           return (
@@ -49,8 +49,8 @@ export function LocaleSwitcher({ variant = "dropdown", className }: LocaleSwitch
                 lang={option.locale}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "grid min-h-[40px] place-items-center rounded-[12px] px-[8px] py-[6px] text-center text-[13px] font-[850] leading-[1.15] text-ink-navy no-underline bg-hero-locale-mobile-bg hover:text-ink-navy",
-                  active && "bg-brand-coral text-white hover:text-white",
+                  "grid min-h-[40px] place-items-center rounded-[12px] px-[8px] py-[6px] text-center text-[13px] font-heavy leading-[1.15] text-ink-navy bg-hero-locale-mobile-bg",
+                  active && "bg-brand-coral text-white",
                 )}
               >
                 {option.name}

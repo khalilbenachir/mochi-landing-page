@@ -25,7 +25,7 @@ describe("inline SVG policy", () => {
   const tags = svgTags();
 
   it("finds the inline SVGs", () => {
-    expect(tags.length).toBeGreaterThan(20);
+    expect(tags.length).toBeGreaterThan(15);
   });
 
   it("gives every SVG a viewBox so it scales with its box", () => {

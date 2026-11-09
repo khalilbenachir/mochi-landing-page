@@ -42,8 +42,7 @@
     "title3": "Dynamic Island",
     "body": "Protection de jour, de nuit ou protège-slip, de 2 à 8 heures. Mochi affiche le compte à rebours sur l’accueil, dans la Dynamic Island et sur l’écran verrouillé.",
     "phoneLabel": "Dynamic Island d’un iPhone affichant Mochi et un compte à rebours",
-    "timerPrefix": "Changement dans",
-    "countdownLabel": "Compte à rebours avant le changement de protection"
+    "timerPrefix": "Changement dans"
   },
   "Moods": {
     "title1": "Notez votre ressenti.",

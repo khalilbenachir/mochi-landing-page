@@ -42,8 +42,7 @@
     "title3": "Dynamic Island",
     "body": "Compresa de día, de noche o salvaslip, de 2 a 8 horas. Mochi hace la cuenta atrás en Inicio, en la Dynamic Island y en la pantalla bloqueada.",
     "phoneLabel": "Dynamic Island de un iPhone mostrando a Mochi y una cuenta atrás para cambiar la compresa",
-    "timerPrefix": "Cambio en",
-    "countdownLabel": "Cuenta atrás para cambiar la compresa"
+    "timerPrefix": "Cambio en"
   },
   "Moods": {
     "title1": "Anota cómo te sientes.",

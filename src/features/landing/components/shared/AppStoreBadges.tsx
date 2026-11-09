@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
+import { Button } from "./Button";
 import { APP_STORE_URL } from "@/features/landing/content/landing";
 import { cn } from "@/lib/utils";
 
@@ -12,28 +12,26 @@ export function AppleLogo({ className }: { className?: string }) {
   );
 }
 
-const appStoreBadge = cva(
-  "inline-flex items-center gap-[calc(8*var(--u))] h-[calc(49*var(--u))] [padding-inline:calc(22*var(--u))_calc(26*var(--u))] rounded-full bg-white text-ink-black no-underline [box-shadow:0_calc(3*var(--u))_0_var(--color-hero-badge-shadow)] transition-[transform,box-shadow] duration-250 ease-smooth hover:text-ink-black hover:[transform:translateY(-2px)] hover:[box-shadow:0_calc(3*var(--u)+2px)_0_var(--color-hero-badge-shadow)] active:duration-100 active:[transform:translateY(1px)] active:[box-shadow:0_calc(3*var(--u)-1px)_0_var(--color-hero-badge-shadow)] motion-reduce:hover:[transform:none] motion-reduce:active:[transform:none]",
-  {
-    variants: {
-      compact: {
-        true: "gap-[calc(5*var(--u))] h-[calc(29*var(--u))] [padding-inline:calc(14*var(--u))_calc(16*var(--u))] [box-shadow:none] hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.96)] text-[calc(10.5*var(--u))] font-black max-poster:h-[34px] max-poster:text-[12px]",
-        false: "",
-      },
-      dark: {
-        true: "bg-ink-black text-white [box-shadow:none] hover:text-white hover:[box-shadow:none] active:[box-shadow:none] active:[transform:translateY(0)_scale(0.98)]",
-        false: "",
-      },
+/** Compact and dark badges use the `flat` button (no drop shadow, presses by scaling). */
+const appStoreBadge = cva("gap-8 h-49 ps-22 pe-26", {
+  variants: {
+    compact: {
+      true: "gap-5 h-29 ps-14 pe-16 text-u-10.5 font-black max-poster:h-[34px] max-poster:text-[12px]",
+      false: "",
     },
-    defaultVariants: { compact: false, dark: false },
+    dark: {
+      true: "bg-ink-black text-white active:scale-98",
+      false: "",
+    },
   },
-);
+  defaultVariants: { compact: false, dark: false },
+});
 
 const appleLogo = cva("flex-none", {
   variants: {
     compact: {
-      true: "w-[calc(15*var(--u))] h-[calc(17*var(--u))]",
-      false: "w-[calc(26*var(--u))] h-[calc(30*var(--u))]",
+      true: "w-15 h-17",
+      false: "w-26 h-30",
     },
   },
 });
@@ -42,15 +40,15 @@ export function AppStoreBadge({ compact = false, dark = false, className }: { co
   const t = useTranslations("Common");
 
   return (
-    <Button asChild variant="unstyled" size="unstyled" className={cn(appStoreBadge({ compact, dark }), className)}>
+    <Button asChild variant={compact || dark ? "flat" : "pill"} className={cn(appStoreBadge({ compact, dark }), className)}>
       <a href={APP_STORE_URL} aria-label={t("appStoreAria")}>
         <AppleLogo className={appleLogo({ compact })} />
         {compact ? (
           <span>{t("download")}</span>
         ) : (
           <span className="grid text-left leading-none">
-            <small className="text-[calc(11*var(--u))] font-[800]">{t("downloadOn")}</small>
-            <strong className="mt-[calc(1*var(--u))] text-[calc(21*var(--u))] font-[950] tracking-[-0.02em] max-phone:text-[19px]">{t("appStore")}</strong>
+            <small className="text-u-11 font-extrabold">{t("downloadOn")}</small>
+            <strong className="mt-1 text-u-21 font-ultra tracking-[-0.02em] max-phone:text-[19px]">{t("appStore")}</strong>
           </span>
         )}
       </a>
@@ -58,30 +56,38 @@ export function AppStoreBadge({ compact = false, dark = false, className }: { co
   );
 }
 
+/** The dark App Store tile in two placements: the closing band and the footer. */
 const STORE_BADGE = {
-  band: {
-    root: "[--u:inherit] gap-[calc(8*var(--u))] h-[calc(45*var(--u))] pl-[calc(15*var(--u))] pr-[calc(18*var(--u))] rounded-[calc(12*var(--u))] bg-closing-store-bg text-white no-underline transition-transform duration-250 ease-smooth hover:text-white hover:[transform:translateY(-2px)] active:duration-100 active:[transform:translateY(0)_scale(0.97)] focus-visible:outline-3 focus-visible:outline-solid focus-visible:outline-white focus-visible:outline-offset-3 motion-reduce:hover:[transform:none] motion-reduce:active:[transform:none] max-poster:h-[56px] max-poster:gap-[10px] max-poster:pl-[16px] max-poster:pr-[18px] max-poster:rounded-[14px]",
-    apple: "h-[calc(28*var(--u))] w-[calc(24*var(--u))] flex-none max-poster:h-[30px] max-poster:w-[26px]",
-    small: "text-[calc(10.4*var(--u))] font-[700] max-poster:text-[11px]",
-    strong: "mt-[calc(1*var(--u))] text-[calc(21*var(--u))] font-[900] tracking-[-0.01em] max-poster:text-[22px]",
-  },
-  footer: {
-    root: "[--u:inherit] gap-[calc(8*var(--u))] h-[calc(51*var(--u))] pl-[calc(17*var(--u))] pr-[calc(22*var(--u))] rounded-[calc(12*var(--u))] bg-closing-store-bg text-white no-underline transition-transform duration-250 ease-smooth hover:text-white hover:[transform:translateY(-2px)] active:duration-100 active:[transform:translateY(0)_scale(0.97)] focus-visible:outline-3 focus-visible:outline-solid focus-visible:outline-white focus-visible:outline-offset-3 motion-reduce:hover:[transform:none] motion-reduce:active:[transform:none] max-poster:h-[50px] max-poster:gap-[10px] max-poster:pl-[16px] max-poster:pr-[18px] max-poster:rounded-[14px] max-phone:hidden",
-    apple: "h-[calc(28*var(--u))] w-[calc(24*var(--u))] flex-none",
-    small: "text-[calc(11.5*var(--u))] font-[700] max-poster:text-[11px]",
-    strong: "mt-[calc(1*var(--u))] text-[calc(23*var(--u))] font-[900] tracking-[-0.01em] max-poster:text-[22px]",
-  },
-} as const;
+  root: cva("gap-8 max-poster:gap-[10px] max-poster:pl-[16px] max-poster:pr-[18px]", {
+    variants: {
+      placement: {
+        band: "h-45 pl-15 pr-18 max-poster:h-[56px]",
+        footer: "h-51 pl-17 pr-22 max-poster:h-[50px] max-phone:hidden",
+      },
+    },
+  }),
+  apple: cva("h-28 w-24 flex-none", {
+    variants: { placement: { band: "max-poster:h-[30px] max-poster:w-[26px]", footer: "" } },
+  }),
+  small: cva("font-bold max-poster:text-[11px]", {
+    variants: { placement: { band: "text-u-[10.4]", footer: "text-u-11.5" } },
+  }),
+  strong: cva("mt-1 font-black tracking-[-0.01em] max-poster:text-[22px]", {
+    variants: { placement: { band: "text-u-21", footer: "text-u-23" } },
+  }),
+};
 
-export function ClosingStoreBadge({ variant }: { variant: keyof typeof STORE_BADGE }) {
+export function StoreBadge({ placement }: { placement: "band" | "footer" }) {
   const t = useTranslations("Common");
-  const badge = STORE_BADGE[variant];
 
   return (
-    <Button asChild variant="unstyled" size="unstyled" className={badge.root}>
+    <Button asChild variant="store" className={STORE_BADGE.root({ placement })}>
       <a href={APP_STORE_URL} aria-label={t("appStoreAria")}>
-        <AppleLogo className={badge.apple} />
-        <span className="grid text-left leading-none"><small className={badge.small}>{t("downloadOn")}</small><strong className={badge.strong}>{t("appStore")}</strong></span>
+        <AppleLogo className={STORE_BADGE.apple({ placement })} />
+        <span className="grid text-left leading-none">
+          <small className={STORE_BADGE.small({ placement })}>{t("downloadOn")}</small>
+          <strong className={STORE_BADGE.strong({ placement })}>{t("appStore")}</strong>
+        </span>
       </a>
     </Button>
   );

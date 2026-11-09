@@ -1,8 +1,8 @@
 import type { Viewport } from "next";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { Nunito } from "next/font/google";
 import { notFound } from "next/navigation";
-import "@fontsource-variable/nunito";
 import { PLATFORM_COLORS } from "@/app/platform-colors";
 import { SiteFooter } from "@/features/landing/components/shared/SiteFooter";
 import { localePath, routing } from "@/i18n/routing";
@@ -12,6 +12,13 @@ type LocaleLayoutProps = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
+
+/** Self-hosted, preloaded, with a metric-matched fallback; exposed as `--font-nunito` for globals.css. */
+const nunito = Nunito({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-nunito",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -28,7 +35,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={nunito.variable}>
       <body className="flex min-h-dvh flex-col">
         {children}
         <SiteFooter homePath={localePath(locale)} />

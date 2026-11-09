@@ -42,8 +42,7 @@
     "title3": "na Dynamic Island",
     "body": "Absorvente diurno, noturno ou protetor diário, de 2 a 8 horas. Mochi faz a contagem regressiva no Início, na Dynamic Island e na Tela Bloqueada.",
     "phoneLabel": "Dynamic Island do iPhone mostrando o Mochi e uma contagem regressiva para trocar o absorvente",
-    "timerPrefix": "Troca em",
-    "countdownLabel": "Contagem regressiva para trocar o absorvente"
+    "timerPrefix": "Troca em"
   },
   "Moods": {
     "title1": "Registre como se sente.",
