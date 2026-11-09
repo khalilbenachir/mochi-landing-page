@@ -238,6 +238,13 @@
     "imageAlt": "Mochi auf einem Kissen",
     "brand": "Mochi: Periodentracker"
   },
+  "Footer": {
+    "navLabel": "Rechtliches und Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "disclaimer": "Mochi ist kein Verhütungsmittel und ersetzt keine medizinische Beratung."
+  },
   "StructuredData": {
     "offer": "Kostenlos laden. Optionales Mochi Plus Abo in der App erhältlich.",
     "features": {

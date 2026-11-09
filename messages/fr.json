@@ -238,6 +238,13 @@
     "imageAlt": "Mochi posé sur un coussin",
     "brand": "Mochi : suivi des règles"
   },
+  "Footer": {
+    "navLabel": "Liens juridiques et contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions",
+    "contact": "Contact",
+    "disclaimer": "Mochi n’est pas un moyen de contraception et ne remplace pas un avis médical."
+  },
   "StructuredData": {
     "offer": "Téléchargement gratuit. Abonnement Mochi Plus facultatif dans l’application.",
     "features": {

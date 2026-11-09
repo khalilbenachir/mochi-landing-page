@@ -238,6 +238,13 @@
     "imageAlt": "Mochi a descansar numa almofada",
     "brand": "Mochi: registo do período"
   },
+  "Footer": {
+    "navLabel": "Ligações legais e contacto",
+    "privacy": "Política de privacidade",
+    "terms": "Termos",
+    "contact": "Contacto",
+    "disclaimer": "O Mochi não é um contracetivo e não substitui aconselhamento médico."
+  },
   "StructuredData": {
     "offer": "Grátis para descarregar. Subscrição opcional do Mochi Plus disponível na app.",
     "features": {

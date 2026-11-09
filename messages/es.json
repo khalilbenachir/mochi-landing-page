@@ -238,6 +238,13 @@
     "imageAlt": "Mochi descansando sobre un cojín",
     "brand": "Mochi: calendario menstrual"
   },
+  "Footer": {
+    "navLabel": "Enlaces legales y contacto",
+    "privacy": "Política de privacidad",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "disclaimer": "Mochi no es un anticonceptivo ni sustituye el consejo médico."
+  },
   "StructuredData": {
     "offer": "Descarga gratis. Suscripción opcional a Mochi Plus disponible en la app.",
     "features": {

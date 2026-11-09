@@ -238,6 +238,13 @@
     "imageAlt": "Mochi descansando em uma almofada",
     "brand": "Mochi: app de menstruação"
   },
+  "Footer": {
+    "navLabel": "Links legais e contato",
+    "privacy": "Política de privacidade",
+    "terms": "Termos",
+    "contact": "Contato",
+    "disclaimer": "O Mochi não é um método contraceptivo e não substitui orientação médica."
+  },
   "StructuredData": {
     "offer": "Download grátis. Assinatura opcional do Mochi Plus disponível no app.",
     "features": {

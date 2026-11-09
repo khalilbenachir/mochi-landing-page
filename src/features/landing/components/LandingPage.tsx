@@ -13,7 +13,7 @@ import { PrivacySection } from "./sections/PrivacySection";
 /** The landing page composition, section by section. */
 export function LandingPage() {
   return (
-    <main className="isolate bg-landing-canvas text-foreground">
+    <main className="isolate flex-1 bg-landing-canvas text-foreground">
       <HeroSection />
       <IslandSection />
       <MoodSection />

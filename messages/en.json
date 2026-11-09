@@ -238,6 +238,13 @@
     "imageAlt": "Mochi resting on a cushion",
     "brand": "Mochi: period tracker"
   },
+  "Footer": {
+    "navLabel": "Legal and contact",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "disclaimer": "Mochi is not a contraceptive and doesn’t replace medical advice."
+  },
   "StructuredData": {
     "offer": "Free to download. Optional Mochi Plus subscription available in the app.",
     "features": {
