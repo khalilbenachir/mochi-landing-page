@@ -253,6 +253,90 @@
     "home": "Zurück zur Startseite",
     "mascotAlt": "Mochi schaut ratlos"
   },
+  "PrivacyPolicy": {
+    "metadataTitle": "Datenschutz | Mochi",
+    "metadataDescription": "Dein Zyklus gehört dir. Erfahre, was Mochi auf deinem iPhone speichert und wie das optionale Backup funktioniert.",
+    "eyebrow": "Datenschutz",
+    "title": "Datenschutz",
+    "intro": "Dein Zyklus gehört dir. Hier erfährst du, was Mochi auf deinem iPhone speichert und niemals weitergibt.",
+    "updated": "Zuletzt aktualisiert: {date}",
+    "heroAlt": "Ein fröhlicher rosa Mochi schützt ein verschlossenes Tagebuch unter einer blauen Glaskuppel",
+    "short": "Kurz gesagt",
+    "onThisPage": "Auf dieser Seite",
+    "help": "Hilfe",
+    "contactTitle": "Fragen zu deinem Datenschutz?",
+    "contactEmail": "Schreib uns an {email}",
+    "contactButton": "Kontakt",
+    "callout": "Periodendaten, Blutung, Symptome, Stimmung, Sex, Tests und Schwangerschaftseinträge verlassen dein iPhone nur, wenn du das Backup aktivierst.",
+    "cards": {
+      "device": {
+        "title": "Bleibt auf\ndeinem iPhone",
+        "body": "Zyklus, Blutung, Symptome und Stimmung bleiben lokal gespeichert."
+      },
+      "account": {
+        "title": "Kein Konto\nerforderlich",
+        "body": "Alle Funktionen laufen offline und ohne Anmeldung."
+      },
+      "analytics": {
+        "title": "Nie in\nAnalysen",
+        "body": "Keine Zyklusdaten in Analysen, Protokollen oder Absturzberichten."
+      },
+      "backup": {
+        "title": "Optionales\nEU-Backup",
+        "body": "Nur wenn du es aktivierst, ausschließlich für dich."
+      }
+    },
+    "sections": {
+      "collect": {
+        "nav": "Erfasste Daten",
+        "title": "Welche Daten wir erfassen",
+        "body": "Mochi speichert nur, was du selbst einträgst: Periodendaten, Blutung, Symptome, Stimmung, Sex, Tests und Schwangerschaftseinträge. Diese Daten ermöglichen Zyklusprognosen, Erinnerungen und persönliche Funktionen wie Serien und Sammelsorten.",
+        "detail": "Name, E-Mail-Adresse oder andere persönliche Angaben sind nicht erforderlich. Alle Kernfunktionen sind ohne Konto nutzbar."
+      },
+      "device": {
+        "nav": "Auf deinem iPhone",
+        "title": "Was auf deinem iPhone bleibt",
+        "body": "Deine Zyklusdaten liegen in einer lokalen Datenbank auf deinem iPhone. Nur Mochi nutzt sie, um deinen Zyklus, Prognosen, Serien und Sorten anzuzeigen.",
+        "detail": "Du behältst die Kontrolle. Deine Daten werden nicht an Analysen, Protokolle oder Absturzberichte gesendet. Nur mit aktiviertem Backup verlassen sie dein iPhone, verschlüsselt und ausschließlich mit dir verknüpft."
+      },
+      "analytics": {
+        "nav": "Analysen",
+        "title": "Niemals in Analysen",
+        "body": "Periodendaten, Blutung, Symptome, Stimmung, Sex, Tests und Schwangerschaftseinträge werden niemals in Analysen, Protokollen oder Absturzberichten gespeichert.",
+        "detail": "Mochi verwendet deine privaten Einträge auf deinem iPhone für die Funktionen, die du nutzen möchtest."
+      },
+      "backup": {
+        "nav": "Backup und Sync",
+        "title": "Backup und Synchronisierung",
+        "body": "Ein Backup ist freiwillig. Wenn du es aktivierst, wird es verschlüsselt, in der EU gespeichert und nur mit dir verknüpft.",
+        "detail": "Die Kernfunktionen funktionieren offline und ohne Konto. Ohne Backup bleiben deine Zyklusdaten auf deinem iPhone."
+      },
+      "subscriptions": {
+        "nav": "Abonnements",
+        "title": "Abonnements",
+        "body": "Mochi Plus ist ein optionales Abonnement. Die kostenlosen Kernfunktionen bleiben ohne Abonnement verfügbar.",
+        "detail": "Apple verwaltet Käufe und Abonnements im App Store. Ein Abonnement ändert den Schutz deiner Zyklusdaten nicht."
+      },
+      "rights": {
+        "nav": "Deine Rechte",
+        "title": "Du behältst die Kontrolle",
+        "body": "Du entscheidest, welche Informationen du in Mochi einträgst. Alle Kernfunktionen sind ohne Konto und Backup nutzbar.",
+        "detail": "Kontaktiere uns, wenn du Fragen zu deinen Daten hast oder Unterstützung bei einer Datenschutzanfrage brauchst."
+      },
+      "children": {
+        "nav": "Kinder",
+        "title": "Datenschutz für Kinder",
+        "body": "Für Zykluseinträge gilt derselbe Schutz: Sie bleiben auf dem iPhone, solange das optionale Backup nicht aktiviert ist.",
+        "detail": "Eltern und Erziehungsberechtigte können uns bei Datenschutzfragen kontaktieren. Bitte keine sensiblen Gesundheitsdaten mitsenden."
+      },
+      "contact": {
+        "nav": "Kontakt",
+        "title": "Sprechen wir über Datenschutz",
+        "body": "Fragen zu dieser Erklärung oder zum Umgang mit deinen Daten? Wir helfen dir gern.",
+        "detail": "Bitte keine Periodendaten, Symptome oder anderen Gesundheitsdaten in die Nachricht aufnehmen."
+      }
+    }
+  },
   "StructuredData": {
     "offer": "Kostenlos laden. Optionales Mochi Plus Abo in der App erhältlich.",
     "features": {

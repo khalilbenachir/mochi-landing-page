@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { LandingPage } from "@/features/landing/components/LandingPage";
@@ -14,6 +16,7 @@ const socialImageUrl = `${SITE_URL}${LANDING_ASSETS.socialCard}`;
 
 export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const canonical = localePath(locale);
   const languageAlternates = {
@@ -70,6 +73,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
   return (

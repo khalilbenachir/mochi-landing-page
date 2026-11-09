@@ -32,6 +32,11 @@ export function localePath(locale: AppLocale) {
   return locale === routing.defaultLocale ? "/" : `/${locale}`;
 }
 
+/** A page under the locale home, e.g. `/privacy` (default locale) or `/fr/privacy`. */
+export function localeRoutePath(locale: AppLocale, slug: string) {
+  return `${localePath(locale).replace(/\/$/, "")}/${slug}`;
+}
+
 /** Explicit prefixes let middleware update the locale cookie before canonicalizing the URL. */
 export function localeSwitchPath(locale: AppLocale) {
   return `/${locale}`;

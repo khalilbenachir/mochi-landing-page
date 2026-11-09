@@ -253,6 +253,90 @@
     "home": "Voltar ao início",
     "mascotAlt": "O Mochi parece confuso"
   },
+  "PrivacyPolicy": {
+    "metadataTitle": "Política de privacidade | Mochi",
+    "metadataDescription": "Seu ciclo é seu. Saiba o que o Mochi guarda no seu iPhone e como funciona o backup opcional.",
+    "eyebrow": "Privacidade",
+    "title": "Sua privacidade",
+    "intro": "Seu ciclo é seu. Veja o que o Mochi guarda no seu iPhone e o que nunca compartilha.",
+    "updated": "Última atualização: {date}",
+    "heroAlt": "Um Mochi rosa protege um diário trancado sob uma cúpula azul",
+    "short": "Em resumo",
+    "onThisPage": "Nesta página",
+    "help": "Ajuda",
+    "contactTitle": "Dúvidas sobre sua privacidade?",
+    "contactEmail": "Escreva para {email}",
+    "contactButton": "Fale conosco",
+    "callout": "Datas, fluxo, sintomas, humor, sexo, testes e registros de gravidez só saem do seu iPhone se você ativar o backup.",
+    "cards": {
+      "device": {
+        "title": "Fica no\nseu iPhone",
+        "body": "Ciclo, fluxo, sintomas e humor ficam em um banco de dados local."
+      },
+      "account": {
+        "title": "Sem precisar\nde conta",
+        "body": "Todos os recursos funcionam offline e sem login."
+      },
+      "analytics": {
+        "title": "Nunca em\nanálises",
+        "body": "Sem datas ou dados do ciclo em análises, logs ou relatórios de falhas."
+      },
+      "backup": {
+        "title": "Backup na UE\nopcional",
+        "body": "Só se você ativar, vinculado apenas a você."
+      }
+    },
+    "sections": {
+      "collect": {
+        "nav": "O que coletamos",
+        "title": "O que coletamos",
+        "body": "O Mochi guarda apenas o que você escolhe registrar: datas da menstruação, fluxo, sintomas, humor, sexo, testes e registros de gravidez. Esses dados permitem previsões, lembretes e uma experiência personalizada, como sequências e sabores colecionáveis.",
+        "detail": "Seu nome, e-mail ou outros dados pessoais não são necessários. Todos os recursos essenciais funcionam sem criar conta."
+      },
+      "device": {
+        "nav": "O que fica no iPhone",
+        "title": "O que fica no seu iPhone",
+        "body": "Os dados do ciclo ficam em um banco de dados local no iPhone. Só o Mochi os usa para mostrar seu ciclo, fazer previsões e guardar suas sequências e sabores.",
+        "detail": "Você está no controle. Seus dados não vão para análises, logs ou relatórios de falhas. Só saem do iPhone se você ativar o backup, criptografados e vinculados apenas a você."
+      },
+      "analytics": {
+        "nav": "Análises",
+        "title": "Nunca em análises",
+        "body": "Datas, fluxo, sintomas, humor, sexo, testes e registros de gravidez nunca entram em análises, logs ou relatórios de falhas.",
+        "detail": "O Mochi usa seus registros privados no iPhone para os recursos que você escolhe usar."
+      },
+      "backup": {
+        "nav": "Backup e sincronização",
+        "title": "Backup e sincronização",
+        "body": "O backup é opcional. Se você ativar, ele é criptografado, armazenado na UE e vinculado apenas a você.",
+        "detail": "Os recursos essenciais funcionam offline e sem conta. Sem backup, os dados do ciclo ficam no iPhone."
+      },
+      "subscriptions": {
+        "nav": "Assinaturas",
+        "title": "Assinaturas",
+        "body": "O Mochi Plus é uma assinatura opcional. Os recursos essenciais gratuitos continuam disponíveis sem assinatura.",
+        "detail": "A Apple gerencia compras e assinaturas da App Store. A assinatura não muda a privacidade dos registros do ciclo."
+      },
+      "rights": {
+        "nav": "Seus direitos",
+        "title": "Você está no controle",
+        "body": "Você escolhe o que registrar no Mochi. Os recursos essenciais funcionam sem conta e sem backup.",
+        "detail": "Fale conosco se tiver dúvidas sobre seus dados ou precisar de ajuda com uma solicitação de privacidade."
+      },
+      "children": {
+        "nav": "Crianças",
+        "title": "Privacidade de crianças",
+        "body": "Os registros do ciclo recebem a mesma proteção: ficam no iPhone, a menos que o backup opcional seja ativado.",
+        "detail": "Pais ou responsáveis podem entrar em contato com dúvidas. Evite enviar informações de saúde sensíveis."
+      },
+      "contact": {
+        "nav": "Contato",
+        "title": "Vamos falar de privacidade",
+        "body": "Dúvidas sobre esta política ou sobre seus dados no Mochi? Estamos aqui para ajudar.",
+        "detail": "Evite incluir datas, sintomas ou outros dados de saúde na mensagem."
+      }
+    }
+  },
   "StructuredData": {
     "offer": "Download grátis. Assinatura opcional do Mochi Plus disponível no app.",
     "features": {

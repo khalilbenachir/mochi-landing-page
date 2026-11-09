@@ -6,6 +6,7 @@ export const LANDING_ASSETS = {
   closingMochi: "/mochi/closing-mochi.webp",
   faces: {
     happy: "/mochi/faces/happy.webp",
+    headerHappy: "/mochi/faces/happy-header.webp",
     wondering: "/mochi/faces/wondering.webp",
   },
   heroMochi: "/mochi/hero-mochi.webp",

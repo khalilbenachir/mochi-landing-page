@@ -184,6 +184,16 @@
   --color-privacy-promise-detail-text: #eef2fb;
   --color-privacy-hug-highlight: #ff8db3;
 
+  /* Privacy policy */
+  --color-policy-hero: #41409e;
+  --color-policy-mint: #bff4e7;
+  --color-policy-pink: #fde6ef;
+  --color-policy-cream: #fff6e8;
+  --color-policy-border: #e8e9ed;
+  --color-policy-purple: #7751c3;
+  --color-policy-blue: #27b5dc;
+  --color-policy-shadow: rgba(23, 42, 79, 0.07);
+
   /* Comparison */
   --color-comparison-matcha-bg: #bfe3f6;
   --color-comparison-mochi-head-bg: #ef5f8d;

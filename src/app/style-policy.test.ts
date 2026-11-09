@@ -24,7 +24,7 @@ function scan(files: string[], pattern: RegExp): string[] {
 }
 
 const sources = withExt(/\.(ts|tsx)$/);
-const landingSources = sources.filter((f) => rel(f).startsWith("src/features/landing/"));
+const featureSources = sources.filter((f) => rel(f).startsWith("src/features/"));
 
 describe("style policy", () => {
   it("rule 1: no CSS Modules", () => {
@@ -66,12 +66,12 @@ describe("style policy", () => {
     expect(hits, "define colors as --color-* tokens in globals.css").toEqual([]);
   });
 
-  it("rule 4: no inline styles in the landing", () => {
-    expect(scan(landingSources, /style=\{/), "use Tailwind utilities").toEqual([]);
+  it("rule 4: no inline styles in features", () => {
+    expect(scan(featureSources, /style=\{/), "use Tailwind utilities").toEqual([]);
   });
 
   it("rule 5: static class names", () => {
-    const hits = scan(landingSources, /className=\{`|className=\{"[^"]*"\s*\+/);
+    const hits = scan(featureSources, /className=\{`|className=\{"[^"]*"\s*\+/);
     expect(hits, "class names must be static strings or cn()/cva()").toEqual([]);
   });
 
