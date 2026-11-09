@@ -5,6 +5,22 @@ const LOCALES = ["en", "fr", "de", "es", "pt-BR", "pt-PT"] as const;
 type Locale = (typeof LOCALES)[number];
 const localeUrl = (locale: Locale) => (locale === "en" ? "/" : `/${locale}`);
 
+async function expectLocalizedFooter(page: Page, locale: Locale) {
+  const homePath = localeUrl(locale);
+  const routePrefix = homePath === "/" ? "" : homePath;
+  const footer = page.locator("body > footer");
+
+  await expect(footer).toHaveCount(1);
+  await expect(footer.locator("a").first()).toHaveAttribute("href", `${homePath}#top`);
+  expect(await footer.locator("nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual([
+    `${routePrefix}/privacy`,
+    `${routePrefix}/terms`,
+    `${routePrefix}/contact`,
+  ]);
+  await expect(footer.locator("nav a")).toHaveCount(3);
+  await expect(footer.locator("p")).toBeVisible();
+}
+
 const sectionIds = [
   "top",
   "features",
@@ -72,6 +88,7 @@ test.describe("localized landing routes", () => {
     await waitForPageAssets(page);
     expect(response?.status()).toBe(200);
     await expect(page.locator("main")).toHaveCount(1);
+    await expectLocalizedFooter(page, "en");
     assertClean();
   });
 
@@ -83,6 +100,7 @@ test.describe("localized landing routes", () => {
     expect(response?.status()).toBe(200);
     await expect(page).toHaveURL((url) => url.pathname === "/");
     await expect(page.locator("main")).toHaveCount(1);
+    await expectLocalizedFooter(page, "en");
     assertClean();
   });
 
@@ -96,6 +114,7 @@ test.describe("localized landing routes", () => {
       await expect(page).toHaveURL((url) => url.pathname === `/${locale}`);
       await expect(page.locator("html")).toHaveAttribute("lang", locale);
       await expect(page.locator("main")).toHaveCount(1);
+      await expectLocalizedFooter(page, locale);
       assertClean();
     });
   }
@@ -108,7 +127,13 @@ test.describe("localized landing routes", () => {
     const landmarks = page.locator("main");
     await expect(landmarks).toHaveCount(1);
     await expect(landmarks.locator("section")).toHaveCount(11);
-    await expect(landmarks.locator("footer")).toHaveCount(1);
+    await expect(landmarks.locator("footer")).toHaveCount(0);
+    await expect(page.locator("body > footer")).toHaveCount(1);
+    expect(
+      await page.locator("body > main, body > footer").evaluateAll((elements) =>
+        elements.map((element) => element.tagName.toLowerCase()),
+      ),
+    ).toEqual(["main", "footer"]);
     const renderedIds = await landmarks.locator("section").evaluateAll((sections) =>
       sections.map((section) => section.id),
     );
