@@ -49,6 +49,8 @@ those files exist at `0fa9683`). Review baselines are git tree snapshots, not co
 | [011](./011-add-branded-social-preview.md) | Add a deterministic branded social preview image | P2 | M | 008, 009 | DONE (final card regenerated with built-in ImageGen from the approved ChatGPT visual references; exact 1200×630 asset is uncommitted; snapshot `e8bca3b5` predates the final image) |
 | [012](./012-test-seo-crawler-contract.md) | Test the production SEO and crawler contract over HTTP | P1 | M | 008, 009, 010, 011 | DONE (reviewed, approved first pass; 20 SEO tests, full e2e 73 passed, no snapshot changes; uncommitted; snapshot `3107ff00`) |
 | [013](./013-build-localized-mochi-404.md) | Ship a localized Mochi 404 page | P1 | M | — | DONE (reviewed; generated mascot revision; 55 unit/policy tests and 96 e2e tests pass; uncommitted) |
+| [014](./014-build-localized-mochi-terms.md) | Ship the localized illustrated Terms of Use page | P1 | L | Existing Privacy feature | DONE (reviewed; generated alpha mascot; six locales; 75 unit tests and 143 e2e tests pass; existing baselines unchanged; uncommitted) |
+| [015](./015-share-legal-summary-and-contact.md) | Share Privacy/Terms summary headings and contact banners | P1 | S | 014 | DONE (reviewed; shared server components; 75 unit tests and 46 Privacy/Terms browser tests pass; all four baseline hashes unchanged; uncommitted) |
 
 Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 `REJECTED: <reason>`.
