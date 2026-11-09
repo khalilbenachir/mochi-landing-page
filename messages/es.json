@@ -245,6 +245,15 @@
     "contact": "Contacto",
     "disclaimer": "Mochi no es un anticonceptivo ni sustituye el consejo médico."
   },
+  "NotFound": {
+    "metadataTitle": "Página no encontrada | Mochi",
+    "metadataDescription": "No se ha podido encontrar esta página de Mochi.",
+    "code": "Error 404",
+    "title": "Vaya, esta página se fue rodando",
+    "body": "Mochi buscó por todas partes, pero no pudo encontrarla. Volvamos al buen camino.",
+    "home": "Volver al inicio",
+    "mascotAlt": "Mochi parece desconcertado"
+  },
   "StructuredData": {
     "offer": "Descarga gratis. Suscripción opcional a Mochi Plus disponible en la app.",
     "features": {

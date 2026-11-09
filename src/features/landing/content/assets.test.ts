@@ -20,7 +20,7 @@ function readPngSize(assetPath: string) {
 
 describe("landing asset manifest", () => {
   it("declares existing files for all active landing assets", () => {
-    expect(LANDING_ASSET_PATHS).toHaveLength(28);
+    expect(LANDING_ASSET_PATHS).toHaveLength(29);
     for (const assetPath of LANDING_ASSET_PATHS) {
       expect(existsSync(join(process.cwd(), "public", assetPath.slice(1))), assetPath).toBe(true);
     }
@@ -62,6 +62,13 @@ describe("landing asset manifest", () => {
     expect(readPngSize(LANDING_ASSETS.socialCard), LANDING_ASSETS.socialCard).toEqual({
       width: 1200,
       height: 630,
+    });
+  });
+
+  it("ships the generated square not-found mascot bitmap", () => {
+    expect(readPngSize(LANDING_ASSETS.notFoundMascot), LANDING_ASSETS.notFoundMascot).toEqual({
+      width: 1254,
+      height: 1254,
     });
   });
 });
