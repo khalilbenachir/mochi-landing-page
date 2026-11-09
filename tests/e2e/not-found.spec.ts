@@ -7,6 +7,7 @@ import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
 import { localePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
+import { waitForPageAssets } from "./assets";
 
 const MESSAGES = { en, fr, de, es, "pt-BR": ptBR, "pt-PT": ptPT } satisfies Record<
   AppLocale,
@@ -72,18 +73,15 @@ function watchNotFoundErrors(page: Page) {
   };
 }
 
-async function waitForPageAssets(page: Page) {
-  await page.evaluate(async () => {
-    await document.fonts.ready;
-    const images = Array.from(document.images);
-    images.forEach((image) => {
-      image.loading = "eager";
-    });
-    await Promise.all(images.map((image) => image.decode()));
-  });
-}
-
 test.describe("localized not-found routes", () => {
+  test("paths outside the locale middleware return 404 without rendering app metadata", async ({ request }) => {
+    for (const path of ["/missing.css", "/invalid.locale/privacy"]) {
+      const response = await request.get(path);
+      expect(response.status()).toBe(404);
+      expect(await response.text()).not.toContain('"@type":"MobileApplication"');
+    }
+  });
+
   for (const locale of routing.locales) {
     test(`${locale} unknown URL returns the localized 404`, async ({ page }) => {
       const assertClean = watchNotFoundErrors(page);
@@ -103,7 +101,7 @@ test.describe("localized not-found routes", () => {
       expect(await footer.locator("nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual([
         `${routePrefix}/privacy`,
         `${routePrefix}/terms`,
-        `${routePrefix}/contact`,
+        `${routePrefix}/privacy#contact`,
       ]);
       await expect(footer.locator("nav")).toHaveAttribute("aria-label", MESSAGES[locale].Footer.navLabel);
       await expect(footer.locator("p")).toHaveText(MESSAGES[locale].Footer.disclaimer);
