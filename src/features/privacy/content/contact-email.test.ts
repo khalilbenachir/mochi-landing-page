@@ -1,14 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { resolveContactEmail } from "./contact-email";
+import { DEFAULT_CONTACT_EMAIL, resolveContactEmail } from "./contact-email";
 
 describe("resolveContactEmail", () => {
   it("returns the trimmed address", () => {
     expect(resolveContactEmail({ value: "  privacy@example.com ", nodeEnv: "production" })).toBe("privacy@example.com");
   });
 
-  it("allows a missing address outside production", () => {
-    expect(resolveContactEmail({ value: undefined, nodeEnv: "development" })).toBeNull();
-    expect(resolveContactEmail({ value: "  ", nodeEnv: "test" })).toBeNull();
+  it("falls back to the default address outside production", () => {
+    expect(resolveContactEmail({ value: undefined, nodeEnv: "development" })).toBe(DEFAULT_CONTACT_EMAIL);
+    expect(resolveContactEmail({ value: "  ", nodeEnv: "test" })).toBe(DEFAULT_CONTACT_EMAIL);
   });
 
   it("requires an address in production builds", () => {

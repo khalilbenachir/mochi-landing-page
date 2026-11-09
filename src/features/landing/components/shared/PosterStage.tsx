@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
  * so a band is as tall as its content plus the shared section spacing; nothing sets a fixed
  * band height.
  */
-const posterFrame = cva("relative mx-auto @container max-poster:@container-normal", {
+const posterRoot = cva("relative mx-auto @container max-poster:@container-normal", {
   variants: {
     grid: {
       "1024": "w-[min(100%,1440px)]",
@@ -24,7 +24,7 @@ const posterFrame = cva("relative mx-auto @container max-poster:@container-norma
   defaultVariants: { grid: "1024" },
 });
 
-const posterStage = cva("relative max-poster:[--spacing:1px]", {
+const posterContent = cva("relative max-poster:[--spacing:1px]", {
   variants: {
     grid: {
       "1024": "[--spacing:calc(100cqw/1024)] [--section-space:calc(28*var(--spacing))]",
@@ -49,16 +49,33 @@ const posterStage = cva("relative max-poster:[--spacing:1px]", {
   defaultVariants: { grid: "1024", spacing: "section", bleed: "none" },
 });
 
-export function PosterStage({
+type PosterStageRootProps = ComponentProps<"div"> & VariantProps<typeof posterRoot>;
+type PosterStageContentProps = ComponentProps<"div"> & VariantProps<typeof posterContent>;
+
+function PosterStageRoot({ grid, className, ...props }: PosterStageRootProps) {
+  return <div className={cn(posterRoot({ grid }), className)} {...props} />;
+}
+
+function PosterStageContent({ grid, spacing, bleed, className, ...props }: PosterStageContentProps) {
+  return <div className={cn(posterContent({ grid, spacing, bleed }), className)} {...props} />;
+}
+
+function PosterStageShorthand({
   grid,
   spacing,
   bleed,
   className,
   ...props
-}: ComponentProps<"div"> & VariantProps<typeof posterStage>) {
+}: PosterStageRootProps & PosterStageContentProps) {
   return (
-    <div className={posterFrame({ grid })}>
-      <div className={cn(posterStage({ grid, spacing, bleed }), className)} {...props} />
-    </div>
+    <PosterStageRoot grid={grid}>
+      <PosterStageContent grid={grid} spacing={spacing} bleed={bleed} className={className} {...props} />
+    </PosterStageRoot>
   );
 }
+
+/** Compound API for layouts that need to compose the frame and its content explicitly. */
+export const PosterStage = Object.assign(PosterStageShorthand, {
+  Root: PosterStageRoot,
+  Content: PosterStageContent,
+});
