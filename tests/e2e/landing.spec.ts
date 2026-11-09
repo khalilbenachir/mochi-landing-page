@@ -201,6 +201,70 @@ test.describe("language switcher", () => {
     await expect(page).toHaveURL((url) => url.pathname === "/pt-BR");
     assertClean();
   });
+
+  test.describe("phone: burger menu with a mouse", () => {
+    test.beforeEach(async ({ page }) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.goto("/");
+      await waitForPageAssets(page);
+    });
+
+    const burger = (page: Page) => page.locator("#top header button[aria-expanded]:visible");
+    const away = (page: Page) => page.mouse.move(10, 800);
+
+    test("hover opens the menu and leaving closes it", async ({ page }) => {
+      const assertClean = watchPageErrors(page);
+      await burger(page).hover();
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+      const panelId = await burger(page).getAttribute("aria-controls");
+      await expect(page.locator(`[id="${panelId}"] a`).first()).toBeVisible();
+
+      await away(page);
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "false");
+      assertClean();
+    });
+
+    test("moving from the button into the panel keeps it open", async ({ page }) => {
+      await burger(page).hover();
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+      const box = (await burger(page).boundingBox())!;
+      await page.mouse.move(box.x - 80, box.y + 140, { steps: 12 });
+      await page.waitForTimeout(400);
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+    });
+
+    test("a click right after hovering pins the menu; a later click on the cross closes it", async ({ page }) => {
+      await burger(page).click();
+      await away(page);
+      await page.waitForTimeout(400);
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+
+      await burger(page).click();
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "false");
+    });
+
+    test("clicking the cross of a hover-opened menu closes it", async ({ page }) => {
+      await burger(page).hover();
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+      await page.waitForTimeout(400);
+      await burger(page).click();
+      await expect(burger(page)).toHaveAttribute("aria-expanded", "false");
+    });
+  });
+
+  test("phone: burger menu toggles on touch", async ({ browser }) => {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+    const page = await context.newPage();
+    await page.goto("/");
+    await waitForPageAssets(page);
+    const burger = page.locator("#top header button[aria-expanded]:visible");
+
+    await burger.tap();
+    await expect(burger).toHaveAttribute("aria-expanded", "true");
+    await burger.tap();
+    await expect(burger).toHaveAttribute("aria-expanded", "false");
+    await context.close();
+  });
 });
 
 for (const locale of LOCALES) {
