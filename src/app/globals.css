@@ -1,70 +1,54 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
-
 /* Design tokens: the app's MochiColor palette (MochiDesign/Palette.swift). */
 :root {
-  --background: #ffffff;
   --foreground: #1f2a3a;
-  --card: #ffffff;
-  --card-foreground: #1f2a3a;
-  --popover: #ffffff;
-  --popover-foreground: #1f2a3a;
-  --primary: #d2335c;
-  --primary-foreground: #ffffff;
-  --secondary: #e6e5f7;
-  --secondary-foreground: #2e3a4d;
-  --muted: #f1f3f6;
-  --muted-foreground: #6b7585;
   --accent: #fde3ea;
-  --accent-foreground: #b0254b;
-  --border: #e3e7ec;
-  --input: #e3e7ec;
   --ring: #45b5da;
-  --radius: 0.875rem;
 
   --pink: #f2577c;
   --pink-ink: #d2335c;
-  --pink-deep: #b0254b;
 
   --navy: #2e3a4d;
 
-  --font: "Nunito Variable", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  /* --font-nunito is set by next/font on <html> (src/app/[locale]/layout.tsx). */
+  --font: var(--font-nunito), ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   --spring: cubic-bezier(0.3, 1.5, 0.5, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
   --color-ring: var(--ring);
   --color-mochi-pink: var(--pink);
   --color-mochi-pink-ink: var(--pink-ink);
   --font-sans: var(--font);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --ease-spring: var(--spring);
+}
+
+/* Nunito is variable up to 1000; these name the in-between weights the maquette uses. */
+@theme {
+  --font-weight-demibold: 650;
+  --font-weight-heavy: 850;
+  --font-weight-ultra: 950;
+  --font-weight-max: 1000;
+}
+
+/*
+ * Poster units. Inside a PosterStage `--spacing` is 1/1024 (or 1/800) of the poster width, so
+ * spacing utilities (`mt-14`, `w-98`) scale with it. These two cover type and radii the same way:
+ * `text-u-41` is 41 poster units; off-quarter values use brackets (`text-u-[13.6]`).
+ */
+@utility text-u-* {
+  font-size: calc(--value(number, [number]) * var(--spacing));
+}
+
+@utility rounded-u-* {
+  border-radius: calc(--value(number, [number]) * var(--spacing));
 }
 
 /*
  * Landing design tokens. Every color used by the landing lives here and nowhere else
- * (except browser metadata in src/app/platform-colors.ts). `static` makes Tailwind emit
- * every variable so CSS Modules can reference them while the migration is in progress.
+ * (except browser metadata in src/app/platform-colors.ts). `static` emits every variable,
+ * because many are only read through `var(--color-*)` inside arbitrary values.
  */
 @theme static {
   /* Breakpoints: max-phone = max-width 480px, max-nav = 760px, max-tablet = 640px, max-poster = 1099px,
@@ -230,46 +214,26 @@
   --color-closing-brand-divider: #c9ccd4;
 }
 
+/*
+ * Preflight already handles box-sizing, margins, list styles, link color/decoration and
+ * block-level images; only what differs from it lives here.
+ */
 @layer base {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 92px;
   }
 
   body {
-    margin: 0;
     background: #fff;
     color: var(--navy);
     font-family: var(--font);
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  a {
-    color: var(--pink-ink);
-  }
-  a:hover {
-    color: var(--pink-deep);
-  }
-
-  img,
-  video {
-    display: block;
-    max-width: 100%;
-  }
-
-  section[id] {
-    scroll-margin-top: 92px;
+    overflow-x: clip;
   }
 }
 
+/* The single reduced-motion switch: components don't repeat `motion-reduce:` transition/animation resets. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
