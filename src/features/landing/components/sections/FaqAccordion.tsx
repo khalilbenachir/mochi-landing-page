@@ -6,8 +6,8 @@ type FaqItem = { id: string; question: string; answer: string };
 
 /**
  * Exclusive accordion for the FAQ. Height animates through a 0fr → 1fr grid row so the
- * open and close are both smooth without measuring the DOM. The question's size and padding
- * change instantly: animating font-size or padding would relayout the whole list every frame.
+ * open and close are both smooth without measuring the DOM. The question's font size
+ * changes instantly: animating it would relayout the whole list every frame.
  */
 export function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
@@ -33,7 +33,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
                 aria-expanded={open}
                 aria-controls={panelId}
                 onClick={() => setOpenId(open ? null : id)}
-                className="flex min-h-19.5 w-full cursor-pointer items-center justify-between pl-23 pr-22 text-left group-data-open:min-h-26 group-data-open:pl-19 focus-visible:rounded-u-10 focus-visible:[outline:3px_solid_var(--color-brand-rose)] focus-visible:outline-offset-2 max-poster:min-h-[50px] max-poster:gap-[14px] max-poster:py-[10px] max-poster:px-[18px] max-poster:group-data-open:min-h-[50px] max-poster:group-data-open:pl-[18px]"
+                className="flex min-h-28 w-full cursor-pointer items-center justify-between gap-12 py-4 pl-19 pr-22 text-left focus-visible:rounded-u-10 focus-visible:[outline:3px_solid_var(--color-brand-rose)] focus-visible:outline-offset-2 max-poster:min-h-[50px] max-poster:gap-[14px] max-poster:py-[10px] max-poster:px-[18px]"
               >
                 <span>{question}</span>
                 <span
@@ -46,7 +46,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
               id={panelId}
               role="region"
               aria-labelledby={buttonId}
-              className="invisible grid grid-rows-[0fr] opacity-0 [transition:grid-template-rows_0.35s_var(--ease-smooth),margin_0.35s_var(--ease-smooth),opacity_0.2s_ease,visibility_0s_linear_0.35s] group-data-open:visible group-data-open:-mt-5 group-data-open:grid-rows-[1fr] group-data-open:opacity-100 group-data-open:[transition:grid-template-rows_0.35s_var(--ease-smooth),margin_0.35s_var(--ease-smooth),opacity_0.3s_ease_0.05s,visibility_0s] max-poster:group-data-open:mt-[-2px]"
+              className="invisible grid grid-rows-[0fr] opacity-0 [transition:grid-template-rows_0.35s_var(--ease-smooth),opacity_0.2s_ease,visibility_0s_linear_0.35s] group-data-open:visible group-data-open:grid-rows-[1fr] group-data-open:opacity-100 group-data-open:[transition:grid-template-rows_0.35s_var(--ease-smooth),opacity_0.3s_ease_0.05s,visibility_0s]"
             >
               <div className="overflow-hidden">
                 <p className="max-w-612 pb-9 pl-19 pr-22 text-faq-answer-text text-u-[12.2] font-semibold leading-[1.26] max-poster:max-w-none max-poster:pb-[14px] max-poster:px-[18px] max-poster:text-[15px] max-poster:leading-[1.4] max-phone:text-[14px]">{answer}</p>
