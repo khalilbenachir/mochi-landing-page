@@ -11,7 +11,7 @@ export const PUBLIC_SITE_URL = resolveSiteOrigin({
 export const SITE_URL = PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 /** Replace with the real App Store link once the app is live. */
-export const APP_STORE_URL = "#get";
+export const APP_STORE_URL = process.env.NEXT_PUBLIC_APP_STORE_URL?.trim() || "#get";
 
 export const COMPARISON_ROW_IDS = [
   "account",

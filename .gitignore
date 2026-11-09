@@ -1,13 +1,16 @@
 node_modules/
 .next/
+.next-dev/
 out/
 next-env.d.ts
 *.tsbuildinfo
+.env
 .env*.local
 .DS_Store
 coverage/
 playwright-report/
 test-results/
+.playwright-mcp/
 
 # Design reference images (local only, never deployed)
 design/
