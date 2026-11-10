@@ -85,6 +85,21 @@
   --color-cycle-ovulation: #9b6be6;
   --color-cycle-length: #9b7bea;
 
+  /* Blog: editorial surfaces and accessible links. */
+  --color-blog-border: #e9e4df;
+  --color-blog-muted: #5d6882;
+  --color-blog-shadow: rgba(50, 35, 54, 0.08);
+  --color-blog-mint: #d8f5eb;
+  --color-blog-pink: #fce0eb;
+  --color-blog-lavender: #ede2ff;
+  --color-blog-purple: #6943a4;
+  --color-blog-link: #933452;
+  --color-journal-canvas: #fff8f1;
+  --color-journal-warning: #fff1d4;
+  --color-journal-warning-ink: #8a5313;
+  --color-share-facebook: #1877f2;
+  --color-share-whatsapp: #168c44;
+
   /* Landing page */
   --color-landing-canvas: #f7f4ef;
   --color-landing-account-band: #fff4e8;

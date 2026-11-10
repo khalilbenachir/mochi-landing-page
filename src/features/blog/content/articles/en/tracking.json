@@ -1,0 +1,75 @@
+{
+  "title": "How to track your period: a beginner's guide",
+  "description": "Learn how to track your period, which dates and symptoms to record, how to read estimates, and when to seek advice, with a simple calendar example.",
+  "imageAlt": "Mochi holding a pencil beside a pink calendar on a mint background",
+  "intro": "Start by writing down when your period begins and ends. A notebook, calendar, or period app can all do the job. Pick somewhere you can find the information again, then add details that are useful to you.",
+  "sections": {
+    "what-tracking-means": {
+      "title": "What does tracking your period mean?",
+      "paragraphs": {
+        "first": "Period tracking is a record of bleeding dates and, if you choose, symptoms or moods. Your menstrual cycle starts on the first day of your period. Count from that day to the day before the next period starts to find the length of that cycle.",
+        "second": "A period log records what happened. A prediction estimates what might happen next. Keeping those two things separate makes your entries easier to understand."
+      }
+    },
+    "what-to-record": {
+      "title": "Keep your first entries simple",
+      "paragraphs": {
+        "first": "You do not need to fill in every field an app offers. Begin with the dates, then decide which other details you actually want to look back on."
+      },
+      "items": {
+        "dates": "Start and end dates: record each day you bleed, using the same method each time.",
+        "flow": "Flow: a short description such as light, medium, or heavy can be useful. Add a separate note for spotting.",
+        "symptoms": "Symptoms: write down what you noticed, when it happened, and whether it affected your day.",
+        "mood": "Mood or energy: include these if they help you describe how you felt. Leaving them blank is fine."
+      },
+      "after": "A brief entry you can understand later is enough. You can also take your notes to a healthcare appointment if you want help explaining a change."
+    },
+    "a-simple-example": {
+      "title": "A simple logging example",
+      "paragraphs": {
+        "first": "Imagine your period starts on 4 November and the bleeding ends on 8 November. Your next period starts on 3 December. That completed cycle was 29 days long."
+      },
+      "items": {
+        "start": "4 November: period starts; medium flow; cramps in the evening.",
+        "end": "8 November: last day of bleeding; light flow.",
+        "next": "3 December: next period starts; begin a new cycle entry."
+      },
+      "note": "This is an invented example to show the counting method, not a target cycle length or a prediction for you."
+    },
+    "when-to-start": {
+      "title": "When should you start?",
+      "paragraphs": {
+        "first": "You can start recording periods from your first one, or begin at any later point. If you are reading this halfway through a cycle, start with what you know. Leave uncertain dates blank instead of filling them in with guesses.",
+        "second": "Choose an easy moment to check your log, such as when you put away your period products. If daily reminders become annoying, use fewer of them. The routine needs to fit your life."
+      }
+    },
+    "understanding-estimates": {
+      "title": "Treat predicted dates as estimates",
+      "paragraphs": {
+        "first": "Cycles can vary, so an app may suggest a date that does not match when bleeding begins. Record the actual date when it happens. A period app cannot diagnose the reason for a change, and Mochi predictions must not be used as birth control.",
+        "second": "If you do not bleed, you can still keep a symptom diary. Symptoms alone do not reliably identify your cycle phase or confirm ovulation. Ask a healthcare professional about unexpected changes rather than trying to diagnose them from an app."
+      }
+    },
+    "when-to-get-advice": {
+      "title": "Use your notes to ask for help",
+      "paragraphs": {
+        "first": "The NHS advises seeing a GP if you miss three periods in a row or your periods become irregular. Seek advice sooner if you are worried. If pregnancy is possible, take a pregnancy test according to its instructions instead of waiting for more entries.",
+        "second": "If you decide to use Mochi, its core tracking features work offline without an account, according to our privacy policy. You can begin with period dates and add mood or symptom entries when they are useful to you."
+      }
+    }
+  },
+  "faq": {
+    "meaning": {
+      "question": "What does “tracking period” mean?",
+      "answer": "Period tracking means recording your bleeding dates and related symptoms over time. Day 1 is the first day of your period. Cycle length is counted from that day to the day before your next period starts."
+    },
+    "start": {
+      "question": "When should you start tracking your period?",
+      "answer": "You can start recording periods from your first one, or at any later time. Begin with the bleeding dates you know and keep adding entries. If you start midway through a cycle, leave uncertain dates blank instead of guessing."
+    },
+    "estimates": {
+      "question": "Can I use Mochi as birth control?",
+      "answer": "No. Mochi's predictions are estimates for period awareness, not contraception, diagnosis or medical advice."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { FLAVOR_CARD_ASSETS } from "@/features/landing/content/assets";
 import { COMPARISON_ROW_IDS } from "@/features/landing/content/landing";
 import { Rays } from "@/features/landing/components/shared/decor";
@@ -42,6 +42,7 @@ const BODY_CELL = "text-u-11 max-tablet:text-[13px] max-tablet:leading-[1.2]";
 /** "Why Mochi?": Mochi against a typical period app. */
 export function ComparisonSection() {
   const t = useTranslations("Comparison");
+  const showCaption = ["fr", "de", "pt-BR"].includes(useLocale());
 
   return (
     <section id="why" className="relative overflow-hidden bg-white text-ink-navy">
@@ -59,7 +60,7 @@ export function ComparisonSection() {
         </div>
 
         <table className="relative w-504 border-separate border-spacing-0 text-u-[10.6] max-poster:[--spacing:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--spacing:1px] max-tablet:w-full max-tablet:text-[13px]">
-          <caption className="sr-only">{t("caption")}</caption>
+          <caption className={showCaption ? "caption-bottom pt-10 text-u-11 font-semibold leading-[1.4] max-poster:pt-[14px] max-poster:text-[13px]" : "sr-only"}>{t("caption")}</caption>
           <thead>
             <tr>
               <td className={cn(CELL, CELL_PAD)} />

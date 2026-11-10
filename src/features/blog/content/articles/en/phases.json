@@ -1,0 +1,53 @@
+{
+  "title": "What are the four phases of the menstrual cycle?",
+  "description": "Understand the four phases of the menstrual cycle, how they overlap, and why cycle timing varies, with links to sources and clear limits on predictions.",
+  "imageAlt": "Green Mochi beside a playful wheel of cycle symbols",
+  "intro": "The four labels commonly used to describe the menstrual cycle are menstruation, the follicular phase, ovulation and the luteal phase. They describe changes across a cycle, not four equal blocks of days. Menstruation overlaps with the early follicular phase.",
+  "sections": {
+    "menstruation": {
+      "title": "Menstruation: your period",
+      "paragraphs": {
+        "first": "Day 1 is the first day of your period. Bleeding happens as the lining of the uterus is shed. Record the dates you actually bleed rather than copying dates from a predicted calendar."
+      }
+    },
+    "follicular-phase": {
+      "title": "The follicular phase",
+      "paragraphs": {
+        "first": "This phase begins at the start of the cycle and leads up to ovulation. Follicles develop in the ovaries, and the uterine lining starts building again. The days you bleed are part of this phase too."
+      }
+    },
+    "ovulation": {
+      "title": "Ovulation",
+      "paragraphs": {
+        "first": "Ovulation is the release of an egg from an ovary. Its timing varies; a calendar day or a feeling does not confirm that it has happened. An app estimate should be read as an estimate."
+      }
+    },
+    "luteal-phase": {
+      "title": "The luteal phase",
+      "paragraphs": {
+        "first": "The luteal phase follows ovulation. If pregnancy does not occur, hormone levels fall and the next period begins. Some people notice premenstrual symptoms during this part of the cycle."
+      }
+    },
+    "your-own-pattern": {
+      "title": "Your cycle does not need to match a diagram",
+      "paragraphs": {
+        "first": "Use these labels to understand the vocabulary, then keep a record of what you notice. Do not assign yourself a fixed mood, energy level or routine because an illustration says you should be in a particular phase.",
+        "second": "Hormonal contraception and other circumstances can change bleeding or ovulation. Speak with a healthcare professional about unexpected changes or questions about your own cycle. Mochi does not diagnose cycle phases or provide contraception."
+      }
+    }
+  },
+  "faq": {
+    "equal": {
+      "question": "Are the four phases equally long?",
+      "answer": "No. They are not four equal blocks, and menstruation overlaps with the early follicular phase. Timing varies between people and cycles."
+    },
+    "day": {
+      "question": "Does everyone ovulate on day 14?",
+      "answer": "No. Calendar examples often use a 28-day cycle, but ovulation timing varies. An app prediction is not confirmation of ovulation."
+    },
+    "track": {
+      "question": "Do I need to label every phase when I track?",
+      "answer": "No. You can start with bleeding dates and any symptoms you want to remember. Record what happened, and keep app estimates separate from your actual entries."
+    }
+  }
+}

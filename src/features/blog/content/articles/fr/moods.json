@@ -1,0 +1,52 @@
+{
+  "title": "Comprendre les changements d’humeur pendant le cycle",
+  "description": "Explorez les changements d’humeur pendant le cycle, les notes utiles à conserver et quand demander de l’aide, sans règle imposée sur vos émotions.",
+  "imageAlt": "Mochi bleu avec une bulle de pensée contenant un cœur rose",
+  "intro": "Certaines personnes remarquent des changements d’humeur avant les règles, d’autres non. Les symptômes varient selon les personnes et les périodes. Un journal daté peut décrire votre expérience, sans en diagnostiquer la cause.",
+  "sections": {
+    "premenstrual-changes": {
+      "title": "À quoi peuvent ressembler les changements prémenstruels ?",
+      "paragraphs": {
+        "first": "Le syndrome prémenstruel peut associer irritabilité, anxiété, tristesse ou changements d’humeur à des symptômes physiques. Ils surviennent souvent avant les règles et diminuent après leur début.",
+        "second": "Une liste de symptômes n’est pas un test. Si quelque chose vous gêne ou affecte votre quotidien, parlez-en à un professionnel de santé."
+      }
+    },
+    "useful-notes": {
+      "title": "Des notes ancrées dans votre journée",
+      "items": {
+        "date": "Notez la date et les mots qui décrivent le mieux votre humeur.",
+        "impact": "Indiquez brièvement l’intensité et l’effet sur votre journée.",
+        "context": "Ajoutez le contexte utile : sommeil, stress ou événement difficile."
+      },
+      "after": "Vous pouvez aussi noter les journées ordinaires ou agréables. Elles donnent des points de comparaison pour la discussion."
+    },
+    "avoid-rules": {
+      "title": "Pas de règle sur ce que vous devez ressentir",
+      "paragraphs": {
+        "first": "Vous n’avez pas à être énergique, sociable, calme ou fatiguée un jour précis. Le journal sert à décrire votre expérience, pas à la faire entrer dans un modèle.",
+        "second": "Dans Mochi, le suivi de l’humeur est facultatif. La réaction de la mascotte fait partie du jeu, sans interprétation médicale."
+      }
+    },
+    "support": {
+      "title": "Demander du soutien quand vous en avez besoin",
+      "paragraphs": {
+        "first": "Si les symptômes vous gênent, persistent ou perturbent le quotidien, consultez un professionnel qualifié. Apportez vos notes si elles vous aident.",
+        "second": "N’attendez pas d’avoir un long historique. Un journal est un outil de dialogue, pas une condition pour recevoir des soins."
+      }
+    }
+  },
+  "faq": {
+    "everyone": {
+      "question": "Tout le monde a-t-il des changements d’humeur avant les règles ?",
+      "answer": "Non. Les symptômes prémenstruels varient selon les personnes et peuvent évoluer."
+    },
+    "diagnosis": {
+      "question": "Le suivi de l’humeur peut-il diagnostiquer un SPM ou un TDPM ?",
+      "answer": "Non. Il peut aider à expliquer le moment et l’impact des symptômes, mais ce n’est pas un test diagnostique."
+    },
+    "daily": {
+      "question": "Dois-je noter mon humeur chaque jour ?",
+      "answer": "Non. Choisissez un rythme utile. Des journées variées enrichissent vos notes, mais un suivi parfait n’est pas nécessaire pour demander de l’aide."
+    }
+  }
+}

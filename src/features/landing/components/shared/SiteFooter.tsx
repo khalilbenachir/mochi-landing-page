@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { blogPath } from "@/features/blog/locales";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { StoreBadge } from "./AppStoreBadges";
 import { PosterStage } from "./PosterStage";
@@ -21,6 +23,8 @@ export function SiteFooter({ homePath }: { homePath: string }) {
   const t = useTranslations("Closing");
   const footer = useTranslations("Footer");
   const common = useTranslations("Common");
+  const navigation = useTranslations("Navigation");
+  const locale = useLocale();
   const routeHref = (slug: string) => (homePath === "/" ? `/${slug}` : `${homePath}/${slug}`);
 
   return (
@@ -37,6 +41,7 @@ export function SiteFooter({ homePath }: { homePath: string }) {
           </div>
           <SpreadOrCenter className="col-span-full mt-12 items-center justify-between gap-x-32 gap-y-6 data-stacked:justify-center max-poster:mt-[16px] max-poster:gap-y-[8px] max-phone:mt-[20px]">
             <nav className="flex max-w-full shrink-0 flex-wrap gap-x-18 gap-y-[6px] group-data-stacked/spread:justify-center" aria-label={footer("navLabel")}>
+              <Link href={blogPath(locale)} className="whitespace-nowrap text-u-10.5 font-heavy text-ink-navy underline-offset-4 hover:underline max-poster:text-[12px] max-phone:text-[11px]">{navigation("blog")}</Link>
               {FOOTER_LINKS.map((item) => (
                 <a
                   key={item.key}

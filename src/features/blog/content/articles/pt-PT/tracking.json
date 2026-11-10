@@ -1,0 +1,75 @@
+{
+  "title": "Como acompanhar a menstruação: um guia para começar",
+  "description": "Aprende a acompanhar a menstruação, que datas e sintomas registar e como interpretar estimativas, com exemplo de calendário e indicações para pedir ajuda.",
+  "imageAlt": "Mochi com um lápis junto de um calendário rosa sobre fundo verde-menta",
+  "intro": "Começa por anotar quando a menstruação começa e termina. Podes usar um caderno, calendário ou aplicação. Escolhe um local onde encontres os registos mais tarde e acrescenta os detalhes úteis para ti.",
+  "sections": {
+    "what-tracking-means": {
+      "title": "O que é acompanhar a menstruação?",
+      "paragraphs": {
+        "first": "É guardar as datas de sangramento e, se quiseres, os sintomas ou o humor. O ciclo começa no primeiro dia da menstruação. Conta desse dia até ao dia anterior à seguinte para saberes a sua duração.",
+        "second": "Um registo descreve o que aconteceu. Uma previsão estima o que poderá acontecer. Distinguir os dois ajuda-te a compreender as anotações."
+      }
+    },
+    "what-to-record": {
+      "title": "Começa com registos simples",
+      "paragraphs": {
+        "first": "Não precisas de preencher todos os campos da aplicação. Começa pelas datas e escolhe os outros detalhes que gostarias de consultar depois."
+      },
+      "items": {
+        "dates": "Início e fim: regista os dias de sangramento com um método consistente.",
+        "flow": "Fluxo: por exemplo, ligeiro, moderado ou intenso. Anota as pequenas perdas fora da menstruação em separado.",
+        "symptoms": "Sintomas: o que notaste, quando aconteceu e se afetou o teu dia.",
+        "mood": "Humor ou energia: inclui se te ajudar. Também podes deixar em branco."
+      },
+      "after": "Basta uma nota breve que compreendas mais tarde. Podes levá-la a uma consulta para explicar uma mudança."
+    },
+    "a-simple-example": {
+      "title": "Um exemplo de registo",
+      "paragraphs": {
+        "first": "Imagina que a menstruação começa a 4 de novembro e termina a 8 de novembro. A seguinte começa a 3 de dezembro. Esse ciclo completo durou 29 dias."
+      },
+      "items": {
+        "start": "4 de novembro: início da menstruação, fluxo moderado, cólicas à noite.",
+        "end": "8 de novembro: último dia de sangramento, fluxo ligeiro.",
+        "next": "3 de dezembro: menstruação seguinte, início de um novo ciclo."
+      },
+      "note": "É um exemplo inventado para explicar a contagem, não uma duração ideal nem uma previsão para ti."
+    },
+    "when-to-start": {
+      "title": "Quando podes começar?",
+      "paragraphs": {
+        "first": "Na primeira menstruação ou em qualquer altura depois. Se estiveres a meio do ciclo, regista o que sabes e deixa as datas incertas em branco.",
+        "second": "Escolhe um momento prático, como ao arrumar os produtos menstruais. Reduz os lembretes se incomodarem. A rotina deve adaptar-se à tua vida."
+      }
+    },
+    "understanding-estimates": {
+      "title": "As datas previstas são estimativas",
+      "paragraphs": {
+        "first": "Os ciclos variam e o sangramento pode começar noutra data. Regista a data real quando acontecer. Uma aplicação não diagnostica a causa de uma mudança e as previsões do Mochi não devem servir de contraceção.",
+        "second": "Mesmo sem sangramento, podes registar sintomas. Por si só, não identificam de forma fiável a fase nem confirmam a ovulação. Fala sobre mudanças inesperadas com um profissional de saúde."
+      }
+    },
+    "when-to-get-advice": {
+      "title": "Usa as notas para pedir ajuda",
+      "paragraphs": {
+        "first": "O NHS recomenda consultar um médico se faltarem três menstruações consecutivas ou se estas se tornarem irregulares. Procura ajuda antes se estiveres preocupada. Se houver possibilidade de gravidez, faz um teste conforme as instruções sem esperar por mais registos.",
+        "second": "Segundo a nossa política de privacidade, as funcionalidades essenciais do Mochi funcionam sem internet nem conta. Começa pelas datas e acrescenta humor ou sintomas quando forem úteis."
+      }
+    }
+  },
+  "faq": {
+    "meaning": {
+      "question": "O que significa acompanhar a menstruação?",
+      "answer": "É anotar datas de sangramento e sintomas associados. O ciclo conta-se do primeiro dia de uma menstruação até ao dia anterior à seguinte."
+    },
+    "start": {
+      "question": "Quando devo começar a registar a menstruação?",
+      "answer": "Na primeira menstruação ou mais tarde. Começa pelas datas conhecidas e deixa em branco as que não recordas com segurança."
+    },
+    "estimates": {
+      "question": "Posso usar o Mochi como contracetivo?",
+      "answer": "Não. As previsões são estimativas informativas, não contraceção, diagnóstico ou aconselhamento médico."
+    }
+  }
+}

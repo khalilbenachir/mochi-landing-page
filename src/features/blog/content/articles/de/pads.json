@@ -1,0 +1,82 @@
+{
+  "title": "Wie oft solltest du deine Binde wechseln?",
+  "description": "Erfahre, wie oft du deine Binde wechseln solltest, wann früher und worauf du nachts oder bei Slipeinlagen achten kannst, mit Quellen von CDC und ACOG.",
+  "imageAlt": "Rosa Mochi neben einer Binde und einem violetten Wecker",
+  "intro": "Wechsle deine Binde alle paar Stunden, bei Nässe, voller Binde oder Unbehagen früher. Beachte die Packungsanleitung und deine Blutungsstärke. Eine Erinnerung hilft beim Daran-Denken; du darfst vorher wechseln.",
+  "sections": {
+    "day-pads": {
+      "title": "Binden für den Tag",
+      "paragraphs": {
+        "first": "Die CDC empfiehlt, Binden alle paar Stunden zu wechseln, auch bei leichter Blutung. ACOG nennt mindestens alle 4 bis 8 Stunden und früher, wenn die Binde voll, nass oder unangenehm ist. Diese Richtwerte sind kein Grund zu warten, wenn du eine frische Binde brauchst.",
+        "second": "Prüfe bei stärkerer Blutung häufiger. Wähle passende Saugstärke und beachte die Packungsanleitung."
+      },
+      "table": {
+        "caption": "Praktische Hinweise zu Binden und Slipeinlagen",
+        "columns": [
+          "Produkt",
+          "Wann wechseln?",
+          "Beachte"
+        ],
+        "rows": [
+          [
+            "Tagesbinde",
+            "Alle paar Stunden",
+            "Bei starker Blutung oder Unbehagen früher."
+          ],
+          [
+            "Nachtbinde",
+            "Nach Packungsanleitung",
+            "Vor dem Schlafen frisch anlegen; nach dem Aufwachen oder bei Bedarf früher wechseln."
+          ],
+          [
+            "Slipeinlage",
+            "Regelmäßig und sobald sie feucht ist",
+            "Für leichte Blutung oder Schmierblutung."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Binden für die Nacht",
+      "paragraphs": {
+        "first": "Wähle ein Nachtprodukt und beachte seine Tragedauer. Lege vor dem Schlafen eine frische Binde an und wechsle sie beim Aufwachen oder früher, wenn sie voll oder unangenehm ist.",
+        "second": "Die Bezeichnung Nachtbinde bedeutet keine einheitliche Tragedauer für jedes Produkt. Musst du wegen starker Blutung regelmäßig sehr häufig wechseln, hole ärztlichen Rat ein."
+      }
+    },
+    "liners": {
+      "title": "Slipeinlagen",
+      "paragraphs": {
+        "first": "Die dünneren Einlagen eignen sich für leichte Blutung oder Schmierblutung. Wechsle sie regelmäßig sowie bei Feuchtigkeit oder Unbehagen. Für stärkere Blutung wähle ein geeignetes Produkt."
+      }
+    },
+    "signs-to-change": {
+      "title": "Zeit für eine frische Binde",
+      "items": {
+        "full": "Die Binde ist voll, nass oder unangenehm.",
+        "leaks": "Sie läuft aus oder ist verrutscht.",
+        "time": "Die laut Anleitung vorgesehene Zeit ist erreicht, auch bei leichter Blutung."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Mochi erinnert dich auf Wunsch",
+      "paragraphs": {
+        "first": "Die freiwillige Wechsel-Erinnerung zeigt einen Countdown in der Dynamic Island und auf dem Sperrbildschirm. Laut Produktangaben gibt es Optionen für Tagesbinde, Nachtbinde und Slipeinlage mit frei gewählter Dauer.",
+        "second": "Ein Timer erinnert ans Prüfen. Er misst weder die Füllung noch bestätigt er eine geeignete Tragedauer. Wechsle bei Bedarf immer früher."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "Kann ich die Binde bis zum Timer-Ende tragen?",
+      "answer": "Wechsle früher, wenn sie voll, nass oder unangenehm ist. Beachte die Anleitung. Ein Timer beurteilt weder Blutungsstärke noch Zustand der Binde."
+    },
+    "light": {
+      "question": "Muss ich bei leichter Blutung trotzdem wechseln?",
+      "answer": "Ja. Die CDC empfiehlt alle paar Stunden einen Wechsel, auch bei leichter Blutung, und bei stärkerer Blutung häufiger."
+    },
+    "night": {
+      "question": "Haben alle Nachtbinden dieselbe Tragedauer?",
+      "answer": "Nein. Wähle ein Nachtprodukt und halte dich an seine Anleitung. Wechsle bei voller Binde oder Unbehagen früher."
+    }
+  }
+}

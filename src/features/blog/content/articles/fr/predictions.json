@@ -1,0 +1,50 @@
+{
+  "title": "Comment une application prédit-elle les prochaines règles ?",
+  "description": "Découvrez comment une application estime vos prochaines règles à partir des dates saisies, pourquoi la prévision change et quelles sont ses limites.",
+  "imageAlt": "Mochi jaune près d’un calendrier rose avec des symboles de règles",
+  "intro": "Une application peut utiliser les dates notées pour estimer le début des prochaines règles. Les méthodes diffèrent selon les applications. La prévision repose sur les informations disponibles et peut changer après de nouvelles notes.",
+  "sections": {
+    "logged-dates": {
+      "title": "Partir des dates réelles",
+      "paragraphs": {
+        "first": "Le cycle se compte du premier jour des règles à la veille des suivantes. Les dates de début renseignent l’application sur les cycles achevés.",
+        "second": "Si une ancienne date est incertaine, ne transformez pas une estimation en observation. Continuez à noter les dates que vous connaissez."
+      }
+    },
+    "calendar-example": {
+      "title": "Un exemple de calcul simple",
+      "paragraphs": {
+        "first": "Imaginons des règles le 1er novembre et une estimation fondée sur 29 jours. Ajouter 29 jours suggère le 30 novembre comme prochaine date.",
+        "second": "Ce calcul fictif n’explique pas l’algorithme de Mochi et ne garantit pas le début des saignements."
+      }
+    },
+    "changing-estimates": {
+      "title": "Pourquoi la date estimée peut bouger",
+      "paragraphs": {
+        "first": "Les règles peuvent arriver plus tôt ou plus tard. Une nouvelle date, une correction ou un cycle différent modifient les informations de l’application.",
+        "second": "La prévision ne dit pas pourquoi le cycle a changé. Si cela vous inquiète, utilisez vos notes pour en parler à un professionnel de santé."
+      }
+    },
+    "prediction-limits": {
+      "title": "Les limites d’une prédiction",
+      "paragraphs": {
+        "first": "Les prévisions de règles, de fenêtre fertile et d’ovulation de Mochi sont des estimations informatives. Elles ne servent ni de contraception, ni de diagnostic, ni de confirmation d’ovulation.",
+        "second": "Une date estimée peut aider à préparer vos affaires ou à consulter votre calendrier. Notez la date réelle dès le début des saignements."
+      }
+    }
+  },
+  "faq": {
+    "guarantee": {
+      "question": "La date prédite est-elle garantie ?",
+      "answer": "Non. Elle dépend des informations disponibles et le rythme du cycle peut varier."
+    },
+    "late": {
+      "question": "Un retard prédit explique-t-il un changement du cycle ?",
+      "answer": "Non. Le suivi ne pose pas de diagnostic. Si une grossesse est possible, faites un test selon sa notice et consultez en cas d’inquiétude."
+    },
+    "birthControl": {
+      "question": "Puis-je utiliser Mochi comme contraception ?",
+      "answer": "Non. Ses prédictions sont des estimations informatives, sans valeur de contraception, de diagnostic ou de conseil médical."
+    }
+  }
+}

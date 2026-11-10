@@ -5,6 +5,7 @@ import es from "../../messages/es.json";
 import fr from "../../messages/fr.json";
 import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
+import { blogPath } from "../../src/features/blog/locales";
 import { localePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
 import { waitForPageAssets } from "./assets";
@@ -99,6 +100,7 @@ test.describe("localized not-found routes", () => {
       const routePrefix = localePath(locale) === "/" ? "" : localePath(locale);
       const footer = page.locator("body > footer");
       expect(await footer.locator("nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual([
+        blogPath(locale),
         `${routePrefix}/privacy`,
         `${routePrefix}/terms`,
         `${routePrefix}/privacy#contact`,
@@ -218,7 +220,7 @@ for (const viewport of [
   { width: 1099, height: 1000 },
   { width: 1440, height: 1000 },
 ]) {
-  test(`layout: all locales share the same vertical geometry at ${viewport.width}px`, async ({ page }) => {
+  test(`layout: 404 content lines up in every locale and the footer closes the page at ${viewport.width}px`, async ({ page }) => {
     await page.setViewportSize(viewport);
     let reference: Record<keyof typeof SHARED_LAYOUT_SELECTORS, { y: number; height: number }> | undefined;
 
@@ -237,16 +239,21 @@ for (const viewport of [
         geometry[name] = { y: Math.round(box!.y), height: Math.round(box!.height) };
       }
 
+      // In every language the footer closes the page: its bottom edge is the document's bottom edge.
+      const documentHeight = await page.evaluate(() => document.documentElement.scrollHeight);
+      // y and height are rounded separately, so allow one pixel.
+      expect(Math.abs(geometry.footer.y + geometry.footer.height - documentHeight), `${locale} footer ends the page at ${viewport.width}px`).toBeLessThanOrEqual(1);
+
       if (!reference) {
         reference = geometry;
         continue;
       }
 
       for (const name of Object.keys(SHARED_LAYOUT_SELECTORS) as (keyof typeof SHARED_LAYOUT_SELECTORS)[]) {
+        // The footer wraps (and stacks) differently by language, so it is checked separately below.
+        if (name === "footer") continue;
         expect(geometry[name].y, `${locale} ${name} y at ${viewport.width}px`).toBe(reference[name].y);
-        expect(geometry[name].height, `${locale} ${name} height at ${viewport.width}px`).toBe(
-          reference[name].height,
-        );
+        expect(geometry[name].height, `${locale} ${name} height at ${viewport.width}px`).toBe(reference[name].height);
       }
     }
   });

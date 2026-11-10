@@ -1,0 +1,75 @@
+{
+  "title": "Is your period tracker private? What to check",
+  "description": "Check period-app privacy before your first entry: where data is stored, what optional backup changes, and how accounts, permissions and notifications work.",
+  "imageAlt": "Pink Mochi holding a lavender shield with a white padlock",
+  "intro": "Before adding period dates to an app, check where those entries go and what choices you have. Start with the privacy policy, look at the App Store privacy information, and check the settings you will use.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Find out where your entries are stored",
+      "paragraphs": {
+        "first": "Look for an explanation of what stays on your phone and what is sent to a server. Check whether the answer changes when you enable backup, create an account, or turn on a connected feature.",
+        "second": "For example, Mochi's privacy policy says cycle entries stay on your iPhone unless you choose optional backup. It also says period dates, symptoms, and moods are not included in analytics, logs, or crash reports. These are statements about Mochi's own practices, not an independent security audit."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Read the App Store privacy information",
+      "paragraphs": {
+        "first": "Apple explains that App Store privacy information is reported by developers. It describes data an app may collect, whether it is linked to your identity, and whether it is used to track you across other companies' apps or websites.",
+        "second": "Use that information as a starting point, then read the developer's policy for the features you plan to enable. If the policy leaves an important question unanswered, ask the developer before entering sensitive information."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Separate the account decision from the backup decision",
+      "paragraphs": {
+        "first": "An account, a subscription, and a backup are different things. Check what each one is for. These questions can help you compare apps without assuming that all apps work the same way."
+      },
+      "items": {
+        "account": "Can I record periods without registering an account?",
+        "backup": "Is backup optional, and what information leaves my phone if I turn it on?",
+        "access": "How do I get my entries back if I lose or replace my phone?",
+        "deletion": "How do I ask for deletion, including any backup or account data?"
+      },
+      "after": "Mochi's policy describes backup as optional and encrypted. You can use core features without an account. Read the current policy for details, and contact Mochi if you need help with a privacy request."
+    },
+    "screens-and-permissions": {
+      "title": "Think about what other people can see",
+      "paragraphs": {
+        "first": "Privacy also includes a notification appearing while someone else is holding your phone. Before enabling reminders, consider whether you are comfortable with their wording and where they appear.",
+        "second": "Review permission requests as you encounter them. Ask what a permission enables and whether you need that feature. You can keep your first setup small, then enable more features when you understand what they do."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "A checklist to use before your first entry",
+      "items": {
+        "policy": "I can find a current privacy policy and a way to contact the developer.",
+        "storage": "I understand where my entries are stored and what changes when backup is enabled.",
+        "optional": "I know which account, sharing, and reminder features are optional.",
+        "control": "I know where to ask about accessing or deleting my information."
+      },
+      "paragraphs": {
+        "first": [
+          "An app may still suit you if its choices differ from Mochi's. What matters is that you can understand those choices before you make them. If you are comparing tracking methods too, our ",
+          {
+            "postId": "methods",
+            "label": "app-versus-calendar guide"
+          },
+          " walks through the everyday tradeoffs."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "Does Mochi work without an account or internet?",
+      "answer": "Yes. Every core feature works offline and no account is required. An account is optional if you want backup and sync."
+    },
+    "private": {
+      "question": "Is my period data private?",
+      "answer": "Yes. Period dates, flow, symptoms and moods stay on your iPhone by default, unless you enable optional backup. They are never sent to analytics, logs or crash reports. Our privacy policy explains how optional backup works."
+    },
+    "backup": {
+      "question": "Is backup required to use Mochi?",
+      "answer": "No. Mochi's privacy policy describes backup as optional. Core features work offline without an account. Read the current privacy policy for details about what changes when you enable backup."
+    }
+  }
+}

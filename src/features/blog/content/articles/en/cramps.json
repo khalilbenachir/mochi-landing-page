@@ -1,0 +1,51 @@
+{
+  "title": "Cramps: what helps, and when to see a doctor",
+  "description": "Find practical ways to ease period cramps, what to record about your pain, and when symptoms need medical attention, with links to NHS guidance.",
+  "imageAlt": "Lavender Mochi hugging a pink hot-water bottle",
+  "intro": "Warmth and gentle movement may help period cramps. Ask for medical advice if pain disrupts your usual activities. Seek urgent care if pain is severe or worse than usual and pain relief has not helped.",
+  "sections": {
+    "comfort": {
+      "title": "Start with comfort measures",
+      "items": {
+        "warmth": "Try a warm bath or shower, or a heat pad or wrapped hot-water bottle on your tummy.",
+        "movement": "Try gentle movement, such as a short walk, if it feels comfortable.",
+        "massage": "Gentle massage of your tummy or back may help."
+      },
+      "after": "If you want to use a pain medicine, ask a pharmacist or clinician what is suitable for you and follow the instructions. This guide does not provide a personal treatment plan."
+    },
+    "record-pain": {
+      "title": "Make a note you can use later",
+      "paragraphs": {
+        "first": "Write down when pain began, where you felt it, and how it affected your day. Include anything you tried and whether it helped. A short note can make it easier to explain what happened at an appointment.",
+        "second": "You do not need a perfect log to ask for help. If tracking feels like another chore when you are in pain, keep the entry brief."
+      }
+    },
+    "get-help": {
+      "title": "When to ask for help",
+      "paragraphs": {
+        "first": "The NHS advises seeing a GP if periods become more painful, heavier or irregular, or if pain stops you doing your usual activities. Bleeding between periods or pain during sex, peeing or pooing also deserves medical advice.",
+        "second": "Seek urgent medical care if pelvic or period pain is severe or worse than usual and pain relief has not helped. Do not wait for an app reminder or another cycle to get help."
+      }
+    },
+    "tracking-limits": {
+      "title": "A log supports a conversation",
+      "paragraphs": {
+        "first": "Mochi can help you record symptoms and moods, but it cannot identify the cause of pain or replace an assessment. Share your notes with a qualified healthcare professional if you want help describing a pattern."
+      }
+    }
+  },
+  "faq": {
+    "heat": {
+      "question": "Can warmth help period cramps?",
+      "answer": "The NHS suggests a warm bath or shower, or a heat pad or wrapped hot-water bottle, as comfort measures."
+    },
+    "daily": {
+      "question": "Should I ask for help if cramps affect school or work?",
+      "answer": "Yes. Pain that stops your usual activities deserves medical advice. You do not need to wait until you have several cycles of records."
+    },
+    "diagnosis": {
+      "question": "Can a period app diagnose the cause of cramps?",
+      "answer": "No. A symptom record can help you describe pain, but a healthcare professional needs to assess concerns."
+    }
+  }
+}

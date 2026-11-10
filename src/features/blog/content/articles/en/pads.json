@@ -1,0 +1,82 @@
+{
+  "title": "How often should you change your pad?",
+  "description": "Learn how often to change your pad, when to change sooner, and what to check for overnight pads and liners, with links to CDC and ACOG guidance.",
+  "imageAlt": "Pink Mochi beside a sanitary pad and a purple alarm clock",
+  "intro": "Change your pad every few hours, sooner if it feels full, wet or uncomfortable. Follow the instructions for your product and adjust to your flow. A reminder can help you check in, but you can change your pad before it rings.",
+  "sections": {
+    "day-pads": {
+      "title": "Day pads",
+      "paragraphs": {
+        "first": "The CDC recommends changing sanitary pads every few hours, including on light-flow days. ACOG describes changing them at least every 4 to 8 hours, or sooner when they feel full, wet or uncomfortable. These are general guidelines, not a reason to wait if you need a fresh pad.",
+        "second": "On heavier days, check more often. Choose the absorbency that suits your flow, and follow the instructions on the packet."
+      },
+      "table": {
+        "caption": "A practical guide to pads and liners",
+        "columns": [
+          "Pad type",
+          "When to change",
+          "Keep in mind"
+        ],
+        "rows": [
+          [
+            "Day pad",
+            "Every few hours",
+            "Change sooner for heavier flow or discomfort."
+          ],
+          [
+            "Overnight pad",
+            "Follow the product instructions",
+            "Use a fresh one before bed; change when you wake or sooner if needed."
+          ],
+          [
+            "Liner",
+            "Regularly, and when damp",
+            "For light flow or spotting."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Overnight pads",
+      "paragraphs": {
+        "first": "Choose a product intended for overnight use and follow its wear-time instructions. Put on a fresh one before bed and change it when you wake, or sooner if it is full or uncomfortable.",
+        "second": "An overnight label is not a universal promise that every pad can be worn for the same number of hours. If you regularly need to change products very frequently because of heavy bleeding, ask a healthcare professional for advice."
+      }
+    },
+    "liners": {
+      "title": "Liners",
+      "paragraphs": {
+        "first": "Liners are thinner products for light flow or spotting. Change them regularly and whenever they feel damp or uncomfortable. For heavier bleeding, use a product suited to that flow."
+      }
+    },
+    "signs-to-change": {
+      "title": "Signs it's time to change",
+      "items": {
+        "full": "The pad feels full, wet or uncomfortable.",
+        "leaks": "You notice a leak or the product has shifted.",
+        "time": "It is time to change according to the product instructions, even if your flow is light."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Let Mochi remind you",
+      "paragraphs": {
+        "first": "Mochi has an optional pad change reminder with a countdown in the Dynamic Island and on the Lock Screen. Its published feature information describes day pad, overnight pad and liner options, with a duration you choose.",
+        "second": "A timer is a prompt to check your product, not a measure of how full it is or proof that a chosen interval is right for you. Change sooner whenever needed."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "Can I keep a pad on just because the timer has not finished?",
+      "answer": "Change it sooner if it feels full, wet or uncomfortable. Follow the product instructions. A timer cannot assess your flow or the condition of the pad."
+    },
+    "light": {
+      "question": "Do I still need to change my pad if my flow is light?",
+      "answer": "Yes. The CDC advises changing pads every few hours even when the flow is light, and more frequently for heavier bleeding."
+    },
+    "night": {
+      "question": "Does every overnight pad have the same wear time?",
+      "answer": "No single interval applies to every product. Choose a product intended for overnight use and follow its instructions. Change it sooner if it feels full or uncomfortable."
+    }
+  }
+}

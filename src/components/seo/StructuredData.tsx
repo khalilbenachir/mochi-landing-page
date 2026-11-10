@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
-import { APP_STORE_URL, FAQ_IDS, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
+import { APP_STORE_URL, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
+import { getLandingFaqItems } from "@/features/landing/content/faq";
 import { LOCALE_META, localePath, type AppLocale } from "@/i18n/routing";
 
 type StructuredDataProps = {
@@ -11,7 +12,7 @@ type StructuredDataProps = {
 export async function StructuredData({ locale }: StructuredDataProps) {
   const [metadata, faq, structured] = await Promise.all([
     getTranslations({ locale, namespace: "Metadata" }),
-    getTranslations({ locale, namespace: "FAQ" }),
+    getLandingFaqItems(locale),
     getTranslations({ locale, namespace: "StructuredData" }),
   ]);
   const pageUrl = `${SITE_URL}${localePath(locale)}`;
@@ -49,12 +50,12 @@ export async function StructuredData({ locale }: StructuredDataProps) {
         "@type": "FAQPage",
         "@id": `${pageUrl}#faq`,
         inLanguage: locale,
-        mainEntity: FAQ_IDS.map((id) => ({
+        mainEntity: faq.map((item) => ({
           "@type": "Question",
-          name: faq(`items.${id}.question`),
+          name: item.question,
           acceptedAnswer: {
             "@type": "Answer",
-            text: faq(`items.${id}.answer`),
+            text: item.answer,
           },
         })),
       },

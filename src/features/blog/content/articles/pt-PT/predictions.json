@@ -1,0 +1,50 @@
+{
+  "title": "Como prevê uma aplicação a próxima menstruação?",
+  "description": "Descobre como uma aplicação estima a próxima menstruação a partir das datas registadas, porque muda a previsão e o que a estimativa não pode indicar.",
+  "imageAlt": "Mochi amarelo junto de um calendário rosa com símbolos menstruais",
+  "intro": "Uma aplicação pode estimar a próxima menstruação a partir das datas anotadas. Cada aplicação usa métodos próprios. A previsão depende da informação disponível e pode mudar com novos registos.",
+  "sections": {
+    "logged-dates": {
+      "title": "Começa pelas datas reais",
+      "paragraphs": {
+        "first": "A duração do ciclo vai do primeiro dia de uma menstruação até ao anterior à seguinte. As datas de início informam sobre ciclos completos.",
+        "second": "Se não tens a certeza de uma data antiga, não transformes uma estimativa num facto. Continua a anotar as datas conhecidas."
+      }
+    },
+    "calendar-example": {
+      "title": "Um exemplo de cálculo",
+      "paragraphs": {
+        "first": "Imagina uma menstruação iniciada a 1 de novembro e uma estimativa de 29 dias. Somar esses dias sugere 30 de novembro como próximo início.",
+        "second": "É um exemplo inventado de cálculo, não uma descrição do algoritmo do Mochi nem uma garantia da data do sangramento."
+      }
+    },
+    "changing-estimates": {
+      "title": "Porque pode mudar a estimativa",
+      "paragraphs": {
+        "first": "A menstruação pode adiantar-se ou atrasar-se. Uma data nova, uma correção ou uma duração diferente alteram a informação disponível.",
+        "second": "A previsão não explica porque mudou o ciclo. Se estiveres preocupada, usa os registos para conversar com um profissional de saúde."
+      }
+    },
+    "prediction-limits": {
+      "title": "O que uma previsão não pode dizer",
+      "paragraphs": {
+        "first": "As previsões de menstruação, janela fértil e ovulação do Mochi são informativas. Não devem ser usadas como contraceção, diagnóstico ou confirmação de ovulação.",
+        "second": "Uma data estimada pode ajudar-te a preparar o que levar ou a consultar o calendário. Regista a data real quando começar o sangramento."
+      }
+    }
+  },
+  "faq": {
+    "guarantee": {
+      "question": "A data prevista é garantida?",
+      "answer": "Não. É uma estimativa com a informação disponível e o ciclo real pode variar."
+    },
+    "late": {
+      "question": "Uma previsão tardia explica uma mudança no ciclo?",
+      "answer": "Não. O acompanhamento não diagnostica causas. Se houver possibilidade de gravidez, faz um teste conforme as instruções e procura ajuda se estiveres preocupada."
+    },
+    "birthControl": {
+      "question": "Posso usar o Mochi como contracetivo?",
+      "answer": "Não. As previsões são estimativas informativas, não contraceção, diagnóstico ou aconselhamento médico."
+    }
+  }
+}

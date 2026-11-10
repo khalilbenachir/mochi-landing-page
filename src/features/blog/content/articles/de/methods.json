@@ -1,0 +1,98 @@
+{
+  "title": "Perioden-App oder Kalender: Was passt zu dir?",
+  "description": "Vergleiche Perioden-App, Notizbuch und Handykalender bei Dokumentation, Datenschutz und Erinnerungen und finde eine Routine für deinen Alltag.",
+  "imageAlt": "Mochi zwischen einem rosa Kalender und einem Handy mit Häkchen",
+  "intro": "Wähle eine Methode, die du regelmäßig nutzen kannst. Für Blutungsdaten reicht vielleicht Papier. Eine App kann mehrere Arten von Einträgen bündeln. Du kannst klein anfangen und später wechseln.",
+  "sections": {
+    "paper-calendar": {
+      "title": "Ein Papierkalender braucht wenig Vorbereitung",
+      "paragraphs": {
+        "first": "Markiere Blutungstage und ergänze kurze Notizen. Du brauchst weder eine neue App noch ein Konto. Bewahre den Kalender griffbereit auf.",
+        "second": "Überlege, wer ihn sehen kann und was bei Verlust passiert. Papier verhindert App-Datenfreigaben, ein offenes Notizbuch auf einem gemeinsamen Tisch bleibt aber sichtbar."
+      }
+    },
+    "phone-calendar": {
+      "title": "Der Handy-Kalender nutzt eine bestehende Gewohnheit",
+      "paragraphs": {
+        "first": "Wenn du täglich in den Kalender schaust, kann der Periodeneintrag dort praktisch sein. Wähle verständliche Begriffe und entscheide über den Detailgrad.",
+        "second": "Prüfe Freigaben, Synchronisierung sowie Arbeits- und Familienkonten. Kontrolliere die Benachrichtigungsvorschau, bevor du sensible Erinnerungen anlegst."
+      }
+    },
+    "period-app": {
+      "title": "Eine Perioden-App bündelt deine Einträge",
+      "paragraphs": {
+        "first": "Je nach App kannst du Blutungsstärke, Symptome und Stimmung neben den Daten erfassen. Prüfe die tatsächlichen Funktionen, statt überall dieselben Werkzeuge zu erwarten.",
+        "second": "Mochi bietet Periodentracking, Stimmung, Symptome, Erinnerungen und Sammelfiguren. Laut unseren Produktangaben und unserer Datenschutzerklärung funktionieren die Kernfunktionen offline ohne Konto. Wir entwickeln Mochi selbst; dies ist keine unabhängige Rangliste."
+      }
+    },
+    "compare-the-options": {
+      "title": "Die praktischen Unterschiede vergleichen",
+      "paragraphs": {
+        "first": "Diese Fragen helfen dir bei der Auswahl. Bei digitalen Kalendern und Apps hängen die Antworten vom Produkt und deinen Einstellungen ab."
+      },
+      "table": {
+        "caption": "Fragen zur Wahl einer Tracking-Methode",
+        "columns": [
+          "Was ist dir wichtig?",
+          "Papierkalender",
+          "Handy-Kalender",
+          "Perioden-App"
+        ],
+        "rows": [
+          [
+            "Einstieg",
+            "Kalender und Stift",
+            "Dein gewohnter Kalender",
+            "App auswählen und einrichten"
+          ],
+          [
+            "Details",
+            "Eigene Notizen",
+            "Notizen im Termin",
+            "Verfügbare Eintragsfelder prüfen"
+          ],
+          [
+            "Erinnerungen",
+            "Selbst organisieren",
+            "Benachrichtigungen prüfen",
+            "Erinnerungsfunktionen prüfen"
+          ],
+          [
+            "Datenschutz",
+            "Wer sieht das Papier?",
+            "Geteilt oder synchronisiert?",
+            "Wohin gelangen die Daten?"
+          ]
+        ]
+      }
+    },
+    "try-a-small-routine": {
+      "title": "Eine machbare Routine ausprobieren",
+      "paragraphs": {
+        "first": "Wähle für die nächsten Blutungsdaten einen Ort. Ergänze bei Bedarf kurze Symptomnotizen. Verteile dieselben Daten nicht ohne Grund auf mehrere Werkzeuge.",
+        "second": "Schaue später zurück: Findest du alles wieder? Was erschwert das Eintragen? Verbessere diese Punkte, bevor du weitere Felder oder Erinnerungen ergänzt."
+      }
+    },
+    "know-the-limits": {
+      "title": "Jede Methode hat Grenzen",
+      "paragraphs": {
+        "first": "Aufzeichnungen helfen, Beobachtungen zu beschreiben. Sie erklären nicht die Ursache eines Symptoms. Mochi-Vorhersagen sind Schätzungen und dürfen weder zur Verhütung noch zur Diagnose genutzt werden.",
+        "second": "Wenn dich eine Veränderung beunruhigt, besprich deine Notizen mit medizinischem Fachpersonal. Du brauchst keine perfekten Aufzeichnungen, um Hilfe zu suchen."
+      }
+    }
+  },
+  "faq": {
+    "app": {
+      "question": "Brauche ich eine App zum Periodentracking?",
+      "answer": "Nein. Notizbuch, Papierkalender, Handy-Kalender oder App eignen sich. Wähle eine Methode, die du regelmäßig nutzen und später nachlesen kannst."
+    },
+    "record": {
+      "question": "Wie verfolge ich meine Periode am besten?",
+      "answer": "Mit einer Methode, die du beibehältst. Notiere Beginn, Ende, Blutungsstärke und relevante Symptome, um Muster und Veränderungen zu erkennen."
+    },
+    "estimates": {
+      "question": "Kann ich Mochi zur Verhütung nutzen?",
+      "answer": "Nein. Die Vorhersagen dienen der Orientierung und ersetzen weder Verhütung noch Diagnose oder medizinische Beratung."
+    }
+  }
+}

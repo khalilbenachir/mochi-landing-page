@@ -1,0 +1,49 @@
+{
+  "title": "Primeros pasos con Mochi: tu primera entrada",
+  "description": "Haz tu primera entrada en Mochi: registra las fechas que conoces, añade ánimo y síntomas si quieres y elige recordatorios y copias de seguridad.",
+  "imageAlt": "Mochi crema junto a un teléfono rosa con una cara de Mochi",
+  "intro": "Empieza por las fechas que conoces. Añade un ánimo o síntoma si quieres recordarlo y decide si necesitas recordatorios. Según nuestra información del producto, las funciones esenciales funcionan sin conexión ni cuenta.",
+  "sections": {
+    "first-entry": {
+      "title": "Empieza por las fechas conocidas",
+      "paragraphs": {
+        "first": "Registra el inicio y el final reales del sangrado cuando los sepas. No sustituyas una fecha antigua incierta por una suposición. Puedes empezar con tus observaciones actuales."
+      }
+    },
+    "mood-symptoms": {
+      "title": "Añade lo que te resulte útil",
+      "paragraphs": {
+        "first": "Mochi permite registrar ánimo, síntomas y flujo. Elige los campos que quieras consultar sin rellenarlo todo. Una nota breve puede bastar.",
+        "second": "Los sabores coleccionables y las rachas hacen el registro más lúdico. Puedes retomarlo tras un día sin registrar, sin reconstruir un historial perfecto."
+      }
+    },
+    "reminders": {
+      "title": "Elige tus recordatorios con calma",
+      "paragraphs": {
+        "first": "El recordatorio opcional de compresa muestra una cuenta atrás en la Dynamic Island y la pantalla bloqueada. Elige un intervalo acorde con el envase y tus necesidades. Cambia antes si hace falta.",
+        "second": "El recordatorio invita a comprobar el producto, no confirma que una duración sea médicamente adecuada para ti."
+      }
+    },
+    "privacy-options": {
+      "title": "Lee las opciones de privacidad",
+      "paragraphs": {
+        "first": "Según la política, los datos del ciclo permanecen en tu iPhone salvo copia opcional. Las funciones esenciales no requieren cuenta. Lee la política antes de activar la copia.",
+        "second": "Las predicciones son estimaciones. Mochi no ofrece anticoncepción, diagnóstico ni tratamiento."
+      }
+    }
+  },
+  "faq": {
+    "account": {
+      "question": "¿Funciona Mochi sin cuenta ni internet?",
+      "answer": "Sí. Todas las funciones esenciales funcionan sin conexión ni cuenta. La cuenta es opcional para copias y sincronización."
+    },
+    "free": {
+      "question": "¿Es gratis Mochi?",
+      "answer": "Sí. El seguimiento, las predicciones, el recordatorio de compresa, el ánimo, las rachas y los sabores iniciales son gratis. Mochi Plus es opcional."
+    },
+    "birthControl": {
+      "question": "¿Puedo usar Mochi como anticonceptivo?",
+      "answer": "No. Sus predicciones son orientativas y no sustituyen anticoncepción, diagnóstico ni consejo médico."
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Periode tracken: So fängst du an",
+  "description": "Lerne, deine Periode zu dokumentieren, Daten und Symptome festzuhalten und Schätzungen einzuordnen, mit Kalenderbeispiel und Hinweisen zu ärztlichem Rat.",
+  "imageAlt": "Mochi mit einem Stift neben einem rosa Kalender vor mintgrünem Hintergrund",
+  "intro": "Notiere zunächst, wann deine Periode beginnt und endet. Dafür eignen sich Notizbuch, Kalender oder Perioden-App. Wähle einen Ort, an dem du deine Einträge wiederfindest, und ergänze hilfreiche Details.",
+  "sections": {
+    "what-tracking-means": {
+      "title": "Was heißt Periodentracking?",
+      "paragraphs": {
+        "first": "Du dokumentierst Blutungstage und auf Wunsch Symptome oder Stimmung. Dein Zyklus beginnt am ersten Tag der Periode. Zähle bis zum Tag vor der nächsten Periode, um seine Länge zu bestimmen.",
+        "second": "Ein Eintrag hält fest, was passiert ist. Eine Vorhersage schätzt, was als Nächstes passieren könnte. Wenn du beides trennst, bleiben deine Aufzeichnungen verständlich."
+      }
+    },
+    "what-to-record": {
+      "title": "Halte die ersten Einträge einfach",
+      "paragraphs": {
+        "first": "Du musst nicht jedes App-Feld ausfüllen. Beginne mit den Daten und ergänze nur Informationen, die du später nachlesen möchtest."
+      },
+      "items": {
+        "dates": "Beginn und Ende: Halte die Blutungstage mit einer gleichbleibenden Methode fest.",
+        "flow": "Blutungsstärke: etwa leicht, mittel oder stark. Notiere Schmierblutungen gesondert.",
+        "symptoms": "Symptome: Was hast du wann bemerkt und wie hat es deinen Tag beeinflusst?",
+        "mood": "Stimmung oder Energie: Ergänze sie, wenn sie dir helfen. Du darfst die Felder auch leer lassen."
+      },
+      "after": "Ein kurzer, später verständlicher Eintrag reicht. Du kannst deine Notizen zu einem Arzttermin mitnehmen, um Veränderungen zu erklären."
+    },
+    "a-simple-example": {
+      "title": "Ein einfaches Beispiel",
+      "paragraphs": {
+        "first": "Angenommen, deine Periode beginnt am 4. November und endet am 8. November. Die nächste beginnt am 3. Dezember. Der abgeschlossene Zyklus dauerte 29 Tage."
+      },
+      "items": {
+        "start": "4. November: Periodenbeginn, mittlere Blutung, abends Krämpfe.",
+        "end": "8. November: letzter Blutungstag, leichte Blutung.",
+        "next": "3. Dezember: nächste Periode, ein neuer Zyklus beginnt."
+      },
+      "note": "Dieses erfundene Beispiel zeigt nur die Zählweise. Es ist keine Ziel-Zykluslänge und keine persönliche Vorhersage."
+    },
+    "when-to-start": {
+      "title": "Wann kannst du anfangen?",
+      "paragraphs": {
+        "first": "Bei der ersten Periode oder jederzeit später. Auch mitten im Zyklus kannst du mit bekannten Daten anfangen. Lasse unsichere Daten offen, statt sie zu schätzen.",
+        "second": "Suche einen passenden Moment, etwa beim Wegräumen deiner Periodenprodukte. Reduziere störende Erinnerungen. Die Gewohnheit soll zu deinem Alltag passen."
+      }
+    },
+    "understanding-estimates": {
+      "title": "Vorhergesagte Daten sind Schätzungen",
+      "paragraphs": {
+        "first": "Zyklen können variieren. Der tatsächliche Blutungsbeginn kann von der Vorhersage abweichen. Trage das echte Datum ein, sobald es feststeht. Eine App kann die Ursache einer Veränderung nicht diagnostizieren. Mochi-Vorhersagen dürfen nicht zur Verhütung genutzt werden.",
+        "second": "Auch ohne Blutung kannst du Symptome aufschreiben. Sie allein zeigen weder die Zyklusphase noch einen Eisprung zuverlässig an. Besprich unerwartete Veränderungen mit medizinischem Fachpersonal."
+      }
+    },
+    "when-to-get-advice": {
+      "title": "Mit Notizen leichter um Rat fragen",
+      "paragraphs": {
+        "first": "Der NHS empfiehlt ärztlichen Rat, wenn drei Perioden hintereinander ausbleiben oder die Periode unregelmäßig wird. Suche früher Hilfe, wenn du besorgt bist. Ist eine Schwangerschaft möglich, nutze einen Test nach Anleitung, statt weitere Einträge abzuwarten.",
+        "second": "Laut unserer Datenschutzerklärung funktionieren Mochis Kernfunktionen offline ohne Konto. Beginne mit Periodendaten und ergänze Stimmung oder Symptome, wenn sie dir helfen."
+      }
+    }
+  },
+  "faq": {
+    "meaning": {
+      "question": "Was bedeutet Periodentracking?",
+      "answer": "Du dokumentierst Blutungstage und begleitende Symptome. Der Zyklus zählt vom ersten Tag einer Periode bis zum Tag vor der nächsten."
+    },
+    "start": {
+      "question": "Wann sollte ich mit dem Tracking beginnen?",
+      "answer": "Ab deiner ersten Periode oder später. Beginne mit bekannten Daten und lasse unsichere Einträge offen."
+    },
+    "estimates": {
+      "question": "Kann ich Mochi zur Verhütung nutzen?",
+      "answer": "Nein. Mochis Vorhersagen sind Schätzungen zur Orientierung, keine Verhütung, Diagnose oder medizinische Beratung."
+    }
+  }
+}

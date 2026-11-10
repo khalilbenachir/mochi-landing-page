@@ -1,0 +1,52 @@
+{
+  "title": "Cambios de ánimo durante el ciclo menstrual",
+  "description": "Explora los cambios de ánimo durante el ciclo, qué anotar en un registro y cuándo pedir apoyo, sin reglas fijas sobre cómo deberías sentirte.",
+  "imageAlt": "Mochi azul con un bocadillo de pensamiento y un corazón rosa",
+  "intro": "Algunas personas notan cambios de ánimo antes de la regla y otras no. Los síntomas premenstruales varían y pueden cambiar con el tiempo. Un diario con fechas ayuda a describir tu experiencia, pero no diagnostica su causa.",
+  "sections": {
+    "premenstrual-changes": {
+      "title": "Cómo pueden ser los cambios premenstruales",
+      "paragraphs": {
+        "first": "El síndrome premenstrual puede incluir irritabilidad, ansiedad, tristeza o cambios de ánimo, además de síntomas físicos. Suelen aparecer antes de la regla y aliviarse tras su inicio.",
+        "second": "Una lista de síntomas no es una prueba. Si algo te molesta o afecta al día a día, consúltalo con un profesional sanitario."
+      }
+    },
+    "useful-notes": {
+      "title": "Describe tu día concreto",
+      "items": {
+        "date": "Anota la fecha y las palabras que mejor describan tu ánimo.",
+        "impact": "Añade cómo de intenso fue y cuánto afectó a tu día.",
+        "context": "Incluye contexto útil: sueño, estrés o un acontecimiento difícil."
+      },
+      "after": "También puedes anotar días normales o agradables. Ayudan a comparar, frente a un registro solo de días difíciles."
+    },
+    "avoid-rules": {
+      "title": "No hay una forma obligatoria de sentirte",
+      "paragraphs": {
+        "first": "No tienes que sentirte con energía, sociable, tranquila o cansada en un día concreto. Usa el diario para tu experiencia, no para ajustarte a un patrón.",
+        "second": "En Mochi, registrar el ánimo es opcional. La reacción de la mascota forma parte de la experiencia lúdica, no de una interpretación médica."
+      }
+    },
+    "support": {
+      "title": "Pide apoyo cuando lo necesites",
+      "paragraphs": {
+        "first": "Si los síntomas molestan, persisten o interfieren en tu vida, habla con un profesional cualificado. Lleva tus notas si te ayudan.",
+        "second": "No esperes a tener un historial largo. El diario es una forma de explicarte, no un requisito para recibir atención."
+      }
+    }
+  },
+  "faq": {
+    "everyone": {
+      "question": "¿Todo el mundo cambia de ánimo antes de la regla?",
+      "answer": "No. Los síntomas premenstruales varían según la persona y pueden cambiar con el tiempo."
+    },
+    "diagnosis": {
+      "question": "¿Registrar el ánimo diagnostica SPM o TDPM?",
+      "answer": "No. Puede ayudar a explicar el momento y el impacto de los síntomas, pero no es una prueba diagnóstica."
+    },
+    "daily": {
+      "question": "¿Tengo que registrar mi ánimo cada día?",
+      "answer": "No. Elige una rutina útil. Anotar días distintos aporta contexto, pero no necesitas un registro perfecto para pedir ayuda."
+    }
+  }
+}

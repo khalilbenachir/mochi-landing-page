@@ -1,0 +1,53 @@
+{
+  "title": "Quelles sont les quatre phases du cycle menstruel ?",
+  "description": "Comprenez les quatre phases du cycle menstruel, leur chevauchement et les variations de durée, avec des sources et les limites des prédictions.",
+  "imageAlt": "Mochi vert près d’une roue illustrée de symboles du cycle",
+  "intro": "On décrit souvent le cycle par quatre termes : menstruation, phase folliculaire, ovulation et phase lutéale. Ce ne sont pas quatre périodes égales. Les règles coïncident avec le début de la phase folliculaire.",
+  "sections": {
+    "menstruation": {
+      "title": "La menstruation : les règles",
+      "paragraphs": {
+        "first": "Le premier jour des règles est le jour 1. Les saignements correspondent à l’élimination de la muqueuse utérine. Notez les dates réelles plutôt que celles d’un calendrier prévisionnel."
+      }
+    },
+    "follicular-phase": {
+      "title": "La phase folliculaire",
+      "paragraphs": {
+        "first": "Elle commence au début du cycle et précède l’ovulation. Des follicules se développent dans les ovaires et la muqueuse utérine se reconstitue. Les jours de règles en font aussi partie."
+      }
+    },
+    "ovulation": {
+      "title": "L’ovulation",
+      "paragraphs": {
+        "first": "Un ovaire libère un ovule. Ce moment varie : ni une date du calendrier ni un ressenti ne prouvent qu’il a eu lieu. Une estimation d’application reste une estimation."
+      }
+    },
+    "luteal-phase": {
+      "title": "La phase lutéale",
+      "paragraphs": {
+        "first": "Elle suit l’ovulation. En l’absence de grossesse, les taux hormonaux baissent et les règles suivantes commencent. Certaines personnes remarquent alors des symptômes prémenstruels."
+      }
+    },
+    "your-own-pattern": {
+      "title": "Votre cycle n’a pas à suivre un schéma",
+      "paragraphs": {
+        "first": "Ces termes aident à comprendre le cycle. Notez ensuite votre expérience sans vous imposer une humeur, une énergie ou une routine en fonction d’une illustration.",
+        "second": "La contraception hormonale et d’autres situations peuvent modifier les saignements ou l’ovulation. Consultez pour une question personnelle ou un changement inattendu. Mochi ne diagnostique pas les phases et ne fournit pas de contraception."
+      }
+    }
+  },
+  "faq": {
+    "equal": {
+      "question": "Les quatre phases ont-elles la même durée ?",
+      "answer": "Non. Elles ne sont pas égales et les règles chevauchent le début de la phase folliculaire. Leur durée varie selon les personnes et les cycles."
+    },
+    "day": {
+      "question": "L’ovulation a-t-elle toujours lieu au jour 14 ?",
+      "answer": "Non. Les exemples utilisent souvent 28 jours, mais l’ovulation varie. Une prédiction ne confirme pas qu’elle a eu lieu."
+    },
+    "track": {
+      "question": "Dois-je indiquer chaque phase dans mon suivi ?",
+      "answer": "Non. Vous pouvez commencer par les saignements et les symptômes utiles. Distinguez vos observations réelles des estimations de l’application."
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "title": "¿Es privada tu aplicación de regla? Qué revisar",
+  "description": "Antes de registrar tu regla, revisa dónde se guardan los datos y qué cambia con las copias de seguridad, la cuenta, los permisos y las notificaciones.",
+  "imageAlt": "Mochi rosa sostiene un escudo lavanda con un candado blanco",
+  "intro": "Antes de introducir tus fechas, revisa adónde van los datos y qué opciones tienes. Lee la política de privacidad, la información del App Store y los ajustes de las funciones que usarás.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Averigua dónde se guardan tus entradas",
+      "paragraphs": {
+        "first": "Busca qué permanece en el teléfono y qué se envía a un servidor. Comprueba qué cambia al activar una copia de seguridad, crear una cuenta o conectar una función.",
+        "second": "La política de Mochi indica que los datos del ciclo permanecen en tu iPhone salvo que elijas una copia opcional. Las fechas, síntomas y ánimo no se incluyen en analíticas, registros técnicos ni informes de fallos. Son declaraciones sobre nuestras prácticas, no una auditoría independiente."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Lee la información de privacidad del App Store",
+      "paragraphs": {
+        "first": "Apple explica que la proporcionan los desarrolladores. Describe posibles datos recopilados, su vinculación con tu identidad y su uso para rastrearte entre servicios de otras empresas.",
+        "second": "Úsala como punto de partida y consulta después la política de las funciones que te interesan. Pregunta al desarrollador si queda alguna duda importante antes de introducir datos sensibles."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Cuenta y copia de seguridad son decisiones distintas",
+      "paragraphs": {
+        "first": "Una cuenta, una suscripción y una copia cumplen funciones diferentes. Revisa cada una sin asumir que todas las aplicaciones funcionan igual."
+      },
+      "items": {
+        "account": "¿Puedo registrar la regla sin crear una cuenta?",
+        "backup": "¿Es opcional la copia y qué datos salen del teléfono al activarla?",
+        "access": "¿Cómo recupero mis notas si pierdo o cambio el teléfono?",
+        "deletion": "¿Cómo solicito borrar la cuenta y las copias?"
+      },
+      "after": "Mochi describe su copia como opcional y cifrada. Sus funciones esenciales no requieren cuenta. Lee la política vigente y contacta con Mochi para consultas de privacidad."
+    },
+    "screens-and-permissions": {
+      "title": "Piensa en lo que otras personas pueden ver",
+      "paragraphs": {
+        "first": "Una notificación puede aparecer cuando otra persona tiene tu móvil. Antes de activar recordatorios, revisa su texto y dónde se muestran.",
+        "second": "Valora cada permiso: qué permite y si necesitas esa función. Puedes empezar con pocas opciones y activar más cuando las entiendas."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "Qué comprobar antes de tu primera entrada",
+      "items": {
+        "policy": "Encuentro una política actual y una forma de contactar.",
+        "storage": "Entiendo dónde se guardan los datos y qué cambia con la copia.",
+        "optional": "Sé qué funciones de cuenta, uso compartido y recordatorios son opcionales.",
+        "control": "Sé dónde pedir acceso a mis datos o su eliminación."
+      },
+      "paragraphs": {
+        "first": [
+          "Una aplicación con opciones distintas de Mochi también puede encajar contigo. Lo esencial es comprenderlas antes de elegir. Nuestra ",
+          {
+            "postId": "methods",
+            "label": "guía sobre aplicaciones y calendarios"
+          },
+          " explica otras diferencias prácticas."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "¿Mochi funciona sin cuenta ni internet?",
+      "answer": "Sí. Todas las funciones esenciales funcionan sin conexión ni cuenta. La cuenta es opcional para copias y sincronización."
+    },
+    "private": {
+      "question": "¿Son privados mis datos menstruales?",
+      "answer": "Sí. Fechas, flujo, síntomas y ánimo permanecen por defecto en tu iPhone, salvo que actives la copia de seguridad opcional. Nunca se envían a analíticas, registros técnicos ni informes de fallos. Nuestra política de privacidad explica cómo funciona la copia."
+    },
+    "backup": {
+      "question": "¿Necesito una copia de seguridad para usar Mochi?",
+      "answer": "No. Es opcional. Las funciones esenciales funcionan sin conexión ni cuenta. Lee la política vigente antes de activar la copia."
+    }
+  }
+}

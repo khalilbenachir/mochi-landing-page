@@ -1,0 +1,53 @@
+{
+  "title": "Die vier Phasen des Menstruationszyklus erklärt",
+  "description": "Verstehe die vier Phasen des Menstruationszyklus, ihre Überschneidungen und unterschiedliche Zykluslängen, mit Quellen und Grenzen von Vorhersagen.",
+  "imageAlt": "Grüner Mochi neben einem Rad mit verspielten Zyklussymbolen",
+  "intro": "Häufig wird der Zyklus mit vier Begriffen beschrieben: Menstruation, Follikelphase, Eisprung und Lutealphase. Das sind keine vier gleich langen Zeitblöcke. Die Menstruation überschneidet sich mit der frühen Follikelphase.",
+  "sections": {
+    "menstruation": {
+      "title": "Menstruation: deine Periode",
+      "paragraphs": {
+        "first": "Tag 1 ist der erste Tag deiner Periode. Bei der Blutung wird Gebärmutterschleimhaut abgestoßen. Notiere echte Blutungstage, statt Vorhersagen zu übernehmen."
+      }
+    },
+    "follicular-phase": {
+      "title": "Die Follikelphase",
+      "paragraphs": {
+        "first": "Sie beginnt mit dem Zyklus und reicht bis zum Eisprung. Follikel entwickeln sich in den Eierstöcken, die Gebärmutterschleimhaut baut sich wieder auf. Auch die Blutungstage gehören zu dieser Phase."
+      }
+    },
+    "ovulation": {
+      "title": "Der Eisprung",
+      "paragraphs": {
+        "first": "Beim Eisprung wird eine Eizelle aus einem Eierstock freigesetzt. Der Zeitpunkt variiert. Ein Kalendertag oder ein Gefühl bestätigt ihn nicht. Eine App-Schätzung bleibt eine Schätzung."
+      }
+    },
+    "luteal-phase": {
+      "title": "Die Lutealphase",
+      "paragraphs": {
+        "first": "Sie folgt dem Eisprung. Tritt keine Schwangerschaft ein, sinken Hormonspiegel und die nächste Periode beginnt. Manche Menschen bemerken in dieser Zeit prämenstruelle Symptome."
+      }
+    },
+    "your-own-pattern": {
+      "title": "Dein Zyklus muss keinem Schaubild folgen",
+      "paragraphs": {
+        "first": "Die Begriffe helfen beim Verstehen. Halte anschließend deine eigenen Beobachtungen fest. Eine Abbildung schreibt dir weder Stimmung noch Energie oder Tagesablauf vor.",
+        "second": "Hormonelle Verhütung und andere Umstände können Blutung und Eisprung verändern. Besprich unerwartete Veränderungen oder persönliche Fragen mit medizinischem Fachpersonal. Mochi diagnostiziert keine Zyklusphasen und bietet keine Verhütung."
+      }
+    }
+  },
+  "faq": {
+    "equal": {
+      "question": "Sind die vier Phasen gleich lang?",
+      "answer": "Nein. Die Menstruation überschneidet sich mit der frühen Follikelphase. Dauer und Zeitpunkt variieren zwischen Menschen und Zyklen."
+    },
+    "day": {
+      "question": "Findet der Eisprung immer an Tag 14 statt?",
+      "answer": "Nein. Beispiele nutzen oft einen 28-Tage-Zyklus, doch der Eisprung variiert. Eine App-Vorhersage bestätigt ihn nicht."
+    },
+    "track": {
+      "question": "Muss ich jede Phase beim Tracking benennen?",
+      "answer": "Nein. Blutungstage und hilfreiche Symptome reichen für den Anfang. Trenne tatsächliche Beobachtungen von App-Schätzungen."
+    }
+  }
+}

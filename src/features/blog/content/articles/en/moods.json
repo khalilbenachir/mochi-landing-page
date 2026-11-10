@@ -1,0 +1,52 @@
+{
+  "title": "Mood changes during your cycle, explained",
+  "description": "Explore mood changes during your menstrual cycle, what to note in a mood log, and when to ask for support, without fixed rules about how you should feel.",
+  "imageAlt": "Blue Mochi with a thought bubble containing a pink heart",
+  "intro": "Some people notice mood changes before a period, while others do not. Premenstrual symptoms differ between people and can change over time. A dated mood log can help you describe your experience, but it cannot diagnose the reason for it.",
+  "sections": {
+    "premenstrual-changes": {
+      "title": "What premenstrual changes can look like",
+      "paragraphs": {
+        "first": "PMS can include emotional symptoms such as irritability, anxiety, sadness or mood changes, alongside physical symptoms. Symptoms commonly occur before a period and ease after it starts.",
+        "second": "A list of symptoms is not a test. If something is bothering you or affecting daily life, ask a healthcare professional about it."
+      }
+    },
+    "useful-notes": {
+      "title": "Keep the notes specific to your day",
+      "items": {
+        "date": "Record the date and the mood words that feel right to you.",
+        "impact": "Add a short note about how strongly it affected your day.",
+        "context": "Include context you want to remember, such as sleep, stress or a difficult event."
+      },
+      "after": "You can log ordinary days too. A record that includes comfortable days is easier to discuss than a list made only when you felt bad."
+    },
+    "avoid-rules": {
+      "title": "Avoid fixed rules about how you should feel",
+      "paragraphs": {
+        "first": "You do not need to feel energetic, social, calm or tired on a particular cycle day. Use a diary to record your own experience instead of fitting it to a template.",
+        "second": "In Mochi, mood logging is optional. A mascot reaction is part of the app experience; it is not a medical interpretation of your entry."
+      }
+    },
+    "support": {
+      "title": "Ask for support when you need it",
+      "paragraphs": {
+        "first": "If mood symptoms bother you, interfere with everyday life, or persist, speak with a qualified healthcare professional. Bring your notes if you find them helpful.",
+        "second": "Do not wait to build a long record before asking for support. A diary is one way to explain what you noticed, not a requirement for care."
+      }
+    }
+  },
+  "faq": {
+    "everyone": {
+      "question": "Does everyone have mood changes before a period?",
+      "answer": "No. Premenstrual symptoms differ between people and may change over time."
+    },
+    "diagnosis": {
+      "question": "Can mood logging diagnose PMS or PMDD?",
+      "answer": "No. A log may help a healthcare professional understand timing and impact, but it is not a diagnostic test."
+    },
+    "daily": {
+      "question": "Do I have to log my mood every day?",
+      "answer": "No. Choose a routine you find useful. Notes from different kinds of days can give you more to discuss, but you do not need a perfect record to ask for support."
+    }
+  }
+}

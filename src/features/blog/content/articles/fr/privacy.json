@@ -1,0 +1,75 @@
+{
+  "title": "Application de règles et confidentialité : que vérifier ?",
+  "description": "Avant de saisir vos règles, vérifiez où vos données sont stockées et ce que changent la sauvegarde, le compte, les autorisations et les notifications.",
+  "imageAlt": "Mochi rose tient un bouclier lavande avec un cadenas blanc",
+  "intro": "Avant de saisir vos dates de règles, vérifiez où vont vos données et quels choix s’offrent à vous. Lisez la politique de confidentialité, les informations de l’App Store et les réglages que vous comptez utiliser.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Où vos données sont-elles stockées ?",
+      "paragraphs": {
+        "first": "Cherchez ce qui reste sur votre téléphone et ce qui part vers un serveur. Vérifiez ce qui change avec une sauvegarde, un compte ou une fonction connectée.",
+        "second": "La politique de Mochi indique que les données du cycle restent sur l’iPhone, sauf sauvegarde facultative. Les dates, symptômes et humeurs ne figurent pas dans les analyses, journaux techniques ou rapports de plantage. Il s’agit de nos engagements, pas d’un audit de sécurité indépendant."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Lisez les informations de confidentialité de l’App Store",
+      "paragraphs": {
+        "first": "Apple précise que ces informations sont déclarées par les développeurs. Elles décrivent les données pouvant être collectées, leur lien avec votre identité et leur utilisation éventuelle pour vous suivre entre les services d’autres entreprises.",
+        "second": "C’est un point de départ. Lisez ensuite la politique pour les fonctions qui vous intéressent. Si une question importante reste sans réponse, contacte le développeur avant de saisir des données sensibles."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Comptez et sauvegarde : deux décisions différentes",
+      "paragraphs": {
+        "first": "Comptez, abonnement et sauvegarde ont des rôles distincts. Vérifiez à quoi chacun sert, sans supposer que toutes les applications fonctionnent pareil."
+      },
+      "items": {
+        "account": "Puis-je suivre mes règles sans créer de compte ?",
+        "backup": "La sauvegarde est-elle facultative ? Quelles données quittent le téléphone ?",
+        "access": "Comment retrouver mes notes si je perds ou remplace mon téléphone ?",
+        "deletion": "Comment demander la suppression du compte et des sauvegardes ?"
+      },
+      "after": "Mochi décrit sa sauvegarde comme facultative et chiffrée. Les fonctions essentielles ne nécessitent pas de compte. Consultez la politique en vigueur et contacte Mochi pour toute demande liée à vos données."
+    },
+    "screens-and-permissions": {
+      "title": "Pensez à ce que les autres peuvent voir",
+      "paragraphs": {
+        "first": "Une notification peut apparaître quand quelqu’un tient votre téléphone. Avant d’activer les rappels, vérifiez leur texte et les endroits où ils s’affichent.",
+        "second": "Examinez chaque demande d’autorisation : quelle fonction permet-elle, et en avez-vous besoin ? Vous pouvez commencer avec peu d’options et en activer d’autres après les avoir comprises."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "Les vérifications avant votre première note",
+      "items": {
+        "policy": "Je trouve une politique de confidentialité actuelle et un contact.",
+        "storage": "Je comprends où sont stockées mes notes et ce que change la sauvegarde.",
+        "optional": "Je sais quelles fonctions de compte, de partage et de rappel sont facultatives.",
+        "control": "Je sais où demander l’accès à mes données ou leur suppression."
+      },
+      "paragraphs": {
+        "first": [
+          "Une application différente de Mochi peut vous convenir. L’essentiel est de comprendre ses choix avant de les faire. Notre ",
+          {
+            "postId": "methods",
+            "label": "comparaison entre application et calendrier"
+          },
+          " peut aussi vous aider à choisir votre méthode."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "Mochi fonctionne-t-il sans compte ni connexion ?",
+      "answer": "Oui. Toutes les fonctions essentielles marchent hors ligne et sans compte. Le compte est facultatif pour la sauvegarde et la synchronisation."
+    },
+    "private": {
+      "question": "Mes données de règles sont-elles privées ?",
+      "answer": "Oui. Les dates, le flux, les symptômes et l’humeur restent par défaut sur votre iPhone, sauf si vous activez la sauvegarde facultative. Ils ne sont jamais envoyés aux analyses, journaux techniques ou rapports de plantage. Notre politique de confidentialité explique la sauvegarde."
+    },
+    "backup": {
+      "question": "La sauvegarde est-elle obligatoire ?",
+      "answer": "Non. Elle est facultative selon la politique de Mochi. Les fonctions essentielles marchent hors ligne et sans compte. Consultez la politique en vigueur avant de l’activer."
+    }
+  }
+}

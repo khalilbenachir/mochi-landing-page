@@ -9,7 +9,7 @@ const BAR =
 
 /**
  * Each panel row slides up in turn when the menu opens, and all leave together. Rows 1-7 get
- * their own delay (the menu has 7 today); any row past that shares the last step, so adding an
+ * their own delay; any row past that shares the last step, so adding an
  * item never makes it pop in ahead of the others. Inline `--i` indices aren't allowed in features.
  */
 const STAGGER =

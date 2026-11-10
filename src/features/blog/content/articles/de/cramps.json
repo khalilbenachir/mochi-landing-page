@@ -1,0 +1,51 @@
+{
+  "title": "Regelschmerzen: Was hilft und wann ärztlicher Rat nötig ist",
+  "description": "Lies, was bei Regelschmerzen helfen kann, welche Notizen nützlich sind und wann ärztlicher Rat nötig ist, mit Links zu den Empfehlungen des NHS.",
+  "imageAlt": "Lavendelfarbener Mochi umarmt eine rosa Wärmflasche",
+  "intro": "Wärme und sanfte Bewegung können helfen. Hole ärztlichen Rat, wenn Schmerzen deinen Alltag beeinträchtigen. Suche dringend medizinische Hilfe, wenn die Schmerzen stark oder stärker als üblich sind und Schmerzmittel nicht geholfen haben.",
+  "sections": {
+    "comfort": {
+      "title": "Mit wohltuenden Maßnahmen anfangen",
+      "items": {
+        "warmth": "Probiere ein warmes Bad, eine warme Dusche oder ein Wärmekissen beziehungsweise eine eingewickelte Wärmflasche auf dem Bauch.",
+        "movement": "Versuche sanfte Bewegung, etwa einen kurzen Spaziergang, wenn es angenehm ist.",
+        "massage": "Eine sanfte Bauch- oder Rückenmassage kann helfen."
+      },
+      "after": "Frage vor der Einnahme eines Schmerzmittels in der Apotheke oder ärztlich nach, was für dich geeignet ist, und beachte die Anleitung. Dieser Ratgeber ist kein persönlicher Behandlungsplan."
+    },
+    "record-pain": {
+      "title": "Für ein späteres Gespräch notieren",
+      "paragraphs": {
+        "first": "Notiere Beginn, Ort und Alltagsauswirkungen der Schmerzen sowie versuchte Maßnahmen und ihre Wirkung. Eine kurze Notiz kann das Gespräch beim Termin erleichtern.",
+        "second": "Du brauchst kein perfektes Tagebuch, um Hilfe zu suchen. Wenn das Aufschreiben während der Schmerzen zu viel ist, halte dich kurz."
+      }
+    },
+    "get-help": {
+      "title": "Wann du Hilfe suchen solltest",
+      "paragraphs": {
+        "first": "Der NHS empfiehlt ärztlichen Rat bei schmerzhafteren, stärkeren oder unregelmäßigen Perioden sowie Schmerzen, die Alltagsaktivitäten verhindern. Zwischenblutungen und Schmerzen beim Sex, Wasserlassen oder Stuhlgang sollten ebenfalls abgeklärt werden.",
+        "second": "Suche dringend medizinische Hilfe bei starken oder ungewöhnlich starken Becken- oder Regelschmerzen, wenn Schmerzmittel nicht geholfen haben. Warte weder auf eine Erinnerung noch auf einen weiteren Zyklus."
+      }
+    },
+    "tracking-limits": {
+      "title": "Ein Tagebuch unterstützt das Gespräch",
+      "paragraphs": {
+        "first": "Mochi hilft beim Festhalten von Symptomen und Stimmung, erkennt aber keine Schmerzursache und ersetzt keine Untersuchung. Besprich deine Notizen mit qualifiziertem Fachpersonal, wenn sie dir beim Erklären helfen."
+      }
+    }
+  },
+  "faq": {
+    "heat": {
+      "question": "Kann Wärme bei Regelschmerzen helfen?",
+      "answer": "Der NHS nennt warme Bäder oder Duschen sowie Wärmekissen oder eingewickelte Wärmflaschen als mögliche Maßnahmen."
+    },
+    "daily": {
+      "question": "Sollte ich Hilfe suchen, wenn Krämpfe Schule oder Arbeit beeinträchtigen?",
+      "answer": "Ja. Schmerzen, die übliche Tätigkeiten verhindern, sollten ärztlich abgeklärt werden. Warte nicht erst mehrere Zyklen mit Aufzeichnungen ab."
+    },
+    "diagnosis": {
+      "question": "Kann eine App die Ursache der Krämpfe erkennen?",
+      "answer": "Nein. Notizen helfen beim Beschreiben, aber medizinisches Fachpersonal muss die Beschwerden beurteilen."
+    }
+  }
+}

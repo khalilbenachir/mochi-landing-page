@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Mochi – registo do período privado para iPhone",
-    "description": "Mochi é uma app gratuita e privada para registar o período no iPhone, com previsões do ciclo, lembrete opcional para trocar o penso, registo do humor, sequências e 12 sabores de Mochi colecionáveis."
+    "title": "Calendário menstrual grátis para iPhone | Mochi",
+    "description": "Acompanhe a menstruação com um calendário menstrual grátis no iPhone. Registe o ciclo e os sintomas, com estimativas do período fértil. Privado e sem conta."
   },
   "Navigation": {
     "mainLabel": "Navegação principal",
@@ -10,6 +10,7 @@
     "features": "Funcionalidades",
     "flavors": "Sabores",
     "privacy": "Privacidade",
+    "blog": "Blog",
     "plus": "Mochi Plus",
     "faq": "FAQ"
   },
@@ -29,10 +30,10 @@
     "backToTop": "Mochi: registo do período, voltar ao topo"
   },
   "Hero": {
-    "title1": "O registo do",
-    "title2": "período fofo",
-    "title3": "e privado",
-    "body": "Mochi é uma app gratuita para iPhone que prevê o teu próximo período, lembra-te quando trocar o penso e transforma o registo diário num jogo. Sem precisar de conta.",
+    "title1": "O seu calendário",
+    "title2": "menstrual grátis",
+    "title3": "no iPhone",
+    "body": "Com o Mochi, acompanhe a menstruação, os sintomas e o humor num calendário privado. Um pequeno companheiro em cada fase do ciclo, sem criar conta e mesmo sem internet.",
     "mascotAlt": "Mochi, uma mascote cor-de-rosa sorridente, a descansar numa almofada creme",
     "phoneAlt": "Ecrã inicial do Mochi no iPhone a mostrar o dia 2 do período com os atalhos Período, Humor e Sintomas"
   },
@@ -71,27 +72,63 @@
     "title3": "12 Mochis fofos",
     "body": "Regista um pouco todos os dias e novos Mochi juntam-se à tua coleção.",
     "items": {
-      "strawberry": { "name": "Morango", "unlock": "Inicial" },
-      "classic": { "name": "Clássico", "unlock": "Inicial" },
-      "matcha": { "name": "Matcha", "unlock": "Inicial" },
-      "ube": { "name": "Ube", "unlock": "Sequência de 7 dias" },
-      "mango": { "name": "Manga", "unlock": "Sequência de 14 dias" },
-      "sesame": { "name": "Sésamo", "unlock": "Sequência de 30 dias" },
-      "yuzu": { "name": "Yuzu", "unlock": "Sequência de 60 dias" },
-      "chocolate": { "name": "Chocolate", "unlock": "Sequência de 90 dias" },
-      "hojicha": { "name": "Hojicha", "unlock": "Sequência de 180 dias" },
-      "sakura": { "name": "Sakura", "unlock": "150 pétalas" },
-      "peach": { "name": "Pêssego", "unlock": "Desafio anticólicas" },
-      "coconut": { "name": "Coco", "unlock": "Desafio semana calma" }
+      "strawberry": {
+        "name": "Morango",
+        "unlock": "Inicial"
+      },
+      "classic": {
+        "name": "Clássico",
+        "unlock": "Inicial"
+      },
+      "matcha": {
+        "name": "Matcha",
+        "unlock": "Inicial"
+      },
+      "ube": {
+        "name": "Ube",
+        "unlock": "Sequência de 7 dias"
+      },
+      "mango": {
+        "name": "Manga",
+        "unlock": "Sequência de 14 dias"
+      },
+      "sesame": {
+        "name": "Sésamo",
+        "unlock": "Sequência de 30 dias"
+      },
+      "yuzu": {
+        "name": "Yuzu",
+        "unlock": "Sequência de 60 dias"
+      },
+      "chocolate": {
+        "name": "Chocolate",
+        "unlock": "Sequência de 90 dias"
+      },
+      "hojicha": {
+        "name": "Hojicha",
+        "unlock": "Sequência de 180 dias"
+      },
+      "sakura": {
+        "name": "Sakura",
+        "unlock": "150 pétalas"
+      },
+      "peach": {
+        "name": "Pêssego",
+        "unlock": "Desafio anticólicas"
+      },
+      "coconut": {
+        "name": "Coco",
+        "unlock": "Desafio semana calma"
+      }
     }
   },
   "Predictions": {
-    "title1": "Previsões do período",
-    "title2": "e da ovulação que",
-    "title3": "aprendem o teu ritmo",
-    "body1": "O Mochi lê os ciclos que registas para estimar",
-    "body2": "o teu próximo período, janela fértil e ovulação.",
-    "disclaimer": "As previsões são estimativas, não contraceção.",
+    "title1": "Calendário menstrual",
+    "title2": "e estimativas do",
+    "title3": "período fértil",
+    "body1": "Registe as datas da menstruação para conhecer a duração dos seus ciclos e estimar",
+    "body2": "a próxima menstruação, a ovulação e o período fértil. Se o ciclo for irregular, as previsões podem variar mais.",
+    "disclaimer": "As datas são estimativas: não confirmam a ovulação nem uma gravidez e não servem como método contracetivo.",
     "phoneLabel": "Calendário do ciclo do Mochi com um período de cinco dias assinalado",
     "cycle": "Ciclo",
     "month": "Mar 2025",
@@ -118,8 +155,8 @@
   "Privacy": {
     "title1": "O teu ciclo fica",
     "title2": "no teu iPhone",
-    "body1": "Datas do período, fluxo, sintomas e humor",
-    "body2": "nunca vão para análises, registos ou relatórios de falhas.",
+    "body1": "O seu calendário menstrual é privado:",
+    "body2": "datas, fluxo, sintomas e humor nunca são enviados para análises, registos ou relatórios de falhas.",
     "promises": {
       "private": {
         "title": "Privado",
@@ -161,22 +198,42 @@
     "mochi": "Mochi",
     "typical": "App de período típica",
     "rows": {
-      "account": { "feature": "Exige conta", "mochi": "Não", "typical": "Muitas vezes" },
-      "offline": { "feature": "Funciona offline", "mochi": "Sim", "typical": "Varia" },
-      "reminder": { "feature": "Lembrete no ecrã bloqueado", "mochi": "Sim", "typical": "Raro" },
-      "analytics": { "feature": "Dados do ciclo para análises", "mochi": "Nunca", "typical": "Varia" },
-      "rewards": { "feature": "Prémios por registar", "mochi": "Sequências + 12 sabores", "typical": "Raro" }
+      "account": {
+        "feature": "Exige conta",
+        "mochi": "Não",
+        "typical": "Muitas vezes"
+      },
+      "offline": {
+        "feature": "Funciona offline",
+        "mochi": "Sim",
+        "typical": "Varia"
+      },
+      "reminder": {
+        "feature": "Lembrete no ecrã bloqueado",
+        "mochi": "Sim",
+        "typical": "Raro"
+      },
+      "analytics": {
+        "feature": "Dados do ciclo para análises",
+        "mochi": "Nunca",
+        "typical": "Varia"
+      },
+      "rewards": {
+        "feature": "Prémios por registar",
+        "mochi": "Sequências + 12 sabores",
+        "typical": "Raro"
+      }
     }
   },
   "Plans": {
-    "title1": "Descarrega grátis.",
+    "title1": "O seu calendário, grátis.",
     "title2": "Mochi Plus",
     "title3": "é opcional.",
     "freeName": "Mochi",
     "freeLabel": "Grátis",
     "plusName": "Mochi Plus",
     "freeFeatures": {
-      "tracking": "Ciclo e previsões",
+      "tracking": "Calendário menstrual e estimativas do ciclo",
       "reminder": "Lembrete para trocar o penso",
       "rewards": "Humor, sequências e sabores",
       "offline": "Offline, sem conta"
@@ -210,7 +267,7 @@
       },
       "private": {
         "question": "Os meus dados do período são privados?",
-        "answer": "Sim. As datas do período, o fluxo, os sintomas e o humor ficam no teu iPhone e nunca são enviados para análises, registos ou relatórios de falhas."
+        "answer": "Sim. Datas, fluxo, sintomas e humor ficam no iPhone por predefinição, exceto se ativares a cópia de segurança opcional. Nunca são enviados para análises, registos técnicos ou relatórios de falhas. A nossa política de privacidade explica como funciona a cópia."
       },
       "offline": {
         "question": "O Mochi funciona sem conta nem internet?",
@@ -231,9 +288,9 @@
     }
   },
   "Closing": {
-    "title": "Diz olá ao Mochi",
-    "body1": "Regista o teu ciclo, coleciona sabores fofos e tem",
-    "body2": "um pequeno amigo contigo em todas as fases.",
+    "title": "O seu ciclo com o Mochi",
+    "body1": "Descarregue o calendário menstrual grátis",
+    "body2": "para o iPhone e tenha os seus registos sempre consigo.",
     "imageAlt": "Mochi a descansar numa almofada",
     "brand": "Mochi: registo do período"
   },
@@ -425,6 +482,146 @@
         "body": "Se tiveres dúvidas sobre estes termos ou precisares de ajuda com o Mochi, contacta-nos através do endereço de e-mail abaixo.",
         "detail": "Evita incluir informações de saúde sensíveis na tua mensagem. Para questões de saúde, consulta um profissional de saúde qualificado."
       }
+    }
+  },
+  "Blog": {
+    "navigation": "Blog",
+    "categories": {
+      "cycle-basics": "Compreender o ciclo",
+      "period-care": "Cuidados menstruais",
+      "symptoms-moods": "Sintomas e humor",
+      "privacy": "Privacidade",
+      "using-mochi": "Usar o Mochi"
+    },
+    "eyebrow": "Blog",
+    "title": "O diário do Mochi",
+    "description": "Guias simples e próximos sobre o teu ciclo, a menstruação e os cuidados do dia a dia.",
+    "metadataTitle": "Diário do Mochi | Menstruação e ciclo menstrual",
+    "metadataDescription": "Aprende a acompanhar a menstruação, trocar o penso e compreender o ciclo, os sintomas e o humor. Privacidade e primeiros passos com o Mochi.",
+    "startHere": "Começa por aqui",
+    "more": "Mais do Mochi",
+    "readGuide": "Ler o guia",
+    "readArticle": "Ler artigo",
+    "byline": "Por Mochi",
+    "publisher": "Mochi",
+    "published": "Publicado em",
+    "readTime": "{minutes} min de leitura",
+    "back": "Todos os artigos",
+    "onThisPage": "Neste artigo",
+    "sourcesHeading": "Fontes e outras leituras",
+    "sourceLabel": "Fontes desta secção",
+    "related": "Continua a ler",
+    "editorialNote": "Fontes claras, limites explicados e informação útil.",
+    "editorialLink": "A nossa abordagem editorial",
+    "newsletter": {
+      "title": "Novos guias,\numa vez por mês",
+      "emailLabel": "O teu e-mail",
+      "submitLabel": "Subscrever",
+      "note": "Sem spam. Cancela quando quiseres.",
+      "emailNote": "A tua aplicação de e-mail será aberta para enviares o pedido.",
+      "subject": "Subscrição do diário do Mochi",
+      "requestBody": "Olá, Mochi!\n\nGostaria de receber os guias mensais do diário do Mochi.\nO meu e-mail é {email}.\n\nAgradeço!",
+      "requestMessage": "Envia o e-mail para pedires a subscrição. Se a aplicação não abriu, usa a ligação abaixo.",
+      "openEmailLabel": "Abrir pedido por e-mail"
+    },
+    "ctaTitle": "Uma companhia em cada fase.",
+    "ctaAction": "Descobre o Mochi",
+    "articleNotice": "Informação geral, não aconselhamento médico. Este artigo não foi revisto por um profissional de saúde.",
+    "commercialNote": "O Mochi publica este blog e desenvolve a aplicação aqui mencionada.",
+    "heroAlt": "Mochi de boina roxa a escrever num diário aberto",
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health: o teu ciclo menstrual",
+      "irregularPeriods": "NHS: menstruação irregular",
+      "missedPeriods": "NHS: ausência ou atraso da menstruação",
+      "pregnancyTests": "NHS: fazer um teste de gravidez",
+      "periodProblems": "NHS: problemas menstruais",
+      "appPrivacy": "Apple: informação de privacidade na App Store",
+      "mochiPrivacy": "Política de privacidade do Mochi",
+      "mochiTerms": "Termos do Mochi e aviso sobre saúde",
+      "menstrualHygiene": "CDC: hábitos de higiene menstrual",
+      "firstPeriod": "ACOG: a tua primeira menstruação",
+      "cycleOverview": "Office on Women’s Health: o ciclo menstrual",
+      "periodPain": "NHS: dor menstrual",
+      "pms": "Office on Women’s Health: síndrome pré-menstrual",
+      "cyclePhases": "Cleveland Clinic: ciclo menstrual e respetivas fases"
+    },
+    "editorial": {
+      "title": "A nossa abordagem editorial",
+      "description": "Quem publica o blog do Mochi, como usamos as fontes e como comunicar um erro.",
+      "intro": "O Mochi publica este blog para te ajudar a compreender o acompanhamento menstrual e a escolher as tuas ferramentas com informação. A nossa empresa também desenvolve a aplicação Mochi mencionada nos artigos.",
+      "sections": {
+        "publisher": {
+          "title": "Quem assina os artigos",
+          "body": "Os artigos identificam o Mochi como entidade editora. Esta assinatura não representa uma qualificação médica nem uma avaliação independente da nossa aplicação. Atualmente, os artigos não são revistos por um profissional de saúde."
+        },
+        "sources": {
+          "title": "Como usamos as fontes",
+          "body": "A informação geral de saúde inclui ligações para fontes como o NHS e o Office on Women’s Health dos Estados Unidos. As descrições do produto e da privacidade remetem para documentação oficial. Cada artigo inclui as fontes para poderes consultar as orientações originais."
+        },
+        "editing": {
+          "title": "Como preparamos os textos",
+          "body": "Estes primeiros artigos foram redigidos com ajuda de IA, editados para maior clareza e verificados com as fontes citadas. Uma revisão editorial não equivale a uma revisão clínica. As ilustrações são geradas por IA e não mostram resultados médicos nem ecrãs verificados da aplicação."
+        },
+        "limits": {
+          "title": "Como os artigos podem ajudar",
+          "body": "O blog aborda hábitos de acompanhamento, funcionalidades do produto e privacidade. Não oferece aconselhamento médico individual, diagnóstico, tratamento nem orientação contracetiva. Para dúvidas de saúde, consulta um profissional qualificado."
+        },
+        "dates": {
+          "title": "Publicação e atualizações",
+          "body": "A data de publicação indica quando o artigo foi adicionado. Só mostramos uma data de atualização após uma alteração substancial do conteúdo. Voltar a compilar o site não altera estas datas."
+        },
+        "corrections": {
+          "title": "Correções e perguntas",
+          "body": "Se encontrares um erro factual, envia o endereço do artigo e o excerto que devemos verificar. Evita incluir datas de menstruação, sintomas ou outros dados de saúde sensíveis na mensagem."
+        }
+      },
+      "contact": "Comunicar um erro ao Mochi",
+      "privacy": "Ler a nossa política de privacidade"
+    },
+    "allCategories": "Todos",
+    "filterLabel": "Filtrar artigos por tema",
+    "guidesHeading": "Guias recentes",
+    "guideCount": "{count, plural, one {# guia} other {# guias}}",
+    "quickAnswer": "O essencial",
+    "shareHeading": "Partilhar este artigo",
+    "copyLink": "Copiar ligação do artigo",
+    "copiedLink": "Ligação copiada",
+    "copyError": "Não foi possível copiar. Copia o endereço no navegador.",
+    "shareX": "Partilhar no X",
+    "shareFacebook": "Partilhar no Facebook",
+    "shareWhatsApp": "Partilhar no WhatsApp",
+    "questionsHeading": "Perguntas frequentes",
+    "ctaDescription": "Acompanha a tua menstruação, regista como te sentes e descobre o teu ritmo com o Mochi.",
+    "inlineCtaTitle": "Deixa o Mochi acompanhar-te.",
+    "inlineCtaDescription": "Menstruação, humor e pequenos lembretes juntos no teu iPhone.",
+    "mobileContents": "Neste artigo",
+    "sourcesToggle": "Fontes e informação editorial"
+  },
+  "PeriodEducationFAQ": {
+    "sourcesLabel": "Fontes",
+    "items": {
+      "bestWay": {
+        "question": "Qual é a tabela para acompanhar a menstruação?",
+        "answer": "Uma tabela útil reúne a data de início e de fim de cada menstruação, a intensidade do fluxo e os sintomas que pretende registar. Pode acrescentar a duração do ciclo, contando do primeiro dia de uma menstruação até à véspera da seguinte. Não precisa de seguir uma tabela fixa de 28 dias. O calendário menstrual ajuda a comparar os seus próprios registos; as indicações do período fértil continuam a ser estimativas."
+      },
+      "meaning": {
+        "question": "Como acompanhar minha menstruação?",
+        "answer": "Registe o início e o fim do sangramento, a intensidade do fluxo e os sintomas de forma regular, num calendário menstrual, numa aplicação ou num caderno. Considere o primeiro dia da menstruação como o dia 1 do ciclo e compare vários meses. Se não souber uma data, evite adivinhá-la. O objetivo é conhecer o seu padrão e reconhecer alterações, sem esperar que todas as menstruações ou todos os ciclos sejam iguais."
+      },
+      "noBleeding": {
+        "question": "O que sente a mulher quando está ovulando?",
+        "answer": "Pode notar muco cervical mais transparente e escorregadio, uma dor ligeira num dos lados do baixo ventre ou alterações da libido. Algumas mulheres não sentem qualquer mudança. A temperatura basal tende a subir ligeiramente depois da ovulação, pelo que não a antecipa com segurança. Estes sinais podem ter outras causas e não confirmam, por si só, a ovulação. Registá-los ao longo dos ciclos ajuda a observar padrões, sem substituir uma avaliação clínica."
+      },
+      "whenToStart": {
+        "question": "Qual o último dia da menstruação, borra ou sangue?",
+        "answer": "A cor, por si só, não define o último dia: o sangue castanho pode ser sangue menstrual que demorou mais tempo a sair. Para manter registos comparáveis, anote os dias de fluxo menstrual e distinga as pequenas perdas castanhas no final como spotting. Use sempre o mesmo critério e siga a orientação do seu profissional de saúde se estiver em acompanhamento. Perdas novas, persistentes ou acompanhadas de dor merecem avaliação."
+      }
+    },
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health: o teu ciclo menstrual",
+      "irregularPeriods": "NHS: menstruação irregular",
+      "missedPeriods": "NHS: ausência ou atraso da menstruação",
+      "pregnancyTests": "NHS: fazer um teste de gravidez"
     }
   }
 }

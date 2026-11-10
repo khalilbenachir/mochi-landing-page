@@ -1,31 +1,40 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleSwitcher } from "@/components/marketing/LocaleSwitcher";
-import { localeRoutePath, type AppLocale } from "@/i18n/routing";
+import { blogPath } from "@/features/blog/locales";
+import { localeRoutePath } from "@/i18n/routing";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { AppStoreBadge } from "./AppStoreBadges";
 import { MobileMenu } from "./MobileMenu";
 
-const NAV = [
-  { href: "#features", key: "features" },
-  { href: "#flavors", key: "flavors" },
-  { href: "#privacy", key: "privacy" },
-  { href: "#faq", key: "faq" },
-] as const;
+type NavKey = "features" | "flavors" | "privacy" | "blog" | "plus" | "faq";
 
-const MOBILE_NAV = [
-  ...NAV.slice(0, 3),
-  { href: "#plus", key: "plus" as const },
-  NAV[3],
-] as const;
+/**
+ * One navigation for every language: only labels (the shared `Navigation` namespace) and
+ * targets are localized. Section links point at the locale's home page; Privacy and Blog are
+ * pages. Blog resolves to the locale's own blog once published, otherwise to the fallback blog.
+ * Desktop keeps four links so the bar fits in every language; the mobile menu lists everything.
+ */
+const DESKTOP_NAV = ["features", "privacy", "blog", "faq"] as const satisfies readonly NavKey[];
+const MOBILE_NAV = ["features", "flavors", "privacy", "blog", "plus", "faq"] as const satisfies readonly NavKey[];
 
-export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = "" }: { homeHref?: string; sectionBase?: string; localeRoute?: string }) {
+type SiteHeaderProps = {
+  /** Brand link target; `#top` on the home page. */
+  homeHref?: string;
+  /** Prefix for section anchors; empty on the home page, the locale home elsewhere. */
+  sectionBase?: string;
+  /** Current page under the locale, kept when switching language (e.g. `/privacy`). */
+  localeRoute?: string;
+  activePage?: "blog";
+};
+
+export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = "", activePage }: SiteHeaderProps) {
   const navigation = useTranslations("Navigation");
   const common = useTranslations("Common");
-  const locale = useLocale() as AppLocale;
-  // Privacy opens the full privacy page on every route; the other links target home sections.
-  const href = (item: (typeof NAV)[number] | (typeof MOBILE_NAV)[number]) =>
-    item.key === "privacy" ? localeRoutePath(locale, "privacy") : `${sectionBase}${item.href}`;
+  const locale = useLocale();
+  const href = (key: NavKey) =>
+    key === "blog" ? blogPath(locale) : key === "privacy" ? localeRoutePath(locale, "privacy") : `${sectionBase}#${key}`;
+  const link = (key: NavKey) => ({ key, href: href(key), label: navigation(key), current: activePage === key ? ("page" as const) : undefined });
 
   return (
     <header className="relative z-10 ml-55 mr-49 flex shrink-0 items-center py-6 max-poster:mx-0 max-poster:py-[12px] max-nav:py-[10px]">
@@ -38,13 +47,14 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
         <span>{common("brand")}</span>
       </a>
       <nav className="absolute left-225 flex gap-45 max-poster:static max-poster:ml-auto max-poster:mr-[28px] max-poster:gap-[28px] max-nav:hidden" aria-label={navigation("mainLabel")}>
-        {NAV.map((item) => (
+        {DESKTOP_NAV.map(link).map((item) => (
           <a
-            key={item.href}
-            href={href(item)}
-            className="text-white text-u-14.5 font-heavy hover:underline hover:underline-offset-4 max-poster:text-[15px]"
+            key={item.key}
+            href={item.href}
+            aria-current={item.current}
+            className="text-white text-u-14.5 font-heavy underline-offset-4 hover:underline aria-[current=page]:underline aria-[current=page]:decoration-2 max-poster:text-[15px]"
           >
-            {navigation(item.key)}
+            {item.label}
           </a>
         ))}
       </nav>
@@ -56,15 +66,16 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
       */}
       <div className="ml-10 max-poster:hidden"><AppStoreBadge compact /></div>
       <MobileMenu label={navigation("openMenu")} navLabel={navigation("mobileLabel")}>
-        {MOBILE_NAV.map((item) => (
+        {MOBILE_NAV.map(link).map((item) => (
           <a
-            key={item.href}
-            href={href(item)}
+            key={item.key}
+            href={item.href}
+            aria-current={item.current}
             // The hovered row turns into a pill: its own divider and the one above it hide.
             className="group/link rounded-[12px] border-b border-hero-menu-link-border px-[14px] py-[12px] font-black text-hero-menu-link-text [transition:background-color_0.2s_ease,color_0.2s_ease,border-color_0.2s_ease] hover:border-transparent hover:bg-hero-menu-link-hover-bg hover:text-hero-menu-icon has-[+a:hover]:border-transparent focus-visible:bg-hero-menu-link-hover-bg"
           >
             <span className="inline-block [transition:translate_0.25s_var(--ease-smooth)] group-hover/link:translate-x-[6px] motion-reduce:group-hover/link:translate-none">
-              {navigation(item.key)}
+              {item.label}
             </span>
           </a>
         ))}

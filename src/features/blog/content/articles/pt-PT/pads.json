@@ -1,0 +1,82 @@
+{
+  "title": "De quanto em quanto tempo deves trocar o penso higiénico?",
+  "description": "Saiba de quanto em quanto tempo mudar o penso higiénico, quando mudar mais cedo e o que verificar à noite ou com pensos diários, com fontes dos CDC e ACOG.",
+  "imageAlt": "Mochi rosa junto de um penso higiénico e um despertador roxo",
+  "intro": "Troca o penso de poucas em poucas horas, antes se estiver cheio, húmido ou desconfortável. Segue a embalagem e adapta ao teu fluxo. Um lembrete ajuda a verificar, mas podes trocar antes de tocar.",
+  "sections": {
+    "day-pads": {
+      "title": "Pensos de dia",
+      "paragraphs": {
+        "first": "O CDC recomenda trocar de poucas em poucas horas, mesmo com fluxo ligeiro. O ACOG indica pelo menos a cada 4 a 8 horas, ou antes se estiver cheio, húmido ou desconfortável. São orientações gerais, não um motivo para esperar se precisas de um penso limpo.",
+        "second": "Com fluxo intenso, verifica mais vezes. Escolhe a absorção adequada e segue a embalagem."
+      },
+      "table": {
+        "caption": "Guia prático de pensos higiénicos e diários",
+        "columns": [
+          "Produto",
+          "Quando trocar",
+          "Tem em conta"
+        ],
+        "rows": [
+          [
+            "Penso de dia",
+            "De poucas em poucas horas",
+            "Antes em caso de fluxo intenso ou desconforto."
+          ],
+          [
+            "Penso de noite",
+            "Conforme a embalagem",
+            "Coloca um limpo ao deitar e troca ao acordar, ou antes se necessário."
+          ],
+          [
+            "Penso diário",
+            "Regularmente e quando estiver húmido",
+            "Para fluxo ligeiro ou pequenas perdas."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Pensos de noite",
+      "paragraphs": {
+        "first": "Escolhe um produto para a noite e respeita o tempo indicado. Coloca um limpo antes de dormir e troca ao acordar, ou antes se estiver cheio ou incomodar.",
+        "second": "A indicação noturno não garante o mesmo tempo para todos os produtos. Se um sangramento intenso te obriga habitualmente a trocas muito frequentes, procura aconselhamento médico."
+      }
+    },
+    "liners": {
+      "title": "Pensos diários",
+      "paragraphs": {
+        "first": "Mais finos, servem para fluxo ligeiro ou pequenas perdas. Troca regularmente e quando estiverem húmidos ou desconfortáveis. Para maior sangramento, usa um produto adequado."
+      }
+    },
+    "signs-to-change": {
+      "title": "Sinais de que está na hora de trocar",
+      "items": {
+        "full": "O penso está cheio, húmido ou desconfortável.",
+        "leaks": "Há uma fuga ou o produto saiu do lugar.",
+        "time": "Chegou a altura indicada na embalagem, mesmo com fluxo ligeiro."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Deixa o Mochi lembrar-te",
+      "paragraphs": {
+        "first": "O lembrete opcional mostra uma contagem decrescente na Dynamic Island e no ecrã bloqueado. As funcionalidades publicadas incluem penso de dia, de noite e diário, com uma duração à tua escolha.",
+        "second": "O temporizador convida a verificar o produto. Não mede quanto está cheio nem confirma que uma duração é adequada. Troca antes sempre que precisares."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "Posso manter o penso até acabar o temporizador?",
+      "answer": "Troca antes se estiver cheio, húmido ou desconfortável. Segue as instruções. O temporizador não avalia o fluxo nem o estado do produto."
+    },
+    "light": {
+      "question": "Preciso de trocar mesmo com fluxo ligeiro?",
+      "answer": "Sim. O CDC recomenda trocar de poucas em poucas horas, mesmo com fluxo ligeiro, e mais frequentemente com fluxo intenso."
+    },
+    "night": {
+      "question": "Todos os pensos noturnos têm o mesmo tempo de uso?",
+      "answer": "Não. Escolhe um produto para a noite e segue a embalagem. Troca antes se estiver cheio ou desconfortável."
+    }
+  }
+}
