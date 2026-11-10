@@ -206,13 +206,18 @@ test.describe("language switcher", () => {
 });
 
 for (const locale of LOCALES) {
-  test(`layout: ${locale} never scrolls horizontally`, async ({ page }) => {
+  test(`layout: ${locale} never scrolls horizontally`, async ({ browser }) => {
     for (const width of [390, 759, 1099, 1440]) {
-      await page.setViewportSize({ width, height: 1000 });
-      await page.goto(localeUrl(locale));
-      await waitForPageAssets(page);
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-      expect(overflow, `${locale} at ${width}px`).toBeLessThanOrEqual(0);
+      // Avoid resizing the previous page's eagerly preloaded images just before navigation.
+      const page = await browser.newPage({ baseURL: baseOrigin, viewport: { width, height: 1000 } });
+      try {
+        await page.goto(localeUrl(locale));
+        await waitForPageAssets(page);
+        const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+        expect(overflow, `${locale} at ${width}px`).toBeLessThanOrEqual(0);
+      } finally {
+        await page.close();
+      }
     }
   });
 }
