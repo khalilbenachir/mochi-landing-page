@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Mochi – calendario menstrual privado para iPhone",
-    "description": "Mochi es un calendario menstrual gratis y privado para iPhone con predicciones del ciclo, recordatorio opcional para cambiar la compresa, registro del ánimo, rachas y 12 sabores de Mochi coleccionables."
+    "title": "Calendario menstrual y ovulación gratis | Mochi para iPhone",
+    "description": "Tu calendario menstrual gratis en iPhone. Registra la regla, calcula la duración de tu ciclo y consulta estimaciones de ovulación. Privado y sin cuenta."
   },
   "Navigation": {
     "mainLabel": "Navegación principal",
@@ -10,9 +10,9 @@
     "features": "Funciones",
     "flavors": "Sabores",
     "privacy": "Privacidad",
+    "blog": "Blog",
     "plus": "Mochi Plus",
-    "faq": "FAQ",
-    "blog": "Blog"
+    "faq": "FAQ"
   },
   "LocaleSwitcher": {
     "label": "Idioma",
@@ -30,10 +30,10 @@
     "backToTop": "Mochi: calendario menstrual, volver arriba"
   },
   "Hero": {
-    "title1": "El calendario",
-    "title2": "menstrual mono",
-    "title3": "y privado",
-    "body": "Mochi es un calendario menstrual gratis para iPhone que predice tu próxima regla, te recuerda cuándo cambiar la compresa y convierte el registro diario en un juego. Sin crear cuenta.",
+    "title1": "Tu calendario",
+    "title2": "menstrual gratis",
+    "title3": "para iPhone",
+    "body": "Con Mochi, registra tu menstruación, síntomas y estado de ánimo en un calendario privado. Conoce tu ciclo con un pequeño compañero, sin crear una cuenta y también sin conexión.",
     "mascotAlt": "Mochi, una mascota rosa sonriente, descansando sobre un cojín color crema",
     "phoneAlt": "Pantalla de inicio de Mochi en iPhone mostrando el día 2 de la regla con los accesos Regla, Ánimo y Síntomas"
   },
@@ -123,12 +123,12 @@
     }
   },
   "Predictions": {
-    "title1": "Predicciones de regla",
-    "title2": "y ovulación que",
-    "title3": "aprenden tu ritmo",
-    "body1": "Mochi lee los ciclos que registras para estimar",
-    "body2": "tu próxima regla, tu ventana fértil y tu ovulación.",
-    "disclaimer": "Las predicciones son estimaciones, no un anticonceptivo.",
+    "title1": "Tu calendario de",
+    "title2": "periodo menstrual",
+    "title3": "y ovulación",
+    "body1": "Registra la fecha de tu última menstruación para calcular la duración de tus ciclos y consultar",
+    "body2": "estimaciones de la próxima regla y la ventana fértil. Si tu ciclo es irregular, las fechas pueden variar más.",
+    "disclaimer": "Una calculadora menstrual no puede saber si estás embarazada. Las estimaciones de ovulación no sirven como anticonceptivo.",
     "phoneLabel": "Calendario de ciclo de Mochi con una regla de cinco días marcada",
     "cycle": "Ciclo",
     "month": "Mar 2025",
@@ -155,8 +155,8 @@
   "Privacy": {
     "title1": "Tu ciclo se queda",
     "title2": "en tu iPhone",
-    "body1": "Fechas de la regla, flujo, síntomas y ánimo",
-    "body2": "nunca van a analíticas, registros ni informes de errores.",
+    "body1": "Tu calendario menstrual es privado:",
+    "body2": "las fechas, el flujo, los síntomas y el estado de ánimo nunca se envían a analíticas, registros ni informes de fallos.",
     "promises": {
       "private": {
         "title": "Privado",
@@ -226,14 +226,14 @@
     }
   },
   "Plans": {
-    "title1": "Descarga gratis.",
+    "title1": "Tu calendario, gratis.",
     "title2": "Mochi Plus",
     "title3": "es opcional.",
     "freeName": "Mochi",
     "freeLabel": "Gratis",
     "plusName": "Mochi Plus",
     "freeFeatures": {
-      "tracking": "Seguimiento y predicciones",
+      "tracking": "Calendario menstrual y estimaciones del ciclo",
       "reminder": "Recordatorio de compresa",
       "rewards": "Ánimo, rachas y sabores",
       "offline": "Sin conexión ni cuenta"
@@ -267,7 +267,7 @@
       },
       "private": {
         "question": "¿Mis datos menstruales son privados?",
-        "answer": "Sí. Las fechas de la regla, el flujo, los síntomas y el ánimo se quedan en tu iPhone y nunca se envían a analíticas, registros ni informes de errores."
+        "answer": "Sí. Fechas, flujo, síntomas y ánimo permanecen por defecto en tu iPhone, salvo que actives la copia de seguridad opcional. Nunca se envían a analíticas, registros técnicos ni informes de fallos. Nuestra política de privacidad explica cómo funciona la copia."
       },
       "offline": {
         "question": "¿Mochi funciona sin cuenta ni internet?",
@@ -288,9 +288,9 @@
     }
   },
   "Closing": {
-    "title": "Saluda a Mochi",
-    "body1": "Sigue tu ciclo, colecciona sabores monos y ten",
-    "body2": "un pequeño amigo contigo en cada fase.",
+    "title": "Conoce tu ciclo con Mochi",
+    "body1": "Descarga tu calendario menstrual gratis",
+    "body2": "en iPhone y lleva tus fechas y síntomas contigo.",
     "imageAlt": "Mochi descansando sobre un cojín",
     "brand": "Mochi: calendario menstrual"
   },

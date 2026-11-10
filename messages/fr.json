@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Mochi – suivi des règles privé sur iPhone",
-    "description": "Mochi est une application gratuite et privée de suivi des règles sur iPhone, avec prédictions du cycle, rappel de changement de protection, suivi de l’humeur, séries et 12 Mochi à collectionner."
+    "title": "Calendrier règles gratuit et ovulation sur iPhone | Mochi",
+    "description": "Votre calendrier des règles gratuit sur iPhone : suivez votre cycle, estimez règles et ovulation et notez vos symptômes. Privé, hors ligne et sans compte."
   },
   "Navigation": {
     "mainLabel": "Navigation principale",
@@ -10,9 +10,9 @@
     "features": "Fonctionnalités",
     "flavors": "Mochi",
     "privacy": "Confidentialité",
+    "blog": "Blog",
     "plus": "Mochi Plus",
-    "faq": "FAQ",
-    "blog": "Blog"
+    "faq": "FAQ"
   },
   "LocaleSwitcher": {
     "label": "Langue",
@@ -30,10 +30,10 @@
     "backToTop": "Mochi : suivi des règles, retour en haut"
   },
   "Hero": {
-    "title1": "Le suivi des règles",
-    "title2": "mignon et privé",
-    "title3": "pour iPhone",
-    "body": "Mochi est une application gratuite sur iPhone qui prédit vos prochaines règles, vous rappelle quand changer de protection et transforme le suivi quotidien en jeu. Aucun compte requis.",
+    "title1": "Votre calendrier",
+    "title2": "des règles gratuit",
+    "title3": "sur iPhone",
+    "body": "Avec Mochi, suivez vos règles, notez vos symptômes et retrouvez les estimations de votre cycle dans un calendrier privé. Sans compte, avec un petit compagnon à chaque phase.",
     "mascotAlt": "Mochi, une mascotte rose et souriante, posée sur un coussin crème",
     "phoneAlt": "Écran d’accueil de Mochi sur iPhone affichant le deuxième jour des règles et les raccourcis Règles, Humeur et Symptômes"
   },
@@ -123,12 +123,12 @@
     }
   },
   "Predictions": {
-    "title1": "Des prédictions de",
-    "title2": "règles et d’ovulation",
-    "title3": "adaptées à votre rythme",
-    "body1": "Mochi analyse les cycles que vous notez pour estimer",
-    "body2": "vos prochaines règles, votre fenêtre fertile et votre ovulation.",
-    "disclaimer": "Les prédictions sont des estimations, pas un moyen de contraception.",
+    "title1": "Un calendrier pour",
+    "title2": "comprendre votre cycle",
+    "title3": "et estimer l’ovulation",
+    "body1": "Notez vos dates dans votre calendrier des règles gratuit en 2026 pour calculer la durée de vos cycles et estimer",
+    "body2": "vos prochaines règles et votre fenêtre fertile, même si votre rythme varie.",
+    "disclaimer": "Un calendrier d’ovulation fournit des estimations : il ne confirme ni l’ovulation ni une grossesse et ne sert pas de contraception.",
     "phoneLabel": "Calendrier de cycle Mochi avec cinq jours de règles indiqués",
     "cycle": "Cycle",
     "month": "Mars 2025",
@@ -155,8 +155,8 @@
   "Privacy": {
     "title1": "Votre cycle reste",
     "title2": "sur votre iPhone",
-    "body1": "Dates des règles, flux, symptômes",
-    "body2": "et humeurs ne sont jamais envoyés aux analyses, journaux ou rapports de plantage.",
+    "body1": "Votre calendrier menstruel reste privé :",
+    "body2": "dates des règles, flux, symptômes et humeurs ne sont jamais envoyés aux analyses, journaux ou rapports de plantage.",
     "promises": {
       "private": {
         "title": "Privé",
@@ -194,7 +194,7 @@
   "Comparison": {
     "title1": "Pourquoi",
     "title2": "Mochi ?",
-    "caption": "Comparaison entre Mochi et une application de règles classique",
+    "caption": "Vous connaissez Flo ? Voici les fonctions de Mochi face à une application de règles classique.",
     "mochi": "Mochi",
     "typical": "Application classique",
     "rows": {
@@ -226,14 +226,14 @@
     }
   },
   "Plans": {
-    "title1": "Téléchargement gratuit.",
+    "title1": "Votre calendrier gratuit.",
     "title2": "Mochi Plus",
     "title3": "est facultatif.",
     "freeName": "Mochi",
     "freeLabel": "Gratuit",
     "plusName": "Mochi Plus",
     "freeFeatures": {
-      "tracking": "Suivi du cycle et prédictions",
+      "tracking": "Calendrier des règles et estimations du cycle",
       "reminder": "Rappel de changement de protection",
       "rewards": "Humeurs, séries et Mochi",
       "offline": "Fonctionne hors ligne, sans compte"
@@ -267,7 +267,7 @@
       },
       "private": {
         "question": "Mes données de règles sont-elles privées ?",
-        "answer": "Oui. Les dates de règles, le flux, les symptômes et les humeurs restent sur votre iPhone et ne sont jamais envoyés aux analyses, journaux ou rapports de plantage."
+        "answer": "Oui. Les dates, le flux, les symptômes et l’humeur restent par défaut sur votre iPhone, sauf si vous activez la sauvegarde facultative. Ils ne sont jamais envoyés aux analyses, journaux techniques ou rapports de plantage. Notre politique de confidentialité explique la sauvegarde."
       },
       "offline": {
         "question": "Mochi fonctionne-t-il sans compte ni Internet ?",
@@ -288,9 +288,9 @@
     }
   },
   "Closing": {
-    "title": "Dites bonjour à Mochi",
-    "body1": "Suivez votre cycle, collectionnez",
-    "body2": "des Mochi adorables et gardez un petit compagnon à chaque phase.",
+    "title": "Votre cycle, avec Mochi",
+    "body1": "Téléchargez votre calendrier des règles",
+    "body2": "gratuit sur iPhone et gardez vos repères à portée de main.",
     "imageAlt": "Mochi posé sur un coussin",
     "brand": "Mochi : suivi des règles"
   },

@@ -3,7 +3,8 @@ import { NextResponse, type NextRequest } from "next/server";
 import { blogPath, isBlogLocale, parseBlogRoute } from "@/features/blog/locales";
 import { routing } from "@/i18n/routing";
 
-const localizedMiddleware = createMiddleware(routing);
+// The URL selects the language; browser preferences and saved cookies must not redirect it.
+const localizedMiddleware = createMiddleware({ ...routing, localeDetection: false });
 // Blog URLs carry their language explicitly: no cookie or Accept-Language redirect, and no
 // hreflang header advertising translations that may not exist (pages emit their own alternates).
 const blogMiddleware = createMiddleware({ ...routing, localeDetection: false, alternateLinks: false });

@@ -7,6 +7,9 @@ import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
 import { LANDING_ASSETS } from "../../src/features/landing/content/assets";
 import { FAQ_IDS, STRUCTURED_FEATURE_IDS } from "../../src/features/landing/content/landing";
+import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
+import { BLOG_LOCALES, blogPath, FALLBACK_BLOG_LOCALE, parseBlogRoute } from "../../src/features/blog/locales";
+import { BLOG_PAGE_SEGMENTS, BLOG_POSTS } from "../../src/features/blog/content/catalog";
 import { LEGAL_PAGE_SLUGS } from "../../src/features/legal/pages";
 import { LOCALE_META, localePath, localeRoutePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
@@ -19,6 +22,7 @@ const MESSAGES = { en, fr, de, es, "pt-BR": ptBR, "pt-PT": ptPT } satisfies Reco
   }
 >;
 
+const blogUrls = BLOG_LOCALES.flatMap((locale) => BLOG_PAGE_SEGMENTS.map((segments) => new URL(blogPath(locale, ...segments), baseOrigin).href));
 const SOCIAL_CARD_URL = `${baseOrigin}${LANDING_ASSETS.socialCard}`;
 
 function pageUrl(locale: AppLocale): string {
@@ -186,12 +190,37 @@ test.describe("structured data", () => {
       expect(features.every(nonEmptyString)).toBe(true);
 
       const questions = faq.mainEntity as JsonObject[];
-      expect(questions).toHaveLength(FAQ_IDS.length);
+      const expectedFaq = locale === "en"
+        ? [
+            ...FAQ_IDS.map((id) => MESSAGES[locale].FAQ.items[id]),
+            ...EDUCATION_FAQ.map(({ id }) => MESSAGES[locale].PeriodEducationFAQ.items[id]),
+          ]
+        : (["bestWay", "meaning", "noBleeding", "whenToStart"] as const).map(
+            (id) => MESSAGES[locale].PeriodEducationFAQ.items[id],
+          );
+      expect(questions).toHaveLength(locale === "en" ? FAQ_IDS.length + EDUCATION_FAQ.length : 4);
+      expect(questions.map((question) => ({
+        question: question.name,
+        answer: (question.acceptedAnswer as JsonObject).text,
+      }))).toEqual(expectedFaq);
+      await expect(page.locator("#faq button[aria-expanded]")).toHaveText(expectedFaq.map((item) => item.question));
       for (const question of questions) {
         expect(nonEmptyString(question.name)).toBe(true);
         expect(nonEmptyString((question.acceptedAnswer as JsonObject).text)).toBe(true);
       }
-      expect(must(questions[0]).name).toBe(MESSAGES[locale].FAQ.items[FAQ_IDS[0]].question);
+
+      for (const question of questions) {
+        const button = page.locator("#faq").getByRole("button", { name: String(question.name), exact: true });
+        await expect(button).toHaveCount(1);
+        const panelId = await button.getAttribute("aria-controls");
+        const panel = page.locator(`[id="${panelId}"]`);
+        await expect(panel.locator("p")).toHaveText(String((question.acceptedAnswer as JsonObject).text));
+        if (locale !== "en") {
+          if (await button.getAttribute("aria-expanded") === "false") await button.click();
+          await expect(panel).toBeVisible();
+          expect(await panel.locator("a[href^='https://']").count()).toBeGreaterThan(0);
+        }
+      }
     });
   }
 });
@@ -212,7 +241,7 @@ test.describe("crawler endpoints", () => {
     );
   });
 
-  test("sitemap.xml lists every locale with full alternates and no lastmod", async ({
+  test("sitemap.xml lists published languages and deliberate article dates", async ({
     request,
   }) => {
     const response = await request.get("/sitemap.xml");
@@ -221,22 +250,29 @@ test.describe("crawler endpoints", () => {
     const body = await response.text();
 
     expect(body).not.toContain("localhost:3000");
-    expect(body).not.toMatch(/<lastmod>/i);
 
     const blocks = [...body.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1] ?? "");
-    expect(blocks).toHaveLength(routing.locales.length * 3);
+    expect(blocks).toHaveLength(routing.locales.length * 3 + blogUrls.length);
 
     const locs = blocks.map((block) => {
       const found = [...block.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] ?? "");
       expect(found).toHaveLength(1);
       return norm(must(found[0]));
     });
-    expect(sorted(locs)).toEqual(sorted(routing.locales.flatMap((locale) => [pageUrl(locale), ...LEGAL_PAGE_SLUGS.map((slug) => new URL(localeRoutePath(locale, slug), baseOrigin).href)])));
+    expect(sorted(locs)).toEqual(sorted([...routing.locales.flatMap((locale) => [pageUrl(locale), ...LEGAL_PAGE_SLUGS.map((slug) => new URL(localeRoutePath(locale, slug), baseOrigin).href)]), ...blogUrls]));
 
     for (const block of blocks) {
+      const canonical = /<loc>([^<]+)<\/loc>/.exec(block)?.[1] ?? "";
+      const blogRoute = parseBlogRoute(new URL(canonical).pathname);
+      const post = BLOG_POSTS.find(({ slug }) => blogRoute?.rest.length === 1 && blogRoute.rest[0] === slug);
+      if (post) expect(block).toContain(`<lastmod>${post.publishedAt}</lastmod>`);
+      else expect(block).not.toContain("<lastmod>");
       const slug = LEGAL_PAGE_SLUGS.find((candidate) => new RegExp(`<loc>[^<]*/${candidate}</loc>`).test(block));
       const expectedUrl = (locale: AppLocale) => slug ? new URL(localeRoutePath(locale, slug), baseOrigin).href : pageUrl(locale);
-      const expectedAlternates: Record<string, string> = {
+      const expectedAlternates: Record<string, string> = blogRoute ? {
+        ...Object.fromEntries(BLOG_LOCALES.map((locale) => [locale, new URL(blogPath(locale, ...blogRoute.rest), baseOrigin).href])),
+        "x-default": new URL(blogPath(FALLBACK_BLOG_LOCALE, ...blogRoute.rest), baseOrigin).href,
+      } : {
         ...Object.fromEntries(routing.locales.map((locale) => [locale, expectedUrl(locale)])),
         "x-default": expectedUrl(routing.defaultLocale),
       };
