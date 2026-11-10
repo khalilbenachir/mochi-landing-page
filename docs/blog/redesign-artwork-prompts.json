@@ -1,0 +1,98 @@
+{
+  "tool": "built-in imagegen",
+  "generatedOn": "2026-11-10",
+  "format": "WebP",
+  "assets": [
+    {
+      "file": "public/blog-art/journal-mochi.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 875,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Transform this Mochi mascot into a cheerful editorial writer illustration for The Mochi Journal masthead. Preserve the pink rounded mochi character, navy happy crescent eyes, rosy cheeks and simple friendly smile. Show Mochi wearing a tilted purple artist beret, holding a yellow pencil and writing in a large open cream notebook in front of it. The whole character and open book should form a compact wide composition, centered with small margins, three-quarter front view. Soft smooth pastel 2.5D cartoon illustration with clear pink edges and simple shading, matching the reference mascot, not a realistic toy photograph. A few yellow doodle rays and two small white sparkles can surround the beret. Transparent background, no cushion, no floor or rectangular panel. Blank notebook with a few abstract pale lines only. No words, letters, numbers, watermark, frame or UI."
+    },
+    {
+      "file": "public/blog-art/tracking-cutout.webp",
+      "reference": "docs/blog/reference-art/tracking-basics.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Remove only the pastel background and ground-plane backdrop from this Mochi editorial illustration. Preserve the mascot, face, props, colors, proportions, highlights, yellow sparkles and other foreground details. Keep the whole foreground group intact and centered. Use a genuinely transparent background with clean soft antialiased edges. Do not add any new objects, words, letters, numbers, labels, watermark or frame. The result will be placed directly on a colored blog article hero."
+    },
+    {
+      "file": "public/blog-art/privacy-cutout.webp",
+      "reference": "docs/blog/reference-art/private-period-app.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Remove only the pastel background and ground-plane backdrop from this Mochi editorial illustration. Preserve the mascot, face, props, colors, proportions, highlights, yellow sparkles and other foreground details. Keep the whole foreground group intact and centered. Use a genuinely transparent background with clean soft antialiased edges. Do not add any new objects, words, letters, numbers, labels, watermark or frame. The result will be placed directly on a colored blog article hero."
+    },
+    {
+      "file": "public/blog-art/methods-cutout.webp",
+      "reference": "docs/blog/reference-art/app-vs-calendar.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Remove only the pastel background and ground-plane backdrop from this Mochi editorial illustration. Preserve the mascot, face, props, colors, proportions, highlights, yellow sparkles and other foreground details. Keep the whole foreground group intact and centered. Use a genuinely transparent background with clean soft antialiased edges. Do not add any new objects, words, letters, numbers, labels, watermark or frame. The result will be placed directly on a colored blog article hero."
+    },
+    {
+      "file": "public/blog-art/pad-care.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a smiling pink Mochi beside a white sanitary pad with pink edging and a small heart, and a friendly purple alarm clock; a little outlined pink heart floats above. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    },
+    {
+      "file": "public/blog-art/cycle-phases.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 70,
+      "alphaQuality": 10,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a smiling pale green matcha Mochi beside a simple circular arrangement of four small symbolic icons: pink droplet, green leaf, warm yellow sun and lavender crescent moon; connect them with clean small purple clockwise arrows; clearly a playful symbolic illustration, not an anatomical diagram. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    },
+    {
+      "file": "public/blog-art/period-predictions.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a smiling pale yellow Mochi leaning beside a pink spiral-bound calendar with a few pink droplet marks in blank calendar squares; no dates or labels. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    },
+    {
+      "file": "public/blog-art/period-cramps.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a cozy lavender Mochi with a slightly tired gentle expression hugging a warm pink hot-water bottle; three simple white rising warmth squiggles, no steam cloud hiding the character. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    },
+    {
+      "file": "public/blog-art/cycle-moods.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a friendly sky-blue Mochi with thoughtful crescent eyes and a little thought bubble containing a pink heart. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    },
+    {
+      "file": "public/blog-art/getting-started.webp",
+      "reference": "public/mochi/hero-mochi.webp",
+      "width": 1200,
+      "height": 800,
+      "quality": 82,
+      "transparent": true,
+      "prompt": "Use case: identity-preserve / compositing. Make a standalone editorial illustration for the Mochi Journal using the supplied mascot as the exact character-family reference. Subject: a cheerful cream-colored Mochi waving beside a simple pink smartphone displaying a small pink Mochi face and abstract pastel cards, no words, no specific controls or real app screenshot. Retain the familiar soft rounded mochi shape, navy face, rosy cheeks, smooth pastel highlights and clear soft colored outlines. Match a cheerful polished 2.5D illustrated website, with simpler shading than a photorealistic toy render. Compact centered landscape group with generous outer margins and all props fully in frame. A few small yellow doodle rays may frame the group. Landscape 3:2 composition. Genuinely transparent background: no backdrop, ground plane, rectangle, photo setting or border. No words, letters, numbers, watermark, header, UI buttons or labels. The image must work on a pastel-colored article card and a colored article hero."
+    }
+  ]
+}
