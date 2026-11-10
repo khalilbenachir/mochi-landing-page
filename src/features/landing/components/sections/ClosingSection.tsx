@@ -22,14 +22,14 @@ export function ClosingSection() {
             <span className="block max-poster:inline">{t("body1")}</span> <span className="block max-poster:inline">{t("body2")}</span>
           </p>
         </div>
-        <Rays shape="closing" className={cn(RAYS, "left-409 top-26 w-36")} />
+        <Rays shape="closing" className={cn(RAYS, "left-409 top-[calc(var(--section-space)-24*var(--spacing))] w-40")} />
         <div className="relative z-3 flex items-center max-poster:mt-[22px]">
           <StoreBadge placement="band" />
           <FreeSticker className="w-82 -ml-8 -mt-16 max-poster:w-[84px] max-poster:mt-[-16px]" rays={false} />
         </div>
-        <Rays shape="closing" className={cn(RAYS, "left-705 top-28 w-38")} flip />
-        <Image className="absolute z-1 left-722 -bottom-7 h-auto w-202 max-w-none max-poster:relative max-poster:left-auto max-poster:bottom-auto max-poster:mb-[-40px] max-poster:mt-[14px] max-poster:w-[min(70vw,340px)]" src={LANDING_ASSETS.closingMochi} alt={t("imageAlt")} width={900} height={648} sizes="(max-width: 1099px) 60vw, 19vw" />
-        <HeartOutline className="absolute z-2 left-914 top-33 w-42 rotate-14 text-white max-poster:hidden" strokeWidth={2.4} />
+        <Rays shape="closing" className={cn(RAYS, "left-705 top-[calc(var(--section-space)-24*var(--spacing))] w-40")} flip />
+        <Image className="absolute z-1 left-780 top-1/2 -translate-y-1/2 h-auto w-220 max-w-none max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:translate-y-0 max-poster:mb-0 max-poster:mt-[14px] max-poster:w-[min(70vw,340px)]" src={LANDING_ASSETS.closingMochi} alt={t("imageAlt")} width={900} height={648} sizes="(max-width: 1099px) 60vw, 19vw" />
+        <HeartOutline className="absolute z-2 left-940 top-[calc(var(--section-space)-36*var(--spacing))] w-42 rotate-14 text-white max-poster:hidden" strokeWidth={2.4} />
       </PosterStage>
     </section>
   );

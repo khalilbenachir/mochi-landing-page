@@ -27,10 +27,10 @@ export function IslandSection() {
           <p className="mt-7 w-290 text-u-[12.6] font-demibold leading-[1.27] max-poster:w-auto max-poster:max-w-[520px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <Rays shape="island" className="absolute z-2 text-sun left-358 top-46 w-38 max-poster:hidden" />
+        <Rays shape="island" className="absolute z-2 text-sun left-358 top-[calc(var(--section-space)-24*var(--spacing))] w-44 max-poster:hidden" />
 
         <div
-          className="relative z-1 ml-47 -mb-[calc(var(--section-space)+60*var(--spacing))] mt-12 self-end h-200 w-512 p-11 border-island-phone-border [border-width:calc(4*var(--spacing))_calc(4*var(--spacing))_0] rounded-t-[calc(92*var(--spacing))] bg-island-phone-bg [box-shadow:0_0_0_calc(1*var(--spacing))_var(--color-island-phone-shadow),0_calc(10*var(--spacing))_calc(30*var(--spacing))_var(--color-island-phone-shadow-2)] max-poster:[--spacing:calc(min(100vw-24px,620px)/512)] max-poster:mx-auto max-poster:mt-[30px] max-poster:mb-0 max-poster:h-150 max-phone:[--spacing:calc((100vw+40px)/512)] max-phone:mx-[-40px] max-phone:h-130"
+          className="relative z-1 ml-47 -mb-[calc(var(--section-space)+20*var(--spacing))] mt-12 self-end h-260 w-512 p-11 border-island-phone-border [border-width:calc(4*var(--spacing))_calc(4*var(--spacing))_0] rounded-t-[calc(92*var(--spacing))] bg-island-phone-bg [box-shadow:0_0_0_calc(1*var(--spacing))_var(--color-island-phone-shadow),0_calc(10*var(--spacing))_calc(30*var(--spacing))_var(--color-island-phone-shadow-2)] max-poster:[--spacing:calc(min(100vw-24px,620px)/512)] max-poster:mx-auto max-poster:mt-[30px] max-poster:mb-0 max-poster:h-150 max-phone:[--spacing:calc((100vw+40px)/512)] max-phone:mx-[-40px] max-phone:h-130"
           role="img"
           aria-label={t("phoneLabel")}
         >
@@ -53,7 +53,7 @@ export function IslandSection() {
           </div>
         </div>
 
-        <Rays shape="island" className="absolute z-2 text-sun left-944 top-50 w-40 max-poster:hidden" />
+        <Rays shape="island" className="absolute z-2 text-sun left-944 top-[calc(var(--section-space)-20*var(--spacing))] w-44 max-poster:hidden" />
       </PosterStage>
     </section>
   );

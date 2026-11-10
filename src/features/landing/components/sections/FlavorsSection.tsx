@@ -29,14 +29,14 @@ export function FlavorsSection() {
           <p className="mt-11 w-215 text-u-15.5 font-bold leading-[1.3] max-poster:w-auto max-poster:max-w-[420px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <ul className="grid w-663 grid-cols-6 auto-rows-fr gap-7 max-poster:[--spacing:calc(min(100vw-32px,760px)/445)] max-poster:w-full max-poster:max-w-[760px] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto max-poster:grid-cols-4 max-tablet:[--spacing:calc((100vw-32px)/330)] max-tablet:grid-cols-3">
+        <ul className="grid w-663 grid-cols-6 auto-rows-fr gap-10 max-poster:[--spacing:calc(min(100vw-32px,760px)/445)] max-poster:w-full max-poster:max-w-[760px] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto max-poster:grid-cols-4 max-tablet:[--spacing:calc((100vw-32px)/330)] max-tablet:grid-cols-3">
           {FLAVOR_CATALOG.map((flavor) => (
             <li
               key={flavor.id}
-              className="group flex min-w-0 flex-col items-center pt-6 pb-8 rounded-u-12 bg-flavors-card-bg text-ink-slate [box-shadow:0_calc(3*var(--spacing))_calc(6*var(--spacing))_var(--color-flavors-card-shadow)] text-center"
+              className="group flex min-w-0 flex-col items-center pt-10 pb-12 rounded-u-12 bg-flavors-card-bg text-ink-slate [box-shadow:0_calc(3*var(--spacing))_calc(6*var(--spacing))_var(--color-flavors-card-shadow)] text-center"
             >
               <Image
-                className="h-auto w-62 mb-3 [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-3 group-hover:-rotate-4 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none"
+                className="h-auto w-72 mb-5 [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-3 group-hover:-rotate-4 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none"
                 src={FLAVOR_CARD_ASSETS[flavor.id]}
                 alt={`${t(`items.${flavor.id}.name`)} Mochi`}
                 width={380}

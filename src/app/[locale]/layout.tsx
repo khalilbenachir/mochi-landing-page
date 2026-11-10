@@ -1,4 +1,5 @@
 import type { Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Nunito } from "next/font/google";
@@ -39,6 +40,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <body className="flex min-h-dvh flex-col">
         {children}
         <SiteFooter homePath={localePath(locale)} />
+        <Analytics />
       </body>
     </html>
   );

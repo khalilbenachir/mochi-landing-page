@@ -102,7 +102,7 @@
 
   /* Landing page */
   --color-landing-canvas: #f7f4ef;
-  --color-landing-account-band: #fff4e8;
+  --color-landing-account-band: #eee8fa;
   --color-landing-account-text: #16284c;
   --color-landing-account-card-shadow: rgba(79, 54, 103, 0.14);
   --color-landing-account-icon: #574cc2;
@@ -255,6 +255,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 96px;
   }
 
   body {

@@ -25,7 +25,7 @@ function CyclePhone() {
 
   return (
     <div
-      className="relative z-1 -mb-[calc(var(--section-space)+16*var(--spacing))] self-end h-175 w-190 p-5 border-[length:calc(2*var(--spacing))] border-prediction-phone-border rounded-t-[calc(28*var(--spacing))] bg-prediction-phone-bg [box-shadow:0_calc(6*var(--spacing))_calc(16*var(--spacing))_var(--color-prediction-phone-shadow)] max-poster:[--spacing:calc(min(44vw,300px)/190)] max-poster:mb-0 max-poster:mt-[28px] max-poster:h-168 max-poster:self-end max-phone:[--spacing:calc((100vw-42px)*0.52/190)]"
+      className="relative z-1 -mb-(--section-space) self-end h-220 w-190 p-5 border-[length:calc(2*var(--spacing))] border-prediction-phone-border rounded-t-[calc(28*var(--spacing))] bg-prediction-phone-bg [box-shadow:0_calc(6*var(--spacing))_calc(16*var(--spacing))_var(--color-prediction-phone-shadow)] max-poster:[--spacing:calc(min(44vw,300px)/190)] max-poster:mb-0 max-poster:mt-[28px] max-poster:h-168 max-poster:self-end max-phone:[--spacing:calc((100vw-42px)*0.52/190)]"
       role="img"
       aria-label={t("phoneLabel")}
     >
@@ -98,11 +98,11 @@ export function PredictionSection() {
           </p>
           <small className="mt-7 block text-prediction-note-text text-u-[11.6] italic font-semibold max-poster:text-[14px]">{t("disclaimer")}</small>
         </div>
-        <Rays shape="prediction" className="absolute left-372 top-29 w-34 text-sun max-poster:hidden" />
+        <Rays shape="prediction" className="absolute left-372 top-[calc(var(--section-space)-24*var(--spacing))] w-40 text-sun max-poster:hidden" />
         <CyclePhone />
         <NextPeriodCard />
-        <div className="relative ml-22 mb-6 self-end w-130 after:absolute after:left-[-6%] after:right-[-6%] after:-bottom-6 after:h-14 after:rounded-[50%] after:bg-prediction-mascot-bg after:opacity-85 max-poster:hidden">
-          <Heart className="absolute z-2 text-cycle-next-period -right-4 -top-24 w-22 -rotate-12" />
+        <div className="relative ml-14 mb-6 self-center w-150 after:absolute after:left-[-6%] after:right-[-6%] after:-bottom-6 after:h-14 after:rounded-[50%] after:bg-prediction-mascot-bg after:opacity-85 max-poster:hidden">
+          <Heart className="absolute z-2 text-cycle-next-period -right-4 -top-28 w-26 -rotate-12" />
           <Heart className="absolute z-2 text-cycle-next-period -right-24 -top-2 w-20 rotate-14" />
           <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.predictMochi} alt={t("mascotAlt")} width={368} height={264} sizes="(max-width: 1099px) 40vw, 15vw" />
         </div>

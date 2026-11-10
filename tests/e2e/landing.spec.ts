@@ -3,6 +3,13 @@ import { baseOrigin } from "./origin";
 import { waitForPageAssets } from "./assets";
 import { blogPath } from "../../src/features/blog/locales";
 
+test.beforeEach(async ({ page }) => {
+  // Vercel serves this script on deployed sites; the local Next.js server does not.
+  await page.route("**/_vercel/insights/script.js", (route) =>
+    route.fulfill({ contentType: "application/javascript", body: "" }),
+  );
+});
+
 const LOCALES = ["en", "fr", "de", "es", "pt-BR", "pt-PT"] as const;
 type Locale = (typeof LOCALES)[number];
 const localeUrl = (locale: Locale) => (locale === "en" ? "/" : `/${locale}`);
@@ -25,7 +32,7 @@ async function expectLocalizedFooter(page: Page, locale: Locale) {
 }
 
 const sectionIds = [
-  "top",
+  "hero",
   "features",
   "moods",
   "flavors",
