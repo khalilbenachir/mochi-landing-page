@@ -16,7 +16,9 @@
     "test:e2e:update": "npm run build:test && playwright test --update-snapshots",
     "check:styles": "vitest run src/app/style-policy.test.ts",
     "check:assets": "vitest run src/features/landing/content/assets.test.ts",
-    "check": "npm run check:styles && npm run check:assets && npm run typecheck && npm run lint && npm test && npm run build:test"
+    "check": "npm run check:styles && npm run check:assets && npm run format:check && npm run typecheck && npm run lint && npm test && npm run build:test",
+    "format": "prettier --write \"src/features/blog/**/*.{ts,tsx}\" \"src/app/[[]locale]/blog/**/*.tsx\"",
+    "format:check": "prettier --check \"src/features/blog/**/*.{ts,tsx}\" \"src/app/[[]locale]/blog/**/*.tsx\""
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.5.0",
@@ -38,6 +40,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^15.5.29",
+    "prettier": "3.9.10",
     "typescript": "^5.9.3",
     "vitest": "^4.1.12"
   },
