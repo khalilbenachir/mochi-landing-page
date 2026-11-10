@@ -65,7 +65,7 @@ src/
       content/            site configuration, product catalog, explicit asset manifest and visual-variants.ts
   i18n/                   shared typed routing and request configuration
   lib/utils.ts            shared utility functions
-messages/                 English source messages and French translations
+messages/                 English source messages and French, German, Spanish, Brazilian and European Portuguese translations
 public/mochi/             app assets plus the optimized transparent hero cutout
 tests/e2e/                Playwright routes, keyboard, and visual baselines
 design/references/        design reference images (gitignored, never deployed)
@@ -75,7 +75,10 @@ Principles:
 
 - **Server first.** The complete landing page and its translations are server-rendered. Only the
   Dynamic Island countdown hydrates; the burger and FAQ use native `details` elements.
-- **Locale first.** English uses the canonical `/` route and French uses `/fr`. Metadata, alternate
+- **Locale first.** English uses the canonical `/` route; French, German, Spanish, Brazilian and
+  European Portuguese use `/fr`, `/de`, `/es`, `/pt-BR` and `/pt-PT`. URLs select the language:
+  browser preferences and saved language cookies do not redirect canonical pages. The language
+  switcher selects a language explicitly and preserves the current page. Metadata, alternate
   links, sitemap entries, accessibility labels and JSON-LD are generated from the same typed messages.
 - **Feature ownership is explicit.** Landing components, catalog data, site configuration and the
   static asset manifest live under `features/landing`; reusable primitives and locale infrastructure
@@ -126,6 +129,41 @@ Privacy and Terms layout checks also cover 320 and 800px. Shared asset preparati
 preloading lazy artwork, preventing image-attribute changes from racing React hydration.
 Baselines change only for reviewed, intentional visual changes (`npm run test:e2e:update`).
 
+## CI/CD
+
+`.github/workflows/ci-cd.yml` (actions pinned to commit SHAs) runs `npm run check` and the screenshot-free SEO e2e suite on every
+pull request and push to `main` (visual baselines are macOS-only, so run `npm run test:e2e` locally).
+When checks pass, pull requests get a Vercel preview deployment with its URL commented on the PR,
+and `main` deploys to production. `vercel.json` disables Vercel's own Git deployments so each commit
+deploys once, and only after CI passes.
+
+Required GitHub repository secrets:
+
+- `VERCEL_TOKEN`: a token from vercel.com/account/tokens.
+- `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`: from `.vercel/project.json` after running `vercel link`.
+
+The `NEXT_PUBLIC_*` variables are read from the Vercel project's Preview and Production
+environments (`vercel pull`), so set them there.
+
+## Blog
+
+`/blog` contains nine guides, published in all six site languages, with a featured article, related reading (same category
+first), category filters that can be shared as `?category=`, and `/blog/editorial-policy`.
+Article pages are statically rendered with linked sources, deliberate publication dates,
+canonical metadata, `BlogPosting` JSON-LD and a generated social card per article
+(`opengraph-image.tsx` / `twitter-image.tsx`).
+
+Which languages publish the blog (and the sourced home-page education FAQ) is decided in one
+place: `BLOG_LOCALES` in `src/features/blog/locales.ts`. The header and footer are identical in
+every language and always link to Blog: to the language's own blog once published, otherwise to
+the English blog. All six current locales publish their own blog. If a supported locale is removed
+from `BLOG_LOCALES`, its blog URLs redirect temporarily (307) to the English page until republished. All blog links,
+canonicals, hreflang alternates, JSON-LD and sitemap entries are built from `blogRoutes(locale)`. Interface labels live in the `Blog` and `PeriodEducationFAQ` message
+namespaces and are read through next-intl; article prose lives in one JSON file per article
+under `src/features/blog/content/articles/<locale>/`. See `src/features/blog/README.md` for
+how to add an article or a language, the editorial workflow and artwork provenance
+(prompts are in `docs/blog/`).
+
 ## Before launch
 
 - Set `NEXT_PUBLIC_APP_STORE_URL` to the real App Store destination.
@@ -172,7 +210,7 @@ public bundle.
   build fails without them. Outside production the contact address falls back to `test@mochi.app`.
 - Until `NEXT_PUBLIC_APP_STORE_URL` is set, App Store buttons open the localized home download section.
 - `NEXT_PUBLIC_NEWSLETTER_FORM_ACTION` is optional and accepts your newsletter provider's HTTPS form
-  endpoint, not a contact email. Leave it blank to open an email request to `support@mochiii.app`.
+  endpoint, not a contact email. Leave it blank to open an email request to `hello@mochiii.app`.
   An email address entered here warns and uses that same fallback; other invalid URLs fail the build.
 - `npm run build:test` pins all three (`test@mochi.app`, no App Store URL), so tests and
   visual baselines do not depend on your local `.env`.

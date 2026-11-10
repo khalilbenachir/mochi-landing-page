@@ -1,0 +1,165 @@
+{
+  "pages": 84,
+  "hreflangIssues": [],
+  "unreachable": [],
+  "maxClickDepth": 3,
+  "brokenInternalLinks": [],
+  "mobile": [
+    {
+      "path": "/",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/de",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/es",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/pt-BR",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/pt-PT",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/blog",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/blog/period-cramps-what-helps",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/privacy",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    },
+    {
+      "path": "/terms",
+      "overflow": false,
+      "width": 390,
+      "viewport": 390,
+      "brokenImages": []
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/",
+      "requestHeaders": {
+        "Accept-Language": "fr"
+      },
+      "status": 307,
+      "location": "/fr"
+    },
+    {
+      "path": "/privacy",
+      "requestHeaders": {
+        "Accept-Language": "de"
+      },
+      "status": 307,
+      "location": "/de/privacy"
+    },
+    {
+      "path": "/fr",
+      "requestHeaders": {
+        "Accept-Language": "en"
+      },
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/en",
+      "requestHeaders": {},
+      "status": 307,
+      "location": "/"
+    },
+    {
+      "path": "/fr/blog",
+      "requestHeaders": {},
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/not-a-page",
+      "requestHeaders": {},
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/blog/not-a-page",
+      "requestHeaders": {},
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/blog?category=privacy",
+      "requestHeaders": {},
+      "status": 200,
+      "location": null
+    }
+  ],
+  "noJavaScript": [
+    {
+      "path": "/",
+      "h1": [
+        "The cute, private period tracker for iPhone"
+      ],
+      "textLength": 3473,
+      "articleLinks": 0
+    },
+    {
+      "path": "/blog",
+      "h1": [
+        "The Mochi Journal"
+      ],
+      "textLength": 1304,
+      "articleLinks": 12
+    },
+    {
+      "path": "/blog/period-cramps-what-helps",
+      "h1": [
+        "Cramps: what helps, and when to see a doctor"
+      ],
+      "textLength": 3298,
+      "articleLinks": 5
+    }
+  ],
+  "tests": {
+    "passed": 60,
+    "failed": 0
+  }
+}

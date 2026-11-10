@@ -1,0 +1,122 @@
+name: CI/CD
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  check:
+    name: Lint, typecheck, test, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # Style policy, asset manifest, typecheck, lint, unit tests and the test build.
+      - run: npm run check
+
+      # Visual baselines are captured on macOS (`*-darwin.png`), so CI runs only the
+      # screenshot-free SEO suite against the test build produced above.
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: SEO e2e
+        run: npx playwright test tests/e2e/seo.spec.ts
+
+  deploy-preview:
+    name: Deploy preview
+    needs: check
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    # Deploy jobs only: the Vercel CLI reads it, so it never appears in command arguments.
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    permissions:
+      contents: read
+      pull-requests: write
+    environment:
+      name: preview
+      url: ${{ steps.deploy.outputs.url }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm install --global vercel@65.14.0
+
+      - run: vercel pull --yes --environment=preview
+
+      - run: vercel build
+
+      - id: deploy
+        run: echo "url=$(vercel deploy --prebuilt)" >> "$GITHUB_OUTPUT"
+
+      - name: Comment preview URL
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
+        env:
+          PREVIEW_URL: ${{ steps.deploy.outputs.url }}
+        with:
+          script: |
+            const marker = "<!-- vercel-preview -->";
+            const body = `${marker}\n🚀 Preview deployed: ${process.env.PREVIEW_URL}\n\nCommit: ${context.payload.pull_request.head.sha}`;
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number });
+            const existing = comments.find((c) => c.body?.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
+
+  deploy-production:
+    name: Deploy production
+    needs: check
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm install --global vercel@65.14.0
+
+      - run: vercel pull --yes --environment=production
+
+      - run: vercel build --prod
+
+      - id: deploy
+        run: echo "url=$(vercel deploy --prebuilt --prod)" >> "$GITHUB_OUTPUT"
