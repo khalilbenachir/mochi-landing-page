@@ -5,12 +5,19 @@ export const NEWSLETTER_RECIPIENT = "support@mochiii.app";
 
 /**
  * Resolve the optional third-party form endpoint. An unset value keeps the email-request
- * fallback; anything set must be an absolute HTTPS URL, so a typo or an insecure endpoint
- * fails the build instead of silently posting reader emails somewhere unexpected.
+ * fallback. A mistakenly configured email address also keeps that fallback, with a
+ * warning. Other values must be absolute HTTPS URLs so reader emails are not posted
+ * to an unexpected destination.
  */
 export function resolveNewsletterAction(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
   if (!trimmed) return undefined;
+  if (/^[^\s@?&#:/]+@[^\s@?&#:/]+\.[a-z]+$/i.test(trimmed)) {
+    console.warn(
+      `${ACTION_ENV} expects an HTTPS form endpoint, not an email address. Using the email-request fallback to ${NEWSLETTER_RECIPIENT}. Remove this setting or replace it with your newsletter provider's HTTPS form URL.`,
+    );
+    return undefined;
+  }
   let url: URL;
   try {
     url = new URL(trimmed);

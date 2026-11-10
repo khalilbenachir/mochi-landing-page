@@ -171,5 +171,8 @@ public bundle.
 - `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` are required for production builds; the
   build fails without them. Outside production the contact address falls back to `test@mochi.app`.
 - Until `NEXT_PUBLIC_APP_STORE_URL` is set, App Store buttons open the localized home download section.
+- `NEXT_PUBLIC_NEWSLETTER_FORM_ACTION` is optional and accepts your newsletter provider's HTTPS form
+  endpoint, not a contact email. Leave it blank to open an email request to `support@mochiii.app`.
+  An email address entered here warns and uses that same fallback; other invalid URLs fail the build.
 - `npm run build:test` pins all three (`test@mochi.app`, no App Store URL), so tests and
   visual baselines do not depend on your local `.env`.
