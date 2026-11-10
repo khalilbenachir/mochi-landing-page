@@ -1,6 +1,5 @@
 import type { ComponentProps } from "react";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
-import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { localePath } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { useBlogLocale } from "../i18n";
@@ -12,15 +11,7 @@ function Root({ className, ...props }: ComponentProps<"main">) {
 /** The shared site header, pointed at this locale's home; `route` keeps the page when switching language. */
 function Header({ route }: { route: string }) {
   const home = localePath(useBlogLocale());
-  return (
-    <div className="relative z-20 bg-hero-band text-white">
-      <PosterStage.Root>
-        <PosterStage.Content spacing="none" className="max-poster:px-[24px] max-phone:px-[20px]">
-          <SiteHeader homeHref={home} sectionBase={home} localeRoute={route} activePage="blog" />
-        </PosterStage.Content>
-      </PosterStage.Root>
-    </div>
-  );
+  return <SiteHeader homeHref={home} sectionBase={home} localeRoute={route} activePage="blog" />;
 }
 
 function Container({ className, ...props }: ComponentProps<"div">) {

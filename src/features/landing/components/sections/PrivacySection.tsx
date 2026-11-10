@@ -80,10 +80,10 @@ export function PrivacySection() {
           </p>
         </div>
 
-        <div className="relative z-1 ml-43 mt-4 -mb-[calc(var(--section-space)+17*var(--spacing))] w-86 self-end col-start-1 row-start-2 max-poster:[--spacing:calc(min(100vw-32px,420px)/236)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[10px] max-poster:h-46 max-poster:w-80 max-poster:overflow-visible max-poster:[clip-path:inset(-40px_-40px_0_-40px)]" aria-hidden="true">
+        <div className="relative z-1 ml-43 mt-24 w-120 self-end col-start-1 row-start-2 max-poster:[--spacing:calc(min(100vw-32px,420px)/236)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[28px] max-poster:w-100" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
-          <HuggedHeart className="absolute left-48 top-17 w-32 [filter:drop-shadow(0_calc(1*var(--spacing))_0_var(--color-privacy-hug-shadow))]" />
-          <Rays shape="privacy" className="absolute left-90 top-5 w-24 text-privacy-gold max-poster:hidden" />
+          <HuggedHeart className="absolute left-68 top-24 w-44 [filter:drop-shadow(0_calc(1*var(--spacing))_0_var(--color-privacy-hug-shadow))]" />
+          <Rays shape="privacy" className="absolute left-124 top-8 w-28 text-privacy-gold max-poster:hidden" />
         </div>
 
         <ul className="relative grid col-start-2 row-start-1 row-end-3 w-360 grid-cols-[repeat(3,minmax(0,1fr))] max-poster:[--spacing:calc(min(100vw-32px,600px)/360)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[30px]">

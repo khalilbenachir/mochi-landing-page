@@ -27,13 +27,13 @@ const posterRoot = cva("relative mx-auto @container max-poster:@container-normal
 const posterContent = cva("relative max-poster:[--spacing:1px]", {
   variants: {
     grid: {
-      "1024": "[--spacing:calc(100cqw/1024)] [--section-space:calc(28*var(--spacing))]",
-      "800": "[--spacing:calc(100cqw/800)] [--section-space:calc(26*var(--spacing))]",
+      "1024": "[--spacing:calc(100cqw/1024)] [--section-space:calc(96*var(--spacing))]",
+      "800": "[--spacing:calc(100cqw/800)] [--section-space:calc(90*var(--spacing))]",
     },
     /** `section` pads the band top and bottom; `none` leaves it flush (the footer). */
     spacing: {
       section:
-        "py-(--section-space) max-poster:[--section-space:56px] max-phone:[--section-space:44px]",
+        "py-(--section-space) max-poster:[--section-space:112px] max-phone:[--section-space:88px]",
       none: "",
     },
     /**

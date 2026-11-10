@@ -10,10 +10,13 @@ import { PlansSection } from "./sections/PlansSection";
 import { PredictionSection } from "./sections/PredictionSection";
 import { PrivacySection } from "./sections/PrivacySection";
 
+import { SiteHeader } from "./shared/SiteHeader";
+
 /** The landing page composition, section by section. */
 export function LandingPage() {
   return (
-    <main className="isolate flex-1 bg-landing-canvas text-foreground">
+    <main id="top" className="isolate flex-1 bg-landing-canvas text-foreground">
+      <SiteHeader />
       <HeroSection />
       <IslandSection />
       <MoodSection />

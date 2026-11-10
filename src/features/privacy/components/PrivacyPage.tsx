@@ -30,9 +30,7 @@ export function PrivacyPage() {
 
   return (
     <main id="top" className="flex-1 bg-white text-ink-navy">
-      <div className="relative z-20 bg-hero-band text-white">
-        <PosterStage spacing="none" className="max-poster:px-[clamp(20px,4vw,40px)]"><SiteHeader homeHref={home} sectionBase={home} localeRoute="/privacy" /></PosterStage>
-      </div>
+      <SiteHeader homeHref={home} sectionBase={home} localeRoute="/privacy" />
 
       <section aria-labelledby="privacy-title" className="overflow-hidden bg-policy-hero text-white">
         <PosterStage spacing="none" className="grid min-h-287 grid-cols-[56fr_44fr] items-center px-56 max-nav:grid-cols-1 max-nav:px-[24px] max-nav:pt-[28px]">

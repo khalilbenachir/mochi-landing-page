@@ -13,7 +13,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
   const baseId = useId();
 
   return (
-    <div className="grid content-start gap-3.5 max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-poster:w-full max-poster:max-w-[720px] max-poster:gap-[8px]">
+    <div className="grid content-start gap-8 max-poster:mx-auto max-poster:mb-0 max-poster:mt-[36px] max-poster:w-full max-poster:max-w-[720px] max-poster:gap-[12px]">
       {items.map(({ id, question, answer, sources, sourcesLabel }) => {
         const open = openId === id;
         const buttonId = `${baseId}-${id}-q`;
@@ -32,7 +32,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
                 aria-expanded={open}
                 aria-controls={panelId}
                 onClick={() => setOpenId(open ? null : id)}
-                className="flex min-h-28 w-full cursor-pointer items-center justify-between gap-12 py-4 pl-19 pr-22 text-left focus-visible:rounded-u-10 focus-visible:[outline:3px_solid_var(--color-brand-rose)] focus-visible:outline-offset-2 max-poster:min-h-[50px] max-poster:gap-[14px] max-poster:py-[10px] max-poster:px-[18px]"
+                className="flex min-h-[44px] w-full cursor-pointer items-center justify-between gap-12 py-7 pl-19 pr-22 text-left focus-visible:rounded-u-10 focus-visible:[outline:3px_solid_var(--color-brand-rose)] focus-visible:outline-offset-2 max-poster:min-h-[50px] max-poster:gap-[14px] max-poster:py-[10px] max-poster:px-[18px]"
               >
                 <span>{question}</span>
                 <span

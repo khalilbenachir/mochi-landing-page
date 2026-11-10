@@ -16,13 +16,12 @@ export function NotFoundPage() {
 
   return (
     <main className="flex flex-1 flex-col bg-hero-band text-white">
+      <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
       <section className="relative flex-1 overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]">
         <PosterStage
           spacing="none"
           className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
         >
-          <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
-
           <div className="relative flex flex-1 flex-col items-center justify-center px-40 pt-16 text-center max-poster:px-0 max-poster:pt-[18px] max-phone:pt-[10px]">
             <Petal className="absolute left-94 top-174 w-28 text-hero-petal -rotate-35 max-poster:left-[4%] max-poster:top-[32%] max-poster:w-[26px]" />
             <Petal className="absolute right-88 top-130 w-24 text-hero-petal rotate-38 max-poster:right-[4%] max-poster:top-[25%] max-poster:w-[22px]" />

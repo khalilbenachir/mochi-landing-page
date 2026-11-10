@@ -22,9 +22,8 @@ export function PlansSection() {
         <h2 className="poster:text-balance relative z-2 ml-31 self-start text-u-26.5 font-max leading-[1.2] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
           <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span> <span className="block max-poster:inline">{t("title3")}</span>
         </h2>
-        <Rays shape="burst" className={cn(RAYS, "left-208 top-69 w-26")} flip />
-        <HeartOutline className="absolute left-222 bottom-24 w-28 rotate-10 text-brand-coral max-poster:hidden" strokeWidth={2.6} />
-        <div className="absolute left-102 bottom-0 h-45 w-104 overflow-hidden max-poster:hidden" aria-hidden="true">
+        <HeartOutline className="absolute left-222 bottom-[calc(var(--section-space)*0.45)] w-32 rotate-10 text-brand-coral max-poster:hidden" strokeWidth={2.6} />
+        <div className="absolute left-90 bottom-[calc(var(--section-space)*0.2)] w-120 max-poster:hidden" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
         </div>
 
@@ -33,7 +32,7 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-1 left-553 top-[calc(var(--section-space)-48*var(--spacing))] flex w-146 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-12 max-poster:mt-[22px]" aria-hidden="true">
+        <div className="absolute z-1 left-540 top-[calc(var(--section-space)-60*var(--spacing))] flex w-180 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-12 max-poster:mt-[22px]" aria-hidden="true">
           <Rays shape="burst" className={cn(RAYS, "-left-22 top-6 w-20")} />
           <Image className="h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.chocolate} alt="" width={380} height={262} sizes="8vw" />
           <Image className="-ml-2 h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.hojicha} alt="" width={380} height={262} sizes="8vw" />

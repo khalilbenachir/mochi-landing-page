@@ -47,7 +47,7 @@ export function ComparisonSection() {
   return (
     <section id="why" className="relative overflow-hidden bg-white text-ink-navy">
       <PosterStage grid="800" className="grid grid-cols-[calc(270*var(--spacing))_calc(504*var(--spacing))] max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
-        <Rays shape="burst" className={cn(RAYS, "left-40 top-43 w-36")} />
+        <Rays shape="burst" className={cn(RAYS, "left-40 top-[calc(var(--section-space)-30*var(--spacing))] w-40")} />
         <h2 className="relative z-2 ml-88 self-center text-u-35 font-max leading-[1.12] tracking-[-0.02em] max-poster:ml-0 max-poster:text-center max-poster:text-[clamp(36px,6.4vw,50px)] max-phone:text-[34px]">
           <span className="relative block w-fit max-poster:inline max-poster:whitespace-normal">
             {t("title1")}
@@ -55,11 +55,35 @@ export function ComparisonSection() {
             <Rays shape="burst" className={cn(RAYS, "left-[max(calc(100%+12*var(--spacing)),calc(116*var(--spacing)))] top-[calc(20.71*var(--spacing))] w-28")} flip />
           </span> <span className="ml-17 block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
         </h2>
-        <div className="absolute z-1 left-12 top-112 w-100 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-matcha-bg max-poster:hidden" aria-hidden="true">
+        <div className="absolute z-1 left-60 bottom-[calc(var(--section-space)*0.25)] w-130 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-matcha-bg max-poster:hidden" aria-hidden="true">
           <Image className="relative z-1 h-auto w-full" src={FLAVOR_CARD_ASSETS.matcha} alt="" width={380} height={262} sizes="12vw" />
         </div>
 
-        <table className="relative w-504 border-separate border-spacing-0 text-u-[10.6] max-poster:[--spacing:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:[--spacing:1px] max-tablet:w-full max-tablet:text-[13px]">
+        <div className="hidden max-tablet:mt-[24px] max-tablet:block">
+          <ul className="m-0 grid list-none gap-[12px] p-0">
+            {COMPARISON_ROW_IDS.map((id) => (
+              <li key={id} className="overflow-hidden rounded-[16px] border border-comparison-row-header-border">
+                <h3 className="flex items-center gap-[10px] px-[16px] py-[14px] text-[16px] font-extrabold leading-[1.3]">
+                  <RowIcon name={ROW_ICONS[id]} />
+                  {t(`rows.${id}.feature`)}
+                </h3>
+                <dl className="text-[15px] leading-[1.4]">
+                  <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] items-start gap-[12px] bg-comparison-mochi-cell-bg px-[16px] py-[12px]">
+                    <dt className="font-extrabold">{t("mochi")}</dt>
+                    <dd className="m-0 min-w-0 font-black [overflow-wrap:anywhere]">{t(`rows.${id}.mochi`)}</dd>
+                  </div>
+                  <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] items-start gap-[12px] bg-comparison-typical-cell-bg px-[16px] py-[12px]">
+                    <dt className="font-demibold">{t("typical")}</dt>
+                    <dd className="m-0 min-w-0 font-demibold [overflow-wrap:anywhere]">{t(`rows.${id}.typical`)}</dd>
+                  </div>
+                </dl>
+              </li>
+            ))}
+          </ul>
+          <p className={showCaption ? "mt-[14px] text-[13px] font-semibold leading-[1.4]" : "sr-only"}>{t("caption")}</p>
+        </div>
+
+        <table className="relative w-504 border-separate border-spacing-0 text-u-[10.6] max-poster:[--spacing:calc(min(100vw-32px,720px)/504)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-tablet:hidden max-tablet:[--spacing:1px] max-tablet:w-full max-tablet:text-[13px]">
           <caption className={showCaption ? "caption-bottom pt-10 text-u-11 font-semibold leading-[1.4] max-poster:pt-[14px] max-poster:text-[13px]" : "sr-only"}>{t("caption")}</caption>
           <thead>
             <tr>

@@ -5,7 +5,6 @@ import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadg
 import { Petal, Rays, Sparkle } from "@/features/landing/components/shared/decor";
 import { FreeSticker } from "@/features/landing/components/shared/FreeSticker";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
-import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 
 /** Mascot art for the hero. Swap this one path to change the illustration. */
 const HERO_MASCOT = { src: LANDING_ASSETS.heroMochi, width: 1400, height: 1120 } as const;
@@ -15,15 +14,13 @@ export function HeroSection() {
 
   return (
     <section
-      id="top"
+      id="hero"
       className="relative overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]"
     >
       <PosterStage bleed="bottom" className="pt-0 max-poster:px-[clamp(20px,4vw,40px)]">
-        <SiteHeader />
-
-        <div className="mt-14 grid pl-58 grid-cols-[calc(390*var(--spacing))_1fr] max-poster:mt-0 max-poster:block max-poster:pl-0">
+        <div className="mt-48 grid pl-58 grid-cols-[calc(390*var(--spacing))_1fr] max-poster:mt-[32px] max-poster:block max-poster:pl-0">
           <div className="relative z-5 self-center max-poster:max-w-[640px] max-poster:mx-auto max-poster:mt-[18px] max-poster:text-center max-nav:mt-[10px]">
-            <h1 className="text-white text-u-41 font-max leading-[0.95] tracking-[-0.015em] [text-shadow:0_calc(2*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:text-[clamp(42px,8.4vw,66px)] max-phone:text-[40px]">
+            <h1 className="text-white text-u-41 font-max leading-[0.95] tracking-[-0.015em] [text-shadow:0_calc(2*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:text-[clamp(42px,8.4vw,66px)] max-phone:text-[clamp(32px,10.25vw,40px)]">
               <span className="block whitespace-nowrap">{t("title1")}</span> <span className="block whitespace-nowrap">{t("title2")}</span> <span className="block whitespace-nowrap">{t("title3")}</span>
             </h1>
             <p className="mt-8 w-332 text-u-[13.6] font-demibold leading-[1.27] max-poster:w-auto max-poster:max-w-[520px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-nav:text-[16px] max-phone:text-[15px]">{t("body")}</p>
@@ -40,7 +37,7 @@ export function HeroSection() {
             <Petal className="absolute z-1 text-hero-petal -left-68 top-198 w-30 -rotate-35 max-poster:left-[2%] max-poster:top-[64%] max-poster:w-[28px]" />
             <Rays shape="hero" className="absolute z-4 -left-43 top-78 w-48 text-sun max-poster:left-[calc(50%-min(44vw,340px))] max-poster:top-[18%] max-poster:w-[44px]" />
             <Image
-              className="absolute z-2 -left-56 top-46 w-340 h-auto max-w-none max-poster:left-1/2 max-poster:top-auto max-poster:bottom-[-14%] max-poster:w-[min(66vw,520px)] max-poster:-translate-x-[72%] max-phone:bottom-[-10%] max-phone:w-[76vw] max-phone:-translate-x-[70%]"
+              className="absolute z-2 -left-64 bottom-0 w-360 h-auto max-w-none max-poster:left-1/2 max-poster:top-auto max-poster:bottom-[-14%] max-poster:w-[min(66vw,520px)] max-poster:-translate-x-[72%] max-phone:bottom-[-10%] max-phone:w-[76vw] max-phone:-translate-x-[70%]"
               src={HERO_MASCOT.src}
               alt={t("mascotAlt")}
               width={HERO_MASCOT.width}

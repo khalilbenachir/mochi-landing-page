@@ -123,7 +123,7 @@ function LogTodayPhone() {
 
   return (
     <div
-      className="relative z-2 ml-23 -mb-[calc(var(--section-space)+28*var(--spacing))] self-end h-176 w-172 p-6 border-mood-phone-border border-[length:calc(3*var(--spacing))] rounded-u-30 bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--spacing))_var(--color-mood-phone-shadow),0_calc(8*var(--spacing))_calc(18*var(--spacing))_var(--color-mood-phone-shadow-2)] rotate-[4.5deg] max-poster:[--spacing:calc(min(62vw,290px)/172)] max-poster:h-150 max-poster:mt-[26px] max-poster:-mb-12 max-poster:mx-auto max-poster:rounded-b-none"
+      className="relative z-2 ml-23 -mb-[calc(var(--section-space)+12*var(--spacing))] self-end h-220 w-172 p-6 border-mood-phone-border border-[length:calc(3*var(--spacing))] rounded-u-30 bg-mood-phone-bg [box-shadow:0_0_0_calc(1*var(--spacing))_var(--color-mood-phone-shadow),0_calc(8*var(--spacing))_calc(18*var(--spacing))_var(--color-mood-phone-shadow-2)] rotate-[4.5deg] max-poster:[--spacing:calc(min(62vw,290px)/172)] max-poster:h-150 max-poster:mt-[26px] max-poster:-mb-12 max-poster:mx-auto max-poster:rounded-b-none"
       role="img"
       aria-label={t("phoneLabel")}
     >
@@ -186,7 +186,7 @@ export function MoodSection() {
             <li
               key={mood.id}
               className={cn(
-                "group relative z-2 flex h-122 flex-col items-center justify-end max-poster:absolute max-poster:top-0 max-poster:[--spacing:var(--m)]",
+                "group relative z-2 flex h-144 flex-col items-center justify-end max-poster:absolute max-poster:top-0 max-poster:[--spacing:var(--m)]",
                 mood.item,
               )}
             >
