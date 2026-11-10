@@ -186,6 +186,22 @@ test("mobile menu reaches the blog and cards reach the articles", async ({ page 
   await expect(page).toHaveURL((url) => url.pathname === "/blog/how-to-track-your-period");
 });
 
+test("mobile Blog navigation retains its active state and hover treatment in every language", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const locale of routing.locales) {
+    const path = blogPath(locale);
+    await page.goto(path);
+    await page.locator('header button[aria-expanded]:visible').click();
+    const link = page.locator(`header nav a[href="${path}"]:not([hreflang]):visible`);
+    await expect(link).toHaveAttribute("aria-current", "page");
+    await link.hover();
+    await expect.poll(() => link.evaluate((element) => getComputedStyle(element).backgroundColor)).not.toBe("rgba(0, 0, 0, 0)");
+    await link.click();
+    await expect(page).toHaveURL((url) => url.pathname === path);
+    await expect(page.locator("html")).toHaveAttribute("lang", blogLocaleFor(locale));
+  }
+});
+
 test("English homepage exposes four sourced education FAQs", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("#faq button")).toHaveCount(FAQ_IDS.length + EDUCATION_FAQ.length);

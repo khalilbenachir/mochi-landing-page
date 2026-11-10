@@ -71,9 +71,12 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
             key={item.key}
             href={item.href}
             aria-current={item.current}
-            className="px-[14px] py-[12px] border-b border-hero-menu-link-border text-hero-menu-link-text font-black"
+            // The hovered row turns into a pill: its own divider and the one above it hide.
+            className="group/link rounded-[12px] border-b border-hero-menu-link-border px-[14px] py-[12px] font-black text-hero-menu-link-text [transition:background-color_0.2s_ease,color_0.2s_ease,border-color_0.2s_ease] hover:border-transparent hover:bg-hero-menu-link-hover-bg hover:text-hero-menu-icon has-[+a:hover]:border-transparent focus-visible:bg-hero-menu-link-hover-bg"
           >
-            {item.label}
+            <span className="inline-block [transition:translate_0.25s_var(--ease-smooth)] group-hover/link:translate-x-[6px] motion-reduce:group-hover/link:translate-none">
+              {item.label}
+            </span>
           </a>
         ))}
         <LocaleSwitcher variant="list" route={localeRoute} className="mt-[8px] mb-[2px]" />
