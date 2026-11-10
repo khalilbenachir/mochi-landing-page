@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { NEWSLETTER_RECIPIENT, resolveNewsletterAction } from "./newsletter";
 
 describe("newsletter configuration", () => {
@@ -9,6 +9,17 @@ describe("newsletter configuration", () => {
 
   it("accepts an absolute HTTPS endpoint", () => {
     expect(resolveNewsletterAction(" https://forms.example.com/subscribe ")).toBe("https://forms.example.com/subscribe");
+  });
+
+  it("warns and keeps the email-request fallback for an email entered as the form action", () => {
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    try {
+      expect(resolveNewsletterAction(" contact@mochiii.app ")).toBeUndefined();
+      expect(warn).toHaveBeenCalledWith(expect.stringContaining("expects an HTTPS form endpoint"));
+      expect(warn).toHaveBeenCalledWith(expect.stringContaining(NEWSLETTER_RECIPIENT));
+    } finally {
+      warn.mockRestore();
+    }
   });
 
   it("fails the build for relative, malformed or insecure endpoints", () => {
