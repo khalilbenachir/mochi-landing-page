@@ -1,7 +1,7 @@
 const ACTION_ENV = "NEXT_PUBLIC_NEWSLETTER_FORM_ACTION";
 
 /** Owner-supplied inbox that receives the default, visitor-sent subscription email. */
-export const NEWSLETTER_RECIPIENT = "support@mochiii.app";
+export const NEWSLETTER_RECIPIENT = "hello@mochiii.app";
 
 /**
  * Resolve the optional third-party form endpoint. An unset value keeps the email-request

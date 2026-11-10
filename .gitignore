@@ -14,3 +14,6 @@ test-results/
 
 # Design reference images (local only, never deployed)
 design/
+
+# Vercel CLI project link
+.vercel
