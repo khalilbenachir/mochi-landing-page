@@ -1,0 +1,82 @@
+{
+  "title": "À quelle fréquence changer sa serviette hygiénique ?",
+  "description": "Découvrez quand changer de serviette hygiénique, quand le faire plus tôt et quoi vérifier la nuit ou avec un protège-slip, avec des sources CDC et ACOG.",
+  "imageAlt": "Mochi rose près d’une serviette hygiénique et d’un réveil violet",
+  "intro": "Changez votre serviette toutes les quelques heures, plus tôt si elle est pleine, humide ou inconfortable. Suivez sa notice et adaptez-vous à votre flux. Un rappel vous aide à y penser, mais vous pouvez la changer avant qu’il sonne.",
+  "sections": {
+    "day-pads": {
+      "title": "Les serviettes de jour",
+      "paragraphs": {
+        "first": "Le CDC recommande de changer de serviette toutes les quelques heures, même avec un flux léger. L’ACOG mentionne un changement au moins toutes les 4 à 8 heures, et plus tôt si elle est pleine, humide ou inconfortable. Ces repères ne justifient pas d’attendre si vous avez besoin de la changer.",
+        "second": "Vérifiez plus souvent quand le flux est abondant. Choisissez une absorption adaptée et suivez les instructions de l’emballage."
+      },
+      "table": {
+        "caption": "Repères pour serviettes et protège-slips",
+        "columns": [
+          "Type de protection",
+          "Quand la changer",
+          "À retenir"
+        ],
+        "rows": [
+          [
+            "Serviette de jour",
+            "Toutes les quelques heures",
+            "Plus tôt si le flux est abondant ou en cas d’inconfort."
+          ],
+          [
+            "Serviette de nuit",
+            "Selon la notice",
+            "Une propre avant le coucher, à changer au réveil ou plus tôt si nécessaire."
+          ],
+          [
+            "Protège-slip",
+            "Régulièrement et dès qu’il est humide",
+            "Pour un flux léger ou de petits saignements."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Les serviettes de nuit",
+      "paragraphs": {
+        "first": "Choisissez une protection prévue pour la nuit et respectez sa durée d’utilisation. Mettez-en une propre avant le coucher et changez-la au réveil, ou plus tôt si elle est pleine ou inconfortable.",
+        "second": "La mention « nuit » ne garantit pas une durée identique pour tous les produits. Si des saignements abondants imposent régulièrement des changements très fréquents, demandez un avis médical."
+      }
+    },
+    "liners": {
+      "title": "Les protège-slips",
+      "paragraphs": {
+        "first": "Plus fins, ils conviennent à un flux léger ou à de petits saignements. Changez-les régulièrement, dès qu’ils sont humides ou inconfortables. Pour un flux plus abondant, choisissez une protection adaptée."
+      }
+    },
+    "signs-to-change": {
+      "title": "Les signes qu’il faut changer",
+      "items": {
+        "full": "La protection est pleine, humide ou inconfortable.",
+        "leaks": "Vous observez une fuite ou la protection a bougé.",
+        "time": "La durée indiquée dans la notice est atteinte, même si le flux est léger."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Un petit rappel avec Mochi",
+      "paragraphs": {
+        "first": "Mochi propose un rappel facultatif avec compte à rebours dans la Dynamic Island et sur l’écran verrouillé. Les options publiées couvrent serviette de jour, de nuit et protège-slip, avec une durée au choix.",
+        "second": "Le minuteur invite à vérifier la protection. Il ne mesure pas son remplissage et ne confirme pas qu’une durée vous convient. Changez-la plus tôt dès que nécessaire."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "Puis-je garder ma serviette tant que le minuteur tourne ?",
+      "answer": "Changez-la plus tôt si elle est pleine, humide ou inconfortable. Respectez la notice : un minuteur ne mesure ni le flux ni l’état de la protection."
+    },
+    "light": {
+      "question": "Faut-il changer de serviette avec un flux léger ?",
+      "answer": "Oui. Le CDC recommande un changement toutes les quelques heures, même avec un flux léger, et plus fréquent avec un flux abondant."
+    },
+    "night": {
+      "question": "Toutes les serviettes de nuit ont-elles la même durée ?",
+      "answer": "Non. Choisissez un produit prévu pour la nuit et suivez sa notice. Changez-le plus tôt s’il est plein ou inconfortable."
+    }
+  }
+}

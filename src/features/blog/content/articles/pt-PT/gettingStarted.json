@@ -1,0 +1,49 @@
+{
+  "title": "Primeiros passos com o Mochi: o teu primeiro registo",
+  "description": "Faz o teu primeiro registo no Mochi: anota as datas que conheces, acrescenta humor e sintomas se quiseres e escolhe lembretes e cópias de segurança.",
+  "imageAlt": "Mochi creme junto de um telemóvel rosa com uma cara de Mochi",
+  "intro": "Começa pelas datas que conheces. Acrescenta humor ou sintomas se quiseres lembrar-te deles e escolhe os lembretes. Segundo a nossa informação de produto, as funcionalidades essenciais funcionam sem internet nem conta.",
+  "sections": {
+    "first-entry": {
+      "title": "Começa pelas datas conhecidas",
+      "paragraphs": {
+        "first": "Regista o início e o fim reais do sangramento quando os souberes. Não substituas uma data antiga incerta por um palpite. Podes começar pelas observações atuais."
+      }
+    },
+    "mood-symptoms": {
+      "title": "Acrescenta o que for útil",
+      "paragraphs": {
+        "first": "O Mochi permite registar humor, sintomas e fluxo. Escolhe os campos que queres reler, sem teres de preencher tudo. Uma nota breve pode chegar.",
+        "second": "Os sabores colecionáveis e as sequências de dias tornam o acompanhamento lúdico. Podes retomar após um dia sem registar, sem reconstruir um histórico perfeito."
+      }
+    },
+    "reminders": {
+      "title": "Escolhe os teus lembretes",
+      "paragraphs": {
+        "first": "O lembrete opcional de troca mostra uma contagem decrescente na Dynamic Island e no ecrã bloqueado. Escolhe um intervalo conforme a embalagem e as tuas necessidades. Troca antes quando necessário.",
+        "second": "Um lembrete convida a verificar o produto, não confirma que uma duração seja clinicamente adequada para ti."
+      }
+    },
+    "privacy-options": {
+      "title": "Lê as opções de privacidade",
+      "paragraphs": {
+        "first": "Segundo a política, os dados do ciclo ficam no iPhone, salvo cópia de segurança opcional. Não é necessária conta para as funcionalidades essenciais. Lê a política antes de ativares a cópia.",
+        "second": "As previsões são estimativas. O Mochi não oferece contraceção, diagnóstico ou tratamento."
+      }
+    }
+  },
+  "faq": {
+    "account": {
+      "question": "O Mochi funciona sem conta ou internet?",
+      "answer": "Sim. Todas as funcionalidades essenciais funcionam sem internet nem conta. A conta é opcional para cópia de segurança e sincronização."
+    },
+    "free": {
+      "question": "O Mochi é gratuito?",
+      "answer": "Sim. Acompanhamento, previsões, lembrete de troca, humor, sequências e sabores iniciais são gratuitos. O Mochi Plus é opcional."
+    },
+    "birthControl": {
+      "question": "Posso usar o Mochi como contracetivo?",
+      "answer": "Não. As previsões são informativas e não substituem contraceção, diagnóstico ou aconselhamento médico."
+    }
+  }
+}

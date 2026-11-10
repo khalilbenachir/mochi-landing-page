@@ -1,0 +1,51 @@
+{
+  "title": "Dolor menstrual: qué puede ayudar y cuándo consultar",
+  "description": "Conoce medidas para aliviar el dolor menstrual, qué anotar sobre el dolor y cuándo consultar, con enlaces a las recomendaciones del NHS.",
+  "imageAlt": "Mochi lavanda abraza una bolsa de agua caliente rosa",
+  "intro": "El calor y el movimiento suave pueden aliviar los cólicos. Consulta si el dolor limita tus actividades. Busca atención urgente si es intenso o peor de lo habitual y los analgésicos no han ayudado.",
+  "sections": {
+    "comfort": {
+      "title": "Empieza por medidas de bienestar",
+      "items": {
+        "warmth": "Prueba un baño o ducha caliente, una almohadilla térmica o una bolsa de agua caliente envuelta sobre el abdomen.",
+        "movement": "Prueba movimientos suaves, como un paseo corto, si te resultan cómodos.",
+        "massage": "Un masaje suave en el abdomen o la espalda puede ayudar."
+      },
+      "after": "Si quieres tomar un analgésico, pregunta en la farmacia o a un profesional sanitario qué es adecuado para ti y sigue sus instrucciones. Esta guía no es un tratamiento personal."
+    },
+    "record-pain": {
+      "title": "Anota lo que te ayude a explicarlo",
+      "paragraphs": {
+        "first": "Escribe cuándo y dónde empezó el dolor, cómo afectó al día, qué probaste y si ayudó. Una nota breve puede facilitar la consulta.",
+        "second": "No necesitas un diario perfecto para pedir ayuda. Si escribir te supone un esfuerzo cuando duele, basta con unas palabras."
+      }
+    },
+    "get-help": {
+      "title": "Cuándo pedir ayuda",
+      "paragraphs": {
+        "first": "El NHS aconseja consultar si la regla es más dolorosa, abundante o irregular, o impide las actividades habituales. También si hay sangrado entre reglas o dolor al mantener relaciones, orinar o defecar.",
+        "second": "Busca atención urgente si el dolor pélvico o menstrual es intenso o peor de lo habitual y no mejora con analgésicos. No esperes un recordatorio ni otro ciclo."
+      }
+    },
+    "tracking-limits": {
+      "title": "El registro ayuda a conversar",
+      "paragraphs": {
+        "first": "Mochi puede registrar síntomas y ánimo, pero no identifica la causa del dolor ni sustituye una valoración. Comparte tus notas con un profesional cualificado si te ayudan a explicar lo que observas."
+      }
+    }
+  },
+  "faq": {
+    "heat": {
+      "question": "¿Puede el calor ayudar con el dolor menstrual?",
+      "answer": "El NHS propone un baño o ducha caliente, una almohadilla térmica o una bolsa de agua caliente envuelta como medidas de alivio."
+    },
+    "daily": {
+      "question": "¿Debo consultar si el dolor afecta a los estudios o el trabajo?",
+      "answer": "Sí. El dolor que impide actividades habituales merece una valoración. No necesitas esperar a registrar varios ciclos."
+    },
+    "diagnosis": {
+      "question": "¿Una app puede diagnosticar la causa de los cólicos?",
+      "answer": "No. Las notas ayudan a describir el dolor, pero un profesional sanitario debe valorar las molestias."
+    }
+  }
+}

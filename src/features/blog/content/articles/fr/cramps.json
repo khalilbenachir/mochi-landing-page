@@ -1,0 +1,51 @@
+{
+  "title": "Douleurs de règles : que faire et quand consulter ?",
+  "description": "Découvrez des gestes pour soulager les douleurs de règles, quoi noter sur la douleur et quand consulter, avec des liens vers les conseils du NHS.",
+  "imageAlt": "Mochi lavande serre une bouillotte rose",
+  "intro": "La chaleur et des mouvements doux peuvent aider. Consultez si la douleur gêne vos activités. Demandez une prise en charge urgente si elle est intense ou plus forte que d’habitude et que les antidouleurs n’ont pas aidé.",
+  "sections": {
+    "comfort": {
+      "title": "Commencer par des gestes de confort",
+      "items": {
+        "warmth": "Essayez un bain ou une douche chaude, un coussin chauffant ou une bouillotte enveloppée sur le ventre.",
+        "movement": "Essayez un mouvement doux, comme une courte marche, si vous vous sentez à l’aise.",
+        "massage": "Un massage doux du ventre ou du dos peut aider."
+      },
+      "after": "Pour un antidouleur, demandez au pharmacien ou à un professionnel de santé ce qui vous convient et respectez la notice. Ce guide ne propose pas de traitement personnalisé."
+    },
+    "record-pain": {
+      "title": "Noter pour mieux expliquer",
+      "paragraphs": {
+        "first": "Notez quand et où la douleur a commencé, son effet sur votre journée, ce que vous avez essayé et ce qui vous a aidée. Quelques lignes peuvent faciliter une consultation.",
+        "second": "Un journal parfait n’est pas nécessaire pour demander de l’aide. Si écrire devient une corvée quand vous avez mal, restez brève."
+      }
+    },
+    "get-help": {
+      "title": "Quand demander de l’aide ?",
+      "paragraphs": {
+        "first": "Le NHS recommande de consulter si les règles deviennent plus douloureuses, abondantes ou irrégulières, ou gênent les activités habituelles. Des saignements entre les règles ou des douleurs pendant les rapports, en urinant ou à la selle nécessitent aussi un avis.",
+        "second": "Consultez en urgence si la douleur pelvienne ou menstruelle est intense ou plus forte que d’habitude et résiste aux antidouleurs. N’attendez ni un rappel ni un cycle supplémentaire."
+      }
+    },
+    "tracking-limits": {
+      "title": "Un suivi pour préparer le dialogue",
+      "paragraphs": {
+        "first": "Mochi peut vous aider à noter les symptômes et l’humeur. Il ne détermine pas la cause de la douleur et Ne remplacez pas une évaluation. Partagez vos notes avec un professionnel qualifié si elles vous aident à expliquer vos observations."
+      }
+    }
+  },
+  "faq": {
+    "heat": {
+      "question": "La chaleur peut-elle soulager les douleurs de règles ?",
+      "answer": "Le NHS propose notamment un bain ou une douche chaude, un coussin chauffant ou une bouillotte enveloppée pour le confort."
+    },
+    "daily": {
+      "question": "Faut-il consulter si la douleur gêne l’école ou le travail ?",
+      "answer": "Oui. Une douleur qui empêche les activités habituelles mérite un avis médical. N’attendez pas plusieurs cycles de notes."
+    },
+    "diagnosis": {
+      "question": "Une application peut-elle trouver la cause des crampes ?",
+      "answer": "Non. Vos notes peuvent aider à décrire la douleur, mais un professionnel de santé doit évaluer la situation."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Mit Mochi starten: Dein erster Eintrag",
+  "description": "Starte deinen ersten Eintrag in Mochi: bekannte Periodendaten erfassen, optional Stimmung und Symptome ergänzen sowie Erinnerungen und Backup wählen.",
+  "imageAlt": "Cremefarbener Mochi neben einem rosa Handy mit einem einfachen Mochi-Gesicht",
+  "intro": "Beginne mit bekannten Periodendaten. Ergänze bei Bedarf Stimmung oder Symptome und entscheide über Erinnerungen. Laut unseren Produktangaben funktionieren Mochis Kernfunktionen offline ohne Konto.",
+  "sections": {
+    "first-entry": {
+      "title": "Mit bekannten Daten beginnen",
+      "paragraphs": {
+        "first": "Notiere den tatsächlichen Blutungsbeginn und das Ende, soweit bekannt. Ersetze unsichere ältere Daten nicht durch Vermutungen. Du kannst mit aktuellen Einträgen anfangen."
+      }
+    },
+    "mood-symptoms": {
+      "title": "Das ergänzen, was dir hilft",
+      "paragraphs": {
+        "first": "Mochi erfasst Stimmung, Symptome und Blutungsstärke. Nutze die Felder, die du später ansehen möchtest. Du musst nicht alle ausfüllen; eine kurze Notiz reicht oft.",
+        "second": "Sammelbare Sorten und Serien gestalten das Tracking spielerisch. Nach einem ausgelassenen Tag kannst du weitermachen, ohne eine lückenlose Vergangenheit nachzubauen."
+      }
+    },
+    "reminders": {
+      "title": "Erinnerungen bewusst wählen",
+      "paragraphs": {
+        "first": "Die freiwillige Bindenwechsel-Erinnerung zeigt einen Countdown in Dynamic Island und Sperrbildschirm. Wähle einen Abstand passend zu Packungsanleitung und Bedarf. Wechsle bei Bedarf früher.",
+        "second": "Eine Erinnerung ist ein Hinweis zum Prüfen, keine medizinische Bestätigung einer geeigneten Tragedauer."
+      }
+    },
+    "privacy-options": {
+      "title": "Datenschutzoptionen vor dem Aktivieren lesen",
+      "paragraphs": {
+        "first": "Laut Datenschutzerklärung bleiben Zykluseinträge auf dem iPhone, sofern du kein freiwilliges Backup wählst. Die Kernfunktionen benötigen kein Konto. Lies die Erklärung, bevor du ein Backup aktivierst.",
+        "second": "Mochis Vorhersagen sind Schätzungen. Die App bietet weder Verhütung noch Diagnose oder Behandlung."
+      }
+    }
+  },
+  "faq": {
+    "account": {
+      "question": "Funktioniert Mochi ohne Konto oder Internet?",
+      "answer": "Ja. Alle Kernfunktionen funktionieren offline ohne Konto. Für Backup und Synchronisierung ist ein Konto freiwillig."
+    },
+    "free": {
+      "question": "Ist Mochi kostenlos?",
+      "answer": "Ja. Zyklustracking, Vorhersagen, Bindenwechsel-Erinnerung, Stimmung, Serien und Startsorten sind kostenlos. Mochi Plus ist freiwillig."
+    },
+    "birthControl": {
+      "question": "Kann ich Mochi zur Verhütung nutzen?",
+      "answer": "Nein. Die Vorhersagen dienen der Orientierung und ersetzen weder Verhütung noch Diagnose oder medizinische Beratung."
+    }
+  }
+}

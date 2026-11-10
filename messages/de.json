@@ -11,7 +11,8 @@
     "flavors": "Sorten",
     "privacy": "Datenschutz",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "blog": "Blog"
   },
   "LocaleSwitcher": {
     "label": "Sprache",
@@ -71,18 +72,54 @@
     "title3": "12 Mochi-Sorten",
     "body": "Trag jeden Tag ein bisschen ein und neue Mochi kommen in deine Sammlung.",
     "items": {
-      "strawberry": { "name": "Erdbeere", "unlock": "Start" },
-      "classic": { "name": "Klassik", "unlock": "Start" },
-      "matcha": { "name": "Matcha", "unlock": "Start" },
-      "ube": { "name": "Ube", "unlock": "7-Tage-Serie" },
-      "mango": { "name": "Mango", "unlock": "14-Tage-Serie" },
-      "sesame": { "name": "Sesam", "unlock": "30-Tage-Serie" },
-      "yuzu": { "name": "Yuzu", "unlock": "60-Tage-Serie" },
-      "chocolate": { "name": "Schoko", "unlock": "90-Tage-Serie" },
-      "hojicha": { "name": "Hojicha", "unlock": "180-Tage-Serie" },
-      "sakura": { "name": "Sakura", "unlock": "150 Blüten" },
-      "peach": { "name": "Pfirsich", "unlock": "Krampf-Challenge" },
-      "coconut": { "name": "Kokos", "unlock": "Ruhige Woche" }
+      "strawberry": {
+        "name": "Erdbeere",
+        "unlock": "Start"
+      },
+      "classic": {
+        "name": "Klassik",
+        "unlock": "Start"
+      },
+      "matcha": {
+        "name": "Matcha",
+        "unlock": "Start"
+      },
+      "ube": {
+        "name": "Ube",
+        "unlock": "7-Tage-Serie"
+      },
+      "mango": {
+        "name": "Mango",
+        "unlock": "14-Tage-Serie"
+      },
+      "sesame": {
+        "name": "Sesam",
+        "unlock": "30-Tage-Serie"
+      },
+      "yuzu": {
+        "name": "Yuzu",
+        "unlock": "60-Tage-Serie"
+      },
+      "chocolate": {
+        "name": "Schoko",
+        "unlock": "90-Tage-Serie"
+      },
+      "hojicha": {
+        "name": "Hojicha",
+        "unlock": "180-Tage-Serie"
+      },
+      "sakura": {
+        "name": "Sakura",
+        "unlock": "150 Blüten"
+      },
+      "peach": {
+        "name": "Pfirsich",
+        "unlock": "Krampf-Challenge"
+      },
+      "coconut": {
+        "name": "Kokos",
+        "unlock": "Ruhige Woche"
+      }
     }
   },
   "Predictions": {
@@ -161,11 +198,31 @@
     "mochi": "Mochi",
     "typical": "Typische Perioden-App",
     "rows": {
-      "account": { "feature": "Konto erforderlich", "mochi": "Nein", "typical": "Oft" },
-      "offline": { "feature": "Funktioniert offline", "mochi": "Ja", "typical": "Teils" },
-      "reminder": { "feature": "Erinnerung im Sperrbildschirm", "mochi": "Ja", "typical": "Selten" },
-      "analytics": { "feature": "Zyklusdaten in Analysen", "mochi": "Nie", "typical": "Teils" },
-      "rewards": { "feature": "Belohnung fürs Eintragen", "mochi": "Serien + 12 Sorten", "typical": "Selten" }
+      "account": {
+        "feature": "Konto erforderlich",
+        "mochi": "Nein",
+        "typical": "Oft"
+      },
+      "offline": {
+        "feature": "Funktioniert offline",
+        "mochi": "Ja",
+        "typical": "Teils"
+      },
+      "reminder": {
+        "feature": "Erinnerung im Sperrbildschirm",
+        "mochi": "Ja",
+        "typical": "Selten"
+      },
+      "analytics": {
+        "feature": "Zyklusdaten in Analysen",
+        "mochi": "Nie",
+        "typical": "Teils"
+      },
+      "rewards": {
+        "feature": "Belohnung fürs Eintragen",
+        "mochi": "Serien + 12 Sorten",
+        "typical": "Selten"
+      }
     }
   },
   "Plans": {
@@ -425,6 +482,146 @@
         "body": "Wenn du Fragen zu diesen Bedingungen hast oder Hilfe mit Mochi brauchst, kontaktiere uns über die unten stehende E-Mail-Adresse.",
         "detail": "Bitte sende keine sensiblen Gesundheitsinformationen in deiner Nachricht. Wende dich bei gesundheitlichen Fragen an qualifiziertes medizinisches Fachpersonal."
       }
+    }
+  },
+  "Blog": {
+    "navigation": "Blog",
+    "categories": {
+      "cycle-basics": "Zykluswissen",
+      "period-care": "Rund um die Periode",
+      "symptoms-moods": "Symptome und Stimmung",
+      "privacy": "Datenschutz",
+      "using-mochi": "Mochi nutzen"
+    },
+    "eyebrow": "Blog",
+    "title": "Das Mochi Journal",
+    "description": "Verständliche, einfühlsame Ratgeber zu deinem Zyklus, deiner Periode und deinem Wohlbefinden.",
+    "metadataTitle": "Mochi Journal | Periode und Zyklus verstehen",
+    "metadataDescription": "Praktische Ratgeber zu Periodentracking, Binden, Zyklusphasen, Beschwerden, Stimmung und Datenschutz. Entdecke auch die ersten Schritte mit Mochi.",
+    "startHere": "Hier geht’s los",
+    "more": "Mehr von Mochi",
+    "readGuide": "Ratgeber lesen",
+    "readArticle": "Artikel lesen",
+    "byline": "Von Mochi",
+    "publisher": "Mochi",
+    "published": "Veröffentlicht am",
+    "readTime": "{minutes} Min. Lesezeit",
+    "back": "Alle Artikel",
+    "onThisPage": "In diesem Artikel",
+    "sourcesHeading": "Quellen und weitere Informationen",
+    "sourceLabel": "Quellen zu diesem Abschnitt",
+    "related": "Weiterlesen",
+    "editorialNote": "Klare Quellen, benannte Grenzen, hilfreiche Informationen.",
+    "editorialLink": "Unsere redaktionellen Grundsätze",
+    "newsletter": {
+      "title": "Neue Ratgeber,\neinmal im Monat",
+      "emailLabel": "Deine E-Mail-Adresse",
+      "submitLabel": "Abonnieren",
+      "note": "Kein Spam. Jederzeit abbestellbar.",
+      "emailNote": "Dein E-Mail-Programm öffnet sich, damit du die Anfrage senden kannst.",
+      "subject": "Das Mochi Journal abonnieren",
+      "requestBody": "Hallo Mochi,\n\nich möchte die monatlichen Ratgeber des Mochi Journals abonnieren.\nMeine E-Mail-Adresse ist {email}.\n\nVielen Dank!",
+      "requestMessage": "Sende die E-Mail, um dein Abonnement anzufragen. Falls sich dein E-Mail-Programm nicht geöffnet hat, nutze den Link unten.",
+      "openEmailLabel": "E-Mail-Anfrage öffnen"
+    },
+    "ctaTitle": "Ein kleiner Begleiter für jede Phase.",
+    "ctaAction": "Mochi entdecken",
+    "articleNotice": "Allgemeine Informationen, keine medizinische Beratung. Dieser Artikel wurde nicht von medizinischem Fachpersonal geprüft.",
+    "commercialNote": "Mochi veröffentlicht diesen Blog und entwickelt die hier vorgestellte App.",
+    "heroAlt": "Mochi mit violetter Baskenmütze schreibt in ein aufgeschlagenes Tagebuch",
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health: Dein Menstruationszyklus",
+      "irregularPeriods": "NHS: Unregelmäßige Perioden",
+      "missedPeriods": "NHS: Ausbleibende oder verspätete Periode",
+      "pregnancyTests": "NHS: Einen Schwangerschaftstest machen",
+      "periodProblems": "NHS: Menstruationsbeschwerden",
+      "appPrivacy": "Apple: Datenschutzinformationen im App Store",
+      "mochiPrivacy": "Datenschutzerklärung von Mochi",
+      "mochiTerms": "Mochi-Nutzungsbedingungen und medizinische Hinweise",
+      "menstrualHygiene": "CDC: Tipps zur Menstruationshygiene",
+      "firstPeriod": "ACOG: Deine erste Periode",
+      "cycleOverview": "Office on Women’s Health: Der Menstruationszyklus",
+      "periodPain": "NHS: Regelschmerzen",
+      "pms": "Office on Women’s Health: Prämenstruelles Syndrom",
+      "cyclePhases": "Cleveland Clinic: Menstruationszyklus und Phasen"
+    },
+    "editorial": {
+      "title": "Unsere redaktionellen Grundsätze",
+      "description": "Wer den Mochi-Blog veröffentlicht, wie wir Quellen nutzen und wie du Fehler melden kannst.",
+      "intro": "Mit diesem Blog hilft Mochi dir, Periodentracking zu verstehen und passende Hilfsmittel bewusst auszuwählen. Unser Unternehmen entwickelt auch die Mochi-App, die in den Artikeln vorkommt.",
+      "sections": {
+        "publisher": {
+          "title": "Wer hinter den Artikeln steht",
+          "body": "Die Artikel nennen Mochi als Herausgeber. Das ist keine medizinische Qualifikation und keine unabhängige Prüfung unserer eigenen App. Derzeit werden die Artikel nicht von medizinischem Fachpersonal geprüft."
+        },
+        "sources": {
+          "title": "Wie wir Quellen nutzen",
+          "body": "Allgemeine Gesundheitsinformationen verlinken etwa auf den NHS und das US-amerikanische Office on Women’s Health. Angaben zum Produkt und Datenschutz verweisen auf offizielle Dokumente. Jeder Artikel enthält Quellen, damit du die zugrunde liegenden Informationen nachlesen kannst."
+        },
+        "editing": {
+          "title": "Wie die Texte entstehen",
+          "body": "Diese ersten Artikel wurden mit KI-Unterstützung verfasst, sprachlich überarbeitet und anhand der angegebenen Quellen geprüft. Eine redaktionelle Prüfung ist keine medizinische Begutachtung. Die Illustrationen sind KI-generiert und zeigen weder medizinische Ergebnisse noch überprüfte App-Ansichten."
+        },
+        "limits": {
+          "title": "Wobei die Artikel helfen können",
+          "body": "Der Blog behandelt Tracking-Gewohnheiten, Produktfunktionen und Datenschutzfragen. Er bietet keine persönliche medizinische Beratung, Diagnosen, Behandlungen oder Verhütungsberatung. Wende dich mit Gesundheitsfragen an qualifiziertes Fachpersonal."
+        },
+        "dates": {
+          "title": "Veröffentlichung und Aktualisierung",
+          "body": "Das Veröffentlichungsdatum bezeichnet die erste Veröffentlichung. Ein Aktualisierungsdatum erscheint nur bei wesentlichen inhaltlichen Änderungen. Ein neuer Website-Build ändert die Artikeldaten nicht."
+        },
+        "corrections": {
+          "title": "Korrekturen und Fragen",
+          "body": "Wenn du einen sachlichen Fehler findest, schicke uns die Artikeladresse und die betreffende Textstelle. Bitte sende keine Periodendaten, Symptome oder anderen sensiblen Gesundheitsinformationen mit."
+        }
+      },
+      "contact": "Mochi einen Fehler melden",
+      "privacy": "Unsere Datenschutzerklärung lesen"
+    },
+    "allCategories": "Alle",
+    "filterLabel": "Artikel nach Thema filtern",
+    "guidesHeading": "Neue Ratgeber",
+    "guideCount": "{count, plural, one {# Ratgeber} other {# Ratgeber}}",
+    "quickAnswer": "Das Wichtigste",
+    "shareHeading": "Diesen Artikel teilen",
+    "copyLink": "Artikellink kopieren",
+    "copiedLink": "Link kopiert",
+    "copyError": "Kopieren fehlgeschlagen. Kopiere die Adresse aus deinem Browser.",
+    "shareX": "Auf X teilen",
+    "shareFacebook": "Auf Facebook teilen",
+    "shareWhatsApp": "Auf WhatsApp teilen",
+    "questionsHeading": "Häufige Fragen",
+    "ctaDescription": "Verfolge deine Periode, halte dein Befinden fest und entdecke mit Mochi deinen eigenen Rhythmus.",
+    "inlineCtaTitle": "Mochi begleitet dich.",
+    "inlineCtaDescription": "Periodentracking, Stimmung und sanfte Erinnerungen auf deinem iPhone.",
+    "mobileContents": "In diesem Artikel",
+    "sourcesToggle": "Quellen und redaktionelle Hinweise"
+  },
+  "PeriodEducationFAQ": {
+    "sourcesLabel": "Quellen",
+    "items": {
+      "bestWay": {
+        "question": "Wie kann ich messen, ob ich einen Eisprung habe?",
+        "answer": "Ein LH-Urintest erkennt den Hormonanstieg vor einem möglichen Eisprung. Ein positiver Test beweist aber nicht, dass tatsächlich eine Eizelle freigesetzt wurde. Die Basaltemperatur wird morgens vor dem Aufstehen gemessen; ein anhaltender Anstieg kann rückblickend auf einen Eisprung hinweisen. Für eine medizinische Abklärung kommen etwa ein passend terminierter Progesteron-Bluttest oder Ultraschall infrage. Eine Eisprung-App schätzt den Zeitpunkt anhand deiner Einträge und ersetzt diese Untersuchungen nicht."
+      },
+      "meaning": {
+        "question": "Wie viele Tage nach der Regel ist der Eisprung?",
+        "answer": "Nach dem Ende der Blutung gibt es keinen festen Abstand zum Eisprung. Als grobe Orientierung liegt er etwa zwei Wochen vor der nächsten Periode. Der erste Tag der Regel ist Zyklustag 1; bei einem 28-Tage-Zyklus kann der Eisprung ungefähr um Tag 14 liegen. Kürzere, längere und schwankende Zyklen verändern diesen Zeitpunkt. Mit einer kostenlosen Perioden-App kannst du Muster beobachten, aber den Eisprung nicht sicher feststellen."
+      },
+      "noBleeding": {
+        "question": "Wie fühlt man sich 3 Tage vor dem Eisprung?",
+        "answer": "Drei Tage vor einem Eisprung kann sich der Zervixschleim feuchter, klarer und gleitfähiger anfühlen. Manche bemerken Veränderungen der Lust oder leichte Beschwerden, andere überhaupt nichts. Es gibt kein eindeutiges Gefühl, das einen Eisprung genau drei Tage im Voraus ankündigt. Notiere deine Beobachtungen über mehrere Zyklen, wenn du Zusammenhänge erkennen möchtest. Symptome oder eine App-Prognose allein können den Zeitpunkt weder bestätigen noch zur sicheren Verhütung dienen."
+      },
+      "whenToStart": {
+        "question": "Wie viele Eier platzen beim Eisprung?",
+        "answer": "Beim Eisprung platzt nicht die Eizelle: Ein Follikel im Eierstock öffnet sich und gibt eine reife Eizelle frei. Meist wird pro Zyklus eine Eizelle freigesetzt. Gelegentlich werden mehrere freigesetzt; werden zwei davon befruchtet, können zweieiige Zwillinge entstehen. Weder ein Ziehen im Unterbauch noch die Anzeige im Zykluskalender verrät, wie viele Eizellen freigesetzt wurden. Bei medizinischen Fragen dazu hilft eine gynäkologische Untersuchung weiter."
+      }
+    },
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health: Dein Menstruationszyklus",
+      "irregularPeriods": "NHS: Unregelmäßige Perioden",
+      "missedPeriods": "NHS: Ausbleibende oder verspätete Periode",
+      "pregnancyTests": "NHS: Einen Schwangerschaftstest machen"
     }
   }
 }

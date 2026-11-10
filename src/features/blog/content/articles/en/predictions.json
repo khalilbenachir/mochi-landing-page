@@ -1,0 +1,50 @@
+{
+  "title": "How period trackers predict your next period",
+  "description": "Learn how period trackers use logged dates to estimate your next period, why predictions change, and what a calendar estimate cannot tell you.",
+  "imageAlt": "Yellow Mochi beside a pink calendar with period symbols",
+  "intro": "A period tracker can use the dates you log to estimate when your next period may begin. Different apps use different methods. The result is a forecast based on information available so far, and it can change when you add new entries.",
+  "sections": {
+    "logged-dates": {
+      "title": "Start with actual period dates",
+      "paragraphs": {
+        "first": "Cycle length is counted from the first day of one period to the day before the next starts. The start dates you record give an app information about those completed cycles.",
+        "second": "If you are unsure of an old date, leave it uncertain rather than turning an estimate into a recorded event. Keep noting the dates you do know."
+      }
+    },
+    "calendar-example": {
+      "title": "A simple calendar example",
+      "paragraphs": {
+        "first": "Suppose a period began on 1 November and a calendar estimate used a 29-day cycle. Adding 29 days would suggest 30 November as the next start date.",
+        "second": "That is an invented example of calendar arithmetic, not a description of Mochi's prediction algorithm or a guarantee of when bleeding will start."
+      }
+    },
+    "changing-estimates": {
+      "title": "Why an estimate can move",
+      "paragraphs": {
+        "first": "Periods can arrive earlier or later than expected. Adding a new start date, correcting a mistaken entry, or logging a different cycle length gives an app different information to work with.",
+        "second": "A changed forecast does not explain why your cycle changed. If you are concerned, use your record to describe the change to a healthcare professional."
+      }
+    },
+    "prediction-limits": {
+      "title": "What a prediction cannot tell you",
+      "paragraphs": {
+        "first": "Mochi's period, fertile-window and ovulation predictions are estimates for awareness. They must not be used as contraception, diagnosis or confirmation that ovulation has occurred.",
+        "second": "You can still find a date estimate useful when planning what to carry or when to check your calendar. When bleeding begins, record the actual date."
+      }
+    }
+  },
+  "faq": {
+    "guarantee": {
+      "question": "Is my predicted date guaranteed?",
+      "answer": "No. It is an estimate based on the information available, and actual cycle timing can vary."
+    },
+    "late": {
+      "question": "Does a late prediction tell me why my period changed?",
+      "answer": "No. A tracker cannot diagnose the reason. If pregnancy is possible, use a pregnancy test according to its instructions, and seek medical advice about concerns."
+    },
+    "birthControl": {
+      "question": "Can I use Mochi as birth control?",
+      "answer": "No. Mochi's predictions are estimates for period awareness, not contraception, diagnosis or medical advice."
+    }
+  }
+}

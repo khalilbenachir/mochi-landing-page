@@ -1,0 +1,82 @@
+{
+  "title": "¿Cada cuánto debes cambiar la compresa?",
+  "description": "Aprende cada cuánto cambiar la compresa, cuándo hacerlo antes y qué revisar por la noche o con un salvaslip, con fuentes de los CDC y ACOG.",
+  "imageAlt": "Mochi rosa junto a una compresa y un despertador morado",
+  "intro": "Cambia la compresa cada pocas horas, antes si está llena, húmeda o resulta incómoda. Sigue sus instrucciones y adáptate a tu flujo. Un recordatorio ayuda a comprobarla, pero puedes cambiarla antes de que suene.",
+  "sections": {
+    "day-pads": {
+      "title": "Compresas de día",
+      "paragraphs": {
+        "first": "Los CDC recomiendan cambiarlas cada pocas horas, incluso con flujo leve. ACOG indica al menos cada 4 a 8 horas, o antes si están llenas, húmedas o incómodas. Son referencias generales, no un motivo para esperar si necesitas una limpia.",
+        "second": "Comprueba más a menudo con flujo abundante. Elige una absorción adecuada y sigue las instrucciones del envase."
+      },
+      "table": {
+        "caption": "Guía práctica de compresas y salvaslips",
+        "columns": [
+          "Producto",
+          "Cuándo cambiarlo",
+          "Ten en cuenta"
+        ],
+        "rows": [
+          [
+            "Compresa de día",
+            "Cada pocas horas",
+            "Antes con flujo abundante o molestias."
+          ],
+          [
+            "Compresa de noche",
+            "Según las instrucciones",
+            "Ponte una limpia al acostarte y cámbiala al despertar o antes si hace falta."
+          ],
+          [
+            "Salvaslip",
+            "Con regularidad y cuando esté húmedo",
+            "Para flujo leve o manchado."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Compresas de noche",
+      "paragraphs": {
+        "first": "Elige un producto nocturno y respeta sus instrucciones de uso. Ponte uno limpio antes de acostarte y cámbialo al despertar, o antes si está lleno o molesta.",
+        "second": "La etiqueta «noche» no garantiza la misma duración en todos los productos. Si el sangrado te obliga a cambiarlos muy a menudo de forma habitual, consulta con un profesional sanitario."
+      }
+    },
+    "liners": {
+      "title": "Salvaslips",
+      "paragraphs": {
+        "first": "Son más finos y sirven para flujo leve o manchado. Cámbialos con regularidad y cuando estén húmedos o molesten. Para un flujo mayor, usa un producto adecuado."
+      }
+    },
+    "signs-to-change": {
+      "title": "Señales de que toca cambiar",
+      "items": {
+        "full": "La compresa está llena, húmeda o resulta incómoda.",
+        "leaks": "Hay una fuga o el producto se ha movido.",
+        "time": "Ha llegado el momento indicado en las instrucciones, aunque el flujo sea leve."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Deja que Mochi te lo recuerde",
+      "paragraphs": {
+        "first": "El recordatorio opcional muestra una cuenta atrás en la Dynamic Island y la pantalla bloqueada. La información del producto incluye opciones para compresas de día, de noche y salvaslips, con duración a elegir.",
+        "second": "El temporizador invita a comprobar el producto. No mide cuánto se ha llenado ni confirma una duración adecuada. Cámbialo antes cuando lo necesites."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "¿Puedo mantener la compresa hasta que termine el temporizador?",
+      "answer": "Cámbiala antes si está llena, húmeda o molesta. Sigue las instrucciones. Un temporizador no evalúa tu flujo ni el estado del producto."
+    },
+    "light": {
+      "question": "¿Debo cambiar la compresa aunque tenga poco flujo?",
+      "answer": "Sí. Los CDC aconsejan cambiarla cada pocas horas, incluso con flujo leve, y más a menudo si es abundante."
+    },
+    "night": {
+      "question": "¿Todas las compresas nocturnas duran lo mismo?",
+      "answer": "No. Elige una para uso nocturno y sigue su envase. Cámbiala antes si está llena o resulta incómoda."
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 import { baseOrigin } from "./origin";
 import { waitForPageAssets } from "./assets";
+import { blogPath } from "../../src/features/blog/locales";
 
 const LOCALES = ["en", "fr", "de", "es", "pt-BR", "pt-PT"] as const;
 type Locale = (typeof LOCALES)[number];
@@ -14,11 +15,12 @@ async function expectLocalizedFooter(page: Page, locale: Locale) {
   await expect(footer).toHaveCount(1);
   await expect(footer.locator("a").first()).toHaveAttribute("href", `${homePath}#top`);
   expect(await footer.locator("nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual([
+    blogPath(locale),
     `${routePrefix}/privacy`,
     `${routePrefix}/terms`,
     `${routePrefix}/privacy#contact`,
   ]);
-  await expect(footer.locator("nav a")).toHaveCount(3);
+  await expect(footer.locator("nav a")).toHaveCount(4);
   await expect(footer.locator("p")).toBeVisible();
 }
 

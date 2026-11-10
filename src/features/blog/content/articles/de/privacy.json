@@ -1,0 +1,75 @@
+{
+  "title": "Wie privat ist deine Perioden-App? Das solltest du prüfen",
+  "description": "Prüfe vor dem ersten Eintrag, wo eine Perioden-App Daten speichert und was sich durch Backup, Konto, Berechtigungen und Benachrichtigungen ändert.",
+  "imageAlt": "Rosa Mochi hält einen lavendelfarbenen Schild mit weißem Schloss",
+  "intro": "Prüfe vor deinem ersten Eintrag, wohin deine Daten gelangen und welche Optionen du hast. Lies die Datenschutzerklärung, die App-Store-Angaben und die Einstellungen der Funktionen, die du nutzen willst.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Wo werden deine Einträge gespeichert?",
+      "paragraphs": {
+        "first": "Prüfe, was auf dem Handy bleibt und was an Server gesendet wird. Ändert sich das durch Backup, Konto oder verbundene Funktionen?",
+        "second": "Mochis Datenschutzerklärung besagt, dass Zykluseinträge auf deinem iPhone bleiben, sofern du kein freiwilliges Backup aktivierst. Periodendaten, Symptome und Stimmung gelangen nicht in Analysen, technische Protokolle oder Absturzberichte. Das sind Angaben zu unseren eigenen Praktiken, kein unabhängiges Sicherheitsaudit."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Datenschutzangaben im App Store lesen",
+      "paragraphs": {
+        "first": "Laut Apple stammen diese Angaben von den Entwicklern. Sie zeigen mögliche Datenerhebungen, deren Verknüpfung mit deiner Identität und die Nutzung zum Tracking über Angebote anderer Unternehmen hinweg.",
+        "second": "Nutze sie als Ausgangspunkt und lies dann die Datenschutzerklärung für deine Funktionen. Frage bei Unklarheiten nach, bevor du sensible Daten eingibst."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Konto und Backup getrennt betrachten",
+      "paragraphs": {
+        "first": "Konto, Abo und Backup sind unterschiedliche Dinge. Prüfe ihren jeweiligen Zweck, ohne bei allen Apps dieselbe Funktionsweise anzunehmen."
+      },
+      "items": {
+        "account": "Kann ich ohne Registrierung Perioden eintragen?",
+        "backup": "Ist das Backup freiwillig und welche Daten verlassen dabei das Handy?",
+        "access": "Wie erhalte ich Einträge bei Verlust oder Austausch des Handys zurück?",
+        "deletion": "Wie beantrage ich die Löschung von Konto und Backup-Daten?"
+      },
+      "after": "Mochi beschreibt das Backup als freiwillig und verschlüsselt. Kernfunktionen benötigen kein Konto. Lies die aktuelle Erklärung und kontaktiere Mochi bei Datenschutzfragen."
+    },
+    "screens-and-permissions": {
+      "title": "Was können andere auf dem Bildschirm sehen?",
+      "paragraphs": {
+        "first": "Datenschutz betrifft auch Benachrichtigungen, wenn jemand dein Handy in der Hand hält. Prüfe vor dem Aktivieren, welcher Text wo erscheint.",
+        "second": "Prüfe jede Berechtigung: Was ermöglicht sie und brauchst du die Funktion? Beginne mit wenigen Optionen und aktiviere weitere, wenn du sie verstehst."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "Checkliste vor dem ersten Eintrag",
+      "items": {
+        "policy": "Ich finde eine aktuelle Datenschutzerklärung und einen Kontakt.",
+        "storage": "Ich verstehe Speicherort und Auswirkungen eines Backups.",
+        "optional": "Ich weiß, welche Konto-, Freigabe- und Erinnerungsfunktionen freiwillig sind.",
+        "control": "Ich weiß, wie ich Zugang zu meinen Daten oder ihre Löschung anfrage."
+      },
+      "paragraphs": {
+        "first": [
+          "Auch eine App mit anderen Optionen als Mochi kann passen. Entscheidend ist, dass du ihre Entscheidungen verstehst. Unser ",
+          {
+            "postId": "methods",
+            "label": "Vergleich von App und Kalender"
+          },
+          " erklärt weitere Unterschiede im Alltag."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "Funktioniert Mochi ohne Konto und Internet?",
+      "answer": "Ja. Alle Kernfunktionen funktionieren offline ohne Konto. Für Backup und Synchronisierung ist ein Konto freiwillig."
+    },
+    "private": {
+      "question": "Sind meine Periodendaten privat?",
+      "answer": "Ja. Periodendaten, Blutungsstärke, Symptome und Stimmung bleiben standardmäßig auf deinem iPhone, außer du aktivierst das freiwillige Backup. Sie werden nie an Analysen, technische Protokolle oder Absturzberichte gesendet. Unsere Datenschutzerklärung erläutert das Backup."
+    },
+    "backup": {
+      "question": "Brauche ich ein Backup, um Mochi zu nutzen?",
+      "answer": "Nein. Das Backup ist freiwillig. Kernfunktionen funktionieren offline ohne Konto. Lies die aktuelle Datenschutzerklärung, bevor du es aktivierst."
+    }
+  }
+}

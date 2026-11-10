@@ -1,0 +1,82 @@
+{
+  "title": "De quanto em quanto tempo trocar o absorvente?",
+  "description": "Saiba de quanto em quanto tempo trocar o absorvente, quando trocar antes e o que observar à noite ou com protetores diários, com fontes dos CDC e ACOG.",
+  "imageAlt": "Mochi rosa ao lado de um absorvente e um despertador roxo",
+  "intro": "Troque o absorvente a cada poucas horas, antes se estiver cheio, úmido ou desconfortável. Siga a embalagem e adapte ao seu fluxo. Um lembrete ajuda a conferir, mas você pode trocar antes de tocar.",
+  "sections": {
+    "day-pads": {
+      "title": "Absorventes diurnos",
+      "paragraphs": {
+        "first": "O CDC recomenda trocar a cada poucas horas, mesmo com fluxo leve. O ACOG orienta pelo menos a cada 4 a 8 horas, ou antes se estiver cheio, úmido ou desconfortável. São referências gerais, não motivo para esperar quando você precisa trocar.",
+        "second": "Com fluxo intenso, confira mais vezes. Escolha a absorção adequada e siga a embalagem."
+      },
+      "table": {
+        "caption": "Guia prático de absorventes e protetores diários",
+        "columns": [
+          "Produto",
+          "Quando trocar",
+          "Lembre-se"
+        ],
+        "rows": [
+          [
+            "Absorvente diurno",
+            "A cada poucas horas",
+            "Antes em caso de fluxo intenso ou desconforto."
+          ],
+          [
+            "Absorvente noturno",
+            "Conforme a embalagem",
+            "Coloque um novo ao deitar e troque ao acordar, ou antes se necessário."
+          ],
+          [
+            "Protetor diário",
+            "Regularmente e quando estiver úmido",
+            "Para fluxo leve ou escapes."
+          ]
+        ]
+      }
+    },
+    "overnight-pads": {
+      "title": "Absorventes noturnos",
+      "paragraphs": {
+        "first": "Escolha um produto para a noite e respeite o tempo indicado. Coloque um novo antes de dormir e troque ao acordar, ou antes se estiver cheio ou incomodar.",
+        "second": "O rótulo noturno não garante o mesmo tempo para todos os produtos. Se um sangramento intenso exige trocas muito frequentes de forma habitual, procure orientação médica."
+      }
+    },
+    "liners": {
+      "title": "Protetores diários",
+      "paragraphs": {
+        "first": "Mais finos, servem para fluxo leve ou escapes. Troque regularmente e quando estiverem úmidos ou desconfortáveis. Para sangramento maior, use um produto adequado."
+      }
+    },
+    "signs-to-change": {
+      "title": "Sinais de que está na hora de trocar",
+      "items": {
+        "full": "O absorvente está cheio, úmido ou desconfortável.",
+        "leaks": "Há vazamento ou o produto saiu do lugar.",
+        "time": "Chegou o momento indicado na embalagem, mesmo com fluxo leve."
+      }
+    },
+    "mochi-reminder": {
+      "title": "Deixe o Mochi lembrar você",
+      "paragraphs": {
+        "first": "O lembrete opcional mostra uma contagem regressiva na Dynamic Island e na Tela Bloqueada. As funções publicadas incluem opções para absorvente diurno, noturno e protetor diário, com duração escolhida por você.",
+        "second": "O timer convida a conferir o produto. Não mede quanto ele encheu nem confirma que uma duração é adequada. Troque antes sempre que precisar."
+      }
+    }
+  },
+  "faq": {
+    "hours": {
+      "question": "Posso manter o absorvente até o timer terminar?",
+      "answer": "Troque antes se estiver cheio, úmido ou desconfortável. Siga as instruções. O timer não avalia o fluxo nem o estado do produto."
+    },
+    "light": {
+      "question": "Preciso trocar mesmo com fluxo leve?",
+      "answer": "Sim. O CDC orienta trocar a cada poucas horas, mesmo com fluxo leve, e com mais frequência quando intenso."
+    },
+    "night": {
+      "question": "Todo absorvente noturno tem o mesmo tempo de uso?",
+      "answer": "Não. Escolha um produto noturno e siga a embalagem. Troque antes se estiver cheio ou desconfortável."
+    }
+  }
+}

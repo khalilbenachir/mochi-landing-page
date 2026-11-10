@@ -11,7 +11,8 @@
     "flavors": "Flavors",
     "privacy": "Privacy",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "blog": "Blog"
   },
   "LocaleSwitcher": {
     "label": "Language",
@@ -71,18 +72,54 @@
     "title3": "12 Mochi flavors",
     "body": "Log a little every day and new Mochi join your collection.",
     "items": {
-      "strawberry": { "name": "Strawberry", "unlock": "Starter" },
-      "classic": { "name": "Classic", "unlock": "Starter" },
-      "matcha": { "name": "Matcha", "unlock": "Starter" },
-      "ube": { "name": "Ube", "unlock": "7-day streak" },
-      "mango": { "name": "Mango", "unlock": "14-day streak" },
-      "sesame": { "name": "Sesame", "unlock": "30-day streak" },
-      "yuzu": { "name": "Yuzu", "unlock": "60-day streak" },
-      "chocolate": { "name": "Chocolate", "unlock": "90-day streak" },
-      "hojicha": { "name": "Hojicha", "unlock": "180-day streak" },
-      "sakura": { "name": "Sakura", "unlock": "150 petals" },
-      "peach": { "name": "Peach", "unlock": "Cramp care challenge" },
-      "coconut": { "name": "Coconut", "unlock": "Calm week challenge" }
+      "strawberry": {
+        "name": "Strawberry",
+        "unlock": "Starter"
+      },
+      "classic": {
+        "name": "Classic",
+        "unlock": "Starter"
+      },
+      "matcha": {
+        "name": "Matcha",
+        "unlock": "Starter"
+      },
+      "ube": {
+        "name": "Ube",
+        "unlock": "7-day streak"
+      },
+      "mango": {
+        "name": "Mango",
+        "unlock": "14-day streak"
+      },
+      "sesame": {
+        "name": "Sesame",
+        "unlock": "30-day streak"
+      },
+      "yuzu": {
+        "name": "Yuzu",
+        "unlock": "60-day streak"
+      },
+      "chocolate": {
+        "name": "Chocolate",
+        "unlock": "90-day streak"
+      },
+      "hojicha": {
+        "name": "Hojicha",
+        "unlock": "180-day streak"
+      },
+      "sakura": {
+        "name": "Sakura",
+        "unlock": "150 petals"
+      },
+      "peach": {
+        "name": "Peach",
+        "unlock": "Cramp care challenge"
+      },
+      "coconut": {
+        "name": "Coconut",
+        "unlock": "Calm week challenge"
+      }
     }
   },
   "Predictions": {
@@ -161,11 +198,31 @@
     "mochi": "Mochi",
     "typical": "Typical period app",
     "rows": {
-      "account": { "feature": "Account required", "mochi": "No", "typical": "Often" },
-      "offline": { "feature": "Works offline", "mochi": "Yes", "typical": "Varies" },
-      "reminder": { "feature": "Pad reminder on Lock Screen", "mochi": "Yes", "typical": "Rare" },
-      "analytics": { "feature": "Cycle data sent to analytics", "mochi": "Never", "typical": "Varies" },
-      "rewards": { "feature": "Rewards for logging", "mochi": "Streaks + 12 flavors", "typical": "Rare" }
+      "account": {
+        "feature": "Account required",
+        "mochi": "No",
+        "typical": "Often"
+      },
+      "offline": {
+        "feature": "Works offline",
+        "mochi": "Yes",
+        "typical": "Varies"
+      },
+      "reminder": {
+        "feature": "Pad reminder on Lock Screen",
+        "mochi": "Yes",
+        "typical": "Rare"
+      },
+      "analytics": {
+        "feature": "Cycle data sent to analytics",
+        "mochi": "Never",
+        "typical": "Varies"
+      },
+      "rewards": {
+        "feature": "Rewards for logging",
+        "mochi": "Streaks + 12 flavors",
+        "typical": "Rare"
+      }
     }
   },
   "Plans": {
@@ -238,7 +295,7 @@
     "brand": "Mochi: period tracker"
   },
   "Footer": {
-    "navLabel": "Legal and contact",
+    "navLabel": "Footer navigation",
     "privacy": "Privacy policy",
     "terms": "Terms",
     "contact": "Contact",
@@ -425,6 +482,146 @@
         "body": "If you have a question about these terms or need help with Mochi, contact us using the email address below.",
         "detail": "Please avoid including sensitive health information in your message. For questions about your health, contact a qualified healthcare professional."
       }
+    }
+  },
+  "Blog": {
+    "navigation": "Blog",
+    "categories": {
+      "cycle-basics": "Cycle basics",
+      "period-care": "Period care",
+      "symptoms-moods": "Symptoms & moods",
+      "privacy": "Privacy",
+      "using-mochi": "Using Mochi"
+    },
+    "eyebrow": "Blog",
+    "title": "The Mochi Journal",
+    "description": "Gentle, practical guides to your cycle, periods and self-care, written in plain language.",
+    "metadataTitle": "The Mochi Journal | Period tracking and cycle guides",
+    "metadataDescription": "Practical guides to period care, cycle basics, symptoms, moods and privacy, plus tips for getting started with Mochi.",
+    "startHere": "Start here",
+    "more": "More from Mochi",
+    "readGuide": "Read the guide",
+    "readArticle": "Read article",
+    "byline": "By Mochi",
+    "publisher": "Mochi",
+    "published": "Published",
+    "readTime": "{minutes} min read",
+    "back": "All articles",
+    "onThisPage": "In this article",
+    "sourcesHeading": "Sources and further reading",
+    "sourceLabel": "Sources for this section",
+    "related": "Keep reading",
+    "editorialNote": "Clear sources. Honest limits. Useful information.",
+    "editorialLink": "Our editorial approach",
+    "newsletter": {
+      "title": "New guides,\nonce a month",
+      "emailLabel": "Your email",
+      "submitLabel": "Subscribe",
+      "note": "No spam. Unsubscribe anytime.",
+      "emailNote": "Your email app will open to send your request.",
+      "subject": "Subscribe to The Mochi Journal",
+      "requestBody": "Hi Mochi,\n\nPlease subscribe me to The Mochi Journal's monthly guides.\nMy email address is {email}.\n\nThank you!",
+      "requestMessage": "Send the email to request your subscription. If your email app did not open, use the link below.",
+      "openEmailLabel": "Open email request"
+    },
+    "ctaTitle": "A little friend for every phase.",
+    "ctaAction": "Explore Mochi",
+    "articleNotice": "General information, not medical advice. This article has not been reviewed by a clinician.",
+    "commercialNote": "Mochi publishes this blog and makes the app mentioned here.",
+    "heroAlt": "Mochi wearing a purple beret and writing in an open journal",
+    "sources": {
+      "menstrualCycle": "Office on Women's Health: Your menstrual cycle",
+      "irregularPeriods": "NHS: Irregular periods",
+      "missedPeriods": "NHS: Missed or late periods",
+      "pregnancyTests": "NHS: Doing a pregnancy test",
+      "periodProblems": "NHS: Period problems",
+      "appPrivacy": "Apple: Privacy information on the App Store",
+      "mochiPrivacy": "Mochi privacy policy",
+      "mochiTerms": "Mochi terms and health disclaimer",
+      "menstrualHygiene": "CDC: Healthy habits for menstrual hygiene",
+      "firstPeriod": "ACOG: Your first period",
+      "cycleOverview": "Office on Women's Health: The menstrual cycle",
+      "periodPain": "NHS: Period pain",
+      "pms": "Office on Women's Health: Premenstrual syndrome",
+      "cyclePhases": "Cleveland Clinic: Menstrual cycle and phases"
+    },
+    "editorial": {
+      "title": "Our editorial approach",
+      "description": "Who publishes the Mochi blog, how we use sources, and how to report a correction.",
+      "intro": "Mochi publishes this blog to help people understand period tracking and make informed choices about the tools they use. The same company makes the Mochi app mentioned in our articles.",
+      "sections": {
+        "publisher": {
+          "title": "Who writes the articles",
+          "body": "Articles are attributed to Mochi as the publisher. We do not present this byline as a medical qualification or claim independent testing of our own app. We do not currently have a clinician reviewing these articles."
+        },
+        "sources": {
+          "title": "How we use sources",
+          "body": "Basic health information links to sources such as the NHS and the US Office on Women's Health. Product and privacy descriptions link to the relevant official documentation. Each article includes its sources so you can read the underlying guidance."
+        },
+        "editing": {
+          "title": "How the copy is prepared",
+          "body": "These launch articles were drafted with AI assistance, edited for clear language, and checked against the cited sources. An editorial check is not a clinical review. Illustrations are AI-generated artwork and do not show a medical result or a verified app screen."
+        },
+        "limits": {
+          "title": "What the articles can help with",
+          "body": "The blog covers basic tracking habits, product features, and privacy questions. It does not provide personal medical advice, diagnosis, treatment, or contraception guidance. Contact a qualified healthcare professional about health concerns."
+        },
+        "dates": {
+          "title": "Publication dates and updates",
+          "body": "Publication dates identify when an article was first added. An updated date is shown only when its content changes substantively. Rebuilding the website does not refresh article dates."
+        },
+        "corrections": {
+          "title": "Corrections and questions",
+          "body": "If you find a factual error, send the article URL and the passage you want us to check. Please avoid including period dates, symptoms, or other sensitive health information in your message."
+        }
+      },
+      "contact": "Contact Mochi about a correction",
+      "privacy": "Read our privacy policy"
+    },
+    "allCategories": "All",
+    "filterLabel": "Filter articles by topic",
+    "guidesHeading": "Latest guides",
+    "guideCount": "{count, plural, one {# guide} other {# guides}}",
+    "quickAnswer": "Quick answer",
+    "shareHeading": "Share this article",
+    "copyLink": "Copy article link",
+    "copiedLink": "Link copied",
+    "copyError": "Could not copy. Copy the address from your browser.",
+    "shareX": "Share on X",
+    "shareFacebook": "Share on Facebook",
+    "shareWhatsApp": "Share on WhatsApp",
+    "questionsHeading": "Questions people ask",
+    "ctaDescription": "Track your period, log how you feel, and find your own rhythm with Mochi.",
+    "inlineCtaTitle": "Let Mochi keep you company.",
+    "inlineCtaDescription": "Period tracking, moods and gentle reminders, together on your iPhone.",
+    "mobileContents": "In this article",
+    "sourcesToggle": "Sources and editorial information"
+  },
+  "PeriodEducationFAQ": {
+    "sourcesLabel": "Sources",
+    "items": {
+      "bestWay": {
+        "question": "What is the best way to track my period?",
+        "answer": "Choose a method you can use consistently: a period app, calendar, or notebook. Record when bleeding starts and ends, its heaviness, and any symptoms you want to follow. Reviewing your entries can help you notice patterns and changes."
+      },
+      "meaning": {
+        "question": "What does “tracking period” mean?",
+        "answer": "Period tracking means recording your bleeding dates and related symptoms over time. Day 1 is the first day of your period. Cycle length is counted from that day to the day before your next period starts."
+      },
+      "noBleeding": {
+        "question": "How do I track my menstrual cycle if I don't bleed?",
+        "answer": "You can keep a dated symptom and mood diary, but symptoms alone cannot reliably confirm ovulation or your cycle phase. Some hormonal contraception changes bleeding and ovulation. If pregnancy is possible, take a pregnancy test. Seek medical advice if you miss three periods in a row, or sooner if you are concerned."
+      },
+      "whenToStart": {
+        "question": "When should you start tracking your period?",
+        "answer": "You can start recording periods from your first one, or at any later time. Begin with the bleeding dates you know and keep adding entries. If you start midway through a cycle, leave uncertain dates blank instead of guessing."
+      }
+    },
+    "sources": {
+      "menstrualCycle": "Office on Women's Health: Your menstrual cycle",
+      "irregularPeriods": "NHS: Irregular periods",
+      "missedPeriods": "NHS: Missed or late periods",
+      "pregnancyTests": "NHS: Doing a pregnancy test"
     }
   }
 }

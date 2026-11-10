@@ -1,0 +1,52 @@
+{
+  "title": "Mudanças de humor durante o ciclo menstrual",
+  "description": "Entenda mudanças de humor no ciclo menstrual, o que anotar em um registro e quando buscar apoio, sem regras fixas sobre como você deveria se sentir.",
+  "imageAlt": "Mochi azul com um balão de pensamento e um coração rosa",
+  "intro": "Algumas pessoas percebem mudanças de humor antes da menstruação, outras não. Os sintomas pré-menstruais variam e podem mudar com o tempo. Um diário datado descreve sua experiência, mas não diagnostica sua causa.",
+  "sections": {
+    "premenstrual-changes": {
+      "title": "Como as mudanças pré-menstruais podem aparecer",
+      "paragraphs": {
+        "first": "A TPM pode incluir irritabilidade, ansiedade, tristeza ou mudanças de humor, além de sintomas físicos. Costumam surgir antes da menstruação e aliviar após o início.",
+        "second": "Uma lista de sintomas não é um teste. Se algo incomoda ou interfere no dia a dia, converse com um profissional de saúde."
+      }
+    },
+    "useful-notes": {
+      "title": "Descreva o seu dia",
+      "items": {
+        "date": "Anote a data e palavras que descrevam seu humor.",
+        "impact": "Inclua a intensidade e o impacto no dia.",
+        "context": "Acrescente contexto útil: sono, estresse ou um acontecimento difícil."
+      },
+      "after": "Você pode registrar dias comuns ou tranquilos também. Eles ajudam a comparar, em vez de anotar só os dias difíceis."
+    },
+    "avoid-rules": {
+      "title": "Não existe um jeito obrigatório de se sentir",
+      "paragraphs": {
+        "first": "Você não precisa estar animada, sociável, calma ou cansada em um dia específico. Use o diário para sua experiência, sem tentar seguir um modelo.",
+        "second": "No Mochi, registrar humor é opcional. A reação do mascote faz parte da experiência lúdica, não de uma interpretação médica."
+      }
+    },
+    "support": {
+      "title": "Busque apoio quando precisar",
+      "paragraphs": {
+        "first": "Se os sintomas incomodam, persistem ou interferem na rotina, converse com um profissional qualificado. Leve as notas se ajudarem.",
+        "second": "Não espere um histórico longo. O diário é uma forma de explicar o que percebeu, não uma condição para receber cuidado."
+      }
+    }
+  },
+  "faq": {
+    "everyone": {
+      "question": "Todo mundo tem mudanças de humor antes da menstruação?",
+      "answer": "Não. Os sintomas variam entre pessoas e podem mudar com o tempo."
+    },
+    "diagnosis": {
+      "question": "Registrar humor diagnostica TPM ou TDPM?",
+      "answer": "Não. Pode ajudar a explicar o momento e o impacto dos sintomas, mas não é um teste diagnóstico."
+    },
+    "daily": {
+      "question": "Preciso registrar meu humor todo dia?",
+      "answer": "Não. Escolha uma rotina útil. Dias diferentes acrescentam contexto, mas um registro perfeito não é necessário para pedir apoio."
+    }
+  }
+}

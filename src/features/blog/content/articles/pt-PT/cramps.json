@@ -1,0 +1,51 @@
+{
+  "title": "Dores menstruais: o que ajuda e quando procurar cuidados",
+  "description": "Conheça medidas para aliviar dores menstruais, o que registar sobre a dor e quando procurar cuidados, com ligações para as orientações do NHS.",
+  "imageAlt": "Mochi lilás abraça uma botija de água quente rosa",
+  "intro": "O calor e movimentos suaves podem ajudar nas cólicas. Procura aconselhamento se a dor perturbar as tuas atividades. Procura cuidados urgentes se for forte ou pior do que o habitual e os analgésicos não ajudarem.",
+  "sections": {
+    "comfort": {
+      "title": "Começa com medidas de conforto",
+      "items": {
+        "warmth": "Experimenta um banho ou duche quente, uma almofada térmica ou uma botija de água quente envolvida em tecido sobre a barriga.",
+        "movement": "Experimenta movimentos suaves, como uma caminhada curta, se forem confortáveis.",
+        "massage": "Uma massagem suave na barriga ou nas costas pode ajudar."
+      },
+      "after": "Se quiseres usar um analgésico, pergunta a um farmacêutico ou profissional de saúde o que é adequado para ti e segue as instruções. Este guia não é um plano de tratamento individual."
+    },
+    "record-pain": {
+      "title": "Anota para conseguires explicar depois",
+      "paragraphs": {
+        "first": "Regista quando e onde começou a dor, o impacto no dia, o que experimentaste e se ajudou. Uma nota breve pode facilitar a consulta.",
+        "second": "Não precisas de um diário perfeito para pedir ajuda. Se registar for difícil quando tens dores, escreve só o essencial."
+      }
+    },
+    "get-help": {
+      "title": "Quando pedir ajuda",
+      "paragraphs": {
+        "first": "O NHS recomenda consultar se a menstruação se tornar mais dolorosa, intensa ou irregular, ou impedir as atividades habituais. Sangramento entre menstruações e dor nas relações sexuais, ao urinar ou defecar também merecem avaliação.",
+        "second": "Procura cuidados urgentes se a dor pélvica ou menstrual for forte ou pior do que o habitual e não melhorar com analgésicos. Não esperes por um lembrete nem por outro ciclo."
+      }
+    },
+    "tracking-limits": {
+      "title": "O registo ajuda na conversa",
+      "paragraphs": {
+        "first": "O Mochi ajuda a anotar sintomas e humor, mas não identifica a causa da dor nem substitui uma avaliação. Partilha as notas com um profissional qualificado se ajudarem a descrever o que acontece."
+      }
+    }
+  },
+  "faq": {
+    "heat": {
+      "question": "O calor pode ajudar nas cólicas?",
+      "answer": "O NHS sugere um banho ou duche quente, uma almofada térmica ou uma botija de água quente envolvida em tecido como medidas de conforto."
+    },
+    "daily": {
+      "question": "Devo pedir ajuda se as cólicas afetam os estudos ou o trabalho?",
+      "answer": "Sim. Dor que impede atividades habituais merece avaliação médica. Não precisas de esperar por vários ciclos de registos."
+    },
+    "diagnosis": {
+      "question": "Uma aplicação pode diagnosticar a causa das cólicas?",
+      "answer": "Não. As notas ajudam a descrever a dor, mas um profissional de saúde precisa de avaliar as queixas."
+    }
+  }
+}

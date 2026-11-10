@@ -1,0 +1,98 @@
+{
+  "title": "Aplicación de regla o calendario: ¿qué te conviene?",
+  "description": "Compara una aplicación menstrual, un cuaderno y el calendario del móvil para registrar tu ciclo, gestionar la privacidad y elegir recordatorios.",
+  "imageAlt": "Mochi entre un calendario rosa y un teléfono con marcas de verificación",
+  "intro": "Elige un método que puedas mantener. Un calendario de papel puede bastar para las fechas. Una aplicación puede reunir distintos tipos de notas. Puedes empezar con poco y cambiar después.",
+  "sections": {
+    "paper-calendar": {
+      "title": "El calendario de papel requiere poca preparación",
+      "paragraphs": {
+        "first": "Marca los días de sangrado y añade notas breves. No hay que aprender una aplicación ni crear una cuenta. Guarda el calendario a mano.",
+        "second": "Piensa en quién puede verlo y qué pasaría si lo pierdes. El papel evita compartir datos mediante una app, pero una libreta abierta sigue siendo visible."
+      }
+    },
+    "phone-calendar": {
+      "title": "El calendario del móvil aprovecha una costumbre",
+      "paragraphs": {
+        "first": "Si ya lo consultas cada día, añadir la regla puede resultar cómodo. Usa nombres claros y decide cuánto detalle necesitas.",
+        "second": "Comprueba si está compartido, sincronizado o conectado a cuentas de trabajo o familiares. Revisa las vistas previas antes de añadir recordatorios sensibles."
+      }
+    },
+    "period-app": {
+      "title": "Una aplicación reúne tus registros",
+      "paragraphs": {
+        "first": "Según la app, podrás añadir flujo, síntomas y ánimo junto a las fechas. Consulta las funciones reales: no todas ofrecen las mismas herramientas.",
+        "second": "Mochi incluye seguimiento, ánimo, síntomas, recordatorios y personajes coleccionables. Según nuestra documentación y política, sus funciones esenciales funcionan sin conexión ni cuenta. Desarrollamos Mochi: esta descripción no es una clasificación independiente."
+      }
+    },
+    "compare-the-options": {
+      "title": "Compara las diferencias del día a día",
+      "paragraphs": {
+        "first": "Estas preguntas ayudan a elegir. En herramientas digitales, las respuestas dependen del producto y la configuración."
+      },
+      "table": {
+        "caption": "Preguntas para elegir un método de registro",
+        "columns": [
+          "¿Qué te importa?",
+          "Calendario de papel",
+          "Calendario del móvil",
+          "Aplicación de regla"
+        ],
+        "rows": [
+          [
+            "Empezar",
+            "Calendario y bolígrafo",
+            "Tu calendario habitual",
+            "Elegir y configurar la app"
+          ],
+          [
+            "Añadir detalles",
+            "Escribir notas propias",
+            "Usar las notas del evento",
+            "Revisar los campos disponibles"
+          ],
+          [
+            "Recordatorios",
+            "Organizarlos por tu cuenta",
+            "Revisar notificaciones",
+            "Consultar los recordatorios"
+          ],
+          [
+            "Privacidad",
+            "¿Quién ve el papel?",
+            "¿Está compartido o sincronizado?",
+            "¿Adónde van los datos?"
+          ]
+        ]
+      }
+    },
+    "try-a-small-routine": {
+      "title": "Prueba una rutina que puedas mantener",
+      "paragraphs": {
+        "first": "Elige un lugar para las próximas fechas. Añade una nota sobre síntomas si te interesa. Evita repartir la misma información entre herramientas sin un motivo para guardar otra copia.",
+        "second": "Revisa tus notas después de un tiempo. ¿Encuentras lo que necesitas? Ajusta lo que dificulte registrar antes de añadir más campos o recordatorios."
+      }
+    },
+    "know-the-limits": {
+      "title": "Todos los métodos tienen límites",
+      "paragraphs": {
+        "first": "Un registro ayuda a describir lo que notas, pero no explica su causa. Las predicciones de Mochi son estimaciones y no deben usarse como anticoncepción ni diagnóstico.",
+        "second": "Si te preocupa un cambio, lleva tus notas a un profesional sanitario. No necesitas un registro perfecto para pedir ayuda."
+      }
+    }
+  },
+  "faq": {
+    "app": {
+      "question": "¿Necesito una aplicación para registrar mi regla?",
+      "answer": "No. Puedes usar libreta, calendario de papel, calendario del móvil o app. Elige un método constante que puedas consultar después."
+    },
+    "record": {
+      "question": "¿Cuál es la mejor forma de registrar la regla?",
+      "answer": "La que puedas mantener. Anota inicio, fin, intensidad y síntomas relevantes para reconocer patrones y cambios."
+    },
+    "estimates": {
+      "question": "¿Puedo usar Mochi como anticonceptivo?",
+      "answer": "No. Las predicciones sirven como orientación, no como anticoncepción, diagnóstico ni consejo médico."
+    }
+  }
+}

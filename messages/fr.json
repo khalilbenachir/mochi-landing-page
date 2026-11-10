@@ -11,7 +11,8 @@
     "flavors": "Mochi",
     "privacy": "Confidentialité",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "blog": "Blog"
   },
   "LocaleSwitcher": {
     "label": "Langue",
@@ -71,18 +72,54 @@
     "title3": "12 Mochi",
     "body": "Notez un peu chaque jour et de nouveaux Mochi rejoindront votre collection.",
     "items": {
-      "strawberry": { "name": "Fraise", "unlock": "Départ" },
-      "classic": { "name": "Classique", "unlock": "Départ" },
-      "matcha": { "name": "Matcha", "unlock": "Départ" },
-      "ube": { "name": "Ube", "unlock": "Série de 7 jours" },
-      "mango": { "name": "Mangue", "unlock": "Série de 14 jours" },
-      "sesame": { "name": "Sésame", "unlock": "Série de 30 jours" },
-      "yuzu": { "name": "Yuzu", "unlock": "Série de 60 jours" },
-      "chocolate": { "name": "Chocolat", "unlock": "Série de 90 jours" },
-      "hojicha": { "name": "Hojicha", "unlock": "Série de 180 jours" },
-      "sakura": { "name": "Sakura", "unlock": "150 pétales" },
-      "peach": { "name": "Pêche", "unlock": "Défi anti-crampes" },
-      "coconut": { "name": "Coco", "unlock": "Défi semaine calme" }
+      "strawberry": {
+        "name": "Fraise",
+        "unlock": "Départ"
+      },
+      "classic": {
+        "name": "Classique",
+        "unlock": "Départ"
+      },
+      "matcha": {
+        "name": "Matcha",
+        "unlock": "Départ"
+      },
+      "ube": {
+        "name": "Ube",
+        "unlock": "Série de 7 jours"
+      },
+      "mango": {
+        "name": "Mangue",
+        "unlock": "Série de 14 jours"
+      },
+      "sesame": {
+        "name": "Sésame",
+        "unlock": "Série de 30 jours"
+      },
+      "yuzu": {
+        "name": "Yuzu",
+        "unlock": "Série de 60 jours"
+      },
+      "chocolate": {
+        "name": "Chocolat",
+        "unlock": "Série de 90 jours"
+      },
+      "hojicha": {
+        "name": "Hojicha",
+        "unlock": "Série de 180 jours"
+      },
+      "sakura": {
+        "name": "Sakura",
+        "unlock": "150 pétales"
+      },
+      "peach": {
+        "name": "Pêche",
+        "unlock": "Défi anti-crampes"
+      },
+      "coconut": {
+        "name": "Coco",
+        "unlock": "Défi semaine calme"
+      }
     }
   },
   "Predictions": {
@@ -161,11 +198,31 @@
     "mochi": "Mochi",
     "typical": "Application classique",
     "rows": {
-      "account": { "feature": "Compte obligatoire", "mochi": "Non", "typical": "Souvent" },
-      "offline": { "feature": "Fonctionne hors ligne", "mochi": "Oui", "typical": "Variable" },
-      "reminder": { "feature": "Rappel sur l’écran verrouillé", "mochi": "Oui", "typical": "Rare" },
-      "analytics": { "feature": "Données du cycle envoyées aux analyses", "mochi": "Jamais", "typical": "Variable" },
-      "rewards": { "feature": "Récompenses de suivi", "mochi": "Séries + 12 Mochi", "typical": "Rare" }
+      "account": {
+        "feature": "Compte obligatoire",
+        "mochi": "Non",
+        "typical": "Souvent"
+      },
+      "offline": {
+        "feature": "Fonctionne hors ligne",
+        "mochi": "Oui",
+        "typical": "Variable"
+      },
+      "reminder": {
+        "feature": "Rappel sur l’écran verrouillé",
+        "mochi": "Oui",
+        "typical": "Rare"
+      },
+      "analytics": {
+        "feature": "Données du cycle envoyées aux analyses",
+        "mochi": "Jamais",
+        "typical": "Variable"
+      },
+      "rewards": {
+        "feature": "Récompenses de suivi",
+        "mochi": "Séries + 12 Mochi",
+        "typical": "Rare"
+      }
     }
   },
   "Plans": {
@@ -425,6 +482,146 @@
         "body": "Si vous avez une question sur ces conditions ou besoin d’aide avec Mochi, contactez-nous à l’adresse e-mail ci-dessous.",
         "detail": "Évitez d’inclure des informations de santé sensibles dans votre message. Pour toute question de santé, consultez un professionnel de santé qualifié."
       }
+    }
+  },
+  "Blog": {
+    "navigation": "Blog",
+    "categories": {
+      "cycle-basics": "Comprendre son cycle",
+      "period-care": "Vivre ses règles",
+      "symptoms-moods": "Symptômes et humeur",
+      "privacy": "Confidentialité",
+      "using-mochi": "Utiliser Mochi"
+    },
+    "eyebrow": "Blog",
+    "title": "Le journal de Mochi",
+    "description": "Des guides simples et bienveillants pour comprendre votre cycle, vivre vos règles et prendre soin de vous.",
+    "metadataTitle": "Le journal de Mochi | Règles et cycle menstruel",
+    "metadataDescription": "Suivi des règles, cycle menstruel, protections, symptômes et humeur : des conseils pratiques et des repères pour découvrir Mochi en toute confiance.",
+    "startHere": "Pour commencer",
+    "more": "À découvrir avec Mochi",
+    "readGuide": "Lire le guide",
+    "readArticle": "Lire l’article",
+    "byline": "Par Mochi",
+    "publisher": "Mochi",
+    "published": "Publié le",
+    "readTime": "{minutes} min de lecture",
+    "back": "Tous les articles",
+    "onThisPage": "Dans cet article",
+    "sourcesHeading": "Sources et lectures utiles",
+    "sourceLabel": "Sources de cette section",
+    "related": "Pour continuer",
+    "editorialNote": "Des sources claires, des limites expliquées, des informations utiles.",
+    "editorialLink": "Notre démarche éditoriale",
+    "newsletter": {
+      "title": "De nouveaux guides,\nune fois par mois",
+      "emailLabel": "Votre adresse e-mail",
+      "submitLabel": "M’inscrire",
+      "note": "Pas de spam. Désinscription à tout moment.",
+      "emailNote": "Votre application de messagerie s’ouvrira pour envoyer votre demande.",
+      "subject": "Inscription au journal de Mochi",
+      "requestBody": "Bonjour Mochi,\n\nJe souhaite recevoir les guides mensuels du journal de Mochi.\nMon adresse e-mail est {email}.\n\nMerci !",
+      "requestMessage": "Envoyez cet e-mail pour demander votre inscription. Si votre messagerie ne s’est pas ouverte, utilisez le lien ci-dessous.",
+      "openEmailLabel": "Ouvrir la demande par e-mail"
+    },
+    "ctaTitle": "Un petit compagnon à chaque phase.",
+    "ctaAction": "Découvrir Mochi",
+    "articleNotice": "Informations générales, sans valeur de conseil médical. Cet article n’a pas été relu par un professionnel de santé.",
+    "commercialNote": "Mochi publie ce blog et développe l’application qui y est présentée.",
+    "heroAlt": "Mochi coiffé d’un béret violet, en train d’écrire dans un journal ouvert",
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health : le cycle menstruel",
+      "irregularPeriods": "NHS : règles irrégulières",
+      "missedPeriods": "NHS : absence ou retard de règles",
+      "pregnancyTests": "NHS : faire un test de grossesse",
+      "periodProblems": "NHS : troubles des règles",
+      "appPrivacy": "Apple : les informations de confidentialité de l’App Store",
+      "mochiPrivacy": "Politique de confidentialité de Mochi",
+      "mochiTerms": "Conditions de Mochi et avertissement relatif à la santé",
+      "menstrualHygiene": "CDC : bonnes pratiques d’hygiène menstruelle",
+      "firstPeriod": "ACOG : les premières règles",
+      "cycleOverview": "Office on Women’s Health : comprendre le cycle menstruel",
+      "periodPain": "NHS : douleurs de règles",
+      "pms": "Office on Women’s Health : syndrome prémenstruel",
+      "cyclePhases": "Cleveland Clinic : cycle menstruel et phases"
+    },
+    "editorial": {
+      "title": "Notre démarche éditoriale",
+      "description": "Qui publie le blog Mochi, comment nous utilisons les sources et comment signaler une erreur.",
+      "intro": "Mochi publie ce blog pour aider à comprendre le suivi des règles et à choisir ses outils en connaissance de cause. Notre entreprise développe aussi l’application Mochi présentée dans les articles.",
+      "sections": {
+        "publisher": {
+          "title": "Qui signe les articles ?",
+          "body": "Les articles sont signés Mochi, en tant qu’éditeur. Cette signature ne constitue pas une qualification médicale ni une évaluation indépendante de notre application. Aucun professionnel de santé ne relit actuellement ces articles."
+        },
+        "sources": {
+          "title": "Comment nous utilisons les sources",
+          "body": "Les informations générales de santé renvoient notamment au NHS et à l’Office on Women’s Health américain. Les descriptions du produit et de sa confidentialité renvoient à la documentation officielle. Chaque article cite ses sources pour vous permettre de les consulter."
+        },
+        "editing": {
+          "title": "Comment les textes sont préparés",
+          "body": "Ces premiers articles ont été rédigés avec l’aide de l’IA, retravaillés pour être clairs et vérifiés à partir des sources citées. Ce travail éditorial ne constitue pas une relecture clinique. Les illustrations sont générées par IA : elles ne montrent ni résultat médical ni écran vérifié de l’application."
+        },
+        "limits": {
+          "title": "Ce que les articles peuvent vous apporter",
+          "body": "Le blog aborde le suivi des règles, les fonctions du produit et la confidentialité. Il ne fournit ni conseil médical personnalisé, ni diagnostic, ni traitement, ni conseil de contraception. Pour une question de santé, consultez un professionnel qualifié."
+        },
+        "dates": {
+          "title": "Dates de publication et mises à jour",
+          "body": "La date de publication indique la première mise en ligne. Une date de mise à jour apparaît uniquement après une modification importante du contenu. Reconstruire le site ne change pas ces dates."
+        },
+        "corrections": {
+          "title": "Corrections et questions",
+          "body": "Si vous repérez une erreur factuelle, envoyez-nous l’adresse de l’article et le passage concerné. Évitez d’inclure des dates de règles, des symptômes ou d’autres données de santé sensibles dans votre message."
+        }
+      },
+      "contact": "Signaler une erreur à Mochi",
+      "privacy": "Lire notre politique de confidentialité"
+    },
+    "allCategories": "Tous",
+    "filterLabel": "Filtrer les articles par thème",
+    "guidesHeading": "Les derniers guides",
+    "guideCount": "{count, plural, one {# guide} other {# guides}}",
+    "quickAnswer": "L’essentiel",
+    "shareHeading": "Partager cet article",
+    "copyLink": "Copier le lien de l’article",
+    "copiedLink": "Lien copié",
+    "copyError": "La copie a échoué. Copiez l’adresse dans votre navigateur.",
+    "shareX": "Partager sur X",
+    "shareFacebook": "Partager sur Facebook",
+    "shareWhatsApp": "Partager sur WhatsApp",
+    "questionsHeading": "Les questions fréquentes",
+    "ctaDescription": "Suivez vos règles, notez vos ressentis et découvrez votre propre rythme avec Mochi.",
+    "inlineCtaTitle": "Mochi vous accompagne au quotidien.",
+    "inlineCtaDescription": "Règles, humeur et petits rappels réunis sur votre iPhone.",
+    "mobileContents": "Dans cet article",
+    "sourcesToggle": "Sources et informations éditoriales"
+  },
+  "PeriodEducationFAQ": {
+    "sourcesLabel": "Sources",
+    "items": {
+      "bestWay": {
+        "question": "Est-ce possible d’ovuler 7 jours après les règles ?",
+        "answer": "Oui, c’est possible : cela dépend de la durée de vos règles et de votre cycle. Sept jours après le début des règles et sept jours après leur fin ne correspondent pas au même moment. Comptez le jour 1 au premier jour des règles. Un cycle court ou une ovulation précoce peuvent rapprocher la fenêtre fertile des saignements. Votre calendrier aide à repérer des tendances, sans confirmer l’ovulation."
+      },
+      "meaning": {
+        "question": "Quelle est la durée entre les règles et l’ovulation ?",
+        "answer": "Il n’existe pas de délai fixe après la fin des règles. L’ovulation survient généralement environ deux semaines avant les prochaines règles, avec des variations selon les personnes et les cycles. Le jour 14 n’est qu’un repère pour certains cycles de 28 jours. Pour calculer votre cycle menstruel, notez le premier jour de chaque période de règles. Un calendrier d’ovulation reste une estimation, même avec des cycles réguliers."
+      },
+      "noBleeding": {
+        "question": "Quels sont les 4 principaux signes de l’ovulation ?",
+        "answer": "Quatre signes possibles sont une glaire cervicale plus transparente et glissante, une légère douleur dans le bas-ventre, des seins sensibles et une petite hausse de la température basale. Cette hausse apparaît surtout après l’ovulation. Ces signes varient et peuvent aussi avoir d’autres causes ; certaines personnes ne remarquent rien. Les noter dans votre calendrier des règles peut aider à reconnaître votre rythme, mais aucun de ces signes ne confirme seul une ovulation."
+      },
+      "whenToStart": {
+        "question": "Quels sont les 2 jours les plus fertiles ?",
+        "answer": "Les chances de conception sont généralement les plus élevées pendant les deux jours qui précèdent l’ovulation. Mais la fenêtre fertile est plus large et la date exacte de l’ovulation peut varier. L’expression « les jours dangereux du cycle menstruel » ne signifie donc pas que les autres jours sont sans risque de grossesse. Un calendrier des règles peut aider à comprendre sa fertilité ; il ne constitue pas une méthode de contraception."
+      }
+    },
+    "sources": {
+      "menstrualCycle": "Office on Women’s Health : le cycle menstruel",
+      "irregularPeriods": "NHS : règles irrégulières",
+      "missedPeriods": "NHS : absence ou retard de règles",
+      "pregnancyTests": "NHS : faire un test de grossesse"
     }
   }
 }

@@ -1,0 +1,75 @@
+{
+  "title": "A tua aplicação menstrual é privada? O que verificar",
+  "description": "Antes de registares a menstruação, verifica onde ficam os dados e o que muda com cópias de segurança, conta, permissões e notificações da aplicação.",
+  "imageAlt": "Mochi rosa segura um escudo lilás com um cadeado branco",
+  "intro": "Antes de introduzires datas, verifica para onde vão os dados e que opções tens. Lê a política de privacidade, a informação da App Store e as definições das funcionalidades que vais usar.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Descobre onde ficam os registos",
+      "paragraphs": {
+        "first": "Vê o que permanece no telemóvel e o que é enviado para um servidor. Verifica o que muda com uma cópia de segurança, uma conta ou uma funcionalidade ligada a serviços externos.",
+        "second": "A política do Mochi indica que os registos do ciclo ficam no iPhone, salvo cópia de segurança opcional. Datas, sintomas e humor não entram em análises, registos técnicos ou relatórios de falhas. São declarações sobre as nossas práticas, não uma auditoria independente."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Lê a informação de privacidade na App Store",
+      "paragraphs": {
+        "first": "A Apple explica que esta informação é fornecida pelos programadores. Descreve possíveis recolhas de dados, ligação à tua identidade e utilização para te seguir entre serviços de outras empresas.",
+        "second": "Usa-a como ponto de partida e lê a política das funcionalidades pretendidas. Se houver dúvidas importantes, pergunta ao programador antes de introduzires dados sensíveis."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Conta e cópia de segurança são decisões distintas",
+      "paragraphs": {
+        "first": "Conta, subscrição e cópia de segurança têm funções diferentes. Verifica cada uma sem presumir que todas as aplicações funcionam da mesma forma."
+      },
+      "items": {
+        "account": "Posso registar a menstruação sem criar conta?",
+        "backup": "A cópia é opcional e que dados saem do telemóvel ao ativá-la?",
+        "access": "Como recupero os registos se perder ou trocar de telemóvel?",
+        "deletion": "Como peço a eliminação da conta e das cópias de segurança?"
+      },
+      "after": "O Mochi descreve a cópia como opcional e cifrada. As funcionalidades essenciais não exigem conta. Lê a política atual e contacta o Mochi para pedidos de privacidade."
+    },
+    "screens-and-permissions": {
+      "title": "Pensa no que outras pessoas podem ver",
+      "paragraphs": {
+        "first": "Uma notificação pode aparecer quando outra pessoa tem o teu telemóvel. Antes de ativares lembretes, verifica o texto e onde surgem.",
+        "second": "Avalia cada permissão: o que permite e se precisas dessa funcionalidade. Começa com poucas opções e ativa outras quando as compreenderes."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "O que verificar antes do primeiro registo",
+      "items": {
+        "policy": "Encontro uma política atual e um contacto do programador.",
+        "storage": "Compreendo onde ficam os dados e o que muda com a cópia de segurança.",
+        "optional": "Sei que funcionalidades de conta, partilha e lembretes são opcionais.",
+        "control": "Sei onde pedir acesso aos dados ou a sua eliminação."
+      },
+      "paragraphs": {
+        "first": [
+          "Uma aplicação com opções diferentes das do Mochi também pode servir-te. O importante é compreendê-las antes de escolher. O nosso ",
+          {
+            "postId": "methods",
+            "label": "guia sobre aplicação e calendário"
+          },
+          " explica outras diferenças práticas."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "O Mochi funciona sem conta ou internet?",
+      "answer": "Sim. Todas as funcionalidades essenciais funcionam sem internet nem conta. A conta é opcional para cópia de segurança e sincronização."
+    },
+    "private": {
+      "question": "Os meus dados menstruais são privados?",
+      "answer": "Sim. Datas, fluxo, sintomas e humor ficam no iPhone por predefinição, exceto se ativares a cópia de segurança opcional. Nunca são enviados para análises, registos técnicos ou relatórios de falhas. A nossa política de privacidade explica como funciona a cópia."
+    },
+    "backup": {
+      "question": "Preciso de cópia de segurança para usar o Mochi?",
+      "answer": "Não. É opcional. As funcionalidades essenciais funcionam sem internet nem conta. Lê a política atual antes de ativares a cópia."
+    }
+  }
+}

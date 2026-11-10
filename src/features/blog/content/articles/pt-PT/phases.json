@@ -1,0 +1,53 @@
+{
+  "title": "Quais são as quatro fases do ciclo menstrual?",
+  "description": "Compreende as quatro fases do ciclo menstrual, como se sobrepõem e porque varia a sua duração, com fontes e limites claros para as previsões.",
+  "imageAlt": "Mochi verde junto de uma roda ilustrada com símbolos do ciclo",
+  "intro": "O ciclo costuma ser descrito por quatro termos: menstruação, fase folicular, ovulação e fase lútea. Não são quatro blocos iguais. A menstruação coincide com o início da fase folicular.",
+  "sections": {
+    "menstruation": {
+      "title": "Menstruação: o sangramento",
+      "paragraphs": {
+        "first": "O dia 1 é o primeiro dia da menstruação. O sangramento ocorre quando o revestimento do útero se desprende. Regista as datas reais, sem copiar as previstas."
+      }
+    },
+    "follicular-phase": {
+      "title": "A fase folicular",
+      "paragraphs": {
+        "first": "Começa no início do ciclo e vai até à ovulação. Desenvolvem-se folículos nos ovários e o revestimento uterino volta a formar-se. Os dias de sangramento também pertencem a esta fase."
+      }
+    },
+    "ovulation": {
+      "title": "A ovulação",
+      "paragraphs": {
+        "first": "É a libertação de um óvulo por um ovário. O momento varia: uma data ou sensação não confirma que aconteceu. Uma estimativa da aplicação continua a ser uma estimativa."
+      }
+    },
+    "luteal-phase": {
+      "title": "A fase lútea",
+      "paragraphs": {
+        "first": "Segue-se à ovulação. Se não houver gravidez, os níveis hormonais descem e a menstruação seguinte começa. Algumas pessoas notam sintomas pré-menstruais nesta fase."
+      }
+    },
+    "your-own-pattern": {
+      "title": "O teu ciclo não tem de seguir um desenho",
+      "paragraphs": {
+        "first": "Estes termos ajudam-te a compreender o vocabulário. Depois, regista a tua experiência sem impor humor, energia ou rotinas a partir de uma ilustração.",
+        "second": "Contracetivos hormonais e outras circunstâncias podem alterar o sangramento ou a ovulação. Fala de mudanças inesperadas e dúvidas pessoais com um profissional de saúde. O Mochi não diagnostica fases nem oferece contraceção."
+      }
+    }
+  },
+  "faq": {
+    "equal": {
+      "question": "As quatro fases duram o mesmo tempo?",
+      "answer": "Não. A menstruação coincide com o início da fase folicular. Os tempos variam entre pessoas e ciclos."
+    },
+    "day": {
+      "question": "A ovulação acontece sempre no dia 14?",
+      "answer": "Não. Os exemplos usam muitas vezes 28 dias, mas a ovulação varia. Uma previsão da aplicação não a confirma."
+    },
+    "track": {
+      "question": "Preciso de identificar todas as fases?",
+      "answer": "Não. Começa pelas datas de sangramento e pelos sintomas úteis. Distingue as observações reais das estimativas da aplicação."
+    }
+  }
+}

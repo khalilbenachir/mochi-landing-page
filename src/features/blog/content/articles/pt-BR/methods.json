@@ -1,0 +1,98 @@
+{
+  "title": "Aplicativo menstrual ou calendário: qual combina com você?",
+  "description": "Compare aplicativo menstrual, caderno e calendário do celular para registros, privacidade e lembretes e escolha uma rotina que funcione para você.",
+  "imageAlt": "Mochi entre um calendário rosa e um celular com marcas de confirmação",
+  "intro": "Escolha um método que consiga manter. Um calendário de papel pode bastar para as datas. Um aplicativo reúne diferentes tipos de registros. Você pode começar com pouco e mudar depois.",
+  "sections": {
+    "paper-calendar": {
+      "title": "Calendário de papel: pouca preparação",
+      "paragraphs": {
+        "first": "Marque os dias de sangramento e faça notas curtas. Não é preciso aprender um aplicativo nem criar conta. Deixe o calendário à mão.",
+        "second": "Pense em quem pode vê-lo e no que aconteceria se o perdesse. O papel evita compartilhamento por aplicativos, mas um caderno aberto continua visível."
+      }
+    },
+    "phone-calendar": {
+      "title": "O calendário do celular aproveita um hábito",
+      "paragraphs": {
+        "first": "Se você já o consulta diariamente, incluir a menstruação pode ser prático. Use nomes claros e decida quanto detalhe quer registrar.",
+        "second": "Confira compartilhamento, sincronização e contas de trabalho ou família. Revise as prévias das notificações antes de criar um lembrete sensível."
+      }
+    },
+    "period-app": {
+      "title": "Um aplicativo reúne os registros",
+      "paragraphs": {
+        "first": "Dependendo do aplicativo, você pode incluir fluxo, sintomas e humor junto às datas. Confira os recursos reais, pois nem todos oferecem as mesmas ferramentas.",
+        "second": "O Mochi oferece acompanhamento, humor, sintomas, lembretes e personagens colecionáveis. Segundo nossa documentação e política, os recursos essenciais funcionam offline e sem conta. Nós desenvolvemos o Mochi: isso não é um ranking independente."
+      }
+    },
+    "compare-the-options": {
+      "title": "Compare as diferenças no dia a dia",
+      "paragraphs": {
+        "first": "Estas perguntas ajudam a escolher. Nas ferramentas digitais, as respostas dependem do produto e das configurações."
+      },
+      "table": {
+        "caption": "Perguntas para escolher um método de acompanhamento",
+        "columns": [
+          "O que importa para você?",
+          "Calendário de papel",
+          "Calendário do celular",
+          "Aplicativo menstrual"
+        ],
+        "rows": [
+          [
+            "Começar",
+            "Calendário e caneta",
+            "Seu calendário habitual",
+            "Escolher e configurar o aplicativo"
+          ],
+          [
+            "Detalhes",
+            "Escrever suas notas",
+            "Usar as notas do evento",
+            "Conferir os campos disponíveis"
+          ],
+          [
+            "Lembretes",
+            "Organizar por conta própria",
+            "Revisar notificações",
+            "Conferir os lembretes"
+          ],
+          [
+            "Privacidade",
+            "Quem pode ver o papel?",
+            "Está compartilhado ou sincronizado?",
+            "Para onde vão os dados?"
+          ]
+        ]
+      }
+    },
+    "try-a-small-routine": {
+      "title": "Experimente uma rotina possível",
+      "paragraphs": {
+        "first": "Escolha um lugar para as próximas datas. Acrescente sintomas se quiser lembrar deles. Evite dividir as mesmas informações entre ferramentas sem motivo para manter outra cópia.",
+        "second": "Depois de um tempo, reveja suas notas. Encontra o que precisa? Ajuste o que dificulta o registro antes de adicionar campos ou lembretes."
+      }
+    },
+    "know-the-limits": {
+      "title": "Todo método tem limites",
+      "paragraphs": {
+        "first": "O registro descreve uma observação, mas não explica sua causa. As previsões do Mochi são estimativas e não devem servir como contracepção ou diagnóstico.",
+        "second": "Se uma mudança preocupa você, leve as notas a um profissional de saúde. Não é preciso um histórico perfeito para pedir ajuda."
+      }
+    }
+  },
+  "faq": {
+    "app": {
+      "question": "Preciso de aplicativo para acompanhar a menstruação?",
+      "answer": "Não. Caderno, calendário de papel, calendário do celular e aplicativo podem funcionar. Escolha um método constante que possa consultar depois."
+    },
+    "record": {
+      "question": "Qual é a melhor forma de acompanhar minha menstruação?",
+      "answer": "A que você consegue manter. Registre início, fim, intensidade e sintomas úteis para perceber padrões e mudanças."
+    },
+    "estimates": {
+      "question": "Posso usar o Mochi como contraceptivo?",
+      "answer": "Não. As previsões são informativas e não substituem contracepção, diagnóstico ou orientação médica."
+    }
+  }
+}

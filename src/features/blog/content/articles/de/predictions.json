@@ -1,0 +1,50 @@
+{
+  "title": "Wie sagt eine Perioden-App die nächste Periode voraus?",
+  "description": "Erfahre, wie Perioden-Apps aus eingetragenen Daten die nächste Periode schätzen, warum sich Prognosen ändern und was sie nicht aussagen können.",
+  "imageAlt": "Gelber Mochi neben einem rosa Kalender mit Periodensymbolen",
+  "intro": "Eine App kann aus eingetragenen Daten schätzen, wann die nächste Periode beginnt. Verschiedene Apps nutzen verschiedene Methoden. Die Vorhersage beruht auf bisherigen Informationen und kann sich mit neuen Einträgen ändern.",
+  "sections": {
+    "logged-dates": {
+      "title": "Mit tatsächlichen Periodendaten beginnen",
+      "paragraphs": {
+        "first": "Die Zykluslänge zählt vom ersten Tag einer Periode bis zum Tag vor der nächsten. Deine Startdaten informieren die App über abgeschlossene Zyklen.",
+        "second": "Lasse ein unsicheres älteres Datum offen, statt eine Schätzung als Ereignis einzutragen. Notiere weiter die bekannten Daten."
+      }
+    },
+    "calendar-example": {
+      "title": "Ein einfaches Rechenbeispiel",
+      "paragraphs": {
+        "first": "Angenommen, die Periode beginnt am 1. November und eine Kalenderschätzung nutzt 29 Tage. Addiert man 29 Tage, ergibt sich der 30. November als geschätzter nächster Beginn.",
+        "second": "Das ist ein erfundenes Rechenbeispiel, keine Beschreibung von Mochis Algorithmus und keine Garantie für den Blutungsbeginn."
+      }
+    },
+    "changing-estimates": {
+      "title": "Warum eine Schätzung sich verschiebt",
+      "paragraphs": {
+        "first": "Die Periode kann früher oder später kommen. Ein neues Startdatum, eine Korrektur oder eine andere Zykluslänge verändern die Datengrundlage.",
+        "second": "Eine neue Vorhersage erklärt nicht die Ursache einer Veränderung. Besprich bei Sorgen deine Aufzeichnungen mit medizinischem Fachpersonal."
+      }
+    },
+    "prediction-limits": {
+      "title": "Was Vorhersagen nicht leisten",
+      "paragraphs": {
+        "first": "Mochis Vorhersagen für Periode, fruchtbares Fenster und Eisprung dienen der Orientierung. Sie dürfen weder zur Verhütung, zur Diagnose noch zur Bestätigung eines Eisprungs verwendet werden.",
+        "second": "Ein geschätzter Termin kann beim Packen oder Planen helfen. Sobald die Blutung beginnt, notiere das tatsächliche Datum."
+      }
+    }
+  },
+  "faq": {
+    "guarantee": {
+      "question": "Ist das vorhergesagte Datum sicher?",
+      "answer": "Nein. Es ist eine Schätzung auf Grundlage verfügbarer Informationen. Der tatsächliche Zyklus kann abweichen."
+    },
+    "late": {
+      "question": "Erklärt eine verspätete Vorhersage meine Zyklusveränderung?",
+      "answer": "Nein. Ein Tracker stellt keine Diagnose. Ist eine Schwangerschaft möglich, nutze einen Test nach Anleitung und hole bei Sorgen ärztlichen Rat."
+    },
+    "birthControl": {
+      "question": "Kann ich Mochi zur Verhütung nutzen?",
+      "answer": "Nein. Die Vorhersagen sind Schätzungen zur Orientierung, keine Verhütung, Diagnose oder medizinische Beratung."
+    }
+  }
+}

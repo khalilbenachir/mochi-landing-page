@@ -10,4 +10,8 @@ export const PLATFORM_COLORS = {
   manifestBackground: { value: "#FDE3EA", cssVariable: "--accent" },
   /** Web manifest theme_color; equals `--pink` (Tailwind `mochi-pink`). */
   manifestTheme: { value: "#F2577C", cssVariable: "--pink" },
+  /** Generated blog social cards (next/og cannot read CSS variables). */
+  socialCardBackground: { value: "#F44C80", cssVariable: "--color-hero-band" },
+  socialCardInk: { value: "#172A4F", cssVariable: "--color-ink-navy" },
+  socialCardAccent: { value: "#FFD93D", cssVariable: "--color-sun" },
 } as const;

@@ -6,6 +6,7 @@ import fr from "../../messages/fr.json";
 import ptBR from "../../messages/pt-BR.json";
 import ptPT from "../../messages/pt-PT.json";
 import { LOCALE_META, localePath, localeSwitchPath, routing, type AppLocale } from "./routing";
+import { isBlogLocale } from "@/features/blog/locales";
 
 const MESSAGES = {
   en,
@@ -15,6 +16,10 @@ const MESSAGES = {
   "pt-BR": ptBR,
   "pt-PT": ptPT,
 } satisfies Record<AppLocale, unknown>;
+
+// Editorial namespaces exist only in BLOG_LOCALES; every other namespace is shared by all locales.
+const EDITORIAL_NAMESPACES = ["Blog", "PeriodEducationFAQ"] as const;
+const sharedMessages = Object.fromEntries(Object.entries(en).filter(([key]) => !EDITORIAL_NAMESPACES.some((namespace) => namespace === key)));
 
 function messagePaths(value: unknown, prefix = ""): string[] {
   if (typeof value !== "object" || value === null || Array.isArray(value)) {
@@ -39,9 +44,19 @@ describe("localized messages", () => {
 
   for (const locale of routing.locales.filter((candidate) => candidate !== routing.defaultLocale)) {
     it(`keeps ${locale} keys in lockstep with the English source schema`, () => {
-      expect(messagePaths(MESSAGES[locale]).sort()).toEqual(messagePaths(en).sort());
+      const schema = isBlogLocale(locale) ? en : sharedMessages;
+      expect(messagePaths(MESSAGES[locale]).sort()).toEqual(messagePaths(schema).sort());
     });
   }
+
+  it("publishes editorial namespaces exactly in BLOG_LOCALES", () => {
+    for (const namespace of EDITORIAL_NAMESPACES) {
+      for (const locale of routing.locales) {
+        if (isBlogLocale(locale)) expect(MESSAGES[locale]).toHaveProperty(namespace);
+        else expect(MESSAGES[locale]).not.toHaveProperty(namespace);
+      }
+    }
+  });
 
   it("only stores strings in message files", () => {
     for (const [locale, messages] of Object.entries(MESSAGES)) {

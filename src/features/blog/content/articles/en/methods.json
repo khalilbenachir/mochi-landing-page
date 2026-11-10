@@ -1,0 +1,98 @@
+{
+  "title": "Period app or calendar: which fits your routine?",
+  "description": "Compare a period app, paper notebook and phone calendar for everyday tracking, privacy and reminders, then choose a routine that works for you.",
+  "imageAlt": "Mochi between a pink calendar and a phone with simple check marks",
+  "intro": "Choose the tracking method you are likely to keep using. A paper calendar may be enough if you only want bleeding dates. A period app can be useful if you want several kinds of entries together. You can start small and change methods later.",
+  "sections": {
+    "paper-calendar": {
+      "title": "A paper calendar keeps the setup small",
+      "paragraphs": {
+        "first": "Mark the days you bleed and add a short note when something is worth remembering. There is no app to learn or account to set up. Keep the calendar somewhere you can reach it when you need to make an entry.",
+        "second": "Think about who else can see the calendar. If you carry it around, consider what would happen if you lost it. Paper avoids app data sharing, but a notebook left open on a shared desk is still visible."
+      }
+    },
+    "phone-calendar": {
+      "title": "A phone calendar can fit an existing habit",
+      "paragraphs": {
+        "first": "If you already check a calendar every day, adding period dates there may feel straightforward. Use labels you understand, and decide how much detail belongs in each entry.",
+        "second": "Check whether that calendar is shared, synced to another device, or connected to a work or family account. Review notification previews before adding a reminder with sensitive wording."
+      }
+    },
+    "period-app": {
+      "title": "A period app groups your entries together",
+      "paragraphs": {
+        "first": "Depending on the app, you may be able to record flow, symptoms, and moods alongside period dates. Check the actual feature list rather than assuming every tracker has the same tools.",
+        "second": "Mochi offers period tracking, mood and symptom logging, reminders, and collectible characters. Its core features work offline without an account, according to our published product information and privacy policy. We make Mochi, so this is a description of our app, not an independent product ranking."
+      }
+    },
+    "compare-the-options": {
+      "title": "Compare the everyday tradeoffs",
+      "paragraphs": {
+        "first": "Use these questions to narrow down your choice. For apps and digital calendars, the answer depends on the product and the settings you choose."
+      },
+      "table": {
+        "caption": "Questions to ask when choosing a tracking method",
+        "columns": [
+          "What matters to you?",
+          "Paper calendar",
+          "Phone calendar",
+          "Period app"
+        ],
+        "rows": [
+          [
+            "Getting started",
+            "A calendar and pen",
+            "A calendar you already use",
+            "Choose and set up an app"
+          ],
+          [
+            "Adding detail",
+            "Write your own notes",
+            "Use the event notes",
+            "Check which logs are supported"
+          ],
+          [
+            "Reminders",
+            "Arrange your own prompt",
+            "Check notification settings",
+            "Check available reminders"
+          ],
+          [
+            "Privacy check",
+            "Who can see the paper?",
+            "Is the calendar shared or synced?",
+            "Where do entries go?"
+          ]
+        ]
+      }
+    },
+    "try-a-small-routine": {
+      "title": "Try a routine you can maintain",
+      "paragraphs": {
+        "first": "For your next entries, choose one place to record bleeding dates. Add a short symptom note if you want to remember it. Avoid splitting the same information across several tools unless you have a reason to keep a second copy.",
+        "second": "After using it for a while, look back at your entries. Can you find the information you need? Is anything making logging awkward? Change that part of the routine before adding more fields or reminders."
+      }
+    },
+    "know-the-limits": {
+      "title": "Every method has limits",
+      "paragraphs": {
+        "first": "A record can help you describe what you have noticed. It cannot tell you why a symptom happened. Predictions from Mochi are estimates and must not be used as contraception or a diagnosis.",
+        "second": "If you are worried about a change, take your notes to a healthcare professional. You do not need a perfect record to ask for help."
+      }
+    }
+  },
+  "faq": {
+    "app": {
+      "question": "Do I need an app to track my period?",
+      "answer": "No. You can record bleeding dates in a notebook, paper calendar, phone calendar, or period app. Choose a method you can use consistently and review later."
+    },
+    "record": {
+      "question": "What is the best way to track my period?",
+      "answer": "Choose a method you can use consistently: a period app, calendar, or notebook. Record when bleeding starts and ends, its heaviness, and any symptoms you want to follow. Reviewing your entries can help you notice patterns and changes."
+    },
+    "estimates": {
+      "question": "Can I use Mochi as birth control?",
+      "answer": "No. Mochi's predictions are estimates for period awareness, not contraception, diagnosis or medical advice."
+    }
+  }
+}

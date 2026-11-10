@@ -1,0 +1,75 @@
+{
+  "title": "Seu aplicativo menstrual é privado? Veja o que conferir",
+  "description": "Antes de registrar a menstruação, confira onde os dados ficam e o que muda com backup, conta, permissões e notificações de um aplicativo menstrual.",
+  "imageAlt": "Mochi rosa segura um escudo lilás com um cadeado branco",
+  "intro": "Antes de inserir suas datas, confira para onde vão os dados e quais opções existem. Leia a política de privacidade, as informações da App Store e os ajustes dos recursos que vai usar.",
+  "sections": {
+    "where-data-lives": {
+      "title": "Descubra onde os registros ficam",
+      "paragraphs": {
+        "first": "Veja o que permanece no celular e o que vai para um servidor. Confira o que muda ao ativar um backup, criar uma conta ou conectar um recurso.",
+        "second": "A política do Mochi diz que os registros do ciclo ficam no iPhone, salvo backup opcional. Datas, sintomas e humor não entram em análises, logs ou relatórios de falhas. São declarações sobre nossas práticas, não uma auditoria de segurança independente."
+      }
+    },
+    "read-privacy-labels": {
+      "title": "Leia a privacidade na App Store",
+      "paragraphs": {
+        "first": "A Apple explica que os desenvolvedores fornecem essas informações. Elas descrevem dados que podem ser coletados, ligação com sua identidade e uso para rastrear você entre serviços de outras empresas.",
+        "second": "Use isso como ponto de partida e leia a política dos recursos desejados. Pergunte ao desenvolvedor se uma dúvida importante persistir antes de inserir dados sensíveis."
+      }
+    },
+    "accounts-and-backup": {
+      "title": "Conta e backup são decisões diferentes",
+      "paragraphs": {
+        "first": "Conta, assinatura e backup têm funções distintas. Confira o papel de cada um sem presumir que todos os aplicativos funcionam igual."
+      },
+      "items": {
+        "account": "Posso registrar a menstruação sem criar conta?",
+        "backup": "O backup é opcional e quais dados saem do celular ao ativá-lo?",
+        "access": "Como recupero os registros se perder ou trocar de celular?",
+        "deletion": "Como peço a exclusão da conta e dos backups?"
+      },
+      "after": "O Mochi descreve seu backup como opcional e criptografado. Os recursos essenciais não exigem conta. Leia a política atual e fale com o Mochi sobre pedidos de privacidade."
+    },
+    "screens-and-permissions": {
+      "title": "Pense no que outras pessoas podem ver",
+      "paragraphs": {
+        "first": "Uma notificação pode aparecer quando outra pessoa está com seu celular. Antes de ativar lembretes, confira o texto e onde aparecem.",
+        "second": "Avalie cada permissão: o que ela permite e se você precisa do recurso. Comece com poucas opções e ative outras quando entender seu funcionamento."
+      }
+    },
+    "a-checklist-to-keep": {
+      "title": "O que conferir antes do primeiro registro",
+      "items": {
+        "policy": "Encontro uma política atual e um contato do desenvolvedor.",
+        "storage": "Entendo onde os dados ficam e o que muda com o backup.",
+        "optional": "Sei quais recursos de conta, compartilhamento e lembretes são opcionais.",
+        "control": "Sei onde solicitar acesso ou exclusão dos meus dados."
+      },
+      "paragraphs": {
+        "first": [
+          "Um aplicativo com opções diferentes do Mochi também pode servir para você. O importante é entender antes de escolher. Nosso ",
+          {
+            "postId": "methods",
+            "label": "guia de aplicativo versus calendário"
+          },
+          " aborda outras diferenças práticas."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "offline": {
+      "question": "O Mochi funciona sem conta ou internet?",
+      "answer": "Sim. Todos os recursos essenciais funcionam offline e sem conta. A conta é opcional para backup e sincronização."
+    },
+    "private": {
+      "question": "Meus dados menstruais são privados?",
+      "answer": "Sim. Datas, fluxo, sintomas e humor ficam no iPhone por padrão, a menos que você ative o backup opcional. Nunca são enviados para análises, logs ou relatórios de falhas. Nossa política de privacidade explica como o backup funciona."
+    },
+    "backup": {
+      "question": "Preciso de backup para usar o Mochi?",
+      "answer": "Não. Ele é opcional. Os recursos essenciais funcionam offline e sem conta. Leia a política atual antes de ativar o backup."
+    }
+  }
+}

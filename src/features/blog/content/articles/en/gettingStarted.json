@@ -1,0 +1,49 @@
+{
+  "title": "Getting started with Mochi: your first check-in",
+  "description": "Set up your first Mochi check-in: record the period dates you know, add optional moods and symptoms, and choose reminders and backup settings.",
+  "imageAlt": "Cream Mochi beside a pink phone displaying a simple Mochi face",
+  "intro": "Start with the period dates you know. Add a mood or symptom if you want to remember it, then decide whether reminders would be useful. Mochi's core features work offline without an account, according to our published product information.",
+  "sections": {
+    "first-entry": {
+      "title": "Start with the dates you know",
+      "paragraphs": {
+        "first": "Record the actual start and end of bleeding when you know them. If an older date is uncertain, do not replace that uncertainty with a guess. You can begin with your current entries and continue from there."
+      }
+    },
+    "mood-symptoms": {
+      "title": "Add what is useful to you",
+      "paragraphs": {
+        "first": "Mochi supports mood, symptom and flow logging. Use the fields you want to look back on; you do not need to fill in every option. A short note about your day can be enough.",
+        "second": "Collectible flavors and streaks are part of the app's playful check-in experience. You can return to tracking after a missed day without reconstructing a perfect record."
+      }
+    },
+    "reminders": {
+      "title": "Choose reminders deliberately",
+      "paragraphs": {
+        "first": "The optional pad change reminder can show a countdown in the Dynamic Island and on the Lock Screen. Choose an interval that fits your product instructions and needs. Change your product sooner whenever necessary.",
+        "second": "A reminder is a prompt, not a recommendation that a particular wear time is medically suitable for you."
+      }
+    },
+    "privacy-options": {
+      "title": "Read the privacy choices before enabling more",
+      "paragraphs": {
+        "first": "Mochi's privacy policy says cycle entries stay on your iPhone unless you choose optional backup. An account is not required for core features. Read the policy before deciding whether to enable backup.",
+        "second": "Mochi's predictions are estimates. The app does not provide contraception, diagnosis or treatment."
+      }
+    }
+  },
+  "faq": {
+    "account": {
+      "question": "Does Mochi work without an account or internet?",
+      "answer": "Yes. Every core feature works offline and no account is required. An account is optional if you want backup and sync."
+    },
+    "free": {
+      "question": "Is Mochi free?",
+      "answer": "Yes. Cycle tracking, predictions, the pad change reminder, moods, streaks and starter flavors are free. Mochi Plus is optional."
+    },
+    "birthControl": {
+      "question": "Can I use Mochi as birth control?",
+      "answer": "No. Mochi's predictions are estimates for period awareness, not contraception, diagnosis or medical advice."
+    }
+  }
+}

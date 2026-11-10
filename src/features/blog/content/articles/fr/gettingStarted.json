@@ -1,0 +1,49 @@
+{
+  "title": "Bien débuter avec Mochi : votre première note",
+  "description": "Faites votre première note dans Mochi : saisissez les dates connues, ajoutez humeur et symptômes si vous le souhaitez, puis choisissez rappels et sauvegarde.",
+  "imageAlt": "Mochi crème près d’un téléphone rose affichant un visage de Mochi",
+  "intro": "Commencez par les dates que vous connaissez. Ajoutez une humeur ou un symptôme si vous le souhaitez, puis choisissez vos rappels. D’après nos informations produit, les fonctions essentielles de Mochi marchent hors ligne et sans compte.",
+  "sections": {
+    "first-entry": {
+      "title": "Commencer avec les dates connues",
+      "paragraphs": {
+        "first": "Notez le début et la fin réels des saignements. Ne remplacez pas une ancienne date incertaine par une supposition. Vous pouvez commencer avec vos observations actuelles."
+      }
+    },
+    "mood-symptoms": {
+      "title": "Ajouter ce qui vous est utile",
+      "paragraphs": {
+        "first": "Mochi permet de noter l’humeur, les symptômes et le flux. Choisissez les champs que vous voulez relire, sans devoir tous les remplir. Quelques mots sur votre journée peuvent suffire.",
+        "second": "Les saveurs à collectionner et les séries rendent le suivi ludique. Après un jour manqué, reprenez sans reconstituer un historique parfait."
+      }
+    },
+    "reminders": {
+      "title": "Choisir vos rappels",
+      "paragraphs": {
+        "first": "Le rappel facultatif de changement de serviette affiche un compte à rebours dans la Dynamic Island et sur l’écran verrouillé. Choisissez une durée adaptée à la notice et à vos besoins. Changez plus tôt si nécessaire.",
+        "second": "Un rappel est une invitation à vérifier votre protection, pas une validation médicale de sa durée d’utilisation."
+      }
+    },
+    "privacy-options": {
+      "title": "Lire les choix de confidentialité",
+      "paragraphs": {
+        "first": "Selon la politique de Mochi, les données du cycle restent sur l’iPhone sauf sauvegarde facultative. Aucun compte n’est nécessaire pour les fonctions essentielles. Lisez la politique avant de décider d’activer la sauvegarde.",
+        "second": "Les prédictions restent des estimations. Mochi ne fournit ni contraception, ni diagnostic, ni traitement."
+      }
+    }
+  },
+  "faq": {
+    "account": {
+      "question": "Mochi fonctionne-t-il sans compte ni connexion ?",
+      "answer": "Oui. Les fonctions essentielles marchent hors ligne et sans compte. Un compte est facultatif pour la sauvegarde et la synchronisation."
+    },
+    "free": {
+      "question": "Mochi est-il gratuit ?",
+      "answer": "Oui. Le suivi du cycle, les prédictions, le rappel de serviette, l’humeur, les séries et les premières saveurs sont gratuits. Mochi Plus est facultatif."
+    },
+    "birthControl": {
+      "question": "Puis-je utiliser Mochi comme contraception ?",
+      "answer": "Non. Ses prédictions sont des estimations informatives, sans valeur de contraception, de diagnostic ou de conseil médical."
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Cómo llevar un registro de tu regla: guía para empezar",
+  "description": "Aprende a registrar tu regla, qué fechas y síntomas anotar y cómo interpretar las estimaciones, con un ejemplo de calendario y señales para consultar.",
+  "imageAlt": "Mochi con un lápiz junto a un calendario rosa sobre fondo verde menta",
+  "intro": "Empieza anotando cuándo comienza y termina tu regla. Puedes usar una libreta, un calendario o una aplicación. Elige un lugar donde encuentres las notas con facilidad y añade los detalles que te resulten útiles.",
+  "sections": {
+    "what-tracking-means": {
+      "title": "¿Qué significa registrar la regla?",
+      "paragraphs": {
+        "first": "Es guardar las fechas de sangrado y, si quieres, los síntomas o el ánimo. El ciclo empieza el primer día de la regla. Cuenta desde ese día hasta el anterior a la siguiente regla para conocer su duración.",
+        "second": "Un registro describe lo que ocurrió. Una predicción estima lo que podría pasar después. Distinguirlos facilita entender tus entradas."
+      }
+    },
+    "what-to-record": {
+      "title": "Empieza con notas sencillas",
+      "paragraphs": {
+        "first": "No tienes que rellenar todos los campos. Empieza por las fechas y elige qué otros detalles te gustaría consultar más adelante."
+      },
+      "items": {
+        "dates": "Inicio y fin: anota los días de sangrado con un método constante.",
+        "flow": "Flujo: por ejemplo, leve, medio o abundante. Anota el manchado por separado.",
+        "symptoms": "Síntomas: qué notaste, cuándo ocurrió y cómo afectó a tu día.",
+        "mood": "Ánimo o energía: inclúyelos si te ayudan. También puedes dejarlos en blanco."
+      },
+      "after": "Basta con una nota breve que entiendas después. Puedes llevarla a una consulta para explicar un cambio."
+    },
+    "a-simple-example": {
+      "title": "Un ejemplo de registro",
+      "paragraphs": {
+        "first": "Imagina que la regla empieza el 4 de noviembre y termina el 8. La siguiente empieza el 3 de diciembre. Ese ciclo completo duró 29 días."
+      },
+      "items": {
+        "start": "4 de noviembre: empieza la regla, flujo medio, cólicos por la tarde.",
+        "end": "8 de noviembre: último día de sangrado, flujo leve.",
+        "next": "3 de diciembre: empieza la siguiente regla y un nuevo ciclo."
+      },
+      "note": "Es un ejemplo inventado para explicar el cálculo, no una duración que debas alcanzar ni una predicción personal."
+    },
+    "when-to-start": {
+      "title": "¿Cuándo puedes empezar?",
+      "paragraphs": {
+        "first": "Desde la primera regla o en cualquier momento. Si estás a mitad de ciclo, empieza por lo que sabes y deja las fechas inciertas en blanco.",
+        "second": "Busca un momento cómodo, como cuando guardas tus productos menstruales. Reduce los recordatorios si molestan. La rutina debe encajar en tu vida."
+      }
+    },
+    "understanding-estimates": {
+      "title": "Las fechas previstas son estimaciones",
+      "paragraphs": {
+        "first": "Los ciclos varían y la regla puede empezar otro día. Anota la fecha real cuando ocurra. Una aplicación no diagnostica la causa de un cambio y las predicciones de Mochi no deben usarse como anticonceptivo.",
+        "second": "Si no sangras, puedes registrar síntomas, pero estos no identifican de forma fiable la fase ni confirman la ovulación. Consulta los cambios inesperados con un profesional sanitario."
+      }
+    },
+    "when-to-get-advice": {
+      "title": "Usa tus notas para pedir ayuda",
+      "paragraphs": {
+        "first": "El NHS recomienda consultar si faltan tres reglas seguidas o se vuelven irregulares. Consulta antes si te preocupa. Si puede haber embarazo, hazte una prueba siguiendo sus instrucciones sin esperar más registros.",
+        "second": "Según nuestra política de privacidad, las funciones esenciales de Mochi funcionan sin conexión ni cuenta. Empieza por las fechas y añade ánimo o síntomas cuando te resulte útil."
+      }
+    }
+  },
+  "faq": {
+    "meaning": {
+      "question": "¿Qué significa registrar la regla?",
+      "answer": "Es anotar las fechas de sangrado y los síntomas asociados. El ciclo se cuenta del primer día de una regla al día anterior a la siguiente."
+    },
+    "start": {
+      "question": "¿Cuándo debería empezar a registrar mi regla?",
+      "answer": "Desde la primera regla o más adelante. Empieza por las fechas conocidas y deja en blanco las que no recuerdes con seguridad."
+    },
+    "estimates": {
+      "question": "¿Puedo usar Mochi como anticonceptivo?",
+      "answer": "No. Sus predicciones son estimaciones informativas y no sirven como anticoncepción, diagnóstico ni consejo médico."
+    }
+  }
+}

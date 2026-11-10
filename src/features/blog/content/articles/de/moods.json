@@ -1,0 +1,52 @@
+{
+  "title": "Stimmungsschwankungen im Zyklus verstehen",
+  "description": "Erfahre mehr über Stimmungsschwankungen im Zyklus, hilfreiche Notizen und Unterstützung, ohne feste Vorgaben dafür, wie du dich fühlen solltest.",
+  "imageAlt": "Blauer Mochi mit einer Gedankenblase und einem rosa Herz",
+  "intro": "Manche Menschen bemerken vor der Periode Stimmungsschwankungen, andere nicht. Prämenstruelle Symptome unterscheiden und verändern sich. Ein datiertes Tagebuch kann deine Erfahrung beschreiben, aber keine Ursache diagnostizieren.",
+  "sections": {
+    "premenstrual-changes": {
+      "title": "Wie prämenstruelle Veränderungen aussehen können",
+      "paragraphs": {
+        "first": "Zum PMS können neben körperlichen Beschwerden auch Reizbarkeit, Angst, Traurigkeit oder Stimmungsschwankungen gehören. Häufig treten sie vor der Periode auf und lassen nach ihrem Beginn nach.",
+        "second": "Eine Symptomliste ist kein Test. Wenn dich etwas belastet oder deinen Alltag beeinträchtigt, sprich mit medizinischem Fachpersonal."
+      }
+    },
+    "useful-notes": {
+      "title": "Den konkreten Tag festhalten",
+      "items": {
+        "date": "Notiere Datum und passende Worte für deine Stimmung.",
+        "impact": "Beschreibe kurz, wie stark sie deinen Tag beeinflusst hat.",
+        "context": "Ergänze hilfreichen Kontext wie Schlaf, Stress oder ein belastendes Ereignis."
+      },
+      "after": "Auch gewöhnliche und angenehme Tage kannst du festhalten. Sie liefern Vergleichspunkte für ein Gespräch."
+    },
+    "avoid-rules": {
+      "title": "Keine festen Regeln für deine Gefühle",
+      "paragraphs": {
+        "first": "Du musst an keinem Zyklustag energiegeladen, gesellig, ruhig oder müde sein. Das Tagebuch soll deine Erfahrung beschreiben, keine Vorlage erfüllen.",
+        "second": "Stimmungseinträge sind in Mochi freiwillig. Die Reaktion des Maskottchens gehört zum spielerischen Erlebnis und ist keine medizinische Auswertung."
+      }
+    },
+    "support": {
+      "title": "Unterstützung suchen, wenn du sie brauchst",
+      "paragraphs": {
+        "first": "Wenn Stimmungssymptome belasten, anhalten oder den Alltag stören, sprich mit qualifiziertem Fachpersonal. Nimm hilfreiche Notizen mit.",
+        "second": "Warte nicht auf ein langes Tagebuch. Aufzeichnungen können ein Gespräch unterstützen, sind aber keine Voraussetzung für Hilfe."
+      }
+    }
+  },
+  "faq": {
+    "everyone": {
+      "question": "Hat jeder vor der Periode Stimmungsschwankungen?",
+      "answer": "Nein. Prämenstruelle Symptome unterscheiden sich und können sich mit der Zeit verändern."
+    },
+    "diagnosis": {
+      "question": "Kann Stimmungstracking PMS oder PMDS diagnostizieren?",
+      "answer": "Nein. Es kann Zeitpunkt und Auswirkungen verdeutlichen, ist aber kein diagnostischer Test."
+    },
+    "daily": {
+      "question": "Muss ich meine Stimmung täglich eintragen?",
+      "answer": "Nein. Wähle eine hilfreiche Routine. Unterschiedliche Tage ergänzen das Bild; perfekte Aufzeichnungen sind keine Voraussetzung für Unterstützung."
+    }
+  }
+}

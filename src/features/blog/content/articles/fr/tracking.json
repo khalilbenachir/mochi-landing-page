@@ -1,0 +1,75 @@
+{
+  "title": "Comment suivre ses règles : le guide pour débuter",
+  "description": "Apprenez à suivre vos règles, à noter dates et symptômes et à comprendre les estimations, avec un exemple de calendrier et des repères pour consulter.",
+  "imageAlt": "Mochi tient un crayon près d’un calendrier rose sur fond vert menthe",
+  "intro": "Commencez par noter le début et la fin de vos règles. Un carnet, un calendrier ou une application peuvent convenir. Choisissez un endroit où retrouver facilement vos notes, puis ajoutez les détails qui vous sont utiles.",
+  "sections": {
+    "what-tracking-means": {
+      "title": "Que veut dire suivre ses règles ?",
+      "paragraphs": {
+        "first": "C’est garder une trace des saignements et, si vous le souhaitez, des symptômes ou de l’humeur. Le cycle commence au premier jour des règles. Comptez de ce jour jusqu’à la veille des règles suivantes pour connaître sa durée.",
+        "second": "Une note décrit ce qui s’est passé. Une prédiction estime ce qui pourrait arriver. Distinguer les deux rend votre suivi plus facile à comprendre."
+      }
+    },
+    "what-to-record": {
+      "title": "Des premières notes toutes simples",
+      "paragraphs": {
+        "first": "Vous n’avez pas besoin de remplir tous les champs d’une application. Commencez par les dates, puis choisissez les détails que vous aimeriez retrouver."
+      },
+      "items": {
+        "dates": "Dates de début et de fin : notez les jours de saignement avec une méthode constante.",
+        "flow": "Flux : léger, moyen ou abondant, par exemple. Notez les petits saignements hors règles séparément.",
+        "symptoms": "Symptômes : ce que vous avez remarqué, à quel moment et avec quel effet sur votre journée.",
+        "mood": "Humeur ou énergie : ajoutez ces informations si elles vous aident. Vous pouvez aussi les laisser vides."
+      },
+      "after": "Une note courte que vous comprendrez plus tard suffit. Vous pouvez l’apporter en consultation pour expliquer un changement."
+    },
+    "a-simple-example": {
+      "title": "Un exemple concret de suivi",
+      "paragraphs": {
+        "first": "Imaginons des règles qui commencent le 4 novembre et se terminent le 8 novembre. Les suivantes débutent le 3 décembre : le cycle achevé a duré 29 jours."
+      },
+      "items": {
+        "start": "4 novembre : début des règles, flux moyen, crampes le soir.",
+        "end": "8 novembre : dernier jour de saignement, flux léger.",
+        "next": "3 décembre : nouvelles règles, début d’un nouveau cycle."
+      },
+      "note": "Cet exemple fictif illustre le calcul. Ce n’est ni une durée à atteindre ni une prédiction personnelle."
+    },
+    "when-to-start": {
+      "title": "Quand commencer ?",
+      "paragraphs": {
+        "first": "Dès vos premières règles ou à n’importe quel moment. En milieu de cycle, notez ce que vous savez et laissez les dates incertaines vides.",
+        "second": "Choisissez un moment pratique, par exemple en rangeant vos protections. Réduisez les rappels s’ils vous agacent : cette habitude doit s’adapter à votre vie."
+      }
+    },
+    "understanding-estimates": {
+      "title": "Les dates prédites restent des estimations",
+      "paragraphs": {
+        "first": "Les cycles varient : la date suggérée peut différer du début réel des règles. Notez la date réelle lorsque les saignements commencent. Une application ne diagnostique pas la cause d’un changement. Les prédictions Mochi ne doivent pas servir de contraception.",
+        "second": "Sans saignements, vous pouvez tenir un journal des symptômes. Ils ne permettent pas à eux seuls d’identifier fiablement une phase ou de confirmer l’ovulation. Parlez des changements inattendus à un professionnel de santé."
+      }
+    },
+    "when-to-get-advice": {
+      "title": "Vos notes peuvent aider en consultation",
+      "paragraphs": {
+        "first": "Le NHS conseille de consulter après trois absences de règles consécutives ou si les règles deviennent irrégulières. Consultez plus tôt si vous vous inquiétez. Si une grossesse est possible, faites un test selon sa notice sans attendre d’autres observations.",
+        "second": "D’après notre politique de confidentialité, les fonctions essentielles de Mochi marchent hors ligne et sans compte. Commencez par les dates, puis ajoutez l’humeur ou les symptômes si cela vous aide."
+      }
+    }
+  },
+  "faq": {
+    "meaning": {
+      "question": "Que signifie suivre ses règles ?",
+      "answer": "C’est noter les dates des saignements et les symptômes associés. Le cycle va du premier jour des règles jusqu’à la veille des suivantes."
+    },
+    "start": {
+      "question": "Quand commencer à suivre ses règles ?",
+      "answer": "Dès les premières règles ou plus tard. Commencez avec les dates que vous connaissez et laissez les dates incertaines vides."
+    },
+    "estimates": {
+      "question": "Puis-je utiliser Mochi comme contraception ?",
+      "answer": "Non. Les prédictions de Mochi sont des estimations pour mieux connaître vos règles, sans valeur de contraception, de diagnostic ou de conseil médical."
+    }
+  }
+}

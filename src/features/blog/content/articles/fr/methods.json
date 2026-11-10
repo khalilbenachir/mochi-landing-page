@@ -1,0 +1,98 @@
+{
+  "title": "Application de règles ou calendrier : que choisir ?",
+  "description": "Comparez application de règles, carnet et calendrier du téléphone pour le suivi, la confidentialité et les rappels, puis choisissez votre routine.",
+  "imageAlt": "Mochi entre un calendrier rose et un téléphone avec des coches",
+  "intro": "Choisissez surtout une méthode que vous pourrez garder. Un calendrier papier peut suffire pour les dates. Une application peut réunir plusieurs types de notes. Vous pouvez commencer simplement et changer plus tard.",
+  "sections": {
+    "paper-calendar": {
+      "title": "Le calendrier papier : peu de préparation",
+      "paragraphs": {
+        "first": "Marquez les jours de saignement et ajoutez une courte note si nécessaire. Pas d’application à apprendre ni de compte à créer. Gardez le calendrier à portée de main.",
+        "second": "Pensez aux personnes qui peuvent le voir et à ce qui se passerait si vous le perdiez. Le papier évite le partage de données par une application, mais un carnet ouvert reste visible."
+      }
+    },
+    "phone-calendar": {
+      "title": "Le calendrier du téléphone : une habitude existante",
+      "paragraphs": {
+        "first": "Si vous consultez déjà votre calendrier chaque jour, y ajouter les règles peut être pratique. Utilisez des intitulés clairs et choisissez le niveau de détail.",
+        "second": "Vérifiez le partage, la synchronisation et les comptes professionnels ou familiaux associés. Examinez l’aperçu des notifications avant d’ajouter un rappel sensible."
+      }
+    },
+    "period-app": {
+      "title": "Une application pour réunir vos observations",
+      "paragraphs": {
+        "first": "Selon l’application, vous pouvez noter le flux, les symptômes et l’humeur en plus des dates. Vérifiez les fonctions réelles : elles ne sont pas identiques partout.",
+        "second": "Mochi propose suivi des règles, humeur, symptômes, rappels et personnages à collectionner. Selon nos informations produit et notre politique, ses fonctions essentielles marchent hors ligne et sans compte. Nous développons Mochi : ceci n’est pas un classement indépendant."
+      }
+    },
+    "compare-the-options": {
+      "title": "Comparez les aspects pratiques",
+      "paragraphs": {
+        "first": "Ces questions peuvent vous aider à choisir. Pour les outils numériques, les réponses dépendent du produit et des réglages."
+      },
+      "table": {
+        "caption": "Les questions à poser pour choisir sa méthode",
+        "columns": [
+          "Ce qui compte pour vous",
+          "Calendrier papier",
+          "Calendrier du téléphone",
+          "Application de règles"
+        ],
+        "rows": [
+          [
+            "Commencer",
+            "Un calendrier et un stylo",
+            "Votre calendrier habituel",
+            "Choisir et configurer l’application"
+          ],
+          [
+            "Ajouter des détails",
+            "Écrire vos notes",
+            "Utiliser les notes des événements",
+            "Vérifier les champs disponibles"
+          ],
+          [
+            "Rappels",
+            "Prévoir votre propre rappel",
+            "Vérifier les notifications",
+            "Vérifier les rappels proposés"
+          ],
+          [
+            "Confidentialité",
+            "Qui peut voir le papier ?",
+            "Calendrier partagé ou synchronisé ?",
+            "Où vont les données ?"
+          ]
+        ]
+      }
+    },
+    "try-a-small-routine": {
+      "title": "Essayez une routine facile à garder",
+      "paragraphs": {
+        "first": "Choisissez un seul endroit pour les prochaines dates. Ajoutez un symptôme si vous voulez vous en souvenir. Évitez de disperser les mêmes informations, sauf si vous souhaitez une seconde copie.",
+        "second": "Après quelque temps, relisez vos notes. Retrouvez-vous ce dont vous avez besoin ? Corrigez ce qui complique le suivi avant d’ajouter des champs ou des rappels."
+      }
+    },
+    "know-the-limits": {
+      "title": "Chaque méthode a ses limites",
+      "paragraphs": {
+        "first": "Les notes aident à décrire une observation, sans en expliquer la cause. Les prédictions Mochi restent des estimations et ne servent ni de contraception ni de diagnostic.",
+        "second": "Si un changement vous inquiète, apportez vos notes à un professionnel de santé. Un suivi parfait n’est pas nécessaire pour demander de l’aide."
+      }
+    }
+  },
+  "faq": {
+    "app": {
+      "question": "Faut-il une application pour suivre ses règles ?",
+      "answer": "Non. Un carnet, un calendrier papier, celui du téléphone ou une application peuvent convenir. Choisissez une méthode régulière que vous pouvez relire."
+    },
+    "record": {
+      "question": "Quelle est la meilleure façon de suivre mes règles ?",
+      "answer": "Celle que vous pouvez garder : application, calendrier ou carnet. Notez le début, la fin, le flux et les symptômes utiles pour repérer les évolutions."
+    },
+    "estimates": {
+      "question": "Puis-je utiliser Mochi comme contraception ?",
+      "answer": "Non. Ses prédictions sont des estimations de suivi, sans valeur de contraception, de diagnostic ou de conseil médical."
+    }
+  }
+}
