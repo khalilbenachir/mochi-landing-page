@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Mochi – privater Periodentracker fürs iPhone",
-    "description": "Mochi ist ein kostenloser, privater Periodentracker fürs iPhone mit Zyklusprognosen, optionaler Erinnerung zum Bindenwechsel, Stimmungstagebuch, Serien und 12 sammelbaren Mochi-Sorten."
+    "title": "Perioden-App kostenlos und ohne Anmeldung | Mochi",
+    "description": "Mit Mochi kostenlos deine Periode tracken: Zykluskalender, Eisprung-Schätzungen und Symptome auf dem iPhone. Ohne Anmeldung, offline und mit Datenschutz."
   },
   "Navigation": {
     "mainLabel": "Hauptnavigation",
@@ -10,9 +10,9 @@
     "features": "Funktionen",
     "flavors": "Sorten",
     "privacy": "Datenschutz",
+    "blog": "Blog",
     "plus": "Mochi Plus",
-    "faq": "FAQ",
-    "blog": "Blog"
+    "faq": "FAQ"
   },
   "LocaleSwitcher": {
     "label": "Sprache",
@@ -30,10 +30,10 @@
     "backToTop": "Mochi: Periodentracker, nach oben"
   },
   "Hero": {
-    "title1": "Der süße, private",
-    "title2": "Periodentracker",
+    "title1": "Deine kostenlose",
+    "title2": "Perioden-App",
     "title3": "fürs iPhone",
-    "body": "Mochi ist ein kostenloser Periodentracker fürs iPhone, der deine nächste Periode vorhersagt, dich an den Bindenwechsel erinnert und den täglichen Check-in zum Spiel macht. Kein Konto nötig.",
+    "body": "Tracke deine Periode kostenlos, notiere Symptome und lerne deinen Zyklus kennen. Mochi begleitet dich mit einem kleinen Maskottchen durch den Alltag. Ohne Anmeldung, auch offline.",
     "mascotAlt": "Mochi, ein lächelndes rosa Mochi-Maskottchen, auf einem cremefarbenen Kissen",
     "phoneAlt": "Mochi-Startbildschirm auf dem iPhone mit Tag 2 der Periode und den Kurzbefehlen Periode, Stimmung und Symptome"
   },
@@ -48,7 +48,7 @@
   "Moods": {
     "title1": "Wie fühlst du dich?",
     "title2": "Mochi fühlt mit dir.",
-    "body": "Tippe auf Mochi, um Stimmung, Symptome und Blutung in Sekunden einzutragen.",
+    "body": "Auch bei deinen ersten Zyklen: Tippe auf Mochi, um Stimmung, Symptome und Blutungsstärke festzuhalten.",
     "phoneLabel": "Mochi-Ansicht Heute eintragen mit Stimmungsgesichtern und Symptomauswahl",
     "logToday": "Heute eintragen",
     "mood": "Stimmung",
@@ -123,12 +123,12 @@
     }
   },
   "Predictions": {
-    "title1": "Perioden- und",
-    "title2": "Eisprungprognosen,",
-    "title3": "die mitlernen",
-    "body1": "Mochi liest deine eingetragenen Zyklen, um",
-    "body2": "nächste Periode, fruchtbare Tage und Eisprung zu schätzen.",
-    "disclaimer": "Prognosen sind Schätzungen, keine Verhütung.",
+    "title1": "Dein Zykluskalender",
+    "title2": "für Periode und",
+    "title3": "Eisprung-Schätzungen",
+    "body1": "Mochi nutzt deine eingetragenen Zyklen, um",
+    "body2": "die nächste Periode, das fruchtbare Fenster und den Eisprung zu schätzen. Auch bei wechselnden Zykluslängen kannst du deine Daten festhalten.",
+    "disclaimer": "Die Eisprung-App liefert Schätzungen. Sie bestätigt keinen Eisprung und eignet sich nicht zur Verhütung.",
     "phoneLabel": "Mochi-Zykluskalender mit einer markierten fünftägigen Periode",
     "cycle": "Zyklus",
     "month": "März 2025",
@@ -153,10 +153,10 @@
     "mascotAlt": "Fröhlicher Mochi"
   },
   "Privacy": {
-    "title1": "Dein Zyklus bleibt",
-    "title2": "auf dem iPhone",
-    "body1": "Periodendaten, Blutung, Symptome und Stimmungen",
-    "body2": "landen nie in Analysen, Logs oder Absturzberichten.",
+    "title1": "Perioden-Tracker",
+    "title2": "mit Datenschutz",
+    "body1": "Deine Periode tracken, deine Daten schützen:",
+    "body2": "Zyklusdaten, Symptome und Stimmungen werden nie an Analysen, Protokolle oder Absturzberichte gesendet.",
     "promises": {
       "private": {
         "title": "Privat",
@@ -194,7 +194,7 @@
   "Comparison": {
     "title1": "Warum",
     "title2": "Mochi?",
-    "caption": "Mochi im Vergleich mit einer typischen Perioden-App",
+    "caption": "Du kennst die Flo App? Hier siehst du Mochis Funktionen im Vergleich mit einer typischen Perioden-App.",
     "mochi": "Mochi",
     "typical": "Typische Perioden-App",
     "rows": {
@@ -226,14 +226,14 @@
     }
   },
   "Plans": {
-    "title1": "Gratis laden.",
+    "title1": "Kostenlos Periode tracken.",
     "title2": "Mochi Plus",
     "title3": "ist optional.",
     "freeName": "Mochi",
     "freeLabel": "Gratis",
     "plusName": "Mochi Plus",
     "freeFeatures": {
-      "tracking": "Zyklustracking und Prognosen",
+      "tracking": "Perioden- und Zykluskalender mit Schätzungen",
       "reminder": "Erinnerung zum Bindenwechsel",
       "rewards": "Stimmungen, Serien und Sorten",
       "offline": "Offline, ohne Konto"
@@ -246,8 +246,8 @@
   },
   "Account": {
     "kicker": "Optionales Konto",
-    "title": "Nutze Mochi sofort. Sichere, wann du willst.",
-    "body": "Alles funktioniert ohne Konto. Erstelle nur dann ein kostenloses Konto, wenn du Backup und Sync für ein neues iPhone möchtest.",
+    "title": "Deine Perioden-App ohne Anmeldung.",
+    "body": "Du kannst Mochi kostenlos und ohne Konto nutzen. Ein Konto brauchst du nur, wenn du die optionale Sicherung und Synchronisierung auf einem neuen iPhone möchtest.",
     "backup": "Zyklus-Backup",
     "synced": "Mit deinem Konto synchronisiert",
     "imageAlt": "Mochi umarmt ein verschlossenes Tagebuch"
@@ -267,7 +267,7 @@
       },
       "private": {
         "question": "Sind meine Periodendaten privat?",
-        "answer": "Ja. Periodendaten, Blutung, Symptome und Stimmungen bleiben auf deinem iPhone und werden nie an Analysen, Logs oder Absturzberichte gesendet."
+        "answer": "Ja. Periodendaten, Blutungsstärke, Symptome und Stimmung bleiben standardmäßig auf deinem iPhone, außer du aktivierst das freiwillige Backup. Sie werden nie an Analysen, technische Protokolle oder Absturzberichte gesendet. Unsere Datenschutzerklärung erläutert das Backup."
       },
       "offline": {
         "question": "Funktioniert Mochi ohne Konto oder Internet?",
@@ -288,9 +288,9 @@
     }
   },
   "Closing": {
-    "title": "Sag Hallo zu Mochi",
-    "body1": "Tracke deinen Zyklus, sammle süße Sorten und hab",
-    "body2": "einen kleinen Freund an deiner Seite, in jeder Phase.",
+    "title": "Dein Zyklus mit Mochi",
+    "body1": "Lade deine kostenlose Perioden-App",
+    "body2": "fürs iPhone und behalte deine Einträge im Blick.",
     "imageAlt": "Mochi auf einem Kissen",
     "brand": "Mochi: Periodentracker"
   },

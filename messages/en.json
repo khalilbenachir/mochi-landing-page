@@ -10,9 +10,9 @@
     "features": "Features",
     "flavors": "Flavors",
     "privacy": "Privacy",
+    "blog": "Blog",
     "plus": "Mochi Plus",
-    "faq": "FAQ",
-    "blog": "Blog"
+    "faq": "FAQ"
   },
   "LocaleSwitcher": {
     "label": "Language",
@@ -267,7 +267,7 @@
       },
       "private": {
         "question": "Is my period data private?",
-        "answer": "Yes. Period dates, flow, symptoms and moods stay on your iPhone and are never sent to analytics, logs or crash reports."
+        "answer": "Yes. Period dates, flow, symptoms and moods stay on your iPhone by default, unless you enable optional backup. They are never sent to analytics, logs or crash reports. Our privacy policy explains how optional backup works."
       },
       "offline": {
         "question": "Does Mochi work without an account or internet?",

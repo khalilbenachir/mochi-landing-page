@@ -1,8 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
-
-type FaqItem = { id: string; question: string; answer: string };
+import type { FaqItem } from "@/features/landing/content/faq";
 
 /**
  * Exclusive accordion for the FAQ. Height animates through a 0fr → 1fr grid row so the
@@ -15,7 +14,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
 
   return (
     <div className="grid content-start gap-3.5 max-poster:mx-auto max-poster:mb-0 max-poster:mt-[22px] max-poster:w-full max-poster:max-w-[720px] max-poster:gap-[8px]">
-      {items.map(({ id, question, answer }) => {
+      {items.map(({ id, question, answer, sources, sourcesLabel }) => {
         const open = openId === id;
         const buttonId = `${baseId}-${id}-q`;
         const panelId = `${baseId}-${id}-a`;
@@ -50,6 +49,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
             >
               <div className="overflow-hidden">
                 <p className="max-w-612 pb-9 pl-19 pr-22 text-faq-answer-text text-u-[12.2] font-semibold leading-[1.26] max-poster:max-w-none max-poster:pb-[14px] max-poster:px-[18px] max-poster:text-[15px] max-poster:leading-[1.4] max-phone:text-[14px]">{answer}</p>
+                {sources ? <ul aria-label={sourcesLabel} className="grid gap-[6px] pb-[14px] pl-19 pr-22 text-[12px] font-semibold leading-[1.4] max-poster:px-[18px]">{sources.map(({ href, label }) => <li key={href}><a href={href} className="text-blog-link underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mochi-pink-ink">{label}</a></li>)}</ul> : null}
               </div>
             </div>
           </div>
