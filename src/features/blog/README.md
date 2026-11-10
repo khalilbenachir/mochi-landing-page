@@ -14,7 +14,7 @@ purple reference, with a labelled email field, yellow Subscribe button and sleep
 POST field `email`; the provider controls confirmation and unsubscribe handling.
 The value must be an absolute HTTPS URL; anything else fails the build
 (`content/newsletter.ts`). By default, Subscribe opens a prefilled email request to
-`NEWSLETTER_RECIPIENT` (`support@mochiii.app`, in `content/newsletter.ts`), the recipient
+`NEWSLETTER_RECIPIENT` (`hello@mochiii.app`, in `content/newsletter.ts`), the recipient
 supplied by the owner. The visitor must send that email. The form explains
 this before submission and offers an explicit mailto fallback link afterward; it
 never claims that a subscription was completed. No email is sent by the application,
