@@ -36,6 +36,19 @@ test("explicit locale switching preserves home and legal routes and returns to E
 });
 
 for (const locale of BLOG_LOCALES) {
+  test(`${locale} article summaries fit phone and desktop widths`, async ({ page }) => {
+    for (const width of [390, 1440]) {
+      await page.setViewportSize({ width, height: 1000 });
+      for (const post of BLOG_POSTS) {
+        const copy = getArticleCopy(post, locale);
+        await page.goto(blogRoutes(locale).post(post.slug));
+        await page.evaluate(() => document.fonts.ready);
+        await expect(page.locator("article header > p")).toHaveText(copy.description);
+        expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), `${locale}/${post.slug} at ${width}px`).toBeLessThanOrEqual(0);
+      }
+    }
+  });
+
   test(`${locale} privacy guide exposes the localized contextual link without JavaScript`, async ({ browser }) => {
     const context = await browser.newContext({ javaScriptEnabled: false });
     try {
