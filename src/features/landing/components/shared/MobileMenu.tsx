@@ -31,7 +31,18 @@ type MenuState = "closed" | "hover" | "pinned";
  * pointer leaves; a click pins it open (or closes a pinned menu). On touch and keyboard it
  * toggles on tap/Enter. It also closes on link tap, outside tap or Escape.
  */
-export function MobileMenu({ label, navLabel, children }: { label: string; navLabel: string; children: ReactNode }) {
+export function MobileMenu({
+  label,
+  navLabel,
+  className,
+  children,
+}: {
+  label: string;
+  navLabel: string;
+  /** Extra classes for the root, e.g. to show the burger above the nav breakpoint. */
+  className?: string;
+  children: ReactNode;
+}) {
   const [state, setState] = useState<MenuState>("closed");
   const open = state !== "closed";
   const rootRef = useRef<HTMLDivElement>(null);
@@ -70,7 +81,7 @@ export function MobileMenu({ label, navLabel, children }: { label: string; navLa
       data-open={open ? "" : undefined}
       onPointerEnter={onPointerEnter}
       onPointerLeave={onPointerLeave}
-      className="group hidden max-nav:relative max-nav:z-30 max-nav:ml-auto max-nav:block"
+      className={cn("group hidden max-nav:relative max-nav:z-30 max-nav:ml-auto max-nav:block", className)}
     >
       <button
         ref={buttonRef}

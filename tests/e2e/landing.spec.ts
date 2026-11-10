@@ -158,6 +158,50 @@ test.describe("localized landing routes", () => {
   });
 });
 
+test.describe("header fit", () => {
+  const nav = (page: Page) => page.locator("#top header [data-fit-nav]");
+  const burger = (page: Page) => page.locator("#top header button[aria-controls]").last();
+
+  for (const locale of LOCALES) {
+    for (const width of [1440, 1100, 761]) {
+      test(`${locale} @${width}: desktop links fit beside the language menu`, async ({ page }) => {
+        await page.setViewportSize({ width, height: 800 });
+        await page.goto(localeUrl(locale));
+        await waitForPageAssets(page);
+        await expect(page.locator("#top header")).not.toHaveAttribute("data-collapsed", "");
+        await expect(nav(page)).toBeVisible();
+        expect(await nav(page).evaluate((el) => el.scrollWidth - el.clientWidth)).toBeLessThanOrEqual(1);
+      });
+    }
+  }
+
+  test("labels that no longer fit (e.g. a translated page) fall back to the burger, and back", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 800 });
+    await page.goto("/de");
+    await waitForPageAssets(page);
+    const header = page.locator("#top header");
+    await expect(burger(page)).toBeHidden();
+
+    await nav(page).evaluate((el) => {
+      const labels = ["fonctions", "Variétés", "Protection des données", "Foire aux questions"];
+      el.querySelectorAll("a").forEach((link, i) => (link.textContent = labels[i]!));
+    });
+    await expect(header).toHaveAttribute("data-collapsed", "");
+    await expect(nav(page)).toBeHidden();
+    await expect(burger(page)).toBeVisible();
+    await burger(page).click();
+    await expect(burger(page)).toHaveAttribute("aria-expanded", "true");
+    await burger(page).click();
+
+    await nav(page).evaluate((el) => {
+      const labels = ["Funktionen", "Sorten", "Datenschutz", "FAQ"];
+      el.querySelectorAll("a").forEach((link, i) => (link.textContent = labels[i]!));
+    });
+    await expect(header).not.toHaveAttribute("data-collapsed", "");
+    await expect(nav(page)).toBeVisible();
+  });
+});
+
 test.describe("language switcher", () => {
   test("desktop: dropdown lists every language and navigates to the choice", async ({ page }) => {
     const assertClean = watchPageErrors(page);
