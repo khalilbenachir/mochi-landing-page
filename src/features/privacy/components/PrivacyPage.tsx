@@ -1,24 +1,22 @@
 import Image from "next/image";
-import { Slash, UserRound } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { Rays, Sparkle } from "@/features/landing/components/shared/decor";
+import { Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 import { LegalContactBanner } from "@/features/legal/components/LegalContactBanner";
 import { LegalSummaryCard } from "@/features/legal/components/LegalSummaryCard";
 import { LegalSummaryHeading } from "@/features/legal/components/LegalSummaryHeading";
 import { localePath } from "@/i18n/routing";
-import { cn } from "@/lib/utils";
 import { PRIVACY_CONTACT_EMAIL } from "../content/contact-email";
-import { POLICY_SECTION_IDS, POLICY_UPDATED_AT, PRIVACY_ASSETS } from "../content/policy";
-import { PolicyIcon } from "./PolicyIcon";
+import { POLICY_SECTION_IDS, POLICY_UPDATED_AT, PRIVACY_ASSETS, PRIVACY_HERO_SIZE } from "../content/policy";
 import { PrivacyContent } from "./PrivacyContent";
+import { PrivacySummaryIcon } from "./PrivacySummaryIcon";
 
 const SUMMARY_CARDS = [
-  { id: "device", color: "text-brand-coral", key: "device" },
-  { id: "collect", color: "text-policy-purple", key: "account" },
-  { id: "analytics", color: "text-policy-purple", key: "analytics" },
-  { id: "backup", color: "text-policy-blue", key: "backup" },
+  { id: "device", key: "device" },
+  { id: "collect", key: "account" },
+  { id: "analytics", key: "analytics" },
+  { id: "backup", key: "backup" },
 ] as const;
 
 export function PrivacyPage() {
@@ -43,32 +41,27 @@ export function PrivacyPage() {
             <p className="mt-10 text-u-[11.6] font-semibold italic max-poster:text-[14px] max-nav:mt-[16px]">{t("updated", { date: updated })}</p>
           </div>
           <div className="relative -mr-8 flex self-end justify-center max-nav:mx-auto max-nav:mt-[18px] max-nav:w-[min(100%,360px)]">
-            <Sparkle className="absolute -left-4 top-30 z-1 w-42 text-sun max-nav:left-0 max-nav:top-[30px] max-nav:w-[32px]" />
-            <Rays shape="privacy" className="absolute -right-5 top-40 z-1 w-48 rotate-45 text-sun max-nav:right-0 max-nav:top-[46px] max-nav:w-[40px]" />
-            <Image src={PRIVACY_ASSETS.hero} width={1024} height={819} alt={t("heroAlt")} priority sizes="(max-width: 760px) 360px, (max-width: 1440px) 38vw, 550px" className="relative -mb-4 h-278 w-full object-contain object-bottom max-nav:mb-[-3px] max-nav:h-auto" />
+            <Image src={PRIVACY_ASSETS.hero} width={PRIVACY_HERO_SIZE.width} height={PRIVACY_HERO_SIZE.height} alt={t("heroAlt")} priority sizes="(max-width: 760px) 360px, (max-width: 1440px) 38vw, 550px" className="relative -mb-4 h-278 w-full object-contain object-bottom max-nav:mb-[-3px] max-nav:h-auto" />
           </div>
         </PosterStage>
       </section>
 
       <section aria-labelledby="privacy-summary" className="bg-policy-mint">
         <PosterStage spacing="none" className="px-32 pt-15 pb-23 max-nav:px-[20px] max-nav:py-[26px]">
-          <LegalSummaryHeading id="privacy-summary" title={t("short")} decoration="paired" />
-          <div className="grid grid-cols-4 gap-17 max-nav:grid-cols-2 max-nav:gap-[14px]">
-            {SUMMARY_CARDS.map(({ id, color, key }) => (
-              <LegalSummaryCard
-                key={key}
-                href={`#${id}`}
-                icon={
-                  <>
-                  {key === "account" ? <UserRound className="size-44 text-policy-purple max-nav:size-[40px]" strokeWidth={2.3} aria-hidden="true" /> : <PolicyIcon id={id} className={cn("size-44 max-nav:size-[40px]", color)} />}
-                  {key === "account" || key === "analytics" ? <Slash className="absolute size-50 text-brand-coral max-nav:size-[46px]" strokeWidth={2.6} aria-hidden="true" /> : null}
-                  {key === "device" ? <Rays shape="privacy" className="absolute -right-18 -top-4 w-20 text-sun" /> : null}
-                  </>
-                }
-                title={t(`cards.${key}.title`)}
-                description={t(`cards.${key}.body`)}
-              />
-            ))}
+          <div className="mx-auto max-w-840 max-poster:max-w-[680px]">
+            <LegalSummaryHeading id="privacy-summary" title={t("short")} decoration="paired" />
+            <div className="grid grid-cols-4 gap-14 max-poster:grid-cols-2 max-poster:gap-[16px] max-phone:gap-[12px]">
+              {SUMMARY_CARDS.map(({ id, key }) => (
+                <LegalSummaryCard
+                  key={key}
+                  href={`#${id}`}
+                  prominence="featured"
+                  icon={<PrivacySummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
+                  title={t(`cards.${key}.title`)}
+                  description={t(`cards.${key}.body`)}
+                />
+              ))}
+            </div>
           </div>
         </PosterStage>
       </section>

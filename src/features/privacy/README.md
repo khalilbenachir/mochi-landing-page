@@ -1,17 +1,29 @@
 # Privacy page artwork
 
-Generated with the built-in ImageGen tool on 2026-11-09, using the supplied privacy-page reference
-for the subject and style. Both outputs retain their alpha channel and were resized and encoded
-as WebP for the website. Original generated PNGs were preserved outside the repository.
+The hero and summary icons were redrawn on 2026-11-13 in ChatGPT from the app's Mochi (the Terms art was
+the style reference), then cut out of the white background and encoded as WebP. No stars or sparkles.
 
 | Asset | Dimensions | Size |
 | --- | --- | --- |
-| `public/privacy-art/privacy-dome.webp` | 1024 × 819 | 112,750 bytes |
+| `public/privacy-art/privacy-mochi-blanket.webp` | 934 × 900 | 58,178 bytes (Mochi in a blanket hugging a locked iPhone) |
+| `public/privacy-art/icon-device.webp` | 256 × 256 | 11,780 bytes (Mochi hugging an iPhone) |
+| `public/privacy-art/icon-account.webp` | 256 × 256 | 13,216 bytes (Mochi waving, crossed-out person badge) |
+| `public/privacy-art/icon-analytics.webp` | 256 × 256 | 13,482 bytes (Mochi with a crossed-out chart) |
+| `public/privacy-art/icon-backup.webp` | 256 × 256 | 12,400 bytes (Mochi on an upload cloud) |
+| `public/privacy-art/icon-lock.webp` | 256 × 256 | 12,694 bytes (Mochi hugging a padlock, on-device callout) |
 | `public/privacy-art/contact-mochi.webp` | 600 × 400 | 22,876 bytes (app Mochi peeking with a heart, ChatGPT) |
 
 ## Hero prompt
 
-Use case: stylized-concept. Asset type: transparent website privacy hero illustration. Create a polished kawaii Mochi mascot matching a soft glossy pink Japanese rice cake character: round squat slightly triangular blob, dark navy tiny oval eyes closed in happy upside-down U curves, tiny oval mouth, rosy pink oval cheeks, two small round arms. The pink mascot hugs a big slightly rotated purple lavender diary in front of its body. The diary has a large clear WHITE CLOSED PADLOCK symbol on its front and a tiny yellow bookmark sticking out of its bottom. A transparent glossy pale blue protective glass hemisphere dome surrounds both mascot and diary. Thick shiny blue rim and glass highlights, soft blue shading, a few small blue four-point sparkle reflections on the glass. Friendly dimensional hand-painted app illustration, soft 3D shading but clean sticker-like illustrated edges. The whole dome with mascot is isolated on an actually TRANSPARENT background; no colored rectangular backdrop. Composition: full subject centered, all dome edges visible, tight framing with a small transparent margin, landscape 5:4 aspect ratio. Palette pastel pink, lilac purple, sky blue, white, dark navy. No text or lettering, no extra scene, no extra objects, no watermark. Match the privacy page reference artwork in the conversation closely.
+Same Mochi style as the reference: Mochi wrapped snugly in a soft cozy pink blanket like a little burrito,
+peeking out happily, hugging a pink iPhone with a small heart-shaped padlock on its screen, sitting on a
+fluffy cream cloud. Pure white background, no text, no stars, no sparkles, nothing else in the scene.
+
+## Icon sheet prompt
+
+One sticker sheet of 5 small Mochi icons in a row on white, no text, no stars: Mochi hugging a pink
+iPhone; Mochi waving with a crossed-out person badge; Mochi holding a crossed-out bar chart; Mochi on a
+light blue cloud with an up arrow; Mochi hugging a big pink padlock.
 
 ## Contact mascot prompt
 

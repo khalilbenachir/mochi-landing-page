@@ -1,10 +1,11 @@
 "use client";
 
+import { Mail } from "lucide-react";
 import { useEffect, useSyncExternalStore } from "react";
 import * as SideMenu from "@/components/side-menu/SideMenu";
 import { Rays } from "@/features/landing/components/shared/decor";
 import { POLICY_SECTION_IDS, type PolicySectionCopy } from "../content/policy";
-import { PolicyIcon } from "./PolicyIcon";
+import { PrivacySummaryIcon } from "./PrivacySummaryIcon";
 
 type PrivacyContentProps = {
   sections: PolicySectionCopy[];
@@ -67,14 +68,14 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
             <p className="pl-14 max-nav:pl-0">{body}</p>
             <p className="mt-11 pl-14 max-nav:mt-[12px] max-nav:pl-0">{detail}</p>
             {id === "device" ? (
-              <div className="mt-20 flex items-center gap-24 rounded-u-22 bg-policy-pink px-36 py-17 text-u-[14.6] font-heavy leading-[1.3] tracking-[-0.01em] max-poster:text-[17px] max-nav:gap-[18px] max-nav:px-[20px] max-nav:py-[20px] max-phone:text-[15px]">
-                <PolicyIcon id="lock" className="size-52 flex-none text-brand-coral max-nav:size-[36px]" />
-                <p className="border-l border-mochi-pink-ink/40 pl-26 max-nav:pl-[18px]">{callout}</p>
+              <div className="relative mt-24 flex items-center gap-18 rounded-u-26 border-2 border-mochi-pink-ink/15 bg-policy-pink py-14 pr-32 pl-16 text-u-[14.6] font-heavy leading-[1.3] tracking-[-0.01em] max-poster:text-[17px] max-nav:gap-[14px] max-nav:py-[16px] max-nav:pr-[18px] max-nav:pl-[12px] max-phone:text-[15px]">
+                <PrivacySummaryIcon id="lock" className="-my-10 size-86 flex-none -rotate-6 max-nav:-my-[6px] max-nav:size-[64px]" />
+                <p className="min-w-0">{callout}</p>
               </div>
             ) : null}
             {id === "contact" ? (
               <a href={`mailto:${email}`} className="mt-20 inline-flex max-w-full items-center gap-10 rounded-full bg-brand-coral px-24 py-13 wrap-anywhere font-black text-white hover:bg-mochi-pink-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral">
-                <PolicyIcon id="contact" className="size-22" />{email}
+                <Mail className="size-22" strokeWidth={2.25} aria-hidden="true" />{email}
               </a>
             ) : null}
           </section>
