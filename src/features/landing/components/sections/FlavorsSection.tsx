@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FLAVOR_CATALOG } from "@/features/landing/content/product-catalog";
 import { FLAVOR_CARD_ASSETS } from "@/features/landing/content/assets";
@@ -7,69 +6,40 @@ import { FLAVOR_PILL_CLASS } from "@/features/landing/content/visual-variants";
 import { cn } from "@/lib/utils";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 
-const WEEK = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as const;
-
-/** A week of check-ins: six done, the seventh unlocks Ube, the 7-day streak reward. */
-function StreakCard() {
-  const t = useTranslations("Flavors");
-  const days = useTranslations("Predictions.weekdays");
-
-  return (
-    <div className="relative mt-20 w-full max-w-300 rounded-u-22 bg-white px-16 pt-14 pb-16 text-ink-slate [box-shadow:0_6px_0_var(--color-flavors-card-shadow)] max-poster:mx-auto max-poster:mt-[24px] max-poster:max-w-[360px] max-poster:px-[18px] max-poster:py-[16px]">
-      <div className="flex items-center justify-between gap-8">
-        <b className="text-u-15 font-max tracking-[-0.01em] max-poster:text-[18px]">{t("items.ube.unlock")}</b>
-        <span className="rounded-full bg-flavors-pill-starter px-8 py-3 text-u-[9.6] font-black leading-none max-poster:px-[9px] max-poster:py-[4px] max-poster:text-[11px]">7 / 7</span>
-      </div>
-      <ol className="mt-10 grid grid-cols-7 gap-4 max-poster:mt-[12px] max-poster:gap-[5px]">
-        {WEEK.map((day, index) => (
-          <li key={day} className="flex flex-col items-center gap-3 max-poster:gap-[4px]">
-            <span className="text-u-[8.4] font-black uppercase text-ink-slate/60 max-poster:text-[10px]">{days(day).slice(0, 1)}</span>
-            {index < 6 ? (
-              <span className="grid size-26 place-items-center rounded-full bg-flavors-band text-white max-poster:size-[32px]">
-                <Check className="size-[60%]" strokeWidth={3.4} aria-hidden="true" />
-              </span>
-            ) : (
-              <Image src={FLAVOR_CARD_ASSETS.ube} alt="" width={380} height={262} className="h-auto w-40 -translate-y-3 animate-float max-poster:w-[44px]" />
-            )}
-          </li>
-        ))}
-      </ol>
-      <p className="mt-10 rounded-u-12 bg-flavors-pill-streak px-10 py-6 text-center text-u-[10.6] font-max max-poster:mt-[12px] max-poster:py-[8px] max-poster:text-[13px]">{t("unlocked")}</p>
-    </div>
-  );
-}
-
-/** Node spots along the snake path (left→right, right→left, left→right), as percent of the map. */
-const SPOTS = [
-  "left-[11.29%] top-[16.67%]", "left-[34.68%] top-[16.67%]", "left-[58.06%] top-[16.67%]", "left-[81.45%] top-[16.67%]",
-  "left-[81.45%] top-[50%]", "left-[58.06%] top-[50%]", "left-[34.68%] top-[50%]", "left-[11.29%] top-[50%]",
-  "left-[11.29%] top-[83.33%]", "left-[34.68%] top-[83.33%]", "left-[58.06%] top-[83.33%]", "left-[81.45%] top-[83.33%]",
+/** Where each flavor lands in the machine's glass dome: a soft pile, bottom row first. */
+const PILE = [
+  "left-[4%] top-[66%] -rotate-12", "left-[27%] top-[70%] rotate-6", "left-[50%] top-[68%] -rotate-3", "left-[73%] top-[64%] rotate-12",
+  "left-[14%] top-[44%] rotate-8", "left-[38%] top-[47%] -rotate-6", "left-[62%] top-[43%] rotate-3",
+  "left-[3%] top-[22%] -rotate-6", "left-[26%] top-[25%] rotate-12", "left-[51%] top-[21%] -rotate-12", "left-[74%] top-[26%] rotate-6",
 ] as const;
 
-/** Desktop: the collection as a game level map, each flavor a stop on the streak road. */
-function FlavorMap() {
+/** A candy capsule machine holding the collection; Ube pops out of the chute as today's reward. */
+function MochiMachine() {
   const t = useTranslations("Flavors");
+  const inDome = FLAVOR_CATALOG.filter((flavor) => flavor.id !== "ube");
 
   return (
-    <div className="relative aspect-[620/420] w-620 max-poster:hidden">
-      <svg className="absolute inset-0 size-full overflow-visible" viewBox="0 0 620 420" fill="none" aria-hidden="true">
-        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-card-shadow" strokeWidth="30" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-card-bg" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-band" strokeWidth="3" strokeDasharray="2 12" strokeLinecap="round" />
-      </svg>
-      <ol className="absolute inset-0">
-        {FLAVOR_CATALOG.map((flavor, index) => (
-          <li key={flavor.id} className={cn("group absolute flex w-120 -translate-x-1/2 -translate-y-32 flex-col items-center text-center", SPOTS[index])}>
-            <span className="grid size-64 place-items-center rounded-full bg-white ring-4 ring-flavors-card-shadow [box-shadow:0_5px_0_var(--color-flavors-card-shadow)] [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-5 group-hover:-rotate-6 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none">
-              <Image src={FLAVOR_CARD_ASSETS[flavor.id]} alt={`${t(`items.${flavor.id}.name`)} Mochi`} width={380} height={262} sizes="6vw" className="h-auto w-50" />
-            </span>
-            <b className="mt-5 text-u-[12.4] font-max tracking-[-0.01em] whitespace-nowrap text-white [text-shadow:0_2px_0_var(--color-flavors-card-shadow)]">{t(`items.${flavor.id}.name`)}</b>
-            <span className={cn("mt-2 rounded-full px-7 py-2 text-u-[9] font-black leading-[1.12] text-ink-slate", flavor.kind === "challenge" ? "max-w-90 whitespace-normal" : "whitespace-nowrap", FLAVOR_PILL_CLASS[flavor.id])}>
-              {t(`items.${flavor.id}.unlock`)}
-            </span>
-          </li>
+    <div className="relative mx-auto w-330 max-poster:w-[min(100%,330px)]" aria-hidden="true">
+      <div className="relative z-1 mx-auto h-34 w-150 rounded-t-u-30 bg-mochi-pink-ink max-poster:h-[34px] max-poster:w-[150px] max-poster:rounded-t-[30px]" />
+      <div className="relative aspect-[330/270] overflow-hidden rounded-t-[50%_44%] border-6 border-white bg-white/35 [box-shadow:inset_0_-12px_0_rgb(255_255_255/0.35)] max-poster:border-[6px]">
+        <span className="absolute top-[10%] left-[12%] h-[34%] w-[9%] -rotate-12 rounded-full bg-white/70" />
+        {inDome.map((flavor, index) => (
+          <Image key={flavor.id} src={FLAVOR_CARD_ASSETS[flavor.id]} alt="" width={380} height={262} sizes="90px" className={cn("absolute h-auto w-[25%]", PILE[index])} />
         ))}
-      </ol>
+      </div>
+      <div className="relative -mt-6 rounded-u-30 bg-brand-coral px-26 pt-20 pb-24 [box-shadow:0_8px_0_var(--color-flavors-card-shadow)] max-poster:-mt-[6px] max-poster:rounded-[30px] max-poster:px-[26px] max-poster:pt-[20px] max-poster:pb-[24px]">
+        <div className="flex items-center justify-between">
+          <span className="relative grid size-62 place-items-center rounded-full bg-white [box-shadow:0_4px_0_rgb(0_0_0/0.15)] max-poster:size-[62px]">
+            <span className="h-10 w-46 rotate-[-30deg] rounded-full bg-mochi-pink-ink max-poster:h-[10px] max-poster:w-[46px]" />
+          </span>
+          <span className="relative grid h-74 w-120 place-items-end justify-center overflow-visible rounded-u-22 bg-ink-deep pb-6 max-poster:h-[74px] max-poster:w-[120px] max-poster:rounded-[22px] max-poster:pb-[6px]">
+            <Image src={FLAVOR_CARD_ASSETS.ube} alt="" width={380} height={262} sizes="90px" className="h-auto w-84 -mb-2 animate-float max-poster:w-[84px]" />
+          </span>
+        </div>
+      </div>
+      <p className="absolute -right-20 bottom-110 z-2 rotate-6 rounded-full bg-white px-12 py-6 text-u-[11] font-max text-ink-deep [box-shadow:0_4px_0_var(--color-flavors-card-shadow)] max-poster:right-0 max-poster:bottom-[110px] max-poster:px-[12px] max-poster:py-[6px] max-poster:text-[13px]">
+        {t("unlocked")}
+      </p>
     </div>
   );
 }
@@ -80,49 +50,40 @@ export function FlavorsSection() {
 
   return (
     <section id="flavors" className="relative overflow-hidden bg-flavors-band text-white">
-      <div aria-hidden="true" className="pointer-events-none absolute -left-[8%] -top-[30%] size-[min(55vw,640px)] rounded-full bg-flavors-sun/30 blur-3xl" />
-      <PosterStage className="relative grid grid-cols-[minmax(0,1fr)_auto] items-center gap-36 px-47 max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
-        <div className="relative z-2 max-poster:mx-auto max-poster:max-w-[640px] max-poster:text-center">
+      <div aria-hidden="true" className="pointer-events-none absolute -right-[6%] top-[10%] size-[min(55vw,640px)] rounded-full bg-flavors-sun/30 blur-3xl" />
+      <PosterStage className="relative grid grid-cols-[minmax(0,1fr)_auto] items-center gap-56 px-56 max-poster:block max-poster:px-[clamp(16px,4vw,40px)]">
+        <div className="relative z-2 min-w-0 max-poster:mx-auto max-poster:max-w-[640px] max-poster:text-center">
           <h2 className="text-balance text-u-31 font-max leading-[1.03] tracking-[-0.015em] max-poster:text-[clamp(36px,6.4vw,52px)] max-phone:text-[32px]">
             {t("title1")} {t("title2")} <span className="text-ink-deep">{t("title3")}</span>
           </h2>
-          <p className="mt-10 max-w-260 text-u-15.5 font-bold leading-[1.3] max-poster:mx-auto max-poster:mt-[14px] max-poster:max-w-[420px] max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
-          <StreakCard />
-        </div>
+          <p className="mt-10 max-w-380 text-u-15.5 font-bold leading-[1.3] max-poster:mx-auto max-poster:mt-[14px] max-poster:max-w-[420px] max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
 
-        <div className="min-w-0">
-          <FlavorMap />
-          <div className="poster:hidden">
-        <div className="w-620 rounded-u-30 bg-flavors-card-bg p-16 [box-shadow:0_8px_0_var(--color-flavors-card-shadow)] max-poster:mx-auto max-poster:mt-[28px] max-poster:w-full max-poster:max-w-[760px] max-poster:p-[16px] max-phone:p-[12px]">
-          <ul className="grid grid-cols-6 gap-x-6 gap-y-14 max-poster:grid-cols-4 max-poster:gap-x-[8px] max-poster:gap-y-[18px] max-tablet:grid-cols-3">
+          <ul className="mt-20 grid grid-cols-3 gap-8 max-poster:mt-[26px] max-poster:gap-[8px] max-tablet:grid-cols-2">
             {FLAVOR_CATALOG.map((flavor) => (
-              <li key={flavor.id} className="group flex min-w-0 flex-col items-center text-center text-ink-slate">
-                <div className="relative flex w-full justify-center pt-4">
-                  <span aria-hidden="true" className="absolute bottom-0 h-10 w-56 rounded-[50%] bg-ink-slate/10 max-poster:h-[10px] max-poster:w-[62px]" />
+              <li key={flavor.id} className="group flex min-w-0 items-center gap-8 rounded-full bg-flavors-card-bg py-4 pr-10 pl-4 text-left text-ink-slate [box-shadow:0_3px_0_var(--color-flavors-card-shadow)] max-poster:gap-[8px] max-poster:py-[5px] max-poster:pr-[12px] max-poster:pl-[5px]">
+                <span className="grid size-36 flex-none place-items-center rounded-full bg-white max-poster:size-[40px]">
                   <Image
-                    className="relative h-auto w-64 [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-6 group-hover:-rotate-6 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none max-poster:w-[72px]"
                     src={FLAVOR_CARD_ASSETS[flavor.id]}
                     alt={`${t(`items.${flavor.id}.name`)} Mochi`}
                     width={380}
                     height={262}
-                    sizes="(max-width: 1099px) 22vw, 7vw"
+                    sizes="48px"
+                    className="h-auto w-[82%] [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-1 group-hover:-rotate-12 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none"
                   />
-                </div>
-                <b className="mt-6 text-u-[12.4] font-max tracking-[-0.01em] whitespace-nowrap max-poster:mt-[8px] max-poster:text-[15px]">{t(`items.${flavor.id}.name`)}</b>
-                <span
-                  className={cn(
-                    "mt-3 rounded-full px-7 py-2 text-u-[9] font-black leading-[1.12] max-poster:mt-[4px] max-poster:px-[8px] max-poster:py-[3px] max-poster:text-[11px]",
-                    flavor.kind === "challenge" ? "max-w-80 whitespace-normal" : "whitespace-nowrap",
-                    FLAVOR_PILL_CLASS[flavor.id],
-                  )}
-                >
-                  {t(`items.${flavor.id}.unlock`)}
+                </span>
+                <span className="flex min-w-0 flex-col">
+                  <b className="truncate text-u-[11.4] font-max leading-[1.1] max-poster:text-[14px]">{t(`items.${flavor.id}.name`)}</b>
+                  <span className={cn("mt-2 w-fit max-w-full truncate rounded-full px-6 py-1 text-u-[8.4] font-black leading-[1.2] max-poster:mt-[2px] max-poster:px-[6px] max-poster:py-[1px] max-poster:text-[10.5px]", FLAVOR_PILL_CLASS[flavor.id])}>
+                    {t(`items.${flavor.id}.unlock`)}
+                  </span>
                 </span>
               </li>
             ))}
           </ul>
         </div>
-          </div>
+
+        <div className="max-poster:mt-[36px]">
+          <MochiMachine />
         </div>
       </PosterStage>
     </section>
