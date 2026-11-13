@@ -17,8 +17,8 @@ import { cn } from "@/lib/utils";
 const posterRoot = cva("relative mx-auto @container max-poster:@container-normal", {
   variants: {
     grid: {
-      "1024": "w-[min(100%,1440px)]",
-      "800": "w-[min(100%,1200px)]",
+      "1024": "w-[min(100%,1320px)]",
+      "800": "w-[min(100%,1100px)]",
     },
   },
   defaultVariants: { grid: "1024" },

@@ -10,7 +10,7 @@ function Content({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       className={cn(
-        "relative mx-auto flex min-h-[170px] max-w-[1200px] items-center gap-[30px] px-[48px] py-[28px] pr-[230px] max-nav:flex-col max-nav:items-start max-nav:gap-[18px] max-nav:pl-[24px] max-nav:pr-[150px] max-phone:pl-[20px] max-phone:pr-[20px]",
+        "relative mx-auto flex min-h-[170px] max-w-[1100px] items-center gap-[30px] px-[48px] py-[28px] pr-[230px] max-nav:flex-col max-nav:items-start max-nav:gap-[18px] max-nav:pl-[24px] max-nav:pr-[150px] max-phone:pl-[20px] max-phone:pr-[20px]",
         className,
       )}
       {...props}

@@ -15,7 +15,7 @@ function Header({ route }: { route: string }) {
 }
 
 function Container({ className, ...props }: ComponentProps<"div">) {
-  return <div className={cn("mx-auto w-full max-w-[1200px] px-[48px] max-nav:px-[24px] max-phone:px-[20px]", className)} {...props} />;
+  return <div className={cn("mx-auto w-full max-w-[1100px] px-[48px] max-nav:px-[24px] max-phone:px-[20px]", className)} {...props} />;
 }
 
 export const BlogShell = { Root, Header, Container };
