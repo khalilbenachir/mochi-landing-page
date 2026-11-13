@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
 import { Petal } from "@/features/landing/components/shared/decor";
-import { FreeSticker } from "@/features/landing/components/shared/FreeSticker";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 
 /** Hero art: Mochi on a cloud with its flavor friends. Swap this one path to change the illustration. */
@@ -24,12 +23,8 @@ export function HeroSection() {
               <span className="block whitespace-nowrap">{t("title1")}</span> <span className="block whitespace-nowrap">{t("title2")}</span> <span className="block whitespace-nowrap">{t("title3")}</span>
             </h1>
             <p className="mt-8 w-332 text-u-[13.6] font-demibold leading-[1.27] max-poster:w-auto max-poster:max-w-[520px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-nav:text-[16px] max-phone:text-[15px]">{t("body")}</p>
-            <div className="flex items-center gap-12 mt-13 max-poster:justify-center max-poster:mt-[20px] max-nav:flex-wrap">
+            <div className="flex items-center mt-13 max-poster:justify-center max-poster:mt-[20px] max-nav:flex-wrap">
               <AppStoreBadge className="max-poster:h-[58px] max-phone:h-[54px] max-phone:ps-[18px] max-phone:pe-[22px]" />
-              <FreeSticker
-                className="w-66 max-poster:w-[78px]"
-                blobClassName="[filter:drop-shadow(0_calc(2*var(--spacing))_0_var(--color-hero-sticker-shadow))]"
-              />
             </div>
           </div>
 
