@@ -89,25 +89,25 @@ the complete guide.
 
 ## Artwork
 
-All illustrations were generated with the built-in imagegen tool on 10 November 2026,
-using the existing Mochi mascot as the family reference. Original PNGs are retained in
-the tool output location. The deployed images are WebP files under `public/blog-art`.
+All illustrations were redrawn in ChatGPT on 13 November 2026 from the iOS app's own Mochi
+(`mochi-face-happy.png` and `mochi-scene-plus.png`) as the reference, keeping each scene from
+the first set (10 November 2026) and dropping the yellow stars and sparkles. The deployed images are WebP files under `public/blog-art`.
 New illustrations and legacy hero cutouts preserve transparency. They are editorial
 art, not medical results or verified app screenshots.
 
 | File under `public/blog-art` | Dimensions | Purpose |
 | --- | --- | --- |
-| `newsletter-mochi.webp` | 1200×800 | Sleeping Mochi on a cream cushion |
+| `newsletter-sleepy.webp` | 1200×800 | Sleeping Mochi on a cream cushion |
 | `journal-writer.webp` | 1200×860 | The app's Mochi in a lavender beret, writing in an open journal (ChatGPT, from the app's Mochi references) |
-| `pad-care.webp` | 1200×800 | Pad, pink Mochi and purple clock |
-| `cycle-phases.webp` | 1200×800 | Green Mochi and symbolic cycle wheel |
-| `period-predictions.webp` | 1200×800 | Yellow Mochi and calendar |
-| `period-cramps.webp` | 1200×800 | Lavender Mochi and hot-water bottle |
-| `cycle-moods.webp` | 1200×800 | Blue Mochi and heart thought bubble |
-| `getting-started.webp` | 1200×800 | Mochi beside a generic illustrated phone |
-| `tracking-cutout.webp` | 1200×800 | Transparent tracking hero |
-| `privacy-cutout.webp` | 1200×800 | Transparent privacy hero |
-| `methods-cutout.webp` | 1200×800 | Transparent calendar-comparison hero |
+| `pad-care-mochi.webp` | 1200×800 | Mochi on its cushion with a pad and a purple clock |
+| `cycle-phases-mochi.webp` | 1200×800 | Mochi on its cushion beside the cycle wheel |
+| `period-predictions-mochi.webp` | 1200×800 | Mochi on its cushion with a calendar |
+| `period-cramps-mochi.webp` | 1200×800 | Mochi hugging a hot-water bottle |
+| `cycle-moods-mochi.webp` | 1200×800 | Mochi with a heart thought bubble |
+| `getting-started-mochi.webp` | 1200×800 | Mochi waving beside a generic illustrated phone |
+| `tracking-cutout-mochi.webp` | 1200×800 | Mochi with a calendar and pencil |
+| `privacy-cutout-mochi.webp` | 1200×800 | Mochi holding a lavender lock shield |
+| `methods-cutout-mochi.webp` | 1200×800 | Mochi between a calendar and a phone checklist |
 
 Full prompts, references and encoding settings are recorded in `docs/blog/`
 (`artwork-prompts.json`, `redesign-artwork-prompts.json`, `newsletter-artwork-prompt.json`).

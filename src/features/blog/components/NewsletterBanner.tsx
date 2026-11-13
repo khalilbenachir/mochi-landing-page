@@ -44,7 +44,7 @@ function Artwork() {
       className="pointer-events-none absolute bottom-0 right-[10px] w-[235px] max-poster:w-[190px] max-nav:right-[14px] max-phone:right-[24px] max-phone:w-[190px]"
     >
       <Rays shape="burst" className="absolute left-[4px] top-[24px] w-[40px] text-sun" />
-      <Image src="/blog-art/newsletter-mochi.webp" width={1200} height={800} alt="" sizes="(max-width: 1100px) 190px, 235px" className="h-auto w-full" />
+      <Image src="/blog-art/newsletter-sleepy.webp" width={1200} height={800} alt="" sizes="(max-width: 1100px) 190px, 235px" className="h-auto w-full" />
     </div>
   );
 }
