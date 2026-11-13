@@ -16,6 +16,7 @@ export const LANDING_ASSETS = {
   manifestIcon512: "/mochi/app-icon-512.png",
   notFoundMascot: "/mochi/not-found-mascot.png",
   predictMochi: "/mochi/predict-mochi.webp",
+  predictionMochi: "/mochi/prediction-mochi.webp",
   socialCard: "/mochi/social-card.png",
 } as const;
 
