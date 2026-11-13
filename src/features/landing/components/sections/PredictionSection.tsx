@@ -104,7 +104,7 @@ export function PredictionSection() {
         <div className="relative ml-14 mb-6 self-center w-150 after:absolute after:left-[-6%] after:right-[-6%] after:-bottom-6 after:h-14 after:rounded-[50%] after:bg-prediction-mascot-bg after:opacity-85 max-poster:hidden">
           <Heart className="absolute z-2 text-cycle-next-period -right-4 -top-28 w-26 -rotate-12" />
           <Heart className="absolute z-2 text-cycle-next-period -right-24 -top-2 w-20 rotate-14" />
-          <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.predictMochi} alt={t("mascotAlt")} width={368} height={264} sizes="(max-width: 1099px) 40vw, 15vw" />
+          <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.predictionMochi} alt={t("mascotAlt")} width={368} height={264} sizes="(max-width: 1099px) 40vw, 15vw" />
         </div>
       </PosterStage>
     </section>

@@ -20,7 +20,7 @@ function readPngSize(assetPath: string) {
 
 describe("landing asset manifest", () => {
   it("declares existing files for all active landing assets", () => {
-    expect(LANDING_ASSET_PATHS).toHaveLength(30);
+    expect(LANDING_ASSET_PATHS).toHaveLength(31);
     for (const assetPath of LANDING_ASSET_PATHS) {
       expect(existsSync(join(process.cwd(), "public", assetPath.slice(1))), assetPath).toBe(true);
     }
