@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Lightbulb, TriangleAlert } from "lucide-react";
 import { useFormatter, useTranslations } from "next-intl";
 import { HeartOutline } from "@/features/landing/components/shared/decor";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
+import { TERMS_SUMMARY_ICONS } from "@/features/terms/content/terms";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
 import { BLOG_ART_SIZE, BLOG_POSTS, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
 import { articleReadingMinutes, articleSourceIds, getArticleCopy, getArticleSection, type ArticleTable } from "../content/copy";
@@ -133,8 +133,8 @@ function QuickAnswer({ intro }: { intro: string }) {
       aria-labelledby="quick-answer-title"
       className="flex scroll-mt-[24px] items-start gap-[16px] rounded-[20px] bg-blog-pink px-[22px] py-[17px] max-phone:gap-[12px] max-phone:px-[16px]"
     >
-      <Lightbulb aria-hidden="true" className="mt-[3px] size-[38px] shrink-0 text-mochi-pink-ink max-phone:size-[28px]" strokeWidth={1.7} />
-      <div className="min-w-0 border-l border-mochi-pink-ink/25 pl-[16px] max-phone:pl-[12px]">
+      <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="mt-[2px] h-auto w-[52px] shrink-0 -rotate-6 max-phone:w-[40px]" />
+      <div className="min-w-0">
         <h2 id="quick-answer-title" className="text-[25px] font-max leading-[1.1] max-phone:text-[23px]">
           {t("quickAnswer")}
         </h2>
@@ -218,8 +218,8 @@ function ArticleCta() {
 function ArticleNotice() {
   const t = useTranslations("Blog");
   return (
-    <aside className="mt-[14px] flex items-start gap-[12px] rounded-[14px] bg-journal-warning px-[20px] py-[14px] text-[14px] font-medium leading-[1.5]">
-      <TriangleAlert aria-hidden="true" className="size-[24px] shrink-0 text-journal-warning-ink" />
+    <aside className="mt-[14px] flex items-center gap-[12px] rounded-[18px] bg-journal-warning px-[16px] py-[10px] text-[14px] font-medium leading-[1.5]">
+      <Image src={TERMS_SUMMARY_ICONS.warning} alt="" width={256} height={270} className="h-auto w-[40px] shrink-0 -rotate-6" />
       <p>{t("articleNotice")}</p>
     </aside>
   );
