@@ -2,11 +2,10 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { FREE_FEATURE_IDS, PLUS_FEATURE_IDS, PLUS_PRICE } from "@/features/landing/content/landing";
-import { CheckBadge, HeartOutline, Rays } from "@/features/landing/components/shared/decor";
+import { CheckBadge, HeartOutline } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { cn } from "@/lib/utils";
 
-const RAYS = "absolute z-2 text-sun-ray max-poster:hidden";
 const PLAN = "relative z-2 pb-14 pl-16 pr-18 pt-13 rounded-u-12 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:w-262";
 const PLAN_TITLE = "mb-10 flex items-center gap-5 text-u-19.5 font-max tracking-[-0.02em] whitespace-nowrap";
 const PLAN_ITEM = "flex items-start gap-10 text-u-11 font-extrabold leading-[1.2]";
@@ -32,10 +31,8 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-1 left-540 top-[calc(var(--section-space)-90*var(--spacing))] flex w-180 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-12 max-poster:mt-[22px]" aria-hidden="true">
-          <Rays shape="burst" className={cn(RAYS, "-left-22 top-6 w-20")} />
-          <Image className="mx-auto h-auto w-[72%]" src={LANDING_ASSETS.plusMochi} alt="" width={520} height={436} sizes="12vw" />
-          <Rays shape="burst" className={cn(RAYS, "-right-26 top-8 w-20")} flip />
+        <div className="absolute z-3 left-704 top-[calc(var(--section-space)+30*var(--spacing))] w-120 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-14 max-poster:mt-[22px] max-poster:w-120" aria-hidden="true">
+          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={520} height={436} sizes="12vw" />
         </div>
         <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-22 place-items-center rounded-u-7 bg-white px-10 text-u-12.5 text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>
