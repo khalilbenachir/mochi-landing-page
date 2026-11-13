@@ -20,7 +20,7 @@ export function PrivacySection() {
   return (
     <section id="privacy" className="relative overflow-hidden bg-privacy-band text-white">
       <div aria-hidden="true" className="pointer-events-none absolute -right-[10%] top-1/2 size-[min(60vw,760px)] -translate-y-1/2 rounded-full bg-privacy-hug-highlight/10 blur-3xl" />
-      <PosterStage className="relative grid grid-cols-[1fr_300fr] items-center gap-40 px-60 max-poster:grid-cols-1 max-poster:gap-[34px] max-poster:px-[clamp(16px,4vw,40px)]">
+      <PosterStage className="relative grid grid-cols-[minmax(0,1fr)_auto] items-center gap-56 px-60 max-poster:grid-cols-1 max-poster:gap-[34px] max-poster:px-[clamp(16px,4vw,40px)]">
         <div className="min-w-0 max-poster:mx-auto max-poster:max-w-[640px] max-poster:text-center">
           <h2 className="text-balance text-u-33.5 font-max leading-[0.98] tracking-[-0.015em] max-poster:text-[clamp(34px,6vw,50px)] max-phone:text-[32px]">
             {t("title1")} <span className="text-privacy-hug-highlight">{t("title2")}</span>
@@ -47,7 +47,7 @@ export function PrivacySection() {
           </ul>
         </div>
 
-        <div className="relative mx-auto w-full max-w-300 pt-150 max-poster:max-w-[340px] max-poster:pt-[170px]">
+        <div className="relative mx-auto w-300 pt-150 max-poster:w-full max-poster:max-w-[340px] max-poster:pt-[170px]">
           <Image
             src={PRIVACY_ASSETS.hero}
             width={PRIVACY_HERO_SIZE.width}
