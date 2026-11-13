@@ -23,9 +23,12 @@ export function NotFoundPage() {
   ] as const;
 
   return (
-    <main className="flex flex-1 flex-col bg-hero-band text-white">
+    <main className="flex flex-1 flex-col bg-lost-night text-white">
       <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
-      <section className="relative flex-1 overflow-hidden bg-hero-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-hero-vignette))]">
+      <section className="relative flex-1 overflow-hidden bg-[linear-gradient(180deg,var(--color-lost-night),var(--color-island-band))] text-white">
+        {/* A soft pink spotlight where Mochi is searching, and a crescent moon in the night sky. */}
+        <span aria-hidden="true" className="pointer-events-none absolute top-[6%] left-1/2 size-[min(90vw,760px)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--color-lost-glow),transparent_62%)]" />
+        <span aria-hidden="true" className="pointer-events-none absolute top-[12%] right-[9%] size-[clamp(46px,6vw,84px)] rounded-full bg-sun [box-shadow:0_0_40px_rgb(255_217_61/0.45)] after:absolute after:-top-[14%] after:-right-[22%] after:size-full after:rounded-full after:bg-lost-night max-phone:top-[3%]" />
         <PosterStage
           spacing="none"
           className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
@@ -41,15 +44,15 @@ export function NotFoundPage() {
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
+                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
               >
                 4
               </span>
 
               <div className="relative z-2 mx-6 mb-6 size-210 flex-none max-poster:mx-[4px] max-poster:mb-[6px] max-poster:size-[clamp(150px,27vw,220px)] max-phone:size-[128px]">
                 {/* The "0" is a magnifying glass: a lens ring with Mochi searching inside, and its handle. */}
-                <span aria-hidden="true" className="absolute top-[80%] left-[80%] h-[15%] w-[34%] origin-left rotate-45 rounded-full bg-white [box-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:[box-shadow:0_6px_0_var(--color-hero-title-shadow)]" />
-                <span aria-hidden="true" className="absolute inset-0 rounded-full border-[length:calc(16*var(--spacing))] border-white bg-white/25 [box-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:border-[clamp(11px,2vw,16px)] max-poster:[box-shadow:0_6px_0_var(--color-hero-title-shadow)]" />
+                <span aria-hidden="true" className="absolute top-[80%] left-[80%] h-[15%] w-[34%] origin-left rotate-45 rounded-full bg-white [box-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:[box-shadow:0_6px_0_var(--color-lost-shadow)]" />
+                <span aria-hidden="true" className="absolute inset-0 rounded-full border-[length:calc(16*var(--spacing))] border-white bg-hero-band/35 [box-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:border-[clamp(11px,2vw,16px)] max-poster:[box-shadow:0_6px_0_var(--color-lost-shadow)]" />
                 <span aria-hidden="true" className="absolute top-[18%] left-[20%] h-[22%] w-[9%] rotate-35 rounded-full bg-white/70" />
                 <Image
                   className="absolute inset-[13%] h-auto w-[74%] animate-float"
@@ -60,7 +63,7 @@ export function NotFoundPage() {
                   priority
                   sizes="(max-width: 480px) 100px, (max-width: 1099px) 22vw, 16vw"
                 />
-                <span aria-hidden="true" className="absolute -top-14 -right-26 z-3 grid size-50 rotate-12 place-items-center rounded-full bg-island-band text-u-30 font-max leading-none text-white [box-shadow:0_calc(4*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:-top-[12px] max-poster:-right-[22px] max-poster:size-[44px] max-poster:text-[26px] max-phone:size-[34px] max-phone:text-[20px]">
+                <span aria-hidden="true" className="absolute -top-14 -right-26 z-3 grid size-50 rotate-12 place-items-center rounded-full bg-sun text-u-30 font-max leading-none text-ink-deep [box-shadow:0_calc(4*var(--spacing))_0_var(--color-lost-shadow)] max-poster:-top-[12px] max-poster:-right-[22px] max-poster:size-[44px] max-poster:text-[26px] max-phone:size-[34px] max-phone:text-[20px]">
                   ?
                 </span>
               </div>
@@ -68,7 +71,7 @@ export function NotFoundPage() {
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
+                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
               >
                 4
               </span>
@@ -76,7 +79,7 @@ export function NotFoundPage() {
 
             <h1
               data-testid="not-found-title"
-              className="mt-22 max-w-850 text-u-44 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(34px,6vw,54px)] max-phone:mt-[24px] max-phone:text-[34px]"
+              className="mt-22 max-w-850 text-u-44 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-lost-shadow)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(34px,6vw,54px)] max-phone:mt-[24px] max-phone:text-[34px]"
             >
               <span className="sr-only">{t("code")}: </span>
               {t("title")}
@@ -95,7 +98,7 @@ export function NotFoundPage() {
               <Button
                 asChild
                 variant="pill"
-                className="h-42 px-26 text-u-15 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-hero-band max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
+                className="h-42 px-26 text-u-15 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-lost-night max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
               >
                 <Link data-testid="not-found-home" href={homeHref}>{t("home")}</Link>
               </Button>
@@ -106,7 +109,7 @@ export function NotFoundPage() {
               <li className="text-u-12 font-black uppercase tracking-[0.08em] text-white/80 max-poster:w-full max-poster:text-[12px]">{t("suggestions")}</li>
               {shortcuts.map(({ key, href }) => (
                 <li key={key}>
-                  <Link href={href} className="inline-flex h-32 items-center rounded-full border-2 border-white/60 px-14 text-u-12.5 font-ultra text-white transition-colors hover:bg-white hover:text-hero-band focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white max-poster:h-[36px] max-poster:px-[16px] max-poster:text-[14px]">
+                  <Link href={href} className="inline-flex h-32 items-center rounded-full border-2 border-white/60 px-14 text-u-12.5 font-ultra text-white transition-colors hover:bg-white hover:text-lost-night focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white max-poster:h-[36px] max-poster:px-[16px] max-poster:text-[14px]">
                     {navigation(key)}
                   </Link>
                 </li>
