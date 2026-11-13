@@ -79,11 +79,18 @@
   --color-ink-deep: #1d2b4a;
   --color-brand-coral: var(--color-hero-band);
   --color-brand-rose: #f2558a;
-  --color-cycle-period: #ef4a7a;
-  --color-cycle-next-period: #f2558a;
-  --color-cycle-fertile: #fbc6dc;
-  --color-cycle-ovulation: #9b6be6;
-  --color-cycle-length: #9b7bea;
+  /* Cycle phases, the app's MochiColor palette (pink period, teal fertile, indigo ovulation, orange luteal). */
+  --color-cycle-period: #f2577c;
+  --color-cycle-period-ink: #d2335c;
+  --color-cycle-follicular: #bfe6f3;
+  --color-cycle-fertile: #45b5da;
+  --color-cycle-fertile-tint: #ddf1f9;
+  --color-cycle-fertile-ink: #14698a;
+  --color-cycle-ovulation: #4b47b0;
+  --color-cycle-ovulation-tint: #e6e5f7;
+  --color-cycle-luteal: #f7b036;
+  --color-cycle-today-ring: #8a94a3;
+  --color-cycle-tile: #f5f7fa;
 
   /* Blog: editorial surfaces and accessible links. */
   --color-blog-border: #e9e4df;
@@ -181,16 +188,6 @@
   --color-prediction-phone-shadow: rgba(20, 80, 70, 0.22);
   --color-prediction-calendar-label: #6f7789;
   --color-prediction-card-shadow: rgba(20, 90, 80, 0.14);
-  --color-prediction-ring-1: #f04f86;
-  --color-prediction-ring-2: #f37fae;
-  --color-prediction-ring-3: #c58ce9;
-  --color-prediction-ring-4: #a28ff0;
-  --color-prediction-ring-5: #8c9ff0;
-  --color-prediction-ring-6: #f9d6e6;
-  --color-prediction-ring-7: #fbe3ee;
-  --color-prediction-ring-8: #f04f86;
-  --color-prediction-fact-divider: #f0eef3;
-  --color-prediction-mascot-bg: #93dbea;
 
   /* Privacy */
   --color-privacy-band: #213459;
