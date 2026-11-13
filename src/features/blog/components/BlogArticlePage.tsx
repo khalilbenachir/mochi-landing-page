@@ -9,6 +9,7 @@ import { SITE_URL } from "@/features/landing/content/landing";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
 import { BLOG_ART_SIZE, BLOG_POSTS, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
 import { articleReadingMinutes, articleSourceIds, getArticleCopy, getArticleSection, type ArticleTable } from "../content/copy";
+import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { useBlogLocale, useBlogRoutes } from "../i18n";
 import { BLOG_SEGMENT } from "../locales";
 import { ArticleNavigation } from "./ArticleNavigation";
@@ -82,7 +83,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
 
   return (
     <section className={post.tone} aria-labelledby="article-title">
-      <BlogShell.Container className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-phone:pt-[18px]">
+      <PosterStage spacing="none" className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] px-56 py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-nav:px-[24px] max-phone:px-[20px] max-phone:pt-[18px]">
         <BlogArticle.Header>
           <nav aria-label={t("back")} className="mb-[12px] flex gap-[9px] text-[14px] font-heavy">
             <Link href={routes.index} className="underline-offset-4 hover:underline">
@@ -120,7 +121,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
           sizes="(max-width: 760px) 320px, 420px"
           className="h-auto max-h-[270px] w-full object-contain max-nav:max-h-[200px] max-nav:max-w-[340px] max-nav:justify-self-center"
         />
-      </BlogShell.Container>
+      </PosterStage>
     </section>
   );
 }
@@ -315,7 +316,7 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
       <BlogShell.Header route={`/${BLOG_SEGMENT}/${post.slug}`} />
       <BlogArticle.Root>
         <ArticleHero post={post} />
-        <BlogShell.Container>
+        <PosterStage spacing="none" className="px-31 max-nav:px-[20px]">
           <BlogArticle.Layout>
             <ArticleNavigation items={navigationItems} title={copy.title} url={`${SITE_URL}${routes.post(post.slug)}`} labels={shareLabels} />
             <div className="min-w-0">
@@ -331,7 +332,7 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
               <ArticleSources post={post} />
             </div>
           </BlogArticle.Layout>
-        </BlogShell.Container>
+        </PosterStage>
       </BlogArticle.Root>
       <RelatedPosts post={post} />
     </BlogShell.Root>

@@ -24,7 +24,7 @@ type Props = {
 };
 
 const shareButton =
-  "grid size-[48px] flex-none place-items-center rounded-[14px] [box-shadow:0_2px_0_var(--color-blog-shadow)] transition-[background-color,transform,box-shadow] hover:-translate-y-[2px] hover:[box-shadow:0_6px_12px_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink";
+  "grid aspect-square w-full max-w-[52px] min-w-0 place-items-center rounded-[14px] [box-shadow:0_2px_0_var(--color-blog-shadow)] transition-[background-color,transform,box-shadow] hover:-translate-y-[2px] hover:[box-shadow:0_6px_12px_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink";
 
 /** The article's side menu: the shared SideMenu (contents and progress) plus the share panel. */
 export function ArticleNavigation({ items, url, title, labels }: Props) {
@@ -74,7 +74,7 @@ function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
         <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
         {labels.share}
       </p>
-      <div className="mt-[12px] flex flex-wrap gap-[10px]">
+      <div className="mt-[12px] grid grid-cols-4 gap-[8px] max-nav:flex max-nav:gap-[10px] max-nav:*:w-[48px]">
         <button
           type="button"
           onClick={copyLink}
