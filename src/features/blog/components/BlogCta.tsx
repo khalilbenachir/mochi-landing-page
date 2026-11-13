@@ -2,7 +2,6 @@ import Image from "next/image";
 import type { ComponentProps } from "react";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
 import { Button } from "@/features/landing/components/shared/Button";
-import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { cn } from "@/lib/utils";
 function Root({ className, ...props }: ComponentProps<"section">) {
   return <section className={cn("overflow-hidden bg-island-band text-white [--spacing:1px]", className)} {...props} />;
@@ -35,9 +34,9 @@ function Store() {
   return <AppStoreBadge dark className="shrink-0 max-nav:w-full max-nav:justify-center" />;
 }
 function Artwork({
-  src = LANDING_ASSETS.heroMochi,
-  width = 1399,
-  height = 1122,
+  src = "/blog-art/companion-mochi.webp",
+  width = 600,
+  height = 530,
   className,
 }: {
   src?: string;

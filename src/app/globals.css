@@ -142,6 +142,10 @@
 
   /* Island */
   --color-island-band: #4743b1;
+  /* Blog article CTA card: violet gradient end, top-right glow and card shadow. */
+  --color-blog-cta-glow: #7a62e0;
+  --color-blog-cta-light: rgba(255, 214, 240, 0.45);
+  --color-blog-cta-shadow: rgba(52, 40, 140, 0.28);
   --color-island-screen: #f5cee0;
   --color-island-drop: #f2497a;
   --color-island-phone-border: #e9e8f0;

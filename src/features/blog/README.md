@@ -86,6 +86,7 @@ art, not medical results or verified app screenshots.
 
 | File under `public/blog-art` | Dimensions | Purpose |
 | --- | --- | --- |
+| `companion-mochi.webp` | 600×530 | The app's Mochi hugging a heart and waving, for the in-article "Let Mochi keep you company" card |
 | `journal-writer.webp` | 1200×860 | The app's Mochi in a lavender beret, writing in an open journal (ChatGPT, from the app's Mochi references) |
 | `pad-care-mochi.webp` | 1200×800 | Mochi on its cushion with a pad and a purple clock |
 | `cycle-phases-mochi.webp` | 1200×800 | Mochi on its cushion beside the cycle wheel |
