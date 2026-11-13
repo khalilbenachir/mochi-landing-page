@@ -49,7 +49,7 @@ export function MoodSection() {
           <p className="mt-9 w-252 text-u-[12.8] font-demibold leading-[1.3] max-poster:w-auto max-poster:max-w-[460px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">{t("body")}</p>
         </div>
 
-        <ul className="flex justify-center gap-16 poster:scale-[1.45] max-poster:block max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
+        <ul className="flex justify-center gap-16 poster:ml-24 poster:scale-[1.2] max-poster:block max-poster:[--m:calc(min(100vw-32px,700px)/410)] max-poster:relative max-poster:h-[calc(130*var(--m))] max-poster:w-[calc(410*var(--m))] max-poster:mt-[26px] max-poster:mb-0 max-poster:mx-auto">
           {MOODS.map((mood) => (
             <li
               key={mood.id}
