@@ -82,7 +82,10 @@ function ArticleHero({ post }: { post: BlogPost }) {
 
   return (
     <section className={post.tone} aria-labelledby="article-title">
-      <PosterStage spacing="none" className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] px-56 py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-nav:px-[24px] max-phone:px-[20px] max-phone:pt-[18px]">
+      <PosterStage
+        spacing="none"
+        className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] px-56 py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-nav:px-[24px] max-phone:px-[20px] max-phone:pt-[18px]"
+      >
         <BlogArticle.Header>
           <nav aria-label={t("back")} className="mb-[12px] flex gap-[9px] text-[14px] font-heavy">
             <Link href={routes.index} className="underline-offset-4 hover:underline">
@@ -133,7 +136,13 @@ function QuickAnswer({ intro }: { intro: string }) {
       aria-labelledby="quick-answer-title"
       className="flex scroll-mt-[24px] items-start gap-[16px] rounded-[20px] bg-blog-pink px-[22px] py-[17px] max-phone:gap-[12px] max-phone:px-[16px]"
     >
-      <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="mt-[2px] h-auto w-[52px] shrink-0 -rotate-6 max-phone:w-[40px]" />
+      <Image
+        src={LANDING_ASSETS.faces.headerHappy}
+        alt=""
+        width={256}
+        height={238}
+        className="mt-[2px] h-auto w-[52px] shrink-0 -rotate-6 max-phone:w-[40px]"
+      />
       <div className="min-w-0">
         <h2 id="quick-answer-title" className="text-[25px] font-max leading-[1.1] max-phone:text-[23px]">
           {t("quickAnswer")}
@@ -205,7 +214,9 @@ function ArticleCta() {
         className="relative z-1 -mt-[64px] -ml-[6px] h-auto w-[170px] max-w-none -rotate-6 animate-float [filter:drop-shadow(0_8px_10px_var(--color-blog-cta-shadow))] max-poster:w-[140px] max-nav:absolute max-nav:left-1/2 max-nav:top-[-62px] max-nav:m-0 max-nav:w-[130px] max-nav:-translate-x-1/2"
       />
       <div className="relative z-1 min-w-0">
-        <h2 id="article-cta-title" className="text-pretty text-[26px] font-max leading-[1.1] tracking-[-0.02em] max-phone:text-[23px]">{t("inlineCtaTitle")}</h2>
+        <h2 id="article-cta-title" className="text-pretty text-[26px] font-max leading-[1.1] tracking-[-0.02em] max-phone:text-[23px]">
+          {t("inlineCtaTitle")}
+        </h2>
         <p className="mt-[6px] max-w-[440px] text-[15px] font-semibold leading-[1.4] text-white/90 max-nav:mx-auto">{t("inlineCtaDescription")}</p>
       </div>
       <div className="relative z-1 flex items-center max-poster:col-start-2 max-nav:col-start-1">

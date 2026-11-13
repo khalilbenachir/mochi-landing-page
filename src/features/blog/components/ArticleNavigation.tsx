@@ -91,7 +91,11 @@ function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
             title={labels.copy}
             className={cn(shareButton, "cursor-pointer", copyStatus === "copied" ? "bg-blog-mint text-share-whatsapp" : "bg-white text-blog-purple")}
           >
-            {copyStatus === "copied" ? <Check className="relative size-[20px]" strokeWidth={3} aria-hidden="true" /> : <LinkIcon className="relative size-[20px]" aria-hidden="true" />}
+            {copyStatus === "copied" ? (
+              <Check className="relative size-[20px]" strokeWidth={3} aria-hidden="true" />
+            ) : (
+              <LinkIcon className="relative size-[20px]" aria-hidden="true" />
+            )}
           </button>
           {shareLinks.map(({ platform, label, href, tone }) => (
             <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>

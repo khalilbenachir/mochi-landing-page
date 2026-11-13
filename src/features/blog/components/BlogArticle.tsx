@@ -23,10 +23,7 @@ function Meta({ className, ...props }: ComponentProps<"div">) {
 function Layout({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
-      className={cn(
-        "grid grid-cols-[278fr_660fr] items-start gap-28 py-[30px] max-nav:grid-cols-1 max-nav:gap-[22px] max-phone:py-[22px]",
-        className,
-      )}
+      className={cn("grid grid-cols-[278fr_660fr] items-start gap-28 py-[30px] max-nav:grid-cols-1 max-nav:gap-[22px] max-phone:py-[22px]", className)}
       {...props}
     />
   );

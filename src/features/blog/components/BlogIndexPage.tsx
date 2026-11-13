@@ -40,7 +40,9 @@ export function BlogIndexPage() {
             >
               {t("title")}
             </h1>
-            <p className="mt-[14px] max-w-[570px] text-[24px] font-bold leading-[1.25] max-nav:mx-auto max-nav:max-w-[480px] max-nav:text-[20px] max-phone:text-[18px]">{t("description")}</p>
+            <p className="mt-[14px] max-w-[570px] text-[24px] font-bold leading-[1.25] max-nav:mx-auto max-nav:max-w-[480px] max-nav:text-[20px] max-phone:text-[18px]">
+              {t("description")}
+            </p>
           </div>
           <Image
             src="/blog-art/journal-writer.webp"
