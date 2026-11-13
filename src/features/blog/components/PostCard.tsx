@@ -26,7 +26,7 @@ export function PostCard({ post, featured = false }: { post: BlogPost; featured?
         <BlogCard.Meta>
           {featured ? (
             <>
-              <Image src={LANDING_ASSETS.faces.headerHappy} width={256} height={238} alt="" className="h-auto w-[38px]" />
+              <Image src={LANDING_ASSETS.appIcon} width={38} height={38} alt="" className="size-[38px] rounded-full" />
               <span className="font-heavy">{t("byline")}</span>
               <span aria-hidden="true">·</span>
             </>

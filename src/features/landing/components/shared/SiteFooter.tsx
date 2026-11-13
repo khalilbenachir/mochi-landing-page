@@ -32,7 +32,7 @@ export function SiteFooter({ homePath }: { homePath: string }) {
       <PosterStage spacing="none">
         <div className="grid min-h-108 grid-cols-[minmax(0,1fr)_auto] items-center gap-x-32 rounded-t-[calc(22*var(--spacing))] bg-white py-14 px-126 max-poster:relative max-poster:z-2 max-poster:gap-x-16 max-poster:px-[20px] max-poster:py-[22px] max-poster:rounded-t-[24px] max-phone:grid-cols-1">
           <a href={`${homePath}#top`} className="flex min-w-0 items-center gap-20 text-ink-black max-poster:gap-[14px] max-phone:justify-self-center" aria-label={common("backToTop")}>
-            <Image className="h-auto w-50 flex-none max-poster:w-[46px]" src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} />
+            <Image className="size-50 flex-none rounded-u-13 max-poster:size-[46px] max-poster:rounded-[12px]" src={LANDING_ASSETS.appIcon} alt="" width={256} height={256} />
             <i className="h-26 w-1.5 flex-none bg-closing-brand-divider" aria-hidden="true" />
             <b className="min-w-0 text-balance text-u-24.5 font-max leading-[1.05] tracking-[-0.02em] max-poster:text-[20px]">{t("brand")}</b>
           </a>
