@@ -50,11 +50,19 @@ function Root({ items, className, children }: { items: readonly SideMenuItem[]; 
     return () => observer.disconnect();
   }, [items]);
 
-  const activeIndex = Math.max(0, items.findIndex((item) => item.id === active));
+  const activeIndex = Math.max(
+    0,
+    items.findIndex((item) => item.id === active),
+  );
 
   return (
     <SideMenuContext.Provider value={{ items, activeIndex, setActive, expanded, toggle: () => setExpanded((value) => !value), bodyId }}>
-      <aside className={cn("sticky top-[88px] self-start overflow-hidden rounded-[24px] border border-blog-border bg-white [box-shadow:0_6px_18px_var(--color-blog-shadow)] max-nav:static", className)}>
+      <aside
+        className={cn(
+          "sticky top-[88px] self-start overflow-hidden rounded-[24px] border border-blog-border bg-white [box-shadow:0_6px_18px_var(--color-blog-shadow)] max-nav:static",
+          className,
+        )}
+      >
         {children}
       </aside>
     </SideMenuContext.Provider>
@@ -63,13 +71,19 @@ function Root({ items, className, children }: { items: readonly SideMenuItem[]; 
 
 function Counter({ className }: { className?: string }) {
   const { items, activeIndex } = useSideMenu();
-  return <span className={cn("text-[12px] font-heavy tabular-nums text-mochi-pink-ink", className)} aria-hidden="true">{activeIndex + 1} / {items.length}</span>;
+  return (
+    <span className={cn("text-[12px] font-heavy tabular-nums text-mochi-pink-ink", className)} aria-hidden="true">
+      {activeIndex + 1} / {items.length}
+    </span>
+  );
 }
 
 /** Mochi and the title; on small screens the same row is the button that opens the menu. */
 function Header({ title, children }: { title: string; children?: ReactNode }) {
   const { expanded, toggle, bodyId } = useSideMenu();
-  const mochi = <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="h-auto w-[34px] shrink-0 -rotate-6 max-nav:w-[30px]" />;
+  const mochi = (
+    <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="h-auto w-[34px] shrink-0 -rotate-6 max-nav:w-[30px]" />
+  );
   return (
     <div className="bg-[linear-gradient(180deg,var(--color-blog-pink),transparent)] px-[18px] pb-[14px] pt-[16px] max-nav:p-[14px]">
       <div className="flex items-center gap-[10px] max-nav:hidden">
@@ -81,12 +95,15 @@ function Header({ title, children }: { title: string; children?: ReactNode }) {
         aria-expanded={expanded}
         aria-controls={bodyId}
         onClick={toggle}
-        className="hidden min-h-[44px] w-full cursor-pointer items-center gap-[10px] rounded-[10px] text-left text-[18px] font-max focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink max-nav:flex"
+        className="hidden min-h-[44px] w-full cursor-pointer items-center gap-[10px] rounded-[10px] text-left text-[18px] font-max outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-mochi-pink-ink/60 max-nav:flex"
       >
         {mochi}
         <span className="flex-1">{title}</span>
         <Counter className="text-[13px]" />
-        <ChevronDown aria-hidden="true" className={cn("size-[20px] transition-[rotate]", expanded && "rotate-180")} />
+        <ChevronDown
+          aria-hidden="true"
+          className={cn("size-[20px] transition-[rotate] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]", expanded && "rotate-180")}
+        />
       </button>
       {children}
     </div>
@@ -100,7 +117,10 @@ function Progress() {
     <div className="mt-[12px] flex items-center gap-[10px]" aria-hidden="true">
       <div className="flex flex-1 gap-[3px]">
         {items.map(({ id }, index) => (
-          <span key={id} className={cn("h-[6px] flex-1 rounded-full transition-colors duration-500", index <= activeIndex ? "bg-mochi-pink-ink" : "bg-white")} />
+          <span
+            key={id}
+            className={cn("h-[6px] flex-1 rounded-full transition-colors duration-500", index <= activeIndex ? "bg-mochi-pink-ink" : "bg-white")}
+          />
         ))}
       </div>
       <Counter className="max-nav:hidden" />
@@ -108,12 +128,32 @@ function Progress() {
   );
 }
 
-/** Everything below the header; collapsed on small screens until the header button opens it. */
+/**
+ * Everything below the header; collapsed on small screens until the header button opens it.
+ * The open/close is animated by transitioning the grid row from 0fr to 1fr (a height animation
+ * without measuring), with a fade and a small slide; visibility flips after the close so the
+ * hidden links leave the tab order.
+ */
 function Body({ children }: { children: ReactNode }) {
   const { expanded, bodyId } = useSideMenu();
   return (
-    <div id={bodyId} className={cn("px-[18px] pb-[18px] max-nav:px-[14px] max-nav:pb-[14px]", !expanded && "max-nav:hidden")}>
-      {children}
+    <div
+      id={bodyId}
+      className={cn(
+        "grid grid-rows-[1fr] max-nav:transition-[grid-template-rows,opacity,visibility] max-nav:duration-300 max-nav:ease-[cubic-bezier(0.22,1,0.36,1)]",
+        !expanded && "max-nav:invisible max-nav:grid-rows-[0fr] max-nav:opacity-0",
+      )}
+    >
+      <div className="min-h-0 overflow-hidden">
+        <div
+          className={cn(
+            "px-[18px] pb-[18px] max-nav:px-[14px] max-nav:pb-[14px] max-nav:transition-transform max-nav:duration-300 max-nav:ease-[cubic-bezier(0.22,1,0.36,1)]",
+            !expanded && "max-nav:-translate-y-[8px]",
+          )}
+        >
+          {children}
+        </div>
+      </div>
     </div>
   );
 }
