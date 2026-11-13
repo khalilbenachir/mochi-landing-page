@@ -70,20 +70,22 @@ function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
 
   return (
     <div className="mt-[16px] rounded-[20px] bg-blog-lavender/45 px-[12px] pt-[13px] pb-[12px]">
-      <p className="flex items-center gap-[7px] px-[4px] text-[15px] font-max leading-none">
-        <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
-        {labels.share}
-      </p>
-      <div className="relative mt-[12px]">
+      <div className="flex min-h-[22px] flex-wrap items-center justify-between gap-[8px] px-[4px]">
+        <p className="flex items-center gap-[7px] text-[15px] font-max leading-none">
+          <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
+          {labels.share}
+        </p>
         <p
           role="status"
           className={cn(
-            "pointer-events-none absolute bottom-[calc(100%+8px)] left-[6px] rounded-full px-[10px] py-[5px] text-[12px] font-heavy leading-none text-white transition-[opacity,transform] after:absolute after:top-full after:left-[14px] after:border-x-[5px] after:border-t-[6px] after:border-x-transparent empty:translate-y-[4px] empty:opacity-0",
-            copyStatus === "error" ? "bg-mochi-pink-ink after:border-t-mochi-pink-ink" : "bg-share-whatsapp after:border-t-share-whatsapp",
+            "rounded-full px-[9px] py-[4px] text-[11px] font-heavy leading-none text-white transition-[opacity,transform] empty:scale-75 empty:opacity-0",
+            copyStatus === "error" ? "bg-mochi-pink-ink" : "bg-share-whatsapp",
           )}
         >
           {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
         </p>
+      </div>
+      <div className="mt-[12px]">
         <div className="flex items-center justify-between gap-[6px] rounded-full bg-white p-[5px] [box-shadow:0_3px_0_var(--color-blog-shadow)] max-nav:justify-start max-nav:gap-[10px]">
           <button
             type="button"
