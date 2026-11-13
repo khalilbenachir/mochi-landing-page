@@ -8,7 +8,7 @@ export const LANDING_ASSETS = {
   freeMochi: "/mochi/free-mochi.webp",
   faces: {
     happy: "/mochi/faces/happy.webp",
-    headerHappy: "/mochi/faces/happy-header.webp",
+    headerHappy: "/mochi/faces/header-mochi.webp",
   },
   heroMochi: "/mochi/hero-mochi.webp",
   heroArt: "/mochi/hero-dreamland.webp",

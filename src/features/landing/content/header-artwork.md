@@ -1,6 +1,6 @@
 # Happy header Mochi
 
-Asset: `public/mochi/faces/happy-header.webp` (256 × 238, transparent WebP).
+Asset: `public/mochi/faces/header-mochi.webp` (256 × 238, transparent WebP).
 Made from the iOS app's own `mochi-face-happy.png` (MochiDesign/Resources/MochiPictures), so the
 header shows exactly the app's Mochi. A raspberry outline (#d63467) and a white sticker rim are
 added around its silhouette so it reads on the pink header band and matches the outlined Mochi in
