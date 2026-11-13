@@ -4,11 +4,11 @@ export const LANDING_ASSETS = {
   accountMochi: "/mochi/account-mochi.webp",
   appIcon: "/mochi/app-icon.webp",
   closingMochi: "/mochi/closing-mochi.webp",
+  faqMochi: "/mochi/faq-mochi.webp",
   freeMochi: "/mochi/free-mochi.webp",
   faces: {
     happy: "/mochi/faces/happy.webp",
     headerHappy: "/mochi/faces/happy-header.webp",
-    wondering: "/mochi/faces/wondering.webp",
   },
   heroMochi: "/mochi/hero-mochi.webp",
   heroPhone: "/mochi/hero-phone.webp",
