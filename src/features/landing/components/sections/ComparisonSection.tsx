@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { FLAVOR_CARD_ASSETS } from "@/features/landing/content/assets";
+import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { COMPARISON_ROW_IDS } from "@/features/landing/content/landing";
 import { Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
@@ -55,8 +55,8 @@ export function ComparisonSection() {
             <Rays shape="burst" className={cn(RAYS, "left-[max(calc(100%+12*var(--spacing)),calc(116*var(--spacing)))] top-[calc(20.71*var(--spacing))] w-28")} flip />
           </span> <span className="ml-17 block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
         </h2>
-        <div className="absolute z-1 left-60 bottom-[calc(var(--section-space)*0.25)] w-130 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-matcha-bg max-poster:hidden" aria-hidden="true">
-          <Image className="relative z-1 h-auto w-full" src={FLAVOR_CARD_ASSETS.matcha} alt="" width={380} height={262} sizes="12vw" />
+        <div className="absolute z-1 left-72 bottom-[calc(var(--section-space)*0.2)] w-98 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-mochi-cell-bg max-poster:hidden" aria-hidden="true">
+          <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.whyMochi} alt="" width={420} height={418} sizes="12vw" />
         </div>
 
         <div className="hidden max-tablet:mt-[24px] max-tablet:block">

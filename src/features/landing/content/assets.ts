@@ -18,6 +18,7 @@ export const LANDING_ASSETS = {
   predictMochi: "/mochi/predict-mochi.webp",
   predictionMochi: "/mochi/prediction-mochi.webp",
   socialCard: "/mochi/social-card.png",
+  whyMochi: "/mochi/why-mochi.webp",
 } as const;
 
 export const FLAVOR_CARD_ASSETS = {
