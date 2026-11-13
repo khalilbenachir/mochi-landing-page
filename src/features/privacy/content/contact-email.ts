@@ -1,6 +1,6 @@
 const ENV_NAME = "NEXT_PUBLIC_CONTACT_EMAIL";
-/** Development and test fallback only: production builds must configure the real address. */
-export const DEFAULT_CONTACT_EMAIL = "test@mochi.app";
+/** Development fallback: the address the iOS app uses (Config/Base.xcconfig SUPPORT_EMAIL). Production builds must still set it explicitly. */
+export const DEFAULT_CONTACT_EMAIL = "support@mochiii.app";
 /** One plain address: nothing that could add `mailto:` headers (`?`, `&`, `#`) or extra recipients. */
 const EMAIL = /^[^\s@<>()[\]"',;:?&#]+@[^\s@<>()[\]"',;:?&#]+\.[^\s@<>()[\]"',;:?&#]+$/;
 

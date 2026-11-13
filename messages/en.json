@@ -353,8 +353,8 @@
       "collect": {
         "nav": "What we collect",
         "title": "What we collect",
-        "body": "Mochi collects only the information you choose to add in the app, such as your period dates, flow, symptoms, moods, sex, tests and pregnancy logs. This data is used to give you cycle predictions, reminders and a personalized experience (like your streaks and collectible flavors).",
-        "detail": "We do not collect or require your name, email or any other personal information to use the app. You can enjoy all core features without creating an account."
+        "body": "Mochi collects only what you choose to add: period dates, flow, symptoms, moods, sex, tests and pregnancy logs. Mochi uses them on your iPhone for predictions, reminders, streaks and collectible flavors.",
+        "detail": "You don’t need an account. If you create one to turn on backup, we keep your email address (with Sign in with Apple, the address Apple shares with us, which can be a private relay address) and, if you sign up with email, a password. We also collect app usage data and, if you subscribe, your purchase history, as described below."
       },
       "device": {
         "nav": "What stays on your iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Analytics",
         "title": "Never in analytics",
-        "body": "Your period dates, flow, symptoms, moods, sex, tests and pregnancy logs are never included in analytics, logs or crash reports.",
-        "detail": "Your private entries are used by Mochi on your iPhone to support the features you choose to use."
+        "body": "We use PostHog, on servers in the EU, to understand how Mochi is used: app opens, screen names, onboarding steps and simple counts, such as how many fields a check-in filled. PostHog also receives standard technical details: device model, iOS and app version, and an approximate location derived from your IP address.",
+        "detail": "Your period dates, flow, symptoms, moods, sex, tests and pregnancy logs are never included in analytics, logs or crash reports. Usage data is linked to a random app identifier, and to your account ID if you sign in. It is never used for advertising or to track you across other apps and websites. Crash and performance reports from Apple’s MetricKit are aggregated by iOS and stay on your iPhone."
       },
       "backup": {
         "nav": "Backup and sync",
         "title": "Backup and sync",
-        "body": "Backup is optional. If you choose to turn it on, your backup is encrypted, stored in the EU and linked only to you.",
+        "body": "Backup is optional. If you turn it on, your account and your backup are stored with Supabase, on servers in the EU (Frankfurt). Your cycle entries are encrypted on your iPhone before they are uploaded, with a key kept in your iCloud Keychain, so the server only stores data it cannot read.",
         "detail": "You can use Mochi’s core features offline and without an account. Your cycle data stays on your iPhone unless you choose backup."
       },
       "subscriptions": {
         "nav": "Subscriptions",
         "title": "Subscriptions",
-        "body": "Mochi Plus is an optional subscription. You can keep using the free core features without subscribing.",
-        "detail": "App Store purchases and subscription management are handled through Apple. A subscription does not change how Mochi keeps your cycle entries private."
+        "body": "Mochi Plus is an optional subscription, and the free core features keep working without it. Apple handles payment: we never see your card details.",
+        "detail": "We use RevenueCat to check whether your subscription is active. RevenueCat receives your App Store purchase history (products, purchase and renewal dates) linked to an anonymous ID, or to your account ID if you are signed in. It never receives your cycle entries."
+      },
+      "providers": {
+        "nav": "Who helps us",
+        "title": "Who helps us run Mochi",
+        "body": "We share data only with the services that run Mochi, each limited to what it needs: Supabase (account and encrypted backup, EU), PostHog (usage analytics, EU), RevenueCat (subscription status) and Apple (App Store purchases, Sign in with Apple and iCloud Keychain).",
+        "detail": "These providers process data on our behalf under their data processing terms. We don’t sell your data or share it with advertisers or data brokers."
+      },
+      "deletion": {
+        "nav": "Delete your data",
+        "title": "Delete your account and data",
+        "body": "You can delete your account at any time in the app: Settings › Privacy & data › Delete account. This deletes your account and all your backed-up data from our servers straight away, and erases Mochi’s data from your iPhone.",
+        "detail": "Not signed in? Settings › Privacy & data › Delete all data erases everything Mochi keeps on your iPhone. Deleting your account doesn’t cancel a subscription: manage that in your Apple ID settings. To also have your usage data and purchase records removed from PostHog and RevenueCat, email us and we’ll do it within 30 days."
       },
       "rights": {
         "nav": "Your rights",
         "title": "You stay in control",
         "body": "You decide what information to add to Mochi. All core features work without creating an account or enabling backup.",
-        "detail": "If you have questions about your information or want help with a privacy request, contact us using the details below."
+        "detail": "Under the GDPR you can ask to access, correct, export or delete your information, or object to how it’s used. You can export your entries in the app (Settings › Privacy & data › Export my data) and delete them yourself. For anything else, email us. You can also complain to your data protection authority."
       },
       "children": {
         "nav": "Children",

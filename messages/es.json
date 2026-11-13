@@ -353,8 +353,8 @@
       "collect": {
         "nav": "Qué recopilamos",
         "title": "Qué recopilamos",
-        "body": "Mochi guarda solo lo que decides añadir: fechas de la regla, flujo, síntomas, ánimo, sexo, tests y registros de embarazo. Estos datos permiten ofrecer predicciones, recordatorios y una experiencia personalizada, como rachas y sabores coleccionables.",
-        "detail": "No necesitas dar tu nombre, correo ni otros datos personales. Puedes usar todas las funciones esenciales sin crear una cuenta."
+        "body": "Mochi solo recoge lo que decides añadir: fechas del periodo, flujo, síntomas, estados de ánimo, sexo, pruebas y registros de embarazo. Mochi los usa en tu iPhone para predicciones, recordatorios, rachas y sabores coleccionables.",
+        "detail": "No necesitas una cuenta. Si creas una para activar la copia de seguridad, guardamos tu correo (con Iniciar sesión con Apple, la dirección que Apple nos comparte, que puede ser una dirección de reenvío privada) y, si te registras con correo, una contraseña. También recogemos datos de uso de la app y, si te suscribes, tu historial de compras, como se explica más abajo."
       },
       "device": {
         "nav": "Qué queda en tu iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Analíticas",
         "title": "Nunca en analíticas",
-        "body": "Las fechas, el flujo, los síntomas, el ánimo, el sexo, los tests y los registros de embarazo nunca se incluyen en analíticas, registros o informes de fallos.",
-        "detail": "Mochi usa tus entradas privadas en el iPhone para las funciones que eliges utilizar."
+        "body": "Usamos PostHog, con servidores en la UE, para entender cómo se usa Mochi: aperturas de la app, nombres de pantallas, pasos de bienvenida y recuentos sencillos, como cuántos campos se rellenaron en un registro. PostHog también recibe datos técnicos habituales: modelo del dispositivo, versión de iOS y de la app, y una ubicación aproximada obtenida de tu dirección IP.",
+        "detail": "Tus fechas del periodo, flujo, síntomas, estados de ánimo, sexo, pruebas y registros de embarazo nunca se incluyen en analíticas, registros ni informes de fallos. Los datos de uso se vinculan a un identificador aleatorio de la app y, si inicias sesión, al ID de tu cuenta. Nunca se usan para publicidad ni para seguirte en otras apps y webs. Los informes de fallos y rendimiento de MetricKit de Apple los agrega iOS y se quedan en tu iPhone."
       },
       "backup": {
         "nav": "Copia y sincronización",
         "title": "Copia y sincronización",
-        "body": "La copia es opcional. Si la activas, se cifra, se almacena en la UE y queda vinculada únicamente a ti.",
+        "body": "La copia de seguridad es opcional. Si la activas, tu cuenta y tu copia se guardan en Supabase, en servidores de la UE (Fráncfort). Tus registros del ciclo se cifran en tu iPhone antes de subirse, con una clave guardada en tu Llavero de iCloud, así que el servidor solo guarda datos que no puede leer.",
         "detail": "Las funciones esenciales van sin conexión y sin cuenta. Sin la copia, los datos del ciclo se quedan en tu iPhone."
       },
       "subscriptions": {
         "nav": "Suscripciones",
         "title": "Suscripciones",
-        "body": "Mochi Plus es una suscripción opcional. Puedes seguir usando las funciones esenciales gratuitas sin suscribirte.",
-        "detail": "Apple gestiona las compras y suscripciones del App Store. Suscribirte no cambia la privacidad de los datos de tu ciclo."
+        "body": "Mochi Plus es una suscripción opcional y las funciones esenciales gratuitas siguen funcionando sin ella. Apple gestiona el pago: nunca vemos los datos de tu tarjeta.",
+        "detail": "Usamos RevenueCat para comprobar si tu suscripción está activa. RevenueCat recibe tu historial de compras del App Store (productos, fechas de compra y renovación) vinculado a un ID anónimo o, si has iniciado sesión, al ID de tu cuenta. Nunca recibe tus registros del ciclo."
+      },
+      "providers": {
+        "nav": "Quién nos ayuda",
+        "title": "Quién nos ayuda a que Mochi funcione",
+        "body": "Solo compartimos datos con los servicios que hacen funcionar Mochi, cada uno limitado a lo que necesita: Supabase (cuenta y copia cifrada, UE), PostHog (analítica de uso, UE), RevenueCat (estado de la suscripción) y Apple (compras del App Store, Iniciar sesión con Apple y Llavero de iCloud).",
+        "detail": "Estos proveedores tratan los datos en nuestro nombre según sus condiciones de tratamiento de datos. No vendemos tus datos ni los compartimos con anunciantes o intermediarios de datos."
+      },
+      "deletion": {
+        "nav": "Borrar tus datos",
+        "title": "Elimina tu cuenta y tus datos",
+        "body": "Puedes eliminar tu cuenta cuando quieras desde la app: Ajustes › Privacidad y datos › Eliminar cuenta. Así se eliminan al instante tu cuenta y todos tus datos guardados en nuestros servidores, y se borran los datos de Mochi de tu iPhone.",
+        "detail": "¿No has iniciado sesión? Ajustes › Privacidad y datos › Borrar todos los datos borra todo lo que Mochi guarda en tu iPhone. Eliminar la cuenta no cancela una suscripción: gestiónala en los ajustes de tu cuenta de Apple. Si también quieres que borremos tus datos de uso y tus compras en PostHog y RevenueCat, escríbenos y lo haremos en un plazo de 30 días."
       },
       "rights": {
         "nav": "Tus derechos",
         "title": "Tú tienes el control",
         "body": "Tú eliges qué información añadir a Mochi. Las funciones esenciales no requieren cuenta ni copia de seguridad.",
-        "detail": "Contacta con nosotros si tienes preguntas sobre tus datos o necesitas ayuda con una solicitud de privacidad."
+        "detail": "Según el RGPD, puedes pedir acceder, corregir, exportar o eliminar tu información, u oponerte a su uso. Puedes exportar tus registros en la app (Ajustes › Privacidad y datos › Exportar mis datos) y borrarlos tú misma. Para cualquier otra cosa, escríbenos. También puedes reclamar ante tu autoridad de protección de datos."
       },
       "children": {
         "nav": "Menores",

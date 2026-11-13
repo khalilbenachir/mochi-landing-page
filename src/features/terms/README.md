@@ -24,7 +24,7 @@ Summary card four and the content section link to the localized Privacy page. Bo
 preserve `/terms`, while feature and download links return to the localized home.
 
 Contact uses Privacy's shared resolver: production builds require a validated
-`NEXT_PUBLIC_CONTACT_EMAIL`, and only development and test fall back to `test@mochi.app`. Local verification uses the same deterministic
+`NEXT_PUBLIC_CONTACT_EMAIL`, and only development falls back to `support@mochiii.app` (`npm run build:test` pins `test@mochi.app`). Local verification uses the same deterministic
 address through `npm run build:test`.
 
 ## Artwork

@@ -353,8 +353,8 @@
       "collect": {
         "nav": "O que recolhemos",
         "title": "O que recolhemos",
-        "body": "O Mochi guarda apenas o que escolhes registar: datas da menstruação, fluxo, sintomas, humor, sexo, testes e registos de gravidez. Estes dados permitem previsões, lembretes e uma experiência personalizada, como sequências e sabores colecionáveis.",
-        "detail": "Não precisas de fornecer nome, e-mail ou outros dados pessoais. Todas as funções essenciais estão disponíveis sem criar conta."
+        "body": "O Mochi recolhe apenas o que escolhes adicionar: datas do período, fluxo, sintomas, humores, sexo, testes e registos de gravidez. O Mochi usa-os no teu iPhone para previsões, lembretes, sequências e sabores colecionáveis.",
+        "detail": "Não precisas de conta. Se criares uma para ativar a cópia de segurança, guardamos o teu e-mail (com Iniciar sessão com a Apple, o endereço que a Apple partilha connosco, que pode ser um endereço de reencaminhamento privado) e, se te registares por e-mail, uma palavra-passe. Também recolhemos dados de utilização da app e, se subscreveres, o teu histórico de compras, como explicado abaixo."
       },
       "device": {
         "nav": "O que fica no iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Análises",
         "title": "Nunca em análises",
-        "body": "Datas, fluxo, sintomas, humor, sexo, testes e registos de gravidez nunca são incluídos em análises, registos ou relatórios de falhas.",
-        "detail": "O Mochi utiliza os teus registos privados no iPhone para as funções que escolhes usar."
+        "body": "Usamos o PostHog, em servidores na UE, para perceber como o Mochi é usado: aberturas da app, nomes de ecrãs, passos da introdução e contagens simples, como quantos campos um registo preencheu. O PostHog recebe também dados técnicos habituais: modelo do dispositivo, versões do iOS e da app e uma localização aproximada obtida a partir do teu endereço IP.",
+        "detail": "As tuas datas do período, fluxo, sintomas, humores, sexo, testes e registos de gravidez nunca entram em estatísticas, registos técnicos ou relatórios de falhas. Os dados de utilização ficam ligados a um identificador aleatório da app e, se iniciares sessão, ao ID da tua conta. Nunca são usados para publicidade nem para te seguir noutras apps e sites. Os relatórios de falhas e desempenho do MetricKit da Apple são agregados pelo iOS e ficam no teu iPhone."
       },
       "backup": {
         "nav": "Cópia e sincronização",
         "title": "Cópia e sincronização",
-        "body": "A cópia é opcional. Se a ativares, é encriptada, guardada na UE e associada apenas a ti.",
+        "body": "A cópia de segurança é opcional. Se a ativares, a tua conta e a tua cópia ficam guardadas no Supabase, em servidores na UE (Frankfurt). Os teus registos do ciclo são encriptados no teu iPhone antes do envio, com uma chave guardada no teu Porta-chaves iCloud, por isso o servidor só guarda dados que não consegue ler.",
         "detail": "As funções essenciais funcionam offline e sem conta. Sem cópia, os dados do ciclo ficam no teu iPhone."
       },
       "subscriptions": {
         "nav": "Subscrições",
         "title": "Subscrições",
-        "body": "O Mochi Plus é uma subscrição opcional. As funções essenciais gratuitas continuam disponíveis sem subscrição.",
-        "detail": "A Apple gere as compras e subscrições da App Store. Uma subscrição não altera a privacidade dos registos do ciclo."
+        "body": "O Mochi Plus é uma subscrição opcional, e as funções essenciais gratuitas continuam a funcionar sem ela. A Apple trata do pagamento: nunca vemos os dados do teu cartão.",
+        "detail": "Usamos o RevenueCat para verificar se a tua subscrição está ativa. O RevenueCat recebe o teu histórico de compras da App Store (produtos, datas de compra e renovação) ligado a um ID anónimo ou, se tiveres sessão iniciada, ao ID da tua conta. Nunca recebe os teus registos do ciclo."
+      },
+      "providers": {
+        "nav": "Quem nos ajuda",
+        "title": "Quem nos ajuda a manter o Mochi",
+        "body": "Só partilhamos dados com os serviços que fazem o Mochi funcionar, cada um limitado ao que precisa: Supabase (conta e cópia encriptada, UE), PostHog (estatísticas de utilização, UE), RevenueCat (estado da subscrição) e Apple (compras na App Store, Iniciar sessão com a Apple e Porta-chaves iCloud).",
+        "detail": "Estes fornecedores tratam dados em nosso nome, segundo os seus termos de tratamento de dados. Não vendemos os teus dados nem os partilhamos com anunciantes ou corretores de dados."
+      },
+      "deletion": {
+        "nav": "Apagar os teus dados",
+        "title": "Elimina a tua conta e os teus dados",
+        "body": "Podes eliminar a tua conta quando quiseres na app: Definições › Privacidade e dados › Eliminar conta. Isto elimina de imediato a tua conta e todos os dados da cópia de segurança dos nossos servidores e apaga os dados do Mochi do teu iPhone.",
+        "detail": "Sem sessão iniciada? Definições › Privacidade e dados › Apagar todos os dados apaga tudo o que o Mochi guarda no teu iPhone. Eliminar a conta não cancela uma subscrição: gere-a nas definições da tua Conta Apple. Para removermos também os teus dados de utilização e registos de compra no PostHog e no RevenueCat, envia-nos um e-mail e fazemo-lo no prazo de 30 dias."
       },
       "rights": {
         "nav": "Os teus direitos",
         "title": "Tu manténs o controlo",
         "body": "Tu escolhes o que registar no Mochi. As funções essenciais funcionam sem conta e sem cópia de segurança.",
-        "detail": "Contacta-nos se tiveres dúvidas sobre os teus dados ou precisares de ajuda com um pedido de privacidade."
+        "detail": "Ao abrigo do RGPD, podes pedir acesso, retificação, exportação ou eliminação das tuas informações, ou opor-te à sua utilização. Podes exportar os teus registos na app (Definições › Privacidade e dados › Exportar os meus dados) e apagá-los tu mesma. Para o resto, envia-nos um e-mail. Também podes apresentar queixa à autoridade de proteção de dados (em Portugal, a CNPD)."
       },
       "children": {
         "nav": "Crianças",
