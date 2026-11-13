@@ -40,7 +40,6 @@ const RAY_SHAPES = {
   flavors: { strokeWidth: 4.5, paths: ["M27 4 23 14", "M37 9 29 17", "M5 18 19 21"] },
   faq: { strokeWidth: 4.5, paths: ["M10 4 7 15", "M24 8 15 19", "M33 22 20 26"] },
   privacy: { strokeWidth: 4.5, paths: ["M12 4 17 15", "M27 8 24 19", "M36 22 26 25"] },
-  closing: { strokeWidth: 4.5, paths: ["M10 4 14 15", "M25 7 21 19", "M36 21 25 26"] },
   prediction: { strokeWidth: 4.5, paths: ["M26 4 23 15", "M37 13 28 20", "M5 27 19 28"] },
 } as const;
 
