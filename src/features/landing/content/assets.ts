@@ -12,6 +12,7 @@ export const LANDING_ASSETS = {
   },
   heroMochi: "/mochi/hero-mochi.webp",
   heroArt: "/mochi/hero-dreamland.webp",
+  heroBalloon: "/mochi/hero-balloon.webp",
   islandMochi: "/mochi/island-mochi.webp",
   manifestIcon192: "/mochi/app-icon-192.png",
   manifestIcon512: "/mochi/app-icon-512.png",
