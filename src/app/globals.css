@@ -69,6 +69,17 @@
     80% { transform: scale(1.03, 0.98); }
     100% { transform: scale(1, 1); }
   }
+  /* Hero art: Mochi bobs gently, petals drift. Off under prefers-reduced-motion (global switch below). */
+  --animate-float: float 6s ease-in-out infinite;
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2.2%); }
+  }
+  --animate-drift: drift 7s ease-in-out infinite;
+  @keyframes drift {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(14px) rotate(16deg); }
+  }
 
   /* Shared */
   --color-sun: #ffd93d;
@@ -119,14 +130,8 @@
   --color-hero-badge-shadow: rgba(120, 18, 52, 0.18);
   --color-hero-title-shadow: rgba(110, 16, 48, 0.22);
   --color-hero-sticker-shadow: rgba(110, 16, 48, 0.18);
-  --color-hero-phone-shadow: rgba(90, 10, 40, 0.28);
-  /* Hero phone: the app's Today screen (MochiColor values). */
-  --color-hero-phone-frame: #0d0e12;
-  --color-hero-phone-rim: #c9ccd6;
-  --color-app-grey: #6b7585;
-  --color-app-orange-tint: #fef0d6;
-  --color-app-orange-deep: #5c3a00;
-  --color-app-bubble: #f5f7fa;
+  --color-hero-glow: rgba(255, 222, 236, 0.55);
+  --color-hero-bubble-shadow: rgba(110, 16, 48, 0.2);
   --color-hero-vignette: rgba(214, 40, 96, 0.25);
   --color-hero-menu-icon: #ef356c;
   --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);

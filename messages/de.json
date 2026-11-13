@@ -34,27 +34,8 @@
     "title2": "Perioden-App",
     "title3": "fürs iPhone",
     "body": "Tracke deine Periode kostenlos, notiere Symptome und lerne deinen Zyklus kennen. Mochi begleitet dich mit einem kleinen Maskottchen durch den Alltag. Ohne Anmeldung, auch offline.",
-    "mascotAlt": "Mochi, ein lächelndes rosa Mochi-Maskottchen, auf einem cremefarbenen Kissen",
-    "phoneAlt": "Mochis Heute-Bildschirm auf dem iPhone: 12 Tage bis zur Periode, Zyklustag 17, die Tage dieser Woche und Mochi, der fragt, wie es dir geht",
-    "today": {
-      "streak": "4 Tage",
-      "weekday": "Mittwoch",
-      "daysValue": "12 Tage",
-      "daysSubtitle": "bis zur Periode · Zyklustag 17",
-      "logPeriod": "Periode eintragen",
-      "bubble": "Wie geht’s dir heute? Tipp mich an und erzähl’s mir.",
-      "tapHint": "Tippe auf Mochi, um dein Befinden einzutragen",
-      "logMore": "Mehr eintragen",
-      "week": {
-        "sun": "S",
-        "mon": "M",
-        "tue": "D",
-        "wed": "M",
-        "thu": "D",
-        "fri": "F",
-        "sat": "S"
-      }
-    }
+    "mascotAlt": "Mochi umarmt ein Herz auf einer rosa Wolke unter den Mondphasen, Matcha-, Ube- und Mango-Mochi winken",
+    "hello": "Hallo, ich bin Mochi!"
   },
   "Island": {
     "title1": "Erinnerung zum",
