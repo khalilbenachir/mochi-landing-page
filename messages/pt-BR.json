@@ -353,8 +353,8 @@
       "collect": {
         "nav": "O que coletamos",
         "title": "O que coletamos",
-        "body": "O Mochi guarda apenas o que você escolhe registrar: datas da menstruação, fluxo, sintomas, humor, sexo, testes e registros de gravidez. Esses dados permitem previsões, lembretes e uma experiência personalizada, como sequências e sabores colecionáveis.",
-        "detail": "Seu nome, e-mail ou outros dados pessoais não são necessários. Todos os recursos essenciais funcionam sem criar conta."
+        "body": "O Mochi coleta apenas o que você decide adicionar: datas da menstruação, fluxo, sintomas, humores, sexo, testes e registros de gravidez. O Mochi usa esses dados no seu iPhone para previsões, lembretes, sequências e sabores colecionáveis.",
+        "detail": "Você não precisa de conta. Se criar uma para ativar o backup, guardamos seu e-mail (com Iniciar sessão com a Apple, o endereço que a Apple compartilha conosco, que pode ser um endereço de retransmissão privado) e, se você se cadastrar por e-mail, uma senha. Também coletamos dados de uso do app e, se você assinar, seu histórico de compras, como explicado abaixo."
       },
       "device": {
         "nav": "O que fica no iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Análises",
         "title": "Nunca em análises",
-        "body": "Datas, fluxo, sintomas, humor, sexo, testes e registros de gravidez nunca entram em análises, logs ou relatórios de falhas.",
-        "detail": "O Mochi usa seus registros privados no iPhone para os recursos que você escolhe usar."
+        "body": "Usamos o PostHog, em servidores na UE, para entender como o Mochi é usado: aberturas do app, nomes de telas, etapas da introdução e contagens simples, como quantos campos um registro preencheu. O PostHog também recebe dados técnicos comuns: modelo do aparelho, versões do iOS e do app e uma localização aproximada obtida do seu endereço IP.",
+        "detail": "Suas datas da menstruação, fluxo, sintomas, humores, sexo, testes e registros de gravidez nunca entram em análises, logs ou relatórios de falhas. Os dados de uso ficam ligados a um identificador aleatório do app e, se você entrar na conta, ao ID da sua conta. Eles nunca são usados para publicidade nem para rastrear você em outros apps e sites. Os relatórios de falhas e desempenho do MetricKit da Apple são agregados pelo iOS e ficam no seu iPhone."
       },
       "backup": {
         "nav": "Backup e sincronização",
         "title": "Backup e sincronização",
-        "body": "O backup é opcional. Se você ativar, ele é criptografado, armazenado na UE e vinculado apenas a você.",
+        "body": "O backup é opcional. Se você ativá-lo, sua conta e seu backup ficam guardados no Supabase, em servidores na UE (Frankfurt). Seus registros do ciclo são criptografados no seu iPhone antes do envio, com uma chave guardada nas suas Chaves do iCloud, então o servidor só guarda dados que não consegue ler.",
         "detail": "Os recursos essenciais funcionam offline e sem conta. Sem backup, os dados do ciclo ficam no iPhone."
       },
       "subscriptions": {
         "nav": "Assinaturas",
         "title": "Assinaturas",
-        "body": "O Mochi Plus é uma assinatura opcional. Os recursos essenciais gratuitos continuam disponíveis sem assinatura.",
-        "detail": "A Apple gerencia compras e assinaturas da App Store. A assinatura não muda a privacidade dos registros do ciclo."
+        "body": "O Mochi Plus é uma assinatura opcional, e os recursos essenciais gratuitos continuam funcionando sem ela. A Apple cuida do pagamento: nunca vemos os dados do seu cartão.",
+        "detail": "Usamos o RevenueCat para verificar se sua assinatura está ativa. O RevenueCat recebe seu histórico de compras da App Store (produtos, datas de compra e renovação) ligado a um ID anônimo ou, se você estiver conectada, ao ID da sua conta. Ele nunca recebe seus registros do ciclo."
+      },
+      "providers": {
+        "nav": "Quem nos ajuda",
+        "title": "Quem nos ajuda a manter o Mochi",
+        "body": "Só compartilhamos dados com os serviços que fazem o Mochi funcionar, cada um limitado ao que precisa: Supabase (conta e backup criptografado, UE), PostHog (análise de uso, UE), RevenueCat (status da assinatura) e Apple (compras na App Store, Iniciar sessão com a Apple e Chaves do iCloud).",
+        "detail": "Esses fornecedores tratam dados em nosso nome, de acordo com os termos de tratamento de dados deles. Não vendemos seus dados nem os compartilhamos com anunciantes ou corretores de dados."
+      },
+      "deletion": {
+        "nav": "Apagar seus dados",
+        "title": "Exclua sua conta e seus dados",
+        "body": "Você pode excluir sua conta a qualquer momento no app: Ajustes › Privacidade e dados › Excluir conta. Isso exclui na hora sua conta e todos os dados do backup dos nossos servidores e apaga os dados do Mochi do seu iPhone.",
+        "detail": "Não entrou na conta? Ajustes › Privacidade e dados › Apagar todos os dados apaga tudo o que o Mochi guarda no seu iPhone. Excluir a conta não cancela uma assinatura: gerencie isso nos ajustes da sua Conta Apple. Para remover também seus dados de uso e registros de compra no PostHog e no RevenueCat, envie um e-mail e faremos isso em até 30 dias."
       },
       "rights": {
         "nav": "Seus direitos",
         "title": "Você está no controle",
         "body": "Você escolhe o que registrar no Mochi. Os recursos essenciais funcionam sem conta e sem backup.",
-        "detail": "Fale conosco se tiver dúvidas sobre seus dados ou precisar de ajuda com uma solicitação de privacidade."
+        "detail": "Pelo RGPD e pela LGPD, você pode pedir acesso, correção, exportação ou exclusão das suas informações, ou se opor ao uso delas. Você pode exportar seus registros no app (Ajustes › Privacidade e dados › Exportar meus dados) e apagá-los você mesma. Para o resto, envie um e-mail. Você também pode reclamar à autoridade de proteção de dados (no Brasil, a ANPD)."
       },
       "children": {
         "nav": "Crianças",

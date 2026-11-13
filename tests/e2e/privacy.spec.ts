@@ -20,7 +20,7 @@ for (const locale of routing.locales) {
       await expect(page.locator("main")).toHaveCount(1);
       await expect(page.locator("h1")).toHaveCount(1);
       await expect(page.locator("body > footer")).toHaveCount(1);
-      await expect(page.locator("aside nav a")).toHaveCount(8);
+      await expect(page.locator("aside nav a")).toHaveCount(10);
       await expect(page.locator('section[aria-labelledby="privacy-summary"] a')).toHaveCount(4);
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBe(0);
       const textOverflow = await page.locator('h1, aside nav a span, section[aria-labelledby="privacy-summary"] h3').evaluateAll((elements) =>
@@ -59,7 +59,7 @@ test("privacy reader supports sections, summary links, direct URLs and browser h
   await page.goBack();
   await expect(page.locator('aside a[href="#collect"]')).toHaveAttribute("aria-current", "location");
 
-  for (const id of ["device", "backup", "subscriptions", "rights", "children", "contact"]) {
+  for (const id of ["device", "backup", "subscriptions", "providers", "deletion", "rights", "children", "contact"]) {
     await page.locator(`aside a[href="#${id}"]`).click();
     await expect(page.locator(`#${id}-title`)).toBeFocused();
     await expect(page.locator(`aside a[href="#${id}"]`)).toHaveAttribute("aria-current", "location");

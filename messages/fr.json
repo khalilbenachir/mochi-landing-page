@@ -353,8 +353,8 @@
       "collect": {
         "nav": "Données collectées",
         "title": "Ce que nous collectons",
-        "body": "Mochi conserve uniquement les informations que vous choisissez de saisir : dates des règles, flux, symptômes, humeurs, rapports, tests et suivi de grossesse. Elles servent aux prévisions du cycle, aux rappels et à votre expérience personnalisée, comme les séries et les saveurs à collectionner.",
-        "detail": "Votre nom, votre e-mail et vos autres informations personnelles ne sont pas nécessaires. Toutes les fonctions essentielles sont accessibles sans compte."
+        "body": "Mochi ne collecte que ce que vous choisissez d’ajouter : dates de règles, flux, symptômes, humeurs, rapports, tests et suivi de grossesse. Mochi s’en sert sur votre iPhone pour les prévisions, les rappels, les séries et les saveurs à collectionner.",
+        "detail": "Aucun compte n’est nécessaire. Si vous en créez un pour activer la sauvegarde, nous conservons votre adresse e-mail (avec Se connecter avec Apple, l’adresse qu’Apple nous transmet, qui peut être une adresse relais privée) et, si vous vous inscrivez par e-mail, un mot de passe. Nous collectons aussi des données d’utilisation de l’app et, si vous vous abonnez, votre historique d’achats, comme expliqué ci-dessous."
       },
       "device": {
         "nav": "Sur votre iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Statistiques",
         "title": "Jamais dans les statistiques",
-        "body": "Dates des règles, flux, symptômes, humeurs, rapports, tests et suivi de grossesse ne figurent jamais dans les statistiques, journaux ou rapports de panne.",
-        "detail": "Vos saisies privées sont utilisées par Mochi sur votre iPhone pour les fonctions de votre choix."
+        "body": "Nous utilisons PostHog, sur des serveurs situés dans l’UE, pour comprendre comment Mochi est utilisée : ouvertures de l’app, noms des écrans, étapes de l’accueil et décomptes simples, comme le nombre de champs remplis lors d’un check-in. PostHog reçoit aussi des informations techniques courantes : modèle de l’appareil, versions d’iOS et de l’app, et une localisation approximative déduite de votre adresse IP.",
+        "detail": "Vos dates de règles, flux, symptômes, humeurs, rapports, tests et suivi de grossesse ne figurent jamais dans les statistiques, les journaux ou les rapports de plantage. Les données d’utilisation sont liées à un identifiant aléatoire de l’app, et à l’identifiant de votre compte si vous êtes connectée. Elles ne servent jamais à la publicité ni à vous suivre sur d’autres apps et sites. Les rapports de plantage et de performances de MetricKit (Apple) sont agrégés par iOS et restent sur votre iPhone."
       },
       "backup": {
         "nav": "Sauvegarde et synchro",
         "title": "Sauvegarde et synchronisation",
-        "body": "La sauvegarde est facultative. Si vous l’activez, elle est chiffrée, stockée dans l’UE et liée uniquement à vous.",
+        "body": "La sauvegarde est facultative. Si vous l’activez, votre compte et votre sauvegarde sont stockés chez Supabase, sur des serveurs situés dans l’UE (Francfort). Vos données de cycle sont chiffrées sur votre iPhone avant l’envoi, avec une clé conservée dans votre trousseau iCloud : le serveur ne stocke que des données qu’il ne peut pas lire.",
         "detail": "Les fonctions essentielles restent utilisables hors ligne et sans compte. Sans sauvegarde, les données du cycle restent sur votre iPhone."
       },
       "subscriptions": {
         "nav": "Abonnements",
         "title": "Abonnements",
-        "body": "Mochi Plus est un abonnement facultatif. Les fonctions essentielles gratuites restent accessibles sans abonnement.",
-        "detail": "Apple gère les achats et les abonnements App Store. Un abonnement ne change pas la confidentialité des données de votre cycle."
+        "body": "Mochi Plus est un abonnement facultatif, et les fonctions essentielles gratuites restent disponibles sans lui. Le paiement est géré par Apple : nous ne voyons jamais vos données bancaires.",
+        "detail": "Nous utilisons RevenueCat pour vérifier si votre abonnement est actif. RevenueCat reçoit votre historique d’achats App Store (produits, dates d’achat et de renouvellement), lié à un identifiant anonyme, ou à l’identifiant de votre compte si vous êtes connectée. Il ne reçoit jamais vos données de cycle."
+      },
+      "providers": {
+        "nav": "Nos prestataires",
+        "title": "Les services qui font tourner Mochi",
+        "body": "Nous ne partageons des données qu’avec les services qui font fonctionner Mochi, chacun limité à ce dont il a besoin : Supabase (compte et sauvegarde chiffrée, UE), PostHog (statistiques d’utilisation, UE), RevenueCat (statut de l’abonnement) et Apple (achats App Store, Se connecter avec Apple et trousseau iCloud).",
+        "detail": "Ces prestataires traitent les données pour notre compte, selon leurs conditions de traitement des données. Nous ne vendons pas vos données et ne les partageons ni avec des annonceurs ni avec des courtiers en données."
+      },
+      "deletion": {
+        "nav": "Supprimer vos données",
+        "title": "Supprimer votre compte et vos données",
+        "body": "Vous pouvez supprimer votre compte à tout moment dans l’app : Réglages › Confidentialité et données › Supprimer le compte. Votre compte et toutes vos données sauvegardées sont alors supprimés immédiatement de nos serveurs, et les données de Mochi sont effacées de votre iPhone.",
+        "detail": "Pas connectée ? Réglages › Confidentialité et données › Supprimer toutes les données efface tout ce que Mochi conserve sur votre iPhone. Supprimer votre compte n’annule pas un abonnement : gérez-le dans les réglages de votre identifiant Apple. Pour faire aussi supprimer vos données d’utilisation et vos achats chez PostHog et RevenueCat, écrivez-nous : nous le ferons sous 30 jours."
       },
       "rights": {
         "nav": "Vos droits",
         "title": "Vous gardez le contrôle",
         "body": "Vous choisissez les informations à saisir dans Mochi. Les fonctions essentielles marchent sans compte ni sauvegarde.",
-        "detail": "Contactez-nous si vous avez une question sur vos données ou souhaitez faire une demande liée à la confidentialité."
+        "detail": "Selon le RGPD, vous pouvez demander l’accès, la rectification, l’export ou la suppression de vos informations, ou vous opposer à leur utilisation. Vous pouvez exporter vos données dans l’app (Réglages › Confidentialité et données › Exporter mes données) et les supprimer vous-même. Pour le reste, écrivez-nous. Vous pouvez aussi saisir votre autorité de protection des données (en France, la CNIL)."
       },
       "children": {
         "nav": "Enfants",

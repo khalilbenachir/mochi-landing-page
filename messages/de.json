@@ -353,8 +353,8 @@
       "collect": {
         "nav": "Erfasste Daten",
         "title": "Welche Daten wir erfassen",
-        "body": "Mochi speichert nur, was du selbst einträgst: Periodendaten, Blutung, Symptome, Stimmung, Sex, Tests und Schwangerschaftseinträge. Diese Daten ermöglichen Zyklusprognosen, Erinnerungen und persönliche Funktionen wie Serien und Sammelsorten.",
-        "detail": "Name, E-Mail-Adresse oder andere persönliche Angaben sind nicht erforderlich. Alle Kernfunktionen sind ohne Konto nutzbar."
+        "body": "Mochi erfasst nur, was du selbst einträgst: Periodentage, Blutung, Symptome, Stimmungen, Sex, Tests und Schwangerschaftseinträge. Mochi nutzt sie auf deinem iPhone für Prognosen, Erinnerungen, Serien und sammelbare Sorten.",
+        "detail": "Du brauchst kein Konto. Wenn du eins erstellst, um das Backup zu nutzen, speichern wir deine E-Mail-Adresse (bei „Mit Apple anmelden“ die Adresse, die Apple uns weitergibt – das kann eine private Weiterleitungsadresse sein) und, wenn du dich per E-Mail registrierst, ein Passwort. Außerdem erfassen wir Nutzungsdaten der App und, wenn du ein Abo abschließt, deinen Kaufverlauf, wie unten beschrieben."
       },
       "device": {
         "nav": "Auf deinem iPhone",
@@ -365,26 +365,38 @@
       "analytics": {
         "nav": "Analysen",
         "title": "Niemals in Analysen",
-        "body": "Periodendaten, Blutung, Symptome, Stimmung, Sex, Tests und Schwangerschaftseinträge werden niemals in Analysen, Protokollen oder Absturzberichten gespeichert.",
-        "detail": "Mochi verwendet deine privaten Einträge auf deinem iPhone für die Funktionen, die du nutzen möchtest."
+        "body": "Wir nutzen PostHog auf Servern in der EU, um zu verstehen, wie Mochi genutzt wird: App-Starts, Bildschirmnamen, Schritte der Einrichtung und einfache Zahlen, etwa wie viele Felder ein Check-in ausgefüllt hat. PostHog erhält außerdem übliche technische Angaben: Gerätemodell, iOS- und App-Version sowie einen ungefähren Standort, der aus deiner IP-Adresse abgeleitet wird.",
+        "detail": "Deine Periodentage, Blutung, Symptome, Stimmungen, Sex, Tests und Schwangerschaftseinträge landen nie in Analysen, Logs oder Absturzberichten. Nutzungsdaten sind mit einer zufälligen App-Kennung verknüpft und, wenn du angemeldet bist, mit deiner Konto-ID. Sie werden nie für Werbung genutzt oder um dich über andere Apps und Websites hinweg zu verfolgen. Absturz- und Leistungsberichte von Apples MetricKit werden von iOS zusammengefasst und bleiben auf deinem iPhone."
       },
       "backup": {
         "nav": "Backup und Sync",
         "title": "Backup und Synchronisierung",
-        "body": "Ein Backup ist freiwillig. Wenn du es aktivierst, wird es verschlüsselt, in der EU gespeichert und nur mit dir verknüpft.",
+        "body": "Das Backup ist freiwillig. Wenn du es einschaltest, werden dein Konto und dein Backup bei Supabase auf Servern in der EU (Frankfurt) gespeichert. Deine Zykluseinträge werden vor dem Hochladen auf deinem iPhone verschlüsselt, mit einem Schlüssel in deinem iCloud-Schlüsselbund. Der Server speichert also nur Daten, die er nicht lesen kann.",
         "detail": "Die Kernfunktionen funktionieren offline und ohne Konto. Ohne Backup bleiben deine Zyklusdaten auf deinem iPhone."
       },
       "subscriptions": {
         "nav": "Abonnements",
         "title": "Abonnements",
-        "body": "Mochi Plus ist ein optionales Abonnement. Die kostenlosen Kernfunktionen bleiben ohne Abonnement verfügbar.",
-        "detail": "Apple verwaltet Käufe und Abonnements im App Store. Ein Abonnement ändert den Schutz deiner Zyklusdaten nicht."
+        "body": "Mochi Plus ist ein freiwilliges Abo, die kostenlosen Kernfunktionen funktionieren auch ohne. Die Zahlung übernimmt Apple: Deine Kartendaten sehen wir nie.",
+        "detail": "Wir nutzen RevenueCat, um zu prüfen, ob dein Abo aktiv ist. RevenueCat erhält deinen App-Store-Kaufverlauf (Produkte, Kauf- und Verlängerungsdaten), verknüpft mit einer anonymen ID oder, wenn du angemeldet bist, mit deiner Konto-ID. Deine Zykluseinträge erhält RevenueCat nie."
+      },
+      "providers": {
+        "nav": "Dienstleister",
+        "title": "Wer uns beim Betrieb hilft",
+        "body": "Wir teilen Daten nur mit den Diensten, die Mochi betreiben, jeweils beschränkt auf das Nötige: Supabase (Konto und verschlüsseltes Backup, EU), PostHog (Nutzungsanalyse, EU), RevenueCat (Abo-Status) und Apple (App-Store-Käufe, „Mit Apple anmelden“ und iCloud-Schlüsselbund).",
+        "detail": "Diese Dienstleister verarbeiten Daten in unserem Auftrag nach ihren Bedingungen zur Auftragsverarbeitung. Wir verkaufen deine Daten nicht und geben sie nicht an Werbetreibende oder Datenhändler weiter."
+      },
+      "deletion": {
+        "nav": "Daten löschen",
+        "title": "Konto und Daten löschen",
+        "body": "Du kannst dein Konto jederzeit in der App löschen: Einstellungen › Datenschutz & Daten › Konto löschen. Dabei werden dein Konto und alle gesicherten Daten sofort von unseren Servern gelöscht und Mochis Daten auf deinem iPhone entfernt.",
+        "detail": "Nicht angemeldet? Einstellungen › Datenschutz & Daten › Alle Daten löschen entfernt alles, was Mochi auf deinem iPhone speichert. Das Löschen des Kontos kündigt kein Abo: Das verwaltest du in den Einstellungen deines Apple Accounts. Wenn auch deine Nutzungsdaten und Kaufeinträge bei PostHog und RevenueCat gelöscht werden sollen, schreib uns; wir erledigen das innerhalb von 30 Tagen."
       },
       "rights": {
         "nav": "Deine Rechte",
         "title": "Du behältst die Kontrolle",
         "body": "Du entscheidest, welche Informationen du in Mochi einträgst. Alle Kernfunktionen sind ohne Konto und Backup nutzbar.",
-        "detail": "Kontaktiere uns, wenn du Fragen zu deinen Daten hast oder Unterstützung bei einer Datenschutzanfrage brauchst."
+        "detail": "Nach der DSGVO kannst du Auskunft, Berichtigung, Export oder Löschung deiner Daten verlangen oder ihrer Nutzung widersprechen. Deine Einträge kannst du in der App exportieren (Einstellungen › Datenschutz & Daten › Meine Daten exportieren) und selbst löschen. Für alles andere schreib uns. Du kannst dich auch bei deiner Datenschutzaufsichtsbehörde beschweren."
       },
       "children": {
         "nav": "Kinder",

@@ -174,7 +174,7 @@ how to add an article or a language, the editorial workflow and artwork provenan
 ## Privacy page
 
 `/privacy` (and each locale's `/privacy` route) has an illustrated hero, mint summary cards, a
-section reader and a contact banner. All eight sections are always rendered and visible, so the full
+section reader and a contact banner. All ten sections are always rendered and visible, so the full
 policy reads without JavaScript and stays searchable. A small client island highlights the section
 named by the URL hash in the sticky "On this page" list and moves focus to its heading; direct URLs
 and browser history work. Changing language keeps the privacy route.
@@ -207,7 +207,7 @@ Copy `.env.example` to `.env` or `.env.local` (both git-ignored). Every value is
 public bundle.
 
 - `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` are required for production builds; the
-  build fails without them. Outside production the contact address falls back to `test@mochi.app`.
+  build fails without them. Outside production the contact address falls back to `support@mochiii.app`, the address the app uses.
 - Until `NEXT_PUBLIC_APP_STORE_URL` is set, App Store buttons open the localized home download section.
 - `npm run build:test` pins all three (`test@mochi.app`, no App Store URL), so tests and
   visual baselines do not depend on your local `.env`.
