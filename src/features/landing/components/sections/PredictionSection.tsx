@@ -104,12 +104,12 @@ function CycleCard() {
           <span className="rounded-full bg-cycle-tile px-6 py-3 text-u-[6.6] font-black">{t("luteal")}</span>
         </div>
         <p className={cn(MUTED, "mt-1 text-u-[7.6] font-bold")}>{t("cycleDayValue")}</p>
-        <div className="mt-7 flex h-19 items-center gap-[calc(1*var(--spacing))]">
+        <div className="mt-7 flex h-19 items-center gap-1">
           {CYCLE_DAYS.map((day) => (
             <i
               key={day}
               className={cn(
-                "flex-1 rounded-[calc(1.6*var(--spacing))]",
+                "flex-1 rounded-u-[1.6]",
                 CYCLE_PHASE_CLASS[phaseOf(day)],
                 day === CYCLE_TODAY ? "h-19 border-[length:calc(1*var(--spacing))] border-ink-navy" : "h-12",
               )}

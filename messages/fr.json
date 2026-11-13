@@ -35,7 +35,26 @@
     "title3": "sur iPhone",
     "body": "Avec Mochi, suivez vos règles, notez vos symptômes et retrouvez les estimations de votre cycle dans un calendrier privé. Sans compte, avec un petit compagnon à chaque phase.",
     "mascotAlt": "Mochi, une mascotte rose et souriante, posée sur un coussin crème",
-    "phoneAlt": "Écran d’accueil de Mochi sur iPhone affichant le deuxième jour des règles et les raccourcis Règles, Humeur et Symptômes"
+    "phoneAlt": "L’écran Aujourd’hui de Mochi sur iPhone : 12 jours avant vos règles, jour 17 du cycle, les jours de la semaine et Mochi qui demande comment vous allez",
+    "today": {
+      "streak": "4 jours",
+      "weekday": "Mercredi",
+      "daysValue": "12 jours",
+      "daysSubtitle": "avant vos règles · Jour 17 du cycle",
+      "logPeriod": "Noter mes règles",
+      "bubble": "Comment ça va aujourd’hui ? Touche-moi et dis-le-moi.",
+      "tapHint": "Touchez Mochi pour noter votre humeur",
+      "logMore": "Ajouter",
+      "week": {
+        "sun": "D",
+        "mon": "L",
+        "tue": "M",
+        "wed": "M",
+        "thu": "J",
+        "fri": "V",
+        "sat": "S"
+      }
+    }
   },
   "Island": {
     "title1": "Un rappel pour",

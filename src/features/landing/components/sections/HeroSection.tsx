@@ -5,6 +5,7 @@ import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadg
 import { Petal, Rays, Sparkle } from "@/features/landing/components/shared/decor";
 import { FreeSticker } from "@/features/landing/components/shared/FreeSticker";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
+import { HeroPhone } from "./HeroPhone";
 
 /** Mascot art for the hero. Swap this one path to change the illustration. */
 const HERO_MASCOT = { src: LANDING_ASSETS.heroMochi, width: 1400, height: 1120 } as const;
@@ -47,15 +48,7 @@ export function HeroSection() {
             />
             <Sparkle className="absolute z-4 text-white left-232 top-23 w-30 max-poster:left-[calc(50%+min(4vw,30px))] max-poster:top-[4%] max-poster:w-[30px]" />
             <Sparkle className="absolute z-4 text-white left-261 top-52 w-22 max-poster:left-[calc(50%+min(8vw,64px))] max-poster:top-[13%] max-poster:w-[20px]" />
-            <Image
-              className="relative z-3 ml-280 -mb-[calc(var(--section-space)+44*var(--spacing))] block w-246 h-auto max-w-none max-poster:absolute max-poster:ml-0 max-poster:mb-0 [filter:drop-shadow(0_calc(10*var(--spacing))_calc(14*var(--spacing))_var(--color-hero-phone-shadow))] max-poster:left-1/2 max-poster:top-[8%] max-poster:w-[min(38vw,300px)] max-poster:translate-x-[28%] max-phone:w-[41vw] max-phone:translate-x-[16%]"
-              src={LANDING_ASSETS.heroPhone}
-              alt={t("phoneAlt")}
-              width={1024}
-              height={1536}
-              priority
-              sizes="(max-width: 1099px) 42vw, 23vw"
-            />
+            <HeroPhone className="relative z-3 ml-286 mt-10 -mb-[calc(var(--section-space)+44*var(--spacing))] rotate-[7deg] [box-shadow:0_calc(10*var(--spacing))_calc(24*var(--spacing))_var(--color-hero-phone-shadow)] max-poster:absolute max-poster:ml-0 max-poster:mt-0 max-poster:mb-0 max-poster:[--spacing:calc(min(38vw,300px)/246)] max-poster:left-1/2 max-poster:top-[8%] max-poster:translate-x-[28%] max-phone:[--spacing:calc(41vw/246)] max-phone:translate-x-[16%]" />
             <Petal className="absolute z-4 text-hero-petal left-552 top-142 w-22 rotate-40 max-poster:left-auto max-poster:right-[2%] max-poster:top-[42%] max-poster:w-[22px] max-phone:hidden" />
             <Petal className="absolute z-4 text-hero-petal left-516 top-164 w-30 -rotate-20 max-poster:left-auto max-poster:right-[6%] max-poster:top-[56%] max-poster:w-[28px] max-phone:hidden" />
             <Petal className="absolute z-4 text-hero-petal left-514 top-218 w-28 rotate-25 max-poster:left-auto max-poster:right-[1%] max-poster:top-[74%] max-poster:w-[26px] max-phone:right-[2%] max-phone:top-[80%]" />

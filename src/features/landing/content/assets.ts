@@ -11,7 +11,7 @@ export const LANDING_ASSETS = {
     headerHappy: "/mochi/faces/happy-header.webp",
   },
   heroMochi: "/mochi/hero-mochi.webp",
-  heroPhone: "/mochi/hero-phone.webp",
+  todayMochi: "/mochi/today-mochi.webp",
   islandMochi: "/mochi/island-mochi.webp",
   manifestIcon192: "/mochi/app-icon-192.png",
   manifestIcon512: "/mochi/app-icon-512.png",

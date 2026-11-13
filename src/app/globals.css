@@ -111,11 +111,6 @@
   --color-landing-canvas: #f7f4ef;
   --color-landing-account-band: #eee8fa;
   --color-landing-account-text: #16284c;
-  --color-landing-account-card-shadow: rgba(79, 54, 103, 0.14);
-  --color-landing-account-icon: #574cc2;
-  --color-landing-account-caption: #767d8c;
-  --color-landing-account-badge-bg: #c8f3e8;
-  --color-landing-account-badge-text: #1e6e4e;
 
   /* Hero */
   --color-hero-band: #f44c80;
@@ -125,6 +120,13 @@
   --color-hero-title-shadow: rgba(110, 16, 48, 0.22);
   --color-hero-sticker-shadow: rgba(110, 16, 48, 0.18);
   --color-hero-phone-shadow: rgba(90, 10, 40, 0.28);
+  /* Hero phone: the app's Today screen (MochiColor values). */
+  --color-hero-phone-frame: #0d0e12;
+  --color-hero-phone-rim: #c9ccd6;
+  --color-app-grey: #6b7585;
+  --color-app-orange-tint: #fef0d6;
+  --color-app-orange-deep: #5c3a00;
+  --color-app-bubble: #f5f7fa;
   --color-hero-vignette: rgba(214, 40, 96, 0.25);
   --color-hero-menu-icon: #ef356c;
   --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);
@@ -151,16 +153,6 @@
   /* Mood */
   --color-mood-band: #2fb6e3;
   --color-mood-pill-shadow: rgba(10, 80, 120, 0.15);
-  --color-mood-phone-border: #ddd7f0;
-  --color-mood-phone-bg: #0b0b0f;
-  --color-mood-phone-shadow: #b6b0cf;
-  --color-mood-phone-shadow-2: rgba(8, 60, 100, 0.3);
-  --color-mood-screen-bg: #fdfbfe;
-  --color-mood-face-shadow: rgba(70, 40, 110, 0.18);
-  --color-mood-symptom-cramps: #ec3f78;
-  --color-mood-symptom-bloating: #7a55d6;
-  --color-mood-symptom-headache: #8a5be0;
-  --color-mood-symptom-tired: #5b4fc9;
   --color-mood-chip-cramps: #fde0ea;
   --color-mood-chip-violet: #ece2fb;
   --color-mood-face-joy: #f2497a;
@@ -193,7 +185,6 @@
   --color-privacy-band: #213459;
   --color-privacy-gold: #f2c62f;
   --color-privacy-body-text: #e3e9f6;
-  --color-privacy-hug-shadow: rgba(150, 20, 60, 0.35);
   --color-privacy-promise-divider: rgba(255, 255, 255, 0.28);
   --color-privacy-promise-detail-text: #eef2fb;
   --color-privacy-hug-highlight: #ff8db3;
@@ -233,11 +224,8 @@
 
   /* FAQ */
   --color-faq-band: #fef2e6;
-  --color-faq-question-text: #a06be6;
-  --color-faq-heart-shadow: rgba(200, 60, 110, 0.3);
   --color-faq-item-shadow: rgba(80, 50, 40, 0.18);
   --color-faq-answer-text: #3a4462;
-  --color-faq-heart: #f585ad;
 
   /* Closing */
   --color-closing-band: #f74c80;

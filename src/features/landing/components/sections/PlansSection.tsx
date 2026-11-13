@@ -31,7 +31,7 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-3 left-726 top-[calc(var(--section-space)-90*var(--spacing))] w-128 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[18px] max-poster:-mb-[calc(16*var(--spacing))] max-poster:w-96 max-poster:translate-x-[calc(84*var(--spacing))]" aria-hidden="true">
+        <div className="absolute z-3 left-726 top-[calc(var(--section-space)-90*var(--spacing))] w-128 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[18px] max-poster:-mb-16 max-poster:w-96 max-poster:translate-x-84" aria-hidden="true">
           <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={480} height={442} sizes="(max-width: 1099px) 30vw, 10vw" />
         </div>
         <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>

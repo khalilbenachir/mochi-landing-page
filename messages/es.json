@@ -35,7 +35,26 @@
     "title3": "para iPhone",
     "body": "Con Mochi, registra tu menstruación, síntomas y estado de ánimo en un calendario privado. Conoce tu ciclo con un pequeño compañero, sin crear una cuenta y también sin conexión.",
     "mascotAlt": "Mochi, una mascota rosa sonriente, descansando sobre un cojín color crema",
-    "phoneAlt": "Pantalla de inicio de Mochi en iPhone mostrando el día 2 de la regla con los accesos Regla, Ánimo y Síntomas"
+    "phoneAlt": "La pantalla Hoy de Mochi en iPhone: 12 días para tu regla, día 17 del ciclo, los días de la semana y Mochi preguntando cómo te sientes",
+    "today": {
+      "streak": "4 días",
+      "weekday": "Miércoles",
+      "daysValue": "12 días",
+      "daysSubtitle": "para tu regla · Día 17 del ciclo",
+      "logPeriod": "Anotar regla",
+      "bubble": "¿Cómo estás hoy? Tócame y cuéntamelo.",
+      "tapHint": "Toca a Mochi para anotar cómo te sientes",
+      "logMore": "Anotar más",
+      "week": {
+        "sun": "D",
+        "mon": "L",
+        "tue": "M",
+        "wed": "X",
+        "thu": "J",
+        "fri": "V",
+        "sat": "S"
+      }
+    }
   },
   "Island": {
     "title1": "Tu recordatorio",

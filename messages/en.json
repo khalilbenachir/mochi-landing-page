@@ -35,7 +35,26 @@
     "title3": "for iPhone",
     "body": "Mochi is a free period tracker for iPhone that predicts your next period, reminds you when to change your pad and turns daily check-ins into a game. No account needed.",
     "mascotAlt": "Mochi, a smiling pink mochi mascot, resting on a cream cushion",
-    "phoneAlt": "Mochi home screen on iPhone showing Day 2 of a period with Period, Mood and Symptoms shortcuts"
+    "phoneAlt": "Mochi’s Today screen on iPhone: 12 days until your period, cycle day 17, this week’s days and Mochi asking how you feel",
+    "today": {
+      "streak": "4 day",
+      "weekday": "Wednesday",
+      "daysValue": "12 days",
+      "daysSubtitle": "until your period · Cycle day 17",
+      "logPeriod": "Log period",
+      "bubble": "How are you today? Tap me and tell me.",
+      "tapHint": "Tap Mochi to log how you feel",
+      "logMore": "Log more",
+      "week": {
+        "sun": "S",
+        "mon": "M",
+        "tue": "T",
+        "wed": "W",
+        "thu": "T",
+        "fri": "F",
+        "sat": "S"
+      }
+    }
   },
   "Island": {
     "title1": "A pad change",
