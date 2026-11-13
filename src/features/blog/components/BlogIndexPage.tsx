@@ -44,7 +44,7 @@ export function BlogIndexPage() {
             <p className="mt-[14px] max-w-[570px] text-[24px] font-bold leading-[1.25] max-nav:text-[20px]">{t("description")}</p>
           </div>
           <Image
-            src="/blog-art/journal-mochi.webp"
+            src="/blog-art/journal-writer.webp"
             {...JOURNAL_ART_SIZE}
             alt={t("heroAlt")}
             priority

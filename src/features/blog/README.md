@@ -98,7 +98,7 @@ art, not medical results or verified app screenshots.
 | File under `public/blog-art` | Dimensions | Purpose |
 | --- | --- | --- |
 | `newsletter-mochi.webp` | 1200×800 | Sleeping Mochi on a cream cushion |
-| `journal-mochi.webp` | 1200×875 | Purple-beret writer with an open journal |
+| `journal-writer.webp` | 1200×860 | The app's Mochi in a lavender beret, writing in an open journal (ChatGPT, from the app's Mochi references) |
 | `pad-care.webp` | 1200×800 | Pad, pink Mochi and purple clock |
 | `cycle-phases.webp` | 1200×800 | Green Mochi and symbolic cycle wheel |
 | `period-predictions.webp` | 1200×800 | Yellow Mochi and calendar |

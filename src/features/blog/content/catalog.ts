@@ -174,7 +174,7 @@ export const BLOG_PAGE_SEGMENTS: readonly (readonly string[])[] = [[], [EDITORIA
 export const BLOG_PATHS = BLOG_PAGE_SEGMENTS.map((segments) => blogPath(FALLBACK_BLOG_LOCALE, ...segments));
 
 export const BLOG_ART_SIZE = { width: 1200, height: 800 } as const;
-export const JOURNAL_ART_SIZE = { width: 1200, height: 875 } as const;
+export const JOURNAL_ART_SIZE = { width: 1200, height: 860 } as const;
 
 export function findBlogPost(slug: string) {
   return BLOG_POSTS.find((post) => post.slug === slug);
