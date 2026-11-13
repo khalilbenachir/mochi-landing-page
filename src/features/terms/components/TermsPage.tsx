@@ -43,18 +43,20 @@ export function TermsPage() {
 
       <section aria-labelledby="terms-summary" className="bg-terms-summary">
         <PosterStage spacing="none" className="px-32 pt-15 pb-23 max-nav:px-[20px] max-nav:py-[26px]">
-          <LegalSummaryHeading id="terms-summary" title={t("short")} decoration="single" />
-          <div className="mx-auto grid max-w-840 grid-cols-4 gap-14 max-nav:max-w-none max-nav:grid-cols-2 max-nav:gap-[14px]">
-            {TERMS_SUMMARY_CARDS.map(({ key, section }) => (
-              <LegalSummaryCard
-                key={key}
-                href={section ? `#${section}` : privacyHref}
-                prominence="featured"
-                icon={<TermsSummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
-                title={t(`cards.${key}.title`)}
-                description={t(`cards.${key}.body`)}
-              />
-            ))}
+          <div className="mx-auto max-w-840 max-poster:max-w-[680px]">
+            <LegalSummaryHeading id="terms-summary" title={t("short")} decoration="single" />
+            <div className="grid grid-cols-4 gap-14 max-poster:grid-cols-2 max-poster:gap-[16px] max-phone:gap-[12px]">
+              {TERMS_SUMMARY_CARDS.map(({ key, section }) => (
+                <LegalSummaryCard
+                  key={key}
+                  href={section ? `#${section}` : privacyHref}
+                  prominence="featured"
+                  icon={<TermsSummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
+                  title={t(`cards.${key}.title`)}
+                  description={t(`cards.${key}.body`)}
+                />
+              ))}
+            </div>
           </div>
         </PosterStage>
       </section>
