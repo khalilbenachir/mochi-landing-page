@@ -134,6 +134,9 @@
   --color-hero-vignette: rgba(214, 40, 96, 0.25);
   --color-lost-night: #1e2350;
   --color-lost-glow: rgba(255, 141, 179, 0.38);
+  --color-lost-violet: #9b87f5;
+  --color-lost-pink: #e8457f;
+  --color-lost-scanline: rgba(255, 255, 255, 0.04);
   --color-lost-shadow: rgba(6, 8, 36, 0.45);
   --color-hero-menu-icon: #ef356c;
   --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);

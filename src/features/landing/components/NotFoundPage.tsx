@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/features/landing/components/shared/Button";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
-import { Petal } from "@/features/landing/components/shared/decor";
+import { Heart } from "lucide-react";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
@@ -25,17 +25,22 @@ export function NotFoundPage() {
   return (
     <main className="flex flex-1 flex-col bg-lost-night text-white">
       <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
-      <section className="relative flex-1 overflow-hidden bg-[linear-gradient(180deg,var(--color-lost-night),var(--color-island-band))] text-white">
-        {/* A soft pink spotlight where Mochi is searching, and a crescent moon in the night sky. */}
-        <span aria-hidden="true" className="pointer-events-none absolute top-[6%] left-1/2 size-[min(90vw,760px)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--color-lost-glow),transparent_62%)]" />
-        <span aria-hidden="true" className="pointer-events-none absolute top-[12%] right-[9%] size-[clamp(46px,6vw,84px)] -rotate-20 rounded-full [box-shadow:inset_clamp(10px,1.4vw,18px)_clamp(-6px,-0.6vw,-4px)_0_0_var(--color-sun)] [filter:drop-shadow(0_0_18px_rgb(255_217_61/0.5))] max-phone:top-[3%]" />
+      <section className="relative flex-1 overflow-hidden bg-[linear-gradient(160deg,var(--color-hero-petal),var(--color-lost-violet))] text-white">
         <PosterStage
           spacing="none"
           className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
         >
-          <div className="relative flex flex-1 flex-col items-center justify-center px-40 pt-16 text-center max-poster:px-0 max-poster:pt-[18px] max-phone:pt-[10px]">
-            <Petal className="absolute left-94 top-174 w-28 text-hero-petal -rotate-35 max-poster:left-[4%] max-poster:top-[32%] max-poster:w-[26px]" />
-            <Petal className="absolute right-88 top-130 w-24 text-hero-petal rotate-38 max-poster:right-[4%] max-poster:top-[25%] max-poster:w-[22px]" />
+          {/* A little game console: the page is a "level not found" screen with scanlines and Mochi's lives. */}
+          <div className="relative mt-24 flex flex-1 flex-col items-center justify-center overflow-hidden rounded-[clamp(28px,3vw,44px)] border-[clamp(10px,1.1vw,16px)] border-white bg-lost-night px-40 pt-56 pb-36 text-center [box-shadow:0_14px_0_var(--color-lost-shadow)] before:pointer-events-none before:absolute before:inset-0 before:bg-[repeating-linear-gradient(0deg,var(--color-lost-scanline)_0_2px,transparent_2px_5px)] max-poster:mt-[20px] max-poster:px-[18px] max-poster:pt-[64px] max-poster:pb-[34px] max-phone:pt-[58px]">
+            <span aria-hidden="true" className="pointer-events-none absolute top-[2%] left-1/2 size-[min(90vw,720px)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--color-lost-glow),transparent_62%)]" />
+            <div aria-hidden="true" className="absolute inset-x-28 top-20 flex items-center justify-between font-max uppercase max-poster:inset-x-[18px] max-poster:top-[20px]">
+              <span className="rounded-full bg-white/10 px-12 py-4 text-u-11 tracking-[0.18em] text-sun max-poster:px-[12px] max-poster:py-[5px] max-poster:text-[11px]">{t("code")}</span>
+              <span className="flex gap-4 max-poster:gap-[5px]">
+                <Heart className="size-18 fill-mochi-pink-ink text-mochi-pink-ink max-poster:size-[18px]" />
+                <Heart className="size-18 fill-mochi-pink-ink text-mochi-pink-ink max-poster:size-[18px]" />
+                <Heart className="size-18 text-white/40 max-poster:size-[18px]" strokeWidth={2.4} />
+              </span>
+            </div>
 
             <div
               data-testid="not-found-art"
@@ -44,7 +49,7 @@ export function NotFoundPage() {
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
+                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-sun [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-pink)] max-poster:text-[clamp(130px,28vw,225px)] max-poster:[text-shadow:0_6px_0_var(--color-lost-pink)] max-phone:text-[110px]"
               >
                 4
               </span>
@@ -71,7 +76,7 @@ export function NotFoundPage() {
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:text-[clamp(130px,28vw,225px)] max-phone:text-[110px]"
+                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-sun [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-pink)] max-poster:text-[clamp(130px,28vw,225px)] max-poster:[text-shadow:0_6px_0_var(--color-lost-pink)] max-phone:text-[110px]"
               >
                 4
               </span>
@@ -98,7 +103,7 @@ export function NotFoundPage() {
               <Button
                 asChild
                 variant="pill"
-                className="h-42 px-26 text-u-15 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-lost-night max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
+                className="h-42 bg-sun px-26 text-u-15 font-ultra text-ink-navy [box-shadow:0_5px_0_var(--color-lost-pink)] hover:-translate-y-[2px] hover:bg-sun focus-visible:ring-white focus-visible:ring-offset-lost-night max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
               >
                 <Link data-testid="not-found-home" href={homeHref}>{t("home")}</Link>
               </Button>
