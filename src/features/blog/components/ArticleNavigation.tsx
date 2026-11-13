@@ -24,7 +24,7 @@ type Props = {
 };
 
 const shareButton =
-  "grid aspect-square w-full max-w-[52px] min-w-0 place-items-center rounded-[14px] [box-shadow:0_2px_0_var(--color-blog-shadow)] transition-[background-color,transform,box-shadow] hover:-translate-y-[2px] hover:[box-shadow:0_6px_12px_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink";
+  "grid size-[42px] flex-none place-items-center rounded-full transition-[background-color,transform,box-shadow] hover:-translate-y-[3px] hover:rotate-[-6deg] hover:[box-shadow:0_6px_12px_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink max-poster:size-[38px]";
 
 /** The article's side menu: the shared SideMenu (contents and progress) plus the share panel. */
 export function ArticleNavigation({ items, url, title, labels }: Props) {
@@ -69,30 +69,38 @@ function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
   ] as const;
 
   return (
-    <div className="mt-[16px] rounded-[18px] bg-blog-lavender/45 px-[14px] pb-[12px] pt-[12px]">
-      <p className="flex items-center gap-[7px] text-[15px] font-max leading-none">
+    <div className="mt-[16px] rounded-[20px] bg-blog-lavender/45 px-[12px] pt-[13px] pb-[12px]">
+      <p className="flex items-center gap-[7px] px-[4px] text-[15px] font-max leading-none">
         <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
         {labels.share}
       </p>
-      <div className="mt-[12px] grid grid-cols-4 gap-[8px] max-nav:flex max-nav:gap-[10px] max-nav:*:w-[48px]">
-        <button
-          type="button"
-          onClick={copyLink}
-          aria-label={labels.copy}
-          title={labels.copy}
-          className={cn(shareButton, "cursor-pointer", copyStatus === "copied" ? "bg-blog-mint text-share-whatsapp" : "bg-white text-blog-purple")}
+      <div className="relative mt-[12px]">
+        <p
+          role="status"
+          className={cn(
+            "pointer-events-none absolute bottom-[calc(100%+8px)] left-[6px] rounded-full px-[10px] py-[5px] text-[12px] font-heavy leading-none text-white transition-[opacity,transform] after:absolute after:top-full after:left-[14px] after:border-x-[5px] after:border-t-[6px] after:border-x-transparent empty:translate-y-[4px] empty:opacity-0",
+            copyStatus === "error" ? "bg-mochi-pink-ink after:border-t-mochi-pink-ink" : "bg-share-whatsapp after:border-t-share-whatsapp",
+          )}
         >
-          {copyStatus === "copied" ? <Check className="size-[20px]" strokeWidth={3} aria-hidden="true" /> : <LinkIcon className="size-[19px]" aria-hidden="true" />}
-        </button>
-        {shareLinks.map(({ platform, label, href, tone }) => (
-          <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>
-            <SocialIcon platform={platform} className="size-[19px]" />
-          </a>
-        ))}
+          {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
+        </p>
+        <div className="flex items-center justify-between gap-[6px] rounded-full bg-white p-[5px] [box-shadow:0_3px_0_var(--color-blog-shadow)] max-nav:justify-start max-nav:gap-[10px]">
+          <button
+            type="button"
+            onClick={copyLink}
+            aria-label={labels.copy}
+            title={labels.copy}
+            className={cn(shareButton, "cursor-pointer", copyStatus === "copied" ? "bg-blog-mint text-share-whatsapp" : "bg-blog-lavender text-blog-purple")}
+          >
+            {copyStatus === "copied" ? <Check className="size-[19px]" strokeWidth={3} aria-hidden="true" /> : <LinkIcon className="size-[18px]" aria-hidden="true" />}
+          </button>
+          {shareLinks.map(({ platform, label, href, tone }) => (
+            <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>
+              <SocialIcon platform={platform} className="size-[18px]" />
+            </a>
+          ))}
+        </div>
       </div>
-      <p role="status" className={cn("mt-[8px] min-h-[16px] text-[12px] font-heavy leading-[1.35]", copyStatus === "error" ? "text-mochi-pink-ink" : "text-share-whatsapp")}>
-        {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
-      </p>
     </div>
   );
 }
