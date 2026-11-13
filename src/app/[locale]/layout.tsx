@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Nunito } from "next/font/google";
 import { notFound } from "next/navigation";
 import { PLATFORM_COLORS } from "@/app/platform-colors";
+import { ClosingSection } from "@/features/landing/components/sections/ClosingSection";
 import { SiteFooter } from "@/features/landing/components/shared/SiteFooter";
 import { localePath, routing } from "@/i18n/routing";
 import "../globals.css";
@@ -39,6 +40,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     <html lang={locale} className={nunito.variable}>
       <body className="flex min-h-dvh flex-col">
         {children}
+        <ClosingSection />
         <SiteFooter homePath={localePath(locale)} />
         <Analytics />
       </body>

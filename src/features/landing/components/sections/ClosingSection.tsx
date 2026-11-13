@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 
-/** "Say hi to Mochi" closing band. The shared app footer is rendered by the locale layout. */
+/** "Say hi to Mochi" closing band, rendered by the locale layout above the footer on every page. */
 export function ClosingSection() {
   const t = useTranslations("Closing");
 
