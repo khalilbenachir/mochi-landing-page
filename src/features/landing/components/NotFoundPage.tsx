@@ -28,7 +28,7 @@ export function NotFoundPage() {
       <section className="relative flex-1 overflow-hidden bg-[linear-gradient(180deg,var(--color-lost-night),var(--color-island-band))] text-white">
         {/* A soft pink spotlight where Mochi is searching, and a crescent moon in the night sky. */}
         <span aria-hidden="true" className="pointer-events-none absolute top-[6%] left-1/2 size-[min(90vw,760px)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--color-lost-glow),transparent_62%)]" />
-        <span aria-hidden="true" className="pointer-events-none absolute top-[12%] right-[9%] size-[clamp(46px,6vw,84px)] rounded-full bg-sun [box-shadow:0_0_40px_rgb(255_217_61/0.45)] after:absolute after:-top-[14%] after:-right-[22%] after:size-full after:rounded-full after:bg-lost-night max-phone:top-[3%]" />
+        <span aria-hidden="true" className="pointer-events-none absolute top-[12%] right-[9%] size-[clamp(46px,6vw,84px)] -rotate-20 rounded-full [box-shadow:inset_clamp(10px,1.4vw,18px)_clamp(-6px,-0.6vw,-4px)_0_0_var(--color-sun)] [filter:drop-shadow(0_0_18px_rgb(255_217_61/0.5))] max-phone:top-[3%]" />
         <PosterStage
           spacing="none"
           className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
