@@ -66,7 +66,7 @@ function TermsContentText({ detail = false, className, ...props }: ComponentProp
 function TermsContentCallout({ children }: { children: ReactNode }) {
   return (
     <div className="mt-20 flex items-center gap-24 rounded-u-22 bg-terms-callout px-26 py-17 text-u-[14.6] font-heavy leading-[1.3] tracking-[-0.01em] max-poster:text-[17px] max-nav:gap-[18px] max-nav:px-[20px] max-nav:py-[20px] max-phone:text-[15px]">
-      <TermsSummaryIcon id="warning" className="size-62 flex-none max-nav:size-[46px]" />
+      <TermsSummaryIcon id="warning" className="size-50 flex-none max-nav:size-[40px]" />
       <p className="border-l border-ink-navy/40 pl-24 max-nav:pl-[18px]">{children}</p>
     </div>
   );

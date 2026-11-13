@@ -50,7 +50,7 @@ export function TermsPage() {
                 key={key}
                 href={section ? `#${section}` : privacyHref}
                 prominence="featured"
-                icon={<TermsSummaryIcon id={key} className="size-78 max-nav:size-[64px]" />}
+                icon={<TermsSummaryIcon id={key} className="size-62 max-nav:size-[52px]" />}
                 title={t(`cards.${key}.title`)}
                 description={t(`cards.${key}.body`)}
               />
