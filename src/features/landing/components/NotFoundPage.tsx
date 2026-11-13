@@ -3,80 +3,64 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/features/landing/components/shared/Button";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
-import { Heart } from "lucide-react";
+import { Petal, Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
-import { blogPath } from "@/features/blog/locales";
-import { localePath, type AppLocale } from "@/i18n/routing";
+import { localePath } from "@/i18n/routing";
 
 export function NotFoundPage() {
   const locale = useLocale();
   const t = useTranslations("NotFound");
   const homeHref = localePath(locale);
-  const navigation = useTranslations("Navigation");
-  const shortcuts = [
-    { key: "blog", href: blogPath(locale as AppLocale) },
-    { key: "flavors", href: `${homeHref}#flavors` },
-    { key: "privacy", href: `${homeHref}#privacy` },
-    { key: "faq", href: `${homeHref}#faq` },
-  ] as const;
 
   return (
-    <main className="flex flex-1 flex-col bg-lost-night text-white">
+    <main className="flex flex-1 flex-col bg-island-band text-white">
       <SiteHeader homeHref={homeHref} sectionBase={homeHref} />
-      <section className="relative flex-1 overflow-hidden bg-[linear-gradient(160deg,var(--color-hero-petal),var(--color-lost-violet))] text-white">
+      <section className="relative flex-1 overflow-hidden bg-island-band text-white min-wide:before:absolute min-wide:before:inset-0 min-wide:before:bg-[radial-gradient(120%_90%_at_50%_40%,transparent_60%,var(--color-not-found-vignette))]">
         <PosterStage
           spacing="none"
           className="relative z-1 flex min-h-[calc(100dvh-62*var(--spacing))] flex-col pb-32 max-poster:min-h-[720px] max-poster:px-[clamp(20px,4vw,40px)] max-poster:pb-[44px] max-phone:min-h-[700px]"
         >
-          {/* A little game console: the page is a "level not found" screen with scanlines and Mochi's lives. */}
-          <div className="relative mt-24 flex flex-1 flex-col items-center justify-center overflow-hidden rounded-[clamp(28px,3vw,44px)] border-[clamp(10px,1.1vw,16px)] border-white bg-lost-night px-40 pt-56 pb-36 text-center [box-shadow:0_14px_0_var(--color-lost-shadow)] before:pointer-events-none before:absolute before:inset-0 before:bg-[repeating-linear-gradient(0deg,var(--color-lost-scanline)_0_2px,transparent_2px_5px)] max-poster:mt-[20px] max-poster:px-[18px] max-poster:pt-[64px] max-poster:pb-[34px] max-phone:pt-[58px]">
-            <span aria-hidden="true" className="pointer-events-none absolute top-[2%] left-1/2 size-[min(90vw,720px)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--color-lost-glow),transparent_62%)]" />
-            <div aria-hidden="true" className="absolute inset-x-28 top-20 flex items-center justify-between font-max uppercase max-poster:inset-x-[18px] max-poster:top-[20px]">
-              <span className="rounded-full bg-white/10 px-12 py-4 text-u-11 tracking-[0.18em] text-sun max-poster:px-[12px] max-poster:py-[5px] max-poster:text-[11px]">{t("code")}</span>
-              <span className="flex gap-4 max-poster:gap-[5px]">
-                <Heart className="size-18 fill-mochi-pink-ink text-mochi-pink-ink max-poster:size-[18px]" />
-                <Heart className="size-18 fill-mochi-pink-ink text-mochi-pink-ink max-poster:size-[18px]" />
-                <Heart className="size-18 text-white/40 max-poster:size-[18px]" strokeWidth={2.4} />
-              </span>
-            </div>
+          <div className="relative flex flex-1 flex-col items-center justify-center px-40 pt-16 text-center max-poster:px-0 max-poster:pt-[18px] max-phone:pt-[10px]">
+            <Petal className="absolute left-94 top-174 w-28 text-hero-petal -rotate-35 max-poster:left-[4%] max-poster:top-[32%] max-poster:w-[26px]" />
+            <Petal className="absolute right-88 top-130 w-24 text-hero-petal rotate-38 max-poster:right-[4%] max-poster:top-[25%] max-poster:w-[22px]" />
 
             <div
               data-testid="not-found-art"
-              className="relative flex h-250 w-640 max-w-full items-center justify-center max-poster:h-[clamp(190px,34vw,280px)] max-poster:w-[min(100%,820px)] max-phone:h-[180px]"
+              className="relative flex h-250 w-640 max-w-full items-end justify-center max-poster:h-[clamp(190px,34vw,280px)] max-poster:w-[min(100%,820px)] max-phone:h-[180px]"
             >
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-sun [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-pink)] max-poster:text-[clamp(130px,28vw,225px)] max-poster:[text-shadow:0_6px_0_var(--color-lost-pink)] max-phone:text-[110px]"
+                className="relative z-1 -mr-15 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-island-phone-shadow-2)] max-poster:-mr-[10px] max-poster:text-[clamp(130px,28vw,225px)] max-phone:-mr-[7px] max-phone:text-[110px]"
               >
                 4
               </span>
 
-              <div className="relative z-2 mx-6 mb-6 size-210 flex-none max-poster:mx-[4px] max-poster:mb-[6px] max-poster:size-[clamp(150px,27vw,220px)] max-phone:size-[128px]">
-                {/* The "0" is a magnifying glass: a lens ring with Mochi searching inside, and its handle. */}
-                <span aria-hidden="true" className="absolute top-[80%] left-[80%] h-[15%] w-[34%] origin-left rotate-45 rounded-full bg-white [box-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:[box-shadow:0_6px_0_var(--color-lost-shadow)]" />
-                <span aria-hidden="true" className="absolute inset-0 rounded-full border-[length:calc(16*var(--spacing))] border-white bg-hero-band/35 [box-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-shadow)] max-poster:border-[clamp(11px,2vw,16px)] max-poster:[box-shadow:0_6px_0_var(--color-lost-shadow)]" />
-                <span aria-hidden="true" className="absolute top-[18%] left-[20%] h-[22%] w-[9%] rotate-35 rounded-full bg-white/70" />
+              <div className="relative z-2 -mb-4 w-220 flex-none max-poster:mb-[-5px] max-poster:w-[clamp(150px,29vw,240px)] max-phone:w-[135px]">
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-32 left-1/2 z-3 text-u-54 font-max leading-none text-sun [text-shadow:0_calc(3*var(--spacing))_0_var(--color-island-phone-shadow-2)] -translate-x-1/2 rotate-8 max-poster:-top-[36px] max-poster:text-[50px] max-phone:-top-[30px] max-phone:text-[40px]"
+                >
+                  ?
+                </span>
+                <Rays shape="hero" className="absolute -left-20 top-22 z-3 w-42 text-sun max-poster:-left-[24px] max-poster:top-[32px] max-poster:w-[38px] max-phone:-left-[17px] max-phone:top-[28px] max-phone:w-[30px]" />
                 <Image
-                  className="absolute inset-[13%] h-auto w-[74%] animate-float"
+                  className="relative h-auto w-full [filter:drop-shadow(0_calc(9*var(--spacing))_calc(10*var(--spacing))_var(--color-island-phone-shadow-2))]"
                   src={LANDING_ASSETS.notFoundMascot}
                   alt={t("mascotAlt")}
                   width={1254}
                   height={1254}
                   priority
-                  sizes="(max-width: 480px) 100px, (max-width: 1099px) 22vw, 16vw"
+                  sizes="(max-width: 480px) 135px, (max-width: 1099px) 29vw, 22vw"
                 />
-                <span aria-hidden="true" className="absolute -top-14 -right-26 z-3 grid size-50 rotate-12 place-items-center rounded-full bg-sun text-u-30 font-max leading-none text-ink-deep [box-shadow:0_calc(4*var(--spacing))_0_var(--color-lost-shadow)] max-poster:-top-[12px] max-poster:-right-[22px] max-poster:size-[44px] max-poster:text-[26px] max-phone:size-[34px] max-phone:text-[20px]">
-                  ?
-                </span>
               </div>
 
               <span
                 data-not-found-digit
                 aria-hidden="true"
-                className="relative z-1 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-sun [text-shadow:0_calc(7*var(--spacing))_0_var(--color-lost-pink)] max-poster:text-[clamp(130px,28vw,225px)] max-poster:[text-shadow:0_6px_0_var(--color-lost-pink)] max-phone:text-[110px]"
+                className="relative z-1 -ml-8 text-u-210 font-max leading-[0.78] tracking-[-0.08em] text-white [text-shadow:0_calc(7*var(--spacing))_0_var(--color-island-phone-shadow-2)] max-poster:-ml-[6px] max-poster:text-[clamp(130px,28vw,225px)] max-phone:-ml-[4px] max-phone:text-[110px]"
               >
                 4
               </span>
@@ -84,7 +68,7 @@ export function NotFoundPage() {
 
             <h1
               data-testid="not-found-title"
-              className="mt-22 max-w-850 text-u-44 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-lost-shadow)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(34px,6vw,54px)] max-phone:mt-[24px] max-phone:text-[34px]"
+              className="mt-22 max-w-850 text-u-44 font-max leading-[0.96] tracking-[-0.02em] text-white [text-shadow:0_calc(3*var(--spacing))_0_var(--color-island-phone-shadow-2)] max-poster:mt-[28px] max-poster:flex max-poster:min-h-[1.92em] max-poster:max-w-[820px] max-poster:items-center max-poster:justify-center max-poster:text-[clamp(34px,6vw,54px)] max-phone:mt-[24px] max-phone:text-[34px]"
             >
               <span className="sr-only">{t("code")}: </span>
               {t("title")}
@@ -103,23 +87,12 @@ export function NotFoundPage() {
               <Button
                 asChild
                 variant="pill"
-                className="h-42 bg-sun px-26 text-u-15 font-ultra text-ink-navy [box-shadow:0_5px_0_var(--color-lost-pink)] hover:-translate-y-[2px] hover:bg-sun focus-visible:ring-white focus-visible:ring-offset-lost-night max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
+                className="h-42 px-26 text-u-15 font-ultra text-ink-navy focus-visible:ring-white focus-visible:ring-offset-island-band max-poster:h-[48px] max-poster:px-[24px] max-poster:text-[16px] max-phone:w-[min(100%,260px)]"
               >
                 <Link data-testid="not-found-home" href={homeHref}>{t("home")}</Link>
               </Button>
               <AppStoreBadge className="h-42 gap-6 ps-18 pe-22 [&_svg]:h-26 [&_svg]:w-22 [&_small]:text-u-9.5 [&_strong]:text-u-18 max-poster:h-[48px] max-phone:w-[min(100%,260px)] max-phone:[&_strong]:text-[17px]" />
             </div>
-
-            <ul className="mt-22 flex flex-wrap items-center justify-center gap-8 max-poster:mt-[26px] max-poster:gap-[8px]">
-              <li className="text-u-12 font-black uppercase tracking-[0.08em] text-white/80 max-poster:w-full max-poster:text-[12px]">{t("suggestions")}</li>
-              {shortcuts.map(({ key, href }) => (
-                <li key={key}>
-                  <Link href={href} className="inline-flex h-32 items-center rounded-full border-2 border-white/60 px-14 text-u-12.5 font-ultra text-white transition-colors hover:bg-white hover:text-lost-night focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white max-poster:h-[36px] max-poster:px-[16px] max-poster:text-[14px]">
-                    {navigation(key)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
         </PosterStage>
       </section>
