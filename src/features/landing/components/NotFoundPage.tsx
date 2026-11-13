@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/features/landing/components/shared/Button";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
-import { Petal, Rays, Sparkle } from "@/features/landing/components/shared/decor";
+import { Petal, Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
@@ -46,7 +46,6 @@ export function NotFoundPage() {
                   ?
                 </span>
                 <Rays shape="hero" className="absolute -left-20 top-22 z-3 w-42 text-sun max-poster:-left-[24px] max-poster:top-[32px] max-poster:w-[38px] max-phone:-left-[17px] max-phone:top-[28px] max-phone:w-[30px]" />
-                <Sparkle className="absolute -right-12 top-12 z-3 w-34 text-white max-poster:-right-[18px] max-poster:top-[20px] max-poster:w-[32px] max-phone:-right-[12px] max-phone:top-[18px] max-phone:w-[24px]" />
                 <Image
                   className="relative h-auto w-full [filter:drop-shadow(0_calc(9*var(--spacing))_calc(10*var(--spacing))_var(--color-hero-title-shadow))]"
                   src={LANDING_ASSETS.notFoundMascot}
