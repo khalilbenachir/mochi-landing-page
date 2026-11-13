@@ -6,7 +6,6 @@ import { useBlogLocale, useBlogRoutes } from "../i18n";
 import { BLOG_SEGMENT, EDITORIAL_SLUG } from "../locales";
 import { BlogArticle } from "./BlogArticle";
 import { BlogShell } from "./BlogShell";
-import { BlogNewsletter } from "./NewsletterBanner";
 
 /** Rendered in this order; each id has a `Blog.editorial.sections.<id>` title and body. */
 const SECTIONS = ["publisher", "sources", "editing", "limits", "dates", "corrections"] as const;
@@ -49,7 +48,6 @@ export function EditorialPolicyPage() {
           </BlogArticle.Content>
         </BlogArticle.Root>
       </BlogShell.Container>
-      <BlogNewsletter />
     </BlogShell.Root>
   );
 }

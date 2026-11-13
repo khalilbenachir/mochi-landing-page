@@ -9,7 +9,6 @@ import { ALL_CATEGORIES } from "../content/filters";
 import { BlogFilters } from "./BlogFilters";
 import { BlogShell } from "./BlogShell";
 import { BlogIndexStructuredData } from "./BlogStructuredData";
-import { BlogNewsletter } from "./NewsletterBanner";
 import { PostCard } from "./PostCard";
 
 export function BlogIndexPage() {
@@ -77,7 +76,6 @@ export function BlogIndexPage() {
           </Link>
         </aside>
       </BlogShell.Container>
-      <BlogNewsletter />
     </BlogShell.Root>
   );
 }

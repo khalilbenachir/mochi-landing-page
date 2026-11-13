@@ -517,17 +517,6 @@
     "related": "Sigue leyendo",
     "editorialNote": "Fuentes claras, límites explicados e información útil.",
     "editorialLink": "Nuestro criterio editorial",
-    "newsletter": {
-      "title": "Nuevas guías,\nuna vez al mes",
-      "emailLabel": "Tu correo electrónico",
-      "submitLabel": "Suscribirme",
-      "note": "Sin spam. Puedes darte de baja cuando quieras.",
-      "emailNote": "Se abrirá tu aplicación de correo para enviar la solicitud.",
-      "subject": "Suscripción a El diario de Mochi",
-      "requestBody": "Hola, Mochi:\n\nQuiero suscribirme a las guías mensuales de El diario de Mochi.\nMi correo es {email}.\n\n¡Gracias!",
-      "requestMessage": "Envía el correo para solicitar la suscripción. Si no se ha abierto tu aplicación de correo, usa el enlace de abajo.",
-      "openEmailLabel": "Abrir solicitud por correo"
-    },
     "ctaTitle": "Una pequeña compañía en cada fase.",
     "ctaAction": "Descubre Mochi",
     "articleNotice": "Información general, no asesoramiento médico. Este artículo no ha sido revisado por un profesional sanitario.",

@@ -517,17 +517,6 @@
     "related": "Pour continuer",
     "editorialNote": "Des sources claires, des limites expliquées, des informations utiles.",
     "editorialLink": "Notre démarche éditoriale",
-    "newsletter": {
-      "title": "De nouveaux guides,\nune fois par mois",
-      "emailLabel": "Votre adresse e-mail",
-      "submitLabel": "M’inscrire",
-      "note": "Pas de spam. Désinscription à tout moment.",
-      "emailNote": "Votre application de messagerie s’ouvrira pour envoyer votre demande.",
-      "subject": "Inscription au journal de Mochi",
-      "requestBody": "Bonjour Mochi,\n\nJe souhaite recevoir les guides mensuels du journal de Mochi.\nMon adresse e-mail est {email}.\n\nMerci !",
-      "requestMessage": "Envoyez cet e-mail pour demander votre inscription. Si votre messagerie ne s’est pas ouverte, utilisez le lien ci-dessous.",
-      "openEmailLabel": "Ouvrir la demande par e-mail"
-    },
     "ctaTitle": "Un petit compagnon à chaque phase.",
     "ctaAction": "Découvrir Mochi",
     "articleNotice": "Informations générales, sans valeur de conseil médical. Cet article n’a pas été relu par un professionnel de santé.",

@@ -517,17 +517,6 @@
     "related": "Weiterlesen",
     "editorialNote": "Klare Quellen, benannte Grenzen, hilfreiche Informationen.",
     "editorialLink": "Unsere redaktionellen Grundsätze",
-    "newsletter": {
-      "title": "Neue Ratgeber,\neinmal im Monat",
-      "emailLabel": "Deine E-Mail-Adresse",
-      "submitLabel": "Abonnieren",
-      "note": "Kein Spam. Jederzeit abbestellbar.",
-      "emailNote": "Dein E-Mail-Programm öffnet sich, damit du die Anfrage senden kannst.",
-      "subject": "Das Mochi Journal abonnieren",
-      "requestBody": "Hallo Mochi,\n\nich möchte die monatlichen Ratgeber des Mochi Journals abonnieren.\nMeine E-Mail-Adresse ist {email}.\n\nVielen Dank!",
-      "requestMessage": "Sende die E-Mail, um dein Abonnement anzufragen. Falls sich dein E-Mail-Programm nicht geöffnet hat, nutze den Link unten.",
-      "openEmailLabel": "E-Mail-Anfrage öffnen"
-    },
     "ctaTitle": "Ein kleiner Begleiter für jede Phase.",
     "ctaAction": "Mochi entdecken",
     "articleNotice": "Allgemeine Informationen, keine medizinische Beratung. Dieser Artikel wurde nicht von medizinischem Fachpersonal geprüft.",

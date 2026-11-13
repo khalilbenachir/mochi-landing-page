@@ -2,7 +2,6 @@ import { expect, test } from "@playwright/test";
 import en from "../../messages/en.json";
 import { BLOG_PATHS, BLOG_POSTS, type BlogPost, type BlogPostId } from "../../src/features/blog/content/catalog";
 import { articleReadingMinutes, getArticleCopy as getLocalizedArticleCopy } from "../../src/features/blog/content/copy";
-import { NEWSLETTER_RECIPIENT } from "../../src/features/blog/content/newsletter";
 import { BLOG_LOCALES, blogLocaleFor, blogPath, EDITORIAL_SLUG, isBlogLocale } from "../../src/features/blog/locales";
 import { localePath, localeRoutePath, routing } from "../../src/i18n/routing";
 import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
@@ -253,30 +252,6 @@ test("each article has its own generated social card", async ({ page, request })
     expect(response.status(), selector).toBe(200);
     expect(response.headers()["content-type"]).toBe("image/png");
   }
-});
-
-test("newsletter validates email and opens a subscription request to the supplied inbox", async ({ page }) => {
-  await page.goto("/blog");
-  const form = page.getByRole("form", { name: en.Blog.newsletter.submitLabel });
-  const email = form.getByRole("textbox", { name: en.Blog.newsletter.emailLabel });
-  await email.fill("not-an-email");
-  await form.getByRole("button", { name: en.Blog.newsletter.submitLabel }).click();
-  expect(await email.evaluate((input: HTMLInputElement) => input.validity.typeMismatch)).toBe(true);
-  await expect(form.getByRole("status")).toHaveCount(0);
-  await expect(form).toContainText(en.Blog.newsletter.emailNote);
-  // Capture the external-protocol handoff without launching or sending email.
-  await page.evaluate(() => { window.open = (url) => { document.documentElement.dataset.emailRequest = String(url); return null; }; });
-  await email.fill("reader+guides@example.com");
-  await form.getByRole("button", { name: en.Blog.newsletter.submitLabel }).click();
-  await expect(form.getByRole("status")).toHaveText(en.Blog.newsletter.requestMessage);
-  const href = await form.getByRole("link", { name: en.Blog.newsletter.openEmailLabel }).getAttribute("href");
-  const request = new URL(href!);
-  expect(request.protocol).toBe("mailto:");
-  expect(request.pathname).toBe(NEWSLETTER_RECIPIENT);
-  expect(request.searchParams.get("subject")).toBe(en.Blog.newsletter.subject);
-  expect(request.searchParams.get("body")).toBe(en.Blog.newsletter.requestBody.replace("{email}", "reader+guides@example.com"));
-  expect(await page.locator("html").getAttribute("data-email-request")).toBe(href);
-  await expect(page).toHaveURL((url) => url.pathname === "/blog" && !url.search);
 });
 
 test("article contents, copy link and native questions work", async ({ page, context }) => {

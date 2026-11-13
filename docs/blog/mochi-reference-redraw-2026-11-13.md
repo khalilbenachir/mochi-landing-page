@@ -2,7 +2,8 @@
 
 Every blog illustration was redrawn in ChatGPT so Mochi matches the iOS app's own character.
 The JSON prompt files in this folder describe the first set (10 November 2026); the files
-they name were replaced by the ones below.
+they name were replaced by the ones below. The newsletter section and its picture were
+removed later the same day.
 
 References attached to every prompt: `mochi-face-happy.png` (and `mochi-scene-plus.png` for
 new scenes) from `iosApp/Packages/MochiKit/Sources/MochiDesign/Resources/MochiPictures`.
@@ -19,7 +20,6 @@ new scenes) from `iosApp/Packages/MochiKit/Sources/MochiDesign/Resources/MochiPi
 | `getting-started.webp` | `getting-started-mochi.webp` | Edit of the old picture |
 | `tracking-cutout.webp` | `tracking-cutout-mochi.webp` | Edit of the old picture |
 | `methods-cutout.webp` | `methods-cutout-mochi.webp` | Edit of the old picture |
-| `newsletter-mochi.webp` | `newsletter-sleepy.webp` | Edit of the old picture (asleep, "zzz" kept) |
 
 Edit prompt (old picture attached second):
 

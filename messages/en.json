@@ -517,17 +517,6 @@
     "related": "Keep reading",
     "editorialNote": "Clear sources. Honest limits. Useful information.",
     "editorialLink": "Our editorial approach",
-    "newsletter": {
-      "title": "New guides,\nonce a month",
-      "emailLabel": "Your email",
-      "submitLabel": "Subscribe",
-      "note": "No spam. Unsubscribe anytime.",
-      "emailNote": "Your email app will open to send your request.",
-      "subject": "Subscribe to The Mochi Journal",
-      "requestBody": "Hi Mochi,\n\nPlease subscribe me to The Mochi Journal's monthly guides.\nMy email address is {email}.\n\nThank you!",
-      "requestMessage": "Send the email to request your subscription. If your email app did not open, use the link below.",
-      "openEmailLabel": "Open email request"
-    },
     "ctaTitle": "A little friend for every phase.",
     "ctaAction": "Explore Mochi",
     "articleNotice": "General information, not medical advice. This article has not been reviewed by a clinician.",

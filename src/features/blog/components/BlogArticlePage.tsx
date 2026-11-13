@@ -98,7 +98,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
           </h1>
           <p className="mt-[10px] text-[20px] font-semibold leading-[1.3] max-phone:text-[18px]">{copy.description}</p>
           <BlogArticle.Meta>
-            <Image src={LANDING_ASSETS.appIcon} width={36} height={36} alt="" className="size-[36px] rounded-full" />
+            <Image src={LANDING_ASSETS.faces.headerHappy} width={256} height={238} alt="" className="h-auto w-[36px]" />
             <Link href={routes.editorial} className="font-heavy underline-offset-4 hover:underline">
               {t("byline")}
             </Link>
