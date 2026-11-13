@@ -59,7 +59,7 @@ function FlavorMap() {
       </svg>
       <ol className="absolute inset-0">
         {FLAVOR_CATALOG.map((flavor, index) => (
-          <li key={flavor.id} className={cn("group absolute flex w-120 -translate-x-1/2 -translate-y-[34%] flex-col items-center text-center", SPOTS[index])}>
+          <li key={flavor.id} className={cn("group absolute flex w-120 -translate-x-1/2 -translate-y-32 flex-col items-center text-center", SPOTS[index])}>
             <span className="grid size-64 place-items-center rounded-full bg-white ring-4 ring-flavors-card-shadow [box-shadow:0_5px_0_var(--color-flavors-card-shadow)] [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-5 group-hover:-rotate-6 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none">
               <Image src={FLAVOR_CARD_ASSETS[flavor.id]} alt={`${t(`items.${flavor.id}.name`)} Mochi`} width={380} height={262} sizes="6vw" className="h-auto w-50" />
             </span>
