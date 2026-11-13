@@ -20,7 +20,7 @@ function MochiMachine() {
 
   return (
     <div className="relative mx-auto w-330 max-poster:w-[min(100%,330px)]" aria-hidden="true">
-      <div className="relative z-1 mx-auto h-34 w-150 rounded-t-u-30 bg-mochi-pink-ink max-poster:h-[34px] max-poster:w-[150px] max-poster:rounded-t-[30px]" />
+      <div className="relative z-1 mx-auto h-30 w-150 rounded-t-[24px] bg-mochi-pink-ink max-poster:h-[30px] max-poster:w-[150px]" />
       <div className="relative aspect-[330/270] overflow-hidden rounded-t-[50%_44%] border-6 border-white bg-white/35 [box-shadow:inset_0_-12px_0_rgb(255_255_255/0.35)] max-poster:border-[6px]">
         <span className="absolute top-[10%] left-[12%] h-[34%] w-[9%] -rotate-12 rounded-full bg-white/70" />
         {inDome.map((flavor, index) => (
