@@ -1,7 +1,7 @@
 name: CI/CD
 
 on:
-  pull_request:
+  # PR runs paused on request — restore `pull_request:` here to re-enable CI on every PR.
   push:
     branches: [main]
   workflow_dispatch:
