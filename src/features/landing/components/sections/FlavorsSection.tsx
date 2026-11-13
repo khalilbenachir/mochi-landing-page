@@ -39,6 +39,41 @@ function StreakCard() {
   );
 }
 
+/** Node spots along the snake path (left→right, right→left, left→right), as percent of the map. */
+const SPOTS = [
+  "left-[11.29%] top-[16.67%]", "left-[34.68%] top-[16.67%]", "left-[58.06%] top-[16.67%]", "left-[81.45%] top-[16.67%]",
+  "left-[81.45%] top-[50%]", "left-[58.06%] top-[50%]", "left-[34.68%] top-[50%]", "left-[11.29%] top-[50%]",
+  "left-[11.29%] top-[83.33%]", "left-[34.68%] top-[83.33%]", "left-[58.06%] top-[83.33%]", "left-[81.45%] top-[83.33%]",
+] as const;
+
+/** Desktop: the collection as a game level map, each flavor a stop on the streak road. */
+function FlavorMap() {
+  const t = useTranslations("Flavors");
+
+  return (
+    <div className="relative aspect-[620/420] w-620 max-poster:hidden">
+      <svg className="absolute inset-0 size-full overflow-visible" viewBox="0 0 620 420" fill="none" aria-hidden="true">
+        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-card-shadow" strokeWidth="30" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-card-bg" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M70 70H505C590 70 590 210 505 210H70C-15 210-15 350 70 350H505" className="stroke-flavors-band" strokeWidth="3" strokeDasharray="2 12" strokeLinecap="round" />
+      </svg>
+      <ol className="absolute inset-0">
+        {FLAVOR_CATALOG.map((flavor, index) => (
+          <li key={flavor.id} className={cn("group absolute flex w-120 -translate-x-1/2 -translate-y-[34%] flex-col items-center text-center", SPOTS[index])}>
+            <span className="grid size-64 place-items-center rounded-full bg-white ring-4 ring-flavors-card-shadow [box-shadow:0_5px_0_var(--color-flavors-card-shadow)] [transition:translate_0.3s_var(--spring,ease),rotate_0.3s_var(--spring,ease)] group-hover:-translate-y-5 group-hover:-rotate-6 motion-reduce:group-hover:translate-none motion-reduce:group-hover:rotate-none">
+              <Image src={FLAVOR_CARD_ASSETS[flavor.id]} alt={`${t(`items.${flavor.id}.name`)} Mochi`} width={380} height={262} sizes="6vw" className="h-auto w-50" />
+            </span>
+            <b className="mt-5 text-u-[12.4] font-max tracking-[-0.01em] whitespace-nowrap text-white [text-shadow:0_2px_0_var(--color-flavors-card-shadow)]">{t(`items.${flavor.id}.name`)}</b>
+            <span className={cn("mt-2 rounded-full px-7 py-2 text-u-[9] font-black leading-[1.12] text-ink-slate", flavor.kind === "challenge" ? "max-w-90 whitespace-normal" : "whitespace-nowrap", FLAVOR_PILL_CLASS[flavor.id])}>
+              {t(`items.${flavor.id}.unlock`)}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
 /** Section 4: the 12 collectible flavors and how each one unlocks. */
 export function FlavorsSection() {
   const t = useTranslations("Flavors");
@@ -55,6 +90,9 @@ export function FlavorsSection() {
           <StreakCard />
         </div>
 
+        <div className="min-w-0">
+          <FlavorMap />
+          <div className="poster:hidden">
         <div className="w-620 rounded-u-30 bg-flavors-card-bg p-16 [box-shadow:0_8px_0_var(--color-flavors-card-shadow)] max-poster:mx-auto max-poster:mt-[28px] max-poster:w-full max-poster:max-w-[760px] max-poster:p-[16px] max-phone:p-[12px]">
           <ul className="grid grid-cols-6 gap-x-6 gap-y-14 max-poster:grid-cols-4 max-poster:gap-x-[8px] max-poster:gap-y-[18px] max-tablet:grid-cols-3">
             {FLAVOR_CATALOG.map((flavor) => (
@@ -83,6 +121,8 @@ export function FlavorsSection() {
               </li>
             ))}
           </ul>
+        </div>
+          </div>
         </div>
       </PosterStage>
     </section>
