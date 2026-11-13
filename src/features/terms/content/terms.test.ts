@@ -9,7 +9,7 @@ import fr from "../../../../messages/fr.json";
 import ptBR from "../../../../messages/pt-BR.json";
 import ptPT from "../../../../messages/pt-PT.json";
 import { routing } from "@/i18n/routing";
-import { TERMS_ASSETS, TERMS_HERO_SIZE, TERMS_SECTION_IDS, TERMS_SUMMARY_CARDS } from "./terms";
+import { TERMS_ASSETS, TERMS_HERO_SIZE, TERMS_SECTION_IDS, TERMS_SUMMARY_CARDS, TERMS_SUMMARY_ICONS } from "./terms";
 
 const messages = { en, fr, de, es, "pt-BR": ptBR, "pt-PT": ptPT };
 
@@ -21,7 +21,8 @@ describe("terms content and artwork contracts", () => {
     expect(metadata.hasAlpha).toBe(true);
     expect({ width: metadata.width, height: metadata.height }).toEqual(TERMS_HERO_SIZE);
     expect(statSync(hero).size).toBeLessThan(150_000);
-    expect(readdirSync(join(process.cwd(), "public", "terms-art"))).toEqual(["terms-mochi-scroll.webp"]);
+    const expected = [TERMS_ASSETS.hero, ...Object.values(TERMS_SUMMARY_ICONS)].map((path) => path.replace("/terms-art/", "")).sort();
+    expect(readdirSync(join(process.cwd(), "public", "terms-art")).sort()).toEqual(expected);
     expect(() => accessSync(join(process.cwd(), "public", TERMS_ASSETS.contact))).not.toThrow();
   });
 

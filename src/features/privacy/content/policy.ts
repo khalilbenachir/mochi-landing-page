@@ -6,7 +6,7 @@ export const POLICY_UPDATED_AT = "2026-11-09T00:00:00Z";
 
 export const PRIVACY_ASSETS = {
   hero: "/privacy-art/privacy-dome.webp",
-  contact: "/privacy-art/privacy-contact.webp",
+  contact: "/privacy-art/contact-mochi.webp",
 } as const;
 
 export type PolicySectionCopy = {

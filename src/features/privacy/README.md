@@ -7,7 +7,7 @@ as WebP for the website. Original generated PNGs were preserved outside the repo
 | Asset | Dimensions | Size |
 | --- | --- | --- |
 | `public/privacy-art/privacy-dome.webp` | 1024 × 819 | 112,750 bytes |
-| `public/privacy-art/privacy-contact.webp` | 600 × 400 | 37,346 bytes |
+| `public/privacy-art/contact-mochi.webp` | 600 × 400 | 22,876 bytes (app Mochi peeking with a heart, ChatGPT) |
 
 ## Hero prompt
 
@@ -16,3 +16,5 @@ Use case: stylized-concept. Asset type: transparent website privacy hero illustr
 ## Contact mascot prompt
 
 Use case: stylized-concept. Asset type: transparent small mascot for a website contact banner. Draw one adorable glossy pastel pink Mochi rice cake mascot, a squat rounded soft triangle shape, with thick soft pink outline, white gloss on upper left, two happy closed dark navy upside-down U curve eyes, tiny navy oval mouth, bright rosy oval cheeks. It peeks from behind an invisible horizontal ledge at the bottom, with two small pink oval hands resting at the ledge (one on each lower side). Only head and little hands, no full body, no objects. A small hand-drawn pink outline heart floats above and right of its head and three yellow short excitement rays float to upper left. Match the cute dimensional softly painted pink mochi character in the user's Mochi privacy reference image. Landscape composition 3:2, tight framing with a small transparent margin, isolated on genuine transparent background. Clean cartoon 3D-shaded app mascot illustration. No text, no colored rectangle, no backdrop, no watermark.
+
+The "On this page" menu is the shared `SideMenu` compound component (`src/components/side-menu/SideMenu.tsx`).

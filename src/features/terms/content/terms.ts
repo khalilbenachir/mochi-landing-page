@@ -8,9 +8,19 @@ export type TermsSectionId = (typeof TERMS_SECTION_IDS)[number];
 export const TERMS_UPDATED_AT = "2026-11-09T00:00:00Z";
 
 export const TERMS_ASSETS = {
-  hero: "/terms-art/terms-mochi-scroll.webp",
-  contact: "/privacy-art/privacy-contact.webp",
+  hero: "/terms-art/terms-mochi-reader.webp",
+  contact: "/privacy-art/contact-mochi.webp",
 } as const;
+
+/** Mochi icons (ChatGPT, from the app's Mochi) for the summary cards and the health callout. */
+export const TERMS_SUMMARY_ICONS = {
+  medical: "/terms-art/icon-medical.webp",
+  contraception: "/terms-art/icon-contraception.webp",
+  plus: "/terms-art/icon-plus.webp",
+  privacy: "/terms-art/icon-privacy.webp",
+  warning: "/terms-art/icon-warning.webp",
+} as const;
+export type TermsSummaryIconId = keyof typeof TERMS_SUMMARY_ICONS;
 
 export const TERMS_HERO_SIZE = { width: 1024, height: 819 } as const;
 /** Apple Support's regional editions of "If you want to cancel a subscription from Apple". */

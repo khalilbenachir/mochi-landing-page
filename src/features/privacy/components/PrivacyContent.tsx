@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
+import * as SideMenu from "@/components/side-menu/SideMenu";
 import { Rays } from "@/features/landing/components/shared/decor";
-import { cn } from "@/lib/utils";
-import { POLICY_SECTION_IDS, type PolicySectionCopy, type PolicySectionId } from "../content/policy";
+import { POLICY_SECTION_IDS, type PolicySectionCopy } from "../content/policy";
 import { PolicyIcon } from "./PolicyIcon";
 
 type PrivacyContentProps = {
@@ -32,13 +32,12 @@ function sectionFromHash(hash: string) {
 
 /**
  * Every section is always rendered and visible, so the whole policy reads without JavaScript and
- * stays searchable. This client island only highlights the section named by the URL hash and moves
- * focus to its heading.
+ * stays searchable. This client island scrolls to the section named by the URL hash and moves focus
+ * to its heading; the side menu is the shared SideMenu.
  */
 export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyContentProps) {
   const hash = useSyncExternalStore(subscribeToHash, getHash, getServerHash);
   const target = sectionFromHash(hash);
-  const selected: PolicySectionId = target ?? "collect";
 
   useEffect(() => {
     if (!target) return;
@@ -49,29 +48,18 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
 
   return (
     <div className="grid min-h-492 grid-cols-[278fr_660fr] items-start gap-28 max-nav:grid-cols-1 max-nav:gap-[28px]">
-      <aside className="sticky top-20 rounded-u-26 border border-policy-border bg-white p-12 pb-26 [box-shadow:0_4px_14px_var(--color-policy-shadow)] max-nav:static max-nav:p-[14px]">
-        <h2 className="px-10 pt-1 pb-16 text-u-21.5 font-max leading-[1.12] tracking-[-0.01em] max-poster:text-[24px] max-nav:pb-[12px] max-phone:text-[22px]">{navLabel}</h2>
-        <nav aria-label={navLabel} className="grid max-nav:grid-cols-2 max-phone:gap-x-[8px]">
-          {sections.map(({ id, nav }) => (
-            <a
-              key={id}
-              href={`#${id}`}
-              aria-current={selected === id ? "location" : undefined}
-              className={cn(
-                "group flex min-h-47 items-center gap-20 rounded-u-13 px-18 py-10 text-u-14.5 font-heavy leading-[1.25] tracking-[-0.01em] text-ink-navy hover:bg-policy-pink focus-visible:outline-2 focus-visible:outline-brand-coral focus-visible:outline-offset-2 max-poster:text-[15px] max-nav:gap-[10px] max-nav:px-[10px]",
-                selected === id && "bg-policy-pink text-mochi-pink-ink",
-              )}
-            >
-              <PolicyIcon id={id} className="size-28 flex-none max-nav:size-[24px]" />
-              <span className={cn("flex min-h-27 min-w-0 flex-1 items-center wrap-anywhere", selected !== id && "border-b border-policy-border pb-6")}>{nav}</span>
-            </a>
-          ))}
-        </nav>
-      </aside>
+      <SideMenu.Root items={sections.map(({ id, nav }) => ({ id, label: nav }))}>
+        <SideMenu.Header title={navLabel}>
+          <SideMenu.Progress />
+        </SideMenu.Header>
+        <SideMenu.Body>
+          <SideMenu.List label={navLabel} />
+        </SideMenu.Body>
+      </SideMenu.Root>
 
       <article className="grid min-w-0 gap-30 max-nav:gap-[28px] pb-4 text-u-[13.6] font-demibold leading-[1.4] max-poster:text-[17px] max-phone:text-[15px]">
         {sections.map(({ id, title, body, detail }) => (
-          <section key={id} id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24">
+          <section key={id} id={id} aria-labelledby={`${id}-title`} className="scroll-mt-[96px]">
             <h2 id={`${id}-title`} tabIndex={-1} className="relative mb-6 flex items-start gap-10 text-u-29.5 font-max leading-[0.96] tracking-[-0.015em] text-ink-navy max-poster:text-[clamp(34px,6vw,50px)] max-nav:mb-[12px] max-nav:gap-[6px] max-phone:text-[31px]">
               <Rays shape="burst" className="-mt-3 -ml-5 w-40 flex-none text-sun max-nav:-mt-[2px] max-nav:w-[28px]" />
               <span className="min-w-0 wrap-anywhere">{title}</span>
