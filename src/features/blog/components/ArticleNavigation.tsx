@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Check, Heart, Link as LinkIcon } from "lucide-react";
+import { Check, Link as LinkIcon } from "lucide-react";
 import * as SideMenu from "@/components/side-menu/SideMenu";
 import type { SideMenuItem } from "@/components/side-menu/SideMenu";
 import { cn } from "@/lib/utils";
@@ -71,10 +71,7 @@ function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
   return (
     <div className="mt-[16px] rounded-[20px] bg-blog-lavender/45 px-[12px] pt-[13px] pb-[12px]">
       <div className="flex min-h-[22px] flex-wrap items-center justify-between gap-[8px] px-[4px]">
-        <p className="flex items-center gap-[7px] text-[15px] font-max leading-none">
-          <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
-          {labels.share}
-        </p>
+        <p className="text-[15px] font-max leading-none">{labels.share}</p>
         <p
           role="status"
           className={cn(
