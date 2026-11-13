@@ -31,8 +31,8 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-3 left-[calc(752*var(--spacing)-64*var(--spacing))] top-[calc(var(--section-space)-67*var(--spacing))] w-128 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[22px] max-poster:-mb-[calc(37*var(--spacing))] max-poster:w-144" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={480} height={377} sizes="(max-width: 1099px) 40vw, 12vw" />
+        <div className="absolute z-3 left-664 top-[calc(var(--section-space)-80*var(--spacing))] w-96 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[22px] max-poster:-mb-[calc(2*var(--spacing))] max-poster:w-96" aria-hidden="true">
+          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={440} height={378} sizes="(max-width: 1099px) 30vw, 10vw" />
         </div>
         <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-22 place-items-center rounded-u-7 bg-white px-10 text-u-12.5 text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>
