@@ -31,10 +31,10 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-3 left-704 top-[calc(var(--section-space)+30*var(--spacing))] w-120 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-14 max-poster:mt-[22px] max-poster:w-120" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={520} height={436} sizes="12vw" />
+        <div className="absolute z-3 left-[calc(641*var(--spacing)-72*var(--spacing))] top-[calc(var(--section-space)-73*var(--spacing))] w-144 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[22px] max-poster:-mb-[calc(37*var(--spacing))] max-poster:w-144" aria-hidden="true">
+          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={480} height={377} sizes="(max-width: 1099px) 40vw, 12vw" />
         </div>
-        <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>
+        <div className={cn(PLAN, "ml-6 w-262 pt-44 bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-22 place-items-center rounded-u-7 bg-white px-10 text-u-12.5 text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>
           <ul className="grid gap-8 pr-52">{PLUS_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`plusFeatures.${id}`)}</li>)}</ul>
         </div>
