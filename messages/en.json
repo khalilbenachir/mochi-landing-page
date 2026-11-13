@@ -34,8 +34,8 @@
     "title2": "period tracker",
     "title3": "for iPhone",
     "body": "Mochi is a free period tracker for iPhone that predicts your next period, reminds you when to change your pad and turns daily check-ins into a game. No account needed.",
-    "mascotAlt": "Mochi, a smiling pink mochi mascot, resting on a cream cushion",
-    "phoneAlt": "Mochi home screen on iPhone showing Day 2 of a period with Period, Mood and Symptoms shortcuts"
+    "mascotAlt": "Mochi hugging a heart on a pink cloud under the moon phases, with matcha, ube and mango Mochi friends waving",
+    "hello": "Hi, I’m Mochi!"
   },
   "Island": {
     "title1": "A pad change",
@@ -71,6 +71,7 @@
     "title2": "streak, collect",
     "title3": "12 Mochi flavors",
     "body": "Log a little every day and new Mochi join your collection.",
+    "unlocked": "New Mochi unlocked!",
     "items": {
       "strawberry": {
         "name": "Strawberry",
@@ -129,9 +130,10 @@
     "body1": "Mochi reads the cycles you log to estimate",
     "body2": "your next period, fertile window and ovulation.",
     "disclaimer": "Predictions are estimates, not birth control.",
-    "phoneLabel": "Mochi cycle calendar with a five-day period marked",
-    "cycle": "Cycle",
-    "month": "Mar 2025",
+    "phoneLabel": "Mochi calendar for June: a logged period, fertile days, ovulation and the next predicted period",
+    "calendar": "Calendar",
+    "today": "Today",
+    "month": "Jun 2025",
     "weekdays": {
       "sun": "Sun",
       "mon": "Mon",
@@ -142,15 +144,20 @@
       "sat": "Sat"
     },
     "period": "Period",
-    "fertileWindow": "Fertile window",
+    "predicted": "Predicted",
+    "fertile": "Fertile",
     "ovulation": "Ovulation",
-    "nextPeriodIn": "Next period in",
-    "nextPeriodValue": "12 days",
-    "cycleLength": "Cycle length",
-    "cycleLengthValue": "28 days",
+    "cardLabel": "Your cycle: day 17 of 28, luteal phase, next period on June 30, average cycle 28 days",
+    "yourCycle": "Your cycle",
+    "cycleDayValue": "Day 17 of 28",
+    "follicular": "Follicular",
+    "luteal": "Luteal",
+    "cycleStartDate": "Jun 2",
     "nextPeriod": "Next period",
-    "nextPeriodDate": "Mar 15",
-    "mascotAlt": "Happy Mochi"
+    "nextPeriodDate": "Jun 30",
+    "avgCycle": "Avg cycle",
+    "cycleLengthValue": "28 days",
+    "mascotAlt": "Mochi watching the moon phases through a telescope"
   },
   "Privacy": {
     "title1": "Your cycle stays",
@@ -183,6 +190,7 @@
         "badge3": ""
       }
     },
+    "mascotAlt": "Mochi wrapped in a cozy blanket, hugging a locked iPhone",
     "staysTitle": "Stays with you",
     "stays": {
       "dates": "Period dates and predictions",
@@ -248,9 +256,7 @@
     "kicker": "Optional account",
     "title": "Use Mochi now. Back up when you want.",
     "body": "Everything works without an account. Create a free account only when you want backup and sync for a new iPhone.",
-    "backup": "Cycle backup",
-    "synced": "Synced to your account",
-    "imageAlt": "Mochi hugging a locked diary"
+    "imageAlt": "Mochi relaxing on a cloud with its iPhone, backed up"
   },
   "FAQ": {
     "title1": "Period",
@@ -291,7 +297,7 @@
     "title": "Say hi to Mochi",
     "body1": "Track your cycle, collect cute flavors and have",
     "body2": "a little friend with you through every phase.",
-    "imageAlt": "Mochi resting on a cushion",
+    "imageAlt": "Mochi and its flavor friends waving hi",
     "brand": "Mochi: period tracker"
   },
   "Footer": {
@@ -317,7 +323,7 @@
     "title": "Privacy policy",
     "intro": "Your cycle is yours. Here’s exactly what Mochi keeps on your iPhone and what it never shares.",
     "updated": "Last updated: {date}",
-    "heroAlt": "A happy pink Mochi protects a locked purple diary under a blue glass dome",
+    "heroAlt": "A happy pink Mochi wrapped in a cozy blanket, hugging a pink iPhone with a heart padlock on its screen",
     "short": "In short",
     "onThisPage": "On this page",
     "help": "Help",
@@ -513,17 +519,6 @@
     "related": "Keep reading",
     "editorialNote": "Clear sources. Honest limits. Useful information.",
     "editorialLink": "Our editorial approach",
-    "newsletter": {
-      "title": "New guides,\nonce a month",
-      "emailLabel": "Your email",
-      "submitLabel": "Subscribe",
-      "note": "No spam. Unsubscribe anytime.",
-      "emailNote": "Your email app will open to send your request.",
-      "subject": "Subscribe to The Mochi Journal",
-      "requestBody": "Hi Mochi,\n\nPlease subscribe me to The Mochi Journal's monthly guides.\nMy email address is {email}.\n\nThank you!",
-      "requestMessage": "Send the email to request your subscription. If your email app did not open, use the link below.",
-      "openEmailLabel": "Open email request"
-    },
     "ctaTitle": "A little friend for every phase.",
     "ctaAction": "Explore Mochi",
     "articleNotice": "General information, not medical advice. This article has not been reviewed by a clinician.",

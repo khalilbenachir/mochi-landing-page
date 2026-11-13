@@ -4,10 +4,8 @@ export const MOOD_TONES = ["joy", "calm", "meh", "sad"] as const; // render orde
 export type MoodTone = (typeof MOOD_TONES)[number];
 export const SYMPTOM_IDS = ["cramps", "bloating", "headache", "tired"] as const; // render order
 export type SymptomId = (typeof SYMPTOM_IDS)[number];
-export const CYCLE_LEGEND_IDS = ["period", "fertileWindow", "ovulation"] as const;
-export type CycleLegendId = (typeof CYCLE_LEGEND_IDS)[number];
-export const CYCLE_FACT_IDS = ["cycleLength", "nextPeriod"] as const;
-export type CycleFactId = (typeof CYCLE_FACT_IDS)[number];
+export const CYCLE_PHASE_IDS = ["period", "follicular", "fertile", "ovulation", "luteal"] as const; // render order
+export type CyclePhaseId = (typeof CYCLE_PHASE_IDS)[number];
 
 /** Pill tint: each starter has its own color; everything you earn is pink. */
 export const FLAVOR_PILL_CLASS: Record<FlavorId, string> = {
@@ -40,13 +38,11 @@ export const SYMPTOM_CHIP_CLASS: Record<SymptomId, string> = {
   tired: "bg-mood-chip-violet",
 };
 
-export const CYCLE_LEGEND_CLASS: Record<CycleLegendId, string> = {
+/** The app's phase colors, as on its "Your cycle" bar and legend. */
+export const CYCLE_PHASE_CLASS: Record<CyclePhaseId, string> = {
   period: "bg-cycle-period",
-  fertileWindow: "bg-cycle-fertile",
+  follicular: "bg-cycle-follicular",
+  fertile: "bg-cycle-fertile",
   ovulation: "bg-cycle-ovulation",
-};
-
-export const CYCLE_FACT_CLASS: Record<CycleFactId, string> = {
-  cycleLength: "bg-cycle-length",
-  nextPeriod: "bg-cycle-next-period",
+  luteal: "bg-cycle-luteal",
 };

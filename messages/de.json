@@ -34,8 +34,8 @@
     "title2": "Perioden-App",
     "title3": "fürs iPhone",
     "body": "Tracke deine Periode kostenlos, notiere Symptome und lerne deinen Zyklus kennen. Mochi begleitet dich mit einem kleinen Maskottchen durch den Alltag. Ohne Anmeldung, auch offline.",
-    "mascotAlt": "Mochi, ein lächelndes rosa Mochi-Maskottchen, auf einem cremefarbenen Kissen",
-    "phoneAlt": "Mochi-Startbildschirm auf dem iPhone mit Tag 2 der Periode und den Kurzbefehlen Periode, Stimmung und Symptome"
+    "mascotAlt": "Mochi umarmt ein Herz auf einer rosa Wolke unter den Mondphasen, Matcha-, Ube- und Mango-Mochi winken",
+    "hello": "Hallo, ich bin Mochi!"
   },
   "Island": {
     "title1": "Erinnerung zum",
@@ -71,6 +71,7 @@
     "title2": "Serie, sammle",
     "title3": "12 Mochi-Sorten",
     "body": "Trag jeden Tag ein bisschen ein und neue Mochi kommen in deine Sammlung.",
+    "unlocked": "Neuer Mochi freigeschaltet!",
     "items": {
       "strawberry": {
         "name": "Erdbeere",
@@ -129,9 +130,10 @@
     "body1": "Mochi nutzt deine eingetragenen Zyklen, um",
     "body2": "die nächste Periode, das fruchtbare Fenster und den Eisprung zu schätzen. Auch bei wechselnden Zykluslängen kannst du deine Daten festhalten.",
     "disclaimer": "Die Eisprung-App liefert Schätzungen. Sie bestätigt keinen Eisprung und eignet sich nicht zur Verhütung.",
-    "phoneLabel": "Mochi-Zykluskalender mit einer markierten fünftägigen Periode",
-    "cycle": "Zyklus",
-    "month": "März 2025",
+    "phoneLabel": "Mochi-Kalender für Juni: eingetragene Periode, fruchtbare Tage, Eisprung und nächste erwartete Periode",
+    "calendar": "Kalender",
+    "today": "Heute",
+    "month": "Juni 2025",
     "weekdays": {
       "sun": "So",
       "mon": "Mo",
@@ -142,15 +144,20 @@
       "sat": "Sa"
     },
     "period": "Periode",
-    "fertileWindow": "Fruchtbare Tage",
+    "predicted": "Erwartet",
+    "fertile": "Fruchtbar",
     "ovulation": "Eisprung",
-    "nextPeriodIn": "Nächste Periode in",
-    "nextPeriodValue": "12 Tagen",
-    "cycleLength": "Zykluslänge",
-    "cycleLengthValue": "28 Tage",
+    "cardLabel": "Dein Zyklus: Tag 17 von 28, Lutealphase, nächste Periode am 30. Juni, Ø Zyklus 28 Tage",
+    "yourCycle": "Dein Zyklus",
+    "cycleDayValue": "Tag 17 von 28",
+    "follicular": "Follikel",
+    "luteal": "Luteal",
+    "cycleStartDate": "2. Juni",
     "nextPeriod": "Nächste Periode",
-    "nextPeriodDate": "15. März",
-    "mascotAlt": "Fröhlicher Mochi"
+    "nextPeriodDate": "30. Juni",
+    "avgCycle": "Ø Zyklus",
+    "cycleLengthValue": "28 Tage",
+    "mascotAlt": "Mochi beobachtet die Mondphasen durch ein Teleskop"
   },
   "Privacy": {
     "title1": "Perioden-Tracker",
@@ -183,6 +190,7 @@
         "badge3": ""
       }
     },
+    "mascotAlt": "Mochi in eine Decke gekuschelt, mit einem gesperrten iPhone im Arm",
     "staysTitle": "Bleibt bei dir",
     "stays": {
       "dates": "Periodendaten und Prognosen",
@@ -248,9 +256,7 @@
     "kicker": "Optionales Konto",
     "title": "Deine Perioden-App ohne Anmeldung.",
     "body": "Du kannst Mochi kostenlos und ohne Konto nutzen. Ein Konto brauchst du nur, wenn du die optionale Sicherung und Synchronisierung auf einem neuen iPhone möchtest.",
-    "backup": "Zyklus-Backup",
-    "synced": "Mit deinem Konto synchronisiert",
-    "imageAlt": "Mochi umarmt ein verschlossenes Tagebuch"
+    "imageAlt": "Mochi entspannt auf einer Wolke mit seinem iPhone, gesichert"
   },
   "FAQ": {
     "title1": "Perioden-",
@@ -291,7 +297,7 @@
     "title": "Dein Zyklus mit Mochi",
     "body1": "Lade deine kostenlose Perioden-App",
     "body2": "fürs iPhone und behalte deine Einträge im Blick.",
-    "imageAlt": "Mochi auf einem Kissen",
+    "imageAlt": "Mochi und seine Geschmacksfreunde winken Hallo",
     "brand": "Mochi: Periodentracker"
   },
   "Footer": {
@@ -317,7 +323,7 @@
     "title": "Datenschutz",
     "intro": "Dein Zyklus gehört dir. Hier erfährst du, was Mochi auf deinem iPhone speichert und niemals weitergibt.",
     "updated": "Zuletzt aktualisiert: {date}",
-    "heroAlt": "Ein fröhlicher rosa Mochi schützt ein verschlossenes Tagebuch unter einer blauen Glaskuppel",
+    "heroAlt": "Ein fröhlicher rosa Mochi, eingekuschelt in eine Decke, hält ein rosa iPhone mit einem Herzschloss auf dem Display",
     "short": "Kurz gesagt",
     "onThisPage": "Auf dieser Seite",
     "help": "Hilfe",
@@ -513,17 +519,6 @@
     "related": "Weiterlesen",
     "editorialNote": "Klare Quellen, benannte Grenzen, hilfreiche Informationen.",
     "editorialLink": "Unsere redaktionellen Grundsätze",
-    "newsletter": {
-      "title": "Neue Ratgeber,\neinmal im Monat",
-      "emailLabel": "Deine E-Mail-Adresse",
-      "submitLabel": "Abonnieren",
-      "note": "Kein Spam. Jederzeit abbestellbar.",
-      "emailNote": "Dein E-Mail-Programm öffnet sich, damit du die Anfrage senden kannst.",
-      "subject": "Das Mochi Journal abonnieren",
-      "requestBody": "Hallo Mochi,\n\nich möchte die monatlichen Ratgeber des Mochi Journals abonnieren.\nMeine E-Mail-Adresse ist {email}.\n\nVielen Dank!",
-      "requestMessage": "Sende die E-Mail, um dein Abonnement anzufragen. Falls sich dein E-Mail-Programm nicht geöffnet hat, nutze den Link unten.",
-      "openEmailLabel": "E-Mail-Anfrage öffnen"
-    },
     "ctaTitle": "Ein kleiner Begleiter für jede Phase.",
     "ctaAction": "Mochi entdecken",
     "articleNotice": "Allgemeine Informationen, keine medizinische Beratung. Dieser Artikel wurde nicht von medizinischem Fachpersonal geprüft.",

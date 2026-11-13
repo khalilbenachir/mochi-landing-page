@@ -4,19 +4,22 @@ export const LANDING_ASSETS = {
   accountMochi: "/mochi/account-mochi.webp",
   appIcon: "/mochi/app-icon.webp",
   closingMochi: "/mochi/closing-mochi.webp",
+  faqMochi: "/mochi/faq-mochi.webp",
+  freeMochi: "/mochi/free-mochi.webp",
   faces: {
     happy: "/mochi/faces/happy.webp",
-    headerHappy: "/mochi/faces/happy-header.webp",
-    wondering: "/mochi/faces/wondering.webp",
+    headerHappy: "/mochi/faces/header-mochi.webp",
   },
   heroMochi: "/mochi/hero-mochi.webp",
-  heroPhone: "/mochi/hero-phone.webp",
+  heroArt: "/mochi/hero-dreamland.webp",
   islandMochi: "/mochi/island-mochi.webp",
   manifestIcon192: "/mochi/app-icon-192.png",
   manifestIcon512: "/mochi/app-icon-512.png",
   notFoundMascot: "/mochi/not-found-mascot.png",
-  predictMochi: "/mochi/predict-mochi.webp",
+  plusMochi: "/mochi/plus-mochi.webp",
+  predictionMochi: "/mochi/prediction-mochi.webp",
   socialCard: "/mochi/social-card.png",
+  whyMochi: "/mochi/why-mochi.webp",
 } as const;
 
 export const FLAVOR_CARD_ASSETS = {

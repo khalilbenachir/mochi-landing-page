@@ -5,9 +5,21 @@ export type PolicySectionId = (typeof POLICY_SECTION_IDS)[number];
 export const POLICY_UPDATED_AT = "2026-11-09T00:00:00Z";
 
 export const PRIVACY_ASSETS = {
-  hero: "/privacy-art/privacy-dome.webp",
-  contact: "/privacy-art/privacy-contact.webp",
+  hero: "/privacy-art/privacy-mochi-blanket.webp",
+  contact: "/privacy-art/contact-mochi.webp",
 } as const;
+
+export const PRIVACY_HERO_SIZE = { width: 934, height: 900 } as const;
+
+/** Mochi icons (ChatGPT, from the app's Mochi) for the summary cards and the on-device callout. */
+export const PRIVACY_SUMMARY_ICONS = {
+  device: "/privacy-art/icon-device.webp",
+  account: "/privacy-art/icon-account.webp",
+  analytics: "/privacy-art/icon-analytics.webp",
+  backup: "/privacy-art/icon-backup.webp",
+  lock: "/privacy-art/icon-lock.webp",
+} as const;
+export type PrivacySummaryIconId = keyof typeof PRIVACY_SUMMARY_ICONS;
 
 export type PolicySectionCopy = {
   id: PolicySectionId;

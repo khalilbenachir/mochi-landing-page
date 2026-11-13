@@ -34,8 +34,8 @@
     "title2": "menstrual gratis",
     "title3": "para iPhone",
     "body": "Con Mochi, registra tu menstruación, síntomas y estado de ánimo en un calendario privado. Conoce tu ciclo con un pequeño compañero, sin crear una cuenta y también sin conexión.",
-    "mascotAlt": "Mochi, una mascota rosa sonriente, descansando sobre un cojín color crema",
-    "phoneAlt": "Pantalla de inicio de Mochi en iPhone mostrando el día 2 de la regla con los accesos Regla, Ánimo y Síntomas"
+    "mascotAlt": "Mochi abraza un corazón sobre una nube rosa bajo las fases de la luna, con sus amigos Mochi de matcha, ube y mango saludando",
+    "hello": "¡Hola, soy Mochi!"
   },
   "Island": {
     "title1": "Tu recordatorio",
@@ -71,6 +71,7 @@
     "title2": "racha, colecciona",
     "title3": "12 sabores Mochi",
     "body": "Registra un poco cada día y nuevos Mochi se unirán a tu colección.",
+    "unlocked": "¡Nuevo Mochi desbloqueado!",
     "items": {
       "strawberry": {
         "name": "Fresa",
@@ -129,9 +130,10 @@
     "body1": "Registra la fecha de tu última menstruación para calcular la duración de tus ciclos y consultar",
     "body2": "estimaciones de la próxima regla y la ventana fértil. Si tu ciclo es irregular, las fechas pueden variar más.",
     "disclaimer": "Una calculadora menstrual no puede saber si estás embarazada. Las estimaciones de ovulación no sirven como anticonceptivo.",
-    "phoneLabel": "Calendario de ciclo de Mochi con una regla de cinco días marcada",
-    "cycle": "Ciclo",
-    "month": "Mar 2025",
+    "phoneLabel": "Calendario de Mochi de junio: regla registrada, días fértiles, ovulación y próxima regla prevista",
+    "calendar": "Calendario",
+    "today": "Hoy",
+    "month": "Jun 2025",
     "weekdays": {
       "sun": "Dom",
       "mon": "Lun",
@@ -142,15 +144,20 @@
       "sat": "Sáb"
     },
     "period": "Regla",
-    "fertileWindow": "Ventana fértil",
+    "predicted": "Prevista",
+    "fertile": "Fértil",
     "ovulation": "Ovulación",
-    "nextPeriodIn": "Próxima regla en",
-    "nextPeriodValue": "12 días",
-    "cycleLength": "Duración del ciclo",
-    "cycleLengthValue": "28 días",
+    "cardLabel": "Tu ciclo: día 17 de 28, fase lútea, próxima regla el 30 de junio, ciclo medio de 28 días",
+    "yourCycle": "Tu ciclo",
+    "cycleDayValue": "Día 17 de 28",
+    "follicular": "Folicular",
+    "luteal": "Lútea",
+    "cycleStartDate": "2 jun",
     "nextPeriod": "Próxima regla",
-    "nextPeriodDate": "15 mar",
-    "mascotAlt": "Mochi feliz"
+    "nextPeriodDate": "30 jun",
+    "avgCycle": "Ciclo medio",
+    "cycleLengthValue": "28 días",
+    "mascotAlt": "Mochi observa las fases de la luna con un telescopio"
   },
   "Privacy": {
     "title1": "Tu ciclo se queda",
@@ -183,6 +190,7 @@
         "badge3": ""
       }
     },
+    "mascotAlt": "Mochi envuelto en una manta, abrazando un iPhone bloqueado",
     "staysTitle": "Se queda contigo",
     "stays": {
       "dates": "Fechas y predicciones",
@@ -248,9 +256,7 @@
     "kicker": "Cuenta opcional",
     "title": "Usa Mochi ya. Haz copia cuando quieras.",
     "body": "Todo funciona sin cuenta. Crea una cuenta gratis solo si quieres copia de seguridad y sincronización para un iPhone nuevo.",
-    "backup": "Copia del ciclo",
-    "synced": "Sincronizado con tu cuenta",
-    "imageAlt": "Mochi abrazando un diario con candado"
+    "imageAlt": "Mochi relajándose en una nube con su iPhone, con copia de seguridad"
   },
   "FAQ": {
     "title1": "FAQ del",
@@ -291,7 +297,7 @@
     "title": "Conoce tu ciclo con Mochi",
     "body1": "Descarga tu calendario menstrual gratis",
     "body2": "en iPhone y lleva tus fechas y síntomas contigo.",
-    "imageAlt": "Mochi descansando sobre un cojín",
+    "imageAlt": "Mochi y sus amigos de sabores saludando",
     "brand": "Mochi: calendario menstrual"
   },
   "Footer": {
@@ -317,7 +323,7 @@
     "title": "Tu privacidad",
     "intro": "Tu ciclo es tuyo. Esto es lo que Mochi guarda en tu iPhone y lo que nunca comparte.",
     "updated": "Última actualización: {date}",
-    "heroAlt": "Un Mochi rosa protege un diario cerrado bajo una cúpula azul",
+    "heroAlt": "Un Mochi rosa feliz, envuelto en una manta suave, abraza un iPhone rosa con un candado de corazón en la pantalla",
     "short": "En pocas palabras",
     "onThisPage": "En esta página",
     "help": "Ayuda",
@@ -513,17 +519,6 @@
     "related": "Sigue leyendo",
     "editorialNote": "Fuentes claras, límites explicados e información útil.",
     "editorialLink": "Nuestro criterio editorial",
-    "newsletter": {
-      "title": "Nuevas guías,\nuna vez al mes",
-      "emailLabel": "Tu correo electrónico",
-      "submitLabel": "Suscribirme",
-      "note": "Sin spam. Puedes darte de baja cuando quieras.",
-      "emailNote": "Se abrirá tu aplicación de correo para enviar la solicitud.",
-      "subject": "Suscripción a El diario de Mochi",
-      "requestBody": "Hola, Mochi:\n\nQuiero suscribirme a las guías mensuales de El diario de Mochi.\nMi correo es {email}.\n\n¡Gracias!",
-      "requestMessage": "Envía el correo para solicitar la suscripción. Si no se ha abierto tu aplicación de correo, usa el enlace de abajo.",
-      "openEmailLabel": "Abrir solicitud por correo"
-    },
     "ctaTitle": "Una pequeña compañía en cada fase.",
     "ctaAction": "Descubre Mochi",
     "articleNotice": "Información general, no asesoramiento médico. Este artículo no ha sido revisado por un profesional sanitario.",

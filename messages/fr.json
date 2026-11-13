@@ -34,8 +34,8 @@
     "title2": "des règles gratuit",
     "title3": "sur iPhone",
     "body": "Avec Mochi, suivez vos règles, notez vos symptômes et retrouvez les estimations de votre cycle dans un calendrier privé. Sans compte, avec un petit compagnon à chaque phase.",
-    "mascotAlt": "Mochi, une mascotte rose et souriante, posée sur un coussin crème",
-    "phoneAlt": "Écran d’accueil de Mochi sur iPhone affichant le deuxième jour des règles et les raccourcis Règles, Humeur et Symptômes"
+    "mascotAlt": "Mochi serre un cœur sur un nuage rose sous les phases de la lune, avec ses amis Mochi matcha, ube et mangue qui saluent",
+    "hello": "Coucou, moi c’est Mochi !"
   },
   "Island": {
     "title1": "Un rappel pour",
@@ -71,6 +71,7 @@
     "title2": "collectionnez",
     "title3": "12 Mochi",
     "body": "Notez un peu chaque jour et de nouveaux Mochi rejoindront votre collection.",
+    "unlocked": "Nouveau Mochi débloqué !",
     "items": {
       "strawberry": {
         "name": "Fraise",
@@ -129,9 +130,10 @@
     "body1": "Notez vos dates dans votre calendrier des règles gratuit en 2026 pour calculer la durée de vos cycles et estimer",
     "body2": "vos prochaines règles et votre fenêtre fertile, même si votre rythme varie.",
     "disclaimer": "Un calendrier d’ovulation fournit des estimations : il ne confirme ni l’ovulation ni une grossesse et ne sert pas de contraception.",
-    "phoneLabel": "Calendrier de cycle Mochi avec cinq jours de règles indiqués",
-    "cycle": "Cycle",
-    "month": "Mars 2025",
+    "phoneLabel": "Calendrier Mochi de juin : règles enregistrées, jours fertiles, ovulation et prochaines règles prévues",
+    "calendar": "Calendrier",
+    "today": "Aujourd’hui",
+    "month": "Juin 2025",
     "weekdays": {
       "sun": "Dim",
       "mon": "Lun",
@@ -142,15 +144,20 @@
       "sat": "Sam"
     },
     "period": "Règles",
-    "fertileWindow": "Fenêtre fertile",
+    "predicted": "Prévues",
+    "fertile": "Fertile",
     "ovulation": "Ovulation",
-    "nextPeriodIn": "Prochaines règles dans",
-    "nextPeriodValue": "12 jours",
-    "cycleLength": "Durée du cycle",
-    "cycleLengthValue": "28 jours",
+    "cardLabel": "Votre cycle : jour 17 sur 28, phase lutéale, prochaines règles le 30 juin, cycle moyen de 28 jours",
+    "yourCycle": "Votre cycle",
+    "cycleDayValue": "Jour 17 sur 28",
+    "follicular": "Folliculaire",
+    "luteal": "Lutéale",
+    "cycleStartDate": "2 juin",
     "nextPeriod": "Prochaines règles",
-    "nextPeriodDate": "15 mars",
-    "mascotAlt": "Mochi heureux"
+    "nextPeriodDate": "30 juin",
+    "avgCycle": "Cycle moyen",
+    "cycleLengthValue": "28 jours",
+    "mascotAlt": "Mochi observe les phases de la lune au télescope"
   },
   "Privacy": {
     "title1": "Votre cycle reste",
@@ -183,6 +190,7 @@
         "badge3": ""
       }
     },
+    "mascotAlt": "Mochi emmitouflé dans une couverture, qui serre un iPhone verrouillé",
     "staysTitle": "Reste avec vous",
     "stays": {
       "dates": "Dates des règles et prédictions",
@@ -248,9 +256,7 @@
     "kicker": "Compte facultatif",
     "title": "Utilisez Mochi maintenant. Sauvegardez quand vous voulez.",
     "body": "Tout fonctionne sans compte. Créez un compte gratuit uniquement si vous souhaitez sauvegarder et synchroniser vos données sur un nouvel iPhone.",
-    "backup": "Sauvegarde du cycle",
-    "synced": "Synchronisé avec votre compte",
-    "imageAlt": "Mochi serrant un journal verrouillé"
+    "imageAlt": "Mochi se détend sur un nuage avec son iPhone, sauvegardé"
   },
   "FAQ": {
     "title1": "FAQ du",
@@ -291,7 +297,7 @@
     "title": "Votre cycle, avec Mochi",
     "body1": "Téléchargez votre calendrier des règles",
     "body2": "gratuit sur iPhone et gardez vos repères à portée de main.",
-    "imageAlt": "Mochi posé sur un coussin",
+    "imageAlt": "Mochi et ses amis parfums qui disent coucou",
     "brand": "Mochi : suivi des règles"
   },
   "Footer": {
@@ -317,7 +323,7 @@
     "title": "Confidentialité",
     "intro": "Votre cycle vous appartient. Voici ce que Mochi garde sur votre iPhone et ce que l’app ne partage jamais.",
     "updated": "Mis à jour le {date}",
-    "heroAlt": "Un Mochi rose protège un journal violet verrouillé sous une bulle bleue",
+    "heroAlt": "Un Mochi rose tout content, emmitouflé dans une couverture douillette, serre un iPhone rose avec un cadenas en cœur à l’écran",
     "short": "En bref",
     "onThisPage": "Sur cette page",
     "help": "Aide",
@@ -513,17 +519,6 @@
     "related": "Pour continuer",
     "editorialNote": "Des sources claires, des limites expliquées, des informations utiles.",
     "editorialLink": "Notre démarche éditoriale",
-    "newsletter": {
-      "title": "De nouveaux guides,\nune fois par mois",
-      "emailLabel": "Votre adresse e-mail",
-      "submitLabel": "M’inscrire",
-      "note": "Pas de spam. Désinscription à tout moment.",
-      "emailNote": "Votre application de messagerie s’ouvrira pour envoyer votre demande.",
-      "subject": "Inscription au journal de Mochi",
-      "requestBody": "Bonjour Mochi,\n\nJe souhaite recevoir les guides mensuels du journal de Mochi.\nMon adresse e-mail est {email}.\n\nMerci !",
-      "requestMessage": "Envoyez cet e-mail pour demander votre inscription. Si votre messagerie ne s’est pas ouverte, utilisez le lien ci-dessous.",
-      "openEmailLabel": "Ouvrir la demande par e-mail"
-    },
     "ctaTitle": "Un petit compagnon à chaque phase.",
     "ctaAction": "Découvrir Mochi",
     "articleNotice": "Informations générales, sans valeur de conseil médical. Cet article n’a pas été relu par un professionnel de santé.",

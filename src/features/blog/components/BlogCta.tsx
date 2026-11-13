@@ -2,7 +2,6 @@ import Image from "next/image";
 import type { ComponentProps } from "react";
 import { AppStoreBadge } from "@/features/landing/components/shared/AppStoreBadges";
 import { Button } from "@/features/landing/components/shared/Button";
-import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { cn } from "@/lib/utils";
 function Root({ className, ...props }: ComponentProps<"section">) {
   return <section className={cn("overflow-hidden bg-island-band text-white [--spacing:1px]", className)} {...props} />;
@@ -11,7 +10,7 @@ function Content({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       className={cn(
-        "relative mx-auto flex min-h-[170px] max-w-[1200px] items-center gap-[30px] px-[48px] py-[28px] pr-[230px] max-nav:flex-col max-nav:items-start max-nav:gap-[18px] max-nav:pl-[24px] max-nav:pr-[150px] max-phone:pl-[20px] max-phone:pr-[20px]",
+        "relative mx-auto flex min-h-[170px] max-w-[1100px] items-center gap-[30px] px-[48px] py-[28px] pr-[230px] max-nav:flex-col max-nav:items-start max-nav:gap-[18px] max-nav:pl-[24px] max-nav:pr-[150px] max-phone:pl-[20px] max-phone:pr-[20px]",
         className,
       )}
       {...props}
@@ -35,9 +34,9 @@ function Store() {
   return <AppStoreBadge dark className="shrink-0 max-nav:w-full max-nav:justify-center" />;
 }
 function Artwork({
-  src = LANDING_ASSETS.heroMochi,
-  width = 1399,
-  height = 1122,
+  src = "/blog-art/companion-mochi.webp",
+  width = 600,
+  height = 530,
   className,
 }: {
   src?: string;

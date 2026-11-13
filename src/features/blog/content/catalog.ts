@@ -29,7 +29,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "pads",
     category: "period-care",
     slug: "how-often-to-change-your-pad",
-    image: "/blog-art/pad-care.webp",
+    image: "/blog-art/pad-care-mochi.webp",
     tone: "bg-prediction-band",
     publishedAt: "2026-11-10",
     featured: true,
@@ -45,7 +45,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "phases",
     category: "cycle-basics",
     slug: "four-phases-menstrual-cycle",
-    image: "/blog-art/cycle-phases.webp",
+    image: "/blog-art/cycle-phases-mochi.webp",
     tone: "bg-comparison-matcha-bg",
     publishedAt: "2026-11-10",
     sections: [
@@ -60,7 +60,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "predictions",
     category: "cycle-basics",
     slug: "how-period-trackers-predict",
-    image: "/blog-art/period-predictions.webp",
+    image: "/blog-art/period-predictions-mochi.webp",
     tone: "bg-flavors-pill-starter",
     publishedAt: "2026-11-10",
     sections: [
@@ -74,7 +74,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "cramps",
     category: "symptoms-moods",
     slug: "period-cramps-what-helps",
-    image: "/blog-art/period-cramps.webp",
+    image: "/blog-art/period-cramps-mochi.webp",
     tone: "bg-blog-lavender",
     publishedAt: "2026-11-10",
     sections: [
@@ -88,7 +88,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "moods",
     category: "symptoms-moods",
     slug: "mood-changes-during-your-cycle",
-    image: "/blog-art/cycle-moods.webp",
+    image: "/blog-art/cycle-moods-mochi.webp",
     tone: "bg-prediction-band",
     publishedAt: "2026-11-10",
     sections: [
@@ -102,7 +102,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "privacy",
     category: "privacy",
     slug: "private-period-app-iphone",
-    image: "/blog-art/privacy-cutout.webp",
+    image: "/blog-art/privacy-cutout-mochi.webp",
     tone: "bg-blog-pink",
     publishedAt: "2026-11-10",
     sections: [
@@ -117,7 +117,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "gettingStarted",
     category: "using-mochi",
     slug: "getting-started-with-mochi",
-    image: "/blog-art/getting-started.webp",
+    image: "/blog-art/getting-started-mochi.webp",
     tone: "bg-terms-callout",
     publishedAt: "2026-11-10",
     sections: [
@@ -131,7 +131,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "tracking",
     category: "cycle-basics",
     slug: "how-to-track-your-period",
-    image: "/blog-art/tracking-cutout.webp",
+    image: "/blog-art/tracking-cutout-mochi.webp",
     tone: "bg-blog-mint",
     publishedAt: "2026-11-10",
     sections: [
@@ -147,7 +147,7 @@ const CATALOG: readonly BlogPost[] = [
     id: "methods",
     category: "cycle-basics",
     slug: "period-app-vs-calendar",
-    image: "/blog-art/methods-cutout.webp",
+    image: "/blog-art/methods-cutout-mochi.webp",
     tone: "bg-blog-pink",
     publishedAt: "2026-11-10",
     sections: [
@@ -174,7 +174,7 @@ export const BLOG_PAGE_SEGMENTS: readonly (readonly string[])[] = [[], [EDITORIA
 export const BLOG_PATHS = BLOG_PAGE_SEGMENTS.map((segments) => blogPath(FALLBACK_BLOG_LOCALE, ...segments));
 
 export const BLOG_ART_SIZE = { width: 1200, height: 800 } as const;
-export const JOURNAL_ART_SIZE = { width: 1200, height: 875 } as const;
+export const JOURNAL_ART_SIZE = { width: 1200, height: 860 } as const;
 
 export function findBlogPost(slug: string) {
   return BLOG_POSTS.find((post) => post.slug === slug);

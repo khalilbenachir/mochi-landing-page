@@ -37,8 +37,9 @@ Terms-specific duplicate.
 
 | Asset | Dimensions | Size |
 | --- | --- | --- |
-| `public/terms-art/terms-mochi-scroll.webp` | 1024 × 819 | 85,868 bytes |
-| `public/privacy-art/privacy-contact.webp` | Existing shared asset | Reused with Privacy |
+| `public/terms-art/terms-mochi-reader.webp` | 1024 × 819 | 62,416 bytes (app Mochi with glasses and scroll, ChatGPT) |
+| `public/terms-art/icon-{medical,contraception,plus,privacy,warning}.webp` | 256 wide | Mochi icons for the summary cards and the health callout (ChatGPT) |
+| `public/privacy-art/contact-mochi.webp` | Shared asset | Reused with Privacy |
 
 Exact generation prompt:
 
@@ -54,3 +55,5 @@ Exact generation prompt:
 
 Terms theme colors are named tokens in `src/app/globals.css`. Summary icons are decorative
 code-native pictograms using those tokens; sidebar icons come from the existing Lucide set.
+
+The "On this page" menu is the shared `SideMenu` compound component (`src/components/side-menu/SideMenu.tsx`), the same one blog articles use.

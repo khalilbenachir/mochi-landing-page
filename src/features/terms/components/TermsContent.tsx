@@ -1,10 +1,12 @@
 "use client";
 
-import { createContext, useContext, useEffect, useSyncExternalStore, type ComponentProps, type ReactNode } from "react";
+import { useEffect, useSyncExternalStore, type ComponentProps, type ReactNode } from "react";
+import { Mail } from "lucide-react";
 import { Rays } from "@/features/landing/components/shared/decor";
 import { cn } from "@/lib/utils";
 import { TERMS_SECTION_IDS, type TermsSectionId } from "../content/terms";
-import { TermsIcon, TermsSummaryIcon } from "./TermsIcon";
+import { LEGAL_CALLOUT_ICON, LegalCallout } from "@/features/legal/components/LegalCallout";
+import { TermsSummaryIcon } from "./TermsIcon";
 
 function subscribeToHash(onChange: () => void) {
   window.addEventListener("hashchange", onChange);
@@ -23,19 +25,10 @@ function sectionFromHash(hash: string) {
   }
 }
 
-const TermsContentContext = createContext<TermsSectionId | null>(null);
-
-function useSelectedSection() {
-  const selected = useContext(TermsContentContext);
-  if (!selected) throw new Error("TermsContent components must be rendered inside TermsContent.Root");
-  return selected;
-}
-
-/** All text stays server-rendered and visible; hydration adds hash highlighting and focus only. */
+/** All text stays server-rendered and visible; hydration adds hash scrolling and heading focus only. The side menu is the shared SideMenu. */
 function TermsContentRoot({ children }: { children: ReactNode }) {
   const hash = useSyncExternalStore(subscribeToHash, getHash, getServerHash);
   const target = sectionFromHash(hash);
-  const selected: TermsSectionId = target ?? "using";
 
   // `hash` is a dependency on purpose: re-selecting the current section re-focuses its heading.
   useEffect(() => {
@@ -46,28 +39,7 @@ function TermsContentRoot({ children }: { children: ReactNode }) {
   }, [hash, target]);
 
   return (
-    <TermsContentContext.Provider value={selected}>
-      <div className="grid grid-cols-[278fr_660fr] items-start gap-28 max-nav:grid-cols-1 max-nav:gap-[28px]">{children}</div>
-    </TermsContentContext.Provider>
-  );
-}
-
-function TermsContentNavigation({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <aside className="sticky top-20 rounded-u-26 border border-policy-border bg-white p-12 pb-26 [box-shadow:0_4px_14px_var(--color-policy-shadow)] max-nav:static max-nav:p-[14px]">
-      <h2 className="px-10 pt-1 pb-16 text-u-21.5 font-max leading-[1.12] tracking-[-0.01em] max-poster:text-[24px] max-nav:pb-[12px] max-phone:text-[22px]">{label}</h2>
-      <nav aria-label={label} className="grid max-nav:grid-cols-2 max-phone:gap-x-[8px]">{children}</nav>
-    </aside>
-  );
-}
-
-function TermsContentNavigationLink({ id, children }: { id: TermsSectionId; children: ReactNode }) {
-  const selected = useSelectedSection();
-  return (
-    <a href={`#${id}`} aria-current={selected === id ? "location" : undefined} className={cn("group flex min-h-47 items-center gap-20 rounded-u-13 px-18 py-10 text-u-14.5 font-heavy leading-[1.25] tracking-[-0.01em] text-ink-navy hover:bg-policy-pink focus-visible:outline-2 focus-visible:outline-brand-coral focus-visible:outline-offset-2 max-poster:text-[15px] max-nav:gap-[10px] max-nav:px-[10px]", selected === id && "bg-policy-pink text-mochi-pink-ink")}>
-      <TermsIcon id={id} className="size-28 flex-none max-nav:size-[24px]" />
-      <span className={cn("flex min-h-27 min-w-0 flex-1 items-center wrap-anywhere", selected !== id && "border-b border-policy-border pb-6")}>{children}</span>
-    </a>
+    <div className="grid grid-cols-[278fr_660fr] items-start gap-28 max-nav:grid-cols-1 max-nav:gap-[28px]">{children}</div>
   );
 }
 
@@ -76,7 +48,7 @@ function TermsContentArticle(props: ComponentProps<"article">) {
 }
 
 function TermsContentSection({ id, ...props }: Omit<ComponentProps<"section">, "id"> & { id: TermsSectionId }) {
-  return <section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24" {...props} />;
+  return <section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-[96px]" {...props} />;
 }
 
 function TermsContentHeading({ id, children }: { id: `${TermsSectionId}-title`; children: ReactNode }) {
@@ -94,10 +66,9 @@ function TermsContentText({ detail = false, className, ...props }: ComponentProp
 
 function TermsContentCallout({ children }: { children: ReactNode }) {
   return (
-    <div className="mt-20 flex items-center gap-24 rounded-u-22 bg-terms-callout px-26 py-17 text-u-[14.6] font-heavy leading-[1.3] tracking-[-0.01em] max-poster:text-[17px] max-nav:gap-[18px] max-nav:px-[20px] max-nav:py-[20px] max-phone:text-[15px]">
-      <TermsSummaryIcon id="warning" className="size-62 flex-none max-nav:size-[46px]" />
-      <p className="border-l border-ink-navy/40 pl-24 max-nav:pl-[18px]">{children}</p>
-    </div>
+    <LegalCallout tone="cream" icon={<TermsSummaryIcon id="warning" className={LEGAL_CALLOUT_ICON} />}>
+      {children}
+    </LegalCallout>
   );
 }
 
@@ -108,15 +79,13 @@ function TermsContentLink(props: ComponentProps<"a">) {
 function TermsContentContactLink({ children, ...props }: ComponentProps<"a">) {
   return (
     <a className="mt-20 inline-flex max-w-full items-center gap-10 rounded-full bg-brand-coral px-24 py-13 wrap-anywhere font-black text-white hover:bg-mochi-pink-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral" {...props}>
-      <TermsIcon id="contact" className="size-22 flex-none" />{children}
+      <Mail className="size-22 flex-none" strokeWidth={2.25} aria-hidden="true" />{children}
     </a>
   );
 }
 
 export {
   TermsContentRoot as Root,
-  TermsContentNavigation as Navigation,
-  TermsContentNavigationLink as NavigationLink,
   TermsContentArticle as Article,
   TermsContentSection as Section,
   TermsContentHeading as Heading,

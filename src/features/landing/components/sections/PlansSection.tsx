@@ -1,12 +1,11 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { FLAVOR_CARD_ASSETS, LANDING_ASSETS } from "@/features/landing/content/assets";
+import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { FREE_FEATURE_IDS, PLUS_FEATURE_IDS, PLUS_PRICE } from "@/features/landing/content/landing";
-import { CheckBadge, HeartOutline, Rays } from "@/features/landing/components/shared/decor";
+import { CheckBadge, HeartOutline } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { cn } from "@/lib/utils";
 
-const RAYS = "absolute z-2 text-sun-ray max-poster:hidden";
 const PLAN = "relative z-2 pb-14 pl-16 pr-18 pt-13 rounded-u-12 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:w-262";
 const PLAN_TITLE = "mb-10 flex items-center gap-5 text-u-19.5 font-max tracking-[-0.02em] whitespace-nowrap";
 const PLAN_ITEM = "flex items-start gap-10 text-u-11 font-extrabold leading-[1.2]";
@@ -23,8 +22,8 @@ export function PlansSection() {
           <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span> <span className="block max-poster:inline">{t("title3")}</span>
         </h2>
         <HeartOutline className="absolute left-222 bottom-[calc(var(--section-space)*0.45)] w-32 rotate-10 text-brand-coral max-poster:hidden" strokeWidth={2.6} />
-        <div className="absolute left-90 bottom-[calc(var(--section-space)*0.2)] w-120 max-poster:hidden" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
+        <div className="absolute left-96 bottom-[calc(var(--section-space)*0.2)] w-100 max-poster:hidden" aria-hidden="true">
+          <Image className="h-auto w-full" src={LANDING_ASSETS.freeMochi} alt="" width={420} height={352} sizes="12vw" />
         </div>
 
         <div className={cn(PLAN, "w-223 bg-white [box-shadow:0_calc(3*var(--spacing))_calc(10*var(--spacing))_var(--color-plans-free-shadow)] max-poster:mt-[24px]")}>
@@ -32,11 +31,8 @@ export function PlansSection() {
           <ul className="grid gap-6">{FREE_FEATURE_IDS.map((id) => <li key={id} className={PLAN_ITEM}><CheckBadge className="-mt-1 size-15" />{t(`freeFeatures.${id}`)}</li>)}</ul>
         </div>
 
-        <div className="absolute z-1 left-540 top-[calc(var(--section-space)-60*var(--spacing))] flex w-180 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:-mb-12 max-poster:mt-[22px]" aria-hidden="true">
-          <Rays shape="burst" className={cn(RAYS, "-left-22 top-6 w-20")} />
-          <Image className="h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.chocolate} alt="" width={380} height={262} sizes="8vw" />
-          <Image className="-ml-2 h-auto w-[50%]" src={FLAVOR_CARD_ASSETS.hojicha} alt="" width={380} height={262} sizes="8vw" />
-          <Rays shape="burst" className={cn(RAYS, "-right-26 top-8 w-20")} flip />
+        <div className="absolute z-3 left-726 top-[calc(var(--section-space)-90*var(--spacing))] w-128 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[18px] max-poster:-mb-16 max-poster:w-96 max-poster:translate-x-84" aria-hidden="true">
+          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={480} height={442} sizes="(max-width: 1099px) 30vw, 10vw" />
         </div>
         <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-22 place-items-center rounded-u-7 bg-white px-10 text-u-12.5 text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>

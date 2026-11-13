@@ -8,17 +8,7 @@ their unprefixed English counterparts.
 The index and all reading pages reuse the site's existing header and footer. The body
 follows the supplied Journal references: a writer mascot masthead, category pills,
 featured guide, three-column cards, pastel article heroes, sticky contents and sharing,
-a quick answer, inline app CTA, article questions, and related reading. The Journal and editorial page end with a newsletter banner matching the supplied
-purple reference, with a labelled email field, yellow Subscribe button and sleeping mascot.
-`NEXT_PUBLIC_NEWSLETTER_FORM_ACTION` configures a public HTTPS form endpoint accepting
-POST field `email`; the provider controls confirmation and unsubscribe handling.
-The value must be an absolute HTTPS URL; anything else fails the build
-(`content/newsletter.ts`). By default, Subscribe opens a prefilled email request to
-`NEWSLETTER_RECIPIENT` (`hello@mochiii.app`, in `content/newsletter.ts`), the recipient
-supplied by the owner. The visitor must send that email. The form explains
-this before submission and offers an explicit mailto fallback link afterward; it
-never claims that a subscription was completed. No email is sent by the application,
-and no subscriber data is stored locally. Never add API keys to the public form action.
+a quick answer, inline app CTA, article questions, and related reading.
 
 The privacy topic reuses `/blog/private-period-app-iphone`; existing tracking and
 calendar-comparison URLs remain valid. Unknown slugs return 404. Every language shows the same
@@ -28,7 +18,7 @@ Switching language on a blog page keeps the same page.
 
 ## Structure
 
-`BlogCard`, `BlogArticle`, `BlogCta`, `NewsletterBanner`, `BlogShell`, and `BlogFilters` expose compound APIs.
+`BlogCard`, `BlogArticle`, `BlogCta`, `BlogShell`, and `BlogFilters` expose compound APIs.
 Article content and cards are Server Components that read labels with `useTranslations("Blog")`
 and the locale with `useBlogLocale()`. `BlogFilters.client.tsx` owns only the selected category
 (mirrored to `?category=`); counts are pluralized on the server. The contents and share controls
@@ -45,7 +35,6 @@ brand marks as inline SVG. Article questions use native `details`.
   segments. Link IDs are validated against the catalog, URLs use the current blog locale,
   and reading time counts link labels as visible text. Raw HTML is not supported.
 - `messages/<locale>.json` → `Blog`: interface labels, source names and the editorial page.
-- `content/newsletter.ts`: newsletter recipient and validated form action.
 
 `client-boundary.test.ts` keeps article JSON and whole message files out of client bundles.
 
@@ -89,28 +78,28 @@ the complete guide.
 
 ## Artwork
 
-All illustrations were generated with the built-in imagegen tool on 10 November 2026,
-using the existing Mochi mascot as the family reference. Original PNGs are retained in
-the tool output location. The deployed images are WebP files under `public/blog-art`.
+All illustrations were redrawn in ChatGPT on 13 November 2026 from the iOS app's own Mochi
+(`mochi-face-happy.png` and `mochi-scene-plus.png`) as the reference, keeping each scene from
+the first set (10 November 2026) and dropping the yellow stars and sparkles. The deployed images are WebP files under `public/blog-art`.
 New illustrations and legacy hero cutouts preserve transparency. They are editorial
 art, not medical results or verified app screenshots.
 
 | File under `public/blog-art` | Dimensions | Purpose |
 | --- | --- | --- |
-| `newsletter-mochi.webp` | 1200×800 | Sleeping Mochi on a cream cushion |
-| `journal-mochi.webp` | 1200×875 | Purple-beret writer with an open journal |
-| `pad-care.webp` | 1200×800 | Pad, pink Mochi and purple clock |
-| `cycle-phases.webp` | 1200×800 | Green Mochi and symbolic cycle wheel |
-| `period-predictions.webp` | 1200×800 | Yellow Mochi and calendar |
-| `period-cramps.webp` | 1200×800 | Lavender Mochi and hot-water bottle |
-| `cycle-moods.webp` | 1200×800 | Blue Mochi and heart thought bubble |
-| `getting-started.webp` | 1200×800 | Mochi beside a generic illustrated phone |
-| `tracking-cutout.webp` | 1200×800 | Transparent tracking hero |
-| `privacy-cutout.webp` | 1200×800 | Transparent privacy hero |
-| `methods-cutout.webp` | 1200×800 | Transparent calendar-comparison hero |
+| `companion-mochi.webp` | 600×530 | The app's Mochi hugging a heart and waving, for the in-article "Let Mochi keep you company" card |
+| `journal-writer.webp` | 1200×860 | The app's Mochi in a lavender beret, writing in an open journal (ChatGPT, from the app's Mochi references) |
+| `pad-care-mochi.webp` | 1200×800 | Mochi on its cushion with a pad and a purple clock |
+| `cycle-phases-mochi.webp` | 1200×800 | Mochi on its cushion beside the cycle wheel |
+| `period-predictions-mochi.webp` | 1200×800 | Mochi on its cushion with a calendar |
+| `period-cramps-mochi.webp` | 1200×800 | Mochi hugging a hot-water bottle |
+| `cycle-moods-mochi.webp` | 1200×800 | Mochi with a heart thought bubble |
+| `getting-started-mochi.webp` | 1200×800 | Mochi waving beside a generic illustrated phone |
+| `tracking-cutout-mochi.webp` | 1200×800 | Mochi with a calendar and pencil |
+| `privacy-cutout-mochi.webp` | 1200×800 | Mochi holding a lavender lock shield |
+| `methods-cutout-mochi.webp` | 1200×800 | Mochi between a calendar and a phone checklist |
 
 Full prompts, references and encoding settings are recorded in `docs/blog/`
-(`artwork-prompts.json`, `redesign-artwork-prompts.json`, `newsletter-artwork-prompt.json`).
+(`artwork-prompts.json`, `redesign-artwork-prompts.json`).
 The original tracking, privacy and comparison cards that the redesigned heroes were derived
 from are kept as provenance in `docs/blog/reference-art/`; they are not deployed.
 New images use `cwebp -q 82 -resize 1200 0`; the cycle wheel uses quality 70,

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Lightbulb, TriangleAlert } from "lucide-react";
 import { useFormatter, useTranslations } from "next-intl";
+import { HeartOutline } from "@/features/landing/components/shared/decor";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
+import { TERMS_SUMMARY_ICONS } from "@/features/terms/content/terms";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
 import { BLOG_ART_SIZE, BLOG_POSTS, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
 import { articleReadingMinutes, articleSourceIds, getArticleCopy, getArticleSection, type ArticleTable } from "../content/copy";
+import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { useBlogLocale, useBlogRoutes } from "../i18n";
 import { BLOG_SEGMENT } from "../locales";
 import { ArticleNavigation } from "./ArticleNavigation";
@@ -80,7 +82,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
 
   return (
     <section className={post.tone} aria-labelledby="article-title">
-      <BlogShell.Container className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-phone:pt-[18px]">
+      <PosterStage spacing="none" className="grid grid-cols-[1.6fr_1fr] items-center gap-[20px] px-56 py-[22px] max-nav:grid-cols-1 max-nav:gap-0 max-nav:px-[24px] max-phone:px-[20px] max-phone:pt-[18px]">
         <BlogArticle.Header>
           <nav aria-label={t("back")} className="mb-[12px] flex gap-[9px] text-[14px] font-heavy">
             <Link href={routes.index} className="underline-offset-4 hover:underline">
@@ -118,7 +120,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
           sizes="(max-width: 760px) 320px, 420px"
           className="h-auto max-h-[270px] w-full object-contain max-nav:max-h-[200px] max-nav:max-w-[340px] max-nav:justify-self-center"
         />
-      </BlogShell.Container>
+      </PosterStage>
     </section>
   );
 }
@@ -131,8 +133,8 @@ function QuickAnswer({ intro }: { intro: string }) {
       aria-labelledby="quick-answer-title"
       className="flex scroll-mt-[24px] items-start gap-[16px] rounded-[20px] bg-blog-pink px-[22px] py-[17px] max-phone:gap-[12px] max-phone:px-[16px]"
     >
-      <Lightbulb aria-hidden="true" className="mt-[3px] size-[38px] shrink-0 text-mochi-pink-ink max-phone:size-[28px]" strokeWidth={1.7} />
-      <div className="min-w-0 border-l border-mochi-pink-ink/25 pl-[16px] max-phone:pl-[12px]">
+      <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="mt-[2px] h-auto w-[52px] shrink-0 -rotate-6 max-phone:w-[40px]" />
+      <div className="min-w-0">
         <h2 id="quick-answer-title" className="text-[25px] font-max leading-[1.1] max-phone:text-[23px]">
           {t("quickAnswer")}
         </h2>
@@ -181,27 +183,43 @@ function ArticleSection({ post, section: { id, sources } }: { post: BlogPost; se
   );
 }
 
-function ArticleCta({ post }: { post: BlogPost }) {
+/** In-article app CTA: the companion Mochi pops over a violet card, next to the App Store badge. */
+function ArticleCta() {
   const t = useTranslations("Blog");
   return (
-    <BlogCta.Root className="mt-[24px] rounded-[20px]">
-      <BlogCta.Content className="min-h-[120px] gap-[18px] py-[20px] pl-[145px] pr-[20px] max-poster:flex-col max-poster:items-start max-poster:pl-[20px] max-poster:pr-[20px] max-nav:items-center max-nav:pl-[20px] max-nav:pr-[20px] max-nav:text-center">
-        <BlogCta.Artwork src={post.image} {...BLOG_ART_SIZE} className="left-[8px] right-auto top-[10px] bottom-auto w-[128px] max-poster:hidden" />
-        <div className="max-nav:w-full">
-          <BlogCta.Title className="text-[24px] max-nav:mx-auto max-nav:max-w-none max-phone:text-[24px]">{t("inlineCtaTitle")}</BlogCta.Title>
-          <BlogCta.Description className="text-[15px] max-nav:mx-auto max-nav:max-w-none">{t("inlineCtaDescription")}</BlogCta.Description>
-        </div>
+    <section
+      className="relative mt-[56px] grid grid-cols-[150px_1fr_auto] [--spacing:1px] items-center gap-x-[22px] rounded-[24px] bg-[linear-gradient(120deg,var(--color-island-band),var(--color-blog-cta-glow))] px-[26px] py-[22px] text-white [box-shadow:0_14px_30px_var(--color-blog-cta-shadow)] max-poster:grid-cols-[120px_1fr] max-poster:gap-y-[16px] max-nav:mt-[84px] max-nav:grid-cols-1 max-nav:justify-items-center max-nav:px-[20px] max-nav:pb-[24px] max-nav:pt-[78px] max-nav:text-center"
+      aria-labelledby="article-cta-title"
+    >
+      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[24px]" aria-hidden="true">
+        <div className="absolute -right-[60px] -top-[80px] size-[260px] rounded-full bg-[radial-gradient(closest-side,var(--color-blog-cta-light),transparent)]" />
+        <HeartOutline className="absolute right-[34%] top-[14px] w-[22px] rotate-12 text-white/35 max-nav:hidden" strokeWidth={2.4} />
+        <HeartOutline className="absolute bottom-[12px] left-[42%] w-[16px] -rotate-12 text-white/25" strokeWidth={2.4} />
+      </div>
+      <Image
+        src="/blog-art/companion-mochi.webp"
+        width={600}
+        height={530}
+        alt=""
+        sizes="(max-width: 760px) 130px, 170px"
+        className="relative z-1 -mt-[64px] -ml-[6px] h-auto w-[170px] max-w-none -rotate-6 animate-float [filter:drop-shadow(0_8px_10px_var(--color-blog-cta-shadow))] max-poster:w-[140px] max-nav:absolute max-nav:left-1/2 max-nav:top-[-62px] max-nav:m-0 max-nav:w-[130px] max-nav:-translate-x-1/2"
+      />
+      <div className="relative z-1 min-w-0">
+        <h2 id="article-cta-title" className="text-pretty text-[26px] font-max leading-[1.1] tracking-[-0.02em] max-phone:text-[23px]">{t("inlineCtaTitle")}</h2>
+        <p className="mt-[6px] max-w-[440px] text-[15px] font-semibold leading-[1.4] text-white/90 max-nav:mx-auto">{t("inlineCtaDescription")}</p>
+      </div>
+      <div className="relative z-1 flex items-center max-poster:col-start-2 max-nav:col-start-1">
         <BlogCta.Store />
-      </BlogCta.Content>
-    </BlogCta.Root>
+      </div>
+    </section>
   );
 }
 
 function ArticleNotice() {
   const t = useTranslations("Blog");
   return (
-    <aside className="mt-[14px] flex items-start gap-[12px] rounded-[14px] bg-journal-warning px-[20px] py-[14px] text-[14px] font-medium leading-[1.5]">
-      <TriangleAlert aria-hidden="true" className="size-[24px] shrink-0 text-journal-warning-ink" />
+    <aside className="mt-[14px] flex items-center gap-[12px] rounded-[18px] bg-journal-warning px-[16px] py-[10px] text-[14px] font-medium leading-[1.5]">
+      <Image src={TERMS_SUMMARY_ICONS.warning} alt="" width={256} height={270} className="h-auto w-[40px] shrink-0 -rotate-6" />
       <p>{t("articleNotice")}</p>
     </aside>
   );
@@ -296,7 +314,7 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
       <BlogShell.Header route={`/${BLOG_SEGMENT}/${post.slug}`} />
       <BlogArticle.Root>
         <ArticleHero post={post} />
-        <BlogShell.Container>
+        <PosterStage spacing="none" className="px-31 max-nav:px-[20px]">
           <BlogArticle.Layout>
             <ArticleNavigation items={navigationItems} title={copy.title} url={`${SITE_URL}${routes.post(post.slug)}`} labels={shareLabels} />
             <div className="min-w-0">
@@ -306,13 +324,13 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
                   <ArticleSection key={section.id} post={post} section={section} />
                 ))}
               </BlogArticle.Content>
-              <ArticleCta post={post} />
+              <ArticleCta />
               <ArticleNotice />
               <ArticleQuestions post={post} />
               <ArticleSources post={post} />
             </div>
           </BlogArticle.Layout>
-        </BlogShell.Container>
+        </PosterStage>
       </BlogArticle.Root>
       <RelatedPosts post={post} />
     </BlogShell.Root>

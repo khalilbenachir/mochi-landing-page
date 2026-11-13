@@ -69,6 +69,17 @@
     80% { transform: scale(1.03, 0.98); }
     100% { transform: scale(1, 1); }
   }
+  /* Hero art: Mochi bobs gently, petals drift. Off under prefers-reduced-motion (global switch below). */
+  --animate-float: float 6s ease-in-out infinite;
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2.2%); }
+  }
+  --animate-drift: drift 7s ease-in-out infinite;
+  @keyframes drift {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(14px) rotate(16deg); }
+  }
 
   /* Shared */
   --color-sun: #ffd93d;
@@ -79,11 +90,18 @@
   --color-ink-deep: #1d2b4a;
   --color-brand-coral: var(--color-hero-band);
   --color-brand-rose: #f2558a;
-  --color-cycle-period: #ef4a7a;
-  --color-cycle-next-period: #f2558a;
-  --color-cycle-fertile: #fbc6dc;
-  --color-cycle-ovulation: #9b6be6;
-  --color-cycle-length: #9b7bea;
+  /* Cycle phases, the app's MochiColor palette (pink period, teal fertile, indigo ovulation, orange luteal). */
+  --color-cycle-period: #f2577c;
+  --color-cycle-period-ink: #d2335c;
+  --color-cycle-follicular: #bfe6f3;
+  --color-cycle-fertile: #45b5da;
+  --color-cycle-fertile-tint: #ddf1f9;
+  --color-cycle-fertile-ink: #14698a;
+  --color-cycle-ovulation: #4b47b0;
+  --color-cycle-ovulation-tint: #e6e5f7;
+  --color-cycle-luteal: #f7b036;
+  --color-cycle-today-ring: #8a94a3;
+  --color-cycle-tile: #f5f7fa;
 
   /* Blog: editorial surfaces and accessible links. */
   --color-blog-border: #e9e4df;
@@ -96,7 +114,7 @@
   --color-blog-link: #933452;
   --color-journal-canvas: #fff8f1;
   --color-journal-warning: #fff1d4;
-  --color-journal-warning-ink: #8a5313;
+  --color-share-x: #0f1419;
   --color-share-facebook: #1877f2;
   --color-share-whatsapp: #168c44;
 
@@ -104,11 +122,6 @@
   --color-landing-canvas: #f7f4ef;
   --color-landing-account-band: #eee8fa;
   --color-landing-account-text: #16284c;
-  --color-landing-account-card-shadow: rgba(79, 54, 103, 0.14);
-  --color-landing-account-icon: #574cc2;
-  --color-landing-account-caption: #767d8c;
-  --color-landing-account-badge-bg: #c8f3e8;
-  --color-landing-account-badge-text: #1e6e4e;
 
   /* Hero */
   --color-hero-band: #f44c80;
@@ -116,8 +129,8 @@
   --color-hero-locale-mobile-bg: #f7d6e2;
   --color-hero-badge-shadow: rgba(120, 18, 52, 0.18);
   --color-hero-title-shadow: rgba(110, 16, 48, 0.22);
-  --color-hero-sticker-shadow: rgba(110, 16, 48, 0.18);
-  --color-hero-phone-shadow: rgba(90, 10, 40, 0.28);
+  --color-hero-glow: rgba(255, 222, 236, 0.55);
+  --color-hero-bubble-shadow: rgba(110, 16, 48, 0.2);
   --color-hero-vignette: rgba(214, 40, 96, 0.25);
   --color-hero-menu-icon: #ef356c;
   --color-hero-mobile-menu-nav-shadow: rgba(46, 22, 55, .3);
@@ -128,6 +141,10 @@
 
   /* Island */
   --color-island-band: #4743b1;
+  /* Blog article CTA card: violet gradient end, top-right glow and card shadow. */
+  --color-blog-cta-glow: #7a62e0;
+  --color-blog-cta-light: rgba(255, 214, 240, 0.45);
+  --color-blog-cta-shadow: rgba(52, 40, 140, 0.28);
   --color-island-screen: #f5cee0;
   --color-island-drop: #f2497a;
   --color-island-phone-border: #e9e8f0;
@@ -144,16 +161,6 @@
   /* Mood */
   --color-mood-band: #2fb6e3;
   --color-mood-pill-shadow: rgba(10, 80, 120, 0.15);
-  --color-mood-phone-border: #ddd7f0;
-  --color-mood-phone-bg: #0b0b0f;
-  --color-mood-phone-shadow: #b6b0cf;
-  --color-mood-phone-shadow-2: rgba(8, 60, 100, 0.3);
-  --color-mood-screen-bg: #fdfbfe;
-  --color-mood-face-shadow: rgba(70, 40, 110, 0.18);
-  --color-mood-symptom-cramps: #ec3f78;
-  --color-mood-symptom-bloating: #7a55d6;
-  --color-mood-symptom-headache: #8a5be0;
-  --color-mood-symptom-tired: #5b4fc9;
   --color-mood-chip-cramps: #fde0ea;
   --color-mood-chip-violet: #ece2fb;
   --color-mood-face-joy: #f2497a;
@@ -181,23 +188,11 @@
   --color-prediction-phone-shadow: rgba(20, 80, 70, 0.22);
   --color-prediction-calendar-label: #6f7789;
   --color-prediction-card-shadow: rgba(20, 90, 80, 0.14);
-  --color-prediction-ring-1: #f04f86;
-  --color-prediction-ring-2: #f37fae;
-  --color-prediction-ring-3: #c58ce9;
-  --color-prediction-ring-4: #a28ff0;
-  --color-prediction-ring-5: #8c9ff0;
-  --color-prediction-ring-6: #f9d6e6;
-  --color-prediction-ring-7: #fbe3ee;
-  --color-prediction-ring-8: #f04f86;
-  --color-prediction-fact-divider: #f0eef3;
-  --color-prediction-mascot-bg: #93dbea;
 
   /* Privacy */
   --color-privacy-band: #213459;
   --color-privacy-gold: #f2c62f;
   --color-privacy-body-text: #e3e9f6;
-  --color-privacy-hug-shadow: rgba(150, 20, 60, 0.35);
-  --color-privacy-promise-divider: rgba(255, 255, 255, 0.28);
   --color-privacy-promise-detail-text: #eef2fb;
   --color-privacy-hug-highlight: #ff8db3;
 
@@ -206,15 +201,12 @@
   --color-policy-mint: #bff4e7;
   --color-policy-pink: #fde6ef;
   --color-policy-cream: #fff6e8;
-  --color-policy-border: #e8e9ed;
   --color-policy-purple: #7751c3;
-  --color-policy-blue: #27b5dc;
   --color-policy-shadow: rgba(23, 42, 79, 0.07);
 
   /* Terms of use */
   --color-terms-hero: #30b3cf;
   --color-terms-summary: #ffb32c;
-  --color-terms-orange: #fa9400;
   --color-terms-callout: #ffedce;
   --color-terms-rays: #fff18b;
 
@@ -236,11 +228,8 @@
 
   /* FAQ */
   --color-faq-band: #fef2e6;
-  --color-faq-question-text: #a06be6;
-  --color-faq-heart-shadow: rgba(200, 60, 110, 0.3);
   --color-faq-item-shadow: rgba(80, 50, 40, 0.18);
   --color-faq-answer-text: #3a4462;
-  --color-faq-heart: #f585ad;
 
   /* Closing */
   --color-closing-band: #f74c80;

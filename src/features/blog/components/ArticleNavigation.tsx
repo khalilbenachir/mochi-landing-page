@@ -1,13 +1,14 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
-import { ChevronDown, Link as LinkIcon } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Check, Link as LinkIcon } from "lucide-react";
+import * as SideMenu from "@/components/side-menu/SideMenu";
+import type { SideMenuItem } from "@/components/side-menu/SideMenu";
 import { cn } from "@/lib/utils";
 import { SocialIcon } from "./SocialIcons";
 
-type Item = { id: string; label: string };
 type Props = {
-  items: Item[];
+  items: SideMenuItem[];
   url: string;
   title: string;
   labels: {
@@ -23,29 +24,26 @@ type Props = {
 };
 
 const shareButton =
-  "grid size-[44px] shrink-0 place-items-center rounded-full transition-[background-color,transform] hover:-translate-y-[2px] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink";
+  "relative grid size-[44px] flex-none place-items-center rounded-full ring-[3px] ring-white [box-shadow:0_4px_0_var(--color-blog-shadow)] transition-[background-color,transform,box-shadow] before:absolute before:top-[7px] before:left-[9px] before:h-[6px] before:w-[11px] before:-rotate-[30deg] before:rounded-full before:bg-white/40 hover:-translate-y-[3px] hover:-rotate-6 hover:[box-shadow:0_7px_0_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink max-poster:size-[38px]";
 
-/** Sticky contents with scroll tracking, plus copy-link and share actions: the article's only client island. */
+/** The article's side menu: the shared SideMenu (contents and progress) plus the share panel. */
 export function ArticleNavigation({ items, url, title, labels }: Props) {
-  const [active, setActive] = useState(items[0]?.id ?? "quick-answer");
-  const [expanded, setExpanded] = useState(false);
-  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "error">("idle");
-  const contentId = useId();
+  return (
+    <SideMenu.Root items={items}>
+      <SideMenu.Header title={labels.heading}>
+        <SideMenu.Progress />
+      </SideMenu.Header>
+      <SideMenu.Body>
+        <SideMenu.List label={labels.heading} />
+        <ArticleShare url={url} title={title} labels={labels} />
+      </SideMenu.Body>
+    </SideMenu.Root>
+  );
+}
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries.filter((item) => item.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-        if (entry) setActive(entry.target.id);
-      },
-      { rootMargin: "-10% 0px -65% 0px" },
-    );
-    for (const { id } of items) {
-      const target = document.getElementById(id);
-      if (target) observer.observe(target);
-    }
-    return () => observer.disconnect();
-  }, [items]);
+/** Copy link and share actions, with visible copy feedback. */
+function ArticleShare({ url, title, labels }: Omit<Props, "items">) {
+  const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "error">("idle");
 
   useEffect(() => {
     if (copyStatus === "idle") return;
@@ -65,58 +63,43 @@ export function ArticleNavigation({ items, url, title, labels }: Props) {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
   const shareLinks = [
-    { platform: "x", label: labels.x, href: `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`, tone: "bg-landing-canvas text-ink-navy" },
+    { platform: "x", label: labels.x, href: `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`, tone: "bg-share-x text-white" },
     { platform: "facebook", label: labels.facebook, href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, tone: "bg-share-facebook text-white" },
-    { platform: "whatsapp", label: labels.whatsApp, href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, tone: "bg-blog-mint text-share-whatsapp" },
+    { platform: "whatsapp", label: labels.whatsApp, href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, tone: "bg-share-whatsapp text-white" },
   ] as const;
 
   return (
-    <aside className="sticky top-[24px] self-start rounded-[22px] border border-blog-border bg-white p-[18px] [box-shadow:0_3px_10px_var(--color-blog-shadow)] max-nav:static max-nav:p-[14px]">
-      <h2 className="mb-[16px] text-[26px] font-max leading-[1.1] tracking-[-0.025em] max-nav:hidden">{labels.heading}</h2>
-      <button
-        type="button"
-        aria-expanded={expanded}
-        aria-controls={contentId}
-        onClick={() => setExpanded((value) => !value)}
-        className="hidden min-h-[44px] w-full cursor-pointer items-center justify-between gap-[16px] rounded-[8px] text-left text-[20px] font-heavy focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink max-nav:flex"
-      >
-        {labels.heading}
-        <ChevronDown aria-hidden="true" className={cn("size-[20px] transition-[rotate]", expanded && "rotate-180")} />
-      </button>
-      <div id={contentId} className={cn(!expanded && "max-nav:hidden")}>
-        <nav aria-label={labels.heading} className="max-nav:mt-[14px]">
-          <ol className="m-0 grid list-none gap-[6px] p-0">
-            {items.map(({ id, label }) => (
-              <li key={id} className="min-w-0">
-                <a
-                  href={`#${id}`}
-                  onClick={() => setActive(id)}
-                  aria-current={active === id ? "location" : undefined}
-                  className="flex min-h-[48px] items-center gap-[12px] rounded-[12px] px-[12px] py-[12px] text-[16px] font-heavy leading-[1.25] transition-colors hover:bg-landing-canvas aria-[current=location]:bg-blog-pink aria-[current=location]:text-mochi-pink-ink focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-mochi-pink-ink"
-                >
-                  <span>{label}</span>
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-        <div className="mt-[22px] border-t border-blog-border pt-[16px]">
-          <p className="text-[15px] font-heavy">{labels.share}</p>
-          <div className="mt-[12px] flex flex-wrap gap-[10px]">
-            <button type="button" onClick={copyLink} aria-label={labels.copy} className={cn(shareButton, "cursor-pointer bg-blog-lavender text-blog-purple")}>
-              <LinkIcon className="size-[21px]" aria-hidden="true" />
-            </button>
-            {shareLinks.map(({ platform, label, href, tone }) => (
-              <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>
-                <SocialIcon platform={platform} className="size-[22px]" />
-              </a>
-            ))}
-          </div>
-          <p role="status" className="mt-[8px] text-[12px] font-semibold leading-[1.4]">
-            {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
-          </p>
+    <div className="mt-[16px] rounded-[20px] bg-blog-lavender/45 px-[12px] pt-[13px] pb-[12px]">
+      <div className="flex min-h-[22px] flex-wrap items-center justify-between gap-[8px] px-[4px]">
+        <p className="text-[15px] font-max leading-none">{labels.share}</p>
+        <p
+          role="status"
+          className={cn(
+            "rounded-full px-[9px] py-[4px] text-[11px] font-heavy leading-none text-white transition-[opacity,transform] empty:scale-75 empty:opacity-0",
+            copyStatus === "error" ? "bg-mochi-pink-ink" : "bg-share-whatsapp",
+          )}
+        >
+          {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
+        </p>
+      </div>
+      <div className="mt-[12px]">
+        <div className="flex items-center justify-between gap-[6px] px-[4px] pb-[4px] max-nav:justify-start max-nav:gap-[12px]">
+          <button
+            type="button"
+            onClick={copyLink}
+            aria-label={labels.copy}
+            title={labels.copy}
+            className={cn(shareButton, "cursor-pointer", copyStatus === "copied" ? "bg-blog-mint text-share-whatsapp" : "bg-white text-blog-purple")}
+          >
+            {copyStatus === "copied" ? <Check className="relative size-[20px]" strokeWidth={3} aria-hidden="true" /> : <LinkIcon className="relative size-[20px]" aria-hidden="true" />}
+          </button>
+          {shareLinks.map(({ platform, label, href, tone }) => (
+            <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>
+              <SocialIcon platform={platform} className="relative size-[20px]" />
+            </a>
+          ))}
         </div>
       </div>
-    </aside>
+    </div>
   );
 }

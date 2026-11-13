@@ -25,7 +25,8 @@ describe("inline SVG policy", () => {
   const tags = svgTags();
 
   it("finds the inline SVGs", () => {
-    expect(tags.length).toBeGreaterThan(15);
+    // Sanity check that the scan works; the count drops as drawn decor is replaced by Mochi art.
+    expect(tags.length).toBeGreaterThan(10);
   });
 
   it("gives every SVG a viewBox so it scales with its box", () => {

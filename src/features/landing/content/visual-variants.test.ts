@@ -1,10 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { FLAVOR_CATALOG } from "./product-catalog";
 import {
-  CYCLE_FACT_CLASS,
-  CYCLE_FACT_IDS,
-  CYCLE_LEGEND_CLASS,
-  CYCLE_LEGEND_IDS,
+  CYCLE_PHASE_CLASS,
+  CYCLE_PHASE_IDS,
   FLAVOR_PILL_CLASS,
   MOOD_FACE_CLASS,
   MOOD_TONES,
@@ -19,8 +17,7 @@ describe("visual variants", () => {
     expect(sorted(Object.keys(FLAVOR_PILL_CLASS))).toEqual(sorted(FLAVOR_CATALOG.map((f) => f.id)));
     expect(sorted(Object.keys(MOOD_FACE_CLASS))).toEqual(sorted(MOOD_TONES));
     expect(sorted(Object.keys(SYMPTOM_CHIP_CLASS))).toEqual(sorted(SYMPTOM_IDS));
-    expect(sorted(Object.keys(CYCLE_LEGEND_CLASS))).toEqual(sorted(CYCLE_LEGEND_IDS));
-    expect(sorted(Object.keys(CYCLE_FACT_CLASS))).toEqual(sorted(CYCLE_FACT_IDS));
+    expect(sorted(Object.keys(CYCLE_PHASE_CLASS))).toEqual(sorted(CYCLE_PHASE_IDS));
   });
 
   it("contain only static, non-empty class strings", () => {
@@ -28,8 +25,7 @@ describe("visual variants", () => {
       ...Object.values(FLAVOR_PILL_CLASS),
       ...Object.values(MOOD_FACE_CLASS).flatMap((v) => [v.chip, v.ink]),
       ...Object.values(SYMPTOM_CHIP_CLASS),
-      ...Object.values(CYCLE_LEGEND_CLASS),
-      ...Object.values(CYCLE_FACT_CLASS),
+      ...Object.values(CYCLE_PHASE_CLASS),
     ];
     for (const value of values) {
       expect(value.length).toBeGreaterThan(0);

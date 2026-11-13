@@ -4,8 +4,7 @@ import path from "node:path";
 import { compile } from "tailwindcss";
 import { describe, expect, it } from "vitest";
 import {
-  CYCLE_FACT_CLASS,
-  CYCLE_LEGEND_CLASS,
+  CYCLE_PHASE_CLASS,
   FLAVOR_PILL_CLASS,
   MOOD_FACE_CLASS,
   SYMPTOM_CHIP_CLASS,
@@ -46,8 +45,7 @@ describe("theme", () => {
       ...Object.values(FLAVOR_PILL_CLASS),
       ...Object.values(MOOD_FACE_CLASS).flatMap((v) => [v.chip, v.ink]),
       ...Object.values(SYMPTOM_CHIP_CLASS),
-      ...Object.values(CYCLE_LEGEND_CLASS),
-      ...Object.values(CYCLE_FACT_CLASS),
+      ...Object.values(CYCLE_PHASE_CLASS),
     ];
     const out = await buildUtilities(["max-phone:hidden", "max-nav:hidden", "max-tablet:hidden", "max-poster:hidden", "min-wide:block", ...variantClasses]);
     for (const q of ["width < 30.0625rem", "width < 47.5625rem", "width < 40.0625rem", "width < 68.75rem", "width >= 90.0625rem"]) {

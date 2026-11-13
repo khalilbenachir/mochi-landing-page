@@ -1,6 +1,7 @@
 import Image from "next/image";
+import * as SideMenu from "@/components/side-menu/SideMenu";
 import { useLocale, useTranslations } from "next-intl";
-import { Rays, Sparkle } from "@/features/landing/components/shared/decor";
+import { Rays } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { SiteHeader } from "@/features/landing/components/shared/SiteHeader";
 import { LegalContactBanner } from "@/features/legal/components/LegalContactBanner";
@@ -35,9 +36,6 @@ export function TermsPage() {
             <p className="mt-13 text-u-[13.6] font-semibold italic max-poster:text-[16px] max-nav:mt-[16px]">{t("updated", { date: updated })}</p>
           </div>
           <div className="relative -mr-8 flex self-end justify-center max-nav:mx-auto max-nav:mt-[18px] max-nav:w-[min(100%,360px)]">
-            <Rays shape="burst" className="absolute -left-14 top-17 z-1 w-56 text-sun max-nav:left-[-8px] max-nav:top-[14px] max-nav:w-[42px]" />
-            <Sparkle className="absolute right-8 top-26 z-1 w-36 text-white max-nav:right-[8px] max-nav:top-[28px] max-nav:w-[30px]" />
-            <Sparkle className="absolute -right-12 top-62 z-1 w-24 text-white max-nav:right-[-10px] max-nav:top-[60px] max-nav:w-[20px]" />
             <Image src={TERMS_ASSETS.hero} width={TERMS_HERO_SIZE.width} height={TERMS_HERO_SIZE.height} alt={t("heroAlt")} priority sizes="(max-width: 760px) 360px, (max-width: 1440px) 38vw, 550px" className="relative -mb-4 h-278 w-full object-contain object-bottom max-nav:mb-[-3px] max-nav:h-auto" />
           </div>
         </PosterStage>
@@ -45,32 +43,34 @@ export function TermsPage() {
 
       <section aria-labelledby="terms-summary" className="bg-terms-summary">
         <PosterStage spacing="none" className="px-32 pt-15 pb-23 max-nav:px-[20px] max-nav:py-[26px]">
-          <LegalSummaryHeading id="terms-summary" title={t("short")} decoration="single" />
-          <div className="grid grid-cols-4 gap-17 max-nav:grid-cols-2 max-nav:gap-[14px]">
-            {TERMS_SUMMARY_CARDS.map(({ key, section }) => (
-              <LegalSummaryCard
-                key={key}
-                href={section ? `#${section}` : privacyHref}
-                prominence="featured"
-                icon={
-                  <>
-                    <TermsSummaryIcon id={key} className="size-66 max-nav:size-[56px]" />
-                    {key === "medical" || key === "plus" ? <Rays shape="privacy" className="absolute -right-20 -top-4 w-24 text-sun max-nav:right-[-18px] max-nav:w-[22px]" /> : null}
-                  </>
-                }
-                title={t(`cards.${key}.title`)}
-                description={t(`cards.${key}.body`)}
-              />
-            ))}
+          <div className="mx-auto max-w-840 max-poster:max-w-[680px]">
+            <LegalSummaryHeading id="terms-summary" title={t("short")} decoration="single" />
+            <div className="grid grid-cols-4 gap-14 max-poster:grid-cols-2 max-poster:gap-[16px] max-phone:gap-[12px]">
+              {TERMS_SUMMARY_CARDS.map(({ key, section }) => (
+                <LegalSummaryCard
+                  key={key}
+                  href={section ? `#${section}` : privacyHref}
+                  prominence="featured"
+                  icon={<TermsSummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
+                  title={t(`cards.${key}.title`)}
+                  description={t(`cards.${key}.body`)}
+                />
+              ))}
+            </div>
           </div>
         </PosterStage>
       </section>
 
       <PosterStage spacing="none" className="px-31 pt-24 pb-28 max-nav:px-[20px] max-nav:py-[28px]">
         <TermsContent.Root>
-          <TermsContent.Navigation label={t("onThisPage")}>
-            {sections.map(({ id, nav }) => <TermsContent.NavigationLink key={id} id={id}>{nav}</TermsContent.NavigationLink>)}
-          </TermsContent.Navigation>
+          <SideMenu.Root items={sections.map(({ id, nav }) => ({ id, label: nav }))}>
+            <SideMenu.Header title={t("onThisPage")}>
+              <SideMenu.Progress />
+            </SideMenu.Header>
+            <SideMenu.Body>
+              <SideMenu.List label={t("onThisPage")} />
+            </SideMenu.Body>
+          </SideMenu.Root>
           <TermsContent.Article>
             {sections.map(({ id, title, body, detail }) => (
               <TermsContent.Section key={id} id={id}>
