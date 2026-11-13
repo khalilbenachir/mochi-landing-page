@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Lightbulb, TriangleAlert } from "lucide-react";
 import { useFormatter, useTranslations } from "next-intl";
 import { HeartOutline } from "@/features/landing/components/shared/decor";
-import { FreeSticker } from "@/features/landing/components/shared/FreeSticker";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
@@ -209,9 +208,8 @@ function ArticleCta() {
         <h2 id="article-cta-title" className="text-pretty text-[26px] font-max leading-[1.1] tracking-[-0.02em] max-phone:text-[23px]">{t("inlineCtaTitle")}</h2>
         <p className="mt-[6px] max-w-[440px] text-[15px] font-semibold leading-[1.4] text-white/90 max-nav:mx-auto">{t("inlineCtaDescription")}</p>
       </div>
-      <div className="relative z-1 flex items-center gap-[6px] max-poster:col-start-2 max-nav:col-start-1">
+      <div className="relative z-1 flex items-center max-poster:col-start-2 max-nav:col-start-1">
         <BlogCta.Store />
-        <FreeSticker className="-ml-[10px] -mt-[34px] w-[62px] rotate-6 max-nav:hidden" rays={false} />
       </div>
     </section>
   );
