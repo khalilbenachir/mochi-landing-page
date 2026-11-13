@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { LANDING_ASSETS } from "@/features/landing/content/assets";
-import { CheckBadge, HuggedHeart, Rays } from "@/features/landing/components/shared/decor";
+import { CheckBadge } from "@/features/landing/components/shared/decor";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { cn } from "@/lib/utils";
 
@@ -78,12 +76,6 @@ export function PrivacySection() {
           <p className="poster:text-balance mt-5 text-privacy-body-text text-u-[14.6] font-demibold leading-[1.2] max-poster:max-w-[480px] max-poster:mt-[14px] max-poster:mx-auto max-poster:text-[17px] max-phone:text-[15px]">
             <span className="block max-poster:inline">{t("body1")}</span> <span className="block max-poster:inline">{t("body2")}</span>
           </p>
-        </div>
-
-        <div className="relative z-1 ml-43 mt-24 w-120 self-end col-start-1 row-start-2 max-poster:[--spacing:calc(min(100vw-32px,420px)/236)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[28px] max-poster:w-100" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.predictMochi} alt="" width={368} height={264} sizes="12vw" />
-          <HuggedHeart className="absolute left-68 top-24 w-44 [filter:drop-shadow(0_calc(1*var(--spacing))_0_var(--color-privacy-hug-shadow))]" />
-          <Rays shape="privacy" className="absolute left-124 top-8 w-28 text-privacy-gold max-poster:hidden" />
         </div>
 
         <ul className="relative grid col-start-2 row-start-1 row-end-3 w-360 grid-cols-[repeat(3,minmax(0,1fr))] max-poster:[--spacing:calc(min(100vw-32px,600px)/360)] max-poster:mx-auto max-poster:mb-0 max-poster:mt-[30px]">
