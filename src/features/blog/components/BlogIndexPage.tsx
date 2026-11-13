@@ -29,8 +29,8 @@ export function BlogIndexPage() {
       <BlogIndexStructuredData />
       <BlogShell.Header route={`/${BLOG_SEGMENT}`} />
       <section className="overflow-hidden bg-hero-band text-white" aria-labelledby="blog-title">
-        <BlogShell.Container className="grid grid-cols-[1.3fr_1fr] items-center gap-[24px] pb-[8px] pt-[18px] max-nav:gap-[10px] max-phone:grid-cols-1 max-phone:pt-[26px]">
-          <div className="pb-[30px] max-phone:pb-0">
+        <BlogShell.Container className="grid grid-cols-[1.3fr_1fr] items-center gap-[24px] pb-[8px] pt-[18px] max-poster:grid-cols-[1.1fr_1fr] max-nav:grid-cols-1 max-nav:justify-items-center max-nav:gap-[6px] max-nav:pt-[28px] max-nav:text-center">
+          <div className="pb-[30px] max-nav:pb-0">
             <div className="relative inline-flex">
               <span className="-rotate-6 rounded-full bg-ink-navy px-[20px] py-[7px] text-[20px] font-max uppercase leading-none">{t("eyebrow")}</span>
               <Rays shape="privacy" aria-hidden="true" className="absolute -right-[45px] -top-[6px] w-[38px] text-sun" />
@@ -41,15 +41,15 @@ export function BlogIndexPage() {
             >
               {t("title")}
             </h1>
-            <p className="mt-[14px] max-w-[570px] text-[24px] font-bold leading-[1.25] max-nav:text-[20px]">{t("description")}</p>
+            <p className="mt-[14px] max-w-[570px] text-[24px] font-bold leading-[1.25] max-nav:mx-auto max-nav:max-w-[480px] max-nav:text-[20px] max-phone:text-[18px]">{t("description")}</p>
           </div>
           <Image
             src="/blog-art/journal-writer.webp"
             {...JOURNAL_ART_SIZE}
             alt={t("heroAlt")}
             priority
-            sizes="(max-width: 480px) 300px, 470px"
-            className="-mb-[5px] h-auto w-full max-w-[470px] justify-self-center self-end max-phone:mt-[4px] max-phone:max-w-[300px]"
+            sizes="(max-width: 480px) 320px, (max-width: 760px) 400px, 470px"
+            className="-mb-[5px] h-auto w-full max-w-[470px] justify-self-center self-end max-nav:mt-[8px] max-nav:max-w-[400px] max-phone:max-w-[320px]"
           />
         </BlogShell.Container>
       </section>
