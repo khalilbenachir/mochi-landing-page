@@ -248,9 +248,7 @@
     "kicker": "Optional account",
     "title": "Use Mochi now. Back up when you want.",
     "body": "Everything works without an account. Create a free account only when you want backup and sync for a new iPhone.",
-    "backup": "Cycle backup",
-    "synced": "Synced to your account",
-    "imageAlt": "Mochi hugging a locked diary"
+    "imageAlt": "Mochi relaxing on a cloud with its iPhone, backed up"
   },
   "FAQ": {
     "title1": "Period",

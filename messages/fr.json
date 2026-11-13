@@ -248,9 +248,7 @@
     "kicker": "Compte facultatif",
     "title": "Utilisez Mochi maintenant. Sauvegardez quand vous voulez.",
     "body": "Tout fonctionne sans compte. Créez un compte gratuit uniquement si vous souhaitez sauvegarder et synchroniser vos données sur un nouvel iPhone.",
-    "backup": "Sauvegarde du cycle",
-    "synced": "Synchronisé avec votre compte",
-    "imageAlt": "Mochi serrant un journal verrouillé"
+    "imageAlt": "Mochi se détend sur un nuage avec son iPhone, sauvegardé"
   },
   "FAQ": {
     "title1": "FAQ du",
