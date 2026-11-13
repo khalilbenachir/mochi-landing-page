@@ -4,6 +4,7 @@ export const LANDING_ASSETS = {
   accountMochi: "/mochi/account-mochi.webp",
   appIcon: "/mochi/app-icon.webp",
   closingMochi: "/mochi/closing-mochi.webp",
+  freeMochi: "/mochi/free-mochi.webp",
   faces: {
     happy: "/mochi/faces/happy.webp",
     headerHappy: "/mochi/faces/happy-header.webp",
@@ -15,7 +16,7 @@ export const LANDING_ASSETS = {
   manifestIcon192: "/mochi/app-icon-192.png",
   manifestIcon512: "/mochi/app-icon-512.png",
   notFoundMascot: "/mochi/not-found-mascot.png",
-  predictMochi: "/mochi/predict-mochi.webp",
+  plusMochi: "/mochi/plus-mochi.webp",
   predictionMochi: "/mochi/prediction-mochi.webp",
   socialCard: "/mochi/social-card.png",
   whyMochi: "/mochi/why-mochi.webp",
