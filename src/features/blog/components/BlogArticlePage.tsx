@@ -128,17 +128,14 @@ function ArticleHero({ post }: { post: BlogPost }) {
 function QuickAnswer({ intro }: { intro: string }) {
   const t = useTranslations("Blog");
   return (
-    <section
-      id="quick-answer"
-      aria-labelledby="quick-answer-title"
-      className="flex scroll-mt-[24px] items-start gap-[16px] rounded-[20px] bg-blog-pink px-[22px] py-[17px] max-phone:gap-[12px] max-phone:px-[16px]"
-    >
-      <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="mt-[2px] h-auto w-[52px] shrink-0 -rotate-6 max-phone:w-[40px]" />
-      <div className="min-w-0">
-        <h2 id="quick-answer-title" className="text-[25px] font-max leading-[1.1] max-phone:text-[23px]">
+    <section id="quick-answer" aria-labelledby="quick-answer-title" className="flex scroll-mt-[24px] items-end gap-[14px] max-phone:gap-[10px]">
+      <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="mb-[-4px] h-auto w-[72px] shrink-0 -rotate-6 max-phone:w-[52px]" />
+      {/* Mochi "says" the answer: a speech bubble whose tail points back at Mochi. */}
+      <div className="relative min-w-0 flex-1 rounded-[24px] rounded-bl-[6px] border-2 border-blog-pink bg-white px-[22px] pt-[16px] pb-[18px] [box-shadow:0_6px_0_var(--color-blog-pink)] before:absolute before:-left-[12px] before:bottom-[10px] before:border-y-[8px] before:border-r-[12px] before:border-y-transparent before:border-r-blog-pink max-phone:px-[16px]">
+        <h2 id="quick-answer-title" className="inline-flex items-center rounded-full bg-blog-pink px-[12px] py-[5px] text-[13px] font-max uppercase leading-none tracking-[0.08em] text-mochi-pink-ink">
           {t("quickAnswer")}
         </h2>
-        <p className="mt-[4px] text-[16px] font-medium leading-[1.45]">{intro}</p>
+        <p className="mt-[10px] text-[17px] font-semibold leading-[1.5] max-phone:text-[16px]">{intro}</p>
       </div>
     </section>
   );
