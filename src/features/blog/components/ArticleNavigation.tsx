@@ -75,7 +75,7 @@ export function ArticleNavigation({ items, url, title, labels }: Props) {
   const activeIndex = Math.max(0, items.findIndex((item) => item.id === active));
 
   return (
-    <aside className="sticky top-[24px] self-start overflow-hidden rounded-[24px] border border-blog-border bg-white [box-shadow:0_6px_18px_var(--color-blog-shadow)] max-nav:static">
+    <aside className="sticky top-[88px] self-start overflow-hidden rounded-[24px] border border-blog-border bg-white [box-shadow:0_6px_18px_var(--color-blog-shadow)] max-nav:static">
       <div className="bg-[linear-gradient(180deg,var(--color-blog-pink),transparent)] px-[18px] pb-[14px] pt-[16px] max-nav:p-[14px]">
         <div className="flex items-center gap-[10px] max-nav:hidden">
           <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="h-auto w-[34px] shrink-0 -rotate-6" />
