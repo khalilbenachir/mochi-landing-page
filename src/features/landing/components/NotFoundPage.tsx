@@ -48,7 +48,7 @@ export function NotFoundPage() {
 
               <div className="relative z-2 mx-6 mb-6 size-210 flex-none max-poster:mx-[4px] max-poster:mb-[6px] max-poster:size-[clamp(150px,27vw,220px)] max-phone:size-[128px]">
                 {/* The "0" is a magnifying glass: a lens ring with Mochi searching inside, and its handle. */}
-                <span aria-hidden="true" className="absolute top-[78%] left-[80%] h-[16%] w-[52%] origin-left rotate-45 rounded-full bg-white [box-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:[box-shadow:0_6px_0_var(--color-hero-title-shadow)]" />
+                <span aria-hidden="true" className="absolute top-[80%] left-[80%] h-[15%] w-[34%] origin-left rotate-45 rounded-full bg-white [box-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:[box-shadow:0_6px_0_var(--color-hero-title-shadow)]" />
                 <span aria-hidden="true" className="absolute inset-0 rounded-full border-[length:calc(16*var(--spacing))] border-white bg-white/25 [box-shadow:0_calc(7*var(--spacing))_0_var(--color-hero-title-shadow)] max-poster:border-[clamp(11px,2vw,16px)] max-poster:[box-shadow:0_6px_0_var(--color-hero-title-shadow)]" />
                 <span aria-hidden="true" className="absolute top-[18%] left-[20%] h-[22%] w-[9%] rotate-35 rounded-full bg-white/70" />
                 <Image
