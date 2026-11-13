@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useState } from "react";
 import Image from "next/image";
-import { ChevronDown, Link as LinkIcon } from "lucide-react";
+import { Check, ChevronDown, Heart, Link as LinkIcon } from "lucide-react";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { cn } from "@/lib/utils";
 import { SocialIcon } from "./SocialIcons";
@@ -25,7 +25,7 @@ type Props = {
 };
 
 const shareButton =
-  "grid size-[38px] shrink-0 place-items-center rounded-full transition-[background-color,transform] hover:-translate-y-[2px] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink";
+  "grid aspect-square w-full min-w-0 place-items-center rounded-[14px] [box-shadow:0_2px_0_var(--color-blog-shadow)] transition-[background-color,transform,box-shadow] hover:-translate-y-[2px] hover:[box-shadow:0_6px_12px_var(--color-blog-shadow)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-mochi-pink-ink max-nav:w-[48px]";
 
 /** Sticky contents with scroll tracking, plus copy-link and share actions: the article's only client island. */
 export function ArticleNavigation({ items, url, title, labels }: Props) {
@@ -67,9 +67,9 @@ export function ArticleNavigation({ items, url, title, labels }: Props) {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
   const shareLinks = [
-    { platform: "x", label: labels.x, href: `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`, tone: "bg-white text-ink-navy" },
+    { platform: "x", label: labels.x, href: `https://x.com/intent/post?url=${encodedUrl}&text=${encodedTitle}`, tone: "bg-share-x text-white" },
     { platform: "facebook", label: labels.facebook, href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, tone: "bg-share-facebook text-white" },
-    { platform: "whatsapp", label: labels.whatsApp, href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, tone: "bg-blog-mint text-share-whatsapp" },
+    { platform: "whatsapp", label: labels.whatsApp, href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, tone: "bg-share-whatsapp text-white" },
   ] as const;
 
   const activeIndex = Math.max(0, items.findIndex((item) => item.id === active));
@@ -137,11 +137,20 @@ export function ArticleNavigation({ items, url, title, labels }: Props) {
             })}
           </ol>
         </nav>
-        <div className="mt-[16px] rounded-[16px] bg-landing-canvas px-[14px] py-[12px]">
-          <p className="text-[13px] font-heavy uppercase tracking-[0.06em] text-ink-navy/70">{labels.share}</p>
-          <div className="mt-[10px] flex justify-between gap-[6px] max-nav:justify-start max-nav:gap-[10px]">
-            <button type="button" onClick={copyLink} aria-label={labels.copy} className={cn(shareButton, "cursor-pointer bg-blog-lavender text-blog-purple")}>
-              <LinkIcon className="size-[18px]" aria-hidden="true" />
+        <div className="mt-[16px] rounded-[18px] bg-blog-lavender/45 px-[14px] pb-[12px] pt-[12px]">
+          <p className="flex items-center gap-[7px] text-[15px] font-max leading-none">
+            <Heart className="size-[15px] fill-mochi-pink-ink text-mochi-pink-ink" aria-hidden="true" />
+            {labels.share}
+          </p>
+          <div className="mt-[12px] grid grid-cols-4 gap-[7px] max-nav:flex max-nav:gap-[10px]">
+            <button
+              type="button"
+              onClick={copyLink}
+              aria-label={labels.copy}
+              title={labels.copy}
+              className={cn(shareButton, "cursor-pointer", copyStatus === "copied" ? "bg-blog-mint text-share-whatsapp" : "bg-white text-blog-purple")}
+            >
+              {copyStatus === "copied" ? <Check className="size-[20px]" strokeWidth={3} aria-hidden="true" /> : <LinkIcon className="size-[19px]" aria-hidden="true" />}
             </button>
             {shareLinks.map(({ platform, label, href, tone }) => (
               <a key={platform} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label} className={cn(shareButton, tone)}>
@@ -149,7 +158,7 @@ export function ArticleNavigation({ items, url, title, labels }: Props) {
               </a>
             ))}
           </div>
-          <p role="status" className="mt-[6px] min-h-[17px] text-[12px] font-semibold leading-[1.4]">
+          <p role="status" className={cn("mt-[8px] min-h-[16px] text-[12px] font-heavy leading-[1.35]", copyStatus === "error" ? "text-mochi-pink-ink" : "text-share-whatsapp")}>
             {copyStatus === "copied" ? labels.copied : copyStatus === "error" ? labels.error : ""}
           </p>
         </div>
