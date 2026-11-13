@@ -29,7 +29,7 @@ function StreakCard() {
                 <Check className="size-[60%]" strokeWidth={3.4} aria-hidden="true" />
               </span>
             ) : (
-              <Image src={FLAVOR_CARD_ASSETS.ube} alt="" width={380} height={262} className="h-auto w-32 -translate-y-2 animate-float max-poster:w-[38px]" />
+              <Image src={FLAVOR_CARD_ASSETS.ube} alt="" width={380} height={262} className="h-auto w-40 -translate-y-3 animate-float max-poster:w-[44px]" />
             )}
           </li>
         ))}
