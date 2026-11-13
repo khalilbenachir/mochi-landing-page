@@ -73,7 +73,7 @@ export function FlavorsSection() {
                 </span>
                 <span className="flex min-w-0 flex-col">
                   <b className="truncate text-u-[11.4] font-max leading-[1.1] max-poster:text-[14px]">{t(`items.${flavor.id}.name`)}</b>
-                  <span className={cn("mt-2 w-fit max-w-full truncate rounded-full px-6 py-1 text-u-[8.4] font-black leading-[1.2] max-poster:mt-[2px] max-poster:px-[6px] max-poster:py-[1px] max-poster:text-[10.5px]", FLAVOR_PILL_CLASS[flavor.id])}>
+                  <span className={cn("mt-2 w-fit max-w-full rounded-full px-6 py-1 text-u-[8.4] font-black leading-[1.2] max-poster:mt-[2px] max-poster:px-[6px] max-poster:py-[1px] max-poster:text-[10.5px]", flavor.kind === "challenge" ? "whitespace-normal" : "whitespace-nowrap", FLAVOR_PILL_CLASS[flavor.id])}>
                     {t(`items.${flavor.id}.unlock`)}
                   </span>
                 </span>
