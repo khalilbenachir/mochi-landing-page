@@ -36,7 +36,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   if (!hasLocale(routing.locales, locale)) notFound();
 
   setRequestLocale(locale);
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const consent = await getTranslations("Consent");
   const homePath = localePath(locale);
   const privacyHref = homePath === "/" ? "/privacy" : `${homePath}/privacy`;
@@ -48,9 +48,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <ClosingSection />
         <SiteFooter homePath={homePath} />
         <Analytics />
-        {gaId && (
+        {gtmId && (
           <AnalyticsConsent
-            gaId={gaId}
+            gtmId={gtmId}
             privacyHref={privacyHref}
             copy={{
               title: consent("title"),

@@ -53,7 +53,7 @@ export function SiteFooter({ homePath }: { homePath: string }) {
                   {footer(item.key)}
                 </a>
               ))}
-              {process.env.NEXT_PUBLIC_GA_ID && (
+              {process.env.NEXT_PUBLIC_GTM_ID && (
                 <ConsentSettingsButton
                   label={consent("settings")}
                   className="cursor-pointer whitespace-nowrap text-u-10.5 font-heavy text-ink-navy underline-offset-4 hover:underline max-poster:text-[12px] max-phone:text-[11px]"

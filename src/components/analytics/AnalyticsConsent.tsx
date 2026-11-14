@@ -1,22 +1,22 @@
 "use client";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { CONSENT_OPEN_EVENT, clearAnalyticsCookies, readConsent, writeConsent, type ConsentChoice } from "./consent";
 
 type AnalyticsConsentProps = {
-  gaId: string;
+  gtmId: string;
   privacyHref: string;
   copy: { title: string; message: string; privacyLink: string; accept: string; decline: string };
 };
 
 /**
- * Google Analytics in Consent Mode "basic": the tag is not loaded at all until the visitor
+ * Google Tag Manager (which loads GA4) in Consent Mode "basic": GTM is not loaded at all until the visitor
  * accepts, so nothing reaches Google before consent. Ad storage stays denied either way.
  * Withdrawing consent clears the GA cookies and reloads so the tag is gone.
  */
-export function AnalyticsConsent({ gaId, privacyHref, copy }: AnalyticsConsentProps) {
+export function AnalyticsConsent({ gtmId, privacyHref, copy }: AnalyticsConsentProps) {
   const [choice, setChoice] = useState<ConsentChoice | undefined>(undefined);
   const [open, setOpen] = useState(false);
 
@@ -44,10 +44,10 @@ export function AnalyticsConsent({ gaId, privacyHref, copy }: AnalyticsConsentPr
     <>
       {choice === "granted" && (
         <>
-          <Script id="ga-consent-defaults" strategy="afterInteractive">
+          <Script id="gtm-consent-defaults" strategy="afterInteractive">
             {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});`}
           </Script>
-          <GoogleAnalytics gaId={gaId} />
+          <GoogleTagManager gtmId={gtmId} />
         </>
       )}
       {open && (
