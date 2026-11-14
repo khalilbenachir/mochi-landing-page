@@ -630,5 +630,13 @@
       "missedPeriods": "NHS: Missed or late periods",
       "pregnancyTests": "NHS: Doing a pregnancy test"
     }
+  },
+  "Consent": {
+    "title": "Cookies on this website",
+    "message": "We’d like to use Google Analytics cookies to understand how people find and use this website. This only concerns the website, never the Mochi app or your cycle data.",
+    "privacyLink": "Privacy policy",
+    "accept": "Accept",
+    "decline": "Decline",
+    "settings": "Cookie settings"
   }
 }

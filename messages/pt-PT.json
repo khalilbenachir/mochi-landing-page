@@ -630,5 +630,13 @@
       "missedPeriods": "NHS: ausência ou atraso da menstruação",
       "pregnancyTests": "NHS: fazer um teste de gravidez"
     }
+  },
+  "Consent": {
+    "title": "Cookies neste site",
+    "message": "Gostaríamos de utilizar cookies do Google Analytics para perceber como as pessoas encontram e utilizam este site. Isto aplica-se apenas ao site, nunca à app Mochi nem aos seus dados do ciclo.",
+    "privacyLink": "Política de privacidade",
+    "accept": "Aceitar",
+    "decline": "Recusar",
+    "settings": "Definições de cookies"
   }
 }

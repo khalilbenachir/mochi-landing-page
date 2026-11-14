@@ -630,5 +630,13 @@
       "missedPeriods": "NHS : absence ou retard de règles",
       "pregnancyTests": "NHS : faire un test de grossesse"
     }
+  },
+  "Consent": {
+    "title": "Cookies sur ce site",
+    "message": "Nous aimerions utiliser les cookies de Google Analytics pour comprendre comment les visiteurs trouvent et utilisent ce site. Cela concerne uniquement le site, jamais l’app Mochi ni vos données de cycle.",
+    "privacyLink": "Politique de confidentialité",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "settings": "Paramètres des cookies"
   }
 }

@@ -21,6 +21,7 @@
     "format:check": "prettier --check \"src/features/blog/**/*.{ts,tsx}\" \"src/app/[[]locale]/blog/**/*.tsx\""
   },
   "dependencies": {
+    "@next/third-parties": "^16.4.6",
     "@radix-ui/react-slot": "^1.5.0",
     "@tailwindcss/postcss": "4.1.18",
     "@vercel/analytics": "^2.0.1",

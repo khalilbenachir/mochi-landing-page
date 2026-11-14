@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import { ConsentSettingsButton } from "@/components/analytics/ConsentSettingsButton";
 import { blogPath } from "@/features/blog/locales";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { StoreBadge } from "./AppStoreBadges";
@@ -25,6 +26,7 @@ export function SiteFooter({ homePath }: { homePath: string }) {
   const common = useTranslations("Common");
   const navigation = useTranslations("Navigation");
   const locale = useLocale();
+  const consent = useTranslations("Consent");
   const routeHref = (slug: string) => (homePath === "/" ? `/${slug}` : `${homePath}/${slug}`);
 
   return (
@@ -51,6 +53,12 @@ export function SiteFooter({ homePath }: { homePath: string }) {
                   {footer(item.key)}
                 </a>
               ))}
+              {process.env.NEXT_PUBLIC_GA_ID && (
+                <ConsentSettingsButton
+                  label={consent("settings")}
+                  className="cursor-pointer whitespace-nowrap text-u-10.5 font-heavy text-ink-navy underline-offset-4 hover:underline max-poster:text-[12px] max-phone:text-[11px]"
+                />
+              )}
             </nav>
             <p className="max-w-full shrink-0 text-balance text-right text-u-8.5 font-bold leading-[1.25] text-ink-navy/70 group-data-stacked/spread:text-center max-poster:text-[10px]">
               {footer("disclaimer")}

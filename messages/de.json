@@ -630,5 +630,13 @@
       "missedPeriods": "NHS: Ausbleibende oder verspätete Periode",
       "pregnancyTests": "NHS: Einen Schwangerschaftstest machen"
     }
+  },
+  "Consent": {
+    "title": "Cookies auf dieser Website",
+    "message": "Wir möchten Cookies von Google Analytics verwenden, um zu verstehen, wie Besucher diese Website finden und nutzen. Das betrifft nur die Website, niemals die Mochi-App oder deine Zyklusdaten.",
+    "privacyLink": "Datenschutzerklärung",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "settings": "Cookie-Einstellungen"
   }
 }
