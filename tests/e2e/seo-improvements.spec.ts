@@ -6,7 +6,7 @@ import { localePath, localeRoutePath, routing } from "../../src/i18n/routing";
 
 for (const preferred of routing.locales.filter((locale) => locale !== "en")) {
   test(`canonical English pages ignore ${preferred} browser and cookie preferences`, async ({ request }) => {
-    for (const path of ["/", "/privacy", "/terms"]) {
+    for (const path of ["/privacy", "/terms"]) {
       const preferenceHeaders: Record<string, string>[] = [
         { "Accept-Language": preferred },
         { "Accept-Language": "en", Cookie: `NEXT_LOCALE=${preferred}` },

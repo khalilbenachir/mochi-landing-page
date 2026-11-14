@@ -51,6 +51,7 @@ those files exist at `0fa9683`). Review baselines are git tree snapshots, not co
 | [013](./013-build-localized-mochi-404.md) | Ship a localized Mochi 404 page | P1 | M | — | DONE (reviewed; generated mascot revision; 55 unit/policy tests and 96 e2e tests pass; uncommitted) |
 | [014](./014-build-localized-mochi-terms.md) | Ship the localized illustrated Terms of Use page | P1 | L | Existing Privacy feature | DONE (reviewed; generated alpha mascot; six locales; 75 unit tests and 143 e2e tests pass; existing baselines unchanged; uncommitted) |
 | [015](./015-share-legal-summary-and-contact.md) | Share Privacy/Terms summary headings and contact banners | P1 | S | 014 | DONE (reviewed; shared server components; 75 unit tests and 46 Privacy/Terms browser tests pass; all four baseline hashes unchanged; uncommitted) |
+| [016](./016-detect-homepage-language.md) | Automatically select homepage language from saved choice and browser preference | P1 | M | — | BLOCKED: implementation reviewed on `feat/automatic-homepage-language`; 22 feature tests pass, full regression gate has 74 failures (see plan review notes) |
 
 Status values: `TODO`, `IN PROGRESS`, `DONE`, `BLOCKED: <reason>`, or
 `REJECTED: <reason>`.
@@ -178,3 +179,5 @@ reuse, responsive composition, accessibility, and visual/e2e verification. It di
 cover missing static assets or other dot-containing paths excluded by middleware, the
 experimental global-not-found convention, runtime exception pages, legal/help routes,
 or a redesign of the landing page.
+
+The 2026-11-14 focused language-selection plan (016), written at `4408666`, adds browser-based homepage detection while preserving explicit content URLs. Existing URL-only behavior was intentional, not a bug; the requested feature changes that policy on `/` only. No broader audit was performed.

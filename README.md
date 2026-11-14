@@ -76,9 +76,11 @@ Principles:
 - **Server first.** The complete landing page and its translations are server-rendered. Only the
   Dynamic Island countdown hydrates; the burger and FAQ use native `details` elements.
 - **Locale first.** English uses the canonical `/` route; French, German, Spanish, Brazilian and
-  European Portuguese use `/fr`, `/de`, `/es`, `/pt-BR` and `/pt-PT`. URLs select the language:
-  browser preferences and saved language cookies do not redirect canonical pages. The language
-  switcher selects a language explicitly and preserves the current page. Metadata, alternate
+  European Portuguese use `/fr`, `/de`, `/es`, `/pt-BR` and `/pt-PT`. On arrival at `/`, a saved
+  language choice takes priority over the browser language, with English as the fallback.
+  This uses browser preferences, not the visitor's country. Content URLs and explicit locale
+  prefixes select their own language; reading an English content link preserves the saved choice.
+  The language switcher selects a language explicitly and preserves the current page. Metadata, alternate
   links, sitemap entries, accessibility labels and JSON-LD are generated from the same typed messages.
 - **Feature ownership is explicit.** Landing components, catalog data, site configuration and the
   static asset manifest live under `features/landing`; reusable primitives and locale infrastructure
