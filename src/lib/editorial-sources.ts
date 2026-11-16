@@ -16,6 +16,22 @@ export const EDITORIAL_SOURCE_URLS = {
   cyclePhases: "https://my.clevelandclinic.org/health/articles/10132-menstrual-cycle",
   periodPain: "https://www.nhs.uk/symptoms/period-pain/",
   pms: "https://womenshealth.gov/menstrual-cycle/premenstrual-syndrome",
+  mochiFeatures: "/",
+  floFree: "https://help.flo.health/hc/en-us/articles/4411293934740-What-s-included-in-the-free-version",
+  floAnonymous: "https://flo.health/product-tour/anonymous-mode",
+  floFtc: "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3133-flo-health-inc",
+  floExport: "https://help.flo.health/hc/en-us/articles/360054973811-How-do-I-get-a-copy-of-my-data",
+  floDelete: "https://help.flo.health/hc/en-us/articles/360042567131-How-can-I-delete-my-account",
+  eukiApp: "https://eukiapp.org/",
+  eukiPrivacy: "https://eukiapp.org/privacy-faqs-resources",
+  eukiFeatures: "https://eukiapp.org/app-features",
+  clueAccount: "https://support.helloclue.com/hc/en-us/articles/360036966192-Why-do-I-need-a-Clue-account",
+  cluePrivacy: "https://helloclue.com/privacy",
+  clueFree: "https://support.helloclue.com/hc/en-us/articles/28892034251037-Using-Clue-for-free",
+  dripApp: "https://dripapp.org/",
+  dripIos: "https://apps.apple.com/us/app/drip-period-cycle-tracker/id1584564949",
+  dripAndroid: "https://play.google.com/store/apps/details?id=com.drip",
+  appleCycle: "https://support.apple.com/en-us/120356",
 } as const;
 
 export type EditorialSourceId = keyof typeof EDITORIAL_SOURCE_URLS;

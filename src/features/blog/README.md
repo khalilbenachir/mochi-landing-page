@@ -1,6 +1,6 @@
 # The Mochi Journal
 
-The blog publishes nine guides and an editorial-policy page in all six site languages:
+The blog publishes ten guides and an editorial-policy page in all six site languages:
 English under `/blog`, plus `/fr/blog`, `/de/blog`, `/es/blog`, `/pt-BR/blog` and `/pt-PT/blog`.
 URLs select the language regardless of browser preferences or saved locale cookies. The
 language switcher preserves the current page, and explicit `/en/...` URLs canonicalize to
@@ -78,7 +78,7 @@ the complete guide.
 
 ## Artwork
 
-All illustrations were redrawn in ChatGPT on 13 November 2026 from the iOS app's own Mochi
+The original illustrations were redrawn in ChatGPT on 13 November 2026 from the iOS app's own Mochi
 (`mochi-face-happy.png` and `mochi-scene-plus.png`) as the reference, keeping each scene from
 the first set (10 November 2026) and dropping the yellow stars and sparkles. The deployed images are WebP files under `public/blog-art`.
 New illustrations and legacy hero cutouts preserve transparency. They are editorial
@@ -102,6 +102,10 @@ Full prompts, references and encoding settings are recorded in `docs/blog/`
 (`artwork-prompts.json`, `redesign-artwork-prompts.json`).
 The original tracking, privacy and comparison cards that the redesigned heroes were derived
 from are kept as provenance in `docs/blog/reference-art/`; they are not deployed.
+The Flo-alternatives comparison (16 November 2026) adds `flo-alternatives-mochi.webp`,
+a 1200×800 illustration generated from the existing Mochi references. Its marketing review,
+fact-check decisions and image prompts are in
+`docs/blog/flo-alternatives-editorial-review-2026-11-16.md`.
 New images use `cwebp -q 82 -resize 1200 0`; the cycle wheel uses quality 70,
 alpha quality 10 and method 6 to keep its bitmap below 100 KB. The writer's natural
 aspect ratio is preserved. No screenshot of the supplied layout is embedded as UI.

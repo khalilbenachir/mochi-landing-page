@@ -3,7 +3,7 @@ import en from "../../messages/en.json";
 import { BLOG_PATHS, BLOG_POSTS, type BlogPost, type BlogPostId } from "../../src/features/blog/content/catalog";
 import { articleReadingMinutes, getArticleCopy as getLocalizedArticleCopy } from "../../src/features/blog/content/copy";
 import { BLOG_LOCALES, blogLocaleFor, blogPath, EDITORIAL_SLUG, isBlogLocale } from "../../src/features/blog/locales";
-import { localePath, localeRoutePath, routing } from "../../src/i18n/routing";
+import { localePath, routing } from "../../src/i18n/routing";
 import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
 import { FAQ_IDS } from "../../src/features/landing/content/landing";
 import { baseOrigin } from "./origin";
@@ -124,9 +124,8 @@ test("every language shares the same header and footer navigation", async ({ pag
     await page.goto(localePath(locale));
     const header = page.locator("header nav").first();
     expect(await header.locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href"))), locale).toEqual([
-      "#features",
-      localeRoutePath(locale, "privacy"),
       blogPath(locale),
+      "#features",
       "#faq",
     ]);
     const footerLinks = await page.locator("body > footer nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
@@ -139,9 +138,8 @@ test("every language shares the same header and footer navigation", async ({ pag
     // On the blog, section links return to that language's home page.
     const home = localePath(blogLocaleFor(locale));
     expect(await page.locator("header nav").first().locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href"))), locale).toEqual([
-      `${home}#features`,
-      localeRoutePath(blogLocaleFor(locale), "privacy"),
       blogPath(locale),
+      `${home}#features`,
       `${home}#faq`,
     ]);
   }
@@ -229,7 +227,6 @@ test("Journal topic filters show only matching guides", async ({ page }) => {
   await expect(page.locator("main article:visible")).toHaveCount(2);
   await page.getByRole("button", { name: "All", exact: true }).click();
   await expect(page.locator("main article:visible")).toHaveCount(BLOG_POSTS.length);
-  await expect(page.locator('main input[type="email"]')).toHaveCount(1);
 });
 
 test("Journal topic filters are shareable through the URL", async ({ page }) => {

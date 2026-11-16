@@ -1,7 +1,7 @@
 import type { EditorialSourceId } from "@/lib/editorial-sources";
 import { blogPath, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE } from "../locales";
 
-export type BlogPostId = "tracking" | "privacy" | "methods" | "pads" | "phases" | "predictions" | "cramps" | "moods" | "gettingStarted";
+export type BlogPostId = "tracking" | "privacy" | "methods" | "pads" | "phases" | "predictions" | "cramps" | "moods" | "gettingStarted" | "floAlternatives";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -25,6 +25,27 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "floAlternatives",
+    category: "privacy",
+    slug: "flo-alternatives-private-period-tracking-apps",
+    image: "/blog-art/flo-alternatives-mochi.webp",
+    tone: "bg-blog-lavender",
+    publishedAt: "2026-11-16",
+    sections: [
+      { id: "choose-your-tracker" },
+      { id: "is-flo-free", sources: ["floFree", "floAnonymous"] },
+      { id: "flo-privacy-history", sources: ["floFtc", "floAnonymous"] },
+      { id: "compare-alternatives", sources: ["mochiPrivacy", "eukiPrivacy", "clueAccount", "dripApp", "appleCycle"] },
+      { id: "mochi", sources: ["mochiFeatures", "mochiPrivacy"] },
+      { id: "euki", sources: ["eukiApp", "eukiPrivacy", "eukiFeatures"] },
+      { id: "clue", sources: ["clueAccount", "cluePrivacy", "clueFree"] },
+      { id: "drip", sources: ["dripApp", "dripIos", "dripAndroid"] },
+      { id: "apple-health", sources: ["appleCycle"] },
+      { id: "clue-vs-flo", sources: ["floFree", "floAnonymous", "clueAccount", "clueFree"] },
+      { id: "switch-from-flo", sources: ["floExport", "floDelete", "mochiTerms"] },
+    ],
+  },
   {
     id: "pads",
     category: "period-care",

@@ -1,0 +1,143 @@
+{
+  "title": "5 Flo-Alternativen für privates Zyklustracking (2026)",
+  "description": "Mochi, Euki, Clue, drip und Apple Health als Flo-Alternativen: kostenloser Umfang, Speicherung der Zyklusdaten und Nutzung mit oder ohne Konto im Vergleich.",
+  "imageAlt": "Rosa Mochi mit einem Handy mit Schlosssymbol neben drei pastellfarbenen Vergleichskarten",
+  "intro": "Für Zyklustracking ohne Konto kommen Mochi, Euki oder drip infrage. Clue bietet Tracking mit Konto und Speicherung auf EU-Servern; Apple Health enthält das Zyklusprotokoll auf dem iPhone. Alle fünf bieten kostenlose Trackingmöglichkeiten, unterscheiden sich aber bei Backups, Abos und Datenschutz.",
+  "sections": {
+    "choose-your-tracker": {
+      "title": "Welche Flo-Alternative passt zu dir?",
+      "paragraphs": {
+        "first": "Überlege zuerst, was deine App leisten soll: Periodendaten merken, Symptome sammeln oder tägliche Einträge erleichtern. Vergleiche dann den Speicherort, die kostenlosen Funktionen und die Möglichkeiten zur Wiederherstellung nach einem Handyverlust.",
+        "second": [
+          "Wenn du wegen des Datenschutzes wechseln möchtest, nutze auch unsere ",
+          { "postId": "privacy", "label": "Datenschutz-Checkliste für Perioden-Apps" },
+          "."
+        ]
+      },
+      "note": "Wir entwickeln Mochi. Dieser Vergleich beruht auf veröffentlichten Anbieterinformationen, geprüft am 16. November 2026. Er ist weder ein unabhängiges Sicherheitsaudit noch eine Rangliste aus eigenen Praxistests. Funktionen und Verfügbarkeit können sich ändern."
+    },
+    "is-flo-free": {
+      "title": "Ist Flo eine gute kostenlose Perioden-App?",
+      "paragraphs": {
+        "first": "Flo kann viele alltägliche Trackingbedürfnisse abdecken. Die kostenlose Version enthält Perioden- und Eisprungprognosen, Symptomprotokolle und Erinnerungen. Flo Premium ergänzt kostenpflichtige Funktionen. Grundlegende Prognosen sind nicht an ein Abo gebunden.",
+        "second": "Außerdem bietet Flo einen anonymen Modus, der identifizierende Angaben von Gesundheitsdaten trennt. Es stimmt daher nicht, dass alle ihren Namen oder ihre E-Mail-Adresse mit dem Zyklusverlauf verknüpfen müssen. Wenn Einträge auf dem Gerät bleiben sollen, prüfe die Speicherung getrennt von der Kontopflicht."
+      }
+    },
+    "flo-privacy-history": {
+      "title": "Warum gab es Kritik an Flos Datenschutz?",
+      "paragraphs": {
+        "first": "2021 einigte sich Flo mit der US-Handelsbehörde FTC zu Vorwürfen, Gesundheitsdaten entgegen eigenen Datenschutzversprechen an externe Analysedienste weitergegeben zu haben. Die Anordnung verlangte unter anderem Zustimmung vor bestimmten künftigen Weitergaben und eine unabhängige Prüfung der Datenschutzpraxis.",
+        "second": "Diese Vorgeschichte ist für Vertrauen relevant. Ebenso relevant ist der heutige anonyme Modus, der Identität und Gesundheitsinformationen trennen soll. Weder der frühere Vergleich noch eine heutige Funktion allein erlaubt ein allgemeines Datenschutzurteil über alle Apps. Lies die aktuelle Richtlinie für den Modus, den du nutzen würdest."
+      }
+    },
+    "compare-alternatives": {
+      "title": "Fünf Flo-Alternativen im Überblick",
+      "paragraphs": {
+        "first": "Das sind die praktischen Unterschiede. Kostenloses Tracking bedeutet nicht, dass es keine kostenpflichtige Stufe gibt: Mochi und Clue bieten optionale Abos. Verfügbarkeit und Angebote unterscheiden sich je nach Region."
+      },
+      "table": {
+        "caption": "Flo-Alternativen nach Speicherung, Konto, kostenlosem Umfang und Einsatz im Vergleich",
+        "columns": ["App / Plattform", "Zyklusdaten", "Konto", "Kostenloser Umfang", "Interessant für"],
+        "rows": [
+          [
+            "Mochi · iPhone",
+            "Standardmäßig auf dem Gerät; optionales verschlüsseltes Backup",
+            "Für Kernfunktionen nicht nötig",
+            "Kernfunktionen kostenlos; Mochi Plus optional",
+            "Sanfte tägliche Einträge und diskrete Bindentimer"
+          ],
+          [
+            "Euki · iOS / Android",
+            "Auf dem Gerät; laut Euki keine Erfassung der Einträge",
+            "Nein",
+            "Kostenlos, gemeinnützig getragen",
+            "Lokales Tracking und Informationen zur sexuellen Gesundheit"
+          ],
+          ["Clue · iOS / Android", "Laut Clue auf EU-Servern", "Ja", "Kostenlose Version; Clue Plus optional", "Kontobackup und detailliertes Zyklustracking"],
+          ["drip · iOS / Android", "Auf dem Gerät", "Nein", "Kostenlos", "Offener Quellcode und Temperaturaufzeichnungen"],
+          [
+            "Apple Health · iPhone",
+            "Auf dem Gerät; iCloud-Sync optional",
+            "Kein separates Trackingkonto; Apple Account für iCloud",
+            "Auf unterstützten Geräten enthalten",
+            "Tracking in der vorhandenen Health-App"
+          ]
+        ]
+      }
+    },
+    "mochi": {
+      "title": "1. Mochi: ein freundlicher Alltagsbegleiter fürs iPhone",
+      "paragraphs": {
+        "first": "Mochi passt zu dir, wenn du eine kleine tägliche Routine mit einer freundlichen Figur suchst. Die Kernfunktionen laufen offline ohne Konto: Prognosen, Stimmungs- und Symptomprotokolle, Bindenerinnerungen, Eintragsserien und erste Sorten sind kostenlos. Mochi Plus ist optional.",
+        "second": "Der Bindentimer erscheint auf kompatiblen iPhones in der Dynamic Island und mit diskreter Beschriftung auf dem Sperrbildschirm. Zykluseinträge bleiben auf deinem iPhone, solange du kein optionales verschlüsseltes Backup aktivierst. Laut Richtlinie sind diese Einträge von Analysen, Logs und Absturzberichten ausgeschlossen; Nutzungsanalysen und Aboverarbeitung werden jedoch beschrieben. Lokale Zyklusdaten bedeuten nicht, dass keine technischen Daten erfasst werden.",
+        "third": [
+          "Probiere die Routine mit ",
+          { "postId": "gettingStarted", "label": "deinem ersten Mochi-Eintrag" },
+          ". Für die Kernfunktionen brauchst du kein Konto."
+        ]
+      }
+    },
+    "euki": {
+      "title": "2. Euki: kostenloses Tracking mit lokaler Speicherung",
+      "paragraphs": {
+        "first": "Euki ist ein Open-Source-Projekt einer unabhängigen gemeinnützigen Organisation. Laut Dokumentation bleiben Einträge ohne Nutzerkonto auf dem Gerät. Die App bietet einen optionalen PIN-Schutz, geplante Löschungen und Informationen zur sexuellen Gesundheit.",
+        "second": "Es gibt keine kostenpflichtigen Trackingstufen. Der Nachteil betrifft die Wiederherstellung: Weil Euki deine Einträge nicht besitzt, kann es deinen Verlauf bei Verlust des Handyzugangs nicht über ein Konto zurückholen."
+      }
+    },
+    "clue": {
+      "title": "3. Clue: Tracking mit Konto und EU-Speicherung",
+      "paragraphs": {
+        "first": "Clue kann passen, wenn du deinen Verlauf über ein Konto wieder abrufen möchtest. Ein kostenloses Konto ist Pflicht; Gesundheitsdaten liegen laut Clue auf EU-Servern. Es gibt eine kostenlose Version und weitere Funktionen mit Clue Plus. Abopreise variieren nach Region.",
+        "second": "Prüfe die Datenschutzeinstellungen für optionale Forschung, Analysen, Integrationen und werbebezogene Verarbeitung von Nutzungsdaten. DSGVO und EU-Speicherung sind relevant, bedeuten aber nicht, dass Daten nur auf dem Handy bleiben oder jede Verarbeitung deaktiviert ist."
+      }
+    },
+    "drip": {
+      "title": "4. drip: Open-Source-Tracking mit mehr Details",
+      "paragraphs": {
+        "first": "drip ist eine kostenlose Open-Source-Option zum Erfassen von Perioden und Fruchtbarkeitsbeobachtungen wie Temperatur und Zervixschleim. Laut Entwicklungsteam bleiben Einträge auf dem Gerät. Die App-Beschreibungen nennen Import, Export und Passwortschutz.",
+        "second": "Ein Blick lohnt sich, wenn du Berechnungen nachvollziehen oder detailliertere Beobachtungen festhalten möchtest. Der Funktionsumfang kann zwischen iOS und Android abweichen. Das Aufzeichnen von Fruchtbarkeitszeichen ersetzt nicht das Erlernen einer geeigneten Verhütungsmethode mit qualifizierter Begleitung."
+      }
+    },
+    "apple-health": {
+      "title": "5. Apple Health: Zyklusprotokoll auf dem iPhone",
+      "paragraphs": {
+        "first": "Wenn du weniger Apps möchtest, probiere das Zyklusprotokoll in Apple Health. Es erfasst Perioden und Symptome und bietet Prognosen und Mitteilungen. Auf unterstützten Apple-Geräten ist es ohne separates Trackingabo enthalten.",
+        "second": "Laut Apple werden Health-Daten verschlüsselt, wenn das iPhone durch einen Code gesperrt ist. Bei iCloud-Sync setzt die Ende-zu-Ende-Verschlüsselung ein kompatibles System, einen Code und Zwei-Faktor-Authentifizierung voraus. Prüfe auch Freigaben für andere Apps und Personen. Verschlüsselung und ausschließlich lokale Speicherung sind unterschiedliche Entscheidungen."
+      }
+    },
+    "clue-vs-flo": {
+      "title": "Clue oder Flo: wie entscheidest du dich?",
+      "paragraphs": {
+        "first": "Beide bieten kostenloses Tracking und optionale Bezahlfunktionen. Clue verlangt ein Konto und beschreibt EU-Server als Speicherort. Flo bietet einen anonymen Modus und Communityfunktionen. Diese Unterschiede helfen mehr als ein pauschales Urteil, eine App sei immer datenschutzfreundlicher.",
+        "second": "Wenn du ein Trackingkonto vermeiden möchtest, vergleiche zuerst Mochi, Euki und drip. Für einen täglichen Begleiter und Bindentimer auf dem iPhone kommt Mochi infrage. Für eine kostenlose gemeinnützige Option Euki. Für offenen Quellcode und detaillierte Beobachtungen drip."
+      }
+    },
+    "switch-from-flo": {
+      "title": "So wechselst du von Flo, ohne den Verlauf zu verlieren",
+      "paragraphs": {
+        "first": "Bewahre eine nutzbare Kopie auf, bevor du etwas löschst. Ein App-Wechsel kann Zeit brauchen, besonders bei inkompatiblen Exportformaten."
+      },
+      "items": {
+        "export": "Fordere zuerst deine Daten an. Flo nennt aktuell den Weg Profilbild → Hilfe → Kontakt. Laut Exportanleitung müssen Personen im anonymen Modus sich zuerst registrieren. Lies diese Abwägung vor dem Fortfahren.",
+        "verify": "Prüfe die Kopie und die neue App. Ein Flo-Export lässt sich nicht automatisch direkt in Mochi oder andere Tracker importieren. Frühere Periodendaten musst du eventuell manuell eintragen. Bewahre exportierte Gesundheitsdateien privat auf.",
+        "delete": "Wenn du dein Flo-Konto löschen möchtest, folge der aktuellen Anleitung: Profilbild → Datenschutzeinstellungen → Konto löschen. Das Deinstallieren der App allein ist kein Antrag auf Kontolöschung.",
+        "subscription": "Prüfe ein Abo separat beim abrechnenden Store oder Dienst. Das Löschen einer App oder eines Kontos ist kein Nachweis, dass die Verlängerung beendet wurde."
+      },
+      "after": "Beginne mit den nötigen Einträgen und einer machbaren Routine. Mochis Zyklusprognosen sind Schätzungen zur Orientierung, keine Verhütung oder Diagnose."
+    }
+  },
+  "faq": {
+    "free": {
+      "question": "Gibt es kostenlose Flo-Alternativen ohne Abo?",
+      "answer": "Euki und drip bieten kostenloses Tracking ohne kostenpflichtige Trackingstufe. Apple Health enthält das Zyklusprotokoll auf unterstützten Geräten. Mochis Kernfunktionen sind kostenlos, Mochi Plus ist optional. Auch Clue hat eine kostenlose Version und ein optionales Abo."
+    },
+    "account": {
+      "question": "Welche Perioden-Apps funktionieren ohne Konto?",
+      "answer": "Mochis Kernfunktionen, Euki und drip funktionieren ohne Trackingkonto. Clue verlangt eines. Flos anonymer Modus trennt identifizierende Angaben von Gesundheitsinformationen. Das ist ein anderes Konzept als ausschließlich auf dem Gerät gespeicherte Zykluseinträge."
+    },
+    "private": {
+      "question": "Bedeutet lokale Speicherung, dass keine Daten erfasst werden?",
+      "answer": "Nein. Zykluseinträge, Nutzungsanalysen, Kaufbelege und optionale Backups sind verschiedene Datentypen. Lies die Richtlinie für jeden davon. Mochi speichert Zykluseinträge standardmäßig lokal und beschreibt Nutzungsanalysen und Aboverarbeitung separat."
+    }
+  }
+}
