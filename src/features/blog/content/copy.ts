@@ -1,6 +1,7 @@
 import type { BlogLocale } from "../locales";
 import { BLOG_POSTS, type BlogPost, type BlogPostId } from "./catalog";
 import enCramps from "./articles/en/cramps.json";
+import enFloAlternatives from "./articles/en/floAlternatives.json";
 import enGettingStarted from "./articles/en/gettingStarted.json";
 import enMethods from "./articles/en/methods.json";
 import enMoods from "./articles/en/moods.json";
@@ -10,6 +11,7 @@ import enPredictions from "./articles/en/predictions.json";
 import enPrivacy from "./articles/en/privacy.json";
 import enTracking from "./articles/en/tracking.json";
 import frCramps from "./articles/fr/cramps.json";
+import frFloAlternatives from "./articles/fr/floAlternatives.json";
 import frGettingStarted from "./articles/fr/gettingStarted.json";
 import frMethods from "./articles/fr/methods.json";
 import frMoods from "./articles/fr/moods.json";
@@ -19,6 +21,7 @@ import frPredictions from "./articles/fr/predictions.json";
 import frPrivacy from "./articles/fr/privacy.json";
 import frTracking from "./articles/fr/tracking.json";
 import deCramps from "./articles/de/cramps.json";
+import deFloAlternatives from "./articles/de/floAlternatives.json";
 import deGettingStarted from "./articles/de/gettingStarted.json";
 import deMethods from "./articles/de/methods.json";
 import deMoods from "./articles/de/moods.json";
@@ -28,6 +31,7 @@ import dePredictions from "./articles/de/predictions.json";
 import dePrivacy from "./articles/de/privacy.json";
 import deTracking from "./articles/de/tracking.json";
 import esCramps from "./articles/es/cramps.json";
+import esFloAlternatives from "./articles/es/floAlternatives.json";
 import esGettingStarted from "./articles/es/gettingStarted.json";
 import esMethods from "./articles/es/methods.json";
 import esMoods from "./articles/es/moods.json";
@@ -37,6 +41,7 @@ import esPredictions from "./articles/es/predictions.json";
 import esPrivacy from "./articles/es/privacy.json";
 import esTracking from "./articles/es/tracking.json";
 import ptBRCramps from "./articles/pt-BR/cramps.json";
+import ptBRFloAlternatives from "./articles/pt-BR/floAlternatives.json";
 import ptBRGettingStarted from "./articles/pt-BR/gettingStarted.json";
 import ptBRMethods from "./articles/pt-BR/methods.json";
 import ptBRMoods from "./articles/pt-BR/moods.json";
@@ -46,6 +51,7 @@ import ptBRPredictions from "./articles/pt-BR/predictions.json";
 import ptBRPrivacy from "./articles/pt-BR/privacy.json";
 import ptBRTracking from "./articles/pt-BR/tracking.json";
 import ptPTCramps from "./articles/pt-PT/cramps.json";
+import ptPTFloAlternatives from "./articles/pt-PT/floAlternatives.json";
 import ptPTGettingStarted from "./articles/pt-PT/gettingStarted.json";
 import ptPTMethods from "./articles/pt-PT/methods.json";
 import ptPTMoods from "./articles/pt-PT/moods.json";
@@ -95,6 +101,7 @@ type ArticleCopyInput = Omit<ArticleCopy, "sections"> & {
 
 const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> = {
   en: {
+    floAlternatives: enFloAlternatives,
     cramps: enCramps,
     gettingStarted: enGettingStarted,
     methods: enMethods,
@@ -106,6 +113,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: enTracking,
   },
   fr: {
+    floAlternatives: frFloAlternatives,
     cramps: frCramps,
     gettingStarted: frGettingStarted,
     methods: frMethods,
@@ -117,6 +125,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: frTracking,
   },
   de: {
+    floAlternatives: deFloAlternatives,
     cramps: deCramps,
     gettingStarted: deGettingStarted,
     methods: deMethods,
@@ -128,6 +137,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: deTracking,
   },
   es: {
+    floAlternatives: esFloAlternatives,
     cramps: esCramps,
     gettingStarted: esGettingStarted,
     methods: esMethods,
@@ -139,6 +149,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: esTracking,
   },
   "pt-BR": {
+    floAlternatives: ptBRFloAlternatives,
     cramps: ptBRCramps,
     gettingStarted: ptBRGettingStarted,
     methods: ptBRMethods,
@@ -150,6 +161,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: ptBRTracking,
   },
   "pt-PT": {
+    floAlternatives: ptPTFloAlternatives,
     cramps: ptPTCramps,
     gettingStarted: ptPTGettingStarted,
     methods: ptPTMethods,

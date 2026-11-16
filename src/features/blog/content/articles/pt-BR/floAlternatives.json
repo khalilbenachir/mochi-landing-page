@@ -1,0 +1,149 @@
+{
+  "title": "5 alternativas ao Flo para acompanhar o ciclo com privacidade (2026)",
+  "description": "Compare Mochi, Euki, Clue, drip e Apple Saúde como alternativas ao Flo: recursos gratuitos, armazenamento dos dados do ciclo e necessidade de conta.",
+  "imageAlt": "Mochi rosa segurando um celular com cadeado ao lado de três cartões de comparação em tons pastel",
+  "intro": "Para acompanhar o ciclo sem conta, considere Mochi, Euki ou drip. O Clue oferece acompanhamento com conta e armazenamento em servidores da UE; o Apple Saúde inclui Acompanhamento de Ciclo no iPhone. Os cinco têm opções gratuitas, com diferenças em backup, assinaturas e privacidade.",
+  "sections": {
+    "choose-your-tracker": {
+      "title": "Qual alternativa ao Flo combina com você?",
+      "paragraphs": {
+        "first": "Comece pelo que você precisa: lembrar as datas da menstruação, reunir sintomas ou facilitar um registro diário. Depois compare onde os dados ficam, o que funciona de graça e como recuperar seu histórico se perder o celular.",
+        "second": [
+          "Se a privacidade é o motivo da troca, consulte também nossa ",
+          { "postId": "privacy", "label": "lista de verificação para apps menstruais" },
+          "."
+        ]
+      },
+      "note": "Nós desenvolvemos o Mochi. Esta comparação usa informações publicadas pelos fornecedores, verificadas em 16 de novembro de 2026. Não é uma auditoria independente de segurança nem um ranking baseado em testes de uso. Recursos e disponibilidade podem mudar."
+    },
+    "is-flo-free": {
+      "title": "O Flo é um bom app gratuito de acompanhamento menstrual?",
+      "paragraphs": {
+        "first": "O Flo pode atender a muitas necessidades do dia a dia. Sua versão gratuita inclui previsões de menstruação e ovulação, registro de sintomas e lembretes. O Flo Premium acrescenta recursos pagos. As previsões básicas não são exclusivas de uma assinatura.",
+        "second": "O Flo também oferece o Modo Anônimo, que separa informações de identificação dos dados de saúde. Não é correto afirmar que todas as pessoas precisam vincular nome ou e-mail ao histórico do ciclo. Se sua prioridade é manter os registros no celular, avalie o armazenamento separadamente da exigência de conta."
+      }
+    },
+    "flo-privacy-history": {
+      "title": "Qual foi a controvérsia de privacidade do Flo?",
+      "paragraphs": {
+        "first": "Em 2021, o Flo fez um acordo com a Comissão Federal de Comércio dos Estados Unidos sobre acusações de compartilhar informações de saúde com serviços externos de análise apesar de prometer privacidade. A ordem exigiu consentimento antes de determinados compartilhamentos futuros e uma avaliação independente de suas práticas.",
+        "second": "Esse histórico importa ao avaliar confiança. O atual Modo Anônimo, criado para separar identidade e informações de saúde, também importa. Nem um acordo passado nem um recurso atual, isoladamente, permite classificar a privacidade de todos os apps hoje. Leia a política do modo que você pretende usar."
+      }
+    },
+    "compare-alternatives": {
+      "title": "Cinco alternativas ao Flo em uma comparação rápida",
+      "paragraphs": {
+        "first": "Estas são as diferenças práticas. Acompanhamento gratuito não significa ausência de planos pagos: Mochi e Clue oferecem assinaturas opcionais. A disponibilidade e as ofertas variam conforme a região."
+      },
+      "table": {
+        "caption": "Alternativas ao Flo por armazenamento, conta, acesso gratuito e uso cotidiano",
+        "columns": ["App / plataforma", "Dados do ciclo", "Conta", "Acesso gratuito", "Vale considerar para"],
+        "rows": [
+          [
+            "Mochi · iPhone",
+            "No aparelho por padrão; backup criptografado opcional",
+            "Desnecessária para os recursos básicos",
+            "Recursos básicos gratuitos; Mochi Plus opcional",
+            "Registros diários e temporizadores discretos de absorvente"
+          ],
+          [
+            "Euki · iOS / Android",
+            "No aparelho; o Euki diz não coletar os registros",
+            "Não",
+            "Gratuito, mantido por uma organização sem fins lucrativos",
+            "Registro local e informações de saúde sexual"
+          ],
+          [
+            "Clue · iOS / Android",
+            "Servidores da UE, segundo o Clue",
+            "Sim",
+            "Versão gratuita; Clue Plus opcional",
+            "Backup com conta e acompanhamento detalhado"
+          ],
+          ["drip · iOS / Android", "No aparelho", "Não", "Gratuito", "Código aberto e registros de temperatura"],
+          [
+            "Apple Saúde · iPhone",
+            "No aparelho; sincronização com iCloud opcional",
+            "Sem conta de acompanhamento separada; Conta Apple para iCloud",
+            "Incluído em aparelhos compatíveis",
+            "Acompanhamento no app Saúde que você já tem"
+          ]
+        ]
+      }
+    },
+    "mochi": {
+      "title": "1. Mochi: companhia para o dia a dia no iPhone",
+      "paragraphs": {
+        "first": "O Mochi pode combinar com você se quiser uma pequena rotina diária com um personagem acolhedor. Os recursos básicos funcionam offline e sem conta: previsões, humor, sintomas, lembretes de absorvente, sequências de registros e sabores iniciais são gratuitos. O Mochi Plus é opcional.",
+        "second": "O temporizador aparece na Dynamic Island dos iPhones compatíveis e na Tela Bloqueada com texto discreto. Os registros do ciclo ficam no iPhone, a menos que você ative o backup criptografado opcional. A política os exclui de análises de uso, logs e relatórios de falhas, mas descreve análises de utilização e processamento de assinaturas. Armazenamento local do ciclo não significa ausência de coleta de dados técnicos.",
+        "third": [
+          "Para experimentar a rotina, comece pelo ",
+          { "postId": "gettingStarted", "label": "seu primeiro registro no Mochi" },
+          ". Os recursos básicos não exigem conta."
+        ]
+      }
+    },
+    "euki": {
+      "title": "2. Euki: acompanhamento gratuito com armazenamento local",
+      "paragraphs": {
+        "first": "O Euki é um projeto de código aberto de uma organização independente sem fins lucrativos. Sua documentação diz que os dados registrados ficam no aparelho, sem conta. Ele inclui PIN opcional, exclusões programadas e informações de saúde sexual.",
+        "second": "Não há planos de acompanhamento pagos. A contrapartida é a recuperação: como o Euki não tem seus registros, não consegue recuperar o histórico por uma conta se você perder acesso ao celular."
+      }
+    },
+    "clue": {
+      "title": "3. Clue: acompanhamento com conta e armazenamento na UE",
+      "paragraphs": {
+        "first": "O Clue pode servir se você quiser acessar seu histórico por uma conta. Ele exige uma conta gratuita e informa que guarda os registros de saúde em servidores da UE. Há uma versão gratuita e recursos adicionais no Clue Plus; os preços variam por região.",
+        "second": "Leia os ajustes de privacidade sobre pesquisa, análises, integrações e processamento de dados de uso para publicidade. O GDPR e o armazenamento europeu são relevantes, mas não significam que os dados nunca saiam do celular ou que todo processamento esteja desativado."
+      }
+    },
+    "drip": {
+      "title": "4. drip: código aberto e registros mais detalhados",
+      "paragraphs": {
+        "first": "O drip é uma opção gratuita de código aberto para registrar menstruações e observações de fertilidade, como temperatura e muco cervical. Seus desenvolvedores dizem que os registros ficam no aparelho. As descrições do app mencionam importação, exportação e proteção por senha.",
+        "second": "Vale explorar se você quiser entender os cálculos ou anotar observações detalhadas. Os recursos podem ser diferentes no iOS e no Android. Registrar sinais de fertilidade não substitui o aprendizado de um método contraceptivo adequado com acompanhamento qualificado."
+      }
+    },
+    "apple-health": {
+      "title": "5. Apple Saúde: Acompanhamento de Ciclo já no iPhone",
+      "paragraphs": {
+        "first": "Se quiser menos apps, experimente o Acompanhamento de Ciclo no Apple Saúde. Ele registra menstruações e sintomas e mostra previsões e notificações. Está incluído em aparelhos Apple compatíveis, sem uma assinatura de acompanhamento separada.",
+        "second": "A Apple informa que os dados de Saúde são criptografados quando o celular está bloqueado por código. Na sincronização com iCloud, a criptografia de ponta a ponta depende de sistema compatível, código e autenticação de dois fatores. Confira também as permissões de compartilhamento com apps e pessoas. Criptografar os dados e mantê-los apenas no celular são escolhas diferentes."
+      }
+    },
+    "clue-vs-flo": {
+      "title": "Clue ou Flo: qual escolher?",
+      "paragraphs": {
+        "first": "Ambos oferecem acompanhamento gratuito e recursos pagos opcionais. O Clue exige conta e descreve armazenamento na UE. O Flo inclui Modo Anônimo e recursos de comunidade. Essas diferenças são mais úteis do que declarar que um app sempre oferece mais privacidade.",
+        "second": "Se evitar uma conta é prioridade, compare primeiro Mochi, Euki e drip. Para companhia diária e temporizador de absorvente no iPhone, considere o Mochi. Para uma opção gratuita sem fins lucrativos, o Euki. Para código aberto e observações detalhadas, explore o drip."
+      }
+    },
+    "switch-from-flo": {
+      "title": "Como sair do Flo sem perder seu histórico",
+      "paragraphs": {
+        "first": "Guarde uma cópia útil antes de apagar qualquer coisa. Trocar de app pode levar tempo, especialmente quando os formatos de exportação são incompatíveis."
+      },
+      "items": {
+        "export": "Solicite seus dados primeiro. As instruções atuais do Flo indicam avatar → Ajuda → Fale conosco. A orientação de exportação diz que quem usa o Modo Anônimo precisa se cadastrar antes: avalie essa condição antes de continuar.",
+        "verify": "Confira a cópia e o app de destino. Não presuma que uma exportação do Flo seja importada diretamente no Mochi ou em outro app. Talvez seja necessário inserir as datas anteriores manualmente. Guarde arquivos de saúde em um local privado.",
+        "delete": "Se decidir excluir sua conta do Flo, siga o guia atual: avatar → Configurações de privacidade → Excluir conta. Desinstalar o app não equivale a solicitar a exclusão da conta.",
+        "subscription": "Verifique a assinatura separadamente na loja ou serviço que faz a cobrança. Excluir um app ou uma conta não comprova o fim da renovação."
+      },
+      "after": "Comece pelos registros necessários e uma rotina viável. As previsões do Mochi são estimativas para conhecer o ciclo, não contracepção nem diagnóstico."
+    }
+  },
+  "faq": {
+    "free": {
+      "question": "Existem alternativas gratuitas ao Flo sem assinatura?",
+      "answer": "Euki e drip oferecem acompanhamento gratuito sem plano de acompanhamento pago. O Apple Saúde inclui Acompanhamento de Ciclo em aparelhos compatíveis. Os recursos básicos do Mochi são gratuitos, com Mochi Plus opcional; o Clue também tem versão gratuita e assinatura opcional."
+    },
+    "account": {
+      "question": "Quais apps menstruais funcionam sem conta?",
+      "answer": "Os recursos básicos do Mochi, Euki e drip funcionam sem conta de acompanhamento. O Clue exige uma. O Modo Anônimo do Flo separa identificação e informações de saúde: é um funcionamento diferente de guardar os registros apenas no aparelho."
+    },
+    "private": {
+      "question": "Armazenamento local significa que nenhum dado é coletado?",
+      "answer": "Não. Registros do ciclo, análises de uso, compras e backups opcionais são tipos de dados diferentes. Leia a política de cada um. O Mochi mantém os registros do ciclo no aparelho por padrão e descreve separadamente análises de utilização e processamento de assinaturas."
+    }
+  }
+}
