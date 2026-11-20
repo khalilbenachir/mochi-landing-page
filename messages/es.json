@@ -566,7 +566,17 @@
       "dripApp": "drip: proyecto oficial",
       "dripIos": "drip: ficha de iPhone en App Store",
       "dripAndroid": "drip: ficha en Google Play",
-      "appleCycle": "Apple: Control del Ciclo y privacidad de Salud"
+      "appleCycle": "Apple: Control del Ciclo y privacidad de Salud",
+      "menstrualBloodLoss": "Together by St. Jude: pérdida menstrual y anemia",
+      "menstrualComposition": "Departamento de Salud de Nueva Jersey: regla y embarazo",
+      "periodOverview": "NHS: menstruación",
+      "heavyPeriods": "NHS: reglas abundantes",
+      "heavyMenstrualBleeding": "ACOG: sangrado menstrual abundante",
+      "abnormalUterineBleeding": "ACOG: sangrado uterino anormal",
+      "heavyBleedingGuidance": "NICE: guía sobre sangrado menstrual abundante",
+      "heavyFlowVolume": "Healthdirect: reglas abundantes y volumen sanguíneo",
+      "periodBlood": "Cleveland Clinic: color de la sangre menstrual",
+      "fertilityCycleDay": "The Fertility Center: día 1 del ciclo"
     },
     "editorial": {
       "title": "Nuestro criterio editorial",

@@ -1,0 +1,19 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-20",
+  "file": "public/blog-art/period-blood-loss-mochi-v3.webp",
+  "references": [
+    "public/blog-art/pad-care-mochi.webp"
+  ],
+  "use": "Article hero, blog cards, related reading and generated social cards in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1200,
+    "height": 800,
+    "quality": 82,
+    "transparent": true
+  },
+  "editorialNote": "Symbolic editorial illustration; the jug and droplets do not depict an exact blood-loss measurement.",
+  "prompt": "Use case: identity-preserve / precise-object-edit.\nEdit ONLY Mochi's facial expression in the supplied illustration. Mochi is experiencing a period and should look tired, a little uncomfortable and subdued, while remaining gentle and recognizably cute.\nReplace BOTH happy upward crescent eyes with relaxed, downcast closed eyes: low, gently drooping navy eyelid strokes that read as fatigued rather than cheerful. Replace the wide open smiling mouth completely with a small closed navy downturned mouth, a subtle frown. No open mouth, no tongue, no grin and no smiling expression. The face should clearly communicate mild period discomfort, not severe distress or crying.\nKeep EVERYTHING ELSE unchanged: exact pink mascot identity, body shape, pink cheeks, white glossy highlights, cream cushion, sanitary pad with one pink blood-drop mark, lavender measuring jug with three unnumbered ticks and a low pink liquid level, floating pink droplet, positions, proportions, outlines, palette and softly shaded flat sticker style. Do not add or remove props, do not change the pose, and do not add eyebrows, tears, sweat, words or symbols.\nPreserve the 3:2 landscape composition, generous margins and genuine transparent alpha background. Keep clean antialiased cutout edges with no glow, haze, backdrop, floor or rectangular panel. Output is the revised illustration only, not a comparison or mockup.",
+  "referenceNote": "Original style reference. The final expression edit was made from an earlier blood-loss scene variant; the two superseded image files were removed at the user’s request."
+}

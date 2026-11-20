@@ -1,7 +1,8 @@
 import type { EditorialSourceId } from "@/lib/editorial-sources";
 import { blogPath, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE } from "../locales";
 
-export type BlogPostId = "tracking" | "privacy" | "methods" | "pads" | "phases" | "predictions" | "cramps" | "moods" | "gettingStarted" | "floAlternatives";
+export type BlogPostId =
+  "tracking" | "privacy" | "methods" | "pads" | "phases" | "predictions" | "cramps" | "moods" | "gettingStarted" | "floAlternatives" | "bloodLoss";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -25,6 +26,26 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "bloodLoss",
+    category: "period-care",
+    slug: "how-much-blood-do-you-lose-during-period",
+    image: "/blog-art/period-blood-loss-mochi-v3.webp",
+    tone: "bg-blog-pink",
+    publishedAt: "2026-11-20",
+    sections: [
+      { id: "menstrual-fluid", sources: ["menstrualComposition", "menstrualBloodLoss"] },
+      { id: "teaspoons", sources: ["menstrualBloodLoss"] },
+      { id: "daily-loss", sources: ["periodOverview"] },
+      { id: "period-length", sources: ["periodOverview"] },
+      { id: "year-and-lifetime", sources: ["menstrualCycle", "abnormalUterineBleeding"] },
+      { id: "heavy-flow", sources: ["heavyFlowVolume", "heavyBleedingGuidance"] },
+      { id: "warning-signs", sources: ["heavyPeriods", "heavyMenstrualBleeding", "abnormalUterineBleeding"] },
+      { id: "losing-200-ml", sources: ["menstrualBloodLoss", "abnormalUterineBleeding"] },
+      { id: "brown-blood", sources: ["periodBlood", "fertilityCycleDay"] },
+      { id: "track-your-flow", sources: ["mochiFeatures", "heavyPeriods"] },
+    ],
+  },
   {
     id: "floAlternatives",
     category: "privacy",

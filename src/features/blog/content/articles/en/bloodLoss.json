@@ -1,0 +1,148 @@
+{
+  "title": "How Much Blood Do You Actually Lose During Your Period?",
+  "description": "How much blood do you lose during your period? Get clear answers on daily flow, heavy bleeding, teaspoons, and when to speak to a doctor.",
+  "imageAlt": "Tired pink Mochi with downcast eyes beside a period pad, a lavender measuring jug, and a pink blood droplet",
+  "intro": "Around 30–40 mL of blood over a whole period—roughly 6–8 teaspoons—is a commonly cited average. Your flow may be lighter or heavier. The amount matters, but so do changes in your usual pattern and how you feel.",
+  "sections": {
+    "menstrual-fluid": {
+      "title": "Why it can look like so much blood",
+      "paragraphs": {
+        "first": "A soaked pad or red toilet water can make “a few teaspoons” hard to picture. What you see is menstrual fluid: blood mixed with mucus and tissue from the lining of your uterus.",
+        "second": "A menstrual cup collects that whole mixture. So if your cup contains 40 mL of fluid, you haven't necessarily lost 40 mL of blood. There isn't a reliable fixed percentage you can subtract to work it out at home.",
+        "third": "You don't need an exact measurement to describe your period. How often products fill up, whether you leak, and whether the bleeding feels different from usual are all useful things to notice."
+      }
+    },
+    "teaspoons": {
+      "title": "How many teaspoons of blood do you lose on your period?",
+      "paragraphs": {
+        "first": "A standard measuring teaspoon holds 5 mL. That puts the commonly cited 30–40 mL average at about 6–8 teaspoons of blood across the entire period.",
+        "second": "Here are a few conversions to make those numbers easier to picture. They describe blood volume; the total fluid in a cup can be greater."
+      },
+      "table": {
+        "caption": "Blood volume in standard 5 mL measuring teaspoons",
+        "columns": ["Blood volume", "About this many teaspoons"],
+        "rows": [
+          ["30 mL", "6"],
+          ["40 mL", "8"],
+          ["80 mL", "16"],
+          ["200 mL", "40"]
+        ]
+      }
+    },
+    "daily-loss": {
+      "title": "How much blood does a woman lose during her period in a day?",
+      "paragraphs": {
+        "first": "It changes from day to day. Bleeding is usually heaviest during the first two days, then gets lighter. There isn't a single daily amount that everyone should expect.",
+        "second": "To put it in numbers, 40 mL spread over five days would average 8 mL a day, or about 1.6 teaspoons. In practice, you might lose much more of that total at the start and very little near the end.",
+        "third": "For your own notes, “heavy on Monday, lighter by Wednesday” can be more useful than trying to assign a milliliter figure to each day."
+      }
+    },
+    "period-length": {
+      "title": "What about periods that last 3, 4, or 6 days?",
+      "paragraphs": {
+        "first": "A shorter period can still be heavy. A longer one may include several days of barely-there bleeding. Counting the days alone won't tell you how much blood you've lost.",
+        "second": "Periods commonly last between two and seven days. There isn't a separate, reliable blood-loss total for each possible duration."
+      },
+      "table": {
+        "caption": "What a three-, four- or six-day period tells you about blood loss",
+        "columns": ["Your question", "What to know"],
+        "rows": [
+          [
+            "How much blood is lost during periods in 3 days?",
+            "The bleeding may be light, or a heavier flow may be concentrated into those three days. A short period doesn't guarantee a small blood loss."
+          ],
+          [
+            "How much blood is lost during periods in 4 days?",
+            "Watch how quickly products fill and how the flow changes. Four days alone can't tell you the total volume."
+          ],
+          [
+            "How much blood is lost during periods in 6 days?",
+            "The extra days may be light bleeding or spotting. Six days doesn't automatically mean more blood than a shorter period."
+          ]
+        ]
+      }
+    },
+    "year-and-lifetime": {
+      "title": "What does that add up to over time?",
+      "paragraphs": {
+        "first": "How much blood does a woman lose on her period in a year? If you have 12 periods and lose 40 mL each time, that adds up to 480 mL. With 13 periods at the same volume, it would be 520 mL.",
+        "second": "How much blood does a woman lose during her period in a lifetime? Using 450 periods at 40 mL each gives 18,000 mL, or 18 liters. Here, 450 is a number chosen for the calculation, not a promise of how many periods you'll have.",
+        "third": "These are examples, rather than personal predictions. Cycle length, when periods begin and end, pregnancy, breastfeeding, and hormonal contraception can all change the number of periods or the bleeding pattern. You don't need to track a running lifetime total."
+      }
+    },
+    "heavy-flow": {
+      "title": "How much blood does a woman lose during her period with heavy flow?",
+      "paragraphs": {
+        "first": "More than 80 mL of blood in one period—about 16 teaspoons—is a commonly used threshold for heavy menstrual bleeding. But you don't have to prove you've crossed that line to ask for help.",
+        "second": "Doctors also look at how bleeding affects your life. Regularly waking to change protection, missing activities, or planning your day around leaks is worth discussing, even if you have no idea how many milliliters you lose.",
+        "third": "Counting pads or tampons won't give an exact volume: absorbency varies, and you may change a product before it's full. Note how often it becomes fully soaked instead."
+      }
+    },
+    "warning-signs": {
+      "title": "Signs you're losing too much blood during your period",
+      "paragraphs": {
+        "first": "Book a healthcare appointment if you regularly notice any of these:"
+      },
+      "items": {
+        "changes": "A pad or tampon fills up in one to two hours.",
+        "protection": "You need two types of protection together to manage the flow.",
+        "leaks": "You bleed through clothes or bedding.",
+        "duration": "Bleeding lasts longer than seven days.",
+        "clots": "You pass clots larger than about 2.5 cm.",
+        "activities": "Bleeding stops you exercising, going out, or attending work or school.",
+        "symptoms": "You often feel unusually tired or short of breath."
+      },
+      "after": "Even if your periods have always been like this, you can ask about treatment. You don't have to wait for them to become worse.",
+      "note": "Get urgent medical advice if you're soaking through a pad or tampon every hour for several hours. Heavy bleeding with chest pain, shortness of breath, fainting, or significant dizziness needs emergency care."
+    },
+    "losing-200-ml": {
+      "title": "What happens when we lose 200 mL of blood during periods?",
+      "paragraphs": {
+        "first": "If that's 200 mL of actual blood during one period, it needs medical assessment. It's well above the commonly used 80 mL threshold.",
+        "second": "Repeated heavy bleeding can use up your iron stores and lead to iron-deficiency anemia. You might feel exhausted, weak, dizzy, or breathless. The effects depend partly on your starting iron levels and how often it happens; a specific volume doesn't tell the whole story.",
+        "third": "If the 200 mL figure comes from a menstrual cup, tell your clinician that it's collected menstrual fluid. Explain how you measured it and mention leaks, flooding, and any symptoms. They may check your blood count and investigate causes such as fibroids, polyps, ovulation problems, or a bleeding disorder."
+      }
+    },
+    "brown-blood": {
+      "title": "Does brown blood still count as a period day?",
+      "paragraphs": {
+        "first": "Yes, brown bleeding can be part of your period, particularly as it winds down. Blood darkens as it oxidizes, so older blood can look brown by the time it leaves your body.",
+        "second": "For tracking, go by the amount as well as the timing. Brown flow during your usual period can be logged as bleeding. A few isolated marks can be recorded as spotting. You don't need to wait for bright red blood before noting what happened."
+      },
+      "after": "If you're having fertility tests or treatment, follow your clinic's instructions for cycle Day 1. Clinics commonly count the first day of full menstrual flow rather than spotting."
+    },
+    "track-your-flow": {
+      "title": "What to note before a doctor's appointment",
+      "paragraphs": {
+        "first": "Start with the dates, which days were heaviest, how often products became fully soaked, and any leaks, clots, or symptoms. A short, honest record is enough; leave out quantities you can't confidently estimate.",
+        "second": [
+          "Mochi lets you log period dates, flow, moods, and symptoms. Our ",
+          {
+            "postId": "tracking",
+            "label": "guide to tracking your period"
+          },
+          " can help you decide what to record."
+        ],
+        "third": "If you're worried about your bleeding, make the appointment. You can bring the notes you already have."
+      }
+    }
+  },
+  "faq": {
+    "teaspoons": {
+      "question": "How many teaspoons of blood do you lose on your period?",
+      "answer": "A commonly cited average is 30–40 mL of blood across the whole period, or about 6–8 standard 5 mL teaspoons. That's the total for the period, not each day. Menstrual fluid also contains mucus and tissue, so a cup's contents aren't all blood."
+    },
+    "200ml": {
+      "question": "What happens when we lose 200 mL of blood during periods?",
+      "answer": "A loss of 200 mL of actual blood in one period needs medical assessment. Repeated heavy bleeding can deplete iron stores and cause anemia. If you measured it with a cup, explain that the volume is menstrual fluid. Heavy bleeding with chest pain, shortness of breath, fainting, or significant dizziness needs emergency care."
+    },
+    "brown": {
+      "question": "Does brown blood still count as a period day?",
+      "answer": "It can. Brown flow during your period can be recorded as bleeding, while isolated marks can be logged as spotting. Color alone doesn't decide. For fertility tests or treatment, follow your clinic's instructions about when to count cycle Day 1."
+    },
+    "composition": {
+      "question": "Is period blood 100% blood?",
+      "answer": "No. Menstrual fluid is a mixture of blood, mucus, and tissue from the uterine lining. That's why the total fluid collected in a menstrual cup doesn't give an exact measurement of blood loss."
+    }
+  }
+}

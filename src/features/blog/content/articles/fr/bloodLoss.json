@@ -1,0 +1,148 @@
+{
+  "title": "Combien de sang perd-on vraiment pendant les règles ?",
+  "description": "Quantité de sang perdue pendant les règles : des réponses claires sur le flux quotidien, les cuillères à café et les signes qui méritent une consultation.",
+  "imageAlt": "Mochi rose fatigué, les yeux baissés, à côté d’une serviette hygiénique, d’un verre doseur lavande et d’une goutte de sang rose",
+  "intro": "Une moyenne souvent citée est de 30 à 40 mL de sang pour l'ensemble des règles, soit environ 6 à 8 cuillères à café. Votre flux peut être plus léger ou plus abondant. La quantité compte, mais aussi les changements par rapport à vos habitudes et ce que vous ressentez.",
+  "sections": {
+    "menstrual-fluid": {
+      "title": "Pourquoi cela peut sembler faire autant de sang",
+      "paragraphs": {
+        "first": "Devant une serviette saturée ou de l'eau rouge dans les toilettes, il est difficile d'imaginer « quelques cuillères à café ». Ce que vous voyez est du liquide menstruel : du sang mélangé à du mucus et à des tissus de la muqueuse utérine.",
+        "second": "Une coupe recueille tout ce mélange. Si elle contient 40 mL de liquide, cela ne signifie donc pas forcément 40 mL de sang perdu. Il n'existe pas de pourcentage fixe fiable à retirer pour faire le calcul chez vous.",
+        "third": "Vous n'avez pas besoin d'une mesure exacte pour décrire vos règles. La vitesse à laquelle vos protections se remplissent, les fuites et les changements de flux sont déjà des observations utiles."
+      }
+    },
+    "teaspoons": {
+      "title": "Combien de cuillères à café de sang perd-on pendant les règles ?",
+      "paragraphs": {
+        "first": "Une cuillère à café doseuse standard contient 5 mL. La moyenne souvent citée de 30 à 40 mL correspond donc à environ 6 à 8 cuillères pour l'ensemble des règles.",
+        "second": "Ces conversions aident à visualiser les quantités. Elles concernent le sang ; le volume total recueilli dans une coupe peut être plus élevé."
+      },
+      "table": {
+        "caption": "Volume de sang en cuillères à café doseuses de 5 mL",
+        "columns": ["Volume de sang", "Cuillères à café, environ"],
+        "rows": [
+          ["30 mL", "6"],
+          ["40 mL", "8"],
+          ["80 mL", "16"],
+          ["200 mL", "40"]
+        ]
+      }
+    },
+    "daily-loss": {
+      "title": "Combien de sang perd-on par jour pendant les règles ?",
+      "paragraphs": {
+        "first": "La quantité change d'un jour à l'autre. Les saignements sont généralement plus abondants les deux premiers jours, puis diminuent. Il n'y a pas une quantité quotidienne à attendre pour tout le monde.",
+        "second": "Pour donner un exemple, 40 mL répartis sur cinq jours feraient 8 mL par jour, soit environ 1,6 cuillère à café. En pratique, une grande partie peut être perdue au début et très peu à la fin.",
+        "third": "Dans votre suivi, « flux abondant lundi, plus léger mercredi » peut être plus utile qu'un chiffre en millilitres attribué à chaque journée."
+      }
+    },
+    "period-length": {
+      "title": "Et si les règles durent 3, 4 ou 6 jours ?",
+      "paragraphs": {
+        "first": "Des règles courtes peuvent être abondantes. Des règles plus longues peuvent comprendre plusieurs jours de saignements à peine visibles. Compter les jours ne suffit pas à connaître la perte de sang.",
+        "second": "Les règles durent couramment entre deux et sept jours. Il n'existe pas de volume sanguin distinct et fiable pour chaque durée possible."
+      },
+      "table": {
+        "caption": "Ce que des règles de trois, quatre ou six jours indiquent sur la perte sanguine",
+        "columns": ["Votre question", "Ce qu'il faut savoir"],
+        "rows": [
+          [
+            "Combien de sang perd-on pendant des règles de 3 jours ?",
+            "Le flux peut être léger, ou plus abondant et concentré sur ces trois jours. Des règles courtes ne garantissent pas une petite perte."
+          ],
+          [
+            "Combien de sang perd-on pendant des règles de 4 jours ?",
+            "Observez la vitesse à laquelle les protections se remplissent et l'évolution du flux. Quatre jours ne suffisent pas à connaître le volume total."
+          ],
+          [
+            "Combien de sang perd-on pendant des règles de 6 jours ?",
+            "Les jours supplémentaires peuvent être des saignements légers ou du spotting. Six jours ne signifient pas automatiquement plus de sang que des règles plus courtes."
+          ]
+        ]
+      }
+    },
+    "year-and-lifetime": {
+      "title": "Qu'est-ce que cela représente au fil du temps ?",
+      "paragraphs": {
+        "first": "Combien de sang perd-on pendant les règles en un an ? Avec 12 périodes de règles à 40 mL chacune, le total serait de 480 mL. Avec 13 au même volume, il serait de 520 mL.",
+        "second": "Et au cours d'une vie ? En prenant 450 périodes de règles à 40 mL chacune, on arrive à 18 000 mL, soit 18 litres. Ici, 450 est un nombre choisi pour le calcul, pas une prédiction de votre nombre de règles.",
+        "third": "Ce sont des exemples. La durée des cycles, l'âge des premières et des dernières règles, la grossesse, l'allaitement et la contraception hormonale peuvent changer le nombre de règles ou les saignements. Vous n'avez pas besoin de tenir un total sur toute votre vie."
+      }
+    },
+    "heavy-flow": {
+      "title": "Combien de sang perd-on en cas de règles abondantes ?",
+      "paragraphs": {
+        "first": "Plus de 80 mL de sang pendant une période de règles, soit environ 16 cuillères à café, est un seuil souvent utilisé pour les saignements menstruels abondants. Vous n'avez toutefois pas à prouver que vous le dépassez avant de demander de l'aide.",
+        "second": "Le médecin s'intéresse aussi aux conséquences sur votre vie. Se lever régulièrement pour changer de protection, manquer des activités ou organiser sa journée autour des fuites mérite une discussion, même sans estimation en millilitres.",
+        "third": "Compter les serviettes ou les tampons ne donne pas un volume exact : leur absorption varie et vous pouvez les changer avant qu'ils soient pleins. Notez plutôt la fréquence des protections entièrement imbibées."
+      }
+    },
+    "warning-signs": {
+      "title": "Les signes d'une perte de sang trop importante pendant les règles",
+      "paragraphs": {
+        "first": "Prenez rendez-vous si vous remarquez régulièrement l'un de ces signes :"
+      },
+      "items": {
+        "changes": "Une serviette ou un tampon se remplit en une à deux heures.",
+        "protection": "Vous avez besoin de deux types de protection ensemble pour gérer le flux.",
+        "leaks": "Vous tachez les vêtements ou les draps malgré une protection.",
+        "duration": "Les saignements durent plus de sept jours.",
+        "clots": "Vous évacuez des caillots de plus de 2,5 cm environ.",
+        "activities": "Les saignements vous empêchent de faire du sport, de sortir ou d'aller au travail ou à l'école.",
+        "symptoms": "Vous ressentez souvent une fatigue inhabituelle ou un essoufflement."
+      },
+      "after": "Même si vos règles ont toujours été ainsi, vous pouvez demander quelles solutions existent. Il n'est pas nécessaire d'attendre qu'elles s'aggravent.",
+      "note": "Demandez rapidement un avis médical si vous saturez une serviette ou un tampon chaque heure pendant plusieurs heures. Des saignements abondants avec douleur thoracique, essoufflement, perte de connaissance ou vertiges importants nécessitent des soins d'urgence."
+    },
+    "losing-200-ml": {
+      "title": "Que se passe-t-il si l'on perd 200 mL de sang pendant les règles ?",
+      "paragraphs": {
+        "first": "S'il s'agit réellement de 200 mL de sang pendant une période de règles, une évaluation médicale est nécessaire. C'est bien au-dessus du seuil de 80 mL couramment utilisé.",
+        "second": "Des saignements abondants répétés peuvent épuiser vos réserves de fer et entraîner une anémie par carence en fer. Vous pouvez vous sentir épuisée, faible, essoufflée ou avoir des vertiges. Les effets dépendent notamment de vos réserves de départ et de la fréquence des saignements ; le volume seul ne dit pas tout.",
+        "third": "Si les 200 mL viennent d'une mesure avec une coupe, précisez qu'il s'agit de liquide menstruel recueilli. Expliquez votre méthode et signalez les fuites, les débordements et vos symptômes. Un professionnel peut vérifier votre numération sanguine et rechercher des causes comme des fibromes, des polypes, des troubles de l'ovulation ou de la coagulation."
+      }
+    },
+    "brown-blood": {
+      "title": "Le sang marron compte-t-il comme un jour de règles ?",
+      "paragraphs": {
+        "first": "Oui, des saignements marron peuvent faire partie des règles, surtout à la fin. Le sang fonce en s'oxydant : du sang plus ancien peut donc paraître marron lorsqu'il quitte le corps.",
+        "second": "Pour votre suivi, tenez compte de la quantité et du moment. Un flux marron pendant vos règles peut être noté comme des saignements. Quelques traces isolées peuvent être notées comme du spotting. Vous n'avez pas à attendre du sang rouge vif pour enregistrer ce qui s'est passé."
+      },
+      "after": "Si vous faites des examens ou suivez un traitement de fertilité, respectez les consignes de votre centre pour le premier jour du cycle. Les centres retiennent couramment le premier jour de véritable flux plutôt que le spotting."
+    },
+    "track-your-flow": {
+      "title": "Quoi noter avant une consultation",
+      "paragraphs": {
+        "first": "Commencez par les dates, les jours les plus abondants, la fréquence des protections saturées, puis les fuites, caillots ou symptômes. Un relevé bref et fidèle suffit ; laissez de côté les quantités que vous ne pouvez pas estimer avec confiance.",
+        "second": [
+          "Mochi vous permet de noter les dates des règles, le flux, les humeurs et les symptômes. Notre ",
+          {
+            "postId": "tracking",
+            "label": "guide du suivi des règles"
+          },
+          " peut vous aider à choisir les informations utiles."
+        ],
+        "third": "Si vos saignements vous inquiètent, prenez rendez-vous. Vous pouvez apporter les notes que vous avez déjà."
+      }
+    }
+  },
+  "faq": {
+    "teaspoons": {
+      "question": "Combien de cuillères à café de sang perd-on pendant les règles ?",
+      "answer": "Une moyenne souvent citée est de 30 à 40 mL de sang pour l'ensemble des règles, soit environ 6 à 8 cuillères doseuses de 5 mL. C'est le total des règles, pas de chaque journée. Le liquide menstruel contient aussi du mucus et des tissus : tout ce qu'une coupe recueille n'est pas du sang."
+    },
+    "200ml": {
+      "question": "Que se passe-t-il si l'on perd 200 mL de sang pendant les règles ?",
+      "answer": "Une perte réelle de 200 mL de sang pendant une période de règles nécessite une évaluation médicale. Des saignements abondants répétés peuvent épuiser les réserves de fer et causer une anémie. Si vous avez utilisé une coupe, précisez qu'il s'agit de liquide menstruel. Des saignements abondants avec douleur thoracique, essoufflement, perte de connaissance ou vertiges importants nécessitent des soins d'urgence."
+    },
+    "brown": {
+      "question": "Le sang marron compte-t-il comme un jour de règles ?",
+      "answer": "Il peut en faire partie. Un flux marron pendant les règles peut être enregistré comme des saignements, et des traces isolées comme du spotting. La couleur seule ne tranche pas. Pour des examens ou un traitement de fertilité, suivez les consignes de votre centre concernant le premier jour du cycle."
+    },
+    "composition": {
+      "question": "Le sang des règles est-il composé à 100 % de sang ?",
+      "answer": "Non. Le liquide menstruel est un mélange de sang, de mucus et de tissus de la muqueuse utérine. Le volume recueilli dans une coupe ne donne donc pas une mesure exacte du sang perdu."
+    }
+  }
+}

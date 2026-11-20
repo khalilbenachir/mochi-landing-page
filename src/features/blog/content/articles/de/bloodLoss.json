@@ -1,0 +1,148 @@
+{
+  "title": "Wie viel Blut verlierst du während deiner Periode wirklich?",
+  "description": "Wie viel Blut verlierst du während der Periode? Verständliche Antworten zu täglichen Mengen, Teelöffeln, starker Blutung und ärztlichem Rat.",
+  "imageAlt": "Müder rosa Mochi mit gesenkten Augen neben einer Binde, einem lavendelfarbenen Messbecher und einem rosa Blutstropfen",
+  "intro": "Ein häufig genannter Durchschnitt sind 30–40 mL Blut während der gesamten Periode, ungefähr 6–8 Teelöffel. Deine Blutung kann leichter oder stärker sein. Neben der Menge zählen auch Veränderungen deines üblichen Musters und wie du dich fühlst.",
+  "sections": {
+    "menstrual-fluid": {
+      "title": "Warum es nach so viel Blut aussehen kann",
+      "paragraphs": {
+        "first": "Bei einer durchtränkten Binde oder rotem Toilettenwasser sind „ein paar Teelöffel“ schwer vorstellbar. Du siehst Menstruationsflüssigkeit: Blut, vermischt mit Schleim und Gewebe der Gebärmutterschleimhaut.",
+        "second": "Eine Menstruationstasse sammelt die ganze Mischung. Enthält sie 40 mL Flüssigkeit, hast du deshalb nicht unbedingt 40 mL Blut verloren. Einen verlässlichen festen Prozentsatz zum Abziehen gibt es für die Berechnung zu Hause nicht.",
+        "third": "Du brauchst keine genaue Messung, um deine Periode zu beschreiben. Wie schnell Produkte voll werden, ob etwas ausläuft und ob die Blutung anders ist als sonst, sind bereits hilfreiche Beobachtungen."
+      }
+    },
+    "teaspoons": {
+      "title": "Wie viele Teelöffel Blut verlierst du während deiner Periode?",
+      "paragraphs": {
+        "first": "Ein standardisierter Mess-Teelöffel fasst 5 mL. Der häufig genannte Durchschnitt von 30–40 mL entspricht also etwa 6–8 Teelöffeln Blut während der gesamten Periode.",
+        "second": "Diese Umrechnungen helfen, die Mengen einzuordnen. Sie beziehen sich auf Blut; die gesamte Flüssigkeitsmenge in einer Tasse kann größer sein."
+      },
+      "table": {
+        "caption": "Blutvolumen in standardisierten Mess-Teelöffeln mit 5 mL",
+        "columns": ["Blutvolumen", "Ungefähr so viele Teelöffel"],
+        "rows": [
+          ["30 mL", "6"],
+          ["40 mL", "8"],
+          ["80 mL", "16"],
+          ["200 mL", "40"]
+        ]
+      }
+    },
+    "daily-loss": {
+      "title": "Wie viel Blut verliert eine Frau während der Periode pro Tag?",
+      "paragraphs": {
+        "first": "Das ändert sich von Tag zu Tag. Meist ist die Blutung in den ersten beiden Tagen am stärksten und wird danach leichter. Es gibt keine tägliche Menge, die für alle zu erwarten ist.",
+        "second": "Als Zahlenbeispiel: 40 mL in fünf Tagen ergeben durchschnittlich 8 mL täglich, etwa 1,6 Teelöffel. Tatsächlich kann ein großer Teil schon am Anfang verloren gehen und zum Ende nur noch sehr wenig.",
+        "third": "In deinem Protokoll kann „Montag stark, Mittwoch schon leichter“ nützlicher sein als eine Milliliterangabe für jeden einzelnen Tag."
+      }
+    },
+    "period-length": {
+      "title": "Was ist bei einer Periode von 3, 4 oder 6 Tagen?",
+      "paragraphs": {
+        "first": "Auch eine kurze Periode kann stark sein. Eine längere kann mehrere Tage mit kaum merklicher Blutung einschließen. Allein aus der Anzahl der Tage lässt sich die verlorene Blutmenge nicht ablesen.",
+        "second": "Perioden dauern häufig zwei bis sieben Tage. Für jede mögliche Dauer gibt es keine eigene verlässliche Gesamtmenge."
+      },
+      "table": {
+        "caption": "Was eine drei-, vier- oder sechstägige Periode über den Blutverlust aussagt",
+        "columns": ["Deine Frage", "Was du wissen solltest"],
+        "rows": [
+          [
+            "Wie viel Blut geht bei einer Periode von 3 Tagen verloren?",
+            "Die Blutung kann leicht sein oder sich stärker auf diese drei Tage konzentrieren. Eine kurze Periode garantiert keinen geringen Blutverlust."
+          ],
+          [
+            "Wie viel Blut geht bei einer Periode von 4 Tagen verloren?",
+            "Beobachte, wie schnell Produkte voll werden und wie sich die Blutung verändert. Vier Tage allein verraten die Gesamtmenge nicht."
+          ],
+          [
+            "Wie viel Blut geht bei einer Periode von 6 Tagen verloren?",
+            "Die zusätzlichen Tage können leichte Blutungen oder Schmierblutungen sein. Sechs Tage bedeuten nicht automatisch mehr Blut als bei einer kürzeren Periode."
+          ]
+        ]
+      }
+    },
+    "year-and-lifetime": {
+      "title": "Wie viel kommt im Laufe der Zeit zusammen?",
+      "paragraphs": {
+        "first": "Wie viel Blut verliert eine Frau durch ihre Periode in einem Jahr? Bei zwölf Perioden mit jeweils 40 mL sind es insgesamt 480 mL. Bei 13 Perioden mit derselben Menge wären es 520 mL.",
+        "second": "Und im Laufe des Lebens? Mit 450 Perioden zu jeweils 40 mL ergibt die Rechnung 18.000 mL, also 18 Liter. Die 450 sind hier eine Rechenannahme und keine Vorhersage deiner tatsächlichen Periodenzahl.",
+        "third": "Das sind Beispiele, keine persönlichen Prognosen. Zykluslänge, Beginn und Ende der Menstruation, Schwangerschaft, Stillen und hormonelle Verhütung können die Anzahl der Perioden oder das Blutungsmuster verändern. Du musst keine laufende Lebensgesamtmenge erfassen."
+      }
+    },
+    "heavy-flow": {
+      "title": "Wie viel Blut verliert eine Frau bei einer starken Periode?",
+      "paragraphs": {
+        "first": "Mehr als 80 mL Blut während einer Periode, etwa 16 Teelöffel, sind ein häufig verwendeter Schwellenwert für starke Menstruationsblutungen. Du musst aber nicht beweisen, dass du darüberliegst, um Hilfe zu suchen.",
+        "second": "Im ärztlichen Gespräch zählt auch, wie die Blutung dein Leben beeinflusst. Regelmäßig nachts Produkte wechseln, Aktivitäten verpassen oder den Tag um mögliche Lecks herum planen zu müssen, ist ein Grund, das anzusprechen, auch ohne Milliliterangabe.",
+        "third": "Das Zählen von Binden oder Tampons liefert keine genaue Menge: Die Saugfähigkeit variiert, und vielleicht wechselst du sie, bevor sie voll sind. Notiere lieber, wie oft sie vollständig durchtränkt sind."
+      }
+    },
+    "warning-signs": {
+      "title": "Anzeichen dafür, dass du während der Periode zu viel Blut verlierst",
+      "paragraphs": {
+        "first": "Vereinbare einen ärztlichen Termin, wenn du regelmäßig eines dieser Anzeichen bemerkst:"
+      },
+      "items": {
+        "changes": "Eine Binde oder ein Tampon ist innerhalb von ein bis zwei Stunden voll.",
+        "protection": "Du brauchst zwei verschiedene Schutzprodukte gleichzeitig, um die Blutung aufzufangen.",
+        "leaks": "Du blutest durch Kleidung oder Bettwäsche.",
+        "duration": "Die Blutung dauert länger als sieben Tage.",
+        "clots": "Du scheidest Blutklumpen aus, die größer als etwa 2,5 cm sind.",
+        "activities": "Die Blutung hält dich von Sport, Ausflügen, Arbeit oder Schule ab.",
+        "symptoms": "Du fühlst dich häufig ungewöhnlich müde oder kurzatmig."
+      },
+      "after": "Auch wenn deine Perioden schon immer so waren, kannst du nach Behandlungsmöglichkeiten fragen. Du musst nicht warten, bis es schlimmer wird.",
+      "note": "Hole dringend ärztlichen Rat ein, wenn du über mehrere Stunden jede Stunde eine Binde oder einen Tampon vollständig durchblutest. Starke Blutungen mit Brustschmerzen, Atemnot, Ohnmacht oder erheblichem Schwindel erfordern eine sofortige Notfallversorgung."
+    },
+    "losing-200-ml": {
+      "title": "Was passiert bei einem Blutverlust von 200 mL während der Periode?",
+      "paragraphs": {
+        "first": "Handelt es sich tatsächlich um 200 mL Blut während einer Periode, sollte das ärztlich abgeklärt werden. Die Menge liegt deutlich über dem häufig verwendeten Wert von 80 mL.",
+        "second": "Wiederholt starke Blutungen können deine Eisenspeicher aufbrauchen und zu einer Eisenmangelanämie führen. Du könntest erschöpft, schwach, schwindelig oder kurzatmig sein. Die Folgen hängen auch von deinen anfänglichen Eisenreserven und der Häufigkeit der Blutungen ab; die Menge allein erklärt nicht alles.",
+        "third": "Wenn die 200 mL mit einer Menstruationstasse gemessen wurden, sage dazu, dass es aufgefangene Menstruationsflüssigkeit ist. Beschreibe die Messung, Lecks, schwallartige Blutungen und Beschwerden. Ärztlich können dein Blutbild und Ursachen wie Myome, Polypen, Ovulationsprobleme oder Gerinnungsstörungen untersucht werden."
+      }
+    },
+    "brown-blood": {
+      "title": "Zählt braunes Blut noch als Periodentag?",
+      "paragraphs": {
+        "first": "Ja, braune Blutungen können zur Periode gehören, besonders gegen Ende. Durch Oxidation wird Blut dunkler. Älteres Blut kann deshalb braun aussehen, wenn es den Körper verlässt.",
+        "second": "Berücksichtige beim Erfassen Menge und Zeitpunkt. Brauner Blutfluss während deiner üblichen Periode kann als Blutung eingetragen werden, einzelne Spuren als Schmierblutung. Du musst nicht auf hellrotes Blut warten, um festzuhalten, was passiert ist."
+      },
+      "after": "Bei Fruchtbarkeitsuntersuchungen oder einer Kinderwunschbehandlung befolge die Vorgaben deiner Klinik zu Zyklustag 1. Kliniken zählen häufig den ersten Tag mit voller Menstruationsblutung statt einzelner Schmierblutungen."
+    },
+    "track-your-flow": {
+      "title": "Was du vor einem ärztlichen Termin notieren kannst",
+      "paragraphs": {
+        "first": "Beginne mit den Daten, den stärksten Tagen, der Häufigkeit vollständig durchtränkter Produkte sowie Lecks, Blutklumpen und Beschwerden. Ein kurzes, ehrliches Protokoll reicht. Lass Mengen weg, die du nicht sicher einschätzen kannst.",
+        "second": [
+          "Mit Mochi kannst du Periodendaten, Blutungsstärke, Stimmungen und Symptome erfassen. Unser ",
+          {
+            "postId": "tracking",
+            "label": "Leitfaden zum Periodentracking"
+          },
+          " hilft dir bei der Auswahl nützlicher Angaben."
+        ],
+        "third": "Wenn du dir wegen deiner Blutung Sorgen machst, vereinbare einen Termin. Du kannst die Notizen mitbringen, die du bereits hast."
+      }
+    }
+  },
+  "faq": {
+    "teaspoons": {
+      "question": "Wie viele Teelöffel Blut verlierst du während deiner Periode?",
+      "answer": "Ein häufig genannter Durchschnitt sind 30–40 mL Blut während der gesamten Periode, etwa 6–8 standardisierte Teelöffel mit je 5 mL. Das ist die Gesamtmenge, nicht die tägliche Menge. Menstruationsflüssigkeit enthält auch Schleim und Gewebe, deshalb besteht der Inhalt einer Tasse nicht nur aus Blut."
+    },
+    "200ml": {
+      "question": "Was passiert bei einem Blutverlust von 200 mL während der Periode?",
+      "answer": "Ein tatsächlicher Blutverlust von 200 mL während einer Periode sollte ärztlich abgeklärt werden. Wiederholt starke Blutungen können Eisenspeicher aufbrauchen und Anämie verursachen. Bei einer Messung mit einer Tasse erwähne, dass es Menstruationsflüssigkeit ist. Starke Blutungen mit Brustschmerzen, Atemnot, Ohnmacht oder erheblichem Schwindel erfordern eine sofortige Notfallversorgung."
+    },
+    "brown": {
+      "question": "Zählt braunes Blut noch als Periodentag?",
+      "answer": "Das kann es. Brauner Blutfluss während deiner Periode kann als Blutung erfasst werden, einzelne Spuren als Schmierblutung. Die Farbe allein entscheidet nicht. Befolge bei Fruchtbarkeitsuntersuchungen oder einer Kinderwunschbehandlung die Vorgaben deiner Klinik zu Zyklustag 1."
+    },
+    "composition": {
+      "question": "Besteht Periodenblut zu 100 Prozent aus Blut?",
+      "answer": "Nein. Menstruationsflüssigkeit ist eine Mischung aus Blut, Schleim und Gewebe der Gebärmutterschleimhaut. Deshalb liefert die gesamte Flüssigkeit in einer Menstruationstasse keine genaue Messung des Blutverlusts."
+    }
+  }
+}

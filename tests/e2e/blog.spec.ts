@@ -220,9 +220,11 @@ test("English homepage exposes four sourced education FAQs", async ({ page }) =>
 test("Journal topic filters show only matching guides", async ({ page }) => {
   await page.goto("/blog");
   await page.getByRole("button", { name: "Period care", exact: true }).click();
-  await expect(page.locator("main article:visible")).toHaveCount(1);
+  const periodCareCount = BLOG_POSTS.filter((post) => post.category === "period-care").length;
+  await expect(page.locator("main article:visible")).toHaveCount(periodCareCount);
   await expect(page.getByRole("link", { name: titleOf("pads"), exact: true })).toBeVisible();
-  await expect(page.getByRole("status")).toHaveText("1 guide");
+  await expect(page.getByRole("link", { name: titleOf("bloodLoss"), exact: true })).toBeVisible();
+  await expect(page.getByRole("status")).toHaveText(`${periodCareCount} guides`);
   await page.getByRole("button", { name: "Symptoms & moods", exact: true }).click();
   await expect(page.locator("main article:visible")).toHaveCount(2);
   await page.getByRole("button", { name: "All", exact: true }).click();
@@ -232,7 +234,7 @@ test("Journal topic filters show only matching guides", async ({ page }) => {
 test("Journal topic filters are shareable through the URL", async ({ page }) => {
   await page.goto("/blog?category=period-care");
   await expect(page.getByRole("button", { name: "Period care", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await expect(page.locator("main article:visible")).toHaveCount(1);
+  await expect(page.locator("main article:visible")).toHaveCount(BLOG_POSTS.filter((post) => post.category === "period-care").length);
   await page.getByRole("button", { name: "Privacy", exact: true }).click();
   await expect(page).toHaveURL((url) => url.searchParams.get("category") === "privacy");
   await page.getByRole("button", { name: "All", exact: true }).click();
@@ -281,7 +283,7 @@ test("mobile article contents can be expanded", async ({ page }) => {
 test("blog pages remain within the viewport", async ({ page }) => {
   for (const width of [320, 390, 759, 800, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const path of ["/blog", "/blog/how-often-to-change-your-pad", "/blog/period-app-vs-calendar", "/blog/editorial-policy"]) {
+    for (const path of ["/blog", "/blog/how-much-blood-do-you-lose-during-period", "/blog/how-often-to-change-your-pad", "/blog/period-app-vs-calendar", "/blog/editorial-policy"]) {
       await page.goto(path);
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), `${path} at ${width}px`).toBeLessThanOrEqual(0);
     }
