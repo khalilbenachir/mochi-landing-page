@@ -1,0 +1,148 @@
+{
+  "title": "¿Cuánta sangre pierdes realmente durante la regla?",
+  "description": "¿Cuánta sangre pierdes durante la regla? Respuestas claras sobre el flujo diario, las cucharaditas, el sangrado abundante y cuándo consultar.",
+  "imageAlt": "Mochi rosa cansado, con los ojos bajos, junto a una compresa, una jarra medidora lavanda y una gota de sangre rosa",
+  "intro": "Una media citada con frecuencia es de 30–40 mL de sangre durante toda la regla, unas 6–8 cucharaditas. Tu flujo puede ser más ligero o abundante. La cantidad importa, pero también los cambios respecto a lo habitual y cómo te encuentras.",
+  "sections": {
+    "menstrual-fluid": {
+      "title": "Por qué puede parecer tanta sangre",
+      "paragraphs": {
+        "first": "Ante una compresa empapada o el agua roja del inodoro, cuesta imaginar «unas pocas cucharaditas». Lo que ves es líquido menstrual: sangre mezclada con moco y tejido del revestimiento del útero.",
+        "second": "Una copa recoge toda esa mezcla. Si contiene 40 mL de líquido, no significa necesariamente que hayas perdido 40 mL de sangre. No hay un porcentaje fijo fiable que puedas restar para calcularlo en casa.",
+        "third": "No necesitas una medición exacta para describir tu regla. La rapidez con la que se llenan los productos, las fugas y los cambios respecto a tu flujo habitual ya son datos útiles."
+      }
+    },
+    "teaspoons": {
+      "title": "¿Cuántas cucharaditas de sangre pierdes durante la regla?",
+      "paragraphs": {
+        "first": "Una cucharadita medidora estándar contiene 5 mL. La media de 30–40 mL citada con frecuencia equivale a unas 6–8 cucharaditas de sangre durante toda la regla.",
+        "second": "Estas conversiones ayudan a imaginar las cantidades. Se refieren al volumen de sangre; el líquido total recogido en una copa puede ser mayor."
+      },
+      "table": {
+        "caption": "Volumen de sangre en cucharaditas medidoras de 5 mL",
+        "columns": ["Volumen de sangre", "Cucharaditas aproximadas"],
+        "rows": [
+          ["30 mL", "6"],
+          ["40 mL", "8"],
+          ["80 mL", "16"],
+          ["200 mL", "40"]
+        ]
+      }
+    },
+    "daily-loss": {
+      "title": "¿Cuánta sangre pierde una mujer durante la regla en un día?",
+      "paragraphs": {
+        "first": "La cantidad cambia de un día a otro. El sangrado suele ser más abundante los dos primeros días y después disminuye. No existe una cantidad diaria que deba esperarse en todas las personas.",
+        "second": "Para poner un ejemplo, 40 mL repartidos en cinco días darían una media de 8 mL diarios, unas 1,6 cucharaditas. En la práctica, puedes perder gran parte al principio y muy poco al final.",
+        "third": "En tu registro, «abundante el lunes, más ligero el miércoles» puede resultar más útil que intentar asignar mililitros a cada día."
+      }
+    },
+    "period-length": {
+      "title": "¿Y si la regla dura 3, 4 o 6 días?",
+      "paragraphs": {
+        "first": "Una regla corta también puede ser abundante. Una más larga puede incluir varios días de sangrado casi imperceptible. Contar los días no basta para saber cuánta sangre has perdido.",
+        "second": "Las reglas suelen durar entre dos y siete días. No existe un volumen total distinto y fiable para cada duración posible."
+      },
+      "table": {
+        "caption": "Qué indica una regla de tres, cuatro o seis días sobre la pérdida de sangre",
+        "columns": ["Tu pregunta", "Qué conviene saber"],
+        "rows": [
+          [
+            "¿Cuánta sangre se pierde en una regla de 3 días?",
+            "Puede ser un flujo ligero o un sangrado más abundante concentrado en esos tres días. Una regla corta no garantiza una pérdida pequeña."
+          ],
+          [
+            "¿Cuánta sangre se pierde en una regla de 4 días?",
+            "Observa lo rápido que se llenan los productos y cómo cambia el flujo. Cuatro días por sí solos no revelan el volumen total."
+          ],
+          [
+            "¿Cuánta sangre se pierde en una regla de 6 días?",
+            "Los días adicionales pueden ser de sangrado ligero o manchado. Seis días no implican automáticamente más sangre que una regla más corta."
+          ]
+        ]
+      }
+    },
+    "year-and-lifetime": {
+      "title": "¿Cuánto suma con el paso del tiempo?",
+      "paragraphs": {
+        "first": "¿Cuánta sangre pierde una mujer con la regla en un año? Con 12 reglas de 40 mL cada una, el total sería de 480 mL. Con 13 reglas del mismo volumen, serían 520 mL.",
+        "second": "¿Y a lo largo de su vida? Usando 450 reglas de 40 mL, el cálculo da 18.000 mL, es decir, 18 litros. Aquí, 450 es una cifra elegida para hacer la cuenta, no una predicción del número de reglas que tendrás.",
+        "third": "Son ejemplos, no pronósticos personales. La duración de los ciclos, el inicio y el final de la menstruación, el embarazo, la lactancia y la anticoncepción hormonal pueden cambiar el número de reglas o el sangrado. No necesitas llevar una suma de toda tu vida."
+      }
+    },
+    "heavy-flow": {
+      "title": "¿Cuánta sangre pierde una mujer durante una regla abundante?",
+      "paragraphs": {
+        "first": "Más de 80 mL de sangre durante una regla, unas 16 cucharaditas, es un umbral utilizado habitualmente para el sangrado menstrual abundante. Pero no tienes que demostrar que lo superas para pedir ayuda.",
+        "second": "En consulta también importa cómo afecta a tu vida. Despertarte regularmente para cambiar la protección, perderte actividades u organizar el día alrededor de posibles fugas merece una conversación, aunque no sepas cuántos mililitros pierdes.",
+        "third": "Contar compresas o tampones no da un volumen exacto: su absorción varía y puedes cambiarlos antes de que estén llenos. Anota mejor la frecuencia con la que se empapan por completo."
+      }
+    },
+    "warning-signs": {
+      "title": "Señales de que estás perdiendo demasiada sangre durante la regla",
+      "paragraphs": {
+        "first": "Pide una cita médica si notas habitualmente alguna de estas señales:"
+      },
+      "items": {
+        "changes": "Una compresa o un tampón se llena en una o dos horas.",
+        "protection": "Necesitas dos tipos de protección juntos para controlar el flujo.",
+        "leaks": "Manchas la ropa o las sábanas a pesar de usar protección.",
+        "duration": "El sangrado dura más de siete días.",
+        "clots": "Expulsas coágulos de más de unos 2,5 cm.",
+        "activities": "El sangrado te impide hacer ejercicio, salir o acudir al trabajo o a clase.",
+        "symptoms": "Sientes con frecuencia un cansancio inusual o falta de aire."
+      },
+      "after": "Aunque tus reglas siempre hayan sido así, puedes preguntar por tratamientos. No tienes que esperar a que empeoren.",
+      "note": "Pide atención médica urgente si empapas una compresa o un tampón cada hora durante varias horas. El sangrado abundante con dolor de pecho, falta de aire, desmayo o mareo importante requiere atención de emergencia."
+    },
+    "losing-200-ml": {
+      "title": "¿Qué ocurre si perdemos 200 mL de sangre durante la regla?",
+      "paragraphs": {
+        "first": "Si se trata de 200 mL de sangre real durante una sola regla, necesitas valoración médica. Está muy por encima del umbral de 80 mL utilizado habitualmente.",
+        "second": "El sangrado abundante repetido puede agotar las reservas de hierro y provocar anemia por deficiencia de hierro. Puedes sentir agotamiento, debilidad, mareos o falta de aire. Las consecuencias dependen en parte de las reservas iniciales y de la frecuencia del sangrado; el volumen no lo explica todo.",
+        "third": "Si los 200 mL proceden de una copa, aclara en consulta que es líquido menstrual recogido. Explica cómo lo mediste y menciona las fugas, los desbordamientos y los síntomas. Pueden solicitar un hemograma e investigar causas como miomas, pólipos, problemas de ovulación o trastornos de la coagulación."
+      }
+    },
+    "brown-blood": {
+      "title": "¿La sangre marrón sigue contando como un día de regla?",
+      "paragraphs": {
+        "first": "Sí, el sangrado marrón puede formar parte de la regla, especialmente cuando está terminando. La sangre se oscurece al oxidarse, por eso la más antigua puede verse marrón al salir del cuerpo.",
+        "second": "Para registrarlo, ten en cuenta la cantidad y el momento. El flujo marrón durante tu regla habitual puede anotarse como sangrado; unas pocas marcas aisladas, como manchado. No necesitas esperar a ver sangre roja brillante para registrar lo ocurrido."
+      },
+      "after": "Si te haces pruebas o sigues un tratamiento de fertilidad, respeta las instrucciones de tu clínica sobre el día 1 del ciclo. Las clínicas suelen contar el primer día de flujo menstrual pleno, en lugar de manchado."
+    },
+    "track-your-flow": {
+      "title": "Qué anotar antes de una cita médica",
+      "paragraphs": {
+        "first": "Empieza por las fechas, los días más abundantes, la frecuencia de productos completamente empapados y las fugas, coágulos o síntomas. Un registro breve y fiel es suficiente; deja fuera las cantidades que no puedas estimar con confianza.",
+        "second": [
+          "Mochi permite registrar fechas de la regla, flujo, estados de ánimo y síntomas. Nuestra ",
+          {
+            "postId": "tracking",
+            "label": "guía para registrar tu regla"
+          },
+          " puede ayudarte a elegir qué anotar."
+        ],
+        "third": "Si te preocupa el sangrado, pide cita. Puedes llevar las notas que ya tengas."
+      }
+    }
+  },
+  "faq": {
+    "teaspoons": {
+      "question": "¿Cuántas cucharaditas de sangre pierdes durante la regla?",
+      "answer": "Una media citada con frecuencia es de 30–40 mL de sangre durante toda la regla, unas 6–8 cucharaditas medidoras de 5 mL. Es el total de la regla, no de cada día. El líquido menstrual también contiene moco y tejido, así que el contenido de una copa no es todo sangre."
+    },
+    "200ml": {
+      "question": "¿Qué ocurre si perdemos 200 mL de sangre durante la regla?",
+      "answer": "Una pérdida de 200 mL de sangre real en una regla necesita valoración médica. El sangrado abundante repetido puede agotar las reservas de hierro y causar anemia. Si usaste una copa, explica que el volumen es líquido menstrual. El sangrado abundante con dolor de pecho, falta de aire, desmayo o mareo importante requiere atención de emergencia."
+    },
+    "brown": {
+      "question": "¿La sangre marrón sigue contando como un día de regla?",
+      "answer": "Puede contar. El flujo marrón durante tu regla puede registrarse como sangrado, y las marcas aisladas como manchado. El color por sí solo no decide. Para pruebas o tratamientos de fertilidad, sigue las instrucciones de tu clínica sobre el día 1 del ciclo."
+    },
+    "composition": {
+      "question": "¿La sangre menstrual es 100 % sangre?",
+      "answer": "No. El líquido menstrual mezcla sangre, moco y tejido del revestimiento del útero. Por eso, todo el líquido recogido en una copa no da una medición exacta de la pérdida de sangre."
+    }
+  }
+}

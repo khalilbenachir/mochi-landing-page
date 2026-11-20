@@ -149,7 +149,7 @@ environments (`vercel pull`), so set them there.
 
 ## Blog
 
-`/blog` contains nine guides, published in all six site languages, with a featured article, related reading (same category
+`/blog` contains eleven guides, published in all six site languages, with a featured article, related reading (same category
 first), category filters that can be shared as `?category=`, and `/blog/editorial-policy`.
 Article pages are statically rendered with linked sources, deliberate publication dates,
 canonical metadata, `BlogPosting` JSON-LD and a generated social card per article

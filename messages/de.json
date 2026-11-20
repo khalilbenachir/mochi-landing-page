@@ -566,7 +566,17 @@
       "dripApp": "drip: offizielles Projekt",
       "dripIos": "drip: iPhone-Eintrag im App Store",
       "dripAndroid": "drip: Eintrag bei Google Play",
-      "appleCycle": "Apple: Zyklusprotokoll und Datenschutz in Health"
+      "appleCycle": "Apple: Zyklusprotokoll und Datenschutz in Health",
+      "menstrualBloodLoss": "Together by St. Jude: Menstruationsblutverlust und Anämie",
+      "menstrualComposition": "Gesundheitsministerium New Jersey: Periode und Schwangerschaft",
+      "periodOverview": "NHS: Periode",
+      "heavyPeriods": "NHS: Starke Perioden",
+      "heavyMenstrualBleeding": "ACOG: Starke Menstruationsblutungen",
+      "abnormalUterineBleeding": "ACOG: Abnorme Gebärmutterblutungen",
+      "heavyBleedingGuidance": "NICE: Empfehlungen zu starken Menstruationsblutungen",
+      "heavyFlowVolume": "Healthdirect: Starke Perioden und Blutvolumen",
+      "periodBlood": "Cleveland Clinic: Farbe des Periodenbluts",
+      "fertilityCycleDay": "The Fertility Center: Zyklustag 1"
     },
     "editorial": {
       "title": "Unsere redaktionellen Grundsätze",

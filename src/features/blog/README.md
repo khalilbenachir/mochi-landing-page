@@ -1,6 +1,6 @@
 # The Mochi Journal
 
-The blog publishes ten guides and an editorial-policy page in all six site languages:
+The blog publishes eleven guides and an editorial-policy page in all six site languages:
 English under `/blog`, plus `/fr/blog`, `/de/blog`, `/es/blog`, `/pt-BR/blog` and `/pt-PT/blog`.
 URLs select the language regardless of browser preferences or saved locale cookies. The
 language switcher preserves the current page, and explicit `/en/...` URLs canonicalize to
@@ -89,6 +89,7 @@ art, not medical results or verified app screenshots.
 | `companion-mochi.webp` | 600×530 | The app's Mochi hugging a heart and waving, for the in-article "Let Mochi keep you company" card |
 | `journal-writer.webp` | 1200×860 | The app's Mochi in a lavender beret, writing in an open journal (ChatGPT, from the app's Mochi references) |
 | `pad-care-mochi.webp` | 1200×800 | Mochi on its cushion with a pad and a purple clock |
+| `period-blood-loss-mochi-v3.webp` | 1200×800 | Tired Mochi on its cushion beside a period pad, measuring jug and pink droplet |
 | `cycle-phases-mochi.webp` | 1200×800 | Mochi on its cushion beside the cycle wheel |
 | `period-predictions-mochi.webp` | 1200×800 | Mochi on its cushion with a calendar |
 | `period-cramps-mochi.webp` | 1200×800 | Mochi hugging a hot-water bottle |
@@ -109,6 +110,20 @@ fact-check decisions and image prompts are in
 New images use `cwebp -q 82 -resize 1200 0`; the cycle wheel uses quality 70,
 alpha quality 10 and method 6 to keep its bitmap below 100 KB. The writer's natural
 aspect ratio is preserved. No screenshot of the supplied layout is embedded as UI.
+
+The menstrual blood-loss guide (20 November 2026) uses `period-blood-loss-mochi-v3.webp`,
+generated with ChatGPT's built-in image tool from the existing Mochi artwork. Its prompts,
+references and encoding settings are in `docs/blog/blood-loss-artwork-2026-11-20.json`.
+It includes complete copy in all six languages and distinguishes blood from total menstrual fluid,
+labels daily, yearly and lifetime calculations as illustrative, and links heavy-bleeding
+and urgent-care advice to clinical sources. Its four questions also populate the existing
+FAQ structured data; no clinical review is claimed.
+
+The same-day editorial rewrite uses ten sections, combines the three period-duration
+questions into one comparison, and discusses yearly and lifetime totals together.
+All eight requested search topics and four FAQ answers remain covered in every language.
+The prose uses direct language, removes repeated calculation caveats, and keeps the
+distinction between blood and menstrual fluid alongside the heavy-bleeding advice.
 
 ## Verification
 

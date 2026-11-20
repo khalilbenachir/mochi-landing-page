@@ -566,7 +566,17 @@
       "dripApp": "drip : projet officiel",
       "dripIos": "drip : fiche App Store pour iPhone",
       "dripAndroid": "drip : fiche Google Play",
-      "appleCycle": "Apple : Suivi de cycle et confidentialité des données de Santé"
+      "appleCycle": "Apple : Suivi de cycle et confidentialité des données de Santé",
+      "menstrualBloodLoss": "Together by St. Jude : pertes menstruelles et anémie",
+      "menstrualComposition": "Département de la santé du New Jersey : règles et grossesse",
+      "periodOverview": "NHS : les règles",
+      "heavyPeriods": "NHS : règles abondantes",
+      "heavyMenstrualBleeding": "ACOG : saignements menstruels abondants",
+      "abnormalUterineBleeding": "ACOG : saignements utérins anormaux",
+      "heavyBleedingGuidance": "NICE : recommandations sur les règles abondantes",
+      "heavyFlowVolume": "Healthdirect : règles abondantes et volume sanguin",
+      "periodBlood": "Cleveland Clinic : couleur du sang menstruel",
+      "fertilityCycleDay": "The Fertility Center : premier jour du cycle"
     },
     "editorial": {
       "title": "Notre démarche éditoriale",

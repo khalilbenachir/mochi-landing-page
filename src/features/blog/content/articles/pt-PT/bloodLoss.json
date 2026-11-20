@@ -1,0 +1,148 @@
+{
+  "title": "Quanto sangue se perde realmente durante a menstruação?",
+  "description": "Quanto sangue se perde na menstruação? Respostas claras sobre fluxo diário, colheres de chá, perdas abundantes e quando pedir aconselhamento médico.",
+  "imageAlt": "Mochi rosa cansado, de olhos baixos, ao lado de um penso higiénico, um jarro medidor lilás e uma gota de sangue rosa",
+  "intro": "Uma média frequentemente citada é de 30–40 mL de sangue durante toda a menstruação, cerca de 6–8 colheres de chá. O teu fluxo pode ser mais ligeiro ou abundante. A quantidade conta, tal como as mudanças no padrão habitual e a forma como te sentes.",
+  "sections": {
+    "menstrual-fluid": {
+      "title": "Porque pode parecer tanto sangue",
+      "paragraphs": {
+        "first": "Perante um penso encharcado ou a água vermelha da sanita, é difícil imaginar «algumas colheres de chá». O que vês é fluido menstrual: sangue misturado com muco e tecido do revestimento do útero.",
+        "second": "Um copo menstrual recolhe toda essa mistura. Se contém 40 mL de fluido, isso não significa necessariamente uma perda de 40 mL de sangue. Não existe uma percentagem fixa fiável que possas subtrair para fazer essa conta em casa.",
+        "third": "Não precisas de uma medição exata para descrever a menstruação. A rapidez com que os produtos se enchem, as fugas e as mudanças no fluxo habitual já são informações úteis."
+      }
+    },
+    "teaspoons": {
+      "title": "Quantas colheres de chá de sangue se perdem na menstruação?",
+      "paragraphs": {
+        "first": "Uma colher de chá medidora padrão contém 5 mL. A média de 30–40 mL frequentemente citada equivale, portanto, a cerca de 6–8 colheres de chá de sangue durante toda a menstruação.",
+        "second": "Estas conversões ajudam a imaginar as quantidades. Referem-se ao volume de sangue; o fluido total recolhido num copo pode ser maior."
+      },
+      "table": {
+        "caption": "Volume de sangue em colheres de chá medidoras de 5 mL",
+        "columns": ["Volume de sangue", "Colheres de chá, aproximadamente"],
+        "rows": [
+          ["30 mL", "6"],
+          ["40 mL", "8"],
+          ["80 mL", "16"],
+          ["200 mL", "40"]
+        ]
+      }
+    },
+    "daily-loss": {
+      "title": "Quanto sangue perde uma mulher por dia durante a menstruação?",
+      "paragraphs": {
+        "first": "A quantidade muda de um dia para o outro. O sangramento costuma ser mais intenso nos dois primeiros dias e diminuir depois. Não há uma quantidade diária que todas as pessoas devam esperar.",
+        "second": "Por exemplo, 40 mL distribuídos por cinco dias dariam uma média de 8 mL por dia, cerca de 1,6 colheres de chá. Na prática, podes perder uma grande parte no início e muito pouco no fim.",
+        "third": "No teu registo, «abundante na segunda, mais ligeiro na quarta» pode ser mais útil do que tentar atribuir mililitros a cada dia."
+      }
+    },
+    "period-length": {
+      "title": "E se a menstruação durar 3, 4 ou 6 dias?",
+      "paragraphs": {
+        "first": "Uma menstruação curta também pode ser abundante. Uma mais longa pode incluir vários dias de sangramento quase impercetível. Contar os dias não basta para saber quanto sangue perdeste.",
+        "second": "É comum a menstruação durar entre dois e sete dias. Não existe um volume total distinto e fiável para cada duração possível."
+      },
+      "table": {
+        "caption": "O que uma menstruação de três, quatro ou seis dias indica sobre a perda de sangue",
+        "columns": ["A tua pergunta", "O que convém saber"],
+        "rows": [
+          [
+            "Quanto sangue se perde numa menstruação de 3 dias?",
+            "O fluxo pode ser ligeiro ou uma perda mais abundante pode concentrar-se nesses três dias. Uma menstruação curta não garante uma perda pequena."
+          ],
+          [
+            "Quanto sangue se perde numa menstruação de 4 dias?",
+            "Observa a rapidez com que os produtos se enchem e como o fluxo muda. Quatro dias, por si só, não revelam o volume total."
+          ],
+          [
+            "Quanto sangue se perde numa menstruação de 6 dias?",
+            "Os dias adicionais podem ser de sangramento ligeiro ou spotting. Seis dias não significam automaticamente mais sangue do que uma menstruação mais curta."
+          ]
+        ]
+      }
+    },
+    "year-and-lifetime": {
+      "title": "Quanto se acumula ao longo do tempo?",
+      "paragraphs": {
+        "first": "Quanto sangue perde uma mulher na menstruação num ano? Com 12 menstruações de 40 mL cada, o total seria de 480 mL. Com 13 do mesmo volume, seriam 520 mL.",
+        "second": "E ao longo da vida? Usando 450 menstruações de 40 mL cada, a conta dá 18.000 mL, ou 18 litros. Aqui, 450 é um número escolhido para o cálculo, não uma previsão de quantas menstruações terás.",
+        "third": "São exemplos, não previsões pessoais. A duração dos ciclos, o início e o fim da menstruação, a gravidez, a amamentação e os contracetivos hormonais podem mudar o número de menstruações ou o sangramento. Não precisas de manter uma soma da vida inteira."
+      }
+    },
+    "heavy-flow": {
+      "title": "Quanto sangue perde uma mulher com um fluxo menstrual abundante?",
+      "paragraphs": {
+        "first": "Mais de 80 mL de sangue numa menstruação, cerca de 16 colheres de chá, é um limite frequentemente usado para a hemorragia menstrual abundante. Mas não precisas de provar que o ultrapassaste para pedir ajuda.",
+        "second": "Na consulta, também conta a forma como o sangramento afeta a tua vida. Acordar regularmente para mudar de proteção, faltar a atividades ou organizar o dia à volta de possíveis fugas merece uma conversa, mesmo sem saberes a quantidade em mililitros.",
+        "third": "Contar pensos ou tampões não dá um volume exato: a absorção varia e podes mudá-los antes de ficarem cheios. Regista antes a frequência com que ficam completamente encharcados."
+      }
+    },
+    "warning-signs": {
+      "title": "Sinais de perda excessiva de sangue durante a menstruação",
+      "paragraphs": {
+        "first": "Marca uma consulta se notares regularmente algum destes sinais:"
+      },
+      "items": {
+        "changes": "Um penso higiénico ou tampão fica cheio numa a duas horas.",
+        "protection": "Precisas de usar dois tipos de proteção juntos para gerir o fluxo.",
+        "leaks": "Manchas a roupa ou os lençóis apesar da proteção.",
+        "duration": "O sangramento dura mais de sete dias.",
+        "clots": "Eliminas coágulos maiores do que cerca de 2,5 cm.",
+        "activities": "O sangramento impede-te de fazer exercício, sair ou ir ao trabalho ou à escola.",
+        "symptoms": "Sentes frequentemente cansaço fora do habitual ou falta de ar."
+      },
+      "after": "Mesmo que a tua menstruação sempre tenha sido assim, podes perguntar por tratamentos. Não precisas de esperar que piore.",
+      "note": "Procura aconselhamento médico urgente se estiveres a encharcar um penso ou tampão por hora durante várias horas. Sangramento abundante com dor no peito, falta de ar, desmaio ou tonturas importantes exige cuidados médicos de emergência."
+    },
+    "losing-200-ml": {
+      "title": "O que acontece ao perder 200 mL de sangue durante a menstruação?",
+      "paragraphs": {
+        "first": "Se forem de facto 200 mL de sangue numa única menstruação, é necessária uma avaliação médica. É uma quantidade bem acima do limite de 80 mL frequentemente utilizado.",
+        "second": "Perdas abundantes e repetidas podem esgotar as reservas de ferro e causar anemia por deficiência de ferro. Podes sentir exaustão, fraqueza, tonturas ou falta de ar. Os efeitos dependem em parte das reservas iniciais e da frequência do sangramento; o volume não explica tudo.",
+        "third": "Se mediste os 200 mL com um copo menstrual, explica na consulta que se trata de fluido menstrual recolhido. Descreve como fizeste a medição e menciona fugas, transbordamentos e sintomas. O profissional pode pedir um hemograma e investigar causas como miomas, pólipos, problemas de ovulação ou perturbações da coagulação."
+      }
+    },
+    "brown-blood": {
+      "title": "O sangue castanho ainda conta como um dia de menstruação?",
+      "paragraphs": {
+        "first": "Sim, o sangramento castanho pode fazer parte da menstruação, sobretudo perto do fim. O sangue escurece ao oxidar; por isso, o mais antigo pode parecer castanho quando sai do corpo.",
+        "second": "No acompanhamento, considera a quantidade e o momento. Um fluxo castanho durante a menstruação habitual pode ser registado como sangramento. Algumas marcas isoladas podem ser anotadas como spotting. Não precisas de esperar por sangue vermelho vivo para registar o que aconteceu."
+      },
+      "after": "Se fizeres exames ou tratamentos de fertilidade, segue as instruções da clínica sobre o dia 1 do ciclo. As clínicas costumam contar o primeiro dia de fluxo menstrual pleno, em vez de pequenas perdas."
+    },
+    "track-your-flow": {
+      "title": "O que anotar antes de uma consulta",
+      "paragraphs": {
+        "first": "Começa pelas datas, pelos dias mais abundantes, pela frequência de produtos encharcados e por fugas, coágulos ou sintomas. Um registo curto e fiel é suficiente; deixa de fora quantidades que não consegues estimar com confiança.",
+        "second": [
+          "O Mochi permite registar datas da menstruação, fluxo, humor e sintomas. O nosso ",
+          {
+            "postId": "tracking",
+            "label": "guia para acompanhar a menstruação"
+          },
+          " pode ajudar-te a escolher o que anotar."
+        ],
+        "third": "Se o sangramento te preocupa, marca a consulta. Podes levar as notas que já tens."
+      }
+    }
+  },
+  "faq": {
+    "teaspoons": {
+      "question": "Quantas colheres de chá de sangue se perdem na menstruação?",
+      "answer": "Uma média frequentemente citada é de 30–40 mL de sangue durante toda a menstruação, cerca de 6–8 colheres de chá medidoras de 5 mL. É o total da menstruação, não de cada dia. O fluido menstrual também contém muco e tecido, pelo que nem tudo no copo é sangue."
+    },
+    "200ml": {
+      "question": "O que acontece ao perder 200 mL de sangue durante a menstruação?",
+      "answer": "Uma perda real de 200 mL de sangue numa menstruação exige avaliação médica. Perdas abundantes e repetidas podem esgotar as reservas de ferro e causar anemia. Se mediste com um copo, explica que o volume é fluido menstrual. Sangramento abundante com dor no peito, falta de ar, desmaio ou tonturas importantes exige cuidados médicos de emergência."
+    },
+    "brown": {
+      "question": "O sangue castanho ainda conta como um dia de menstruação?",
+      "answer": "Pode contar. Um fluxo castanho durante a menstruação pode ser registado como sangramento, e marcas isoladas como spotting. A cor sozinha não decide. Para exames ou tratamentos de fertilidade, segue as instruções da clínica sobre o dia 1 do ciclo."
+    },
+    "composition": {
+      "question": "O sangue menstrual é 100% sangue?",
+      "answer": "Não. O fluido menstrual mistura sangue, muco e tecido do revestimento do útero. Por isso, todo o fluido recolhido num copo não dá uma medição exata da perda de sangue."
+    }
+  }
+}

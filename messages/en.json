@@ -566,7 +566,17 @@
       "dripApp": "drip: official project",
       "dripIos": "drip: iPhone App Store listing",
       "dripAndroid": "drip: Google Play listing",
-      "appleCycle": "Apple: Cycle Tracking and Health data privacy"
+      "appleCycle": "Apple: Cycle Tracking and Health data privacy",
+      "menstrualBloodLoss": "Together by St. Jude: menstrual blood loss and anemia",
+      "menstrualComposition": "New Jersey Department of Health: periods and pregnancy",
+      "periodOverview": "NHS: Periods",
+      "heavyPeriods": "NHS: Heavy periods",
+      "heavyMenstrualBleeding": "ACOG: Heavy menstrual bleeding",
+      "abnormalUterineBleeding": "ACOG: Abnormal uterine bleeding",
+      "heavyBleedingGuidance": "NICE: Heavy menstrual bleeding guidance",
+      "heavyFlowVolume": "Healthdirect: Heavy periods and blood volume",
+      "periodBlood": "Cleveland Clinic: Period blood color",
+      "fertilityCycleDay": "The Fertility Center: Cycle Day 1"
     },
     "editorial": {
       "title": "Our editorial approach",

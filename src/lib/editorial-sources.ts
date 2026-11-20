@@ -3,6 +3,16 @@ import { localeRoutePath, type AppLocale } from "@/i18n/routing";
 /** Stable source destinations; blog source names live in the messages. Site paths are locale-neutral. */
 export const EDITORIAL_SOURCE_URLS = {
   menstrualCycle: "https://womenshealth.gov/menstrual-cycle/your-menstrual-cycle",
+  menstrualBloodLoss: "https://together.stjude.org/en-us/treatment-tests-procedures/symptoms-side-effects/heavy-menstrual-bleeding.html",
+  menstrualComposition: "https://www.nj.gov/health/womenshealth/reproductive-health/periods-menstruation/periods-and-pregnancy/",
+  periodOverview: "https://www.nhs.uk/conditions/periods/",
+  heavyPeriods: "https://www.nhs.uk/conditions/heavy-periods/",
+  heavyMenstrualBleeding: "https://www.acog.org/womens-health/faqs/heavy-menstrual-bleeding",
+  abnormalUterineBleeding: "https://www.acog.org/womens-health/faqs/abnormal-uterine-bleeding",
+  heavyBleedingGuidance: "https://www.nice.org.uk/guidance/ng88/chapter/Recommendations",
+  heavyFlowVolume: "https://www.healthdirect.gov.au/symptoms/heavy-periods",
+  periodBlood: "https://health.clevelandclinic.org/what-does-the-color-of-your-period-mean",
+  fertilityCycleDay: "https://fertilitycentermi.com/wp-content/uploads/2020/09/FREQUENTLY-ASKED-QUESTIONS.pdf",
   irregularPeriods: "https://www.nhs.uk/symptoms/irregular-periods/",
   missedPeriods: "https://www.nhs.uk/symptoms/missed-or-late-periods/",
   pregnancyTests: "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
@@ -44,7 +54,6 @@ export const FAQ_SOURCE_URLS = {
   naturalFertility: "https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/optimizing-natural-fertility/",
   fertilityAwareness: "https://www.nhs.uk/contraception/methods-of-contraception/natural-family-planning/",
   trackingCycle: "https://opa.hhs.gov/reproductive-health/understanding-fertility-basics",
-  periodBlood: "https://health.clevelandclinic.org/what-does-the-color-of-your-period-mean",
 } as const;
 export type FaqSourceId = EditorialSourceId | keyof typeof FAQ_SOURCE_URLS;
 const ALL_SOURCE_URLS = { ...EDITORIAL_SOURCE_URLS, ...FAQ_SOURCE_URLS };

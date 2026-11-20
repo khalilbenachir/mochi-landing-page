@@ -1,5 +1,6 @@
 import type { BlogLocale } from "../locales";
 import { BLOG_POSTS, type BlogPost, type BlogPostId } from "./catalog";
+import enBloodLoss from "./articles/en/bloodLoss.json";
 import enCramps from "./articles/en/cramps.json";
 import enFloAlternatives from "./articles/en/floAlternatives.json";
 import enGettingStarted from "./articles/en/gettingStarted.json";
@@ -10,6 +11,7 @@ import enPhases from "./articles/en/phases.json";
 import enPredictions from "./articles/en/predictions.json";
 import enPrivacy from "./articles/en/privacy.json";
 import enTracking from "./articles/en/tracking.json";
+import frBloodLoss from "./articles/fr/bloodLoss.json";
 import frCramps from "./articles/fr/cramps.json";
 import frFloAlternatives from "./articles/fr/floAlternatives.json";
 import frGettingStarted from "./articles/fr/gettingStarted.json";
@@ -20,6 +22,7 @@ import frPhases from "./articles/fr/phases.json";
 import frPredictions from "./articles/fr/predictions.json";
 import frPrivacy from "./articles/fr/privacy.json";
 import frTracking from "./articles/fr/tracking.json";
+import deBloodLoss from "./articles/de/bloodLoss.json";
 import deCramps from "./articles/de/cramps.json";
 import deFloAlternatives from "./articles/de/floAlternatives.json";
 import deGettingStarted from "./articles/de/gettingStarted.json";
@@ -30,6 +33,7 @@ import dePhases from "./articles/de/phases.json";
 import dePredictions from "./articles/de/predictions.json";
 import dePrivacy from "./articles/de/privacy.json";
 import deTracking from "./articles/de/tracking.json";
+import esBloodLoss from "./articles/es/bloodLoss.json";
 import esCramps from "./articles/es/cramps.json";
 import esFloAlternatives from "./articles/es/floAlternatives.json";
 import esGettingStarted from "./articles/es/gettingStarted.json";
@@ -40,6 +44,7 @@ import esPhases from "./articles/es/phases.json";
 import esPredictions from "./articles/es/predictions.json";
 import esPrivacy from "./articles/es/privacy.json";
 import esTracking from "./articles/es/tracking.json";
+import ptBRBloodLoss from "./articles/pt-BR/bloodLoss.json";
 import ptBRCramps from "./articles/pt-BR/cramps.json";
 import ptBRFloAlternatives from "./articles/pt-BR/floAlternatives.json";
 import ptBRGettingStarted from "./articles/pt-BR/gettingStarted.json";
@@ -50,6 +55,7 @@ import ptBRPhases from "./articles/pt-BR/phases.json";
 import ptBRPredictions from "./articles/pt-BR/predictions.json";
 import ptBRPrivacy from "./articles/pt-BR/privacy.json";
 import ptBRTracking from "./articles/pt-BR/tracking.json";
+import ptPTBloodLoss from "./articles/pt-PT/bloodLoss.json";
 import ptPTCramps from "./articles/pt-PT/cramps.json";
 import ptPTFloAlternatives from "./articles/pt-PT/floAlternatives.json";
 import ptPTGettingStarted from "./articles/pt-PT/gettingStarted.json";
@@ -101,6 +107,7 @@ type ArticleCopyInput = Omit<ArticleCopy, "sections"> & {
 
 const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> = {
   en: {
+    bloodLoss: enBloodLoss,
     floAlternatives: enFloAlternatives,
     cramps: enCramps,
     gettingStarted: enGettingStarted,
@@ -113,6 +120,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: enTracking,
   },
   fr: {
+    bloodLoss: frBloodLoss,
     floAlternatives: frFloAlternatives,
     cramps: frCramps,
     gettingStarted: frGettingStarted,
@@ -125,6 +133,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: frTracking,
   },
   de: {
+    bloodLoss: deBloodLoss,
     floAlternatives: deFloAlternatives,
     cramps: deCramps,
     gettingStarted: deGettingStarted,
@@ -137,6 +146,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: deTracking,
   },
   es: {
+    bloodLoss: esBloodLoss,
     floAlternatives: esFloAlternatives,
     cramps: esCramps,
     gettingStarted: esGettingStarted,
@@ -149,6 +159,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: esTracking,
   },
   "pt-BR": {
+    bloodLoss: ptBRBloodLoss,
     floAlternatives: ptBRFloAlternatives,
     cramps: ptBRCramps,
     gettingStarted: ptBRGettingStarted,
@@ -161,6 +172,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     tracking: ptBRTracking,
   },
   "pt-PT": {
+    bloodLoss: ptPTBloodLoss,
     floAlternatives: ptPTFloAlternatives,
     cramps: ptPTCramps,
     gettingStarted: ptPTGettingStarted,
