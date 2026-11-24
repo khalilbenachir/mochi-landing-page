@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleSwitcher } from "@/components/marketing/LocaleSwitcher";
 import { blogPath } from "@/features/blog/locales";
-import { CALCULATOR_ART } from "@/features/calculator/content/assets";
 import { CALCULATOR_SLUG, OVULATION_CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
 import { localeRoutePath, type AppLocale } from "@/i18n/routing";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
@@ -33,8 +32,8 @@ type SiteHeaderProps = {
 
 /** The calculators listed under "Calculators": a dropdown on desktop, plain rows in the mobile menu. */
 const CALCULATOR_LINKS = [
-  { key: "periodCalculator", slug: CALCULATOR_SLUG, art: CALCULATOR_ART.period, page: "calculator" },
-  { key: "ovulationCalculator", slug: OVULATION_CALCULATOR_SLUG, art: CALCULATOR_ART.ovulation, page: "ovulation" },
+  { key: "periodCalculator", slug: CALCULATOR_SLUG, page: "calculator" },
+  { key: "ovulationCalculator", slug: OVULATION_CALCULATOR_SLUG, page: "ovulation" },
 ] as const;
 
 export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = "", activePage }: SiteHeaderProps) {
@@ -82,15 +81,14 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
                   </svg>
                 </a>
                 <div className="invisible absolute left-1/2 top-full z-10 -translate-x-1/2 pt-[14px] opacity-0 transition-[opacity,translate] duration-200 group-hover/calc:visible group-hover/calc:opacity-100 group-focus-within/calc:visible group-focus-within/calc:opacity-100">
-                  <ul className="grid w-[290px] gap-[4px] rounded-[22px] bg-white p-[8px] text-ink-navy [box-shadow:0_18px_40px_-12px_var(--color-hero-menu-button-shadow)]">
+                  <ul className="grid w-[240px] gap-[2px] rounded-[20px] bg-white p-[8px] text-ink-navy [box-shadow:0_18px_40px_-12px_var(--color-hero-menu-button-shadow)]">
                     {calculators.map((calculator) => (
                       <li key={calculator.key}>
                         <a
                           href={calculator.href}
                           aria-current={calculator.current}
-                          className="flex items-center gap-[12px] rounded-[16px] p-[8px] text-[15px] font-heavy leading-[1.2] hover:bg-hero-menu-link-hover-bg focus-visible:bg-hero-menu-link-hover-bg aria-[current=page]:bg-hero-menu-link-hover-bg"
+                          className="block rounded-[14px] px-[14px] py-[11px] text-[15px] font-heavy leading-[1.2] hover:bg-hero-menu-link-hover-bg focus-visible:bg-hero-menu-link-hover-bg aria-[current=page]:bg-hero-menu-link-hover-bg"
                         >
-                          <Image src={calculator.art.src} width={calculator.art.width} height={calculator.art.height} alt="" sizes="56px" className="h-auto w-[56px] flex-none" />
                           {calculator.label}
                         </a>
                       </li>
