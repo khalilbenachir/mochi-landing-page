@@ -73,12 +73,9 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
                 <a
                   href={item.href}
                   aria-current={onCalculator ? "page" : undefined}
-                  className="flex items-center gap-[6px] text-white text-u-14.5 font-heavy underline-offset-4 hover:underline aria-[current=page]:underline aria-[current=page]:decoration-2 max-poster:text-[15px]"
+                  className="text-white text-u-14.5 font-heavy underline-offset-4 hover:underline aria-[current=page]:underline aria-[current=page]:decoration-2 max-poster:text-[15px]"
                 >
                   {navigation("calculators")}
-                  <svg viewBox="0 0 12 12" aria-hidden="true" className="size-[11px] transition-transform group-hover/calc:rotate-180 group-focus-within/calc:rotate-180" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
-                    <path d="m2.5 4.5 3.5 3.5 3.5-3.5" />
-                  </svg>
                 </a>
                 <div className="invisible absolute left-1/2 top-full z-10 -translate-x-1/2 pt-[14px] opacity-0 transition-[opacity,translate] duration-200 group-hover/calc:visible group-hover/calc:opacity-100 group-focus-within/calc:visible group-focus-within/calc:opacity-100">
                   <ul className="grid w-[240px] gap-[2px] rounded-[20px] bg-white p-[8px] text-ink-navy [box-shadow:0_18px_40px_-12px_var(--color-hero-menu-button-shadow)]">
