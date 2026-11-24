@@ -76,7 +76,20 @@ jobs:
       - run: vercel build
 
       - id: deploy
-        run: echo "url=$(vercel deploy --prebuilt)" >> "$GITHUB_OUTPUT"
+        # The deploy runs on its own line so a failed upload fails the job: wrapped in
+        # `echo "url=$(…)"` its exit code was lost and a broken deploy showed green.
+        # Uploads to Vercel can abort transiently, so retry a few times first.
+        run: |
+          for attempt in 1 2 3; do
+            if url=$(vercel deploy --prebuilt); then
+              echo "url=$url" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::vercel deploy failed (attempt $attempt), retrying"
+            sleep $((attempt * 10))
+          done
+          echo "::error::vercel deploy failed after 3 attempts"
+          exit 1
 
       - name: Comment preview URL
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
@@ -124,7 +137,20 @@ jobs:
       - run: vercel build --prod
 
       - id: deploy
-        run: echo "url=$(vercel deploy --prebuilt --prod)" >> "$GITHUB_OUTPUT"
+        # The deploy runs on its own line so a failed upload fails the job: wrapped in
+        # `echo "url=$(…)"` its exit code was lost and a broken deploy showed green.
+        # Uploads to Vercel can abort transiently, so retry a few times first.
+        run: |
+          for attempt in 1 2 3; do
+            if url=$(vercel deploy --prebuilt --prod); then
+              echo "url=$url" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "::warning::vercel deploy failed (attempt $attempt), retrying"
+            sleep $((attempt * 10))
+          done
+          echo "::error::vercel deploy failed after 3 attempts"
+          exit 1
 
       # Pings Bing & co. with the pages updated in the last days (or all with the
       # manual `indexnow_all` input). A failure here never fails the deploy.
