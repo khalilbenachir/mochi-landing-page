@@ -637,6 +637,36 @@
       "title": "Quand arrivent vos prochaines règles ?",
       "body": "Indiquez le premier jour de vos dernières règles et obtenez vos trois prochaines règles, votre ovulation et votre période fertile estimées en quelques secondes.",
       "button": "Ouvrir le calculateur"
+    },
+    "breadcrumb": "Fil d’Ariane",
+    "topicEyebrow": "Thème",
+    "topicsHeading": "Explorer par thème",
+    "topics": {
+      "cycle-basics": {
+        "title": "Comprendre le cycle menstruel",
+        "intro": "Le cycle menstruel compte quatre phases et dure généralement de 21 à 35 jours chez l’adulte. Ces guides expliquent chaque phase, comment suivre vos règles et comment les applis et les montres prédisent la suite, pour lire votre propre rythme en confiance.",
+        "metadataDescription": "Comprendre le cycle menstruel : les 4 phases, la durée normale d’un cycle, comment suivre ses règles et comment fonctionnent les prédictions. Guides sourcés."
+      },
+      "period-care": {
+        "title": "Vivre ses règles au quotidien",
+        "intro": "Des réponses concrètes pour les jours de règles : à quelle fréquence changer de serviette, quelle perte de sang est normale et quels signes justifient de consulter. Chaque guide est court, sans jugement et appuyé sur des sources médicales.",
+        "metadataDescription": "Vivre ses règles : à quelle fréquence changer de serviette, combien de sang on perd, signes de règles abondantes et quand consulter. Guides courts et sourcés."
+      },
+      "symptoms-moods": {
+        "title": "Symptômes des règles et humeur",
+        "intro": "Crampes, baisses de moral et coups de fatigue suivent souvent le cycle. Ces guides expliquent pourquoi les symptômes changent d’une phase à l’autre, ce qui aide en général et quels signes, comme une douleur intense ou un TDPM, méritent un avis médical.",
+        "metadataDescription": "Douleurs de règles, SPM et changements d’humeur pendant le cycle : pourquoi ils arrivent, ce qui aide et quand consulter. Guides sourcés et sans jugement."
+      },
+      "privacy": {
+        "title": "Confidentialité des applis de règles",
+        "intro": "Les données de votre cycle sont des données de santé. Ces guides montrent quoi vérifier avant de faire confiance à une appli de suivi des règles (où sont stockées vos données, avec qui elles sont partagées, faut-il un compte) et comparent des alternatives privées.",
+        "metadataDescription": "Votre appli de règles est-elle privée ? Ce qu’il faut vérifier, où vont vos données et quelles alternatives privées à Flo choisir. Guides clairs et pratiques."
+      },
+      "using-mochi": {
+        "title": "Utiliser Mochi",
+        "intro": "Mochi est une appli gratuite de suivi des règles pour iPhone. Aucun compte n’est nécessaire et les données de votre cycle restent sur votre iPhone, sauf si vous activez la sauvegarde. Commencez ici : premier check-in, saisie des règles et des symptômes, lecture des prédictions.",
+        "metadataDescription": "Bien démarrer avec Mochi, l’appli de règles gratuite et privée pour iPhone : premier check-in, saisie des règles et des symptômes, lecture des prédictions."
+      }
     }
   },
   "PeriodEducationFAQ": {

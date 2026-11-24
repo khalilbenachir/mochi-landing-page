@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
-import { BLOG_POSTS, postModifiedAt, type BlogPost } from "../content/catalog";
+import { BLOG_POSTS, postModifiedAt, topicModifiedAt, topicPosts, type BlogCategory, type BlogPost } from "../content/catalog";
 import { getArticleCopy } from "../content/copy";
 import { useBlogLocale, useBlogRoutes } from "../i18n";
 
@@ -13,6 +13,7 @@ function useBlogUrls() {
     blog: `${SITE_URL}${routes.index}`,
     author: { "@type": "Organization", name: SITE_NAME, url: `${SITE_URL}${routes.editorial}` } as const,
     post: (post: BlogPost) => `${SITE_URL}${routes.post(post.slug)}`,
+    topic: (category: BlogCategory) => `${SITE_URL}${routes.topic(category)}`,
   };
 }
 
@@ -51,7 +52,8 @@ export function BlogStructuredData({ post }: { post: BlogPost }) {
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: t("navigation"), item: urls.blog },
-            { "@type": "ListItem", position: 2, name: copy.title, item: url },
+            { "@type": "ListItem", position: 2, name: t(`categories.${post.category}`), item: urls.topic(post.category) },
+            { "@type": "ListItem", position: 3, name: copy.title, item: url },
           ],
         },
         {
@@ -111,6 +113,49 @@ export function BlogIndexStructuredData() {
             url: urls.post(post),
             name: getArticleCopy(post, locale).title,
           })),
+        },
+      ]}
+    />
+  );
+}
+
+/** Topic hub: a CollectionPage of the topic's posts, inside the blog, with its breadcrumb. */
+export function BlogTopicStructuredData({ category }: { category: BlogCategory }) {
+  const t = useTranslations("Blog");
+  const locale = useBlogLocale();
+  const urls = useBlogUrls();
+  const url = urls.topic(category);
+  const posts = topicPosts(category);
+  return (
+    <JsonLd
+      graph={[
+        {
+          "@type": "CollectionPage",
+          "@id": `${url}#topic`,
+          url,
+          name: t(`topics.${category}.title`),
+          description: t(`topics.${category}.metadataDescription`),
+          inLanguage: locale,
+          dateModified: topicModifiedAt(category),
+          isPartOf: { "@id": `${urls.blog}#blog` },
+          publisher: PUBLISHER,
+          mainEntity: {
+            "@type": "ItemList",
+            numberOfItems: posts.length,
+            itemListElement: posts.map((post, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              url: urls.post(post),
+              name: getArticleCopy(post, locale).title,
+            })),
+          },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: t("navigation"), item: urls.blog },
+            { "@type": "ListItem", position: 2, name: t(`categories.${category}`), item: url },
+          ],
         },
       ]}
     />

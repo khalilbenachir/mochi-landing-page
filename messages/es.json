@@ -637,6 +637,36 @@
       "title": "¿Cuándo te bajará la próxima regla?",
       "body": "Indica el primer día de tu última regla y obtén en segundos tus tres próximas reglas, la ovulación y la ventana fértil estimadas.",
       "button": "Abrir la calculadora"
+    },
+    "breadcrumb": "Ruta de navegación",
+    "topicEyebrow": "Tema",
+    "topicsHeading": "Explorar por tema",
+    "topics": {
+      "cycle-basics": {
+        "title": "Entender el ciclo menstrual",
+        "intro": "El ciclo menstrual tiene cuatro fases y en adultas suele durar entre 21 y 35 días. Estas guías explican cada fase, cómo registrar tu regla y cómo las apps y los relojes predicen lo que viene, para que leas tu propio patrón con confianza.",
+        "metadataDescription": "Entiende tu ciclo menstrual: las 4 fases, la duración normal, cómo registrar tu regla y cómo funcionan las predicciones. Guías claras y con fuentes."
+      },
+      "period-care": {
+        "title": "Cuidados durante la regla",
+        "intro": "Respuestas prácticas para los días de regla: cada cuánto cambiar la compresa, cuánta pérdida de sangre es normal y qué señales indican que conviene consultar. Cada guía es breve, sin juicios y está basada en fuentes médicas.",
+        "metadataDescription": "Cuidados menstruales: cada cuánto cambiar la compresa, cuánta sangre pierdes, señales de sangrado abundante y cuándo ir al médico. Guías breves con fuentes."
+      },
+      "symptoms-moods": {
+        "title": "Síntomas de la regla y estado de ánimo",
+        "intro": "Los cólicos, el ánimo bajo y el cansancio suelen seguir al ciclo. Estas guías explican por qué los síntomas cambian de una fase a otra, qué suele ayudar y qué señales, como un dolor intenso o el TDPM, merecen una opinión médica.",
+        "metadataDescription": "Dolor de regla, SPM y cambios de humor durante el ciclo: por qué ocurren, qué ayuda y cuándo consultar. Guías con fuentes y sin juicios."
+      },
+      "privacy": {
+        "title": "Privacidad en apps de regla",
+        "intro": "Los datos de tu ciclo son datos de salud. Estas guías muestran qué revisar antes de confiar en una app de seguimiento menstrual (dónde se guardan tus datos, con quién se comparten, si necesitas una cuenta) y comparan alternativas privadas.",
+        "metadataDescription": "¿Tu app de regla es privada? Qué revisar, adónde van tus datos y qué alternativas privadas a Flo existen. Guías de privacidad claras y prácticas."
+      },
+      "using-mochi": {
+        "title": "Usar Mochi",
+        "intro": "Mochi es una app gratuita para seguir tu regla en iPhone. No necesitas cuenta y los datos de tu ciclo se quedan en tu iPhone, salvo que actives la copia de seguridad. Empieza aquí: primer check-in, registrar tu regla y síntomas, y entender las predicciones.",
+        "metadataDescription": "Empieza con Mochi, la app de regla gratuita y privada para iPhone: primer check-in, registrar tu regla y síntomas, y entender las predicciones."
+      }
     }
   },
   "PeriodEducationFAQ": {

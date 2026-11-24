@@ -637,6 +637,36 @@
       "title": "Quando vem a tua próxima menstruação?",
       "body": "Indica o primeiro dia da tua última menstruação e vê em segundos as próximas três, a ovulação e o período fértil estimados.",
       "button": "Abrir a calculadora"
+    },
+    "breadcrumb": "Caminho de navegação",
+    "topicEyebrow": "Tema",
+    "topicsHeading": "Explorar por tema",
+    "topics": {
+      "cycle-basics": {
+        "title": "Compreender o ciclo menstrual",
+        "intro": "O ciclo menstrual tem quatro fases e, em adultas, dura normalmente entre 21 e 35 dias. Estes guias explicam cada fase, como registar o período e como as apps e os relógios preveem o que vem a seguir, para leres o teu próprio padrão com confiança.",
+        "metadataDescription": "Compreende o ciclo menstrual: as 4 fases, a duração normal, como registar o período e como funcionam as previsões. Guias claros e com fontes."
+      },
+      "period-care": {
+        "title": "Cuidados durante o período",
+        "intro": "Respostas práticas para os dias de período: de quantas em quantas horas trocar o penso, quanta perda de sangue é normal e que sinais justificam falar com um médico. Cada guia é curto, sem julgamentos e baseado em fontes médicas.",
+        "metadataDescription": "Cuidados menstruais: de quantas em quantas horas trocar o penso, quanto sangue perdes, sinais de fluxo abundante e quando ir ao médico. Guias com fontes."
+      },
+      "symptoms-moods": {
+        "title": "Sintomas do período e humor",
+        "intro": "Cólicas, desânimo e quebras de energia acompanham muitas vezes o ciclo. Estes guias explicam porque é que os sintomas mudam de fase para fase, o que costuma ajudar e que sinais, como dor intensa ou PMDD, merecem uma opinião médica.",
+        "metadataDescription": "Dores menstruais, TPM e mudanças de humor ao longo do ciclo: porque acontecem, o que ajuda e quando consultar um médico. Guias com fontes e sem julgamentos."
+      },
+      "privacy": {
+        "title": "Privacidade nas apps de período",
+        "intro": "Os dados do teu ciclo são dados de saúde. Estes guias mostram o que verificar antes de confiar numa app de registo do período (onde ficam os teus dados, com quem são partilhados, se precisas de conta) e comparam alternativas privadas.",
+        "metadataDescription": "A tua app de período é privada? O que verificar, para onde vão os teus dados e que alternativas privadas à Flo existem. Guias claros e práticos."
+      },
+      "using-mochi": {
+        "title": "Usar o Mochi",
+        "intro": "O Mochi é uma app gratuita para registar o período no iPhone. Não precisas de conta e os dados do teu ciclo ficam no teu iPhone, a não ser que atives a cópia de segurança. Começa aqui: primeiro check-in, registo do período e dos sintomas, e leitura das previsões.",
+        "metadataDescription": "Começa a usar o Mochi, a app de período gratuita e privada para iPhone: primeiro check-in, registo do período e sintomas, e leitura das previsões."
+      }
     }
   },
   "PeriodEducationFAQ": {

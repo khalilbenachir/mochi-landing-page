@@ -637,6 +637,36 @@
       "title": "When is your next period?",
       "body": "Enter the first day of your last period and get your next three periods, estimated ovulation and fertile window in seconds.",
       "button": "Open the calculator"
+    },
+    "breadcrumb": "Breadcrumb",
+    "topicEyebrow": "Topic",
+    "topicsHeading": "Explore by topic",
+    "topics": {
+      "cycle-basics": {
+        "title": "Menstrual cycle basics",
+        "intro": "Your menstrual cycle has four phases and usually lasts 21 to 35 days in adults. These guides explain each phase, how to track your period, and how apps and watches predict what comes next, so you can read your own pattern with confidence.",
+        "metadataDescription": "Understand your menstrual cycle: the 4 phases, normal cycle length, how to track your period and how period predictions work. Clear, sourced guides."
+      },
+      "period-care": {
+        "title": "Period care guides",
+        "intro": "Practical answers for the days you bleed: how often to change your pad, how much blood loss is normal, and the signs that mean it's worth talking to a doctor. Every guide is short, judgment-free and based on medical sources.",
+        "metadataDescription": "Practical period care: how often to change your pad, how much blood you lose, signs of a heavy flow and when to see a doctor. Short, sourced guides."
+      },
+      "symptoms-moods": {
+        "title": "Period symptoms and mood changes",
+        "intro": "Cramps, low moods and energy dips often follow your cycle. These guides explain why symptoms change from phase to phase, what usually helps, and which signs, like severe pain or PMDD symptoms, deserve a doctor's opinion.",
+        "metadataDescription": "Period cramps, PMS and mood changes across your cycle: why they happen, what helps, and when to see a doctor. Sourced, judgment-free guides."
+      },
+      "privacy": {
+        "title": "Period tracker privacy",
+        "intro": "Your cycle data is health data. These guides show what to check before trusting a period tracking app (where your data is stored, who it's shared with, whether you need an account) and compare private alternatives to popular apps.",
+        "metadataDescription": "Is your period tracker private? What to check in a cycle app, where your data goes, and private alternatives to Flo. Clear, practical privacy guides."
+      },
+      "using-mochi": {
+        "title": "Using Mochi",
+        "intro": "Mochi is a free period tracker for iPhone. No account is needed, and your cycle data stays on your iPhone unless you turn on backup. Start here to set up your first check-in, log your period and symptoms, and read your predictions.",
+        "metadataDescription": "Get started with Mochi, the free and private period tracker for iPhone: your first check-in, logging your period and symptoms, and reading predictions."
+      }
     }
   },
   "PeriodEducationFAQ": {

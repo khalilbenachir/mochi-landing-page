@@ -96,6 +96,13 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
         inLanguage: locale,
         mainEntity: faq.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
       },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: SITE_NAME, item: `${SITE_URL}${home}` },
+          { "@type": "ListItem", position: 2, name: t("title"), item: url },
+        ],
+      },
     ],
   };
 
