@@ -13,7 +13,8 @@ export type BlogPostId =
   | "gettingStarted"
   | "floAlternatives"
   | "bloodLoss"
-  | "appleWatch";
+  | "appleWatch"
+  | "latePeriod";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -39,6 +40,24 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "latePeriod",
+    category: "symptoms-moods",
+    slug: "late-period-not-pregnant",
+    image: "/blog-art/late-period-mochi.webp",
+    tone: "bg-blog-lavender",
+    publishedAt: "2026-11-24",
+    sections: [
+      { id: "how-late", sources: ["irregularPeriods", "cyclePhases"] },
+      { id: "pregnancy-first", sources: ["pregnancyTests"] },
+      { id: "common-reasons", sources: ["missedPeriods"] },
+      { id: "stress-and-lifestyle", sources: ["missedPeriods", "cyclePhases"] },
+      { id: "contraception-and-breastfeeding", sources: ["missedPeriods", "pregnancyTests"] },
+      { id: "health-conditions", sources: ["missedPeriods", "irregularPeriods"] },
+      { id: "when-to-see-a-gp", sources: ["missedPeriods", "irregularPeriods", "pregnancyTests"] },
+      { id: "track-your-cycle", sources: ["mochiFeatures", "mochiTerms"] },
+    ],
+  },
   {
     id: "appleWatch",
     category: "cycle-basics",
