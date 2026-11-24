@@ -1,0 +1,18 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-24",
+  "file": "public/calculator-art/ovulation-mochi-detective.webp",
+  "references": [
+    "public/calculator-art/calculator-mochi-planner.webp"
+  ],
+  "use": "Hero of the ovulation calculator page in all six languages, and its cross-link card on the period calculator",
+  "output": {
+    "format": "WebP",
+    "width": 1024,
+    "height": 783,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box with 24px margin, then resized from 1402x1122."
+  },
+  "prompt": "Use the attached image ONLY as the character and style reference: the same pink mochi mascot (rounded drop/dome body, bold darker-pink outline, glossy white highlights, navy eyes, pink cheeks, small mouth, tiny round pink hands), the same purple round glasses, the same cream puffy cushion, same soft-shaded flat sticker style and palette. Create a NEW pose made for an \"ovulation calculator\" page. Mochi is the fertility-window detective: sitting on the cushion with the purple glasses, curious delighted smile, holding up a big round magnifying glass with a cream handle, looking through it at a standing desk calendar beside it (simple grid page with a ring binding on top). On the calendar, five consecutive days are filled soft light blue and the day right after them is filled deep indigo with a tiny white star; the magnifying glass enlarges that indigo star day. Floating around: a small glowing indigo star, two little light-blue sparkles, a tiny green sprout with two leaves and a small pink heart. Cheerful, clever, reassuring, not clinical. No numbers, no letters, no words, no logos anywhere. Landscape 5:4, Mochi left of centre, calendar right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration."
+}

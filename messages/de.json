@@ -308,7 +308,8 @@
     "terms": "Nutzungsbedingungen",
     "calculator": "Periodenrechner",
     "contact": "Kontakt",
-    "disclaimer": "Mochi ist kein Verhütungsmittel und ersetzt keine medizinische Beratung."
+    "disclaimer": "Mochi ist kein Verhütungsmittel und ersetzt keine medizinische Beratung.",
+    "ovulationCalculator": "Eisprungrechner"
   },
   "NotFound": {
     "metadataTitle": "Seite nicht gefunden | Mochi",
@@ -769,6 +770,83 @@
       "title": "Periodenvorhersagen, die zu deinem Zyklus passen",
       "body": "Entdecke Mochi, deine kostenlose Perioden-App fürs iPhone. Anhand deiner eingetragenen Periodendaten passt Mochi die Vorhersagen mit der Zeit an deinen persönlichen Zyklus an. Die App funktioniert auch offline und ganz ohne Benutzerkonto.",
       "button": "Mochi kostenlos herunterladen"
+    },
+    "picker": {
+      "placeholder": "Ersten Tag auswählen",
+      "previousMonth": "Vorheriger Monat",
+      "nextMonth": "Nächster Monat",
+      "today": "Heute",
+      "change": "Datum ändern",
+      "decrease": "Weniger Tage",
+      "increase": "Mehr Tage",
+      "days": "{count, plural, one {# Tag} other {# Tage}}"
+    },
+    "sibling": "Noch ein kostenloser Rechner"
+  },
+  "OvulationCalculator": {
+    "metadataTitle": "Eisprungrechner: Finde deine fruchtbaren Tage",
+    "metadataDescription": "Kostenloser Eisprungrechner: Berechne deinen Eisprung und deine fruchtbaren Tage aus deiner letzten Periode und Zykluslänge. Ohne Konto, nichts wird gespeichert.",
+    "eyebrow": "Kostenloser Rechner",
+    "title": "Eisprungrechner",
+    "intro": "Schätze ab, wann dein Eisprung wahrscheinlich ist und welche Tage zu deinem fruchtbaren Fenster gehören – anhand des ersten Tages deiner letzten Periode und deiner üblichen Zykluslänge. Die Ergebnisse sind Schätzungen und keine Bestätigung des Eisprungs.",
+    "heroAlt": "Mochi mit runder Brille betrachtet mit einer Lupe einen markierten Tag auf einem Tischkalender",
+    "sibling": "Noch ein kostenloser Rechner",
+    "form": {
+      "legend": "Angaben zu deinem Zyklus",
+      "lastPeriod": "Erster Tag deiner letzten Periode",
+      "cycleLength": "Durchschnittliche Zykluslänge (Tage)",
+      "cycleHint": "Zähle vom ersten Tag einer Periode bis zum ersten Tag der nächsten. Unsicher? Starte mit 28.",
+      "submit": "Fruchtbare Tage berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "results": {
+      "heading": "Deine geschätzten fruchtbaren Tage",
+      "empty": "Gib das Datum deiner letzten Periode und deine Zykluslänge ein, um deinen geschätzten Eisprung und deine fruchtbaren Tage zu sehen.",
+      "ovulation": "Geschätzter Eisprung",
+      "cycleDay": "Etwa an Tag {day} deines Zyklus",
+      "daysUntil": "{days, plural, =0 {Heute} one {In # Tag} other {In # Tagen}}",
+      "fertile": "Fruchtbare Tage",
+      "peak": "Fruchtbarste Tage",
+      "range": "{start} bis {end}",
+      "nextPeriod": "Nächste Periode erwartet",
+      "upcoming": "Deine nächsten Eisprung-Termine",
+      "glance": "Deine fruchtbaren Tage auf einen Blick",
+      "legend": {
+        "period": "Nächste Periode",
+        "fertile": "Fruchtbare Tage",
+        "ovulation": "Eisprung",
+        "today": "Heute"
+      }
+    },
+    "disclaimer": "Diese Daten sind Schätzungen auf Basis eines durchschnittlichen Zyklus und können von deinem tatsächlichen Eisprung abweichen. Nutze diesen Rechner nicht zur Verhütung. Wenn du schwanger werden möchtest und Fragen hast, sprich mit deiner Ärztin, deinem Arzt oder deiner Hebamme.",
+    "how": {
+      "title": "So funktioniert der Eisprungrechner",
+      "first": "Der Rechner schätzt zuerst den Beginn deiner nächsten Periode, indem er deine durchschnittliche Zykluslänge zum ersten Tag deiner letzten Periode addiert. Der Eisprung findet meist etwa 14 Tage vor Beginn der Periode statt, denn die Lutealphase nach dem Eisprung dauert laut Cleveland Clinic rund 14 Tage. In einem 28-Tage-Zyklus wird der Eisprung also etwa an Tag 14 geschätzt, in einem 32-Tage-Zyklus etwa an Tag 18.",
+      "second": "Nach dem Eisprung kann die Eizelle etwa 12 bis 24 Stunden lang befruchtet werden, Spermien können im Körper aber bis zu fünf Tage überleben. Deshalb umfasst das angezeigte fruchtbare Fenster die fünf Tage vor deinem geschätzten Eisprung und den Tag des Eisprungs selbst. Die zwei Tage davor und der Eisprungtag sind als deine fruchtbarsten Tage hervorgehoben, weil die Chance auf eine Schwangerschaft dann am höchsten ist.",
+      "third": "Dein Zyklus kann sich von Monat zu Monat verändern. Der Eisprung kann deshalb früher oder später stattfinden als geschätzt, besonders bei unregelmäßigen Zyklen. Deine Periode zu tracken, auf deinen Zervixschleim zu achten oder Ovulationstests zu nutzen, gibt dir ein genaueres Bild. Alles wird in deinem Browser berechnet: Deine Daten werden nie gespeichert oder an einen Server gesendet."
+    },
+    "faq": {
+      "title": "Fragen zu Eisprung und fruchtbaren Tagen",
+      "calculate": {
+        "question": "Wie berechne ich meinen Eisprung?",
+        "answer": "Ziehe 14 Tage vom erwarteten Beginn deiner nächsten Periode ab. Beispiel: Dauert dein Zyklus 30 Tage und hat deine letzte Periode am 1. März begonnen, wird die nächste etwa am 31. März erwartet – der Eisprung also etwa am 17. März. Das ist eine Schätzung, weil der Abstand zwischen Eisprung und Periode leicht schwanken kann."
+      },
+      "fertile": {
+        "question": "Wie lange dauern die fruchtbaren Tage?",
+        "answer": "Das fruchtbare Fenster umfasst meist etwa sechs Tage: die fünf Tage vor dem Eisprung und den Tag des Eisprungs. Spermien können bis zu fünf Tage überleben, die Eizelle lebt nach dem Eisprung nur etwa 12 bis 24 Stunden. Deshalb kann Sex in den Tagen vor dem Eisprung zu einer Schwangerschaft führen."
+      },
+      "signs": {
+        "question": "Woran erkenne ich den Eisprung?",
+        "answer": "Typische Anzeichen sind klarer, glitschiger und dehnbarer Zervixschleim (ähnlich wie rohes Eiweiß), ein leichter Anstieg der Basaltemperatur nach dem Eisprung, leichte Schmerzen auf einer Seite des Unterbauchs und mehr Lust auf Sex. Ovulationstests erkennen den Anstieg des luteinisierenden Hormons (LH), der etwa 24 bis 36 Stunden vor dem Eisprung stattfindet."
+      },
+      "irregular": {
+        "question": "Funktioniert der Eisprungrechner bei unregelmäßigem Zyklus?",
+        "answer": "Er kann eine grobe Schätzung geben, ist aber weniger zuverlässig, wenn sich deine Zykluslänge von Monat zu Monat stark ändert. Deine Periode einige Monate zu tracken, auf Anzeichen des Eisprungs zu achten oder Ovulationstests zu nutzen, kann helfen. Sprich mit deiner Ärztin oder deinem Arzt, wenn deine Zyklen oft kürzer als 24 oder länger als 38 Tage sind oder du seit einem Jahr schwanger werden möchtest (ab 35 Jahren seit sechs Monaten)."
+      },
+      "contraception": {
+        "question": "Kann ich einen Eisprungrechner zur Verhütung nutzen?",
+        "answer": "Nein. Eine Kalenderschätzung kann nicht genau sagen, wann dein Eisprung stattfindet, und er kann sich von Zyklus zu Zyklus verschieben – kein Tag ist garantiert sicher. Wenn du eine Schwangerschaft vermeiden möchtest, lass dich von deiner Ärztin, deinem Arzt oder in der Apotheke zu zuverlässiger Verhütung beraten."
+      }
     },
     "picker": {
       "placeholder": "Ersten Tag auswählen",

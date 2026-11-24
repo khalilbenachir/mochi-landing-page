@@ -8,12 +8,17 @@ import { LegalSummaryHeading } from "@/features/legal/components/LegalSummaryHea
 import { SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
 import { localePath, type AppLocale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
-import { CALCULATOR_ASSETS, CALCULATOR_HERO_SIZE } from "../content/assets";
-import { CALCULATOR_SLUG } from "../content/calculate";
-import { calculatorPath } from "../metadata";
+import Link from "next/link";
+import { CALCULATOR_ART } from "../content/assets";
+import { CALCULATORS, calculatorPath, type CalculatorKind } from "../metadata";
+import { OvulationCalculator, type OvulationCopy } from "./OvulationCalculator.client";
 import { PeriodCalculator, type CalculatorCopy } from "./PeriodCalculator.client";
 
-const FAQ_IDS = ["next", "ovulation", "accuracy", "irregular"] as const;
+/** Per-calculator differences; everything else on the page is shared. */
+const PAGES = {
+  period: { faq: ["next", "ovulation", "accuracy", "irregular"], hero: "bg-calculator-hero", sibling: "ovulation" },
+  ovulation: { faq: ["calculate", "fertile", "signs", "irregular", "contraception"], hero: "bg-ovulation-hero", sibling: "period" },
+} as const satisfies Record<CalculatorKind, { faq: readonly string[]; hero: string; sibling: CalculatorKind }>;
 const HOW_IDS = ["first", "second", "third"] as const;
 const CONFETTI = [
   "left-[4%] top-[14%] size-[38px] rotate-12",
@@ -26,53 +31,32 @@ const CONFETTI = [
 const HOW_TONES = ["bg-blog-pink", "bg-blog-lavender", "bg-cycle-fertile-tint"] as const;
 
 /** Same anatomy as the privacy and terms pages: coloured hero band, then white content bands. */
-export async function CalculatorPage({ locale }: { locale: AppLocale }) {
-  const t = await getTranslations({ locale, namespace: "PeriodCalculator" });
+export async function CalculatorPage({ locale, kind = "period" }: { locale: AppLocale; kind?: CalculatorKind }) {
+  const page = PAGES[kind];
+  // Both namespaces share the page keys (title, intro, how, faq, cta…); the form copy differs.
+  const t = (await getTranslations({ locale, namespace: CALCULATORS[kind].namespace })) as unknown as Translate;
+  const sibling = (await getTranslations({ locale, namespace: CALCULATORS[page.sibling].namespace })) as unknown as Translate;
   const home = localePath(locale);
-  const copy: CalculatorCopy = {
-    form: {
-      legend: t("form.legend"),
-      lastPeriod: t("form.lastPeriod"),
-      cycleLength: t("form.cycleLength"),
-      cycleHint: t("form.cycleHint"),
-      periodLength: t("form.periodLength"),
-      periodHint: t("form.periodHint"),
-      submit: t("form.submit"),
-      reset: t("form.reset"),
-    },
-    // ICU templates stay raw so the client formats them with its own dates and counts.
-    results: {
-      heading: t("results.heading"),
-      empty: t("results.empty"),
-      nextPeriod: t("results.nextPeriod"),
-      upcoming: t("results.upcoming"),
-      periodRange: t.raw("results.periodRange"),
-      ovulation: t("results.ovulation"),
-      fertile: t("results.fertile"),
-      fertileRange: t.raw("results.fertileRange"),
-      daysUntil: t.raw("results.daysUntil"),
-      glance: t("results.glance"),
-      legend: {
-        period: t("results.legend.period"),
-        fertile: t("results.legend.fertile"),
-        ovulation: t("results.legend.ovulation"),
-        today: t("results.legend.today"),
-      },
-    },
-    picker: {
-      placeholder: t("picker.placeholder"),
-      previousMonth: t("picker.previousMonth"),
-      nextMonth: t("picker.nextMonth"),
-      today: t("picker.today"),
-      change: t("picker.change"),
-      decrease: t("picker.decrease"),
-      increase: t("picker.increase"),
-      days: t.raw("picker.days"),
-    },
-    disclaimer: t("disclaimer"),
+  const art = CALCULATOR_ART[kind];
+  const picker = {
+    placeholder: t("picker.placeholder"),
+    previousMonth: t("picker.previousMonth"),
+    nextMonth: t("picker.nextMonth"),
+    today: t("picker.today"),
+    change: t("picker.change"),
+    decrease: t("picker.decrease"),
+    increase: t("picker.increase"),
+    days: t.raw("picker.days"),
   };
-  const faq = FAQ_IDS.map((id) => ({ id, question: t(`faq.${id}.question`), answer: t(`faq.${id}.answer`) }));
-  const url = `${SITE_URL}${calculatorPath(locale)}`;
+  const legend = { period: t("results.legend.period"), fertile: t("results.legend.fertile"), ovulation: t("results.legend.ovulation"), today: t("results.legend.today") };
+  const calculator =
+    kind === "period" ? (
+      <PeriodCalculator copy={periodCopy(t, picker, legend)} locale={locale} />
+    ) : (
+      <OvulationCalculator copy={ovulationCopy(t, picker, legend)} locale={locale} />
+    );
+  const faq = page.faq.map((id) => ({ id, question: t(`faq.${id}.question`), answer: t(`faq.${id}.answer`) }));
+  const url = `${SITE_URL}${calculatorPath(locale, kind)}`;
   const graph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -109,9 +93,9 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
   return (
     <main id="top" className="flex-1 bg-white text-ink-navy">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, "\\u003c") }} />
-      <SiteHeader homeHref={home} sectionBase={home} localeRoute={`/${CALCULATOR_SLUG}`} activePage="calculator" />
+      <SiteHeader homeHref={home} sectionBase={home} localeRoute={`/${CALCULATORS[kind].slug}`} activePage="calculator" />
 
-      <section aria-labelledby="calculator-title" className="relative overflow-hidden bg-calculator-hero text-white">
+      <section aria-labelledby="calculator-title" className={cn("relative overflow-hidden text-white", page.hero)}>
         {/* Calendar-cell confetti: the page's one playful flourish, decorative only. */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           {CONFETTI.map((cell) => (
@@ -134,9 +118,9 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
             <Heart className="absolute right-6 top-70 z-2 w-14 rotate-12 animate-drift text-white [animation-delay:-2.5s] max-poster:right-[2%] max-poster:top-[34%] max-poster:w-[15px]" />
             <Sparkle className="absolute left-36 bottom-40 z-2 w-16 animate-drift text-sun [animation-delay:-4s] max-poster:left-[8%] max-poster:bottom-[22%] max-poster:w-[18px]" />
             <Image
-              src={CALCULATOR_ASSETS.hero}
-              width={CALCULATOR_HERO_SIZE.width}
-              height={CALCULATOR_HERO_SIZE.height}
+              src={art.src}
+              width={art.width}
+              height={art.height}
               alt={t("heroAlt")}
               priority
               sizes="(max-width: 760px) 320px, (max-width: 1440px) 38vw, 520px"
@@ -148,7 +132,7 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
 
       <section aria-label={t("form.legend")} className="bg-white">
         <PosterStage spacing="none" className="px-56 pt-24 pb-24 max-nav:px-[20px] max-nav:pt-[32px] max-nav:pb-[40px]">
-          <PeriodCalculator copy={copy} locale={locale} />
+          {calculator}
         </PosterStage>
       </section>
 
@@ -170,6 +154,26 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
         </PosterStage>
       </section>
 
+      <section aria-labelledby="calculator-sibling">
+        <PosterStage spacing="none" className="px-56 pb-12 max-nav:px-[20px] max-nav:pb-[16px]">
+          <Link
+            href={calculatorPath(locale, page.sibling)}
+            className="group flex items-center gap-14 rounded-u-12 border-2 border-blog-border p-12 transition-colors hover:border-ink-navy max-poster:gap-[16px] max-poster:rounded-[18px] max-poster:p-[18px]"
+          >
+            <Image src={CALCULATOR_ART[page.sibling].src} width={CALCULATOR_ART[page.sibling].width} height={CALCULATOR_ART[page.sibling].height} alt="" sizes="120px" className="h-auto w-60 flex-none max-poster:w-[84px]" />
+            <span className="min-w-0 flex-1">
+              <span className="block text-u-[9] font-heavy uppercase tracking-[0.1em] text-blog-muted max-poster:text-[12px]">{t("sibling")}</span>
+              <span id="calculator-sibling" className="mt-2 block text-u-[13] font-max leading-[1.15] max-poster:text-[20px]">
+                {sibling("title")}
+              </span>
+            </span>
+            <span aria-hidden="true" className="grid size-24 flex-none place-items-center rounded-full bg-sun text-u-12 font-max text-ink-black transition-transform group-hover:translate-x-1 max-poster:size-[38px] max-poster:text-[18px]">
+              →
+            </span>
+          </Link>
+        </PosterStage>
+      </section>
+
       <section aria-labelledby="calculator-faq">
         <PosterStage spacing="none" className="px-56 pt-8 pb-28 max-nav:px-[20px] max-nav:pt-[24px] max-nav:pb-[40px]">
           <div>
@@ -180,4 +184,67 @@ export async function CalculatorPage({ locale }: { locale: AppLocale }) {
       </section>
     </main>
   );
+}
+
+type Translate = ((key: string) => string) & { raw: (key: string) => string };
+type Legend = CalculatorCopy["results"]["legend"];
+
+function periodCopy(t: Translate, picker: CalculatorCopy["picker"], legend: Legend): CalculatorCopy {
+  return {
+    form: {
+      legend: t("form.legend"),
+      lastPeriod: t("form.lastPeriod"),
+      cycleLength: t("form.cycleLength"),
+      cycleHint: t("form.cycleHint"),
+      periodLength: t("form.periodLength"),
+      periodHint: t("form.periodHint"),
+      submit: t("form.submit"),
+      reset: t("form.reset"),
+    },
+    // ICU templates stay raw so the client formats them with its own dates and counts.
+    results: {
+      heading: t("results.heading"),
+      empty: t("results.empty"),
+      nextPeriod: t("results.nextPeriod"),
+      upcoming: t("results.upcoming"),
+      periodRange: t.raw("results.periodRange"),
+      ovulation: t("results.ovulation"),
+      fertile: t("results.fertile"),
+      fertileRange: t.raw("results.fertileRange"),
+      daysUntil: t.raw("results.daysUntil"),
+      glance: t("results.glance"),
+      legend,
+    },
+    picker,
+    disclaimer: t("disclaimer"),
+  };
+}
+
+function ovulationCopy(t: Translate, picker: CalculatorCopy["picker"], legend: Legend): OvulationCopy {
+  return {
+    form: {
+      legend: t("form.legend"),
+      lastPeriod: t("form.lastPeriod"),
+      cycleLength: t("form.cycleLength"),
+      cycleHint: t("form.cycleHint"),
+      submit: t("form.submit"),
+      reset: t("form.reset"),
+    },
+    results: {
+      heading: t("results.heading"),
+      empty: t("results.empty"),
+      ovulation: t("results.ovulation"),
+      cycleDay: t.raw("results.cycleDay"),
+      daysUntil: t.raw("results.daysUntil"),
+      fertile: t("results.fertile"),
+      peak: t("results.peak"),
+      range: t.raw("results.range"),
+      nextPeriod: t("results.nextPeriod"),
+      upcoming: t("results.upcoming"),
+      glance: t("results.glance"),
+      legend,
+    },
+    picker,
+    disclaimer: t("disclaimer"),
+  };
 }

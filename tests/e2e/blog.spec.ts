@@ -132,7 +132,7 @@ test("every language shares the same header and footer navigation", async ({ pag
     ]);
     const footerLinks = await page.locator("body > footer nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
     expect(footerLinks[0], locale).toBe(blogPath(locale));
-    expect(footerLinks, locale).toHaveLength(5);
+    expect(footerLinks, locale).toHaveLength(6);
 
     await header.locator(`a[href="${blogPath(locale)}"]`).click();
     await expect(page, locale).toHaveURL((url) => url.pathname === blogPath(locale));

@@ -11,6 +11,7 @@ import { SpreadOrCenter } from "./SpreadOrCenter";
 const FOOTER_LINKS = [
   { key: "privacy", slug: "privacy" },
   { key: "calculator", slug: "period-calculator" },
+  { key: "ovulationCalculator", slug: "ovulation-calculator" },
   { key: "terms", slug: "terms" },
   { key: "contact", slug: "privacy#contact" },
 ] as const;

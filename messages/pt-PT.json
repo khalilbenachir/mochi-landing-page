@@ -308,7 +308,8 @@
     "terms": "Termos",
     "calculator": "Calculadora do período",
     "contact": "Contacto",
-    "disclaimer": "O Mochi não é um contracetivo e não substitui aconselhamento médico."
+    "disclaimer": "O Mochi não é um contracetivo e não substitui aconselhamento médico.",
+    "ovulationCalculator": "Calculadora de ovulação"
   },
   "NotFound": {
     "metadataTitle": "Página não encontrada | Mochi",
@@ -769,6 +770,83 @@
       "title": "Previsões do período adaptadas ao teu ciclo",
       "body": "Conhece o Mochi, a tua aplicação gratuita de acompanhamento menstrual para iPhone. O Mochi utiliza as datas que registas para personalizar as previsões à medida que conhece melhor o teu ciclo. Funciona mesmo quando o teu telemóvel não tem ligação à Internet e não precisas de criar uma conta.",
       "button": "Descarregar o Mochi gratuitamente"
+    },
+    "picker": {
+      "placeholder": "Escolhe o primeiro dia",
+      "previousMonth": "Mês anterior",
+      "nextMonth": "Mês seguinte",
+      "today": "Hoje",
+      "change": "Alterar data",
+      "decrease": "Menos dias",
+      "increase": "Mais dias",
+      "days": "{count, plural, one {# dia} other {# dias}}"
+    },
+    "sibling": "Outra ferramenta gratuita"
+  },
+  "OvulationCalculator": {
+    "metadataTitle": "Calculadora de ovulação: descobre o teu período fértil",
+    "metadataDescription": "Calculadora de ovulação gratuita: estima o dia da ovulação e o teu período fértil a partir do último período e da duração do ciclo. Sem conta, nada é guardado.",
+    "eyebrow": "Ferramenta gratuita",
+    "title": "Calculadora de ovulação",
+    "intro": "Estima quando é provável que ovules e quais os dias que formam o teu período fértil, a partir do primeiro dia do teu último período e da duração habitual do teu ciclo. Os resultados são estimativas, não uma confirmação da ovulação.",
+    "heroAlt": "Mochi de óculos redondos a olhar com uma lupa para um dia destacado num calendário de secretária",
+    "sibling": "Outra ferramenta gratuita",
+    "form": {
+      "legend": "Dados do teu ciclo menstrual",
+      "lastPeriod": "Primeiro dia do teu último período",
+      "cycleLength": "Duração média do ciclo (dias)",
+      "cycleHint": "Conta desde o primeiro dia de um período até ao primeiro dia do seguinte. Não sabes? Começa com 28.",
+      "submit": "Descobrir o meu período fértil",
+      "reset": "Recomeçar"
+    },
+    "results": {
+      "heading": "Os teus dias férteis estimados",
+      "empty": "Indica a data do teu último período e a duração do teu ciclo para veres o dia estimado da ovulação e o teu período fértil.",
+      "ovulation": "Ovulação estimada",
+      "cycleDay": "Por volta do dia {day} do teu ciclo",
+      "daysUntil": "{days, plural, =0 {Hoje} one {Daqui a # dia} other {Daqui a # dias}}",
+      "fertile": "Período fértil",
+      "peak": "Dias mais férteis",
+      "range": "De {start} a {end}",
+      "nextPeriod": "Próximo período previsto",
+      "upcoming": "As tuas próximas datas de ovulação",
+      "glance": "O teu período fértil num relance",
+      "legend": {
+        "period": "Próximo período",
+        "fertile": "Período fértil",
+        "ovulation": "Ovulação",
+        "today": "Hoje"
+      }
+    },
+    "disclaimer": "Estas datas são estimativas baseadas num ciclo médio e podem ser diferentes da tua ovulação real. Não uses esta calculadora como método contracetivo. Se estás a tentar engravidar e tens dúvidas, fala com um médico ou um enfermeiro.",
+    "how": {
+      "title": "Como funciona a calculadora de ovulação",
+      "first": "Primeiro, a calculadora estima quando começa o teu próximo período, somando a duração média do teu ciclo ao primeiro dia do teu último período. A ovulação acontece normalmente cerca de 14 dias antes do início do período, porque a fase lútea, que se segue à ovulação, dura cerca de 14 dias, segundo a Cleveland Clinic. Assim, num ciclo de 28 dias, a ovulação é estimada por volta do dia 14 e, num ciclo de 32 dias, por volta do dia 18.",
+      "second": "Depois da ovulação, o óvulo pode ser fecundado durante cerca de 12 a 24 horas, mas os espermatozoides podem sobreviver no corpo até cinco dias. Por isso, o período fértil aqui apresentado inclui os cinco dias antes da ovulação estimada e o próprio dia da ovulação. Os dois dias anteriores e o dia da ovulação aparecem destacados como os teus dias mais férteis, porque é quando a probabilidade de gravidez é maior.",
+      "third": "O teu ciclo pode mudar de mês para mês, por isso a ovulação pode acontecer mais cedo ou mais tarde do que o estimado, sobretudo se os teus ciclos forem irregulares. Registar o teu período, observar o muco cervical ou usar testes de ovulação ajuda-te a ter uma ideia mais clara. Tudo é calculado no teu navegador: as tuas datas nunca são guardadas nem enviadas para um servidor."
+    },
+    "faq": {
+      "title": "Perguntas sobre a ovulação e o período fértil",
+      "calculate": {
+        "question": "Como calculo o dia da minha ovulação?",
+        "answer": "Subtrai 14 dias à data em que esperas que o próximo período comece. Por exemplo, se o teu ciclo dura 30 dias e o teu último período começou a 1 de março, o próximo é esperado por volta de 31 de março, por isso a ovulação é estimada por volta de 17 de março. É uma estimativa, porque o intervalo entre a ovulação e o período pode variar ligeiramente."
+      },
+      "fertile": {
+        "question": "Quanto tempo dura o período fértil?",
+        "answer": "O período fértil dura normalmente cerca de seis dias: os cinco dias antes da ovulação e o dia da ovulação. Os espermatozoides podem sobreviver até cinco dias, enquanto o óvulo vive cerca de 12 a 24 horas depois de ser libertado, por isso ter relações nos dias antes da ovulação pode resultar numa gravidez."
+      },
+      "signs": {
+        "question": "Quais são os sinais da ovulação?",
+        "answer": "Os sinais mais comuns são um muco cervical transparente, escorregadio e elástico (semelhante a clara de ovo crua), uma ligeira subida da temperatura basal depois da ovulação, uma dor ligeira num dos lados do baixo-ventre e mais desejo sexual. Os testes de ovulação detetam a subida da hormona luteinizante (LH), que acontece cerca de 24 a 36 horas antes da ovulação."
+      },
+      "irregular": {
+        "question": "A calculadora funciona com ciclos irregulares?",
+        "answer": "Pode dar uma estimativa aproximada, mas é menos fiável quando a duração do teu ciclo muda muito de mês para mês. Registar o teu período durante alguns meses, estar atenta aos sinais de ovulação ou usar testes de ovulação pode ajudar. Fala com um médico se os teus ciclos durarem muitas vezes menos de 24 dias ou mais de 38, ou se estás a tentar engravidar há um ano (seis meses se tiveres 35 anos ou mais)."
+      },
+      "contraception": {
+        "question": "Posso usar uma calculadora de ovulação para evitar uma gravidez?",
+        "answer": "Não. Uma estimativa de calendário não consegue dizer exatamente quando ovulas, e a ovulação pode mudar de um ciclo para o outro, por isso nenhum dia é garantidamente seguro. Se queres evitar uma gravidez, fala com um médico, um enfermeiro ou um farmacêutico sobre um método contracetivo fiável."
+      }
     },
     "picker": {
       "placeholder": "Escolhe o primeiro dia",

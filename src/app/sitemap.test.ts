@@ -1,14 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { SITE_URL } from "@/features/landing/content/landing";
 import { LEGAL_PAGE_SLUGS } from "@/features/legal/pages";
-import { CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
+import { CALCULATOR_SLUG, OVULATION_CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
+
+const CALCULATOR_SLUGS = [CALCULATOR_SLUG, OVULATION_CALCULATOR_SLUG];
 import { BLOG_PAGE_SEGMENTS, BLOG_POSTS, postModifiedAt } from "@/features/blog/content/catalog";
 import { BLOG_LOCALES, blogPath, FALLBACK_BLOG_LOCALE, parseBlogRoute } from "@/features/blog/locales";
 import { localePath, localeRoutePath, routing } from "@/i18n/routing";
 import sitemap from "./sitemap";
 
 const entries = sitemap();
-const slugs = ["", CALCULATOR_SLUG, ...LEGAL_PAGE_SLUGS];
+const slugs = ["", ...CALCULATOR_SLUGS, ...LEGAL_PAGE_SLUGS];
 
 describe("sitemap", () => {
   it("lists each published canonical once, including every published blog translation", () => {
@@ -31,7 +33,7 @@ describe("sitemap", () => {
           "x-default": url(FALLBACK_BLOG_LOCALE),
         });
       } else {
-        const slug = [CALCULATOR_SLUG, ...LEGAL_PAGE_SLUGS].find((candidate) => path.endsWith(`/${candidate}`));
+        const slug = [...CALCULATOR_SLUGS, ...LEGAL_PAGE_SLUGS].find((candidate) => path.endsWith(`/${candidate}`));
         const urlFor = (locale: (typeof routing.locales)[number]) => `${SITE_URL}${slug ? localeRoutePath(locale, slug) : localePath(locale)}`;
         expect(entry.alternates?.languages).toEqual({
           ...Object.fromEntries(routing.locales.map((locale) => [locale, urlFor(locale)])),
@@ -55,7 +57,7 @@ describe("sitemap", () => {
     for (const entry of entries) {
       const path = new URL(entry.url).pathname;
       const isLegal = LEGAL_PAGE_SLUGS.some((slug) => path.endsWith(`/${slug}`));
-      expect(entry.priority).toBe(parseBlogRoute(path) ? 0.5 : path.endsWith(`/${CALCULATOR_SLUG}`) ? 0.8 : isLegal ? 0.3 : 1);
+      expect(entry.priority).toBe(parseBlogRoute(path) ? 0.5 : CALCULATOR_SLUGS.some((calculator) => path.endsWith(`/${calculator}`)) ? 0.8 : isLegal ? 0.3 : 1);
     }
   });
 });
