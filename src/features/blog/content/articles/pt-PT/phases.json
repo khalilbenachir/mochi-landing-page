@@ -1,53 +1,176 @@
 {
-  "title": "Quais são as quatro fases do ciclo menstrual?",
-  "description": "Compreende as quatro fases do ciclo menstrual, como se sobrepõem e porque varia a sua duração, com fontes e limites claros para as previsões.",
-  "imageAlt": "Mochi verde junto de uma roda ilustrada com símbolos do ciclo",
-  "intro": "O ciclo costuma ser descrito por quatro termos: menstruação, fase folicular, ovulação e fase lútea. Não são quatro blocos iguais. A menstruação coincide com o início da fase folicular.",
+  "title": "Fases do ciclo menstrual: conhece as 4 etapas",
+  "description": "Conhece as 4 fases do ciclo menstrual, descobre quanto tempo dura cada uma, quais as hormonas envolvidas e o que acontece no teu corpo ao longo do ciclo.",
+  "imageAlt": "Mochi verde ao lado de um esquema circular das quatro fases do ciclo menstrual",
+  "intro": "As quatro fases do ciclo menstrual são a menstruação, a fase folicular, a ovulação e a fase lútea. Ao longo destas fases, as alterações hormonais preparam o teu corpo para uma eventual gravidez. Embora o ciclo menstrual dure, em média, 28 dias, a duração e o momento de cada fase podem variar de um ciclo para outro.",
   "sections": {
-    "menstruation": {
-      "title": "Menstruação: o sangramento",
+    "overview": {
+      "title": "Quais são as 4 fases do ciclo menstrual?",
       "paragraphs": {
-        "first": "O dia 1 é o primeiro dia da menstruação. O sangramento ocorre quando o revestimento do útero se desprende. Regista as datas reais, sem copiar as previstas."
+        "first": "As quatro fases do ciclo menstrual são a menstruação, a fase folicular, a ovulação e a fase lútea. Ao longo do ciclo, as alterações hormonais regulam a eliminação e a regeneração do revestimento do útero, a maturação de um óvulo e a preparação do teu corpo para uma eventual gravidez.",
+        "second": "Segundo a Cleveland Clinic, o ciclo menstrual dura, em média, 28 dias. A tabela seguinte mostra o que acontece em cada fase, tomando como referência um ciclo com essa duração. O dia 1 corresponde ao primeiro dia do teu período, e não ao dia seguinte ao fim da menstruação."
+      },
+      "table": {
+        "caption": "As 4 fases do ciclo menstrual: dias, hormonas e alterações no corpo",
+        "columns": [
+          "Fase",
+          "Dias aproximados (ciclo de 28 dias)",
+          "Principais hormonas",
+          "O que acontece"
+        ],
+        "rows": [
+          [
+            "Menstruação",
+            "Dias 1 a 5",
+            "Níveis baixos de estrogénio e progesterona",
+            "O revestimento do útero desprende-se, dando origem à menstruação."
+          ],
+          [
+            "Fase folicular",
+            "Dias 1 a 14",
+            "FSH e aumento do estrogénio",
+            "Um óvulo amadurece e o revestimento do útero torna-se mais espesso."
+          ],
+          [
+            "Ovulação",
+            "Por volta do 14.º dia",
+            "Aumento súbito da LH",
+            "Um dos ovários liberta um óvulo."
+          ],
+          [
+            "Fase lútea",
+            "Dias 15 a 28",
+            "Progesterona",
+            "O revestimento do útero prepara-se para uma eventual gravidez."
+          ]
+        ]
+      },
+      "note": "As quatro fases não são períodos totalmente distintos. A menstruação coincide com os primeiros dias da fase folicular e a ovulação nem sempre ocorre no 14.º dia do ciclo."
+    },
+    "menstruation": {
+      "title": "Fase 1: a menstruação ou fase menstrual",
+      "paragraphs": {
+        "first": "A menstruação é a fase do ciclo menstrual em que o revestimento interno do útero se desprende, dando origem à perda de sangue menstrual. Num ciclo de 28 dias, corresponde geralmente aos primeiros cinco dias, embora a duração do teu período possa variar.",
+        "second": "Quando não ocorre uma gravidez no ciclo anterior, os níveis de estrogénio e progesterona diminuem. Esta descida hormonal faz com que o endométrio, nome dado ao revestimento interno do útero, se desprenda e seja eliminado através da vagina juntamente com o sangue menstrual.",
+        "third": "Segundo a Cleveland Clinic, a menstruação dura habitualmente entre 3 e 5 dias, embora uma duração de 3 a 7 dias também seja considerada normal.",
+        "fourth": "O primeiro dia do teu período marca simultaneamente o início de um novo ciclo menstrual e o começo da fase folicular. Quando registas o período num calendário ou numa aplicação, indica o dia em que a menstruação começou efetivamente, e não a data prevista."
       }
     },
     "follicular-phase": {
-      "title": "A fase folicular",
+      "title": "Fase 2: o que é a fase folicular?",
       "paragraphs": {
-        "first": "Começa no início do ciclo e vai até à ovulação. Desenvolvem-se folículos nos ovários e o revestimento uterino volta a formar-se. Os dias de sangramento também pertencem a esta fase."
+        "first": "A fase folicular é a etapa do ciclo menstrual em que um óvulo amadurece num dos teus ovários e o revestimento do útero se torna mais espesso. Começa no primeiro dia do período e termina com a ovulação.",
+        "second": "Durante esta fase, a hormona folículo-estimulante (FSH) estimula o crescimento dos folículos, pequenas estruturas presentes nos ovários. Ao mesmo tempo, os níveis de estrogénio aumentam, favorecendo a regeneração do endométrio após a menstruação.",
+        "third": "Segundo a Cleveland Clinic, num ciclo de 28 dias, um óvulo atinge a maturidade num dos folículos aproximadamente entre o 10.º e o 14.º dia, preparando-se para ser libertado durante a ovulação.",
+        "fourth": "Enquanto ainda estás a utilizar pensos higiénicos ou tampões durante o período, a tua fase folicular já começou. A duração desta fase pode variar, o que explica por que razão podes ovular mais cedo num mês e mais tarde no seguinte."
       }
     },
     "ovulation": {
-      "title": "A ovulação",
+      "title": "Fase 3: a ovulação",
       "paragraphs": {
-        "first": "É a libertação de um óvulo por um ovário. O momento varia: uma data ou sensação não confirma que aconteceu. Uma estimativa da aplicação continua a ser uma estimativa."
+        "first": "A ovulação é o momento do ciclo menstrual em que um dos teus ovários liberta um óvulo maduro. Num ciclo de 28 dias, costuma ocorrer por volta do 14.º dia, mas a data exata pode variar de um ciclo para outro.",
+        "second": "Um aumento súbito da hormona luteinizante (LH) desencadeia a libertação do óvulo. Segundo o US Office on Women's Health (womenshealth.gov), este aumento hormonal ocorre cerca de 36 horas antes da ovulação.",
+        "third": "A temperatura corporal basal, ou seja, a temperatura do teu corpo em repouso, também aumenta ligeiramente por altura da ovulação. Medi-la todas as manhãs, antes de te levantares da cama, pode ajudar-te a identificar padrões ao longo dos ciclos.",
+        "fourth": "Se a tua fase folicular durar mais tempo do que o habitual, poderás ovular mais tarde do que o previsto. Mesmo que tenhas ciclos regulares, um calendário ou uma aplicação de acompanhamento menstrual apenas consegue estimar a data da ovulação. Não consegue confirmar que um óvulo foi libertado."
       }
     },
     "luteal-phase": {
-      "title": "A fase lútea",
+      "title": "Fase 4: o que é a fase lútea?",
       "paragraphs": {
-        "first": "Segue-se à ovulação. Se não houver gravidez, os níveis hormonais descem e a menstruação seguinte começa. Algumas pessoas notam sintomas pré-menstruais nesta fase."
+        "first": "A fase lútea começa após a ovulação e dura cerca de 14 dias. Num ciclo menstrual de 28 dias, corresponde geralmente ao período entre o 15.º e o 28.º dia. Nesta fase, os níveis de progesterona aumentam para preparar o endométrio para uma eventual gravidez.",
+        "second": "Se não ocorrer uma gravidez, os níveis de estrogénio e progesterona diminuem no final da fase lútea. Esta descida hormonal provoca o desprendimento do revestimento do útero e desencadeia a menstruação seguinte.",
+        "third": "É também nesta fase que podem surgir os sintomas da síndrome pré-menstrual (SPM). Segundo o US Office on Women's Health, estes sintomas aparecem após a ovulação, geralmente uma a duas semanas antes do período, e costumam atenuar-se nos primeiros dias da menstruação.",
+        "fourth": "Se sentes mais cansaço ou notas algum inchaço abdominal nos dias anteriores ao período, experimenta registar esses sintomas juntamente com as datas da menstruação. Ao fim de alguns ciclos, poderás perceber em que altura costumam aparecer."
       }
     },
-    "your-own-pattern": {
-      "title": "O teu ciclo não tem de seguir um desenho",
+    "cycle-length": {
+      "title": "Qual é a duração normal do ciclo menstrual?",
       "paragraphs": {
-        "first": "Estes termos ajudam-te a compreender o vocabulário. Depois, regista a tua experiência sem impor humor, energia ou rotinas a partir de uma ilustração.",
-        "second": "Contracetivos hormonais e outras circunstâncias podem alterar o sangramento ou a ovulação. Fala de mudanças inesperadas e dúvidas pessoais com um profissional de saúde. O Mochi não diagnostica fases nem oferece contraceção."
+        "first": "O ciclo menstrual dura, em média, 28 dias, mas pode ser mais curto ou mais longo. A Cleveland Clinic considera que ciclos entre 21 e cerca de 35 dias podem ser normais. Por sua vez, o US Office on Women's Health indica uma duração normal de 24 a 38 dias na idade adulta.",
+        "second": "A duração do ciclo menstrual conta-se desde o primeiro dia de um período até ao primeiro dia do período seguinte. A duração de cada fase pode variar, sobretudo a da fase folicular, que termina com a ovulação.",
+        "third": "Na adolescência, os ciclos com mais de 38 dias são comuns nos primeiros anos após a primeira menstruação. Na maioria dos casos, tornam-se mais regulares no espaço de três anos."
+      },
+      "table": {
+        "caption": "Duração habitual do ciclo menstrual e das suas diferentes fases",
+        "columns": [
+          "Fase ou medida",
+          "Duração habitual",
+          "Fonte"
+        ],
+        "rows": [
+          [
+            "Duração média do ciclo",
+            "28 dias",
+            "Cleveland Clinic"
+          ],
+          [
+            "Duração normal do ciclo",
+            "21 a cerca de 35 dias",
+            "Cleveland Clinic"
+          ],
+          [
+            "Duração normal do ciclo na idade adulta",
+            "24 a 38 dias",
+            "US Office on Women's Health"
+          ],
+          [
+            "Menstruação",
+            "3 a 7 dias",
+            "Cleveland Clinic"
+          ],
+          [
+            "Fase folicular",
+            "Cerca de 14 dias num ciclo de 28 dias",
+            "Cleveland Clinic"
+          ],
+          [
+            "Ovulação",
+            "Por volta do 14.º dia num ciclo de 28 dias, com data variável",
+            "Cleveland Clinic"
+          ],
+          [
+            "Fase lútea",
+            "Cerca de 14 dias",
+            "Cleveland Clinic"
+          ]
+        ]
+      },
+      "note": "O US Office on Women's Health recomenda falares com um médico ou enfermeiro se os teus ciclos tiverem frequentemente menos de 24 dias ou mais de 38 dias."
+    },
+    "your-own-pattern": {
+      "title": "Como conhecer melhor o teu próprio ciclo menstrual",
+      "paragraphs": {
+        "first": "Registar as datas reais do teu período permite-te conhecer melhor o teu ciclo menstrual do que seguir apenas o modelo de 28 dias. Tanto a duração do ciclo como o momento da ovulação podem variar de mês para mês, mesmo que tenhas habitualmente períodos regulares.",
+        "second": "Começa por anotar o primeiro dia de cada período, a duração da menstruação e os sintomas que sentes ao longo do ciclo. Com o tempo, poderás identificar padrões, como um inchaço abdominal que costuma surgir na semana anterior ao período.",
+        "third": "O Mochi utiliza as datas que registas para estimar quando poderá começar o teu próximo período e quando poderás ovular. Podes consultar estas previsões no teu iPhone quando estiveres a preparar uma escapadinha de fim de semana ou uma semana de trabalho mais preenchida.",
+        "fourth": "O Mochi não consegue confirmar que a ovulação ocorreu. A aplicação não é um dispositivo médico e não deve ser utilizada como método contracetivo."
       }
     }
   },
   "faq": {
-    "equal": {
-      "question": "As quatro fases duram o mesmo tempo?",
-      "answer": "Não. A menstruação coincide com o início da fase folicular. Os tempos variam entre pessoas e ciclos."
+    "what-are-phases": {
+      "question": "Quais são as 4 fases do ciclo menstrual?",
+      "answer": "As quatro fases do ciclo menstrual são a menstruação, a fase folicular, a ovulação e a fase lútea. Ao longo destas etapas, o revestimento do útero é eliminado e volta a formar-se, um óvulo amadurece e é libertado, e o corpo prepara-se para uma eventual gravidez."
     },
-    "day": {
-      "question": "A ovulação acontece sempre no dia 14?",
-      "answer": "Não. Os exemplos usam muitas vezes 28 dias, mas a ovulação varia. Uma previsão da aplicação não a confirma."
+    "period-phase": {
+      "question": "Em que fase do ciclo menstrual ocorre o período?",
+      "answer": "O período corresponde à fase menstrual, durante a qual o revestimento interno do útero se desprende e dá origem à perda de sangue menstrual. Esta fase começa no primeiro dia do ciclo e coincide com os primeiros dias da fase folicular."
     },
-    "track": {
-      "question": "Preciso de identificar todas as fases?",
-      "answer": "Não. Começa pelas datas de sangramento e pelos sintomas úteis. Distingue as observações reais das estimativas da aplicação."
+    "phase-length": {
+      "question": "Quantos dias dura cada fase do ciclo menstrual?",
+      "answer": "Num ciclo de 28 dias, a menstruação ocorre geralmente entre os dias 1 e 5, a fase folicular estende-se desde o primeiro dia até à ovulação, por volta do 14.º dia, e a fase lútea corresponde aproximadamente aos dias 15 a 28. Estes valores são indicativos e podem variar de um ciclo para outro."
+    },
+    "normal-cycle": {
+      "question": "Quanto tempo dura um ciclo menstrual normal?",
+      "answer": "O ciclo menstrual dura, em média, 28 dias, embora a Cleveland Clinic considere que ciclos entre 21 e cerca de 35 dias podem ser normais. O US Office on Women's Health indica uma duração normal de 24 a 38 dias na idade adulta e recomenda procurares aconselhamento médico se os teus ciclos estiverem frequentemente fora desse intervalo."
+    },
+    "follicular": {
+      "question": "O que é a fase folicular do ciclo menstrual?",
+      "answer": "A fase folicular é a etapa em que um óvulo amadurece e o revestimento do útero se torna mais espesso. A hormona folículo-estimulante (FSH) promove o crescimento dos folículos ováricos, enquanto o aumento dos níveis de estrogénio favorece o desenvolvimento do endométrio. Esta fase começa no primeiro dia do período e termina com a ovulação."
+    },
+    "ovulation-day": {
+      "question": "A ovulação ocorre sempre no 14.º dia do ciclo menstrual?",
+      "answer": "Não, a ovulação nem sempre ocorre no 14.º dia. Embora seja o momento habitual num ciclo de 28 dias, a data pode variar de um ciclo para outro. Um calendário ou uma aplicação de acompanhamento menstrual pode estimar quando poderás ovular, mas não confirmar que a ovulação ocorreu."
     }
   }
 }

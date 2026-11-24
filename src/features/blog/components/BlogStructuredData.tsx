@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 import { SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
-import { BLOG_POSTS, type BlogPost } from "../content/catalog";
+import { BLOG_POSTS, postModifiedAt, type BlogPost } from "../content/catalog";
 import { getArticleCopy } from "../content/copy";
 import { useBlogLocale, useBlogRoutes } from "../i18n";
 
-const PUBLISHER = { "@type": "Organization", name: SITE_NAME, url: SITE_URL } as const;
+const PUBLISHER = { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: SITE_URL } as const;
 
 /** Absolute URLs for the request locale's blog. */
 function useBlogUrls() {
@@ -40,6 +40,7 @@ export function BlogStructuredData({ post }: { post: BlogPost }) {
           description: copy.description,
           image: `${SITE_URL}${post.image}`,
           datePublished: post.publishedAt,
+          dateModified: postModifiedAt(post),
           inLanguage: locale,
           articleSection: t(`categories.${post.category}`),
           isPartOf: { "@id": `${urls.blog}#blog` },
@@ -95,6 +96,7 @@ export function BlogIndexStructuredData() {
               description: copy.description,
               image: `${SITE_URL}${post.image}`,
               datePublished: post.publishedAt,
+              dateModified: postModifiedAt(post),
               author: urls.author,
             };
           }),

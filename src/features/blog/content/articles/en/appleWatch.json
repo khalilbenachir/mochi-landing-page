@@ -1,0 +1,131 @@
+{
+  "title": "Does Apple Watch Predict Your Period? How It Works",
+  "description": "Find out how Apple Watch predicts your period, which models track wrist temperature, how ovulation estimates work and how accurate cycle predictions are.",
+  "imageAlt": "Mochi sitting on its cushion beside a menstrual cycle calendar",
+  "intro": "Yes, Apple Watch can predict when your next period is likely to start using its built-in Cycle Tracking app and your previously logged periods. Compatible models can also use wrist temperature to improve period predictions and estimate when you likely ovulated. These predictions can help you plan ahead, but they cannot confirm ovulation or be used as birth control.",
+  "sections": {
+    "does-it-predict": {
+      "title": "Does Apple Watch predict your period?",
+      "paragraphs": {
+        "first": "Yes, Apple Watch can predict when your next period is likely to start using its built-in Cycle Tracking app. You can view your predicted period dates on your watch or in the Health app on your iPhone.",
+        "second": "To get started, open the Health app on your iPhone, tap Browse, select Cycle Tracking and tap Get Started. Once you have logged your last period, Apple can begin estimating when your next one might start.",
+        "third": "You don't need an Apple Watch with wrist temperature sensing to receive basic period predictions. These predictions are based on your previously logged periods, while compatible watches can use additional health data to personalise them.",
+        "fourth": "You can also enable notifications to receive a reminder when your next period is approaching. This can be useful when you're preparing for a holiday or deciding whether to pack period products for the day. The predicted date is an estimate, not a guarantee."
+      }
+    },
+    "how-predictions-work": {
+      "title": "How does Apple Watch predict your next period?",
+      "paragraphs": {
+        "first": "Apple predicts your next period using your previously logged periods, your typical period length and your typical menstrual cycle length. Predictions become available once you have logged your last period.",
+        "second": "According to Apple Support, logging each day of your period can help improve your predictions. If your period arrives earlier than expected, record it when it actually starts. You won't receive a period prediction notification for that cycle if you've already logged your period.",
+        "third": "Apple can also use heart rate data collected by your Apple Watch to personalise your cycle predictions. This feature is enabled by default, but you can turn it off if you prefer.",
+        "fourth": "Using heart rate data for cycle predictions requires an Apple Watch paired with an iPhone running iOS 15 or later. The feature is only available in certain countries and regions."
+      }
+    },
+    "fertile-window": {
+      "title": "How does Apple Watch predict your fertile window?",
+      "paragraphs": {
+        "first": "Apple's Cycle Tracking estimates a six-day fertile window using your previously logged periods or a positive ovulation test result. This window represents the days when you may be most likely to become pregnant, rather than confirmed fertile days.",
+        "second": "According to Apple Support, Cycle Tracking uses a calendar-based method that subtracts 13 days, representing the estimated luteal phase, from the predicted start date of your next menstrual cycle.",
+        "third": "If you record a positive ovulation test result, Apple can adjust your estimated fertile window accordingly. You can also enable notifications to let you know when your predicted fertile window is approaching.",
+        "fourth": "Your actual ovulation date can differ from the predicted date, particularly if your cycle length varies from month to month. Apple explicitly states that Cycle Tracking should not be used as a form of birth control."
+      }
+    },
+    "wrist-temperature": {
+      "title": "Which Apple Watch models use wrist temperature for period tracking?",
+      "paragraphs": {
+        "first": "Apple Watch Series 8 or later and all Apple Watch Ultra models support wrist temperature sensing for Cycle Tracking. This feature can improve period predictions and provide retrospective ovulation estimates.",
+        "second": "A retrospective ovulation estimate means your Apple Watch estimates when you likely ovulated after it has happened, rather than predicting the exact moment of ovulation in advance.",
+        "third": "According to Apple Support, wrist temperature data can also help improve predictions for your next period. However, you can still receive basic period predictions without a watch that supports temperature sensing."
+      },
+      "table": {
+        "caption": "Apple Watch Cycle Tracking features and compatibility",
+        "columns": [
+          "Feature",
+          "What you need",
+          "What it does"
+        ],
+        "rows": [
+          [
+            "Basic period predictions",
+            "Cycle Tracking and logged period dates",
+            "Estimates when your next period may start."
+          ],
+          [
+            "Heart rate data",
+            "Apple Watch paired with an iPhone running iOS 15 or later",
+            "Personalises cycle predictions."
+          ],
+          [
+            "Wrist temperature sensing",
+            "Apple Watch Series 8 or later, or any Apple Watch Ultra model",
+            "Improves period predictions and estimates when ovulation likely occurred."
+          ]
+        ]
+      },
+      "note": "Retrospective ovulation estimates and heart rate-based predictions are available only in certain countries and regions. An ovulation estimate does not confirm that ovulation occurred."
+    },
+    "notifications": {
+      "title": "Can Apple Watch notify you when your period is coming?",
+      "paragraphs": {
+        "first": "Yes, Apple Watch can notify you when your next period is predicted to start and when your estimated fertile window is approaching. Cycle Tracking can also ask whether your period has ended, helping you keep your records up to date.",
+        "second": "According to Apple Support, you can manage period predictions and notifications through Cycle Tracking. If you log your period before its predicted start date, you won't receive the period prediction notification for that cycle.",
+        "third": "You can also set up cycle deviation detection on your iPhone. This feature reviews your logged cycle data from the past six months and can notify you about irregular, infrequent or prolonged periods, as well as persistent spotting.",
+        "fourth": "If you're preparing for a medical appointment, you can export up to 12 months of your cycle history as a PDF to share with your healthcare provider. These records can support a conversation about your menstrual health, but they cannot diagnose a health condition."
+      }
+    },
+    "privacy": {
+      "title": "Is Apple Watch period tracking private and secure?",
+      "paragraphs": {
+        "first": "Apple protects your Cycle Tracking data through encryption when your iPhone is locked with a passcode, Touch ID or Face ID. If you use two-factor authentication, your Cycle Tracking data synced to iCloud is also end-to-end encrypted.",
+        "second": "According to Apple Support, these protections apply to your menstrual health information stored in the Health app. This includes sensitive information such as your logged periods and cycle history.",
+        "third": "End-to-end encryption means that Apple cannot read the encrypted Cycle Tracking data synced to iCloud when the required security settings are in place.",
+        "fourth": "If you share your iPhone with someone or occasionally lend it to a friend, consider who has access to your device and knows your passcode. You can also check whether two-factor authentication is enabled on your Apple Account."
+      }
+    },
+    "limits": {
+      "title": "How accurate is Apple Watch period tracking?",
+      "paragraphs": {
+        "first": "Apple Watch can estimate when your next period may start, but it cannot guarantee the exact date or confirm when you ovulate. Its predictions depend on your logged cycle history and, where supported, additional data such as heart rate and wrist temperature.",
+        "second": "If you have irregular periods or your cycle length changes from month to month, your predicted dates may be less reliable. Logging each day of your period can help improve future predictions, but your actual period may still arrive earlier or later than expected.",
+        "third": "Apple explicitly states that Cycle Tracking should not be used as a form of birth control. An estimated fertile window does not establish which days are safe for unprotected sex.",
+        "fourth": "Apple also advises against using Cycle Tracking data to diagnose a health condition. If you're concerned about changes in your menstrual cycle, you can share your recorded cycle history with a healthcare provider."
+      }
+    },
+    "with-mochi": {
+      "title": "Apple Cycle Tracking or Mochi: which suits your routine?",
+      "paragraphs": {
+        "first": "Apple Cycle Tracking is a useful option if you want period predictions directly on your Apple Watch and access to supported health data. Mochi is a separate iPhone period tracker that may suit you if you prefer a dedicated app with practical reminders for everyday period care.",
+        "second": "You can use Mochi without creating an account, and the app works offline. This means you can keep track of your period even when you're travelling or somewhere without an internet connection.",
+        "third": "Mochi also offers optional pad-change reminders, with a countdown displayed on your iPhone's Lock Screen and Dynamic Island. If you're busy at work or studying, you can quickly check how much time remains until your next scheduled change.",
+        "fourth": "You can use Apple Cycle Tracking for wrist-based cycle insights and Mochi for your daily period routine. They are separate tools, and neither can guarantee when your next period will start."
+      }
+    }
+  },
+  "faq": {
+    "predict": {
+      "question": "Can Apple Watch predict when your period will start?",
+      "answer": "Yes, Apple Watch estimates when your next period may start based on your logged periods, typical period length and typical cycle length. You can also receive notifications when your predicted period is approaching."
+    },
+    "ovulation-models": {
+      "question": "Which Apple Watch models can track ovulation and wrist temperature?",
+      "answer": "Apple Watch Series 8 or later and all Apple Watch Ultra models support wrist temperature sensing, which can help estimate when you likely ovulated and improve period predictions. Retrospective ovulation estimates are only available in certain countries and regions."
+    },
+    "accuracy": {
+      "question": "How accurate is Apple Watch period tracking?",
+      "answer": "Apple Watch provides estimated period dates rather than guaranteed predictions. Logging each day of your period can help improve these estimates, although predictions may be less reliable if your menstrual cycles are irregular."
+    },
+    "birth-control": {
+      "question": "Can you use Apple Watch cycle tracking as birth control?",
+      "answer": "No, Apple explicitly states that Cycle Tracking should not be used as a form of birth control. Its six-day fertile window and retrospective ovulation estimates cannot establish which days are safe for unprotected sex."
+    },
+    "private": {
+      "question": "Is Apple Watch period tracking private?",
+      "answer": "Apple protects your Cycle Tracking data through encryption when your iPhone is locked with a passcode, Touch ID or Face ID. With two-factor authentication enabled, Cycle Tracking data synced to iCloud is also end-to-end encrypted."
+    },
+    "setup": {
+      "question": "How do I set up period tracking on my Apple Watch?",
+      "answer": "Open the Health app on your iPhone, tap Browse, select Cycle Tracking and tap Get Started. Log your last period to begin receiving predictions, which you can view in the Cycle Tracking app on your Apple Watch."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "title": "Apple Watch: Kann sie deine Periode vorhersagen?",
+  "description": "Erfahre, wie die Apple Watch deine Periode vorhersagt, welche Modelle die Temperatur am Handgelenk messen und wie zuverlässig die Zyklusprognosen sind.",
+  "imageAlt": "Mochi sitzt auf seinem Kissen neben einem Menstruationskalender",
+  "intro": "Ja, die Apple Watch kann mithilfe der integrierten App „Zyklusprotokoll“ und deiner eingetragenen Periodendaten vorhersagen, wann deine nächste Periode voraussichtlich beginnt. Kompatible Modelle nutzen zusätzlich die Temperatur am Handgelenk, um Periodenvorhersagen zu verbessern und den zurückliegenden Eisprung einzuschätzen. Diese Vorhersagen können dir bei der Alltagsplanung helfen, bestätigen aber keinen Eisprung und eignen sich nicht zur Verhütung.",
+  "sections": {
+    "does-it-predict": {
+      "title": "Zeigt die Apple Watch eine Periodenvorhersage an?",
+      "paragraphs": {
+        "first": "Ja, die Apple Watch zeigt dir über die App „Zyklusprotokoll“ an, wann deine nächste Periode voraussichtlich beginnt. Du kannst deine vorhergesagten Periodentage sowohl auf deiner Apple Watch als auch in der Health-App auf deinem iPhone einsehen.",
+        "second": "Um die Zyklusaufzeichnung einzurichten, öffne die Health-App auf deinem iPhone. Tippe auf „Durchsuchen“, wähle „Zyklusprotokoll“ und anschließend „Los geht's“. Sobald du deine letzte Periode eingetragen hast, kann Apple den voraussichtlichen Beginn deiner nächsten Regelblutung berechnen.",
+        "third": "Für die grundlegende Periodenvorhersage benötigst du keine Apple Watch mit Temperatursensor. Die Berechnung basiert zunächst auf deinen eingetragenen Periodendaten. Kompatible Modelle können zusätzliche Gesundheitsdaten berücksichtigen, um die Vorhersagen besser an deinen Zyklus anzupassen.",
+        "fourth": "Du kannst außerdem Mitteilungen aktivieren, die dich auf deine bevorstehende Periode aufmerksam machen. Das ist beispielsweise praktisch, wenn du einen Urlaub planst oder wissen möchtest, ob du Binden oder Tampons einpacken solltest. Der vorhergesagte Termin bleibt jedoch eine Schätzung."
+      }
+    },
+    "how-predictions-work": {
+      "title": "Wie funktioniert die Periodenvorhersage der Apple Watch?",
+      "paragraphs": {
+        "first": "Apple berechnet den voraussichtlichen Beginn deiner nächsten Periode anhand deiner bisherigen Periodendaten, deiner üblichen Blutungsdauer und deiner durchschnittlichen Zykluslänge. Die ersten Vorhersagen erhältst du, sobald du deine letzte Periode eingetragen hast.",
+        "second": "Laut Apple Support können die Vorhersagen genauer werden, wenn du jeden Tag deiner Regelblutung dokumentierst. Beginnt deine Periode früher als erwartet, solltest du den tatsächlichen Beginn eintragen. Für diesen Zyklus erhältst du dann keine entsprechende Vorhersagemitteilung mehr.",
+        "third": "Für individuellere Zyklusvorhersagen kann Apple zusätzlich die von deiner Apple Watch erfassten Herzfrequenzdaten berücksichtigen. Diese Funktion ist standardmäßig aktiviert, lässt sich aber bei Bedarf ausschalten.",
+        "fourth": "Damit deine Herzfrequenzdaten in die Zyklusvorhersage einfließen können, muss deine Apple Watch mit einem iPhone gekoppelt sein, auf dem mindestens iOS 15 installiert ist. Die Funktion steht nur in bestimmten Ländern und Regionen zur Verfügung."
+      }
+    },
+    "fertile-window": {
+      "title": "Wie berechnet die Apple Watch das fruchtbare Fenster?",
+      "paragraphs": {
+        "first": "Das Zyklusprotokoll von Apple schätzt anhand deiner eingetragenen Periodendaten oder eines positiven Ovulationstests ein fruchtbares Fenster von sechs Tagen. Damit sind die Tage gemeint, an denen eine Schwangerschaft wahrscheinlicher sein könnte. Es handelt sich nicht um bestätigte fruchtbare Tage.",
+        "second": "Laut Apple Support basiert die Berechnung auf einer Kalendermethode. Dabei werden vom voraussichtlichen Beginn deines nächsten Zyklus 13 Tage abgezogen. Diese Zeitspanne entspricht der für die Berechnung angenommenen Dauer der Lutealphase.",
+        "third": "Wenn du ein positives Ergebnis eines Ovulationstests einträgst, kann sich das geschätzte fruchtbare Fenster entsprechend verschieben. Du kannst auch Mitteilungen aktivieren, die dich auf den bevorstehenden Beginn dieses Zeitraums hinweisen.",
+        "fourth": "Dein tatsächlicher Eisprung kann früher oder später stattfinden als berechnet, insbesondere wenn deine Zykluslänge schwankt. Apple weist ausdrücklich darauf hin, dass das Zyklusprotokoll nicht als Verhütungsmethode verwendet werden sollte."
+      }
+    },
+    "wrist-temperature": {
+      "title": "Welche Apple Watch misst die Temperatur für das Zyklustracking?",
+      "paragraphs": {
+        "first": "Die Apple Watch Series 8 oder neuer sowie alle Apple Watch Ultra Modelle unterstützen die Temperaturmessung am Handgelenk für das Zyklusprotokoll. Diese Daten können Periodenvorhersagen verbessern und eine rückblickende Einschätzung des Eisprungs ermöglichen.",
+        "second": "Eine rückblickende Eisprungschätzung bedeutet, dass deine Apple Watch im Nachhinein einschätzt, wann dein Eisprung wahrscheinlich stattgefunden hat. Sie sagt also nicht den genauen Zeitpunkt eines zukünftigen Eisprungs voraus.",
+        "third": "Laut Apple Support können Veränderungen der Temperatur am Handgelenk auch dazu beitragen, den Beginn deiner nächsten Periode genauer einzuschätzen. Grundlegende Periodenvorhersagen sind jedoch auch ohne eine Apple Watch mit Temperatursensor möglich."
+      },
+      "table": {
+        "caption": "Apple Watch Zyklustracking: Funktionen und technische Voraussetzungen",
+        "columns": [
+          "Funktion",
+          "Was du benötigst",
+          "Was die Funktion macht"
+        ],
+        "rows": [
+          [
+            "Grundlegende Periodenvorhersage",
+            "Zyklusprotokoll und eingetragene Periodendaten",
+            "Schätzt den voraussichtlichen Beginn deiner nächsten Periode."
+          ],
+          [
+            "Berücksichtigung der Herzfrequenz",
+            "Apple Watch, gekoppelt mit einem iPhone ab iOS 15",
+            "Passt die Zyklusvorhersagen stärker an deine persönlichen Daten an."
+          ],
+          [
+            "Temperaturmessung am Handgelenk",
+            "Apple Watch Series 8 oder neuer beziehungsweise ein Apple Watch Ultra Modell",
+            "Verbessert Periodenvorhersagen und schätzt rückblickend den Zeitpunkt des Eisprungs."
+          ]
+        ]
+      },
+      "note": "Rückblickende Eisprungschätzungen und herzfrequenzbasierte Zyklusvorhersagen sind nur in bestimmten Ländern und Regionen verfügbar. Eine Eisprungschätzung bestätigt nicht, dass tatsächlich ein Eisprung stattgefunden hat."
+    },
+    "notifications": {
+      "title": "Erinnert dich die Apple Watch an deine bevorstehende Periode?",
+      "paragraphs": {
+        "first": "Ja, die Apple Watch kann dich benachrichtigen, wenn deine nächste Periode oder dein geschätztes fruchtbares Fenster bevorsteht. Das Zyklusprotokoll kann dich außerdem fragen, ob deine Regelblutung bereits beendet ist, damit deine Aufzeichnungen möglichst vollständig bleiben.",
+        "second": "Laut Apple Support kannst du die Vorhersagen und Mitteilungen für deine Periode im Zyklusprotokoll verwalten. Trägst du deine Periode bereits vor dem vorhergesagten Beginn ein, erhältst du für diesen Zyklus keine entsprechende Vorhersagemitteilung mehr.",
+        "third": "Auf deinem iPhone kannst du außerdem die Erkennung von Zyklusabweichungen einrichten. Diese Funktion berücksichtigt deine aufgezeichneten Zyklusdaten der vergangenen sechs Monate und kann dich auf unregelmäßige, seltene oder verlängerte Regelblutungen sowie anhaltende Schmierblutungen aufmerksam machen.",
+        "fourth": "Wenn du einen Termin in einer gynäkologischen Praxis hast, kannst du deine Zyklusaufzeichnungen der vergangenen zwölf Monate als PDF exportieren und mit deiner Ärztin oder deinem Arzt teilen. Die Daten können das Gespräch erleichtern, ersetzen aber keine medizinische Diagnose."
+      }
+    },
+    "privacy": {
+      "title": "Wie sicher sind deine Zyklusdaten bei der Apple Watch?",
+      "paragraphs": {
+        "first": "Apple schützt deine Zyklusdaten durch Verschlüsselung, wenn dein iPhone mit einem Gerätecode, Touch ID oder Face ID gesperrt ist. Bei aktivierter Zwei-Faktor-Authentifizierung werden die mit iCloud synchronisierten Daten des Zyklusprotokolls zusätzlich Ende-zu-Ende-verschlüsselt.",
+        "second": "Laut Apple Support gelten diese Sicherheitsmaßnahmen für die entsprechenden Gesundheitsdaten in der Health-App. Dazu gehören auch sensible Informationen wie deine eingetragenen Periodendaten und dein bisheriger Zyklusverlauf.",
+        "third": "Die Ende-zu-Ende-Verschlüsselung bedeutet, dass auch Apple die entsprechend geschützten Zyklusdaten in iCloud nicht lesen kann, sofern die erforderlichen Sicherheitseinstellungen aktiviert sind.",
+        "fourth": "Wenn du dein iPhone gelegentlich an andere Personen weitergibst, solltest du darauf achten, wer Zugriff auf dein entsperrtes Gerät hat oder deinen Gerätecode kennt. Du kannst außerdem in den Einstellungen deines Apple Accounts überprüfen, ob die Zwei-Faktor-Authentifizierung aktiviert ist."
+      }
+    },
+    "limits": {
+      "title": "Wie zuverlässig ist das Zyklustracking der Apple Watch?",
+      "paragraphs": {
+        "first": "Die Apple Watch kann den voraussichtlichen Beginn deiner nächsten Periode schätzen, aber weder den genauen Termin garantieren noch einen Eisprung bestätigen. Die Vorhersagen basieren auf deinen bisherigen Zyklusdaten und, sofern unterstützt, zusätzlichen Informationen wie deiner Herzfrequenz und der Temperatur am Handgelenk.",
+        "second": "Wenn deine Periode unregelmäßig ist oder deine Zykluslänge von Monat zu Monat schwankt, können die Vorhersagen weniger zuverlässig sein. Das tägliche Eintragen deiner Regelblutung kann zukünftige Schätzungen verbessern. Trotzdem kann deine Periode früher oder später als erwartet beginnen.",
+        "third": "Apple weist ausdrücklich darauf hin, dass das Zyklusprotokoll nicht als Verhütungsmethode verwendet werden sollte. Das geschätzte fruchtbare Fenster gibt dir keine Sicherheit darüber, an welchen Tagen ungeschützter Geschlechtsverkehr ohne Schwangerschaftsrisiko möglich ist.",
+        "fourth": "Apple erklärt außerdem, dass die Daten des Zyklusprotokolls nicht zur Diagnose einer Erkrankung verwendet werden sollten. Wenn dich Veränderungen deines Menstruationszyklus beunruhigen, kannst du deine Aufzeichnungen bei einem Arzttermin besprechen."
+      }
+    },
+    "with-mochi": {
+      "title": "Apple Zyklusprotokoll oder Mochi: Was passt besser zu deinem Alltag?",
+      "paragraphs": {
+        "first": "Das Zyklusprotokoll von Apple eignet sich gut, wenn du deine Periodenvorhersagen direkt auf der Apple Watch sehen und verfügbare Gesundheitsdaten berücksichtigen möchtest. Mochi ist eine separate Perioden-App für das iPhone, die sich auf die Zyklusaufzeichnung und praktische Erinnerungen während deiner Periode konzentriert.",
+        "second": "Du kannst Mochi ohne Benutzerkonto verwenden. Die App funktioniert auch offline, sodass du deine Periode beispielsweise auf Reisen oder unterwegs ohne Internetverbindung dokumentieren kannst.",
+        "third": "Mochi bietet außerdem optionale Erinnerungen für den Bindenwechsel. Ein Countdown auf dem Sperrbildschirm und in der Dynamic Island deines iPhones zeigt dir, wie viel Zeit bis zum geplanten Wechsel bleibt. Das kann besonders an langen Arbeitstagen oder während einer Vorlesung praktisch sein.",
+        "fourth": "Du kannst das Zyklusprotokoll für Vorhersagen auf deiner Apple Watch und Mochi für deine alltägliche Periodenroutine nutzen. Beide Anwendungen sind eigenständige Werkzeuge und können den tatsächlichen Beginn deiner nächsten Periode nicht garantieren."
+      }
+    }
+  },
+  "faq": {
+    "predict": {
+      "question": "Kann die Apple Watch meine nächste Periode vorhersagen?",
+      "answer": "Ja, die Apple Watch schätzt anhand deiner eingetragenen Periodendaten, deiner üblichen Blutungsdauer und deiner Zykluslänge, wann deine nächste Periode beginnt. Du kannst außerdem Mitteilungen erhalten, wenn deine vorhergesagte Periode bevorsteht."
+    },
+    "ovulation-models": {
+      "question": "Welche Apple Watch kann die Temperatur messen und den Eisprung erkennen?",
+      "answer": "Die Apple Watch Series 8 oder neuer sowie alle Apple Watch Ultra Modelle unterstützen die Temperaturmessung am Handgelenk, um Periodenvorhersagen zu verbessern und den wahrscheinlichen Zeitpunkt eines zurückliegenden Eisprungs einzuschätzen. Rückblickende Eisprungschätzungen sind nur in bestimmten Ländern und Regionen verfügbar und bestätigen keinen tatsächlichen Eisprung."
+    },
+    "accuracy": {
+      "question": "Wie genau ist die Periodenvorhersage der Apple Watch?",
+      "answer": "Die Apple Watch liefert geschätzte Periodentermine und keine garantierten Vorhersagen. Wenn du jeden Tag deiner Regelblutung dokumentierst, können sich die Schätzungen verbessern, bei unregelmäßigen Zyklen jedoch weniger zuverlässig ausfallen."
+    },
+    "birth-control": {
+      "question": "Kann man mit der Apple Watch natürlich verhüten?",
+      "answer": "Nein, Apple weist ausdrücklich darauf hin, dass das Zyklusprotokoll nicht als Verhütungsmethode verwendet werden sollte. Weder das geschätzte sechstägige fruchtbare Fenster noch rückblickende Eisprungschätzungen können zuverlässig bestimmen, an welchen Tagen ungeschützter Geschlechtsverkehr ohne Schwangerschaftsrisiko möglich ist."
+    },
+    "private": {
+      "question": "Sind meine Zyklusdaten auf der Apple Watch sicher?",
+      "answer": "Apple verschlüsselt deine Daten im Zyklusprotokoll, wenn dein iPhone mit einem Gerätecode, Touch ID oder Face ID gesperrt ist. Bei aktivierter Zwei-Faktor-Authentifizierung sind die mit iCloud synchronisierten Zyklusdaten zusätzlich Ende-zu-Ende-verschlüsselt."
+    },
+    "setup": {
+      "question": "Wie aktiviere ich das Zyklustracking auf meiner Apple Watch?",
+      "answer": "Öffne die Health-App auf deinem iPhone, tippe auf „Durchsuchen“, wähle „Zyklusprotokoll“ und anschließend „Los geht's“. Trage deine letzte Periode ein, damit Apple mit der Berechnung deiner Periodenvorhersagen beginnen kann, die du anschließend im Zyklusprotokoll auf deiner Apple Watch einsehen kannst."
+    }
+  }
+}

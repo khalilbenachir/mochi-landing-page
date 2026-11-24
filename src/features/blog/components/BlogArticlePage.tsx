@@ -6,7 +6,7 @@ import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
 import { TERMS_SUMMARY_ICONS } from "@/features/terms/content/terms";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
-import { BLOG_ART_SIZE, BLOG_POSTS, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
+import { BLOG_ART_SIZE, BLOG_POSTS, postModifiedAt, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
 import { articleReadingMinutes, articleSourceIds, getArticleCopy, getArticleSection, type ArticleTable } from "../content/copy";
 import { PosterStage } from "@/features/landing/components/shared/PosterStage";
 import { useBlogLocale, useBlogRoutes } from "../i18n";
@@ -109,7 +109,8 @@ function ArticleHero({ post }: { post: BlogPost }) {
             </Link>
             <span aria-hidden="true">·</span>
             <span>
-              {t("published")} <time dateTime={post.publishedAt}>{format.dateTime(new Date(post.publishedAt), { dateStyle: "long", timeZone: "UTC" })}</time>
+              {post.updatedAt ? t("updated") : t("published")}{" "}
+              <time dateTime={postModifiedAt(post)}>{format.dateTime(new Date(postModifiedAt(post)), { dateStyle: "long", timeZone: "UTC" })}</time>
             </span>
             <span aria-hidden="true">·</span>
             <span>{t("readTime", { minutes: articleReadingMinutes(post, locale) })}</span>

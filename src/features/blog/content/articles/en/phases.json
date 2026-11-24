@@ -1,53 +1,176 @@
 {
-  "title": "What are the four phases of the menstrual cycle?",
-  "description": "Understand the four phases of the menstrual cycle, how they overlap, and why cycle timing varies, with links to sources and clear limits on predictions.",
-  "imageAlt": "Green Mochi beside a playful wheel of cycle symbols",
-  "intro": "The four labels commonly used to describe the menstrual cycle are menstruation, the follicular phase, ovulation and the luteal phase. They describe changes across a cycle, not four equal blocks of days. Menstruation overlaps with the early follicular phase.",
+  "title": "The 4 Phases of the Menstrual Cycle Explained",
+  "description": "Learn the 4 phases of the menstrual cycle, how long each phase lasts, how your hormones change and what happens in your body from your period to ovulation.",
+  "imageAlt": "Green Mochi beside an illustrated menstrual cycle wheel",
+  "intro": "The four phases of the menstrual cycle are menstruation, the follicular phase, ovulation and the luteal phase. Each phase involves hormonal changes that prepare your body for a possible pregnancy. Although the average menstrual cycle lasts 28 days, the length and timing of each phase can vary from person to person and from one cycle to the next.",
   "sections": {
-    "menstruation": {
-      "title": "Menstruation: your period",
+    "overview": {
+      "title": "What are the 4 phases of the menstrual cycle?",
       "paragraphs": {
-        "first": "Day 1 is the first day of your period. Bleeding happens as the lining of the uterus is shed. Record the dates you actually bleed rather than copying dates from a predicted calendar."
+        "first": "The four phases of the menstrual cycle are menstruation, the follicular phase, ovulation and the luteal phase. Throughout your cycle, changing hormone levels control when your uterine lining sheds, when an egg matures and when your body prepares for a possible pregnancy.",
+        "second": "According to Cleveland Clinic, the average menstrual cycle lasts 28 days. The table below shows what happens during each phase using a 28-day cycle as an example. Day 1 is the first day of your period, not the day after your bleeding stops."
+      },
+      "table": {
+        "caption": "The four phases of the menstrual cycle and their typical timing",
+        "columns": [
+          "Phase",
+          "Typical days (28-day cycle)",
+          "Main hormones",
+          "What happens"
+        ],
+        "rows": [
+          [
+            "Menstruation",
+            "Days 1 to 5",
+            "Low estrogen and progesterone",
+            "The uterine lining sheds, causing menstrual bleeding."
+          ],
+          [
+            "Follicular phase",
+            "Days 1 to 14",
+            "FSH and rising estrogen",
+            "An egg matures and the uterine lining thickens."
+          ],
+          [
+            "Ovulation",
+            "Around day 14",
+            "LH surge",
+            "The ovary releases an egg."
+          ],
+          [
+            "Luteal phase",
+            "Days 15 to 28",
+            "Progesterone",
+            "The uterine lining prepares for a possible pregnancy."
+          ]
+        ]
+      },
+      "note": "The phases are not four completely separate blocks of time. Menstruation overlaps with the beginning of the follicular phase, and ovulation does not always happen on day 14."
+    },
+    "menstruation": {
+      "title": "Phase 1: Menstruation (the bleeding phase)",
+      "paragraphs": {
+        "first": "Menstruation is the bleeding phase of your menstrual cycle, when your body sheds the lining of the uterus. It typically occurs during days 1 to 5 of a 28-day cycle, although the length of your period can vary.",
+        "second": "If pregnancy does not occur during the previous cycle, estrogen and progesterone levels fall. This drop in hormones triggers the shedding of the uterine lining, which leaves your body through the vagina as menstrual bleeding.",
+        "third": "According to Cleveland Clinic, most people bleed for 3 to 5 days, although a period lasting between 3 and 7 days is considered normal.",
+        "fourth": "The first day of your period also marks day 1 of a new menstrual cycle and the beginning of the follicular phase. When you log your period in a calendar or tracking app, use the day your period actually starts, rather than the day it was expected."
       }
     },
     "follicular-phase": {
-      "title": "The follicular phase",
+      "title": "Phase 2: The follicular phase",
       "paragraphs": {
-        "first": "This phase begins at the start of the cycle and leads up to ovulation. Follicles develop in the ovaries, and the uterine lining starts building again. The days you bleed are part of this phase too."
+        "first": "The follicular phase is the stage of your menstrual cycle when an egg matures in one of your ovaries and your uterine lining thickens. It begins on the first day of your period and ends at ovulation.",
+        "second": "During this phase, follicle-stimulating hormone (FSH) encourages small structures called follicles to grow inside your ovaries. At the same time, estrogen levels rise, helping rebuild the uterine lining that was shed during your period.",
+        "third": "According to Cleveland Clinic, in a typical 28-day cycle, one follicle develops a fully mature egg around days 10 to 14, preparing it for release during ovulation.",
+        "fourth": "Your follicular phase has already begun while you're still using pads or tampons during your period. Its length can vary from one cycle to another, which is one reason you might ovulate earlier one month and later the next."
       }
     },
     "ovulation": {
-      "title": "Ovulation",
+      "title": "Phase 3: Ovulation",
       "paragraphs": {
-        "first": "Ovulation is the release of an egg from an ovary. Its timing varies; a calendar day or a feeling does not confirm that it has happened. An app estimate should be read as an estimate."
+        "first": "Ovulation is the phase of your menstrual cycle when one of your ovaries releases a mature egg. It typically happens around day 14 of a 28-day cycle, but the exact day can vary from one cycle to the next.",
+        "second": "A sudden rise in luteinizing hormone (LH) triggers the release of the egg. According to the US Office on Women's Health, this hormone surge occurs about 36 hours before ovulation.",
+        "third": "Your basal body temperature, which is your temperature at rest, also rises slightly around ovulation. Tracking your temperature each morning before getting out of bed may help you recognise a pattern over time.",
+        "fourth": "If your follicular phase lasts longer one month, you may ovulate later than expected. Even if your periods usually arrive on schedule, a calendar or period-tracking app can only estimate your ovulation date. It cannot confirm that an egg has been released."
       }
     },
     "luteal-phase": {
-      "title": "The luteal phase",
+      "title": "Phase 4: The luteal phase",
       "paragraphs": {
-        "first": "The luteal phase follows ovulation. If pregnancy does not occur, hormone levels fall and the next period begins. Some people notice premenstrual symptoms during this part of the cycle."
+        "first": "The luteal phase begins after ovulation and lasts about 14 days, typically covering days 15 to 28 of a 28-day menstrual cycle. During this phase, progesterone levels rise to prepare your uterine lining for a possible pregnancy.",
+        "second": "If pregnancy does not occur, estrogen and progesterone levels fall towards the end of the luteal phase. This hormonal change triggers the shedding of your uterine lining, bringing on your next period.",
+        "third": "The luteal phase is also when you may experience premenstrual syndrome (PMS). According to the US Office on Women's Health, PMS symptoms develop after ovulation, usually a week or two before your period, and tend to ease within a few days after bleeding begins.",
+        "fourth": "If you notice that you feel more tired or experience bloating in the days leading up to your period, try logging these symptoms alongside your period dates. Over several cycles, you may begin to recognise a recurring pattern."
       }
     },
-    "your-own-pattern": {
-      "title": "Your cycle does not need to match a diagram",
+    "cycle-length": {
+      "title": "How long is a normal menstrual cycle?",
       "paragraphs": {
-        "first": "Use these labels to understand the vocabulary, then keep a record of what you notice. Do not assign yourself a fixed mood, energy level or routine because an illustration says you should be in a particular phase.",
-        "second": "Hormonal contraception and other circumstances can change bleeding or ovulation. Speak with a healthcare professional about unexpected changes or questions about your own cycle. Mochi does not diagnose cycle phases or provide contraception."
+        "first": "The average menstrual cycle lasts 28 days, but a healthy cycle can be shorter or longer. Cleveland Clinic considers cycles of 21 to about 35 days normal, while the US Office on Women's Health gives a normal adult range of 24 to 38 days.",
+        "second": "Your cycle length is measured from the first day of one period to the first day of the next. The length of each phase can vary, particularly the follicular phase, which ends when you ovulate.",
+        "third": "If you're a teenager, cycles longer than 38 days are common during the first few years after your first period. Most become more regular within three years."
+      },
+      "table": {
+        "caption": "Typical menstrual cycle and phase lengths",
+        "columns": [
+          "Phase or measure",
+          "Typical length",
+          "Source"
+        ],
+        "rows": [
+          [
+            "Average cycle",
+            "28 days",
+            "Cleveland Clinic"
+          ],
+          [
+            "Normal cycle range",
+            "21 to about 35 days",
+            "Cleveland Clinic"
+          ],
+          [
+            "Normal adult cycle range",
+            "24 to 38 days",
+            "US Office on Women's Health"
+          ],
+          [
+            "Menstruation",
+            "3 to 7 days",
+            "Cleveland Clinic"
+          ],
+          [
+            "Follicular phase",
+            "About 14 days in a 28-day cycle",
+            "Cleveland Clinic"
+          ],
+          [
+            "Ovulation",
+            "Around day 14, timing varies",
+            "Cleveland Clinic"
+          ],
+          [
+            "Luteal phase",
+            "About 14 days",
+            "Cleveland Clinic"
+          ]
+        ]
+      },
+      "note": "The US Office on Women's Health recommends speaking to a doctor or nurse if your cycles are often shorter than 24 days or longer than 38 days."
+    },
+    "your-own-pattern": {
+      "title": "Understanding your own menstrual cycle pattern",
+      "paragraphs": {
+        "first": "Tracking your own menstrual cycle gives you a more useful picture of your period pattern than following a standard 28-day calendar. Your cycle length and the timing of ovulation can vary from month to month, even if your periods are usually regular.",
+        "second": "Start by recording the first day of each period, how long your bleeding lasts and any symptoms you notice throughout your cycle. Over time, you may spot recurring patterns, such as feeling bloated in the week before your period.",
+        "third": "Mochi uses the period dates you log to estimate when your next period and ovulation may occur. These estimates can help you plan ahead, whether you're packing for a weekend away or preparing for a busy week at work.",
+        "fourth": "Mochi cannot confirm that ovulation has occurred. It is not a medical device and should not be used as a method of contraception."
       }
     }
   },
   "faq": {
-    "equal": {
-      "question": "Are the four phases equally long?",
-      "answer": "No. They are not four equal blocks, and menstruation overlaps with the early follicular phase. Timing varies between people and cycles."
+    "what-are-phases": {
+      "question": "What are the four phases of the menstrual cycle?",
+      "answer": "The four phases are menstruation, the follicular phase, ovulation and the luteal phase. During these phases, your uterine lining sheds and rebuilds, an egg matures and is released, and your body prepares for a possible pregnancy."
     },
-    "day": {
-      "question": "Does everyone ovulate on day 14?",
-      "answer": "No. Calendar examples often use a 28-day cycle, but ovulation timing varies. An app prediction is not confirmation of ovulation."
+    "period-phase": {
+      "question": "What phase of the menstrual cycle is your period?",
+      "answer": "Your period is the menstrual phase, also known as the bleeding phase, when your uterine lining sheds. It begins on day 1 of your cycle and overlaps with the beginning of the follicular phase."
     },
-    "track": {
-      "question": "Do I need to label every phase when I track?",
-      "answer": "No. You can start with bleeding dates and any symptoms you want to remember. Record what happened, and keep app estimates separate from your actual entries."
+    "phase-length": {
+      "question": "How long does each phase of the menstrual cycle last?",
+      "answer": "In a typical 28-day cycle, menstruation occurs around days 1 to 5, the follicular phase extends from day 1 to ovulation around day 14, and the luteal phase covers approximately days 15 to 28. These timings are estimates and can vary between cycles."
+    },
+    "normal-cycle": {
+      "question": "How long is a normal menstrual cycle?",
+      "answer": "The average menstrual cycle lasts 28 days, but Cleveland Clinic considers cycles of 21 to about 35 days normal. The US Office on Women's Health gives a normal adult range of 24 to 38 days and recommends speaking to a doctor or nurse if your cycles frequently fall outside this range."
+    },
+    "follicular": {
+      "question": "What is the follicular phase of the menstrual cycle?",
+      "answer": "The follicular phase begins on the first day of your period and ends at ovulation. During this phase, follicle-stimulating hormone (FSH) helps ovarian follicles grow, while rising estrogen levels help thicken your uterine lining."
+    },
+    "ovulation-day": {
+      "question": "Does ovulation always happen on day 14?",
+      "answer": "No, ovulation does not always happen on day 14. Although this is the typical timing in a 28-day cycle, your ovulation date can vary from one cycle to another. A calendar or period-tracking app can estimate when you might ovulate but cannot confirm that ovulation has occurred."
     }
   }
 }

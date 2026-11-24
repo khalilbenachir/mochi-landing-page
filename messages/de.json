@@ -304,6 +304,7 @@
     "navLabel": "Rechtliches und Kontakt",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
+    "calculator": "Periodenrechner",
     "contact": "Kontakt",
     "disclaimer": "Mochi ist kein Verhütungsmittel und ersetzt keine medizinische Beratung."
   },
@@ -523,6 +524,7 @@
     "byline": "Von Mochi",
     "publisher": "Mochi",
     "published": "Veröffentlicht am",
+    "updated": "Aktualisiert am",
     "readTime": "{minutes} Min. Lesezeit",
     "back": "Alle Artikel",
     "onThisPage": "In diesem Artikel",
@@ -664,5 +666,64 @@
     "accept": "Akzeptieren",
     "decline": "Ablehnen",
     "settings": "Cookie-Einstellungen"
+  },
+  "PeriodCalculator": {
+    "metadataTitle": "Periodenrechner: Nächste Periode berechnen",
+    "metadataDescription": "Berechne kostenlos deine nächste Periode, deinen voraussichtlichen Eisprung und deine fruchtbaren Tage. Ohne Anmeldung und ohne Speicherung deiner Daten.",
+    "eyebrow": "Kostenloser Rechner",
+    "title": "Nächste Periode berechnen",
+    "intro": "Mit unserem kostenlosen Periodenrechner kannst du den voraussichtlichen Beginn deiner nächsten Periode, deinen Eisprung und deine fruchtbaren Tage berechnen. Die Ergebnisse sind Schätzungen auf Grundlage deiner üblichen Zykluslänge und keine garantierten Termine.",
+    "form": {
+      "legend": "Angaben zu deinem Zyklus",
+      "lastPeriod": "Erster Tag deiner letzten Periode",
+      "cycleLength": "Durchschnittliche Zykluslänge (Tage)",
+      "cycleHint": "Bei Erwachsenen sind 24 bis 38 Tage üblich. Du bist dir unsicher? Lass zunächst 28 Tage stehen.",
+      "periodLength": "Durchschnittliche Periodendauer (Tage)",
+      "periodHint": "Gib an, wie viele Tage deine Regelblutung normalerweise dauert.",
+      "submit": "Nächste Periode berechnen",
+      "reset": "Zurücksetzen"
+    },
+    "results": {
+      "heading": "Deine voraussichtlichen Zyklusdaten",
+      "empty": "Gib den Beginn deiner letzten Periode und deine Zyklusdaten ein, um deine nächsten Periodentermine zu berechnen.",
+      "nextPeriod": "Deine nächste Periode",
+      "upcoming": "Weitere voraussichtliche Perioden",
+      "periodRange": "{start} bis {end}",
+      "ovulation": "Voraussichtlicher Eisprung",
+      "fertile": "Voraussichtliche fruchtbare Tage",
+      "fertileRange": "{start} bis {end}",
+      "daysUntil": "{days, plural, =0 {Heute} one {In # Tag} other {In # Tagen}}"
+    },
+    "disclaimer": "Die berechneten Termine sind Schätzungen und können von deinem tatsächlichen Zyklus abweichen. Der Periodenrechner eignet sich weder zur Verhütung noch zur Diagnose von Erkrankungen.",
+    "how": {
+      "title": "So funktioniert der Periodenrechner",
+      "first": "Um den Beginn deiner nächsten Periode zu berechnen, addiert der Periodenrechner deine durchschnittliche Zykluslänge zum ersten Tag deiner letzten Regelblutung. Hat deine letzte Periode beispielsweise am 1. März begonnen und dauert dein Zyklus normalerweise 28 Tage, beginnt deine nächste Periode voraussichtlich am 29. März. Für die darauffolgenden Zyklen wird diese Berechnung wiederholt. Anhand deiner üblichen Blutungsdauer schätzt der Rechner außerdem, wann deine jeweilige Periode voraussichtlich endet.",
+      "second": "Für die Berechnung deines voraussichtlichen Eisprungs werden vom erwarteten Beginn deiner nächsten Periode 14 Tage abgezogen. Laut Cleveland Clinic dauert die Lutealphase, also die Zyklusphase nach dem Eisprung, ungefähr 14 Tage. Das geschätzte fruchtbare Fenster umfasst die fünf Tage vor dem errechneten Eisprung sowie den Eisprungtag selbst. Da dein Eisprung früher oder später stattfinden kann, lässt sich anhand dieser Berechnung nicht sicher feststellen, wann du tatsächlich fruchtbar bist.",
+      "third": "Ein Zyklus von 28 Tagen ist ein guter Ausgangspunkt, entspricht aber nicht unbedingt deinem persönlichen Zyklus. Das US Office on Women's Health (womenshealth.gov) nennt für Erwachsene eine normale Zykluslänge von 24 bis 38 Tagen. Laut Cleveland Clinic können auch 21 bis etwa 35 Tage normal sein. Wenn du deine eigene durchschnittliche Zykluslänge kennst, kannst du die Berechnung besser an deinen Zyklus anpassen. Die gesamte Berechnung erfolgt direkt in deinem Browser. Deine eingegebenen Daten werden weder gespeichert noch an einen Server übertragen."
+    },
+    "faq": {
+      "title": "Häufige Fragen zur Berechnung deiner nächsten Periode",
+      "next": {
+        "question": "Wie kann ich meine nächste Periode berechnen?",
+        "answer": "Addiere deine durchschnittliche Zykluslänge zum ersten Tag deiner letzten Periode, um den voraussichtlichen Beginn deiner nächsten Regelblutung zu berechnen. Die Zykluslänge entspricht der Anzahl der Tage vom ersten Tag einer Periode bis zum ersten Tag der darauffolgenden Periode."
+      },
+      "ovulation": {
+        "question": "Wie kann ich meinen Eisprung und meine fruchtbaren Tage berechnen?",
+        "answer": "Ziehe ungefähr 14 Tage vom voraussichtlichen Beginn deiner nächsten Periode ab, um deinen Eisprung zu schätzen. Deine geschätzten fruchtbaren Tage umfassen die fünf Tage davor sowie den errechneten Eisprungtag. Diese Berechnung kann einen Eisprung nicht bestätigen und eignet sich nicht zur Verhütung."
+      },
+      "accuracy": {
+        "question": "Wie genau ist ein Periodenrechner?",
+        "answer": "Ein Periodenrechner liefert anhand deiner durchschnittlichen Zykluslänge eine Schätzung, keine exakte Vorhersage. In der Pubertät, nach einer Schwangerschaft, während der Stillzeit, bei hormoneller Verhütung oder in stressigen Zeiten können die Ergebnisse weniger zuverlässig sein. Wenn deine Periode überfällig ist und du schwanger sein könntest, mache einen Schwangerschaftstest und hole ärztlichen Rat ein."
+      },
+      "irregular": {
+        "question": "Kann ich meine nächste Periode bei einem unregelmäßigen Zyklus berechnen?",
+        "answer": "Ja, du kannst deine nächste Periode anhand deiner durchschnittlichen Zykluslänge schätzen, allerdings ist das Ergebnis bei unregelmäßigen Zyklen weniger zuverlässig. Wenn du deine Periodentermine über mehrere Monate dokumentierst, kannst du deinen persönlichen Zyklus besser kennenlernen. Hole ärztlichen Rat ein, wenn deine Zyklen häufig kürzer als 24 Tage oder länger als 38 Tage sind."
+      }
+    },
+    "cta": {
+      "title": "Periodenvorhersagen, die zu deinem Zyklus passen",
+      "body": "Entdecke Mochi, deine kostenlose Perioden-App fürs iPhone. Anhand deiner eingetragenen Periodendaten passt Mochi die Vorhersagen mit der Zeit an deinen persönlichen Zyklus an. Die App funktioniert auch offline und ganz ohne Benutzerkonto.",
+      "button": "Mochi kostenlos herunterladen"
+    }
   }
 }

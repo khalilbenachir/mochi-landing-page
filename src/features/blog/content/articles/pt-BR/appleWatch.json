@@ -1,0 +1,131 @@
+{
+  "title": "Apple Watch pode prever sua menstruação?",
+  "description": "Descubra como o Apple Watch prevê sua menstruação, quais modelos medem a temperatura do pulso e até que ponto as previsões do ciclo são confiáveis.",
+  "imageAlt": "Mochi sentado em sua almofada ao lado de um calendário menstrual",
+  "intro": "Sim, o Apple Watch pode prever quando sua próxima menstruação deve começar usando o app Acompanhamento do Ciclo e as datas que você registrou. Os modelos compatíveis também podem usar a temperatura do pulso para melhorar essas previsões e estimar quando você provavelmente ovulou. Essas informações ajudam no planejamento da rotina, mas não confirmam a ovulação nem devem ser utilizadas como método contraceptivo.",
+  "sections": {
+    "does-it-predict": {
+      "title": "O Apple Watch consegue prever sua menstruação?",
+      "paragraphs": {
+        "first": "Sim, o Apple Watch consegue estimar quando sua próxima menstruação deve começar por meio do app Acompanhamento do Ciclo. Você pode consultar as datas previstas diretamente no relógio ou no app Saúde do seu iPhone.",
+        "second": "Para começar, abra o app Saúde no iPhone, toque em «Buscar», selecione «Acompanhamento do Ciclo» e depois toque em «Começar». Assim que você registrar sua última menstruação, a Apple poderá começar a calcular a data provável da próxima.",
+        "third": "Você não precisa de um Apple Watch com sensor de temperatura para receber previsões básicas da menstruação. Essas estimativas são feitas a partir das datas que você registra, enquanto os modelos compatíveis podem utilizar dados adicionais de saúde para personalizá-las.",
+        "fourth": "Também é possível ativar notificações para receber um aviso quando sua menstruação estiver próxima. Isso pode ser útil ao planejar uma viagem ou decidir se precisa levar absorventes na bolsa. A data prevista, porém, não é uma garantia."
+      }
+    },
+    "how-predictions-work": {
+      "title": "Como funciona a previsão da menstruação no Apple Watch?",
+      "paragraphs": {
+        "first": "A Apple estima a data da sua próxima menstruação com base nas menstruações registradas, na duração habitual do sangramento e na duração do seu ciclo menstrual. As previsões começam depois que você registra sua última menstruação.",
+        "second": "Segundo o Suporte da Apple, registrar cada dia da menstruação pode ajudar a melhorar as previsões. Se o sangramento começar antes do esperado, registre a data real de início. Nesse caso, você não receberá a notificação de previsão da menstruação referente àquele ciclo.",
+        "third": "A Apple também pode utilizar os dados de frequência cardíaca coletados pelo Apple Watch para personalizar as previsões do ciclo. Esse recurso vem ativado por padrão, mas você pode desativá-lo se preferir.",
+        "fourth": "Para utilizar os dados de frequência cardíaca nas previsões, é necessário ter um Apple Watch emparelhado com um iPhone com iOS 15 ou posterior. O recurso está disponível apenas em determinados países e regiões."
+      }
+    },
+    "fertile-window": {
+      "title": "Como o Apple Watch calcula seu período fértil?",
+      "paragraphs": {
+        "first": "O Acompanhamento do Ciclo da Apple estima um período fértil de seis dias com base nas datas das menstruações registradas ou em um resultado positivo de teste de ovulação. Esses são os dias em que a possibilidade de engravidar pode ser maior, e não dias de fertilidade confirmada.",
+        "second": "Segundo o Suporte da Apple, o cálculo utiliza um método baseado no calendário. São subtraídos 13 dias da data prevista para o início do próximo ciclo, considerando esse intervalo como a duração estimada da fase lútea.",
+        "third": "Se você registrar um resultado positivo em um teste de ovulação, as datas do período fértil estimado poderão mudar. Você também pode ativar notificações para receber um aviso quando esse período estiver próximo.",
+        "fourth": "A ovulação pode acontecer antes ou depois da data estimada, principalmente quando a duração dos seus ciclos varia de um mês para outro. A Apple orienta que o Acompanhamento do Ciclo não seja utilizado como método contraceptivo."
+      }
+    },
+    "wrist-temperature": {
+      "title": "Quais modelos do Apple Watch medem a temperatura do pulso?",
+      "paragraphs": {
+        "first": "O Apple Watch Series 8 e os modelos posteriores, assim como todos os modelos Apple Watch Ultra, permitem utilizar a temperatura do pulso no acompanhamento do ciclo menstrual. Esses dados podem melhorar as previsões da menstruação e fornecer estimativas retrospectivas da ovulação.",
+        "second": "Uma estimativa retrospectiva significa que o Apple Watch identifica, posteriormente, quando você provavelmente ovulou. O relógio não prevê com exatidão o momento de uma ovulação futura.",
+        "third": "Segundo o Suporte da Apple, os dados de temperatura do pulso também podem ajudar a melhorar as previsões da próxima menstruação. No entanto, você pode receber previsões básicas mesmo sem um relógio equipado com sensor de temperatura."
+      },
+      "table": {
+        "caption": "Acompanhamento do ciclo no Apple Watch: recursos e requisitos",
+        "columns": [
+          "Recurso",
+          "O que você precisa",
+          "Para que serve"
+        ],
+        "rows": [
+          [
+            "Previsão básica da menstruação",
+            "Acompanhamento do Ciclo e datas de menstruação registradas",
+            "Estima quando sua próxima menstruação poderá começar."
+          ],
+          [
+            "Dados de frequência cardíaca",
+            "Apple Watch emparelhado com um iPhone com iOS 15 ou posterior",
+            "Personaliza as previsões do ciclo menstrual."
+          ],
+          [
+            "Medição da temperatura do pulso",
+            "Apple Watch Series 8 ou posterior, ou qualquer modelo Apple Watch Ultra",
+            "Melhora as previsões da menstruação e estima retrospectivamente quando a ovulação provavelmente ocorreu."
+          ]
+        ]
+      },
+      "note": "As estimativas retrospectivas da ovulação e as previsões que utilizam a frequência cardíaca estão disponíveis apenas em determinados países e regiões. Uma estimativa não confirma que você realmente ovulou."
+    },
+    "notifications": {
+      "title": "O Apple Watch avisa quando a menstruação está chegando?",
+      "paragraphs": {
+        "first": "Sim, o Apple Watch pode enviar notificações quando sua próxima menstruação ou seu período fértil estimado estiver próximo. O Acompanhamento do Ciclo também pode perguntar se sua menstruação terminou, ajudando você a manter os registros atualizados.",
+        "second": "Segundo o Suporte da Apple, você pode gerenciar as previsões e notificações nas configurações do Acompanhamento do Ciclo. Se registrar a menstruação antes da data prevista, não receberá a notificação de previsão correspondente àquele ciclo.",
+        "third": "Também é possível configurar a detecção de alterações no ciclo pelo iPhone. Esse recurso analisa os registros dos últimos seis meses e pode sinalizar menstruações irregulares, pouco frequentes ou prolongadas, além de pequenos sangramentos persistentes.",
+        "fourth": "Se você tem uma consulta ginecológica marcada, pode exportar até 12 meses do seu histórico menstrual em formato PDF para compartilhar com um profissional de saúde. Esses registros podem facilitar a conversa durante a consulta, mas não permitem estabelecer um diagnóstico."
+      }
+    },
+    "privacy": {
+      "title": "Os dados menstruais registrados no Apple Watch são seguros?",
+      "paragraphs": {
+        "first": "A Apple protege seus dados de Acompanhamento do Ciclo por meio de criptografia quando o iPhone está bloqueado com um código de acesso, Touch ID ou Face ID. Com a autenticação de dois fatores ativada, os dados sincronizados com o iCloud também recebem criptografia de ponta a ponta.",
+        "second": "Segundo o Suporte da Apple, essas medidas protegem as informações sobre sua saúde menstrual armazenadas no app Saúde, incluindo as datas das menstruações registradas e o histórico dos seus ciclos.",
+        "third": "A criptografia de ponta a ponta significa que nem mesmo a Apple consegue ler os dados de Acompanhamento do Ciclo sincronizados com o iCloud quando as condições de segurança necessárias são atendidas.",
+        "fourth": "Se você costuma emprestar seu iPhone a outras pessoas, vale considerar quem tem acesso ao aparelho desbloqueado ou conhece seu código de acesso. Você também pode verificar nos ajustes da sua Conta Apple se a autenticação de dois fatores está ativada."
+      }
+    },
+    "limits": {
+      "title": "O acompanhamento do ciclo menstrual no Apple Watch é confiável?",
+      "paragraphs": {
+        "first": "O Apple Watch consegue estimar quando sua próxima menstruação poderá começar, mas não garante a data exata nem confirma que você ovulou. As previsões utilizam seu histórico menstrual e, quando disponíveis, dados adicionais de frequência cardíaca e temperatura do pulso.",
+        "second": "Se você tem menstruações irregulares ou ciclos que variam de um mês para outro, as previsões podem ser menos confiáveis. Registrar cada dia da menstruação pode melhorar as estimativas futuras, mas o sangramento ainda poderá começar antes ou depois do previsto.",
+        "third": "A Apple afirma expressamente que «o Acompanhamento do Ciclo não deve ser usado como método contraceptivo». O período fértil estimado não permite determinar em quais dias você pode ter relações sexuais desprotegidas sem risco de gravidez.",
+        "fourth": "A Apple também orienta que os dados do Acompanhamento do Ciclo «não devem ser usados para diagnosticar uma condição de saúde». Se você está preocupada com mudanças no seu ciclo menstrual, compartilhe seu histórico com um profissional de saúde."
+      }
+    },
+    "with-mochi": {
+      "title": "Acompanhamento do Ciclo da Apple ou Mochi: qual escolher?",
+      "paragraphs": {
+        "first": "O Acompanhamento do Ciclo da Apple é uma boa opção se você quer consultar as previsões da menstruação diretamente no Apple Watch e aproveitar os dados de saúde disponíveis. O Mochi é um aplicativo independente para iPhone, voltado ao acompanhamento menstrual e aos cuidados do dia a dia durante a menstruação.",
+        "second": "Você pode utilizar o Mochi sem criar uma conta. O aplicativo também funciona offline, permitindo que você continue registrando sua menstruação durante uma viagem ou quando estiver sem acesso à internet.",
+        "third": "O Mochi oferece lembretes opcionais para trocar o absorvente, com uma contagem regressiva na tela bloqueada e na Dynamic Island do seu iPhone. Durante uma aula ou um dia corrido de trabalho, você pode consultar quanto tempo falta para a próxima troca programada sem abrir o aplicativo.",
+        "fourth": "Você pode utilizar o Acompanhamento do Ciclo da Apple para consultar previsões no relógio e o Mochi para organizar seus cuidados durante a menstruação. São ferramentas independentes, e nenhuma delas garante a data exata da sua próxima menstruação."
+      }
+    }
+  },
+  "faq": {
+    "predict": {
+      "question": "O Apple Watch consegue prever quando vou menstruar?",
+      "answer": "Sim, o Apple Watch estima quando sua próxima menstruação poderá começar com base nas datas registradas, na duração habitual do sangramento e na duração do seu ciclo menstrual. Você também pode receber notificações quando a data prevista estiver próxima."
+    },
+    "ovulation-models": {
+      "question": "Qual Apple Watch mede a temperatura do pulso e acompanha a ovulação?",
+      "answer": "O Apple Watch Series 8 e os modelos posteriores, assim como todos os modelos Apple Watch Ultra, podem utilizar a temperatura do pulso para melhorar as previsões da menstruação e estimar quando você provavelmente ovulou. As estimativas retrospectivas da ovulação estão disponíveis apenas em determinados países e regiões."
+    },
+    "accuracy": {
+      "question": "A previsão da menstruação no Apple Watch é confiável?",
+      "answer": "O Apple Watch fornece datas estimadas para a menstruação, sem garantir que o sangramento começará exatamente no dia previsto. Registrar cada dia da menstruação pode melhorar as previsões, embora elas possam ser menos confiáveis se você tiver ciclos irregulares."
+    },
+    "birth-control": {
+      "question": "Posso usar o Apple Watch como método contraceptivo?",
+      "answer": "Não, a Apple orienta expressamente que o Acompanhamento do Ciclo não seja utilizado como método contraceptivo. Nem o período fértil estimado de seis dias nem as estimativas retrospectivas da ovulação permitem determinar em quais dias você pode ter relações sexuais desprotegidas sem risco de gravidez."
+    },
+    "private": {
+      "question": "Meus dados menstruais no Apple Watch são privados?",
+      "answer": "A Apple protege seus dados de Acompanhamento do Ciclo por meio de criptografia quando o iPhone está bloqueado com um código de acesso, Touch ID ou Face ID. Com a autenticação de dois fatores ativada, os dados sincronizados com o iCloud também são protegidos por criptografia de ponta a ponta."
+    },
+    "setup": {
+      "question": "Como ativar o acompanhamento do ciclo menstrual no Apple Watch?",
+      "answer": "Abra o app Saúde no iPhone, toque em «Buscar», selecione «Acompanhamento do Ciclo» e depois toque em «Começar». Registre sua última menstruação para começar a receber previsões, que poderão ser consultadas no app Acompanhamento do Ciclo do Apple Watch."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
-import { APP_STORE_URL, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
+import { APP_STORE_URL, SITE_ALTERNATE_NAMES, SITE_NAME, SITE_URL, STRUCTURED_FEATURE_IDS } from "@/features/landing/content/landing";
 import { getLandingFaqItems } from "@/features/landing/content/faq";
 import { LOCALE_META, localePath, type AppLocale } from "@/i18n/routing";
 
@@ -16,17 +16,30 @@ export async function StructuredData({ locale }: StructuredDataProps) {
     getTranslations({ locale, namespace: "StructuredData" }),
   ]);
   const pageUrl = `${SITE_URL}${localePath(locale)}`;
+  const organizationId = `${SITE_URL}/#organization`;
+  const appStoreUrl = APP_STORE_URL.startsWith("http") ? APP_STORE_URL : undefined;
 
   const graph = {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": organizationId,
+        name: SITE_NAME,
+        alternateName: SITE_ALTERNATE_NAMES,
+        url: SITE_URL,
+        logo: `${SITE_URL}${LANDING_ASSETS.appIcon}`,
+        ...(appStoreUrl ? { sameAs: [appStoreUrl] } : {}),
+      },
+      {
         "@type": "WebSite",
         "@id": `${pageUrl}#website`,
         url: pageUrl,
         name: SITE_NAME,
+        alternateName: SITE_ALTERNATE_NAMES,
         description: metadata("description"),
         inLanguage: locale,
+        publisher: { "@id": organizationId },
       },
       {
         "@type": "MobileApplication",
@@ -36,7 +49,8 @@ export async function StructuredData({ locale }: StructuredDataProps) {
         applicationCategory: "HealthApplication",
         operatingSystem: "iOS 17 or later",
         image: `${SITE_URL}${LANDING_ASSETS.appIcon}`,
-        url: APP_STORE_URL.startsWith("http") ? APP_STORE_URL : pageUrl,
+        url: appStoreUrl ?? pageUrl,
+        publisher: { "@id": organizationId },
         offers: {
           "@type": "Offer",
           price: "0",

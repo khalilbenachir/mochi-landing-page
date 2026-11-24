@@ -1,53 +1,176 @@
 {
-  "title": "Quelles sont les quatre phases du cycle menstruel ?",
-  "description": "Comprenez les quatre phases du cycle menstruel, leur chevauchement et les variations de durée, avec des sources et les limites des prédictions.",
-  "imageAlt": "Mochi vert près d’une roue illustrée de symboles du cycle",
-  "intro": "On décrit souvent le cycle par quatre termes : menstruation, phase folliculaire, ovulation et phase lutéale. Ce ne sont pas quatre périodes égales. Les règles coïncident avec le début de la phase folliculaire.",
+  "title": "Cycle menstruel de la femme : les 4 phases expliquées",
+  "description": "Découvrez les 4 phases du cycle menstruel de la femme, leur durée, le rôle des hormones et les changements qui se produisent dans votre corps chaque mois.",
+  "imageAlt": "Mochi vert à côté d'un schéma circulaire des quatre phases du cycle menstruel",
+  "intro": "Le cycle menstruel de la femme comprend quatre phases : les menstruations, la phase folliculaire, l'ovulation et la phase lutéale. Chacune correspond à des variations hormonales qui préparent votre corps à une éventuelle grossesse. Si le cycle menstruel dure en moyenne 28 jours, la durée et le moment de chaque phase peuvent varier d'une personne à l'autre et d'un cycle à l'autre.",
   "sections": {
-    "menstruation": {
-      "title": "La menstruation : les règles",
+    "overview": {
+      "title": "Quelles sont les 4 phases du cycle menstruel ?",
       "paragraphs": {
-        "first": "Le premier jour des règles est le jour 1. Les saignements correspondent à l’élimination de la muqueuse utérine. Notez les dates réelles plutôt que celles d’un calendrier prévisionnel."
+        "first": "Les quatre phases du cycle menstruel sont les menstruations, la phase folliculaire, l'ovulation et la phase lutéale. Tout au long du cycle, les variations hormonales régulent l'élimination et la reconstruction de la muqueuse utérine, la maturation d'un ovule et la préparation de votre corps à une éventuelle grossesse.",
+        "second": "Selon la Cleveland Clinic, un cycle menstruel dure en moyenne 28 jours. Le tableau ci-dessous présente le déroulement de chaque phase sur la base d'un cycle de cette durée. Le jour 1 correspond au premier jour de vos règles, et non au lendemain de leur fin."
+      },
+      "table": {
+        "caption": "Les 4 phases du cycle menstruel : jours, hormones et changements dans le corps",
+        "columns": [
+          "Phase",
+          "Jours indicatifs (cycle de 28 jours)",
+          "Principales hormones",
+          "Ce qui se passe dans votre corps"
+        ],
+        "rows": [
+          [
+            "Menstruations",
+            "Jours 1 à 5",
+            "Faibles taux d'œstrogènes et de progestérone",
+            "La muqueuse utérine se détache, provoquant les règles."
+          ],
+          [
+            "Phase folliculaire",
+            "Jours 1 à 14",
+            "FSH et augmentation des œstrogènes",
+            "Un ovule arrive à maturité et la muqueuse utérine s'épaissit."
+          ],
+          [
+            "Ovulation",
+            "Autour du jour 14",
+            "Pic de LH",
+            "Un ovaire libère un ovule."
+          ],
+          [
+            "Phase lutéale",
+            "Jours 15 à 28",
+            "Progestérone",
+            "La muqueuse utérine se prépare à une éventuelle grossesse."
+          ]
+        ]
+      },
+      "note": "Les quatre phases ne correspondent pas à des périodes totalement distinctes. Les menstruations coïncident avec les premiers jours de la phase folliculaire, et l'ovulation ne survient pas systématiquement au 14e jour."
+    },
+    "menstruation": {
+      "title": "Phase 1 : les menstruations ou la période des règles",
+      "paragraphs": {
+        "first": "Les menstruations correspondent à la phase du cycle menstruel pendant laquelle la muqueuse utérine se détache, provoquant les règles. Dans un cycle de 28 jours, cette phase se situe généralement entre le 1er et le 5e jour, mais la durée des saignements peut varier.",
+        "second": "En l'absence de grossesse au cours du cycle précédent, les taux d'œstrogènes et de progestérone diminuent. Cette baisse hormonale entraîne le détachement de la muqueuse utérine, également appelée endomètre, qui est évacuée par le vagin avec le sang menstruel.",
+        "third": "Selon la Cleveland Clinic, les règles durent généralement de 3 à 5 jours. Une durée comprise entre 3 et 7 jours est toutefois considérée comme normale.",
+        "fourth": "Le premier jour de vos règles marque à la fois le début d'un nouveau cycle menstruel et celui de la phase folliculaire. Lorsque vous renseignez vos règles dans un calendrier ou une application de suivi, indiquez leur date réelle de début plutôt que la date prévue."
       }
     },
     "follicular-phase": {
-      "title": "La phase folliculaire",
+      "title": "Phase 2 : qu'est-ce que la phase folliculaire ?",
       "paragraphs": {
-        "first": "Elle commence au début du cycle et précède l’ovulation. Des follicules se développent dans les ovaires et la muqueuse utérine se reconstitue. Les jours de règles en font aussi partie."
+        "first": "La phase folliculaire est la période du cycle menstruel pendant laquelle un ovule arrive à maturité dans l'un de vos ovaires et la muqueuse utérine s'épaissit. Elle commence le premier jour des règles et se termine au moment de l'ovulation.",
+        "second": "Durant cette phase, l'hormone folliculostimulante (FSH) stimule la croissance des follicules ovariens. En parallèle, le taux d'œstrogènes augmente, ce qui favorise la reconstruction de la muqueuse utérine éliminée pendant les règles.",
+        "third": "Selon la Cleveland Clinic, dans un cycle de 28 jours, un ovule arrive à maturité dans l'un des follicules entre le 10e et le 14e jour environ, avant d'être libéré lors de l'ovulation.",
+        "fourth": "Lorsque vous portez encore des serviettes hygiéniques ou des tampons pendant vos règles, votre phase folliculaire a donc déjà commencé. Sa durée peut varier d'un cycle à l'autre, ce qui explique notamment pourquoi vous pouvez ovuler plus tôt un mois et plus tard le mois suivant."
       }
     },
     "ovulation": {
-      "title": "L’ovulation",
+      "title": "Phase 3 : l'ovulation",
       "paragraphs": {
-        "first": "Un ovaire libère un ovule. Ce moment varie : ni une date du calendrier ni un ressenti ne prouvent qu’il a eu lieu. Une estimation d’application reste une estimation."
+        "first": "L'ovulation correspond au moment du cycle menstruel où l'un de vos ovaires libère un ovule arrivé à maturité. Elle survient généralement autour du 14e jour d'un cycle de 28 jours, mais sa date peut varier d'un cycle à l'autre.",
+        "second": "Une augmentation soudaine du taux d'hormone lutéinisante (LH) déclenche la libération de l'ovule. Selon l'Office américain pour la santé des femmes (US Office on Women's Health, womenshealth.gov), cette montée hormonale se produit environ 36 heures avant l'ovulation.",
+        "third": "Votre température corporelle basale, c'est-à-dire votre température au repos, augmente également légèrement autour de l'ovulation. La mesurer chaque matin avant de vous lever peut vous aider à repérer certaines variations au fil des cycles.",
+        "fourth": "Si votre phase folliculaire dure plus longtemps que d'habitude, votre ovulation peut survenir plus tard que prévu. Même lorsque vos règles sont régulières, un calendrier ou une application de suivi menstruel peut seulement estimer votre date d'ovulation, sans confirmer qu'un ovule a effectivement été libéré."
       }
     },
     "luteal-phase": {
-      "title": "La phase lutéale",
+      "title": "Phase 4 : qu'est-ce que la phase lutéale ?",
       "paragraphs": {
-        "first": "Elle suit l’ovulation. En l’absence de grossesse, les taux hormonaux baissent et les règles suivantes commencent. Certaines personnes remarquent alors des symptômes prémenstruels."
+        "first": "La phase lutéale commence après l'ovulation et dure environ 14 jours. Dans un cycle menstruel de 28 jours, elle s'étend généralement du 15e au 28e jour. Durant cette période, le taux de progestérone augmente afin de préparer la muqueuse utérine à une éventuelle grossesse.",
+        "second": "Si aucune grossesse ne débute, les taux d'œstrogènes et de progestérone diminuent vers la fin de la phase lutéale. Cette baisse hormonale provoque le détachement de la muqueuse utérine et déclenche les règles suivantes.",
+        "third": "C'est également pendant cette phase que peuvent apparaître les symptômes du syndrome prémenstruel (SPM). Selon l'US Office on Women's Health, ces symptômes surviennent après l'ovulation, généralement une à deux semaines avant les règles, et s'atténuent dans les premiers jours suivant leur apparition.",
+        "fourth": "Si vous remarquez une fatigue inhabituelle ou des ballonnements quelques jours avant vos règles, essayez de noter ces symptômes en parallèle de vos dates de menstruation. Au fil des cycles, vous pourrez éventuellement repérer des symptômes qui reviennent à des moments similaires."
       }
     },
-    "your-own-pattern": {
-      "title": "Votre cycle n’a pas à suivre un schéma",
+    "cycle-length": {
+      "title": "Quelle est la durée normale du cycle menstruel ?",
       "paragraphs": {
-        "first": "Ces termes aident à comprendre le cycle. Notez ensuite votre expérience sans vous imposer une humeur, une énergie ou une routine en fonction d’une illustration.",
-        "second": "La contraception hormonale et d’autres situations peuvent modifier les saignements ou l’ovulation. Consultez pour une question personnelle ou un changement inattendu. Mochi ne diagnostique pas les phases et ne fournit pas de contraception."
+        "first": "Le cycle menstruel dure en moyenne 28 jours, mais cette durée n'est pas une règle absolue. La Cleveland Clinic considère qu'un cycle de 21 à 35 jours environ peut être normal, tandis que l'US Office on Women's Health indique une durée normale de 24 à 38 jours chez l'adulte.",
+        "second": "La durée du cycle menstruel se calcule entre le premier jour des règles et le premier jour des règles suivantes. La durée de chaque phase peut varier, notamment celle de la phase folliculaire, qui se termine au moment de l'ovulation.",
+        "third": "À l'adolescence, les cycles de plus de 38 jours sont fréquents pendant les premières années suivant les premières règles. La plupart des cycles deviennent plus réguliers dans les trois ans."
+      },
+      "table": {
+        "caption": "Durée du cycle menstruel et de ses différentes phases",
+        "columns": [
+          "Phase ou mesure",
+          "Durée habituelle",
+          "Source"
+        ],
+        "rows": [
+          [
+            "Durée moyenne du cycle",
+            "28 jours",
+            "Cleveland Clinic"
+          ],
+          [
+            "Durée normale du cycle",
+            "21 à 35 jours environ",
+            "Cleveland Clinic"
+          ],
+          [
+            "Durée normale du cycle chez l'adulte",
+            "24 à 38 jours",
+            "US Office on Women's Health"
+          ],
+          [
+            "Menstruations",
+            "3 à 7 jours",
+            "Cleveland Clinic"
+          ],
+          [
+            "Phase folliculaire",
+            "Environ 14 jours dans un cycle de 28 jours",
+            "Cleveland Clinic"
+          ],
+          [
+            "Ovulation",
+            "Autour du 14e jour dans un cycle de 28 jours, date variable",
+            "Cleveland Clinic"
+          ],
+          [
+            "Phase lutéale",
+            "Environ 14 jours",
+            "Cleveland Clinic"
+          ]
+        ]
+      },
+      "note": "L'US Office on Women's Health recommande de consulter un médecin ou un professionnel de santé si vos cycles durent fréquemment moins de 24 jours ou plus de 38 jours."
+    },
+    "your-own-pattern": {
+      "title": "Comment mieux comprendre votre propre cycle menstruel ?",
+      "paragraphs": {
+        "first": "Suivre les dates réelles de vos règles vous permet de mieux comprendre votre cycle menstruel que de vous fier uniquement au modèle classique de 28 jours. La durée de votre cycle et la date de votre ovulation peuvent varier d'un mois à l'autre, même si vos règles sont habituellement régulières.",
+        "second": "Commencez par noter le premier jour de chaque période de règles, la durée des saignements et les éventuels symptômes ressentis au cours du cycle. Vous pourrez progressivement repérer certaines habitudes, comme des ballonnements qui reviennent la semaine précédant vos règles.",
+        "third": "Mochi utilise les dates de règles que vous renseignez pour estimer la date de vos prochaines menstruations et de votre ovulation. Ces estimations peuvent vous aider à anticiper vos règles avant un week-end en déplacement, des vacances ou une semaine de travail chargée.",
+        "fourth": "Mochi ne peut pas confirmer qu'une ovulation a effectivement eu lieu. L'application n'est pas un dispositif médical et ne doit pas être utilisée comme moyen de contraception."
       }
     }
   },
   "faq": {
-    "equal": {
-      "question": "Les quatre phases ont-elles la même durée ?",
-      "answer": "Non. Elles ne sont pas égales et les règles chevauchent le début de la phase folliculaire. Leur durée varie selon les personnes et les cycles."
+    "what-are-phases": {
+      "question": "Quelles sont les 4 phases du cycle menstruel de la femme ?",
+      "answer": "Les quatre phases du cycle menstruel sont les menstruations, la phase folliculaire, l'ovulation et la phase lutéale. Au cours de ces phases, la muqueuse utérine se détache puis se reconstruit, un ovule arrive à maturité et est libéré, et le corps se prépare à une éventuelle grossesse."
     },
-    "day": {
-      "question": "L’ovulation a-t-elle toujours lieu au jour 14 ?",
-      "answer": "Non. Les exemples utilisent souvent 28 jours, mais l’ovulation varie. Une prédiction ne confirme pas qu’elle a eu lieu."
+    "period-phase": {
+      "question": "À quelle phase du cycle menstruel correspondent les règles ?",
+      "answer": "Les règles correspondent à la phase menstruelle, pendant laquelle la muqueuse utérine se détache et provoque des saignements. Cette phase commence le premier jour du cycle et coïncide avec le début de la phase folliculaire."
     },
-    "track": {
-      "question": "Dois-je indiquer chaque phase dans mon suivi ?",
-      "answer": "Non. Vous pouvez commencer par les saignements et les symptômes utiles. Distinguez vos observations réelles des estimations de l’application."
+    "phase-length": {
+      "question": "Combien de jours dure chaque phase du cycle menstruel ?",
+      "answer": "Dans un cycle de 28 jours, les règles surviennent généralement du 1er au 5e jour, la phase folliculaire s'étend du 1er jour jusqu'à l'ovulation autour du 14e jour, et la phase lutéale couvre approximativement les jours 15 à 28. Ces durées sont indicatives et peuvent varier d'un cycle à l'autre."
+    },
+    "normal-cycle": {
+      "question": "Combien de jours dure un cycle menstruel normal ?",
+      "answer": "Un cycle menstruel dure en moyenne 28 jours, mais la Cleveland Clinic considère qu'une durée de 21 à 35 jours environ peut être normale. L'US Office on Women's Health indique une durée normale de 24 à 38 jours chez l'adulte et recommande une consultation si vos cycles se situent fréquemment en dehors de cet intervalle."
+    },
+    "follicular": {
+      "question": "Qu'est-ce que la phase folliculaire du cycle menstruel ?",
+      "answer": "La phase folliculaire commence le premier jour des règles et se termine au moment de l'ovulation. Durant cette phase, l'hormone folliculostimulante (FSH) favorise la croissance des follicules ovariens, tandis que l'augmentation du taux d'œstrogènes contribue à l'épaississement de la muqueuse utérine."
+    },
+    "ovulation-day": {
+      "question": "L'ovulation a-t-elle toujours lieu au 14e jour du cycle menstruel ?",
+      "answer": "Non, l'ovulation ne survient pas systématiquement au 14e jour. Cette date correspond à un cycle type de 28 jours, mais le moment de l'ovulation peut varier d'un cycle à l'autre. Un calendrier ou une application de suivi menstruel peut estimer votre date d'ovulation, sans confirmer qu'elle a effectivement eu lieu."
     }
   }
 }

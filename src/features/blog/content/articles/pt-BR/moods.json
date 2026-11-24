@@ -1,52 +1,158 @@
 {
-  "title": "Mudanças de humor durante o ciclo menstrual",
-  "description": "Entenda mudanças de humor no ciclo menstrual, o que anotar em um registro e quando buscar apoio, sem regras fixas sobre como você deveria se sentir.",
-  "imageAlt": "Mochi azul com um balão de pensamento e um coração rosa",
-  "intro": "Algumas pessoas percebem mudanças de humor antes da menstruação, outras não. Os sintomas pré-menstruais variam e podem mudar com o tempo. Um diário datado descreve sua experiência, mas não diagnostica sua causa.",
+  "title": "Humor no ciclo menstrual: o que muda em cada fase",
+  "description": "Entenda como o humor pode mudar em cada fase do ciclo menstrual, qual é a relação com os hormônios, como aliviar os sintomas da TPM e quando buscar ajuda.",
+  "imageAlt": "Mochi com um coração dentro de um balão de pensamento",
+  "intro": "Seu humor pode mudar ao longo do ciclo menstrual: algumas pessoas sentem alívio quando a menstruação começa e percebem mais irritabilidade, tristeza ou oscilações de humor antes do próximo período menstrual. As alterações hormonais podem influenciar suas emoções, mas o sono, o estresse e o desconforto físico também interferem em como você se sente. Conhecer seus próprios padrões emocionais pode ajudar você a perceber quando precisa de mais apoio.",
   "sections": {
-    "premenstrual-changes": {
-      "title": "Como as mudanças pré-menstruais podem aparecer",
+    "mood-by-phase": {
+      "title": "Como muda o humor em cada fase do ciclo menstrual?",
       "paragraphs": {
-        "first": "A TPM pode incluir irritabilidade, ansiedade, tristeza ou mudanças de humor, além de sintomas físicos. Costumam surgir antes da menstruação e aliviar após o início.",
-        "second": "Uma lista de sintomas não é um teste. Se algo incomoda ou interfere no dia a dia, converse com um profissional de saúde."
-      }
-    },
-    "useful-notes": {
-      "title": "Descreva o seu dia",
-      "items": {
-        "date": "Anote a data e palavras que descrevam seu humor.",
-        "impact": "Inclua a intensidade e o impacto no dia.",
-        "context": "Acrescente contexto útil: sono, estresse ou um acontecimento difícil."
+        "first": "Seu humor pode variar durante as quatro fases do ciclo menstrual: menstruação, fase folicular, ovulação e fase lútea. As mudanças de humor são especialmente comuns antes da menstruação, quando os níveis de estrogênio e progesterona diminuem.",
+        "second": "Segundo o Escritório de Saúde da Mulher dos Estados Unidos (US Office on Women's Health, womenshealth.gov), mais de 90% das mulheres relatam algum sintoma pré-menstrual, como inchaço, dor de cabeça ou alterações de humor. As oscilações hormonais podem contribuir para esses sintomas, mas cada pessoa vivencia seu ciclo de uma maneira diferente."
       },
-      "after": "Você pode registrar dias comuns ou tranquilos também. Eles ajudam a comparar, em vez de anotar só os dias difíceis."
+      "table": {
+        "caption": "Humor no ciclo menstrual: possíveis mudanças emocionais nas quatro fases",
+        "columns": [
+          "Fase do ciclo",
+          "Dias aproximados (ciclo de 28 dias)",
+          "Alterações hormonais",
+          "O que algumas pessoas percebem"
+        ],
+        "rows": [
+          [
+            "Menstruação",
+            "Dias 1 a 5",
+            "Níveis baixos de estrogênio e progesterona",
+            "Alívio com a redução dos sintomas da TPM, cansaço ou irritabilidade."
+          ],
+          [
+            "Fase folicular",
+            "Dias 1 a 14",
+            "Aumento dos níveis de estrogênio",
+            "Melhora do humor, mais disposição ou motivação."
+          ],
+          [
+            "Ovulação",
+            "Por volta do 14º dia",
+            "Aumento repentino do LH",
+            "Mais autoconfiança, vontade de socializar ou nenhuma mudança perceptível."
+          ],
+          [
+            "Fase lútea",
+            "Dias 15 a 28",
+            "Aumento da progesterona, seguido pela queda do estrogênio e da progesterona",
+            "Oscilações de humor, ansiedade, irritabilidade ou tristeza antes da menstruação."
+          ]
+        ]
+      },
+      "note": "As evidências científicas que relacionam emoções específicas à fase folicular e à ovulação ainda são limitadas. A qualidade do sono, o estresse, as dores físicas e os acontecimentos do dia a dia também influenciam seu humor."
     },
-    "avoid-rules": {
-      "title": "Não existe um jeito obrigatório de se sentir",
+    "period-mood": {
+      "title": "Mudanças de humor durante a menstruação",
       "paragraphs": {
-        "first": "Você não precisa estar animada, sociável, calma ou cansada em um dia específico. Use o diário para sua experiência, sem tentar seguir um modelo.",
-        "second": "No Mochi, registrar humor é opcional. A reação do mascote faz parte da experiência lúdica, não de uma interpretação médica."
+        "first": "Durante a menstruação, você pode se sentir mais sensível, cansada ou irritada do que de costume. Algumas pessoas, por outro lado, sentem um alívio emocional quando os sintomas da tensão pré-menstrual (TPM) começam a diminuir.",
+        "second": "Segundo o US Office on Women's Health, os sintomas da TPM geralmente melhoram nos primeiros dias após o início da menstruação. Se você vinha sentindo ansiedade ou mudanças repentinas de humor, essas sensações podem diminuir aos poucos quando o sangramento começa.",
+        "third": "O desconforto físico também pode afetar suas emoções. Cólicas menstruais, cansaço ou uma noite mal dormida podem tornar um dia comum de trabalho muito mais desgastante.",
+        "fourth": "Se você continua se sentindo triste ou desanimada depois da menstruação, não atribua esse mal-estar automaticamente aos hormônios. A depressão e a ansiedade podem apresentar sintomas semelhantes aos da TPM. Se o desânimo persistir ou afetar sua rotina, converse com um profissional de saúde."
       }
     },
-    "support": {
-      "title": "Busque apoio quando precisar",
+    "follicular-mood": {
+      "title": "Fase folicular: como fica o humor depois da menstruação?",
       "paragraphs": {
-        "first": "Se os sintomas incomodam, persistem ou interferem na rotina, converse com um profissional qualificado. Leve as notas se ajudarem.",
-        "second": "Não espere um histórico longo. O diário é uma forma de explicar o que percebeu, não uma condição para receber cuidado."
+        "first": "Durante a fase folicular, algumas pessoas percebem uma melhora no humor, mais disposição ou motivação, principalmente depois que a menstruação termina. No entanto, as evidências científicas que associam essa fase a mudanças emocionais específicas ainda são limitadas.",
+        "second": "Segundo a Cleveland Clinic, os níveis de estrogênio aumentam durante a fase folicular, que começa no primeiro dia da menstruação e termina com a ovulação. Essas alterações hormonais podem influenciar como você se sente, mas são apenas parte da explicação.",
+        "third": "Com a melhora dos sintomas da TPM e das cólicas menstruais, algumas tarefas do dia a dia podem parecer menos cansativas. Talvez você sinta mais vontade de fazer exercícios ou encontrar suas amigas.",
+        "fourth": "Também é possível sentir cansaço, ansiedade ou tristeza durante essa fase. Se seu humor não melhorar depois da menstruação, você não precisa se cobrar mais produtividade ou disposição só porque está na fase folicular."
+      }
+    },
+    "ovulation-mood": {
+      "title": "Ovulação e humor: quais mudanças você pode perceber?",
+      "paragraphs": {
+        "first": "Perto da ovulação, algumas pessoas percebem uma melhora no humor, mais autoconfiança ou vontade de socializar. Porém, as evidências científicas que relacionam a ovulação a determinadas emoções são limitadas, e talvez você não perceba nenhuma diferença.",
+        "second": "Segundo a Cleveland Clinic, a ovulação costuma acontecer por volta do 14º dia de um ciclo menstrual de 28 dias. Um aumento repentino do hormônio luteinizante (LH) desencadeia a liberação de um óvulo. O momento exato pode variar de um ciclo para outro.",
+        "third": "Pode ser que você tenha mais vontade de sair com as amigas ou assumir um novo desafio no trabalho. Mas também é possível sentir ansiedade, irritabilidade ou tristeza. Seu humor, por si só, não indica se você está ovulando.",
+        "fourth": "Se perceber mudanças emocionais perto da metade do ciclo, experimente registrá-las junto com a qualidade do sono e seu nível de estresse. Depois de alguns meses, talvez você identifique algum padrão."
+      }
+    },
+    "luteal-mood": {
+      "title": "Fase lútea e humor: entenda as mudanças emocionais da TPM",
+      "paragraphs": {
+        "first": "Durante a fase lútea, você pode sentir irritabilidade, ansiedade, tristeza ou mudanças repentinas de humor, especialmente nos dias que antecedem a menstruação. Essas alterações emocionais podem fazer parte da tensão pré-menstrual (TPM).",
+        "second": "Após a ovulação, os níveis de progesterona aumentam. Com a aproximação da menstruação, os níveis de estrogênio e progesterona diminuem. Essas oscilações hormonais podem contribuir para a TPM, embora sua causa exata ainda não seja conhecida.",
+        "third": "Segundo o US Office on Women's Health, até três em cada quatro mulheres relatam ter TPM em algum momento da vida. A maioria apresenta sintomas leves. Entre os possíveis sintomas emocionais e comportamentais estão:"
+      },
+      "items": {
+        "irritability": "Você se irrita ou se frustra com mais facilidade.",
+        "anxiety": "Você sente tensão emocional ou ansiedade.",
+        "sadness": "Você se sente triste ou tem vontade de chorar com mais facilidade.",
+        "mood-swings": "Seu humor muda repentinamente.",
+        "fatigue": "Você sente um cansaço fora do habitual ou percebe alterações no sono.",
+        "concentration": "Você tem dificuldade para se concentrar nas tarefas do dia a dia.",
+        "appetite": "Seu apetite muda ou você sente vontade de comer determinados alimentos.",
+        "sex-drive": "Você sente menos interesse por sexo."
+      },
+      "note": "Os sintomas da TPM geralmente começam uma ou duas semanas antes da menstruação e melhoram nos primeiros dias após o início do sangramento."
+    },
+    "pmdd": {
+      "title": "Quando as mudanças de humor vão além da TPM: entenda o TDPM",
+      "paragraphs": {
+        "first": "Se as mudanças de humor antes da menstruação são tão intensas que prejudicam sua rotina, pode haver algo além da TPM habitual. O transtorno disfórico pré-menstrual (TDPM, ou PMDD em inglês) é uma forma mais grave da TPM.",
+        "second": "Segundo o US Office on Women's Health, o TDPM afeta menos de 5% das mulheres em idade fértil. Sintomas emocionais intensos podem dificultar o trabalho, os relacionamentos e o aproveitamento de atividades que normalmente dão prazer.",
+        "third": "A depressão e a ansiedade podem apresentar sintomas semelhantes aos da TPM e se intensificar antes ou durante a menstruação. Se você costuma se sentir triste depois de menstruar ou enfrenta dificuldades emocionais ao longo de todo o ciclo, não presuma que os hormônios sejam a única causa.",
+        "fourth": "Converse com um médico ou profissional de enfermagem se os sintomas causarem sofrimento ou prejudicarem sua rotina. Registrar seu humor e seus sintomas durante alguns meses pode ajudar na consulta."
+      },
+      "note": "Se você se sente profundamente triste, sem esperança ou tem pensamentos de machucar a si mesma, procure ajuda médica urgente ou entre imediatamente em contato com os serviços locais de emergência ou de atendimento em situações de crise."
+    },
+    "what-helps": {
+      "title": "Como aliviar as mudanças de humor durante o ciclo menstrual?",
+      "paragraphs": {
+        "first": "Praticar exercícios regularmente, dormir o suficiente, manter uma alimentação equilibrada e cuidar do estresse pode ajudar a aliviar as mudanças de humor associadas à TPM. Vale a pena manter esses hábitos durante todo o ciclo, e não apenas nos dias anteriores à menstruação.",
+        "second": "O US Office on Women's Health recomenda algumas medidas para ajudar a aliviar os sintomas pré-menstruais:"
+      },
+      "items": {
+        "exercise": "Pratique atividades aeróbicas regularmente. Uma caminhada em ritmo acelerado durante o horário de almoço também conta.",
+        "nutrition": "Mantenha uma alimentação equilibrada e tente reduzir o consumo de cafeína, sal e açúcar nas duas semanas anteriores à menstruação.",
+        "sleep": "Procure dormir cerca de 8 horas por noite.",
+        "stress-management": "Reserve um tempo para atividades que ajudem a lidar com o estresse, como escrever em um diário, praticar yoga ou meditar.",
+        "social-support": "Converse com alguém de confiança quando se sentir sobrecarregada.",
+        "smoking": "Evite fumar."
+      },
+      "note": "Se as mudanças de humor continuarem causando sofrimento ou prejudicando sua rotina, mesmo com esses hábitos, converse com um médico ou profissional de enfermagem sobre seus sintomas."
+    },
+    "track-your-moods": {
+      "title": "Como acompanhar seu humor ao longo do ciclo menstrual",
+      "paragraphs": {
+        "first": "Registrar seu humor junto com as datas da menstruação durante alguns meses pode ajudar você a identificar mudanças emocionais que se repetem. Esse acompanhamento também permite perceber quais oscilações de humor acontecem independentemente da menstruação.",
+        "second": "Experimente anotar como você se sente todos os dias, mesmo quando nada de especial acontece. Registre as datas da menstruação, seus sintomas emocionais, a qualidade do sono e situações que tenham causado estresse. Alguns minutos antes de dormir já são suficientes para começar.",
+        "third": "O Mochi permite registrar seu humor e seus sintomas junto com as datas da menstruação. Depois de alguns ciclos, talvez você perceba que costuma ficar mais irritada antes de menstruar ou que seu humor melhora quando o sangramento começa.",
+        "fourth": "O Mochi não diagnostica TPM, TDPM, depressão ou transtornos de ansiedade. Se suas dificuldades emocionais estiverem afetando sua rotina, você pode levar os registros dos últimos meses a um profissional de saúde para explicar melhor o que vem sentindo."
       }
     }
   },
   "faq": {
-    "everyone": {
-      "question": "Todo mundo tem mudanças de humor antes da menstruação?",
-      "answer": "Não. Os sintomas variam entre pessoas e podem mudar com o tempo."
+    "phase-mood": {
+      "question": "Como é o humor em cada fase do ciclo menstrual?",
+      "answer": "Algumas pessoas sentem alívio durante a menstruação, melhora do humor na fase folicular, mais autoconfiança perto da ovulação e oscilações emocionais na fase lútea. No entanto, as evidências científicas que associam emoções específicas à fase folicular e à ovulação são limitadas, e esses padrões variam de pessoa para pessoa."
     },
-    "diagnosis": {
-      "question": "Registrar humor diagnostica TPM ou TDPM?",
-      "answer": "Não. Pode ajudar a explicar o momento e o impacto dos sintomas, mas não é um teste diagnóstico."
+    "luteal": {
+      "question": "Por que o humor muda durante a fase lútea?",
+      "answer": "As mudanças de humor na fase lútea podem estar relacionadas às oscilações nos níveis de estrogênio e progesterona, embora a causa exata da TPM ainda não seja conhecida. Você pode sentir irritabilidade, ansiedade ou tristeza durante uma ou duas semanas antes da menstruação."
     },
-    "daily": {
-      "question": "Preciso registrar meu humor todo dia?",
-      "answer": "Não. Escolha uma rotina útil. Dias diferentes acrescentam contexto, mas um registro perfeito não é necessário para pedir apoio."
+    "after-period": {
+      "question": "Por que meu humor piora depois da menstruação?",
+      "answer": "Sentir tristeza ou desânimo depois da menstruação pode estar relacionado ao cansaço, à falta de sono ou ao estresse, e não necessariamente aos hormônios. Os sintomas da TPM geralmente melhoram nos primeiros dias da menstruação. Se o desânimo persistir ou afetar sua rotina, converse com um profissional de saúde."
+    },
+    "ovulation": {
+      "question": "A ovulação pode causar mudanças de humor?",
+      "answer": "Algumas pessoas percebem mudanças emocionais perto da ovulação, mas as evidências científicas que relacionam essa fase a oscilações específicas de humor ainda são limitadas. Seu estado emocional, por si só, não permite saber se você está ovulando."
+    },
+    "pms-or-more": {
+      "question": "Como saber se minhas mudanças de humor são TPM ou algo mais?",
+      "answer": "Os sintomas da TPM geralmente começam após a ovulação e melhoram nos primeiros dias da menstruação, enquanto sintomas intensos que prejudicam sua rotina podem indicar TDPM ou outra condição. Converse com um profissional de saúde se os sintomas persistirem ou interferirem nas suas atividades diárias. Se você se sente profundamente triste, sem esperança ou tem pensamentos de machucar a si mesma, procure ajuda médica urgente ou entre imediatamente em contato com os serviços locais de emergência ou de atendimento em situações de crise."
+    },
+    "help": {
+      "question": "Como diminuir as mudanças de humor da TPM?",
+      "answer": "Praticar exercícios aeróbicos regularmente, dormir cerca de 8 horas por noite, manter uma alimentação equilibrada e cuidar do estresse pode ajudar a aliviar os sintomas da TPM. O US Office on Women's Health também recomenda reduzir o consumo de cafeína, sal e açúcar nas duas semanas anteriores à menstruação. Registrar seu humor durante alguns meses pode ajudar você a identificar padrões emocionais recorrentes."
     }
   }
 }

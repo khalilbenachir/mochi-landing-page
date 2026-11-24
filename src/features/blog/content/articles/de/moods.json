@@ -1,52 +1,158 @@
 {
-  "title": "Stimmungsschwankungen im Zyklus verstehen",
-  "description": "Erfahre mehr über Stimmungsschwankungen im Zyklus, hilfreiche Notizen und Unterstützung, ohne feste Vorgaben dafür, wie du dich fühlen solltest.",
-  "imageAlt": "Blauer Mochi mit einer Gedankenblase und einem rosa Herz",
-  "intro": "Manche Menschen bemerken vor der Periode Stimmungsschwankungen, andere nicht. Prämenstruelle Symptome unterscheiden und verändern sich. Ein datiertes Tagebuch kann deine Erfahrung beschreiben, aber keine Ursache diagnostizieren.",
+  "title": "Stimmung im Zyklus: Was in den 4 Phasen passiert",
+  "description": "Wie verändert sich deine Stimmung im Zyklus? Erfahre, welche Stimmungsschwankungen auftreten können, was bei PMS hilft und wann ärztlicher Rat sinnvoll ist.",
+  "imageAlt": "Mochi mit einem Herzen in einer Gedankenblase",
+  "intro": "Deine Stimmung kann sich im Laufe des Menstruationszyklus verändern: Manche fühlen sich nach Beginn der Periode besser, während vor der nächsten Blutung vermehrt Stimmungsschwankungen, Reizbarkeit oder Traurigkeit auftreten können. Hormonelle Veränderungen können dabei eine Rolle spielen, aber auch Schlaf, Stress und körperliche Beschwerden beeinflussen dein Wohlbefinden. Wenn du deine eigenen Stimmungsmuster besser kennenlernst, kannst du leichter erkennen, wann du Unterstützung brauchst.",
   "sections": {
-    "premenstrual-changes": {
-      "title": "Wie prämenstruelle Veränderungen aussehen können",
+    "mood-by-phase": {
+      "title": "Zyklusphasen und Stimmung: Wie verändert sich dein Wohlbefinden?",
       "paragraphs": {
-        "first": "Zum PMS können neben körperlichen Beschwerden auch Reizbarkeit, Angst, Traurigkeit oder Stimmungsschwankungen gehören. Häufig treten sie vor der Periode auf und lassen nach ihrem Beginn nach.",
-        "second": "Eine Symptomliste ist kein Test. Wenn dich etwas belastet oder deinen Alltag beeinträchtigt, sprich mit medizinischem Fachpersonal."
-      }
-    },
-    "useful-notes": {
-      "title": "Den konkreten Tag festhalten",
-      "items": {
-        "date": "Notiere Datum und passende Worte für deine Stimmung.",
-        "impact": "Beschreibe kurz, wie stark sie deinen Tag beeinflusst hat.",
-        "context": "Ergänze hilfreichen Kontext wie Schlaf, Stress oder ein belastendes Ereignis."
+        "first": "Deine Stimmung kann sich während aller vier Zyklusphasen verändern: der Menstruation, der Follikelphase, des Eisprungs und der Lutealphase. Besonders häufig treten Stimmungsschwankungen vor der Periode auf, wenn die Östrogen- und Progesteronspiegel sinken.",
+        "second": "Laut dem US Office on Women's Health (womenshealth.gov) berichten über 90 Prozent der Frauen von prämenstruellen Beschwerden wie Blähungen, Kopfschmerzen oder Stimmungsschwankungen. Veränderungen des Hormonspiegels können dabei eine Rolle spielen. Allerdings erlebt nicht jede Person ihren Zyklus emotional auf dieselbe Weise."
       },
-      "after": "Auch gewöhnliche und angenehme Tage kannst du festhalten. Sie liefern Vergleichspunkte für ein Gespräch."
+      "table": {
+        "caption": "Stimmung im weiblichen Zyklus: Die vier Zyklusphasen im Überblick",
+        "columns": [
+          "Zyklusphase",
+          "Typische Tage (28-Tage-Zyklus)",
+          "Hormonelle Veränderungen",
+          "Was manche Menschen bemerken"
+        ],
+        "rows": [
+          [
+            "Menstruation",
+            "Tag 1 bis 5",
+            "Niedrige Östrogen- und Progesteronspiegel",
+            "Erleichterung durch nachlassende PMS-Beschwerden, Müdigkeit oder Reizbarkeit."
+          ],
+          [
+            "Follikelphase",
+            "Tag 1 bis 14",
+            "Steigender Östrogenspiegel",
+            "Bessere Stimmung, mehr Energie oder Motivation."
+          ],
+          [
+            "Eisprung",
+            "Etwa an Tag 14",
+            "Starker Anstieg von LH",
+            "Mehr Selbstvertrauen, mehr Lust auf soziale Kontakte oder keine spürbare Veränderung."
+          ],
+          [
+            "Lutealphase",
+            "Tag 15 bis 28",
+            "Progesteron steigt zunächst an, anschließend sinken Östrogen und Progesteron",
+            "Stimmungsschwankungen, innere Unruhe, Reizbarkeit oder Traurigkeit vor der Periode."
+          ]
+        ]
+      },
+      "note": "Der wissenschaftliche Zusammenhang zwischen bestimmten Stimmungen und der Follikelphase beziehungsweise dem Eisprung ist bislang nur begrenzt belegt. Auch Schlaf, Stress, körperliche Beschwerden und alltägliche Erlebnisse beeinflussen deine Stimmung."
     },
-    "avoid-rules": {
-      "title": "Keine festen Regeln für deine Gefühle",
+    "period-mood": {
+      "title": "Stimmungsschwankungen während der Periode",
       "paragraphs": {
-        "first": "Du musst an keinem Zyklustag energiegeladen, gesellig, ruhig oder müde sein. Das Tagebuch soll deine Erfahrung beschreiben, keine Vorlage erfüllen.",
-        "second": "Stimmungseinträge sind in Mochi freiwillig. Die Reaktion des Maskottchens gehört zum spielerischen Erlebnis und ist keine medizinische Auswertung."
+        "first": "Während deiner Periode kannst du emotional empfindlicher, müder oder reizbarer sein als sonst. Manche Menschen empfinden dagegen eine deutliche Erleichterung, weil ihre prämenstruellen Beschwerden mit Beginn der Blutung nachlassen.",
+        "second": "Laut dem US Office on Women's Health bessern sich PMS-Beschwerden normalerweise innerhalb weniger Tage nach Beginn der Periode. Wenn du dich vorher angespannt gefühlt hast oder unter Stimmungsschwankungen gelitten hast, können diese Gefühle allmählich nachlassen.",
+        "third": "Auch körperliche Beschwerden wirken sich auf deine Stimmung aus. Unterleibskrämpfe, Müdigkeit oder eine schlecht geschlafene Nacht können dazu führen, dass sich selbst ein gewöhnlicher Arbeitstag anstrengender anfühlt als sonst.",
+        "fourth": "Wenn du dich auch nach deiner Periode niedergeschlagen fühlst, solltest du das nicht automatisch auf deine Hormone zurückführen. Depressionen und Angststörungen können ähnliche Beschwerden wie PMS verursachen. Hält deine Niedergeschlagenheit an oder beeinträchtigt sie deinen Alltag, solltest du ärztlichen Rat einholen."
       }
     },
-    "support": {
-      "title": "Unterstützung suchen, wenn du sie brauchst",
+    "follicular-mood": {
+      "title": "Follikelphase: Wie verändert sich deine Stimmung?",
       "paragraphs": {
-        "first": "Wenn Stimmungssymptome belasten, anhalten oder den Alltag stören, sprich mit qualifiziertem Fachpersonal. Nimm hilfreiche Notizen mit.",
-        "second": "Warte nicht auf ein langes Tagebuch. Aufzeichnungen können ein Gespräch unterstützen, sind aber keine Voraussetzung für Hilfe."
+        "first": "Während der Follikelphase bemerken manche Menschen eine bessere Stimmung, mehr Energie oder zunehmende Motivation, insbesondere nach dem Ende ihrer Periode. Wissenschaftliche Belege für bestimmte emotionale Veränderungen in dieser Zyklusphase sind jedoch begrenzt.",
+        "second": "Laut Cleveland Clinic steigt der Östrogenspiegel während der Follikelphase an. Diese beginnt bereits am ersten Tag deiner Periode und endet mit dem Eisprung. Die hormonellen Veränderungen können dein Wohlbefinden beeinflussen, sind aber nur einer von mehreren möglichen Faktoren.",
+        "third": "Wenn PMS-Beschwerden und Regelschmerzen nachlassen, fallen dir alltägliche Aufgaben möglicherweise wieder leichter. Vielleicht hast du mehr Lust auf Sport oder darauf, dich mit Freunden zu treffen.",
+        "fourth": "Du kannst dich während dieser Phase aber genauso gut müde, angespannt oder niedergeschlagen fühlen. Wenn deine Stimmung nach der Periode nicht besser wird, musst du dich nicht zu mehr Aktivität zwingen, nur weil du dich gerade in der Follikelphase befindest."
+      }
+    },
+    "ovulation-mood": {
+      "title": "Eisprung und Stimmung: Wie fühlst du dich während der Ovulationsphase?",
+      "paragraphs": {
+        "first": "Rund um den Eisprung bemerken manche Menschen eine bessere Stimmung, mehr Selbstvertrauen oder mehr Lust auf soziale Kontakte. Der Zusammenhang zwischen dem Eisprung und bestimmten emotionalen Veränderungen ist allerdings nur begrenzt wissenschaftlich belegt.",
+        "second": "Laut Cleveland Clinic findet der Eisprung bei einem 28-Tage-Zyklus ungefähr am 14. Zyklustag statt. Ein plötzlicher Anstieg des luteinisierenden Hormons (LH) löst die Freisetzung einer Eizelle aus. Der genaue Zeitpunkt kann von Zyklus zu Zyklus variieren.",
+        "third": "Vielleicht hast du um diese Zeit besonders viel Lust, etwas mit Freunden zu unternehmen oder eine neue Aufgabe bei der Arbeit anzugehen. Du kannst dich aber auch gereizt, ängstlich oder niedergeschlagen fühlen. An deiner Stimmung allein lässt sich nicht erkennen, ob du gerade einen Eisprung hast.",
+        "fourth": "Wenn dir emotionale Veränderungen in der Zyklusmitte auffallen, notiere sie zusammen mit deiner Schlafqualität und deinem Stresslevel. Nach einigen Monaten erkennst du möglicherweise ein persönliches Muster."
+      }
+    },
+    "luteal-mood": {
+      "title": "Lutealphase: Stimmungsschwankungen und PMS vor der Periode",
+      "paragraphs": {
+        "first": "Während der Lutealphase können Stimmungsschwankungen, Reizbarkeit, innere Unruhe oder Traurigkeit auftreten, besonders in den Tagen vor deiner Periode. Solche emotionalen Veränderungen können zum prämenstruellen Syndrom (PMS) gehören.",
+        "second": "Nach dem Eisprung steigt der Progesteronspiegel zunächst an. Vor der nächsten Periode sinken sowohl Progesteron als auch Östrogen. Diese hormonellen Schwankungen können zu PMS beitragen, wobei die genaue Ursache bislang nicht vollständig geklärt ist.",
+        "third": "Laut dem US Office on Women's Health erleben bis zu drei von vier Frauen irgendwann PMS. Bei den meisten sind die Beschwerden leicht ausgeprägt. Zu den möglichen emotionalen und verhaltensbezogenen Symptomen gehören:"
+      },
+      "items": {
+        "irritability": "Du bist schneller gereizt oder frustriert als sonst.",
+        "anxiety": "Du fühlst dich innerlich angespannt oder ängstlich.",
+        "sadness": "Du bist traurig oder musst schneller weinen.",
+        "mood-swings": "Deine Stimmung verändert sich plötzlich.",
+        "fatigue": "Du bist ungewöhnlich müde oder dein Schlaf verändert sich.",
+        "concentration": "Es fällt dir schwer, dich auf alltägliche Aufgaben zu konzentrieren.",
+        "appetite": "Dein Appetit verändert sich oder du hast Heißhunger.",
+        "sex-drive": "Du hast weniger Lust auf Sex."
+      },
+      "note": "PMS-Beschwerden beginnen typischerweise ein bis zwei Wochen vor der Periode und lassen innerhalb weniger Tage nach Beginn der Regelblutung nach."
+    },
+    "pmdd": {
+      "title": "Wenn Stimmungsschwankungen mehr als PMS sind: Was ist PMDS?",
+      "paragraphs": {
+        "first": "Wenn emotionale Beschwerden vor deiner Periode so ausgeprägt sind, dass sie deinen Alltag erheblich beeinträchtigen, kann mehr als gewöhnliches PMS dahinterstecken. Die prämenstruelle dysphorische Störung (PMDS, englisch PMDD) ist eine schwerere Form von PMS.",
+        "second": "Laut dem US Office on Women's Health betrifft PMDS weniger als 5 Prozent der Frauen im gebärfähigen Alter. Starke emotionale Beschwerden können es erschweren, den Arbeitsalltag zu bewältigen, Beziehungen zu pflegen oder Freude an alltäglichen Aktivitäten zu haben.",
+        "third": "Depressionen und Angststörungen können ähnliche Symptome wie PMS verursachen und sich vor oder während der Periode verstärken. Wenn du dich regelmäßig nach deiner Periode niedergeschlagen fühlst oder während des gesamten Zyklus emotional belastet bist, solltest du nicht ausschließlich deine Hormone dafür verantwortlich machen.",
+        "fourth": "Hole ärztlichen Rat ein, wenn dich deine Beschwerden belasten oder deinen Alltag beeinträchtigen. Aufzeichnungen über deine Stimmung und deine Symptome aus mehreren Monaten können beim Arztgespräch hilfreich sein."
+      },
+      "note": "Wenn du dich sehr niedergeschlagen oder hoffnungslos fühlst oder Gedanken hast, dir selbst etwas anzutun, suche sofort ärztliche Hilfe oder wende dich an einen örtlichen Notfall- oder Krisendienst."
+    },
+    "what-helps": {
+      "title": "Was hilft gegen Stimmungsschwankungen im Zyklus?",
+      "paragraphs": {
+        "first": "Regelmäßige Bewegung, ausreichend Schlaf, eine ausgewogene Ernährung und ein bewusster Umgang mit Stress können helfen, PMS-bedingte Stimmungsschwankungen zu lindern. Diese Gewohnheiten lassen sich am besten während des gesamten Zyklus pflegen und nicht erst kurz vor der Periode.",
+        "second": "Das US Office on Women's Health empfiehlt folgende Maßnahmen, um prämenstruelle Beschwerden zu lindern:"
+      },
+      "items": {
+        "exercise": "Bewege dich regelmäßig. Auch ein zügiger Spaziergang in der Mittagspause zählt als Ausdauerbewegung.",
+        "nutrition": "Ernähre dich ausgewogen und versuche, in den zwei Wochen vor deiner Periode weniger Koffein, Salz und Zucker zu dir zu nehmen.",
+        "sleep": "Versuche, jede Nacht ungefähr 8 Stunden zu schlafen.",
+        "stress-management": "Nimm dir Zeit für Aktivitäten, die dir beim Stressabbau helfen, etwa Tagebuchschreiben, Yoga oder Meditation.",
+        "social-support": "Sprich mit einer vertrauten Person, wenn dir gerade alles zu viel wird.",
+        "smoking": "Verzichte auf das Rauchen."
+      },
+      "note": "Wenn deine Stimmungsschwankungen dich trotz dieser Maßnahmen weiterhin belasten oder deinen Alltag beeinträchtigen, sprich mit einer Ärztin oder einem Arzt über deine Beschwerden."
+    },
+    "track-your-moods": {
+      "title": "So kannst du deine Stimmung im Menstruationszyklus dokumentieren",
+      "paragraphs": {
+        "first": "Wenn du deine Stimmung über mehrere Monate zusammen mit deinem Menstruationszyklus dokumentierst, kannst du wiederkehrende emotionale Veränderungen leichter erkennen. So fällt dir möglicherweise auch auf, welche Stimmungsschwankungen unabhängig von deiner Periode auftreten.",
+        "second": "Notiere möglichst jeden Tag, wie du dich fühlst, auch wenn nichts Besonderes passiert ist. Halte deine Periodendaten, emotionale Beschwerden, deine Schlafqualität und besonders stressige Erlebnisse fest. Dafür reichen schon ein paar Minuten am Abend.",
+        "third": "Mit Mochi kannst du deine Stimmung und deine Symptome zusammen mit deinen Periodendaten erfassen. Nach einigen Zyklen bemerkst du vielleicht, dass du vor deiner Periode häufiger gereizt bist oder sich deine Stimmung mit Beginn der Blutung verbessert.",
+        "fourth": "Mochi kann weder PMS noch PMDS, Depressionen oder Angststörungen diagnostizieren. Wenn dich deine emotionalen Beschwerden im Alltag belasten, kannst du deine Aufzeichnungen zu einem Arzttermin mitnehmen, um deine Erfahrungen besser zu beschreiben."
       }
     }
   },
   "faq": {
-    "everyone": {
-      "question": "Hat jeder vor der Periode Stimmungsschwankungen?",
-      "answer": "Nein. Prämenstruelle Symptome unterscheiden sich und können sich mit der Zeit verändern."
+    "phase-mood": {
+      "question": "Wie verändert sich die Stimmung in den einzelnen Zyklusphasen?",
+      "answer": "Manche Menschen empfinden während der Menstruation Erleichterung, erleben in der Follikelphase eine bessere Stimmung, fühlen sich rund um den Eisprung selbstbewusster und bemerken während der Lutealphase vermehrt Stimmungsschwankungen. Wissenschaftliche Belege für bestimmte Stimmungen während der Follikelphase und des Eisprungs sind jedoch begrenzt, und die emotionalen Veränderungen sind individuell verschieden."
     },
-    "diagnosis": {
-      "question": "Kann Stimmungstracking PMS oder PMDS diagnostizieren?",
-      "answer": "Nein. Es kann Zeitpunkt und Auswirkungen verdeutlichen, ist aber kein diagnostischer Test."
+    "luteal": {
+      "question": "Warum verändert sich meine Stimmung in der Lutealphase?",
+      "answer": "Stimmungsschwankungen während der Lutealphase können mit Veränderungen der Östrogen- und Progesteronspiegel zusammenhängen, wobei die genaue Ursache von PMS nicht vollständig geklärt ist. In den ein bis zwei Wochen vor deiner Periode kannst du beispielsweise Reizbarkeit, innere Unruhe oder Traurigkeit bemerken."
     },
-    "daily": {
-      "question": "Muss ich meine Stimmung täglich eintragen?",
-      "answer": "Nein. Wähle eine hilfreiche Routine. Unterschiedliche Tage ergänzen das Bild; perfekte Aufzeichnungen sind keine Voraussetzung für Unterstützung."
+    "after-period": {
+      "question": "Warum bin ich nach meiner Periode niedergeschlagen?",
+      "answer": "Niedergeschlagenheit nach der Periode kann mit Müdigkeit, Schlafmangel oder Stress zusammenhängen und ist nicht zwangsläufig hormonell bedingt. PMS-Beschwerden lassen normalerweise innerhalb weniger Tage nach Beginn der Periode nach. Wenn deine Niedergeschlagenheit anhält oder deinen Alltag beeinträchtigt, solltest du ärztlichen Rat einholen."
+    },
+    "ovulation": {
+      "question": "Kann der Eisprung Stimmungsschwankungen verursachen?",
+      "answer": "Manche Menschen bemerken emotionale Veränderungen rund um den Eisprung, allerdings ist der Zusammenhang zwischen dieser Zyklusphase und bestimmten Stimmungsschwankungen nur begrenzt wissenschaftlich belegt. An deiner Stimmung allein kannst du nicht erkennen, ob du gerade einen Eisprung hast."
+    },
+    "pms-or-more": {
+      "question": "Sind starke Stimmungsschwankungen vor der Periode noch PMS?",
+      "answer": "PMS-Beschwerden beginnen typischerweise nach dem Eisprung und lassen innerhalb weniger Tage nach Beginn der Periode nach, während besonders schwere Beschwerden, die deinen Alltag beeinträchtigen, auf PMDS oder eine andere Erkrankung hinweisen können. Hole ärztlichen Rat ein, wenn deine Beschwerden anhalten oder dich im Alltag einschränken. Wenn du dich sehr niedergeschlagen oder hoffnungslos fühlst oder Gedanken hast, dir selbst etwas anzutun, suche sofort ärztliche Hilfe oder wende dich an einen örtlichen Notfall- oder Krisendienst."
+    },
+    "help": {
+      "question": "Was hilft gegen PMS-Stimmungsschwankungen vor der Periode?",
+      "answer": "Regelmäßige Ausdauerbewegung, ungefähr 8 Stunden Schlaf pro Nacht, eine ausgewogene Ernährung und Stressabbau können PMS-Beschwerden lindern. Das US Office on Women's Health empfiehlt außerdem, in den zwei Wochen vor der Periode weniger Koffein, Salz und Zucker zu konsumieren. Wenn du deine Stimmung über mehrere Monate dokumentierst, kannst du mögliche wiederkehrende Muster erkennen."
     }
   }
 }

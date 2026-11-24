@@ -1,6 +1,8 @@
 import { resolveSiteOrigin } from "./site-url";
 
 export const SITE_NAME = "Mochi";
+/** Other names people search for: the domain spelling and the descriptive app name. */
+export const SITE_ALTERNATE_NAMES = ["Mochiii", "Mochi period tracker"];
 
 /** Public origin used by metadata, JSON-LD and the sitemap. Required in production builds. */
 export const PUBLIC_SITE_URL = resolveSiteOrigin({

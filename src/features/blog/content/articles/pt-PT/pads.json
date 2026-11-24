@@ -1,82 +1,163 @@
 {
-  "title": "De quanto em quanto tempo deves trocar o penso higiénico?",
-  "description": "Saiba de quanto em quanto tempo mudar o penso higiénico, quando mudar mais cedo e o que verificar à noite ou com pensos diários, com fontes dos CDC e ACOG.",
-  "imageAlt": "Mochi rosa junto de um penso higiénico e um despertador roxo",
-  "intro": "Troca o penso de poucas em poucas horas, antes se estiver cheio, húmido ou desconfortável. Segue a embalagem e adapta ao teu fluxo. Um lembrete ajuda a verificar, mas podes trocar antes de tocar.",
+  "title": "De quanto em quanto tempo trocar o penso? 4 a 8 horas",
+  "description": "Descobre de quanto em quanto tempo trocar o penso higiénico, quanto tempo o podes usar durante a noite e quando deves trocá-lo se tiveres um fluxo intenso.",
+  "imageAlt": "Mochi cor-de-rosa ao lado de um penso higiénico e de um despertador roxo",
+  "intro": "Deves trocar o penso higiénico pelo menos a cada 4 a 8 horas, ou mais cedo se necessário, segundo o Colégio Americano de Obstetras e Ginecologistas (ACOG). Os Centros de Controlo e Prevenção de Doenças dos Estados Unidos (CDC) recomendam trocar o penso de poucas em poucas horas, mesmo quando o fluxo menstrual é ligeiro. A frequência das trocas depende da intensidade do teu período e do tipo de penso que utilizas.",
   "sections": {
-    "day-pads": {
-      "title": "Pensos de dia",
+    "how-often": {
+      "title": "De quanto em quanto tempo trocar o penso higiénico?",
       "paragraphs": {
-        "first": "O CDC recomenda trocar de poucas em poucas horas, mesmo com fluxo ligeiro. O ACOG indica pelo menos a cada 4 a 8 horas, ou antes se estiver cheio, húmido ou desconfortável. São orientações gerais, não um motivo para esperar se precisas de um penso limpo.",
-        "second": "Com fluxo intenso, verifica mais vezes. Escolhe a absorção adequada e segue a embalagem."
+        "first": "Segundo o ACOG, deves trocar o penso higiénico pelo menos a cada 4 a 8 horas, ou mais cedo se estiver cheio, húmido ou te causar desconforto. Os CDC recomendam trocá-lo de poucas em poucas horas, mesmo nos dias em que tens menos fluxo.",
+        "second": "O tempo durante o qual podes usar o mesmo penso depende da intensidade do fluxo menstrual e da capacidade de absorção do produto. Nos dias de fluxo mais abundante, vais precisar de o trocar com maior frequência. Se passas várias horas na escola, na faculdade ou no trabalho, aproveita as idas à casa de banho para verificar o estado do penso."
       },
       "table": {
-        "caption": "Guia prático de pensos higiénicos e diários",
+        "caption": "Quando trocar o penso higiénico consoante o fluxo menstrual e o tipo de proteção",
         "columns": [
-          "Produto",
+          "Situação",
           "Quando trocar",
-          "Tem em conta"
+          "Conselho prático"
         ],
         "rows": [
           [
-            "Penso de dia",
+            "Fluxo ligeiro",
             "De poucas em poucas horas",
-            "Antes em caso de fluxo intenso ou desconforto."
+            "Troca o penso mesmo que pareça praticamente limpo."
           ],
           [
-            "Penso de noite",
-            "Conforme a embalagem",
-            "Coloca um limpo ao deitar e troca ao acordar, ou antes se necessário."
+            "Fluxo moderado",
+            "A cada 4 a 8 horas ou mais cedo",
+            "Aproveita as idas à casa de banho para trocar o penso."
+          ],
+          [
+            "Fluxo abundante",
+            "Sempre que necessário",
+            "Não esperes que o penso fique completamente ensopado."
+          ],
+          [
+            "Durante a noite",
+            "De acordo com as indicações do fabricante",
+            "Coloca um penso limpo antes de te deitares."
           ],
           [
             "Penso diário",
-            "Regularmente e quando estiver húmido",
-            "Para fluxo ligeiro ou pequenas perdas."
+            "De poucas em poucas horas ou assim que estiver húmido",
+            "Utiliza um penso higiénico se o fluxo menstrual aumentar."
           ]
         ]
+      },
+      "note": "Não precisas de esperar que o penso higiénico esteja cheio para o trocares."
+    },
+    "heavy-flow": {
+      "title": "Quando trocar o penso higiénico se tiveres um fluxo abundante?",
+      "paragraphs": {
+        "first": "Se tens um fluxo menstrual abundante, troca o penso higiénico sempre que necessário, antes de ficar completamente ensopado ou de haver perdas de sangue para a roupa. Se precisas frequentemente de trocar o penso a cada 1 a 2 horas, o serviço de saúde britânico (NHS) recomenda consultares um médico.",
+        "second": "A intensidade do fluxo pode variar ao longo do período. É possível que precises de mais pensos em determinados dias do que noutros. Se vais passar muitas horas fora de casa, leva alguns pensos suplentes na mala ou na mochila.",
+        "third": "Segundo o NHS, existem outros sinais que justificam uma consulta médica:"
+      },
+      "items": {
+        "double-protection": "Precisas de utilizar dois produtos menstruais em simultâneo, como um penso higiénico e um tampão.",
+        "duration": "O teu período dura mais de 7 dias.",
+        "clots": "Tens coágulos de sangue com mais de cerca de 2,5 cm.",
+        "leaks": "O sangue atravessa o penso e mancha a roupa ou os lençóis.",
+        "daily-activities": "Deixas de realizar atividades do dia a dia por causa do período.",
+        "fatigue": "Sentes frequentemente cansaço ou falta de ar."
+      },
+      "note": "Consulta também um médico se o teu período se tornar subitamente mais abundante ou muito doloroso, mesmo que não precises de trocar o penso com tanta frequência."
+    },
+    "pads-per-day": {
+      "title": "Quantos pensos usar por dia durante o período?",
+      "paragraphs": {
+        "first": "Utilizar entre 3 e 6 pensos higiénicos por dia é uma estimativa baseada numa troca a cada 4 a 8 horas, ao longo de 24 horas. Podes precisar de mais pensos se tiveres um fluxo abundante ou preferires trocá-los com maior frequência.",
+        "second": "Não existe um número fixo de pensos que devas utilizar diariamente durante o período. A quantidade depende da intensidade do fluxo, da capacidade de absorção dos pensos e do teu conforto.",
+        "third": "É possível que gastes mais pensos nos primeiros dias do período do que nos últimos. Se tens uma viagem longa de comboio ou um dia inteiro de trabalho pela frente, guarda mais alguns pensos na mala.",
+        "fourth": "Mesmo quando tens pouco fluxo, não esperes que o penso fique cheio. Os CDC recomendam trocá-lo de poucas em poucas horas, independentemente da intensidade da menstruação."
       }
     },
-    "overnight-pads": {
-      "title": "Pensos de noite",
+    "overnight": {
+      "title": "Durante quanto tempo podes usar um penso higiénico à noite?",
       "paragraphs": {
-        "first": "Escolhe um produto para a noite e respeita o tempo indicado. Coloca um limpo antes de dormir e troca ao acordar, ou antes se estiver cheio ou incomodar.",
-        "second": "A indicação noturno não garante o mesmo tempo para todos os produtos. Se um sangramento intenso te obriga habitualmente a trocas muito frequentes, procura aconselhamento médico."
+        "first": "O tempo durante o qual podes usar um penso noturno depende do teu fluxo menstrual e das indicações do fabricante. Não existe um limite de utilização universal para os pensos de noite, uma vez que as suas características variam de marca para marca.",
+        "second": "Coloca um penso limpo imediatamente antes de te deitares e troca-o quando acordares. Se gostas de dormir até mais tarde ao domingo, tem em atenção o tempo de utilização recomendado na embalagem.",
+        "third": "Usar o mesmo penso higiénico durante 12 horas não é um hábito recomendado, mesmo quando o fluxo é ligeiro. O ACOG aconselha a troca pelo menos a cada 4 a 8 horas.",
+        "fourth": "Há quem utilize dois pensos ligeiramente sobrepostos para cobrir uma área maior da roupa interior e evitar manchas durante a noite. Um penso noturno mais comprido pode ser mais confortável. Se precisas regularmente de utilizar dois produtos menstruais em simultâneo para conter o fluxo, o NHS recomenda consultares um médico."
       }
+    },
+    "full-pad-signs": {
+      "title": "Como saber se o penso higiénico está cheio ou precisa de ser trocado?",
+      "paragraphs": {
+        "first": "O penso higiénico está provavelmente cheio quando a maior parte da superfície absorvente está ensopada em sangue ou quando o sangue chega às extremidades. Convém, no entanto, trocá-lo antes de chegar a esse ponto, sobretudo se sentires humidade ou desconforto.",
+        "second": "Estes cinco sinais ajudam-te a perceber quando está na altura de colocar um penso limpo:"
+      },
+      "items": {
+        "saturation": "A maior parte da superfície absorvente está ensopada em sangue.",
+        "edges": "O sangue começa a chegar às extremidades do penso.",
+        "wetness": "Sentes humidade junto à pele.",
+        "discomfort": "Sentes desconforto ou fricção quando caminhas ou te movimentas.",
+        "elapsed-time": "Já passaram várias horas desde a última troca, mesmo que o penso ainda não esteja cheio."
+      },
+      "note": "Nos dias de fluxo mais abundante, verifica o penso sempre que fores à casa de banho. Nem todos os pensos têm a mesma capacidade de absorção, pelo que o tempo de utilização, por si só, não permite saber se estão cheios."
     },
     "liners": {
-      "title": "Pensos diários",
+      "title": "De quanto em quanto tempo trocar o penso diário?",
       "paragraphs": {
-        "first": "Mais finos, servem para fluxo ligeiro ou pequenas perdas. Troca regularmente e quando estiverem húmidos ou desconfortáveis. Para maior sangramento, usa um produto adequado."
+        "first": "Regra geral, deves trocar o penso diário de poucas em poucas horas, ou mais cedo se estiver húmido ou te causar desconforto. Consulta também as indicações da embalagem, pois o tempo de utilização pode variar consoante o produto.",
+        "second": "Os pensos diários são mais finos e menos absorventes do que os pensos higiénicos convencionais. São úteis para absorver o corrimento vaginal natural, pequenas perdas de sangue ou o fluxo ligeiro dos últimos dias do período.",
+        "third": "Mesmo que o penso diário pareça limpo, pode acumular humidade ao longo do dia. Trocá-lo durante a pausa para almoço ou depois de fazeres exercício físico pode ajudar-te a sentir mais conforto.",
+        "fourth": "Se o fluxo menstrual aumentar e o penso diário ficar ensopado rapidamente, opta por um penso higiénico com uma capacidade de absorção adequada."
       }
     },
-    "signs-to-change": {
-      "title": "Sinais de que está na hora de trocar",
+    "comfort-and-skin": {
+      "title": "Porque deves trocar o penso higiénico regularmente?",
+      "paragraphs": {
+        "first": "Trocar o penso higiénico regularmente ajuda a evitar manchas na roupa, reduzir os odores desagradáveis e manter o conforto. Usar um penso húmido durante demasiado tempo pode causar irritação na pele devido à humidade e à fricção.",
+        "second": "Depois de várias horas à secretária, de uma caminhada longa ou de uma viagem de carro, podes começar a sentir algum desconforto. Colocar um penso limpo pode fazer bastante diferença, mesmo que o anterior ainda não esteja cheio.",
+        "third": "Há pequenos hábitos que podem facilitar as trocas de penso durante o período, sobretudo quando estás fora de casa."
+      },
       "items": {
-        "full": "O penso está cheio, húmido ou desconfortável.",
-        "leaks": "Há uma fuga ou o produto saiu do lugar.",
-        "time": "Chegou a altura indicada na embalagem, mesmo com fluxo ligeiro."
+        "spare-pads": "Guarda alguns pensos suplentes numa pequena bolsa dentro da mala ou da mochila.",
+        "underwear": "Escolhe roupa interior de tecido respirável que mantenha o penso bem colocado.",
+        "bathroom-breaks": "Aproveita as idas à casa de banho para verificar o penso e trocá-lo, se necessário.",
+        "comfort": "Troca o penso mais cedo se sentires humidade ou fricção junto à pele."
       }
     },
     "mochi-reminder": {
-      "title": "Deixa o Mochi lembrar-te",
+      "title": "Como te lembrares de trocar o penso higiénico com o Mochi",
       "paragraphs": {
-        "first": "O lembrete opcional mostra uma contagem decrescente na Dynamic Island e no ecrã bloqueado. As funcionalidades publicadas incluem penso de dia, de noite e diário, com uma duração à tua escolha.",
-        "second": "O temporizador convida a verificar o produto. Não mede quanto está cheio nem confirma que uma duração é adequada. Troca antes sempre que precisares."
+        "first": "O Mochi disponibiliza um lembrete opcional que te ajuda a saber há quanto tempo estás a usar o mesmo penso higiénico. Uma contagem decrescente aparece diretamente no ecrã bloqueado e na Dynamic Island do teu iPhone, sem precisares de abrir a aplicação.",
+        "second": "Podes escolher entre intervalos predefinidos para pensos higiénicos de dia, pensos noturnos e pensos diários. Também podes definir uma duração personalizada, tendo em conta o teu fluxo menstrual e as indicações do fabricante.",
+        "third": "É especialmente útil quando tens muito trabalho, estás a estudar para um exame ou passas a tarde com as amigas. Ficas com menos uma preocupação no teu dia a dia.",
+        "fourth": "O temporizador não consegue detetar se o penso está cheio. Se sentires humidade ou desconforto, troca-o logo, mesmo que a contagem decrescente ainda não tenha terminado."
       }
     }
   },
   "faq": {
     "hours": {
-      "question": "Posso manter o penso até acabar o temporizador?",
-      "answer": "Troca antes se estiver cheio, húmido ou desconfortável. Segue as instruções. O temporizador não avalia o fluxo nem o estado do produto."
+      "question": "De quantas em quantas horas trocar o penso higiénico?",
+      "answer": "O ACOG recomenda trocar o penso higiénico pelo menos a cada 4 a 8 horas, enquanto os CDC aconselham uma troca de poucas em poucas horas. Troca-o mais cedo se estiver cheio, húmido ou te causar desconforto."
     },
     "light": {
-      "question": "Preciso de trocar mesmo com fluxo ligeiro?",
-      "answer": "Sim. O CDC recomenda trocar de poucas em poucas horas, mesmo com fluxo ligeiro, e mais frequentemente com fluxo intenso."
+      "question": "De quanto em quanto tempo trocar o penso quando o fluxo é ligeiro?",
+      "answer": "Deves trocar o penso higiénico de poucas em poucas horas, mesmo quando tens pouco fluxo menstrual. Não precisas de esperar que esteja cheio ou visivelmente ensopado para colocares um penso limpo."
     },
     "night": {
-      "question": "Todos os pensos noturnos têm o mesmo tempo de uso?",
-      "answer": "Não. Escolhe um produto para a noite e segue a embalagem. Troca antes se estiver cheio ou desconfortável."
+      "question": "Quantas horas se pode usar um penso noturno?",
+      "answer": "Não existe um tempo máximo de utilização universal para os pensos noturnos, pois as recomendações variam consoante o produto. Coloca um penso limpo antes de te deitares e troca-o quando acordares, respeitando o tempo de utilização indicado pelo fabricante."
+    },
+    "twelve-hours": {
+      "question": "Posso usar o mesmo penso higiénico durante 12 horas?",
+      "answer": "Não é recomendável usar regularmente o mesmo penso higiénico durante 12 horas, mesmo que tenhas pouco fluxo. O ACOG aconselha a troca pelo menos a cada 4 a 8 horas, ou mais cedo se necessário."
+    },
+    "per-day": {
+      "question": "Quantos pensos higiénicos é normal usar por dia?",
+      "answer": "Entre 3 e 6 pensos higiénicos por dia é uma estimativa baseada numa troca a cada 4 a 8 horas, durante 24 horas. Podes precisar de mais, dependendo da intensidade do fluxo menstrual, da capacidade de absorção dos pensos e do teu conforto."
+    },
+    "two-pads": {
+      "question": "Posso usar dois pensos higiénicos durante a noite?",
+      "answer": "Sim, podes colocar dois pensos ligeiramente sobrepostos para cobrir uma área maior da roupa interior, embora um penso noturno mais comprido possa ser mais confortável. Se precisas regularmente de utilizar dois produtos menstruais em simultâneo para conter o fluxo, o NHS recomenda consultares um médico."
+    },
+    "liner": {
+      "question": "De quanto em quanto tempo se deve trocar o penso diário?",
+      "answer": "Troca o penso diário de poucas em poucas horas, ou mais cedo se sentires humidade ou desconforto. Respeita as indicações da embalagem e utiliza um penso higiénico se o fluxo menstrual aumentar."
     }
   }
 }

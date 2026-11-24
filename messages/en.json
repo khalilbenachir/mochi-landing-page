@@ -304,6 +304,7 @@
     "navLabel": "Footer navigation",
     "privacy": "Privacy policy",
     "terms": "Terms",
+    "calculator": "Period calculator",
     "contact": "Contact",
     "disclaimer": "Mochi is not a contraceptive and doesn’t replace medical advice."
   },
@@ -523,6 +524,7 @@
     "byline": "By Mochi",
     "publisher": "Mochi",
     "published": "Published",
+    "updated": "Updated",
     "readTime": "{minutes} min read",
     "back": "All articles",
     "onThisPage": "In this article",
@@ -664,5 +666,64 @@
     "accept": "Accept",
     "decline": "Decline",
     "settings": "Cookie settings"
+  },
+  "PeriodCalculator": {
+    "metadataTitle": "Period Calculator: Predict Your Next Period",
+    "metadataDescription": "Use our free period calculator to estimate your next period, ovulation and fertile window. No account needed, and your dates stay private on your device.",
+    "eyebrow": "Free tool",
+    "title": "Next period calculator",
+    "intro": "Calculate when your next period is likely to start, along with your estimated ovulation date and fertile window. Your results are estimates based on your usual cycle length, not guaranteed dates.",
+    "form": {
+      "legend": "Tell us about your cycle",
+      "lastPeriod": "First day of your last period",
+      "cycleLength": "Average cycle length (days)",
+      "cycleHint": "Adult cycles typically last 24 to 38 days. Not sure? Start with 28.",
+      "periodLength": "Average period length (days)",
+      "periodHint": "Enter how many days your menstrual bleeding usually lasts.",
+      "submit": "Calculate my next period",
+      "reset": "Start over"
+    },
+    "results": {
+      "heading": "Your estimated cycle dates",
+      "empty": "Enter your last period date and cycle details to see your estimated upcoming periods.",
+      "nextPeriod": "Your next period",
+      "upcoming": "Your upcoming periods",
+      "periodRange": "{start} to {end}",
+      "ovulation": "Estimated ovulation",
+      "fertile": "Estimated fertile window",
+      "fertileRange": "{start} to {end}",
+      "daysUntil": "{days, plural, =0 {Today} one {In # day} other {In # days}}"
+    },
+    "disclaimer": "These dates are estimates and may differ from your actual cycle. Do not use this calculator as a method of contraception or to diagnose a health condition.",
+    "how": {
+      "title": "How the calculator works",
+      "first": "Your next period date is calculated by adding your average menstrual cycle length to the first day of your last period. For example, if your last period started on 1 March and your cycle usually lasts 28 days, your next period is estimated to start on 29 March. The calculator repeats this calculation for your upcoming cycles and uses your usual period length to estimate when each period may end.",
+      "second": "Your estimated ovulation date is calculated by counting back 14 days from the predicted start of your next period. According to Cleveland Clinic, the luteal phase, which follows ovulation, lasts about 14 days. Your estimated fertile window includes the five days before this estimated ovulation date and the day itself. Ovulation can happen earlier or later than predicted, so these dates cannot confirm when you are fertile.",
+      "third": "A 28-day cycle is a useful starting point, but your own cycle may be different. The US Office on Women's Health gives a normal adult cycle range of 24 to 38 days, while Cleveland Clinic gives a range of 21 to about 35 days. Using your actual average cycle length makes the calculation more personal. Everything is calculated directly in your browser. Your period dates are never stored or sent to a server."
+    },
+    "faq": {
+      "title": "Questions about calculating your next period",
+      "next": {
+        "question": "How do I calculate my next period?",
+        "answer": "Add your average cycle length to the first day of your last period to estimate when your next period will start. Your cycle length is the number of days from the first day of one period to the first day of the next."
+      },
+      "ovulation": {
+        "question": "How do I calculate my ovulation date and fertile window?",
+        "answer": "Count back about 14 days from your estimated next period date to calculate your likely ovulation date. The estimated fertile window includes the five days before ovulation and the estimated ovulation day itself. These dates cannot confirm ovulation and should not be used as contraception."
+      },
+      "accuracy": {
+        "question": "How accurate is a next period calculator?",
+        "answer": "A period calculator provides an estimate based on your usual cycle length, rather than an exact prediction. Estimates may be less reliable during adolescence, after a recent pregnancy, while breastfeeding, when using hormonal contraception or during periods of stress. If your period is late and you could be pregnant, take a pregnancy test and speak to a doctor or nurse."
+      },
+      "irregular": {
+        "question": "Can I calculate my next period if I have irregular cycles?",
+        "answer": "Yes, you can use your average cycle length to estimate your next period, but the result may be less reliable if your cycles are irregular. Tracking your actual period dates over several months can help you understand your usual pattern. Speak to a doctor or nurse if your cycles are often shorter than 24 days or longer than 38 days."
+      }
+    },
+    "cta": {
+      "title": "Get period predictions based on your own cycle",
+      "body": "Meet Mochi, your free period tracker for iPhone. Mochi learns from the period dates you log to personalise your predictions over time. It works offline, and you don't need to create an account.",
+      "button": "Get Mochi for free"
+    }
   }
 }

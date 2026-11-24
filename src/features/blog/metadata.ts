@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { PUBLIC_SITE_URL, SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
 import { LOCALE_META } from "@/i18n/routing";
-import type { BlogPost } from "./content/catalog";
+import { postModifiedAt, type BlogPost } from "./content/catalog";
 import { getArticleCopy } from "./content/copy";
 import { BLOG_LOCALES, blogPath, blogRoutes, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE, isBlogLocale, type BlogLocale } from "./locales";
 
@@ -47,7 +47,9 @@ function blogMetadata({ locale, segments, title, description, post }: BlogMetada
       siteName: SITE_NAME,
       locale: LOCALE_META[locale].ogLocale,
       ...(images ? { images } : {}),
-      ...(post ? { type: "article" as const, publishedTime: post.publishedAt, authors: [author] } : { type: "website" as const }),
+      ...(post
+        ? { type: "article" as const, publishedTime: post.publishedAt, modifiedTime: postModifiedAt(post), authors: [author] }
+        : { type: "website" as const }),
     },
     twitter: { card: "summary_large_image", title, description, ...(images ? { images: images.map((image) => image.url) } : {}) },
   };
