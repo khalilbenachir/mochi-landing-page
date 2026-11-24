@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import en from "../../messages/en.json";
-import { BLOG_PATHS, BLOG_POSTS, type BlogPost, type BlogPostId } from "../../src/features/blog/content/catalog";
+import { BLOG_PATHS, BLOG_POSTS, postModifiedAt, type BlogPost, type BlogPostId } from "../../src/features/blog/content/catalog";
 import { articleReadingMinutes, getArticleCopy as getLocalizedArticleCopy } from "../../src/features/blog/content/copy";
 import { BLOG_LOCALES, blogLocaleFor, blogPath, EDITORIAL_SLUG, isBlogLocale } from "../../src/features/blog/locales";
 import { localePath, routing } from "../../src/i18n/routing";
@@ -36,7 +36,7 @@ for (const post of BLOG_POSTS) {
     await page.goto(`/blog/${post.slug}`);
     const copy = getArticleCopy(post);
     await expect(page.locator("h1")).toHaveText(copy.title);
-    await expect(page.locator("article time")).toHaveAttribute("datetime", post.publishedAt);
+    await expect(page.locator("article time")).toHaveAttribute("datetime", postModifiedAt(post));
     await expect(page.locator("article header").getByText(en.Blog.readTime.replace("{minutes}", String(articleReadingMinutes(post, "en"))), { exact: true })).toBeVisible();
     await expect(page.getByText(en.Blog.articleNotice, { exact: true })).toBeVisible();
     await expect(page.locator('section[aria-labelledby="related-posts"] article')).toHaveCount(3);
@@ -45,7 +45,7 @@ for (const post of BLOG_POSTS) {
     const article = graph["@graph"].find((node: { "@type": string }) => node["@type"] === "BlogPosting");
     expect(article.headline).toBe(copy.title);
     expect(article.datePublished).toBe(post.publishedAt);
-    expect(article).not.toHaveProperty("dateModified");
+    expect(article.dateModified).toBe(postModifiedAt(post));
     expect(article.author).toEqual({ "@type": "Organization", name: "Mochi", url: `${baseOrigin}/blog/editorial-policy` });
     expect(article.mainEntityOfPage["@id"]).toBe(`${baseOrigin}/blog/${post.slug}`);
     expect(article.isPartOf["@id"]).toBe(`${baseOrigin}/blog#blog`);
