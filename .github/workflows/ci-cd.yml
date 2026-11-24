@@ -78,10 +78,11 @@ jobs:
       - id: deploy
         # The deploy runs on its own line so a failed upload fails the job: wrapped in
         # `echo "url=$(…)"` its exit code was lost and a broken deploy showed green.
-        # Uploads to Vercel can abort transiently, so retry a few times first.
+        # `--archive=tgz` uploads one archive instead of thousands of files (per-file uploads
+        # kept aborting with "Upload aborted"); uploads can still fail transiently, so retry.
         run: |
           for attempt in 1 2 3; do
-            if url=$(vercel deploy --prebuilt); then
+            if url=$(vercel deploy --prebuilt --archive=tgz); then
               echo "url=$url" >> "$GITHUB_OUTPUT"
               exit 0
             fi
@@ -139,10 +140,11 @@ jobs:
       - id: deploy
         # The deploy runs on its own line so a failed upload fails the job: wrapped in
         # `echo "url=$(…)"` its exit code was lost and a broken deploy showed green.
-        # Uploads to Vercel can abort transiently, so retry a few times first.
+        # `--archive=tgz` uploads one archive instead of thousands of files (per-file uploads
+        # kept aborting with "Upload aborted"); uploads can still fail transiently, so retry.
         run: |
           for attempt in 1 2 3; do
-            if url=$(vercel deploy --prebuilt --prod); then
+            if url=$(vercel deploy --prebuilt --prod --archive=tgz); then
               echo "url=$url" >> "$GITHUB_OUTPUT"
               exit 0
             fi
