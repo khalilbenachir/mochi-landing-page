@@ -1,0 +1,18 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-24",
+  "file": "public/blog-art/late-period-mochi.webp",
+  "references": [
+    "public/blog-art/pad-care-mochi.webp"
+  ],
+  "use": "Article hero, blog cards, related reading and generated social cards in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1200,
+    "height": 800,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box, fitted into 1120x740 and centred on a 1200x800 transparent canvas from 1536x1024."
+  },
+  "prompt": "Use the attached image ONLY as the character and style reference: the same pink mochi mascot (rounded drop/dome body, bold darker-pink outline, glossy white highlights, navy eyes, pink cheeks, small mouth, tiny round pink hands), the same cream puffy cushion and the same soft-shaded flat sticker style and palette. Create a NEW scene for a blog article titled \"Late period but not pregnant\". Mochi sits on the cushion with a gently puzzled, thoughtful expression (one small raised curve above an eye, small sideways mouth, calm not worried), one tiny hand on its cheek, looking at a standing desk calendar beside it (simple grid page with a ring binding on top). On the calendar a few days are crossed off with small lavender strokes and one day is circled with a dotted pink ring, still empty. Floating above Mochi: a small soft lavender thought cloud with three dots inside, a tiny cream hourglass and a small pink droplet. Gentle, reassuring, curious mood, not anxious. No numbers, no letters, no words, no question marks, no logos anywhere. Landscape 3:2, Mochi left of centre, calendar right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration."
+}

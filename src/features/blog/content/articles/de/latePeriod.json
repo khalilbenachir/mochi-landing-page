@@ -1,0 +1,154 @@
+{
+  "title": "Periode bleibt aus, aber nicht schwanger? 9 Gründe",
+  "description": "Deine Periode bleibt aus, aber du bist nicht schwanger? Erfahre, welche Ursachen infrage kommen, was ein negativer Test bedeutet und wann du zum Arzt solltest.",
+  "imageAlt": "Mochi, ein kleines rosa Maskottchen, sitzt nachdenklich neben einem Kalender, einer kleinen Gedankenblase und einer Sanduhr",
+  "intro": "Deine Periode kann sich verspäten, auch wenn du nicht schwanger bist. Häufige Gründe dafür sind Stress, Gewichtsveränderungen, körperliche Belastung und hormonelle Schwankungen. Manchmal ist dein Zyklus einfach etwas länger als sonst. Wenn du weißt, was deine Periode verzögern kann, wann ein Schwangerschaftstest sinnvoll ist und wann du ärztlichen Rat einholen solltest, fällt es dir leichter, die nächsten Schritte einzuschätzen.",
+  "sections": {
+    "how-late": {
+      "title": "Ab wann gilt die Periode als verspätet?",
+      "paragraphs": {
+        "first": "Deine Periode gilt als verspätet, wenn sie zum gewohnten Zeitpunkt nicht einsetzt. Laut dem britischen Gesundheitsdienst NHS dauert ein Menstruationszyklus durchschnittlich 28 Tage, kann aber von Natur aus kürzer oder länger sein. Ein Abstand von 21 bis 35 Tagen zwischen dem Beginn zweier Perioden gilt im Allgemeinen als regelmäßig.",
+        "second": "Um herauszufinden, ob deine Periode überfällig ist, zählst du ab dem ersten Tag deiner letzten Periode. Deine Zykluslänge entspricht der Anzahl der Tage zwischen dem ersten Tag deiner letzten und dem ersten Tag deiner nächsten Periode. Wenn dein Zyklus normalerweise 28 Tage dauert und du an Tag 32 noch keine Blutung hast, ist deine Periode drei Tage überfällig.",
+        "third": "Eine verspätete Periode kann auch bedeuten, dass dein Eisprung später als gewöhnlich stattgefunden hat. Laut der Cleveland Clinic dauert die Lutealphase, also die Zeit zwischen dem Eisprung und der nächsten Periode, durchschnittlich etwa 14 Tage. Wenn Stress oder eine Erkrankung deinen Eisprung verzögert, kann auch deine Periode später einsetzen, ohne dass du schwanger bist."
+      }
+    },
+    "pregnancy-first": {
+      "title": "Periode zu spät, Test negativ: Was bedeutet das?",
+      "paragraphs": {
+        "first": "Wenn deine Periode überfällig und dein Schwangerschaftstest negativ ist, kann das bedeuten, dass du nicht schwanger bist. Möglicherweise hast du den Test aber auch zu früh gemacht. Wenn eine Schwangerschaft möglich ist, solltest du zunächst einen Schwangerschaftstest machen, bevor du andere Ursachen für die verspätete Periode in Betracht ziehst.",
+        "second": "Laut NHS sind die meisten Schwangerschaftstests für zu Hause ab dem ersten Tag der ausbleibenden Periode am zuverlässigsten. Wenn dein Zyklus unregelmäßig ist oder du nicht weißt, wann deine nächste Periode einsetzen sollte, mache den Test frühestens 21 Tage nach deinem letzten ungeschützten Geschlechtsverkehr. Du kannst den Urintest zu jeder Tageszeit durchführen.",
+        "third": "Der NHS erklärt, dass ein positives Testergebnis fast immer korrekt ist, während ein negatives Ergebnis weniger zuverlässig ist. Wenn du zu früh testest oder die Gebrauchsanweisung nicht richtig befolgst, kann der Test trotz einer Schwangerschaft negativ ausfallen. Hormonelle Verhütungsmittel, einschließlich der Pille, beeinträchtigen die Funktion eines Schwangerschaftstests nicht."
+      },
+      "note": "Wenn dein Schwangerschaftstest negativ ist und deine Periode weiterhin ausbleibt, warte ein paar Tage und wiederhole den Test. Ist auch der zweite Test negativ und deine Periode noch immer nicht da, empfiehlt der NHS, ärztlichen Rat einzuholen."
+    },
+    "common-reasons": {
+      "title": "Warum bleibt meine Periode aus, obwohl ich nicht schwanger bin?",
+      "paragraphs": {
+        "first": "Wenn du nicht schwanger bist, gehören Stress, Gewichtsveränderungen, übermäßige körperliche Belastung, hormonelle Verhütung und bestimmte Erkrankungen zu den häufigen Ursachen einer verspäteten Periode. Dein Zyklus kann außerdem von Monat zu Monat auf natürliche Weise schwanken, ohne dass ein gesundheitliches Problem dahintersteckt.",
+        "second": "Laut NHS können verspätete oder ausbleibende Perioden viele verschiedene Ursachen haben, von Veränderungen im Alltag bis hin zu hormonellen Störungen. Wenn du überlegst, was sich in letzter Zeit an deiner Gesundheit, deinen Gewohnheiten oder deiner Verhütung verändert hat, kannst du mögliche Gründe besser einschätzen. Anhand der Symptome allein lässt sich die Ursache jedoch nicht sicher feststellen."
+      },
+      "items": {
+        "stress": "Körperlicher oder emotionaler Stress kann deinen Eisprung verzögern, sodass deine Periode später als erwartet einsetzt.",
+        "weight-change": "Eine plötzliche Gewichtsabnahme oder Übergewicht können die Hormone beeinflussen, die deinen Menstruationszyklus regulieren.",
+        "exercise": "Übermäßiges Training kann deinen Menstruationszyklus beeinträchtigen und dazu führen, dass deine Periode verspätet einsetzt oder ganz ausbleibt.",
+        "contraception": "Hormonelle Verhütungsmittel wie die Kombinationspille, die Dreimonatsspritze oder die Hormonspirale können deine Blutungen verändern oder ganz ausbleiben lassen.",
+        "breastfeeding": "Stillen kann die Rückkehr deiner Periode verzögern oder deinen Menstruationszyklus unregelmäßig machen.",
+        "pmos": "Das polyzystische Ovarialsyndrom (PCOS), das der NHS inzwischen als PMOS bezeichnet, kann zu unregelmäßigen, verspäteten oder ausbleibenden Perioden führen.",
+        "thyroid": "Eine Schilddrüsenüberfunktion oder Schilddrüsenunterfunktion kann deinen Menstruationszyklus beeinflussen und deine Periode verzögern oder ausbleiben lassen.",
+        "perimenopause": "Während der Perimenopause, die meist zwischen dem 45. und 55. Lebensjahr beginnt, kann deine Periode unregelmäßig werden.",
+        "normal-variation": "Der Abstand zwischen deinen Perioden kann von Natur aus schwanken, sodass deine Periode gelegentlich später als erwartet einsetzt."
+      }
+    },
+    "stress-and-lifestyle": {
+      "title": "Können Stress, Gewichtsveränderungen oder Sport die Periode verzögern?",
+      "paragraphs": {
+        "first": "Ja, Stress, eine plötzliche Gewichtsabnahme, Übergewicht und übermäßiges Training können dazu führen, dass deine Periode verspätet einsetzt oder ausbleibt, obwohl du nicht schwanger bist. Diese Faktoren können die Hormone beeinflussen, die deinen Menstruationszyklus regulieren. Dadurch kann sich dein Eisprung und damit auch deine nächste Periode verschieben.",
+        "second": "Laut der Cleveland Clinic dauert die Lutealphase, die nach dem Eisprung beginnt, durchschnittlich etwa 14 Tage. Wenn dein Eisprung später als gewöhnlich stattfindet, setzt meistens auch deine Periode später ein. Das erklärt, warum dein Zyklus in einem besonders stressigen Monat plötzlich länger sein kann.",
+        "third": "Stell dir zum Beispiel vor, du steckst mitten in einer stressigen Prüfungsphase und dein Eisprung findet eine Woche später als gewöhnlich statt. Dann kann auch deine Periode etwa eine Woche später einsetzen. Selbst wenn deine Prüfungen zum erwarteten Zeitpunkt deiner Periode bereits vorbei sind, kann sich der verspätete Eisprung noch auf deinen Zyklus auswirken.",
+        "fourth": "Der NHS nennt auch eine plötzliche Gewichtsabnahme, Übergewicht und übermäßige körperliche Belastung als mögliche Ursachen verspäteter oder ausbleibender Perioden. Wenn du in letzter Zeit deine Ernährung oder dein Trainingspensum verändert hast, könnte das einen längeren Zyklus erklären. Lass dich ärztlich beraten, wenn sich dein gewohntes Zyklusmuster verändert oder deine Perioden unregelmäßig werden."
+      }
+    },
+    "contraception-and-breastfeeding": {
+      "title": "Können hormonelle Verhütung oder Stillen die Periode verzögern?",
+      "paragraphs": {
+        "first": "Ja, sowohl hormonelle Verhütung als auch Stillen können dazu führen, dass deine Periode verspätet einsetzt, unregelmäßig wird oder ganz ausbleibt. Laut NHS können Verhütungsmethoden wie die Kombinationspille, die Dreimonatsspritze und das hormonelle Intrauterinsystem, besser bekannt als Hormonspirale, beeinflussen, wann und ob du eine Blutung hast.",
+        "second": "Bei manchen hormonellen Verhütungsmethoden ist es zu erwarten, dass Blutungen gelegentlich oder vollständig ausbleiben. Wenn du unsicher bist, lies die Packungsbeilage deines Verhütungsmittels oder frage in deiner Apotheke nach. Falls du vermutest, dass du schwanger sein könntest, kannst du auch unter hormoneller Verhütung einen Schwangerschaftstest machen.",
+        "third": "Auch das Stillen kann dazu führen, dass deine Periode nach der Geburt erst später wieder einsetzt. Wenn sie zurückkehrt, können deine Zyklen zunächst unregelmäßig sein. Falls du stillst und unsicher bist, ob deine ausbleibende Periode mit einer Schwangerschaft zusammenhängt, kann dir ein Schwangerschaftstest helfen, die nächsten Schritte einzuschätzen."
+      }
+    },
+    "health-conditions": {
+      "title": "Welche Erkrankungen können eine verspätete oder ausbleibende Periode verursachen?",
+      "paragraphs": {
+        "first": "Verschiedene Erkrankungen können dazu führen, dass deine Periode verspätet einsetzt oder ausbleibt, auch wenn du nicht schwanger bist. Der NHS nennt unter anderem das polyzystische Ovarialsyndrom (PCOS), das er inzwischen als PMOS bezeichnet, eine Schilddrüsenüberfunktion oder Schilddrüsenunterfunktion, Diabetes und Herzerkrankungen. Eine verspätete Periode allein bedeutet jedoch nicht, dass du eine dieser Erkrankungen hast.",
+        "second": "Auch die Perimenopause kommt als mögliche Erklärung infrage, besonders wenn du zwischen 45 und 55 Jahre alt bist. Dabei handelt es sich um die Übergangsphase zur Menopause, in der deine Perioden unregelmäßig werden können. Möglicherweise bemerkst du, dass sich die Abstände zwischen deinen Blutungen verändern, obwohl dein Zyklus jahrelang regelmäßig war.",
+        "third": "Laut NHS solltest du ärztlichen Rat einholen, wenn deine Periode ausbleibt und du gleichzeitig eine Gewichtszunahme oder Gewichtsabnahme, Müdigkeit, verstärkte Gesichtsbehaarung oder ungewöhnlich trockene oder fettige Haut bemerkst. Diese Symptome können verschiedene Ursachen haben und lassen für sich genommen keine sichere Aussage darüber zu, warum deine Periode verspätet ist."
+      },
+      "table": {
+        "caption": "Mögliche Ursachen einer verspäteten Periode, begleitende Anzeichen und geeignete ärztliche Anlaufstellen.",
+        "columns": [
+          "Mögliche Ursache",
+          "Weitere Anzeichen",
+          "An wen du dich wenden kannst"
+        ],
+        "rows": [
+          [
+            "PCOS (vom NHS inzwischen PMOS genannt)",
+            "Unregelmäßige Perioden, Gewichtszunahme, verstärkte Gesichtsbehaarung oder fettige Haut",
+            "Frauenärztin oder Frauenarzt"
+          ],
+          [
+            "Schilddrüsenerkrankungen",
+            "Müdigkeit, unerklärliche Gewichtszunahme oder Gewichtsabnahme oder trockene Haut",
+            "Hausärztin oder Hausarzt"
+          ],
+          [
+            "Perimenopause",
+            "Veränderungen deines gewohnten Zyklusmusters",
+            "Frauenärztin oder Frauenarzt"
+          ],
+          [
+            "Gewichtsveränderungen",
+            "Kürzliche Gewichtszunahme oder plötzliche Gewichtsabnahme",
+            "Hausärztin oder Hausarzt"
+          ],
+          [
+            "Stress",
+            "Anhaltendes Druckgefühl oder Veränderungen im gewohnten Alltag",
+            "Hausärztin oder Hausarzt, wenn deine Perioden unregelmäßig bleiben"
+          ]
+        ]
+      }
+    },
+    "when-to-see-a-gp": {
+      "title": "Wann solltest du bei einer ausbleibenden Periode zum Arzt?",
+      "paragraphs": {
+        "first": "Du solltest ärztlichen Rat einholen, wenn deine Periode dreimal hintereinander ausgeblieben ist, deine Perioden unregelmäßig geworden sind oder du neben einer ausbleibenden Periode weitere Symptome bemerkst. Wenn sich dein gewohntes Zyklusmuster verändert hat oder zusätzliche Beschwerden auftreten, musst du nicht erst drei ausgebliebene Perioden abwarten.",
+        "second": "Der NHS empfiehlt, in den folgenden Situationen ärztlichen Rat einzuholen. Wenn du die Daten deiner Perioden, deine Symptome und die Ergebnisse deiner Schwangerschaftstests notierst, kann deine Ärztin oder dein Arzt besser nachvollziehen, was sich verändert hat und ob weitere Untersuchungen sinnvoll sind."
+      },
+      "items": {
+        "three-missed-periods": "Deine Periode ist dreimal hintereinander ausgeblieben.",
+        "no-first-period": "Du bist 15 Jahre alt und hast noch keine erste Periode bekommen.",
+        "other-symptoms": "Deine Periode bleibt aus und du bemerkst zusätzlich eine Gewichtszunahme oder Gewichtsabnahme, Müdigkeit, verstärkte Gesichtsbehaarung oder trockene oder fettige Haut.",
+        "irregular-pattern": "Deine Perioden sind unregelmäßig geworden oder dein gewohntes Zyklusmuster hat sich verändert.",
+        "negative-pregnancy-tests": "Du hast zwei Schwangerschaftstests gemacht, beide waren negativ und deine Periode ist weiterhin ausgeblieben.",
+        "bleeding-between-periods": "Du hast Blutungen zwischen deinen Perioden.",
+        "trying-to-conceive": "Deine Perioden sind unregelmäßig und du hast Schwierigkeiten, schwanger zu werden."
+      },
+      "note": "Suche umgehend medizinische Hilfe, wenn du starke Unterbauchschmerzen oder starke vaginale Blutungen hast, insbesondere wenn dein Schwangerschaftstest positiv war. Lass diese Beschwerden auch dann dringend medizinisch abklären, wenn du noch keinen Schwangerschaftstest gemacht hast oder dein Testergebnis negativ war."
+    },
+    "track-your-cycle": {
+      "title": "Wie hilft dir die Zyklusbeobachtung, eine verspätete Periode zu erkennen?",
+      "paragraphs": {
+        "first": "Wenn du deinen Menstruationszyklus regelmäßig dokumentierst, lernst du besser einzuschätzen, was für dich normal ist, und bemerkst schneller, wenn deine Periode überfällig ist. Statt deinen Zyklus mit dem Durchschnitt von 28 Tagen zu vergleichen, kannst du dich an deinen bisherigen Zyklen orientieren und Veränderungen ihrer Länge oder Regelmäßigkeit erkennen.",
+        "second": "Mochi ist eine kostenlose, datenschutzfreundliche Zyklus-App für dein iPhone, mit der du deine Periodendaten, Symptome und Stimmungen festhalten kannst, ohne ein Konto zu erstellen. Anhand deiner bisherigen Zyklen schätzt Mochi, wann deine nächste Periode einsetzen könnte. Diese Vorhersagen sind lediglich Schätzungen. Mochi kann weder Erkrankungen diagnostizieren noch eine Schwangerschaft bestätigen.",
+        "third": "Wenn deine Perioden unregelmäßig werden oder dich eine ausbleibende Periode beschäftigt, kannst du deine Zyklusaufzeichnungen mit deiner Frauenärztin oder deinem Frauenarzt teilen. Wenn du deine Periodendaten und Symptome an einem Ort festgehalten hast, fällt es dir leichter, Veränderungen zu beschreiben, besonders wenn du dich an Einzelheiten aus den vergangenen Monaten erinnern möchtest."
+      }
+    }
+  },
+  "faq": {
+    "how-late-normal": {
+      "question": "Wie viele Tage darf die Periode zu spät kommen?",
+      "answer": "Deine Periode kann ein paar Tage später als gewöhnlich einsetzen, da Menstruationszyklen natürlichen Schwankungen unterliegen. Laut NHS gilt ein Abstand von 21 bis 35 Tagen zwischen dem Beginn zweier Perioden im Allgemeinen als regelmäßig. Wenn sich dein gewohntes Zyklusmuster verändert oder deine Perioden unregelmäßig werden, solltest du ärztlichen Rat einholen."
+    },
+    "negative-test": {
+      "question": "Warum ist meine Periode überfällig, obwohl der Schwangerschaftstest negativ ist?",
+      "answer": "Deine Periode kann sich durch Stress, einen verspäteten Eisprung, Gewichtsveränderungen, hormonelle Verhütung oder andere Ursachen verzögern, die nichts mit einer Schwangerschaft zu tun haben. Ein negativer Schwangerschaftstest kann allerdings auch bedeuten, dass du zu früh getestet hast. Warte ein paar Tage und wiederhole den Test. Ist auch der zweite Test negativ und bleibt deine Periode weiterhin aus, lass dich ärztlich beraten."
+    },
+    "stress-delay": {
+      "question": "Kann Stress die Periode verschieben?",
+      "answer": "Ja, Stress kann deinen Eisprung verzögern und dadurch dazu führen, dass deine Periode später als erwartet einsetzt. Laut der Cleveland Clinic dauert die Phase nach dem Eisprung durchschnittlich etwa 14 Tage. Verschiebt sich dein Eisprung um eine Woche, kann sich auch deine Periode um etwa eine Woche verspäten."
+    },
+    "how-many-days": {
+      "question": "Wie viele Tage kann die Periode ausbleiben, ohne schwanger zu sein?",
+      "answer": "Es gibt keine feste Anzahl von Tagen, um die sich deine Periode verspäten kann, wenn du nicht schwanger bist, da dies von deinem gewohnten Zyklus und der Ursache der Verzögerung abhängt. Der NHS stuft Abstände von mehr als 35 Tagen zwischen zwei Perioden als unregelmäßig ein. Hole ärztlichen Rat ein, wenn sich dein gewohntes Zyklusmuster verändert oder deine Periode dreimal hintereinander ausgeblieben ist."
+    },
+    "skip-a-month": {
+      "question": "Ist es normal, dass die Periode einen Monat ausbleibt, obwohl man nicht schwanger ist?",
+      "answer": "Es kann gelegentlich vorkommen, dass deine Periode ausbleibt, ohne dass du schwanger bist, insbesondere bei Stress, Gewichtsveränderungen, während der Stillzeit oder unter hormoneller Verhütung. Wenn eine Schwangerschaft möglich ist, mache einen Schwangerschaftstest. Lass dich ärztlich beraten, wenn deine Periode dreimal hintereinander ausgeblieben ist, sich dein gewohntes Zyklusmuster verändert oder weitere Symptome auftreten."
+    },
+    "see-doctor": {
+      "question": "Ab wann sollte ich mir Sorgen machen, wenn meine Periode ausbleibt?",
+      "answer": "Du solltest ärztlichen Rat einholen, wenn deine Periode dreimal hintereinander ausgeblieben ist, deine Perioden unregelmäßig geworden sind oder du weitere Symptome wie Gewichtsveränderungen, Müdigkeit, verstärkte Gesichtsbehaarung oder trockene oder fettige Haut bemerkst. Lass dich auch ärztlich beraten, wenn du zwei negative Schwangerschaftstests gemacht hast und deine Periode weiterhin ausbleibt."
+    }
+  }
+}
