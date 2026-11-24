@@ -11,6 +11,7 @@
     "flavors": "Sorten",
     "privacy": "Datenschutz",
     "blog": "Blog",
+    "calculator": "Zyklusrechner",
     "plus": "Mochi Plus",
     "faq": "FAQ"
   },
@@ -157,7 +158,8 @@
     "nextPeriodDate": "30. Juni",
     "avgCycle": "Ø Zyklus",
     "cycleLengthValue": "28 Tage",
-    "mascotAlt": "Mochi beobachtet die Mondphasen durch ein Teleskop"
+    "mascotAlt": "Mochi beobachtet die Mondphasen durch ein Teleskop",
+    "calculatorLink": "Periodenrechner ausprobieren"
   },
   "Privacy": {
     "title1": "Perioden-Tracker",
@@ -630,7 +632,12 @@
     "inlineCtaTitle": "Mochi begleitet dich.",
     "inlineCtaDescription": "Periodentracking, Stimmung und sanfte Erinnerungen auf deinem iPhone.",
     "mobileContents": "In diesem Artikel",
-    "sourcesToggle": "Quellen und redaktionelle Hinweise"
+    "sourcesToggle": "Quellen und redaktionelle Hinweise",
+    "calculatorPromo": {
+      "title": "Wann kommt deine nächste Periode?",
+      "body": "Gib den ersten Tag deiner letzten Periode ein und sieh in Sekunden deine nächsten drei Perioden, den geschätzten Eisprung und deine fruchtbaren Tage.",
+      "button": "Zum Periodenrechner"
+    }
   },
   "PeriodEducationFAQ": {
     "sourcesLabel": "Quellen",
@@ -673,6 +680,7 @@
     "eyebrow": "Kostenloser Rechner",
     "title": "Nächste Periode berechnen",
     "intro": "Mit unserem kostenlosen Periodenrechner kannst du den voraussichtlichen Beginn deiner nächsten Periode, deinen Eisprung und deine fruchtbaren Tage berechnen. Die Ergebnisse sind Schätzungen auf Grundlage deiner üblichen Zykluslänge und keine garantierten Termine.",
+    "heroAlt": "Mochi mit runder Brille kreist mit einem Stift einen Tag im Kalender ein, daneben ein kleiner Wecker",
     "form": {
       "legend": "Angaben zu deinem Zyklus",
       "lastPeriod": "Erster Tag deiner letzten Periode",
@@ -692,7 +700,14 @@
       "ovulation": "Voraussichtlicher Eisprung",
       "fertile": "Voraussichtliche fruchtbare Tage",
       "fertileRange": "{start} bis {end}",
-      "daysUntil": "{days, plural, =0 {Heute} one {In # Tag} other {In # Tagen}}"
+      "daysUntil": "{days, plural, =0 {Heute} one {In # Tag} other {In # Tagen}}",
+      "glance": "Dein Zyklus auf einen Blick",
+      "legend": {
+        "period": "Periode",
+        "fertile": "Fruchtbare Tage",
+        "ovulation": "Eisprung",
+        "today": "Heute"
+      }
     },
     "disclaimer": "Die berechneten Termine sind Schätzungen und können von deinem tatsächlichen Zyklus abweichen. Der Periodenrechner eignet sich weder zur Verhütung noch zur Diagnose von Erkrankungen.",
     "how": {
@@ -724,6 +739,16 @@
       "title": "Periodenvorhersagen, die zu deinem Zyklus passen",
       "body": "Entdecke Mochi, deine kostenlose Perioden-App fürs iPhone. Anhand deiner eingetragenen Periodendaten passt Mochi die Vorhersagen mit der Zeit an deinen persönlichen Zyklus an. Die App funktioniert auch offline und ganz ohne Benutzerkonto.",
       "button": "Mochi kostenlos herunterladen"
+    },
+    "picker": {
+      "placeholder": "Ersten Tag auswählen",
+      "previousMonth": "Vorheriger Monat",
+      "nextMonth": "Nächster Monat",
+      "today": "Heute",
+      "change": "Datum ändern",
+      "decrease": "Weniger Tage",
+      "increase": "Mehr Tage",
+      "days": "{count, plural, one {# Tag} other {# Tage}}"
     }
   }
 }

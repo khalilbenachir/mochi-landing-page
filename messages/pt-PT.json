@@ -11,6 +11,7 @@
     "flavors": "Sabores",
     "privacy": "Privacidade",
     "blog": "Blog",
+    "calculator": "Calculadora",
     "plus": "Mochi Plus",
     "faq": "FAQ"
   },
@@ -157,7 +158,8 @@
     "nextPeriodDate": "30 de jun",
     "avgCycle": "Ciclo médio",
     "cycleLengthValue": "28 dias",
-    "mascotAlt": "Mochi a observar as fases da lua com um telescópio"
+    "mascotAlt": "Mochi a observar as fases da lua com um telescópio",
+    "calculatorLink": "Experimenta a calculadora do período"
   },
   "Privacy": {
     "title1": "O teu ciclo fica",
@@ -630,7 +632,12 @@
     "inlineCtaTitle": "Deixa o Mochi acompanhar-te.",
     "inlineCtaDescription": "Menstruação, humor e pequenos lembretes juntos no teu iPhone.",
     "mobileContents": "Neste artigo",
-    "sourcesToggle": "Fontes e informação editorial"
+    "sourcesToggle": "Fontes e informação editorial",
+    "calculatorPromo": {
+      "title": "Quando vem a tua próxima menstruação?",
+      "body": "Indica o primeiro dia da tua última menstruação e vê em segundos as próximas três, a ovulação e o período fértil estimados.",
+      "button": "Abrir a calculadora"
+    }
   },
   "PeriodEducationFAQ": {
     "sourcesLabel": "Fontes",
@@ -673,6 +680,7 @@
     "eyebrow": "Ferramenta gratuita",
     "title": "Calcular a próxima menstruação",
     "intro": "Com a nossa calculadora do período gratuita, podes estimar quando começa a tua próxima menstruação, quando poderás ovular e quais serão os teus dias férteis. Os resultados baseiam-se na duração habitual do teu ciclo menstrual e são apenas estimativas.",
+    "heroAlt": "Mochi de óculos redondos a assinalar um dia no calendário com um lápis, ao lado de um pequeno despertador",
     "form": {
       "legend": "Dados do teu ciclo menstrual",
       "lastPeriod": "Primeiro dia da última menstruação",
@@ -692,7 +700,14 @@
       "ovulation": "Ovulação estimada",
       "fertile": "Período fértil estimado",
       "fertileRange": "De {start} a {end}",
-      "daysUntil": "{days, plural, =0 {Hoje} one {Daqui a # dia} other {Daqui a # dias}}"
+      "daysUntil": "{days, plural, =0 {Hoje} one {Daqui a # dia} other {Daqui a # dias}}",
+      "glance": "O teu ciclo num relance",
+      "legend": {
+        "period": "Menstruação",
+        "fertile": "Período fértil",
+        "ovulation": "Ovulação",
+        "today": "Hoje"
+      }
     },
     "disclaimer": "As datas calculadas são estimativas e podem não corresponder ao teu ciclo real. Esta calculadora não deve ser utilizada como método contracetivo nem para diagnosticar problemas de saúde.",
     "how": {
@@ -724,6 +739,16 @@
       "title": "Previsões do período adaptadas ao teu ciclo",
       "body": "Conhece o Mochi, a tua aplicação gratuita de acompanhamento menstrual para iPhone. O Mochi utiliza as datas que registas para personalizar as previsões à medida que conhece melhor o teu ciclo. Funciona mesmo quando o teu telemóvel não tem ligação à Internet e não precisas de criar uma conta.",
       "button": "Descarregar o Mochi gratuitamente"
+    },
+    "picker": {
+      "placeholder": "Escolhe o primeiro dia",
+      "previousMonth": "Mês anterior",
+      "nextMonth": "Mês seguinte",
+      "today": "Hoje",
+      "change": "Alterar data",
+      "decrease": "Menos dias",
+      "increase": "Mais dias",
+      "days": "{count, plural, one {# dia} other {# dias}}"
     }
   }
 }

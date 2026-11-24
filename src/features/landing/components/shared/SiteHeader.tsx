@@ -2,12 +2,14 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleSwitcher } from "@/components/marketing/LocaleSwitcher";
 import { blogPath } from "@/features/blog/locales";
+import { CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
+import { localeRoutePath, type AppLocale } from "@/i18n/routing";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { AppStoreBadge } from "./AppStoreBadges";
 import { MobileMenu } from "./MobileMenu";
 import { PosterStage } from "./PosterStage";
 
-type NavKey = "blog" | "features" | "faq";
+type NavKey = "blog" | "calculator" | "features" | "faq";
 
 /**
  * One navigation for every language: only labels (the shared `Navigation` namespace) and
@@ -15,7 +17,7 @@ type NavKey = "blog" | "features" | "faq";
  * locale's own blog once published, otherwise to the fallback blog.
  * Desktop and mobile share the same links and order.
  */
-const NAV = ["blog", "features", "faq"] as const satisfies readonly NavKey[];
+const NAV = ["blog", "calculator", "features", "faq"] as const satisfies readonly NavKey[];
 
 type SiteHeaderProps = {
   /** Brand link target; `#top` on the home page. */
@@ -24,15 +26,15 @@ type SiteHeaderProps = {
   sectionBase?: string;
   /** Current page under the locale, kept when switching language (e.g. `/privacy`). */
   localeRoute?: string;
-  activePage?: "blog";
+  activePage?: "blog" | "calculator";
 };
 
 export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = "", activePage }: SiteHeaderProps) {
   const navigation = useTranslations("Navigation");
   const common = useTranslations("Common");
-  const locale = useLocale();
+  const locale = useLocale() as AppLocale;
   const href = (key: NavKey) =>
-    key === "blog" ? blogPath(locale) : `${sectionBase}#${key}`;
+    key === "blog" ? blogPath(locale) : key === "calculator" ? localeRoutePath(locale, CALCULATOR_SLUG) : `${sectionBase}#${key}`;
   const link = (key: NavKey) => ({ key, href: href(key), label: navigation(key), current: activePage === key ? ("page" as const) : undefined });
 
   return (

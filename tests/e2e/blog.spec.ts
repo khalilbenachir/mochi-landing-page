@@ -3,7 +3,8 @@ import en from "../../messages/en.json";
 import { BLOG_PATHS, BLOG_POSTS, postModifiedAt, type BlogPost, type BlogPostId } from "../../src/features/blog/content/catalog";
 import { articleReadingMinutes, getArticleCopy as getLocalizedArticleCopy } from "../../src/features/blog/content/copy";
 import { BLOG_LOCALES, blogLocaleFor, blogPath, EDITORIAL_SLUG, isBlogLocale } from "../../src/features/blog/locales";
-import { localePath, routing } from "../../src/i18n/routing";
+import { localePath, localeRoutePath, routing } from "../../src/i18n/routing";
+import { CALCULATOR_SLUG } from "../../src/features/calculator/content/calculate";
 import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
 import { FAQ_IDS } from "../../src/features/landing/content/landing";
 import { baseOrigin } from "./origin";
@@ -125,12 +126,13 @@ test("every language shares the same header and footer navigation", async ({ pag
     const header = page.locator("header nav").first();
     expect(await header.locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href"))), locale).toEqual([
       blogPath(locale),
+      localeRoutePath(locale, CALCULATOR_SLUG),
       "#features",
       "#faq",
     ]);
     const footerLinks = await page.locator("body > footer nav a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
     expect(footerLinks[0], locale).toBe(blogPath(locale));
-    expect(footerLinks, locale).toHaveLength(4);
+    expect(footerLinks, locale).toHaveLength(5);
 
     await header.locator(`a[href="${blogPath(locale)}"]`).click();
     await expect(page, locale).toHaveURL((url) => url.pathname === blogPath(locale));
@@ -139,6 +141,7 @@ test("every language shares the same header and footer navigation", async ({ pag
     const home = localePath(blogLocaleFor(locale));
     expect(await page.locator("header nav").first().locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href"))), locale).toEqual([
       blogPath(locale),
+      localeRoutePath(locale, CALCULATOR_SLUG),
       `${home}#features`,
       `${home}#faq`,
     ]);

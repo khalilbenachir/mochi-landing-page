@@ -80,6 +80,42 @@
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(14px) rotate(16deg); }
   }
+  /* Calculator: the date popover springs open; month pages and result cards slide in. */
+  --animate-pop-in: pop-in 0.28s var(--ease-smooth) both;
+  @keyframes pop-in {
+    from { opacity: 0; transform: translateY(-8px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  --animate-slide-next: slide-next 0.3s var(--ease-smooth) both;
+  @keyframes slide-next {
+    from { opacity: 0; transform: translateX(14px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  --animate-slide-prev: slide-prev 0.3s var(--ease-smooth) both;
+  @keyframes slide-prev {
+    from { opacity: 0; transform: translateX(-14px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  /* Prediction section: orbits turn, stars twinkle, the telescope beam flows. */
+  --animate-orbit: orbit 60s linear infinite;
+  @keyframes orbit {
+    to { rotate: 360deg; }
+  }
+  --animate-orbit-reverse: orbit 90s linear infinite reverse;
+  --animate-twinkle: twinkle 2.8s ease-in-out infinite;
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.35; scale: 0.7; }
+    50% { opacity: 1; scale: 1; }
+  }
+  --animate-beam: beam 1.6s linear infinite;
+  @keyframes beam {
+    to { stroke-dashoffset: -24; }
+  }
+  --animate-rise: rise 0.45s var(--ease-smooth) both;
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
   /* Shared */
   --color-sun: #ffd93d;
@@ -100,6 +136,7 @@
   --color-cycle-ovulation: #4b47b0;
   --color-cycle-ovulation-tint: #e6e5f7;
   --color-cycle-luteal: #f7b036;
+  --color-cycle-wheel-gap: #ffffff;
   --color-cycle-today-ring: #8a94a3;
   --color-cycle-tile: #f5f7fa;
 
@@ -183,8 +220,6 @@
   --color-prediction-band: #bff3e6;
   --color-prediction-body-text: #24365a;
   --color-prediction-note-text: #2d3f61;
-  --color-prediction-phone-border: #c9ccd6;
-  --color-prediction-phone-bg: #0d0e12;
   --color-prediction-phone-shadow: rgba(20, 80, 70, 0.22);
   --color-prediction-calendar-label: #6f7789;
   --color-prediction-card-shadow: rgba(20, 90, 80, 0.14);
@@ -207,6 +242,7 @@
   /* Terms of use */
   --color-terms-hero: #30b3cf;
   --color-terms-summary: #ffb32c;
+  --color-calculator-hero: #7a5ae0;
   --color-terms-callout: #ffedce;
   --color-terms-rays: #fff18b;
 
