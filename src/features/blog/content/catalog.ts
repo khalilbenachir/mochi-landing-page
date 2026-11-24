@@ -2,7 +2,18 @@ import type { EditorialSourceId } from "@/lib/editorial-sources";
 import { blogPath, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE } from "../locales";
 
 export type BlogPostId =
-  "tracking" | "privacy" | "methods" | "pads" | "phases" | "predictions" | "cramps" | "moods" | "gettingStarted" | "floAlternatives" | "bloodLoss";
+  | "tracking"
+  | "privacy"
+  | "methods"
+  | "pads"
+  | "phases"
+  | "predictions"
+  | "cramps"
+  | "moods"
+  | "gettingStarted"
+  | "floAlternatives"
+  | "bloodLoss"
+  | "appleWatch";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -19,6 +30,8 @@ export type BlogPost = {
   tone: string;
   /** Deliberate release date (YYYY-MM-DD), never derived from the build clock. */
   publishedAt: string;
+  /** Last substantive revision (YYYY-MM-DD); drives the visible date, dateModified and sitemap lastmod. */
+  updatedAt?: string;
   /** Leads the index while no category filter is active. Defaults to the newest post. */
   featured?: boolean;
   sections: readonly BlogSection[];
@@ -26,6 +39,25 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "appleWatch",
+    category: "cycle-basics",
+    slug: "apple-watch-period-prediction",
+    // Reuses the predictions artwork (calendar scene) until a dedicated illustration is drawn.
+    image: "/blog-art/period-predictions-mochi.webp",
+    tone: "bg-blog-mint",
+    publishedAt: "2026-11-24",
+    sections: [
+      { id: "does-it-predict", sources: ["appleCycle"] },
+      { id: "how-predictions-work", sources: ["appleCycle"] },
+      { id: "fertile-window", sources: ["appleCycle"] },
+      { id: "wrist-temperature", sources: ["appleCycle"] },
+      { id: "notifications", sources: ["appleCycle"] },
+      { id: "privacy", sources: ["appleCycle"] },
+      { id: "limits", sources: ["appleCycle"] },
+      { id: "with-mochi", sources: ["mochiFeatures", "mochiPrivacy"] },
+    ],
+  },
   {
     id: "bloodLoss",
     category: "period-care",
@@ -74,12 +106,16 @@ const CATALOG: readonly BlogPost[] = [
     image: "/blog-art/pad-care-mochi.webp",
     tone: "bg-prediction-band",
     publishedAt: "2026-11-10",
+    updatedAt: "2026-11-24",
     featured: true,
     sections: [
-      { id: "day-pads", sources: ["menstrualHygiene", "firstPeriod"] },
-      { id: "overnight-pads", sources: ["menstrualHygiene", "periodProblems"] },
-      { id: "liners", sources: ["firstPeriod"] },
-      { id: "signs-to-change", sources: ["menstrualHygiene"] },
+      { id: "how-often", sources: ["firstPeriod", "menstrualHygiene"] },
+      { id: "heavy-flow", sources: ["heavyPeriods", "periodProblems"] },
+      { id: "pads-per-day", sources: ["firstPeriod", "menstrualHygiene"] },
+      { id: "overnight", sources: ["firstPeriod", "heavyPeriods"] },
+      { id: "full-pad-signs", sources: ["firstPeriod"] },
+      { id: "liners", sources: ["menstrualHygiene"] },
+      { id: "comfort-and-skin", sources: ["menstrualHygiene"] },
       { id: "mochi-reminder", sources: ["mochiTerms"] },
     ],
   },
@@ -90,11 +126,14 @@ const CATALOG: readonly BlogPost[] = [
     image: "/blog-art/cycle-phases-mochi.webp",
     tone: "bg-comparison-matcha-bg",
     publishedAt: "2026-11-10",
+    updatedAt: "2026-11-24",
     sections: [
-      { id: "menstruation", sources: ["cycleOverview"] },
-      { id: "follicular-phase", sources: ["cyclePhases", "cycleOverview"] },
-      { id: "ovulation", sources: ["cycleOverview"] },
-      { id: "luteal-phase", sources: ["cycleOverview", "pms"] },
+      { id: "overview", sources: ["cyclePhases"] },
+      { id: "menstruation", sources: ["cyclePhases", "cycleOverview"] },
+      { id: "follicular-phase", sources: ["cyclePhases"] },
+      { id: "ovulation", sources: ["cyclePhases", "menstrualCycle"] },
+      { id: "luteal-phase", sources: ["cyclePhases", "pms"] },
+      { id: "cycle-length", sources: ["cyclePhases", "menstrualCycle"] },
       { id: "your-own-pattern", sources: ["mochiTerms", "missedPeriods"] },
     ],
   },
@@ -133,11 +172,16 @@ const CATALOG: readonly BlogPost[] = [
     image: "/blog-art/cycle-moods-mochi.webp",
     tone: "bg-prediction-band",
     publishedAt: "2026-11-10",
+    updatedAt: "2026-11-24",
     sections: [
-      { id: "premenstrual-changes", sources: ["pms"] },
-      { id: "useful-notes", sources: ["pms"] },
-      { id: "avoid-rules" },
-      { id: "support", sources: ["pms"] },
+      { id: "mood-by-phase", sources: ["pms", "cyclePhases"] },
+      { id: "period-mood", sources: ["pms"] },
+      { id: "follicular-mood", sources: ["cyclePhases"] },
+      { id: "ovulation-mood", sources: ["cyclePhases"] },
+      { id: "luteal-mood", sources: ["pms", "cyclePhases"] },
+      { id: "pmdd", sources: ["pms"] },
+      { id: "what-helps", sources: ["pms"] },
+      { id: "track-your-moods", sources: ["pms", "mochiTerms"] },
     ],
   },
   {
@@ -217,6 +261,11 @@ export const BLOG_PATHS = BLOG_PAGE_SEGMENTS.map((segments) => blogPath(FALLBACK
 
 export const BLOG_ART_SIZE = { width: 1200, height: 800 } as const;
 export const JOURNAL_ART_SIZE = { width: 1200, height: 860 } as const;
+
+/** The date search engines should treat as the latest revision. */
+export function postModifiedAt(post: BlogPost) {
+  return post.updatedAt ?? post.publishedAt;
+}
 
 export function findBlogPost(slug: string) {
   return BLOG_POSTS.find((post) => post.slug === slug);

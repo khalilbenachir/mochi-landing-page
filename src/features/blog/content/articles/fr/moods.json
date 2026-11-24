@@ -1,52 +1,158 @@
 {
-  "title": "Comprendre les changements d’humeur pendant le cycle",
-  "description": "Explorez les changements d’humeur pendant le cycle, les notes utiles à conserver et quand demander de l’aide, sans règle imposée sur vos émotions.",
-  "imageAlt": "Mochi bleu avec une bulle de pensée contenant un cœur rose",
-  "intro": "Certaines personnes remarquent des changements d’humeur avant les règles, d’autres non. Les symptômes varient selon les personnes et les périodes. Un journal daté peut décrire votre expérience, sans en diagnostiquer la cause.",
+  "title": "Cycle menstruel et humeur : les 4 phases expliquées",
+  "description": "Découvrez comment votre humeur évolue selon les phases du cycle menstruel, les causes possibles des sautes d'humeur et les conseils pour mieux vivre le SPM.",
+  "imageAlt": "Mochi avec un cœur dans une bulle de pensée",
+  "intro": "Votre humeur peut évoluer au fil du cycle menstruel, avec un sentiment de soulagement au début des règles et parfois davantage d'irritabilité, de tristesse ou de sautes d'humeur avant les règles suivantes. Les variations hormonales peuvent jouer un rôle, mais le sommeil, le stress et les douleurs physiques influencent également vos émotions. Observer vos propres fluctuations d'humeur peut vous aider à mieux comprendre ce que vous ressentez et à savoir quand demander de l'aide.",
   "sections": {
-    "premenstrual-changes": {
-      "title": "À quoi peuvent ressembler les changements prémenstruels ?",
+    "mood-by-phase": {
+      "title": "Comment évolue l'humeur pendant les 4 phases du cycle menstruel ?",
       "paragraphs": {
-        "first": "Le syndrome prémenstruel peut associer irritabilité, anxiété, tristesse ou changements d’humeur à des symptômes physiques. Ils surviennent souvent avant les règles et diminuent après leur début.",
-        "second": "Une liste de symptômes n’est pas un test. Si quelque chose vous gêne ou affecte votre quotidien, parlez-en à un professionnel de santé."
-      }
-    },
-    "useful-notes": {
-      "title": "Des notes ancrées dans votre journée",
-      "items": {
-        "date": "Notez la date et les mots qui décrivent le mieux votre humeur.",
-        "impact": "Indiquez brièvement l’intensité et l’effet sur votre journée.",
-        "context": "Ajoutez le contexte utile : sommeil, stress ou événement difficile."
+        "first": "Votre humeur peut évoluer pendant les quatre phases du cycle menstruel : les menstruations, la phase folliculaire, l'ovulation et la phase lutéale. Les changements d'humeur sont particulièrement fréquents avant les règles, lorsque les taux d'œstrogènes et de progestérone diminuent.",
+        "second": "Selon l'Office américain pour la santé des femmes (US Office on Women's Health, womenshealth.gov), plus de 90 % des femmes déclarent ressentir certains symptômes prémenstruels, comme des ballonnements, des maux de tête ou une humeur changeante. Les variations hormonales peuvent y contribuer, mais chaque personne vit son cycle différemment."
       },
-      "after": "Vous pouvez aussi noter les journées ordinaires ou agréables. Elles donnent des points de comparaison pour la discussion."
+      "table": {
+        "caption": "Cycle menstruel et humeur : les changements possibles selon chaque phase",
+        "columns": [
+          "Phase du cycle",
+          "Jours indicatifs (cycle de 28 jours)",
+          "Variations hormonales",
+          "Émotions et sensations possibles"
+        ],
+        "rows": [
+          [
+            "Menstruations",
+            "Jours 1 à 5",
+            "Faibles taux d'œstrogènes et de progestérone",
+            "Soulagement lorsque le SPM s'atténue, fatigue ou irritabilité."
+          ],
+          [
+            "Phase folliculaire",
+            "Jours 1 à 14",
+            "Augmentation du taux d'œstrogènes",
+            "Meilleure humeur, regain d'énergie ou de motivation."
+          ],
+          [
+            "Ovulation",
+            "Autour du 14e jour",
+            "Pic de LH",
+            "Plus grande confiance en soi, envie de voir du monde ou aucun changement notable."
+          ],
+          [
+            "Phase lutéale",
+            "Jours 15 à 28",
+            "Augmentation de la progestérone, puis diminution des œstrogènes et de la progestérone",
+            "Sautes d'humeur, anxiété, irritabilité ou tristesse avant les règles."
+          ]
+        ]
+      },
+      "note": "Les données scientifiques associant des émotions précises à la phase folliculaire ou à l'ovulation restent limitées. Votre sommeil, votre niveau de stress, vos douleurs et les événements du quotidien influencent aussi votre humeur."
     },
-    "avoid-rules": {
-      "title": "Pas de règle sur ce que vous devez ressentir",
+    "period-mood": {
+      "title": "Pourquoi votre humeur change-t-elle pendant les règles ?",
       "paragraphs": {
-        "first": "Vous n’avez pas à être énergique, sociable, calme ou fatiguée un jour précis. Le journal sert à décrire votre expérience, pas à la faire entrer dans un modèle.",
-        "second": "Dans Mochi, le suivi de l’humeur est facultatif. La réaction de la mascotte fait partie du jeu, sans interprétation médicale."
+        "first": "Pendant vos règles, vous pouvez vous sentir plus sensible, fatiguée ou irritable que d'habitude. Certaines personnes ressentent au contraire un soulagement émotionnel lorsque les symptômes du syndrome prémenstruel (SPM) commencent à disparaître.",
+        "second": "Selon l'US Office on Women's Health, les symptômes du SPM s'atténuent généralement dans les quelques jours qui suivent le début des règles. Si vous ressentiez de l'anxiété ou des sautes d'humeur avant vos règles, ces sensations peuvent progressivement diminuer lorsque les saignements commencent.",
+        "third": "Les douleurs physiques peuvent également peser sur votre moral. Des crampes menstruelles ou une mauvaise nuit de sommeil suffisent parfois à rendre une journée de travail ordinaire plus éprouvante.",
+        "fourth": "Si vous ressentez une déprime après les règles, ne l'attribuez pas systématiquement à vos hormones. La dépression et l'anxiété peuvent provoquer des symptômes similaires à ceux du SPM. Si votre baisse de moral persiste ou perturbe votre quotidien, parlez-en à un professionnel de santé."
       }
     },
-    "support": {
-      "title": "Demander du soutien quand vous en avez besoin",
+    "follicular-mood": {
+      "title": "Phase folliculaire et humeur : un regain d'énergie ?",
       "paragraphs": {
-        "first": "Si les symptômes vous gênent, persistent ou perturbent le quotidien, consultez un professionnel qualifié. Apportez vos notes si elles vous aident.",
-        "second": "N’attendez pas d’avoir un long historique. Un journal est un outil de dialogue, pas une condition pour recevoir des soins."
+        "first": "Pendant la phase folliculaire, certaines personnes remarquent une amélioration de leur humeur ou un regain d'énergie, notamment après la fin des règles. Toutefois, les données scientifiques reliant cette phase à des émotions particulières restent limitées.",
+        "second": "Selon la Cleveland Clinic, le taux d'œstrogènes augmente pendant la phase folliculaire, qui commence le premier jour des règles et se termine à l'ovulation. Ces variations hormonales peuvent influencer votre humeur, sans pour autant expliquer à elles seules votre état émotionnel.",
+        "third": "Lorsque les symptômes prémenstruels s'atténuent et que les douleurs menstruelles disparaissent, certaines activités peuvent vous sembler moins difficiles. Vous retrouvez peut-être l'envie de faire du sport ou de passer du temps avec vos amis.",
+        "fourth": "Il est également possible de ressentir de la fatigue, de l'anxiété ou une baisse de moral pendant cette phase. Si vous ne retrouvez pas davantage d'énergie après vos règles, inutile de vous imposer un rythme plus soutenu simplement parce que vous êtes en phase folliculaire."
+      }
+    },
+    "ovulation-mood": {
+      "title": "Ovulation et humeur : quelles émotions peut-on ressentir ?",
+      "paragraphs": {
+        "first": "Autour de l'ovulation, certaines personnes remarquent une meilleure humeur, davantage de confiance en elles ou une plus grande envie de voir du monde. Le lien scientifique entre l'ovulation et ces changements émotionnels reste toutefois peu établi.",
+        "second": "Selon la Cleveland Clinic, l'ovulation survient généralement autour du 14e jour d'un cycle menstruel de 28 jours. Une augmentation soudaine de l'hormone lutéinisante (LH) déclenche la libération d'un ovule. Le moment de l'ovulation peut varier d'un cycle à l'autre.",
+        "third": "Vous avez peut-être davantage envie de sortir avec vos amis ou de vous lancer dans un nouveau projet professionnel. Mais vous pouvez aussi vous sentir anxieuse, irritable ou triste. Votre humeur seule ne permet pas de savoir si vous êtes en train d'ovuler.",
+        "fourth": "Si vous remarquez des variations d'humeur au milieu de votre cycle, essayez de les noter avec la qualité de votre sommeil et votre niveau de stress. Au bout de quelques mois, vous pourrez éventuellement repérer des changements récurrents."
+      }
+    },
+    "luteal-mood": {
+      "title": "Phase lutéale et humeur : comprendre les sautes d'humeur du SPM",
+      "paragraphs": {
+        "first": "Pendant la phase lutéale, vous pouvez ressentir des sautes d'humeur, de l'irritabilité, de l'anxiété ou de la tristesse, particulièrement dans les jours qui précèdent vos règles. Ces changements émotionnels peuvent faire partie du syndrome prémenstruel (SPM).",
+        "second": "Après l'ovulation, le taux de progestérone augmente. À l'approche des règles, les taux d'œstrogènes et de progestérone diminuent. Ces fluctuations hormonales pourraient contribuer au SPM, dont les causes exactes restent mal connues.",
+        "third": "Selon l'US Office on Women's Health, jusqu'à trois femmes sur quatre connaissent un syndrome prémenstruel à un moment de leur vie. Chez la plupart, les symptômes sont légers. Les manifestations émotionnelles et comportementales possibles comprennent :"
+      },
+      "items": {
+        "irritability": "Vous vous sentez plus facilement irritée ou frustrée.",
+        "anxiety": "Vous ressentez de l'anxiété ou une tension intérieure.",
+        "sadness": "Vous vous sentez triste ou avez plus facilement envie de pleurer.",
+        "mood-swings": "Votre humeur change brusquement.",
+        "fatigue": "Vous ressentez une fatigue inhabituelle ou votre sommeil change.",
+        "concentration": "Vous avez du mal à vous concentrer sur vos activités quotidiennes.",
+        "appetite": "Votre appétit change ou vous avez des envies alimentaires particulières.",
+        "sex-drive": "Vous ressentez une diminution du désir sexuel."
+      },
+      "note": "Les symptômes du SPM apparaissent généralement une à deux semaines avant les règles et s'atténuent dans les quelques jours qui suivent le début des saignements."
+    },
+    "pmdd": {
+      "title": "Quand les sautes d'humeur dépassent le SPM : comprendre le TDPM",
+      "paragraphs": {
+        "first": "Lorsque les changements d'humeur avant vos règles deviennent suffisamment intenses pour perturber votre quotidien, il peut s'agir de plus qu'un syndrome prémenstruel classique. Le trouble dysphorique prémenstruel (TDPM, ou PMDD en anglais) est une forme plus sévère du SPM.",
+        "second": "Selon l'US Office on Women's Health, le TDPM touche moins de 5 % des femmes en âge de procréer. Des symptômes émotionnels intenses peuvent compliquer votre vie professionnelle, vos relations ou vos activités habituelles.",
+        "third": "La dépression et l'anxiété peuvent provoquer des symptômes similaires à ceux du SPM et s'aggraver avant ou pendant les règles. Si vous ressentez régulièrement une déprime après vos règles ou des difficultés émotionnelles tout au long du cycle, ne supposez pas que vos hormones en sont l'unique cause.",
+        "fourth": "Consultez un médecin ou un professionnel de santé si vos symptômes vous font souffrir ou perturbent votre quotidien. Noter votre humeur et vos symptômes pendant quelques mois peut faciliter les échanges lors de la consultation."
+      },
+      "note": "Si vous vous sentez profondément déprimée, sans espoir ou si vous avez des pensées de vous faire du mal, demandez immédiatement une aide médicale ou contactez les services d'urgence ou d'aide en situation de crise de votre pays."
+    },
+    "what-helps": {
+      "title": "Comment atténuer les sautes d'humeur liées au cycle menstruel ?",
+      "paragraphs": {
+        "first": "Une activité physique régulière, un sommeil suffisant, une alimentation équilibrée et une meilleure gestion du stress peuvent contribuer à atténuer les sautes d'humeur associées au SPM. Ces habitudes sont utiles tout au long du cycle, et pas uniquement dans les jours qui précèdent les règles.",
+        "second": "L'US Office on Women's Health recommande plusieurs mesures pour aider à soulager les symptômes prémenstruels :"
+      },
+      "items": {
+        "exercise": "Pratiquez régulièrement une activité d'endurance, comme la marche rapide pendant votre pause déjeuner.",
+        "nutrition": "Mangez équilibré et essayez de réduire votre consommation de caféine, de sel et de sucre pendant les deux semaines précédant vos règles.",
+        "sleep": "Essayez de dormir environ 8 heures par nuit.",
+        "stress-management": "Accordez-vous du temps pour réduire votre stress, par exemple en tenant un journal ou en pratiquant le yoga ou la méditation.",
+        "social-support": "Parlez à une personne de confiance lorsque vous vous sentez dépassée.",
+        "smoking": "Évitez de fumer."
+      },
+      "note": "Si vos sautes d'humeur continuent de vous faire souffrir ou de perturber votre quotidien malgré ces habitudes, parlez de vos symptômes à un professionnel de santé."
+    },
+    "track-your-moods": {
+      "title": "Comment suivre votre humeur au fil du cycle menstruel ?",
+      "paragraphs": {
+        "first": "Noter votre humeur en parallèle de votre cycle menstruel pendant quelques mois peut vous aider à repérer des variations émotionnelles récurrentes. Ce suivi permet aussi de remarquer les changements d'humeur qui surviennent indépendamment de vos règles.",
+        "second": "Essayez de noter chaque jour comment vous vous sentez, même lorsque rien de particulier ne se produit. Renseignez les dates de vos règles, vos émotions, la qualité de votre sommeil et les éventuelles situations stressantes de la journée. Quelques instants avant de vous coucher peuvent suffire.",
+        "third": "Mochi vous permet d'enregistrer votre humeur et vos symptômes en même temps que vos dates de règles. Après plusieurs cycles, vous remarquerez peut-être que vous êtes plus irritable avant vos règles ou que votre moral s'améliore lorsque les saignements commencent.",
+        "fourth": "Mochi ne permet pas de diagnostiquer un SPM, un TDPM, une dépression ou un trouble anxieux. Si vos difficultés émotionnelles affectent votre quotidien, vous pouvez présenter quelques mois de suivi à un professionnel de santé pour lui expliquer plus facilement ce que vous ressentez."
       }
     }
   },
   "faq": {
-    "everyone": {
-      "question": "Tout le monde a-t-il des changements d’humeur avant les règles ?",
-      "answer": "Non. Les symptômes prémenstruels varient selon les personnes et peuvent évoluer."
+    "phase-mood": {
+      "question": "Comment l'humeur change-t-elle selon les 4 phases du cycle menstruel ?",
+      "answer": "Certaines personnes ressentent un soulagement pendant les règles, une meilleure humeur pendant la phase folliculaire, davantage de confiance en elles autour de l'ovulation et des sautes d'humeur pendant la phase lutéale. Toutefois, les données scientifiques associant des émotions précises à la phase folliculaire et à l'ovulation restent limitées, et ces variations diffèrent d'une personne à l'autre."
     },
-    "diagnosis": {
-      "question": "Le suivi de l’humeur peut-il diagnostiquer un SPM ou un TDPM ?",
-      "answer": "Non. Il peut aider à expliquer le moment et l’impact des symptômes, mais ce n’est pas un test diagnostique."
+    "luteal": {
+      "question": "Pourquoi mon humeur change-t-elle pendant la phase lutéale ?",
+      "answer": "Les changements d'humeur pendant la phase lutéale peuvent être liés aux fluctuations des taux d'œstrogènes et de progestérone, même si les causes exactes du SPM restent mal connues. Vous pouvez notamment ressentir de l'irritabilité, de l'anxiété ou de la tristesse une à deux semaines avant vos règles."
     },
-    "daily": {
-      "question": "Dois-je noter mon humeur chaque jour ?",
-      "answer": "Non. Choisissez un rythme utile. Des journées variées enrichissent vos notes, mais un suivi parfait n’est pas nécessaire pour demander de l’aide."
+    "after-period": {
+      "question": "Pourquoi ai-je une déprime après mes règles ?",
+      "answer": "Une baisse de moral après les règles peut être liée à la fatigue, au manque de sommeil ou au stress, et pas uniquement aux variations hormonales. Les symptômes du SPM s'atténuent généralement dans les quelques jours qui suivent le début des règles. Si votre baisse de moral persiste ou perturbe votre quotidien, consultez un professionnel de santé."
+    },
+    "ovulation": {
+      "question": "L'ovulation peut-elle provoquer des sautes d'humeur ?",
+      "answer": "Certaines personnes remarquent des changements émotionnels autour de l'ovulation, mais les données scientifiques reliant cette phase à des sautes d'humeur précises restent limitées. Votre humeur seule ne permet pas de déterminer si vous êtes en train d'ovuler."
+    },
+    "pms-or-more": {
+      "question": "Comment savoir si mes sautes d'humeur sont liées au SPM ou à un TDPM ?",
+      "answer": "Les symptômes du SPM apparaissent généralement après l'ovulation et s'atténuent quelques jours après le début des règles, tandis que des symptômes particulièrement sévères qui perturbent votre quotidien peuvent évoquer un TDPM ou un autre trouble. Consultez un professionnel de santé si vos symptômes persistent ou affectent votre vie quotidienne. Si vous vous sentez profondément déprimée, sans espoir ou si vous avez des pensées de vous faire du mal, demandez immédiatement une aide médicale ou contactez les services d'urgence ou d'aide en situation de crise de votre pays."
+    },
+    "help": {
+      "question": "Comment réduire les sautes d'humeur avant les règles ?",
+      "answer": "Une activité physique régulière, environ 8 heures de sommeil par nuit, une alimentation équilibrée et la gestion du stress peuvent contribuer à soulager les symptômes du SPM. L'US Office on Women's Health recommande également de réduire la consommation de caféine, de sel et de sucre pendant les deux semaines précédant les règles. Suivre votre humeur pendant quelques mois peut vous aider à repérer des variations émotionnelles récurrentes."
     }
   }
 }

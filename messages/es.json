@@ -304,6 +304,7 @@
     "navLabel": "Enlaces legales y contacto",
     "privacy": "Política de privacidad",
     "terms": "Términos",
+    "calculator": "Calculadora de regla",
     "contact": "Contacto",
     "disclaimer": "Mochi no es un anticonceptivo ni sustituye el consejo médico."
   },
@@ -523,6 +524,7 @@
     "byline": "Por Mochi",
     "publisher": "Mochi",
     "published": "Publicado el",
+    "updated": "Actualizado el",
     "readTime": "{minutes} min de lectura",
     "back": "Todos los artículos",
     "onThisPage": "En este artículo",
@@ -664,5 +666,64 @@
     "accept": "Aceptar",
     "decline": "Rechazar",
     "settings": "Configuración de cookies"
+  },
+  "PeriodCalculator": {
+    "metadataTitle": "Calculadora de regla: calcular mi próxima regla",
+    "metadataDescription": "Calcula gratis la fecha de tu próxima regla, tu ovulación y tus días fértiles con nuestra calculadora menstrual. Sin registro y sin guardar tus datos.",
+    "eyebrow": "Herramienta gratuita",
+    "title": "Calcular mi próxima regla",
+    "intro": "Con nuestra calculadora de regla gratuita puedes estimar cuándo comenzará tu próxima menstruación, cuándo podrías ovular y cuáles serían tus días fértiles. Los resultados se basan en la duración habitual de tu ciclo menstrual y son orientativos.",
+    "form": {
+      "legend": "Datos de tu ciclo menstrual",
+      "lastPeriod": "Primer día de tu última regla",
+      "cycleLength": "Duración media del ciclo (días)",
+      "cycleHint": "En la edad adulta, suele durar entre 24 y 38 días. ¿No lo sabes? Deja 28 días.",
+      "periodLength": "Duración media de la regla (días)",
+      "periodHint": "Indica cuántos días suele durar tu sangrado menstrual.",
+      "submit": "Calcular mi próxima regla",
+      "reset": "Volver a empezar"
+    },
+    "results": {
+      "heading": "Las fechas estimadas de tu ciclo",
+      "empty": "Introduce la fecha de tu última regla y los datos de tu ciclo para calcular tus próximas menstruaciones.",
+      "nextPeriod": "Tu próxima regla",
+      "upcoming": "Tus siguientes reglas",
+      "periodRange": "Del {start} al {end}",
+      "ovulation": "Fecha estimada de ovulación",
+      "fertile": "Ventana fértil estimada",
+      "fertileRange": "Del {start} al {end}",
+      "daysUntil": "{days, plural, =0 {Hoy} one {En # día} other {En # días}}"
+    },
+    "disclaimer": "Las fechas calculadas son estimaciones y pueden no coincidir con tu ciclo real. Esta calculadora no debe utilizarse como método anticonceptivo ni para diagnosticar problemas de salud.",
+    "how": {
+      "title": "Cómo funciona la calculadora de regla",
+      "first": "Para calcular cuándo te vendrá la próxima regla, sumamos la duración media de tu ciclo menstrual al primer día de tu última menstruación. Por ejemplo, si tu última regla comenzó el 1 de marzo y tu ciclo suele durar 28 días, la siguiente podría comenzar el 29 de marzo. La calculadora repite esta operación para los siguientes ciclos y utiliza la duración habitual de tu sangrado para estimar cuándo terminará cada menstruación.",
+      "second": "La fecha estimada de ovulación se obtiene restando 14 días a la fecha prevista de tu próxima regla. Según Cleveland Clinic, la fase lútea, que comienza después de la ovulación, dura aproximadamente 14 días. Tu ventana fértil estimada incluye los cinco días anteriores a la fecha calculada de ovulación y ese mismo día. Como puedes ovular antes o después de lo previsto, este cálculo no permite determinar con certeza cuáles son tus días fértiles.",
+      "third": "Un ciclo de 28 días sirve como punto de partida, pero no tiene por qué coincidir con el tuyo. Según el US Office on Women's Health (womenshealth.gov), un ciclo menstrual adulto suele durar entre 24 y 38 días. Cleveland Clinic considera que los ciclos de entre 21 y aproximadamente 35 días también pueden ser normales. Introducir la duración media de tu propio ciclo permite obtener estimaciones más personalizadas. Todos los cálculos se realizan directamente en tu navegador. Los datos que introduces no se guardan ni se envían a ningún servidor."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes sobre cómo calcular tu próxima regla",
+      "next": {
+        "question": "¿Cómo calcular cuándo me va a venir la próxima regla?",
+        "answer": "Suma la duración media de tu ciclo menstrual al primer día de tu última regla para estimar cuándo comenzará la siguiente. La duración del ciclo se cuenta desde el primer día de una menstruación hasta el primer día de la siguiente."
+      },
+      "ovulation": {
+        "question": "¿Cómo calcular mi ovulación y mis días fértiles?",
+        "answer": "Resta aproximadamente 14 días a la fecha estimada de tu próxima regla para calcular cuándo podrías ovular. La ventana fértil estimada incluye los cinco días anteriores y el propio día de la ovulación prevista. Este cálculo no confirma que hayas ovulado y no debe utilizarse como método anticonceptivo."
+      },
+      "accuracy": {
+        "question": "¿Es fiable una calculadora de regla?",
+        "answer": "Una calculadora de regla ofrece una estimación basada en la duración habitual de tu ciclo, no una predicción exacta. Los resultados pueden ser menos fiables durante la adolescencia, después de un embarazo reciente, durante la lactancia, si utilizas anticonceptivos hormonales o en épocas de estrés. Si tienes un retraso menstrual y existe la posibilidad de un embarazo, hazte una prueba de embarazo y consulta con un médico o profesional de enfermería."
+      },
+      "irregular": {
+        "question": "¿Cómo calcular mi próxima regla si tengo un ciclo irregular?",
+        "answer": "Puedes estimar la fecha de tu próxima regla utilizando la duración media de tu ciclo, aunque el resultado puede ser menos fiable si tus ciclos son irregulares. Registrar las fechas de tu menstruación durante varios meses puede ayudarte a conocer mejor tu propio ciclo. Consulta con un médico o profesional de enfermería si tus ciclos duran con frecuencia menos de 24 días o más de 38 días."
+      }
+    },
+    "cta": {
+      "title": "Predicciones de tu regla adaptadas a tu ciclo",
+      "body": "Descubre Mochi, tu aplicación gratuita de seguimiento menstrual para iPhone. Mochi aprende de las fechas que registras para personalizar tus predicciones con el tiempo. Funciona sin conexión a internet y no necesitas crear una cuenta.",
+      "button": "Descargar Mochi gratis"
+    }
   }
 }

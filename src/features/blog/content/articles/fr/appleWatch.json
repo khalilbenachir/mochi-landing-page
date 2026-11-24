@@ -1,0 +1,131 @@
+{
+  "title": "Apple Watch : peut-elle prédire vos règles ?",
+  "description": "Découvrez comment l’Apple Watch prédit vos règles, quels modèles mesurent la température du poignet et quelles sont les limites du suivi de votre cycle.",
+  "imageAlt": "Mochi assis sur son coussin à côté d'un calendrier menstruel",
+  "intro": "Oui, l’Apple Watch peut prédire la date de vos prochaines règles grâce à l’application Suivi du cycle et aux dates de règles que vous avez enregistrées. Les modèles compatibles peuvent également utiliser la température du poignet pour affiner ces prévisions et estimer rétrospectivement la date de votre ovulation. Ces informations peuvent vous aider à anticiper vos règles, mais ne permettent ni de confirmer une ovulation ni de vous servir de contraception.",
+  "sections": {
+    "does-it-predict": {
+      "title": "L’Apple Watch peut-elle prédire la date de vos règles ?",
+      "paragraphs": {
+        "first": "Oui, l’Apple Watch peut estimer la date de vos prochaines règles grâce à son application intégrée Suivi du cycle. Vous pouvez consulter vos prévisions directement sur votre montre ou dans l’app Santé de votre iPhone.",
+        "second": "Pour commencer, ouvrez l’app Santé sur votre iPhone, appuyez sur « Parcourir », sélectionnez « Suivi du cycle », puis « Commencer ». Une fois vos dernières règles renseignées, Apple peut commencer à estimer la date de vos prochaines menstruations.",
+        "third": "Il n’est pas nécessaire de posséder une Apple Watch équipée d’un capteur de température pour bénéficier des prévisions de règles. Celles-ci reposent sur les données que vous enregistrez. Les modèles compatibles peuvent exploiter des données de santé supplémentaires pour personnaliser ces estimations.",
+        "fourth": "Vous pouvez également activer les notifications pour être prévenue de l’arrivée prochaine de vos règles. C’est pratique avant un départ en vacances ou pour penser à glisser quelques protections hygiéniques dans votre sac. La date annoncée reste toutefois indicative."
+      }
+    },
+    "how-predictions-work": {
+      "title": "Comment fonctionne la prédiction des règles sur l’Apple Watch ?",
+      "paragraphs": {
+        "first": "Apple estime la date de vos prochaines règles à partir des menstruations que vous avez enregistrées, de leur durée habituelle et de la durée habituelle de votre cycle menstruel. Les premières prévisions sont disponibles après avoir renseigné vos dernières règles.",
+        "second": "Selon l’assistance Apple, enregistrer chaque jour de vos règles peut améliorer la qualité des prévisions. Si elles arrivent plus tôt que prévu, indiquez leur date réelle de début. Vous ne recevrez alors pas de notification de prédiction des règles pour ce cycle.",
+        "third": "Apple peut également utiliser les données de fréquence cardiaque recueillies par votre Apple Watch pour personnaliser les prévisions de votre cycle. Cette fonctionnalité est activée par défaut, mais vous pouvez la désactiver si vous le souhaitez.",
+        "fourth": "L’utilisation de la fréquence cardiaque nécessite une Apple Watch jumelée à un iPhone doté d’iOS 15 ou d’une version ultérieure. Cette fonctionnalité est uniquement disponible dans certains pays et certaines régions."
+      }
+    },
+    "fertile-window": {
+      "title": "Comment l’Apple Watch estime-t-elle votre fenêtre fertile ?",
+      "paragraphs": {
+        "first": "L’application Suivi du cycle estime une fenêtre fertile de six jours à partir des dates de règles enregistrées ou d’un résultat positif à un test d’ovulation. Cette période correspond aux jours pendant lesquels une grossesse pourrait être plus probable, sans pour autant confirmer votre fertilité à ces dates.",
+        "second": "Selon l’assistance Apple, cette estimation repose sur une méthode calendaire. Le calcul consiste à soustraire 13 jours à la date prévue du début de votre prochain cycle, ce qui correspond à la durée de la phase lutéale retenue pour cette estimation.",
+        "third": "Si vous renseignez un résultat positif à un test d’ovulation, votre fenêtre fertile estimée peut être décalée. Vous pouvez également recevoir une notification lorsque cette période approche.",
+        "fourth": "Votre ovulation réelle peut survenir plus tôt ou plus tard que prévu, notamment si la durée de vos cycles varie. Apple précise que le suivi du cycle ne doit pas être utilisé comme méthode de contraception."
+      }
+    },
+    "wrist-temperature": {
+      "title": "Quelle Apple Watch mesure la température du poignet pour le suivi du cycle ?",
+      "paragraphs": {
+        "first": "L’Apple Watch Series 8 et les modèles ultérieurs, ainsi que tous les modèles Apple Watch Ultra, permettent de mesurer la température du poignet pour le suivi du cycle menstruel. Ces données peuvent améliorer les prévisions de règles et fournir une estimation rétrospective de l’ovulation.",
+        "second": "Une estimation rétrospective signifie que votre Apple Watch cherche à déterminer, après coup, à quel moment vous avez probablement ovulé. Elle ne prédit donc pas à l’avance le moment exact de votre ovulation.",
+        "third": "Selon l’assistance Apple, les données de température du poignet peuvent aussi contribuer à affiner la date prévue de vos prochaines règles. Les prévisions de base restent néanmoins accessibles sans montre équipée d’un capteur de température."
+      },
+      "table": {
+        "caption": "Suivi du cycle sur l’Apple Watch : fonctionnalités et modèles compatibles",
+        "columns": [
+          "Fonctionnalité",
+          "Ce dont vous avez besoin",
+          "À quoi cela sert"
+        ],
+        "rows": [
+          [
+            "Prédiction des règles",
+            "Suivi du cycle et dates de règles enregistrées",
+            "Estime la date de début de vos prochaines règles."
+          ],
+          [
+            "Utilisation de la fréquence cardiaque",
+            "Apple Watch jumelée à un iPhone sous iOS 15 ou version ultérieure",
+            "Personnalise les prévisions de votre cycle menstruel."
+          ],
+          [
+            "Mesure de la température du poignet",
+            "Apple Watch Series 8 ou modèle ultérieur, ou tout modèle Apple Watch Ultra",
+            "Améliore les prévisions de règles et estime rétrospectivement la date probable de l’ovulation."
+          ]
+        ]
+      },
+      "note": "Les estimations rétrospectives de l’ovulation et les prévisions utilisant la fréquence cardiaque sont disponibles uniquement dans certains pays et certaines régions. Une estimation ne confirme pas qu’une ovulation a effectivement eu lieu."
+    },
+    "notifications": {
+      "title": "L’Apple Watch peut-elle vous prévenir de l’arrivée de vos règles ?",
+      "paragraphs": {
+        "first": "Oui, l’Apple Watch peut vous envoyer une notification lorsque la date prévue de vos prochaines règles ou de votre fenêtre fertile approche. L’application Suivi du cycle peut également vous demander si vos règles sont terminées afin de tenir vos données à jour.",
+        "second": "Selon l’assistance Apple, vous pouvez gérer les prévisions et les notifications depuis les réglages du suivi du cycle. Si vous enregistrez vos règles avant leur date prévue, vous ne recevrez pas la notification de prédiction correspondante pour ce cycle.",
+        "third": "Vous pouvez aussi configurer la détection des écarts de cycle sur votre iPhone. Cette fonctionnalité analyse les données enregistrées au cours des six derniers mois et peut vous signaler des règles irrégulières, peu fréquentes ou prolongées, ainsi que des saignements légers persistants en dehors des règles.",
+        "fourth": "Avant une consultation médicale, vous pouvez exporter jusqu’à douze mois d’historique de votre cycle au format PDF pour les partager avec votre professionnel de santé. Ces informations peuvent faciliter les échanges, mais ne permettent pas d’établir un diagnostic."
+      }
+    },
+    "privacy": {
+      "title": "Vos données menstruelles sont-elles protégées sur l’Apple Watch ?",
+      "paragraphs": {
+        "first": "Apple protège vos données de suivi du cycle par chiffrement lorsque votre iPhone est verrouillé avec un code d’accès, Touch ID ou Face ID. Si l’identification à deux facteurs est activée, les données de suivi du cycle synchronisées avec iCloud bénéficient également d’un chiffrement de bout en bout.",
+        "second": "Selon l’assistance Apple, ces protections s’appliquent aux informations menstruelles enregistrées dans l’app Santé, notamment les dates de vos règles et l’historique de vos cycles.",
+        "third": "Le chiffrement de bout en bout signifie qu’Apple ne peut pas lire les données de suivi du cycle ainsi protégées et synchronisées avec iCloud, lorsque les conditions de sécurité requises sont réunies.",
+        "fourth": "Si vous prêtez occasionnellement votre iPhone à quelqu’un, pensez aux personnes qui peuvent accéder à votre appareil déverrouillé ou qui connaissent votre code d’accès. Vous pouvez également vérifier dans les réglages de votre compte Apple que l’identification à deux facteurs est activée."
+      }
+    },
+    "limits": {
+      "title": "Le suivi du cycle menstruel sur l’Apple Watch est-il fiable ?",
+      "paragraphs": {
+        "first": "L’Apple Watch peut estimer la date de vos prochaines règles, mais elle ne peut ni garantir leur arrivée à une date précise ni confirmer une ovulation. Ses prévisions reposent sur votre historique menstruel et, lorsque ces fonctionnalités sont disponibles, sur des données supplémentaires comme votre fréquence cardiaque et la température de votre poignet.",
+        "second": "Si vos règles sont irrégulières ou que la durée de votre cycle varie d’un mois à l’autre, les prévisions peuvent être moins fiables. Enregistrer chaque jour de vos règles peut améliorer les estimations suivantes, sans garantir leur exactitude.",
+        "third": "Apple précise que « le suivi du cycle ne doit pas être utilisé comme méthode de contraception ». La fenêtre fertile estimée ne permet pas de déterminer quels jours vous pouvez avoir des rapports sexuels non protégés sans risque de grossesse.",
+        "fourth": "Apple indique également que les données du suivi du cycle « ne doivent pas être utilisées pour diagnostiquer un problème de santé ». Si des changements dans votre cycle vous préoccupent, vous pouvez présenter votre historique menstruel à un professionnel de santé."
+      }
+    },
+    "with-mochi": {
+      "title": "Suivi du cycle Apple ou Mochi : quelle application choisir ?",
+      "paragraphs": {
+        "first": "Le suivi du cycle d’Apple est une solution intéressante si vous souhaitez consulter vos prévisions de règles directement sur votre Apple Watch et exploiter les données de santé compatibles. Mochi est une application indépendante pour iPhone qui peut vous convenir si vous recherchez un outil dédié au suivi des règles et aux petits gestes du quotidien.",
+        "second": "Vous pouvez utiliser Mochi sans créer de compte. L’application fonctionne également hors ligne, ce qui vous permet de continuer à suivre vos règles pendant un voyage ou lorsque vous n’avez pas de connexion Internet.",
+        "third": "Mochi propose aussi des rappels facultatifs pour changer votre serviette hygiénique. Un compte à rebours apparaît sur l’écran verrouillé et dans la Dynamic Island de votre iPhone. Vous pouvez ainsi consulter le temps restant avant le prochain changement prévu, même en pleine journée de travail.",
+        "fourth": "Vous pouvez utiliser le suivi du cycle d’Apple pour consulter vos prévisions sur votre montre et Mochi pour accompagner votre quotidien pendant les règles. Ces deux outils sont indépendants et aucun ne peut garantir la date exacte de vos prochaines menstruations."
+      }
+    }
+  },
+  "faq": {
+    "predict": {
+      "question": "Est-ce que l’Apple Watch peut prédire mes prochaines règles ?",
+      "answer": "Oui, l’Apple Watch estime la date de vos prochaines règles à partir des menstruations enregistrées, de leur durée habituelle et de la durée de votre cycle. Vous pouvez également recevoir une notification lorsque la date prévue de vos règles approche."
+    },
+    "ovulation-models": {
+      "question": "Quelle Apple Watch mesure la température du poignet pour estimer l’ovulation ?",
+      "answer": "L’Apple Watch Series 8 et les modèles ultérieurs, ainsi que tous les modèles Apple Watch Ultra, peuvent utiliser la température du poignet pour améliorer les prévisions de règles et estimer rétrospectivement la date de l’ovulation. Les estimations de l’ovulation sont uniquement disponibles dans certains pays et certaines régions."
+    },
+    "accuracy": {
+      "question": "Les prédictions de règles de l’Apple Watch sont-elles fiables ?",
+      "answer": "L’Apple Watch fournit des estimations de la date de vos prochaines règles, sans pouvoir garantir leur exactitude. Enregistrer chaque jour de vos règles peut améliorer les prévisions, mais celles-ci peuvent être moins fiables si vos cycles menstruels sont irréguliers."
+    },
+    "birth-control": {
+      "question": "Peut-on utiliser l’Apple Watch comme moyen de contraception ?",
+      "answer": "Non, Apple précise que le suivi du cycle ne doit pas être utilisé comme méthode de contraception. Ni la fenêtre fertile estimée de six jours ni les estimations rétrospectives de l’ovulation ne permettent de déterminer quels jours les rapports sexuels non protégés sont sans risque de grossesse."
+    },
+    "private": {
+      "question": "Mes données de suivi des règles sur l’Apple Watch sont-elles confidentielles ?",
+      "answer": "Apple protège vos données de suivi du cycle par chiffrement lorsque votre iPhone est verrouillé avec un code d’accès, Touch ID ou Face ID. Lorsque l’identification à deux facteurs est activée, les données de suivi du cycle synchronisées avec iCloud sont également chiffrées de bout en bout."
+    },
+    "setup": {
+      "question": "Comment activer le suivi du cycle sur mon Apple Watch ?",
+      "answer": "Ouvrez l’app Santé sur votre iPhone, appuyez sur « Parcourir », sélectionnez « Suivi du cycle », puis « Commencer ». Renseignez vos dernières règles pour obtenir vos premières prévisions, que vous pourrez ensuite consulter dans l’application Suivi du cycle de votre Apple Watch."
+    }
+  }
+}

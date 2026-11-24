@@ -1,82 +1,163 @@
 {
-  "title": "How often should you change your pad?",
-  "description": "Learn how often to change your pad, when to change sooner, and what to check for overnight pads and liners, with links to CDC and ACOG guidance.",
-  "imageAlt": "Pink Mochi beside a sanitary pad and a purple alarm clock",
-  "intro": "Change your pad every few hours, sooner if it feels full, wet or uncomfortable. Follow the instructions for your product and adjust to your flow. A reminder can help you check in, but you can change your pad before it rings.",
+  "title": "How Often Should You Change Your Pad? Every 4 to 8 Hours",
+  "description": "How often should you change your pad? Learn when to change it on light and heavy days, how long to wear one overnight, and how to tell when it's full.",
+  "imageAlt": "Pink Mochi next to a period pad and a purple alarm clock",
+  "intro": "According to the American College of Obstetricians and Gynecologists (ACOG), you should change your pad at least every 4 to 8 hours, or sooner if it feels full, wet or uncomfortable. The CDC recommends changing pads every few hours, even when your flow is light. Your ideal changing routine depends on how heavily you bleed and the type of pad you wear.",
   "sections": {
-    "day-pads": {
-      "title": "Day pads",
+    "how-often": {
+      "title": "How often should you change your pad?",
       "paragraphs": {
-        "first": "The CDC recommends changing sanitary pads every few hours, including on light-flow days. ACOG describes changing them at least every 4 to 8 hours, or sooner when they feel full, wet or uncomfortable. These are general guidelines, not a reason to wait if you need a fresh pad.",
-        "second": "On heavier days, check more often. Choose the absorbency that suits your flow, and follow the instructions on the packet."
+        "first": "You should change your period pad every 4 to 8 hours at a minimum, or sooner if it feels full, wet or uncomfortable, according to the American College of Obstetricians and Gynecologists (ACOG). The CDC recommends changing pads every few hours, even on light period days.",
+        "second": "How long you can wear a pad depends on your flow and the type of pad you use. On heavier days, you may need to change it much sooner. During a school or work day, changing your pad during regular bathroom breaks can help you stay comfortable without having to watch the clock."
       },
       "table": {
-        "caption": "A practical guide to pads and liners",
+        "caption": "How often to change your pad depending on your flow and pad type",
         "columns": [
-          "Pad type",
+          "Situation",
           "When to change",
-          "Keep in mind"
+          "Practical tip"
         ],
         "rows": [
           [
-            "Day pad",
+            "Light period",
             "Every few hours",
-            "Change sooner for heavier flow or discomfort."
+            "Change even if it looks almost clean."
           ],
           [
-            "Overnight pad",
-            "Follow the product instructions",
-            "Use a fresh one before bed; change when you wake or sooner if needed."
+            "Regular period",
+            "Every 4 to 8 hours, or sooner",
+            "Plan around bathroom breaks."
           ],
           [
-            "Liner",
-            "Regularly, and when damp",
-            "For light flow or spotting."
+            "Heavy period",
+            "As often as needed",
+            "Change before the pad becomes saturated."
+          ],
+          [
+            "Overnight",
+            "Follow the product's wear-time instructions",
+            "Put on a fresh pad before bed."
+          ],
+          [
+            "Panty liner",
+            "Every few hours or when damp",
+            "Use a period pad for heavier bleeding."
           ]
         ]
+      },
+      "note": "You don't need to wait until your pad is full to change it."
+    },
+    "heavy-flow": {
+      "title": "How often should you change your pad on a heavy period?",
+      "paragraphs": {
+        "first": "On a heavy period, you should change your pad as often as needed, before it becomes saturated or starts leaking. If you regularly need to change your pad every 1 to 2 hours, the NHS recommends speaking to a doctor.",
+        "second": "Your flow can vary throughout your period, so you may need more frequent changes on certain days. Carry a few spare pads when you're away from home, especially if you have a long school or work day.",
+        "third": "According to the NHS, other signs that your periods may be too heavy include:"
+      },
+      "items": {
+        "double-protection": "Needing two period products at the same time.",
+        "duration": "Having periods that last longer than 7 days.",
+        "clots": "Passing blood clots bigger than about 2.5 cm.",
+        "leaks": "Bleeding through your clothes or bedding.",
+        "daily-activities": "Avoiding everyday activities because of your period.",
+        "fatigue": "Often feeling tired or short of breath."
+      },
+      "note": "Also talk to a doctor if your periods suddenly get heavier or become very painful."
+    },
+    "pads-per-day": {
+      "title": "How many pads should you use a day?",
+      "paragraphs": {
+        "first": "Using 3 to 6 pads a day is a rough estimate based on changing your pad every 4 to 8 hours over a 24-hour period. You may need more if your flow is heavy or you prefer to change your pad more frequently.",
+        "second": "There is no set number of pads you should use during your period. Your flow, the absorbency of your pads and how often you feel comfortable changing them all affect your daily total.",
+        "third": "You might use more pads during the first few days of your period and fewer towards the end. If you're heading out for a full day or taking a long flight, pack a couple more than you expect to need.",
+        "fourth": "Even on a light day, don't wait until your pad is full before changing it. The CDC recommends changing pads every few hours, regardless of how light your flow is."
       }
     },
-    "overnight-pads": {
-      "title": "Overnight pads",
+    "overnight": {
+      "title": "How long can you wear a pad overnight?",
       "paragraphs": {
-        "first": "Choose a product intended for overnight use and follow its wear-time instructions. Put on a fresh one before bed and change it when you wake, or sooner if it is full or uncomfortable.",
-        "second": "An overnight label is not a universal promise that every pad can be worn for the same number of hours. If you regularly need to change products very frequently because of heavy bleeding, ask a healthcare professional for advice."
+        "first": "How long you can wear a pad overnight depends on the product's recommended wear time and your menstrual flow. There is no universal time limit for overnight pads, as their absorbency and wear instructions vary by brand.",
+        "second": "Put on a fresh overnight pad just before going to bed and change it when you wake up, staying within the manufacturer's recommended wear time.",
+        "third": "Can you wear a pad for 12 hours? Wearing the same pad for 12 hours is not recommended as a routine, even if your flow is light. ACOG advises changing pads at least every 4 to 8 hours.",
+        "fourth": "Some people wear two overlapping pads at night for extra coverage against leaks. However, a longer overnight pad may be more comfortable. If you regularly need two period products at once to manage your bleeding, the NHS recommends speaking to a doctor."
       }
+    },
+    "full-pad-signs": {
+      "title": "How do you know when your pad is full or needs changing?",
+      "paragraphs": {
+        "first": "Your pad is likely full when most of its absorbent surface is soaked or blood starts reaching the edges. However, you should change your pad before it reaches this point, especially if it feels wet or uncomfortable.",
+        "second": "Here are five signs that it's time to put on a fresh pad:"
+      },
+      "items": {
+        "saturation": "Most of the absorbent surface is soaked with blood.",
+        "edges": "Blood is spreading towards the edges of your pad.",
+        "wetness": "Your pad feels damp or wet against your skin.",
+        "discomfort": "You notice discomfort or rubbing when you move.",
+        "elapsed-time": "Several hours have passed since your last change, even if your pad isn't full."
+      },
+      "note": "On heavier days, check your pad whenever you visit the bathroom. Different pads have different absorbency levels, so you can't always judge how full a pad is by how long you've been wearing it."
     },
     "liners": {
-      "title": "Liners",
+      "title": "How often should you change a panty liner?",
       "paragraphs": {
-        "first": "Liners are thinner products for light flow or spotting. Change them regularly and whenever they feel damp or uncomfortable. For heavier bleeding, use a product suited to that flow."
+        "first": "You should generally change your panty liner every few hours, or sooner if it feels damp or uncomfortable. Follow the wear-time instructions on the packaging, as these can vary between products.",
+        "second": "Panty liners are thinner and less absorbent than regular period pads. They're useful for everyday vaginal discharge, light spotting or the last few days of your period when bleeding is minimal.",
+        "third": "Even if your liner looks clean, moisture can build up throughout the day. Changing it during a lunch break or after exercising can help you feel more comfortable.",
+        "fourth": "If your period becomes heavier and you're frequently soaking through your liner, switch to a regular period pad with suitable absorbency."
       }
     },
-    "signs-to-change": {
-      "title": "Signs it's time to change",
+    "comfort-and-skin": {
+      "title": "Why is it important to change your pad regularly?",
+      "paragraphs": {
+        "first": "Changing your pad regularly helps prevent leaks, reduce unwanted odors and keep your skin comfortable. Wearing a damp pad for too long can cause skin irritation because of moisture and friction.",
+        "second": "You might notice rubbing or discomfort after sitting through a long lecture, walking around town or spending several hours at your desk. Putting on a fresh pad can make a noticeable difference, even when your current one isn't full.",
+        "third": "A few simple habits can make pad changes easier when you're away from home."
+      },
       "items": {
-        "full": "The pad feels full, wet or uncomfortable.",
-        "leaks": "You notice a leak or the product has shifted.",
-        "time": "It is time to change according to the product instructions, even if your flow is light."
+        "spare-pads": "Keep a few spare pads in a small pouch in your bag.",
+        "underwear": "Choose breathable underwear that holds your pad comfortably in place.",
+        "bathroom-breaks": "Use regular bathroom breaks to check and change your pad.",
+        "comfort": "Change your pad sooner if you notice moisture or rubbing."
       }
     },
     "mochi-reminder": {
-      "title": "Let Mochi remind you",
+      "title": "How to remember when to change your pad with Mochi",
       "paragraphs": {
-        "first": "Mochi has an optional pad change reminder with a countdown in the Dynamic Island and on the Lock Screen. Its published feature information describes day pad, overnight pad and liner options, with a duration you choose.",
-        "second": "A timer is a prompt to check your product, not a measure of how full it is or proof that a chosen interval is right for you. Change sooner whenever needed."
+        "first": "Mochi offers an optional pad change reminder that helps you keep track of how long you've been wearing your pad. A live countdown appears on your iPhone's Lock Screen and Dynamic Island, so you can check the remaining time without opening the app.",
+        "second": "You can choose a preset for a day pad, overnight pad or panty liner, or set a custom duration based on your flow and the product's recommended wear time.",
+        "third": "It's particularly handy when you're busy at work, studying for an exam or spending the afternoon out with friends. You have one less thing to keep track of.",
+        "fourth": "A timer cannot tell how full your pad is. If your pad feels wet or uncomfortable, change it straight away rather than waiting for the countdown to finish."
       }
     }
   },
   "faq": {
     "hours": {
-      "question": "Can I keep a pad on just because the timer has not finished?",
-      "answer": "Change it sooner if it feels full, wet or uncomfortable. Follow the product instructions. A timer cannot assess your flow or the condition of the pad."
+      "question": "How many hours can you wear a pad?",
+      "answer": "ACOG recommends changing your pad at least every 4 to 8 hours, while the CDC advises changing it every few hours. Change it sooner if it becomes full, wet or uncomfortable."
     },
     "light": {
-      "question": "Do I still need to change my pad if my flow is light?",
-      "answer": "Yes. The CDC advises changing pads every few hours even when the flow is light, and more frequently for heavier bleeding."
+      "question": "How often should you change your pad on a light period?",
+      "answer": "You should change your pad every few hours, even on a light period. You don't need to wait until your pad is full or visibly soaked before putting on a fresh one."
     },
     "night": {
-      "question": "Does every overnight pad have the same wear time?",
-      "answer": "No single interval applies to every product. Choose a product intended for overnight use and follow its instructions. Change it sooner if it feels full or uncomfortable."
+      "question": "How long can you wear a pad overnight?",
+      "answer": "There is no universal wear-time limit for overnight pads because product instructions vary by brand. Put on a fresh overnight pad before bed and change it when you wake up, staying within the manufacturer's recommended wear time."
+    },
+    "twelve-hours": {
+      "question": "Can I wear a pad for 12 hours?",
+      "answer": "Wearing the same pad for 12 hours is not recommended as a routine, even if your period is light. ACOG recommends changing pads at least every 4 to 8 hours, or sooner if needed."
+    },
+    "per-day": {
+      "question": "How many pads should I use a day?",
+      "answer": "Around 3 to 6 pads per day is a rough estimate based on changing every 4 to 8 hours over 24 hours. You may need more depending on your menstrual flow, pad absorbency and comfort."
+    },
+    "two-pads": {
+      "question": "Can you wear two pads at night?",
+      "answer": "Yes, you can overlap two pads for extra coverage, although a longer overnight pad may be more comfortable. If you regularly need two period products at once to manage heavy bleeding, the NHS recommends speaking to a doctor."
+    },
+    "liners": {
+      "question": "How often should you change a panty liner?",
+      "answer": "Change your panty liner every few hours, or sooner if it feels damp or uncomfortable. Follow the wear-time instructions on the packaging and switch to a regular period pad if your bleeding becomes heavier."
     }
   }
 }

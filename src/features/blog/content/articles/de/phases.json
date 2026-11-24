@@ -1,53 +1,176 @@
 {
-  "title": "Die vier Phasen des Menstruationszyklus erklärt",
-  "description": "Verstehe die vier Phasen des Menstruationszyklus, ihre Überschneidungen und unterschiedliche Zykluslängen, mit Quellen und Grenzen von Vorhersagen.",
-  "imageAlt": "Grüner Mochi neben einem Rad mit verspielten Zyklussymbolen",
-  "intro": "Häufig wird der Zyklus mit vier Begriffen beschrieben: Menstruation, Follikelphase, Eisprung und Lutealphase. Das sind keine vier gleich langen Zeitblöcke. Die Menstruation überschneidet sich mit der frühen Follikelphase.",
+  "title": "Die 4 Zyklusphasen: Der weibliche Zyklus erklärt",
+  "description": "Entdecke die 4 Zyklusphasen, wie lange sie dauern, welche Hormone deinen Menstruationszyklus steuern und was dabei in deinem Körper passiert.",
+  "imageAlt": "Grüner Mochi neben einer kreisförmigen Darstellung der vier Zyklusphasen",
+  "intro": "Der weibliche Zyklus besteht aus vier Phasen: Menstruation, Follikelphase, Eisprung und Lutealphase. In jeder Zyklusphase verändern sich deine Hormonspiegel und bereiten deinen Körper auf eine mögliche Schwangerschaft vor. Ein Menstruationszyklus dauert durchschnittlich 28 Tage, wobei die Dauer und der Zeitpunkt der einzelnen Phasen variieren können.",
   "sections": {
-    "menstruation": {
-      "title": "Menstruation: deine Periode",
+    "overview": {
+      "title": "Was sind die 4 Phasen des Menstruationszyklus?",
       "paragraphs": {
-        "first": "Tag 1 ist der erste Tag deiner Periode. Bei der Blutung wird Gebärmutterschleimhaut abgestoßen. Notiere echte Blutungstage, statt Vorhersagen zu übernehmen."
+        "first": "Die vier Zyklusphasen sind die Menstruation, die Follikelphase, der Eisprung und die Lutealphase. Hormone steuern dabei den Abbau und Aufbau deiner Gebärmutterschleimhaut, die Reifung einer Eizelle und die Vorbereitung deines Körpers auf eine mögliche Schwangerschaft.",
+        "second": "Laut Cleveland Clinic dauert ein Menstruationszyklus durchschnittlich 28 Tage. Die folgende Tabelle zeigt dir anhand eines solchen Zyklus, was während der einzelnen Phasen passiert. Tag 1 ist dabei immer der erste Tag deiner Periode, nicht der Tag nach dem Ende deiner Blutung."
+      },
+      "table": {
+        "caption": "Die 4 Zyklusphasen im Überblick: Tage, Hormone und körperliche Veränderungen",
+        "columns": [
+          "Zyklusphase",
+          "Typische Tage (28-Tage-Zyklus)",
+          "Wichtige Hormone",
+          "Was passiert?"
+        ],
+        "rows": [
+          [
+            "Menstruation",
+            "Tag 1 bis 5",
+            "Niedrige Östrogen- und Progesteronspiegel",
+            "Die Gebärmutterschleimhaut wird abgestoßen und die Regelblutung setzt ein."
+          ],
+          [
+            "Follikelphase",
+            "Tag 1 bis 14",
+            "FSH und steigender Östrogenspiegel",
+            "Eine Eizelle reift heran und die Gebärmutterschleimhaut baut sich auf."
+          ],
+          [
+            "Eisprung",
+            "Etwa an Tag 14",
+            "Starker Anstieg von LH",
+            "Ein Eierstock setzt eine Eizelle frei."
+          ],
+          [
+            "Lutealphase",
+            "Tag 15 bis 28",
+            "Progesteron",
+            "Die Gebärmutterschleimhaut bereitet sich auf eine mögliche Schwangerschaft vor."
+          ]
+        ]
+      },
+      "note": "Die vier Zyklusphasen sind zeitlich nicht vollständig voneinander getrennt. Die Menstruation fällt in die ersten Tage der Follikelphase. Außerdem findet der Eisprung nicht immer am 14. Zyklustag statt."
+    },
+    "menstruation": {
+      "title": "Phase 1: Die Menstruation (Blutungsphase)",
+      "paragraphs": {
+        "first": "Die Menstruation ist die Phase deines Zyklus, in der die Gebärmutterschleimhaut abgestoßen wird und deine Regelblutung einsetzt. Bei einem 28-Tage-Zyklus umfasst sie normalerweise die ersten fünf Tage. Deine Blutung kann aber auch kürzer oder länger dauern.",
+        "second": "Wenn im vorherigen Zyklus keine Schwangerschaft eingetreten ist, sinken die Östrogen- und Progesteronspiegel. Durch diesen Hormonabfall löst sich die Gebärmutterschleimhaut und wird zusammen mit dem Menstruationsblut über die Scheide ausgeschieden.",
+        "third": "Laut Cleveland Clinic dauert die Regelblutung bei den meisten Menschen zwischen 3 und 5 Tagen. Eine Blutungsdauer von 3 bis 7 Tagen gilt ebenfalls als normal.",
+        "fourth": "Mit dem ersten Tag deiner Periode beginnt nicht nur ein neuer Menstruationszyklus, sondern auch die Follikelphase. Wenn du deine Periode in einem Kalender oder einer Zyklus-App einträgst, verwende das tatsächliche Startdatum und nicht den ursprünglich errechneten Termin."
       }
     },
     "follicular-phase": {
-      "title": "Die Follikelphase",
+      "title": "Phase 2: Was ist die Follikelphase?",
       "paragraphs": {
-        "first": "Sie beginnt mit dem Zyklus und reicht bis zum Eisprung. Follikel entwickeln sich in den Eierstöcken, die Gebärmutterschleimhaut baut sich wieder auf. Auch die Blutungstage gehören zu dieser Phase."
+        "first": "Die Follikelphase ist die Zyklusphase, in der eine Eizelle in einem deiner Eierstöcke heranreift und sich die Gebärmutterschleimhaut aufbaut. Sie beginnt am ersten Tag deiner Periode und endet mit dem Eisprung.",
+        "second": "In dieser Phase regt das follikelstimulierende Hormon (FSH) das Wachstum der sogenannten Follikel an. Das sind kleine Eibläschen in deinen Eierstöcken. Gleichzeitig steigt dein Östrogenspiegel, wodurch sich die während der Periode abgestoßene Gebärmutterschleimhaut wieder aufbaut.",
+        "third": "Laut Cleveland Clinic reift bei einem 28-Tage-Zyklus ungefähr zwischen dem 10. und 14. Zyklustag in einem der Follikel eine Eizelle vollständig heran. Anschließend kann sie beim Eisprung freigesetzt werden.",
+        "fourth": "Während du noch Binden oder Tampons für deine Periode verwendest, hat deine Follikelphase also bereits begonnen. Da ihre Dauer von Zyklus zu Zyklus schwanken kann, findet dein Eisprung möglicherweise in einem Monat früher und im nächsten etwas später statt."
       }
     },
     "ovulation": {
-      "title": "Der Eisprung",
+      "title": "Phase 3: Der Eisprung (Ovulation)",
       "paragraphs": {
-        "first": "Beim Eisprung wird eine Eizelle aus einem Eierstock freigesetzt. Der Zeitpunkt variiert. Ein Kalendertag oder ein Gefühl bestätigt ihn nicht. Eine App-Schätzung bleibt eine Schätzung."
+        "first": "Beim Eisprung setzt einer deiner Eierstöcke eine reife Eizelle frei. Bei einem Menstruationszyklus von 28 Tagen geschieht das ungefähr am 14. Zyklustag. Der tatsächliche Zeitpunkt kann jedoch von Zyklus zu Zyklus variieren.",
+        "second": "Ein plötzlicher Anstieg des luteinisierenden Hormons (LH) löst den Eisprung aus. Nach Angaben des US Office on Women's Health (womenshealth.gov) beginnt dieser Hormonanstieg etwa 36 Stunden vor dem Eisprung.",
+        "third": "Auch deine Basaltemperatur, also deine Körpertemperatur in Ruhe, steigt rund um den Eisprung leicht an. Wenn du sie jeden Morgen vor dem Aufstehen misst, kannst du mit der Zeit mögliche Zusammenhänge erkennen.",
+        "fourth": "Dauert deine Follikelphase in einem Monat länger als gewöhnlich, kann sich auch dein Eisprung nach hinten verschieben. Selbst bei einer regelmäßigen Periode können ein Zykluskalender oder eine Zyklus-App den Zeitpunkt des Eisprungs lediglich schätzen. Sie können nicht bestätigen, dass tatsächlich eine Eizelle freigesetzt wurde."
       }
     },
     "luteal-phase": {
-      "title": "Die Lutealphase",
+      "title": "Phase 4: Was ist die Lutealphase?",
       "paragraphs": {
-        "first": "Sie folgt dem Eisprung. Tritt keine Schwangerschaft ein, sinken Hormonspiegel und die nächste Periode beginnt. Manche Menschen bemerken in dieser Zeit prämenstruelle Symptome."
+        "first": "Die Lutealphase, auch Gelbkörperphase genannt, beginnt nach dem Eisprung und dauert ungefähr 14 Tage. Bei einem 28-Tage-Zyklus entspricht sie etwa dem 15. bis 28. Zyklustag. In dieser Zeit steigt dein Progesteronspiegel, um die Gebärmutterschleimhaut auf eine mögliche Schwangerschaft vorzubereiten.",
+        "second": "Tritt keine Schwangerschaft ein, sinken gegen Ende der Lutealphase die Östrogen- und Progesteronspiegel. Dieser Hormonabfall führt dazu, dass die Gebärmutterschleimhaut abgestoßen wird und deine nächste Periode beginnt.",
+        "third": "Während der Lutealphase können auch Beschwerden des prämenstruellen Syndroms (PMS) auftreten. Laut US Office on Women's Health beginnen diese nach dem Eisprung, meist ein bis zwei Wochen vor der Periode. In den ersten Tagen nach Beginn der Regelblutung lassen sie normalerweise nach.",
+        "fourth": "Wenn du dich einige Tage vor deiner Periode häufiger müde fühlst oder einen aufgeblähten Bauch bemerkst, kannst du diese Beschwerden zusammen mit deinen Periodendaten festhalten. Nach einigen Zyklen erkennst du möglicherweise, zu welchem Zeitpunkt bestimmte Symptome wiederkehren."
       }
     },
-    "your-own-pattern": {
-      "title": "Dein Zyklus muss keinem Schaubild folgen",
+    "cycle-length": {
+      "title": "Wie lange dauert ein normaler Menstruationszyklus?",
       "paragraphs": {
-        "first": "Die Begriffe helfen beim Verstehen. Halte anschließend deine eigenen Beobachtungen fest. Eine Abbildung schreibt dir weder Stimmung noch Energie oder Tagesablauf vor.",
-        "second": "Hormonelle Verhütung und andere Umstände können Blutung und Eisprung verändern. Besprich unerwartete Veränderungen oder persönliche Fragen mit medizinischem Fachpersonal. Mochi diagnostiziert keine Zyklusphasen und bietet keine Verhütung."
+        "first": "Ein Menstruationszyklus dauert durchschnittlich 28 Tage, kann aber auch kürzer oder länger sein. Laut Cleveland Clinic können 21 bis etwa 35 Tage normal sein. Das US Office on Women's Health gibt für Erwachsene eine normale Zykluslänge von 24 bis 38 Tagen an.",
+        "second": "Die Zykluslänge berechnest du vom ersten Tag deiner Periode bis zum ersten Tag der nächsten Periode. Die Dauer der einzelnen Zyklusphasen kann schwanken, insbesondere die der Follikelphase, die mit dem Eisprung endet.",
+        "third": "Bei Jugendlichen sind Zyklen von mehr als 38 Tagen in den ersten Jahren nach der ersten Periode keine Seltenheit. Bei den meisten wird der Zyklus innerhalb von drei Jahren regelmäßiger."
+      },
+      "table": {
+        "caption": "Wie lange dauern der Menstruationszyklus und seine einzelnen Phasen?",
+        "columns": [
+          "Phase oder Messgröße",
+          "Typische Dauer",
+          "Quelle"
+        ],
+        "rows": [
+          [
+            "Durchschnittliche Zykluslänge",
+            "28 Tage",
+            "Cleveland Clinic"
+          ],
+          [
+            "Normale Zykluslänge",
+            "21 bis etwa 35 Tage",
+            "Cleveland Clinic"
+          ],
+          [
+            "Normale Zykluslänge bei Erwachsenen",
+            "24 bis 38 Tage",
+            "US Office on Women's Health"
+          ],
+          [
+            "Menstruation",
+            "3 bis 7 Tage",
+            "Cleveland Clinic"
+          ],
+          [
+            "Follikelphase",
+            "Etwa 14 Tage bei einem 28-Tage-Zyklus",
+            "Cleveland Clinic"
+          ],
+          [
+            "Eisprung",
+            "Ungefähr am 14. Zyklustag, Zeitpunkt variabel",
+            "Cleveland Clinic"
+          ],
+          [
+            "Lutealphase",
+            "Etwa 14 Tage",
+            "Cleveland Clinic"
+          ]
+        ]
+      },
+      "note": "Das US Office on Women's Health empfiehlt, ärztlichen Rat einzuholen oder mit einer medizinischen Fachkraft zu sprechen, wenn deine Zyklen häufig kürzer als 24 Tage oder länger als 38 Tage sind."
+    },
+    "your-own-pattern": {
+      "title": "So lernst du deinen eigenen Menstruationszyklus besser kennen",
+      "paragraphs": {
+        "first": "Wenn du deinen eigenen Menstruationszyklus dokumentierst, erfährst du mehr über deinen Körper, als wenn du dich ausschließlich am klassischen 28-Tage-Zyklus orientierst. Deine Zykluslänge und der Zeitpunkt deines Eisprungs können sich von Monat zu Monat verändern, selbst wenn du normalerweise eine regelmäßige Periode hast.",
+        "second": "Notiere zunächst den ersten Tag jeder Periode, die Dauer deiner Blutung und mögliche Beschwerden während des Zyklus. Mit der Zeit kannst du wiederkehrende Muster erkennen, etwa einen aufgeblähten Bauch in der Woche vor deiner Periode.",
+        "third": "Mochi nutzt die Periodendaten, die du einträgst, um den voraussichtlichen Beginn deiner nächsten Periode und den möglichen Zeitpunkt deines Eisprungs zu berechnen. Das kann dir bei der Planung eines Wochenendausflugs, eines Urlaubs oder einer arbeitsreichen Woche helfen.",
+        "fourth": "Mochi kann nicht bestätigen, dass ein Eisprung tatsächlich stattgefunden hat. Die App ist kein Medizinprodukt und darf nicht als Verhütungsmethode verwendet werden."
       }
     }
   },
   "faq": {
-    "equal": {
-      "question": "Sind die vier Phasen gleich lang?",
-      "answer": "Nein. Die Menstruation überschneidet sich mit der frühen Follikelphase. Dauer und Zeitpunkt variieren zwischen Menschen und Zyklen."
+    "what-are-phases": {
+      "question": "Was sind die 4 Zyklusphasen der Frau?",
+      "answer": "Die vier Phasen des weiblichen Zyklus sind die Menstruation, die Follikelphase, der Eisprung und die Lutealphase. Während dieser Phasen wird die Gebärmutterschleimhaut abgestoßen und wieder aufgebaut, eine Eizelle reift heran und wird freigesetzt, und der Körper bereitet sich auf eine mögliche Schwangerschaft vor."
     },
-    "day": {
-      "question": "Findet der Eisprung immer an Tag 14 statt?",
-      "answer": "Nein. Beispiele nutzen oft einen 28-Tage-Zyklus, doch der Eisprung variiert. Eine App-Vorhersage bestätigt ihn nicht."
+    "period-phase": {
+      "question": "In welcher Zyklusphase hat man seine Periode?",
+      "answer": "Die Periode findet während der Menstruationsphase statt, auch Blutungsphase genannt. Sie beginnt am ersten Zyklustag, wenn die Gebärmutterschleimhaut abgestoßen wird, und überschneidet sich mit den ersten Tagen der Follikelphase."
     },
-    "track": {
-      "question": "Muss ich jede Phase beim Tracking benennen?",
-      "answer": "Nein. Blutungstage und hilfreiche Symptome reichen für den Anfang. Trenne tatsächliche Beobachtungen von App-Schätzungen."
+    "phase-length": {
+      "question": "Wie lange dauern die einzelnen Zyklusphasen?",
+      "answer": "Bei einem typischen 28-Tage-Zyklus findet die Menstruation ungefähr an Tag 1 bis 5 statt, die Follikelphase reicht vom ersten Zyklustag bis zum Eisprung um Tag 14 und die Lutealphase umfasst etwa die Tage 15 bis 28. Diese Zeitangaben dienen der Orientierung und können von Zyklus zu Zyklus variieren."
+    },
+    "normal-cycle": {
+      "question": "Wie lange dauert ein normaler Zyklus bei einer Frau?",
+      "answer": "Ein Menstruationszyklus dauert durchschnittlich 28 Tage, wobei laut Cleveland Clinic auch 21 bis etwa 35 Tage normal sein können. Das US Office on Women's Health nennt für Erwachsene eine normale Zykluslänge von 24 bis 38 Tagen und empfiehlt ärztlichen Rat, wenn deine Zyklen häufig außerhalb dieses Bereichs liegen."
+    },
+    "follicular": {
+      "question": "Was passiert während der Follikelphase?",
+      "answer": "Während der Follikelphase reift eine Eizelle heran und die Gebärmutterschleimhaut baut sich wieder auf. Das follikelstimulierende Hormon (FSH) fördert das Wachstum der Follikel, während der steigende Östrogenspiegel den Aufbau der Gebärmutterschleimhaut unterstützt. Die Phase beginnt mit deiner Periode und endet mit dem Eisprung."
+    },
+    "ovulation-day": {
+      "question": "Findet der Eisprung immer am 14. Zyklustag statt?",
+      "answer": "Nein, der Eisprung findet nicht immer am 14. Zyklustag statt. Dieser Zeitpunkt ist typisch für einen 28-Tage-Zyklus, kann sich aber von Zyklus zu Zyklus verschieben. Ein Zykluskalender oder eine App kann deinen Eisprung schätzen, jedoch nicht bestätigen, dass er tatsächlich stattgefunden hat."
     }
   }
 }

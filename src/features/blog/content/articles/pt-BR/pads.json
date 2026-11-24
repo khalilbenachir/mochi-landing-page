@@ -1,82 +1,163 @@
 {
-  "title": "De quanto em quanto tempo trocar o absorvente?",
-  "description": "Saiba de quanto em quanto tempo trocar o absorvente, quando trocar antes e o que observar à noite ou com protetores diários, com fontes dos CDC e ACOG.",
+  "title": "De quantas em quantas horas trocar o absorvente? 4 a 8 horas",
+  "description": "Saiba de quanto em quanto tempo trocar o absorvente, quais cuidados ter durante a noite e quando o fluxo intenso merece atenção. Confira as orientações.",
   "imageAlt": "Mochi rosa ao lado de um absorvente e um despertador roxo",
-  "intro": "Troque o absorvente a cada poucas horas, antes se estiver cheio, úmido ou desconfortável. Siga a embalagem e adapte ao seu fluxo. Um lembrete ajuda a conferir, mas você pode trocar antes de tocar.",
+  "intro": "Você deve trocar o absorvente pelo menos a cada 4 a 8 horas, ou antes, se necessário, segundo o Colégio Americano de Obstetras e Ginecologistas (ACOG). Os Centros de Controle e Prevenção de Doenças dos Estados Unidos (CDC) recomendam fazer a troca a cada poucas horas, mesmo quando o fluxo menstrual é leve. A frequência ideal depende da intensidade da sua menstruação e do tipo de absorvente que você usa.",
   "sections": {
-    "day-pads": {
-      "title": "Absorventes diurnos",
+    "how-often": {
+      "title": "De quanto em quanto tempo trocar o absorvente?",
       "paragraphs": {
-        "first": "O CDC recomenda trocar a cada poucas horas, mesmo com fluxo leve. O ACOG orienta pelo menos a cada 4 a 8 horas, ou antes se estiver cheio, úmido ou desconfortável. São referências gerais, não motivo para esperar quando você precisa trocar.",
-        "second": "Com fluxo intenso, confira mais vezes. Escolha a absorção adequada e siga a embalagem."
+        "first": "Segundo o ACOG, você deve trocar o absorvente pelo menos a cada 4 a 8 horas, ou antes, caso ele esteja cheio, úmido ou causando desconforto. Os CDC recomendam fazer a troca a cada poucas horas, inclusive nos dias de fluxo leve.",
+        "second": "O tempo que você pode ficar com o mesmo absorvente depende da intensidade do sangramento e da capacidade de absorção do produto. Nos dias de fluxo mais intenso, as trocas precisam ser mais frequentes. Se você passa várias horas na escola, na faculdade ou no trabalho, aproveite as idas ao banheiro para verificar o absorvente."
       },
       "table": {
-        "caption": "Guia prático de absorventes e protetores diários",
+        "caption": "Quando trocar o absorvente de acordo com o fluxo menstrual e o tipo de proteção",
         "columns": [
-          "Produto",
+          "Situação",
           "Quando trocar",
-          "Lembre-se"
+          "Dica prática"
         ],
         "rows": [
           [
-            "Absorvente diurno",
+            "Fluxo leve",
             "A cada poucas horas",
-            "Antes em caso de fluxo intenso ou desconforto."
+            "Troque mesmo que o absorvente pareça quase limpo."
           ],
           [
-            "Absorvente noturno",
-            "Conforme a embalagem",
-            "Coloque um novo ao deitar e troque ao acordar, ou antes se necessário."
+            "Fluxo moderado",
+            "A cada 4 a 8 horas ou antes",
+            "Aproveite as idas ao banheiro para fazer a troca."
+          ],
+          [
+            "Fluxo intenso",
+            "Sempre que necessário",
+            "Não espere o absorvente ficar completamente encharcado."
+          ],
+          [
+            "Durante a noite",
+            "Conforme as orientações do fabricante",
+            "Coloque um absorvente limpo antes de dormir."
           ],
           [
             "Protetor diário",
-            "Regularmente e quando estiver úmido",
-            "Para fluxo leve ou escapes."
+            "A cada poucas horas ou quando estiver úmido",
+            "Use um absorvente menstrual se o sangramento aumentar."
           ]
         ]
+      },
+      "note": "Você não precisa esperar o absorvente ficar cheio para trocá-lo."
+    },
+    "heavy-flow": {
+      "title": "De quanto em quanto tempo trocar o absorvente quando o fluxo é intenso?",
+      "paragraphs": {
+        "first": "Se você tem um fluxo menstrual intenso, troque o absorvente sempre que necessário, antes que ele fique completamente encharcado ou comece a vazar. Se você precisa fazer a troca com frequência a cada 1 ou 2 horas, o serviço de saúde britânico (NHS) recomenda procurar um médico.",
+        "second": "A intensidade do sangramento pode variar ao longo da menstruação. É natural precisar de mais absorventes em alguns dias do que em outros. Se você vai passar muitas horas fora de casa, leve algumas unidades extras na bolsa.",
+        "third": "Segundo o NHS, outros sinais que merecem atenção médica incluem:"
+      },
+      "items": {
+        "double-protection": "Precisar usar dois produtos menstruais ao mesmo tempo, como um absorvente externo e um interno.",
+        "duration": "Ter uma menstruação que dura mais de 7 dias.",
+        "clots": "Eliminar coágulos de sangue maiores que cerca de 2,5 cm.",
+        "leaks": "Ter vazamentos que mancham a roupa ou a roupa de cama.",
+        "daily-activities": "Deixar de realizar atividades do dia a dia por causa da menstruação.",
+        "fatigue": "Sentir cansaço ou falta de ar com frequência."
+      },
+      "note": "Procure também um médico se sua menstruação ficar subitamente mais intensa ou muito dolorosa, mesmo que você não precise trocar o absorvente com tanta frequência."
+    },
+    "pads-per-day": {
+      "title": "Quantos absorventes usar por dia?",
+      "paragraphs": {
+        "first": "Usar de 3 a 6 absorventes por dia é uma estimativa baseada na troca a cada 4 a 8 horas, ao longo de 24 horas. Você pode precisar de mais unidades se tiver um fluxo intenso ou preferir fazer trocas mais frequentes.",
+        "second": "Não existe uma quantidade fixa de absorventes que você deve usar por dia durante a menstruação. Esse número depende da intensidade do sangramento, da capacidade de absorção do produto e do seu conforto.",
+        "third": "Talvez você precise de mais absorventes nos primeiros dias da menstruação e de menos nos últimos. Se tiver uma viagem longa de ônibus ou um dia inteiro de trabalho pela frente, coloque alguns absorventes extras na bolsa.",
+        "fourth": "Mesmo nos dias em que você está sangrando pouco, não espere o absorvente ficar cheio. Os CDC recomendam fazer a troca a cada poucas horas, independentemente da intensidade do fluxo."
       }
     },
-    "overnight-pads": {
-      "title": "Absorventes noturnos",
+    "overnight": {
+      "title": "Por quanto tempo você pode usar um absorvente noturno?",
       "paragraphs": {
-        "first": "Escolha um produto para a noite e respeite o tempo indicado. Coloque um novo antes de dormir e troque ao acordar, ou antes se estiver cheio ou incomodar.",
-        "second": "O rótulo noturno não garante o mesmo tempo para todos os produtos. Se um sangramento intenso exige trocas muito frequentes de forma habitual, procure orientação médica."
+        "first": "O tempo que você pode usar um absorvente noturno depende do seu fluxo menstrual e das orientações do fabricante. Não existe um limite de horas que seja válido para todos os absorventes noturnos, pois as características variam de uma marca para outra.",
+        "second": "Coloque um absorvente limpo antes de dormir e troque-o ao acordar. Se você gosta de dormir até mais tarde aos domingos, fique de olho no tempo de uso recomendado na embalagem.",
+        "third": "Ficar com o mesmo absorvente por 12 horas não é um hábito recomendado, mesmo quando o fluxo é leve. O ACOG orienta fazer a troca pelo menos a cada 4 a 8 horas.",
+        "fourth": "Algumas pessoas usam dois absorventes parcialmente sobrepostos para cobrir uma área maior da calcinha e evitar vazamentos durante a noite. Um absorvente noturno mais comprido pode ser mais confortável. Se você precisa usar dois produtos menstruais ao mesmo tempo com frequência para conter o sangramento, o NHS recomenda procurar um médico."
       }
+    },
+    "full-pad-signs": {
+      "title": "Como saber quando o absorvente está cheio ou precisa ser trocado?",
+      "paragraphs": {
+        "first": "O absorvente provavelmente está cheio quando a maior parte da superfície absorvente está encharcada de sangue ou quando o sangramento chega às bordas. O ideal é fazer a troca antes disso, especialmente se você sentir umidade ou desconforto.",
+        "second": "Estes são cinco sinais de que está na hora de colocar um absorvente limpo:"
+      },
+      "items": {
+        "saturation": "A maior parte da superfície absorvente está encharcada de sangue.",
+        "edges": "O sangue está se espalhando em direção às bordas do absorvente.",
+        "wetness": "Você sente umidade na pele ao usar o absorvente.",
+        "discomfort": "Você sente incômodo ou atrito ao caminhar ou se movimentar.",
+        "elapsed-time": "Já se passaram várias horas desde a última troca, mesmo que o absorvente ainda não esteja cheio."
+      },
+      "note": "Nos dias de fluxo intenso, verifique o absorvente sempre que for ao banheiro. Como a capacidade de absorção varia entre os produtos, o tempo de uso, por si só, não indica se o absorvente está cheio."
     },
     "liners": {
-      "title": "Protetores diários",
+      "title": "De quanto em quanto tempo trocar o protetor diário?",
       "paragraphs": {
-        "first": "Mais finos, servem para fluxo leve ou escapes. Troque regularmente e quando estiverem úmidos ou desconfortáveis. Para sangramento maior, use um produto adequado."
+        "first": "Em geral, você deve trocar o protetor diário a cada poucas horas, ou antes, se ele estiver úmido ou causando desconforto. Confira também as orientações na embalagem, pois o tempo de uso pode variar entre os produtos.",
+        "second": "O protetor diário é mais fino e menos absorvente que um absorvente menstrual convencional. Ele pode ser usado para absorver secreções vaginais naturais, pequenos sangramentos de escape ou o fluxo leve dos últimos dias da menstruação.",
+        "third": "Mesmo que o protetor diário pareça limpo, ele pode acumular umidade ao longo do dia. Fazer a troca na hora do almoço ou depois de uma atividade física pode ajudar você a se sentir mais confortável.",
+        "fourth": "Se o sangramento aumentar e o protetor diário ficar encharcado rapidamente, prefira um absorvente menstrual com capacidade de absorção adequada ao seu fluxo."
       }
     },
-    "signs-to-change": {
-      "title": "Sinais de que está na hora de trocar",
+    "comfort-and-skin": {
+      "title": "Por que é importante trocar o absorvente com frequência?",
+      "paragraphs": {
+        "first": "Trocar o absorvente com frequência ajuda a evitar vazamentos, reduzir odores desagradáveis e manter o conforto. Usar um absorvente úmido por muito tempo pode causar irritação na pele devido à umidade e ao atrito.",
+        "second": "Depois de passar várias horas no escritório, caminhar bastante ou fazer uma viagem longa de carro, você pode começar a sentir algum incômodo. Colocar um absorvente limpo pode fazer bastante diferença, mesmo que o anterior ainda não esteja cheio.",
+        "third": "Alguns hábitos simples podem facilitar as trocas durante a menstruação, principalmente quando você está fora de casa."
+      },
       "items": {
-        "full": "O absorvente está cheio, úmido ou desconfortável.",
-        "leaks": "Há vazamento ou o produto saiu do lugar.",
-        "time": "Chegou o momento indicado na embalagem, mesmo com fluxo leve."
+        "spare-pads": "Leve alguns absorventes extras em uma pequena nécessaire dentro da bolsa ou mochila.",
+        "underwear": "Prefira calcinhas de tecido respirável que mantenham o absorvente bem posicionado.",
+        "bathroom-breaks": "Aproveite as idas ao banheiro para verificar o absorvente e trocá-lo, se necessário.",
+        "comfort": "Faça a troca antes do horário previsto se sentir umidade ou atrito na pele."
       }
     },
     "mochi-reminder": {
-      "title": "Deixe o Mochi lembrar você",
+      "title": "Como lembrar de trocar o absorvente com o Mochi",
       "paragraphs": {
-        "first": "O lembrete opcional mostra uma contagem regressiva na Dynamic Island e na Tela Bloqueada. As funções publicadas incluem opções para absorvente diurno, noturno e protetor diário, com duração escolhida por você.",
-        "second": "O timer convida a conferir o produto. Não mede quanto ele encheu nem confirma que uma duração é adequada. Troque antes sempre que precisar."
+        "first": "O Mochi oferece um lembrete opcional que ajuda você a acompanhar há quanto tempo está usando o mesmo absorvente. Uma contagem regressiva aparece diretamente na tela bloqueada e na Dynamic Island do seu iPhone, sem precisar abrir o aplicativo.",
+        "second": "Você pode escolher intervalos predefinidos para absorventes diurnos, absorventes noturnos e protetores diários. Também é possível personalizar a duração de acordo com seu fluxo menstrual e as orientações do fabricante.",
+        "third": "O recurso é especialmente útil quando você está ocupada com o trabalho, estudando para uma prova ou passando a tarde com as amigas. É uma preocupação a menos no meio da rotina.",
+        "fourth": "O temporizador não consegue identificar se o absorvente está cheio. Se você sentir umidade ou desconforto, faça a troca naquele momento, mesmo que ainda falte tempo na contagem regressiva."
       }
     }
   },
   "faq": {
     "hours": {
-      "question": "Posso manter o absorvente até o timer terminar?",
-      "answer": "Troque antes se estiver cheio, úmido ou desconfortável. Siga as instruções. O timer não avalia o fluxo nem o estado do produto."
+      "question": "De quantas em quantas horas tem que trocar o absorvente?",
+      "answer": "O ACOG recomenda trocar o absorvente pelo menos a cada 4 a 8 horas, enquanto os CDC orientam fazer a troca a cada poucas horas. Troque antes se ele estiver cheio, úmido ou causando desconforto."
     },
     "light": {
-      "question": "Preciso trocar mesmo com fluxo leve?",
-      "answer": "Sim. O CDC orienta trocar a cada poucas horas, mesmo com fluxo leve, e com mais frequência quando intenso."
+      "question": "De quanto em quanto tempo trocar o absorvente quando o fluxo é leve?",
+      "answer": "Você deve trocar o absorvente a cada poucas horas, mesmo quando o fluxo menstrual é leve. Não é necessário esperar que ele fique cheio ou completamente encharcado para colocar um novo."
     },
     "night": {
-      "question": "Todo absorvente noturno tem o mesmo tempo de uso?",
-      "answer": "Não. Escolha um produto noturno e siga a embalagem. Troque antes se estiver cheio ou desconfortável."
+      "question": "Quantas horas posso ficar com um absorvente noturno?",
+      "answer": "Não existe um tempo máximo de uso que seja válido para todos os absorventes noturnos, pois as orientações variam conforme o produto. Coloque um absorvente limpo antes de dormir e troque-o ao acordar, respeitando o tempo de uso recomendado pelo fabricante."
+    },
+    "twelve-hours": {
+      "question": "Pode ficar 12 horas com o mesmo absorvente?",
+      "answer": "Não é recomendado ficar habitualmente 12 horas com o mesmo absorvente, mesmo quando o fluxo é leve. O ACOG orienta fazer a troca pelo menos a cada 4 a 8 horas, ou antes, se necessário."
+    },
+    "per-day": {
+      "question": "Quantos absorventes é normal usar por dia?",
+      "answer": "De 3 a 6 absorventes por dia é uma estimativa baseada na troca a cada 4 a 8 horas durante 24 horas. Você pode precisar de mais unidades, dependendo da intensidade do fluxo, da capacidade de absorção do produto e do seu conforto."
+    },
+    "two-pads": {
+      "question": "Pode usar dois absorventes para dormir?",
+      "answer": "Sim, você pode colocar dois absorventes parcialmente sobrepostos para cobrir uma área maior da calcinha, embora um absorvente noturno mais comprido possa ser mais confortável. Se você precisa usar dois produtos menstruais ao mesmo tempo com frequência para conter o sangramento, o NHS recomenda procurar um médico."
+    },
+    "liner": {
+      "question": "De quanto em quanto tempo tem que trocar o protetor diário?",
+      "answer": "Troque o protetor diário a cada poucas horas, ou antes, se sentir umidade ou desconforto. Siga as orientações da embalagem e prefira um absorvente menstrual se o sangramento aumentar."
     }
   }
 }

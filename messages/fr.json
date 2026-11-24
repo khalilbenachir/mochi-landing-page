@@ -304,6 +304,7 @@
     "navLabel": "Liens juridiques et contact",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions",
+    "calculator": "Calculateur de règles",
     "contact": "Contact",
     "disclaimer": "Mochi n’est pas un moyen de contraception et ne remplace pas un avis médical."
   },
@@ -523,6 +524,7 @@
     "byline": "Par Mochi",
     "publisher": "Mochi",
     "published": "Publié le",
+    "updated": "Mis à jour le",
     "readTime": "{minutes} min de lecture",
     "back": "Tous les articles",
     "onThisPage": "Dans cet article",
@@ -664,5 +666,64 @@
     "accept": "Accepter",
     "decline": "Refuser",
     "settings": "Paramètres des cookies"
+  },
+  "PeriodCalculator": {
+    "metadataTitle": "Calculateur de règles : calculer ses prochaines règles",
+    "metadataDescription": "Calculez gratuitement la date de vos prochaines règles, de votre ovulation et de votre période fertile. Sans inscription ni stockage de vos données.",
+    "eyebrow": "Outil gratuit",
+    "title": "Calculer ses prochaines règles",
+    "intro": "Notre calculateur de règles gratuit vous permet d'estimer la date de vos prochaines règles, de votre ovulation et de votre période fertile. Les résultats sont calculés à partir de la durée habituelle de votre cycle et restent indicatifs.",
+    "form": {
+      "legend": "Les informations sur votre cycle",
+      "lastPeriod": "Premier jour de vos dernières règles",
+      "cycleLength": "Durée moyenne du cycle (en jours)",
+      "cycleHint": "Un cycle adulte dure généralement entre 24 et 38 jours. Vous ne savez pas ? Laissez 28 jours.",
+      "periodLength": "Durée moyenne des règles (en jours)",
+      "periodHint": "Indiquez le nombre de jours pendant lesquels vos règles durent habituellement.",
+      "submit": "Calculer mes prochaines règles",
+      "reset": "Réinitialiser"
+    },
+    "results": {
+      "heading": "Les dates estimées de votre cycle",
+      "empty": "Renseignez la date de vos dernières règles et les informations sur votre cycle pour découvrir vos prochaines dates estimées.",
+      "nextPeriod": "Vos prochaines règles",
+      "upcoming": "Vos règles des prochains mois",
+      "periodRange": "Du {start} au {end}",
+      "ovulation": "Date d'ovulation estimée",
+      "fertile": "Période fertile estimée",
+      "fertileRange": "Du {start} au {end}",
+      "daysUntil": "{days, plural, =0 {Aujourd’hui} one {Dans # jour} other {Dans # jours}}"
+    },
+    "disclaimer": "Les dates calculées sont des estimations et peuvent différer de votre cycle réel. Ce calculateur ne doit pas être utilisé comme moyen de contraception ni pour établir un diagnostic médical.",
+    "how": {
+      "title": "Comment fonctionne le calculateur de règles ?",
+      "first": "Pour calculer la date de vos prochaines règles, il suffit d'ajouter la durée moyenne de votre cycle au premier jour de vos dernières règles. Par exemple, si vos dernières règles ont commencé le 1er mars et que votre cycle dure habituellement 28 jours, les suivantes devraient débuter autour du 29 mars. Le calculateur répète cette opération pour les cycles suivants et tient compte de la durée habituelle de vos saignements pour estimer la date de fin de chaque période de règles.",
+      "second": "La date estimée de votre ovulation est obtenue en retirant 14 jours à la date prévue de vos prochaines règles. Selon la Cleveland Clinic, la phase lutéale, qui suit l'ovulation, dure environ 14 jours. Votre période fertile estimée comprend les cinq jours précédant cette date ainsi que le jour présumé de l'ovulation. Comme l'ovulation peut survenir plus tôt ou plus tard que prévu, ce calcul ne permet pas de déterminer avec certitude vos jours de fertilité.",
+      "third": "Un cycle de 28 jours constitue un point de départ, mais il ne correspond pas nécessairement au vôtre. Selon l'US Office on Women's Health (womenshealth.gov), un cycle adulte dure normalement entre 24 et 38 jours. La Cleveland Clinic indique une durée comprise entre 21 et 35 jours environ. Renseigner votre propre durée moyenne permet d'obtenir des estimations mieux adaptées à votre cycle. Tous les calculs sont effectués directement dans votre navigateur. Les informations que vous saisissez ne sont ni enregistrées ni transmises à un serveur."
+    },
+    "faq": {
+      "title": "Vos questions sur le calcul des prochaines règles",
+      "next": {
+        "question": "Comment calculer la date de ses prochaines règles ?",
+        "answer": "Ajoutez la durée moyenne de votre cycle menstruel au premier jour de vos dernières règles pour estimer la date des suivantes. La durée d'un cycle correspond au nombre de jours entre le premier jour des règles et le premier jour des règles suivantes."
+      },
+      "ovulation": {
+        "question": "Comment calculer sa date d'ovulation et sa période fertile ?",
+        "answer": "Retirez environ 14 jours à la date estimée de vos prochaines règles pour obtenir votre date probable d'ovulation. La période fertile estimée comprend les cinq jours précédant cette date ainsi que le jour présumé de l'ovulation. Ce calcul ne permet pas de confirmer une ovulation et ne doit pas servir de méthode de contraception."
+      },
+      "accuracy": {
+        "question": "Un calculateur de règles est-il fiable ?",
+        "answer": "Un calculateur de règles fournit une estimation à partir de la durée habituelle de votre cycle, sans pouvoir garantir une date exacte. Les résultats peuvent être moins fiables à l'adolescence, après une grossesse récente, pendant l'allaitement, sous contraception hormonale ou en période de stress. Si vous avez un retard de règles et qu'une grossesse est possible, faites un test de grossesse et demandez conseil à un médecin ou à un professionnel de santé."
+      },
+      "irregular": {
+        "question": "Comment calculer ses prochaines règles avec un cycle irrégulier ?",
+        "answer": "Vous pouvez estimer la date de vos prochaines règles à partir de la durée moyenne de votre cycle, mais le résultat sera moins fiable si vos cycles sont irréguliers. Noter les dates de vos règles pendant plusieurs mois peut vous aider à mieux comprendre votre rythme menstruel. Consultez un professionnel de santé si vos cycles durent fréquemment moins de 24 jours ou plus de 38 jours."
+      }
+    },
+    "cta": {
+      "title": "Des prévisions de règles adaptées à votre cycle",
+      "body": "Découvrez Mochi, votre application gratuite de suivi des règles pour iPhone. Mochi s'appuie sur les dates que vous renseignez pour personnaliser vos prévisions au fil des cycles. L'application fonctionne hors ligne et ne nécessite pas de création de compte.",
+      "button": "Télécharger Mochi gratuitement"
+    }
   }
 }

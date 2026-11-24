@@ -257,8 +257,8 @@ test("article contents, copy link and native questions work", async ({ page, con
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto("/blog/how-often-to-change-your-pad");
   const contents = page.getByRole("navigation", { name: en.Blog.onThisPage, exact: true });
-  await contents.getByRole("link", { name: "Day pads", exact: true }).click();
-  await expect(page).toHaveURL((url) => url.hash === "#day-pads");
+  await contents.getByRole("link", { name: "How often should you change your pad?", exact: true }).click();
+  await expect(page).toHaveURL((url) => url.hash === "#how-often");
   await page.getByRole("button", { name: en.Blog.copyLink }).click();
   await expect(page.getByRole("status")).toHaveText(en.Blog.copiedLink);
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(`${baseOrigin}/blog/how-often-to-change-your-pad`);
@@ -276,8 +276,8 @@ test("mobile article contents can be expanded", async ({ page }) => {
   await expect(button).toHaveAttribute("aria-expanded", "false");
   await button.click();
   await expect(button).toHaveAttribute("aria-expanded", "true");
-  await page.getByRole("navigation", { name: en.Blog.onThisPage, exact: true }).getByRole("link", { name: "Overnight pads", exact: true }).click();
-  await expect(page).toHaveURL((url) => url.hash === "#overnight-pads");
+  await page.getByRole("navigation", { name: en.Blog.onThisPage, exact: true }).getByRole("link", { name: "How long can you wear a pad overnight?", exact: true }).click();
+  await expect(page).toHaveURL((url) => url.hash === "#overnight");
 });
 
 test("blog pages remain within the viewport", async ({ page }) => {

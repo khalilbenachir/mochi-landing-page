@@ -1,82 +1,163 @@
 {
-  "title": "Wie oft solltest du deine Binde wechseln?",
-  "description": "Erfahre, wie oft du deine Binde wechseln solltest, wann früher und worauf du nachts oder bei Slipeinlagen achten kannst, mit Quellen von CDC und ACOG.",
-  "imageAlt": "Rosa Mochi neben einer Binde und einem violetten Wecker",
-  "intro": "Wechsle deine Binde alle paar Stunden, bei Nässe, voller Binde oder Unbehagen früher. Beachte die Packungsanleitung und deine Blutungsstärke. Eine Erinnerung hilft beim Daran-Denken; du darfst vorher wechseln.",
+  "title": "Wie oft Binde wechseln? Alle 4 bis 8 Stunden",
+  "description": "Wie oft solltest du deine Binde wechseln? Erfahre, was bei leichter und starker Periode gilt, wie lange du Binden nachts tragen kannst und wann sie voll sind.",
+  "imageAlt": "Rosa Mochi neben einer Damenbinde und einem lila Wecker",
+  "intro": "Du solltest deine Binde mindestens alle 4 bis 8 Stunden wechseln, bei Bedarf auch früher, so die amerikanische Fachgesellschaft für Gynäkologie und Geburtshilfe (ACOG). Die US-Gesundheitsbehörde CDC empfiehlt, Binden auch bei leichter Blutung alle paar Stunden zu wechseln. Wie oft ein Wechsel tatsächlich nötig ist, hängt von der Stärke deiner Periode und der verwendeten Binde ab.",
   "sections": {
-    "day-pads": {
-      "title": "Binden für den Tag",
+    "how-often": {
+      "title": "Wie oft sollte man Binden wechseln?",
       "paragraphs": {
-        "first": "Die CDC empfiehlt, Binden alle paar Stunden zu wechseln, auch bei leichter Blutung. ACOG nennt mindestens alle 4 bis 8 Stunden und früher, wenn die Binde voll, nass oder unangenehm ist. Diese Richtwerte sind kein Grund zu warten, wenn du eine frische Binde brauchst.",
-        "second": "Prüfe bei stärkerer Blutung häufiger. Wähle passende Saugstärke und beachte die Packungsanleitung."
+        "first": "Laut ACOG solltest du deine Binde mindestens alle 4 bis 8 Stunden wechseln. Ist sie bereits voll, fühlt sie sich feucht oder unangenehm an, solltest du sie früher wechseln. Die CDC empfiehlt einen Wechsel alle paar Stunden, selbst bei schwacher Blutung.",
+        "second": "Wie lange du eine Binde tragen kannst, hängt von deiner Blutungsstärke und der Saugfähigkeit der Binde ab. An stärkeren Tagen ist ein häufigerer Wechsel nötig. Wenn du den ganzen Tag in der Schule, an der Uni oder bei der Arbeit bist, kannst du deine Toilettenpausen zum Bindenwechsel nutzen."
       },
       "table": {
-        "caption": "Praktische Hinweise zu Binden und Slipeinlagen",
+        "caption": "Wie oft du deine Binde je nach Blutungsstärke und Produkt wechseln solltest",
         "columns": [
-          "Produkt",
+          "Situation",
           "Wann wechseln?",
-          "Beachte"
+          "Praktischer Tipp"
         ],
         "rows": [
           [
-            "Tagesbinde",
+            "Leichte Periode",
             "Alle paar Stunden",
-            "Bei starker Blutung oder Unbehagen früher."
+            "Auch wechseln, wenn die Binde fast sauber aussieht."
           ],
           [
-            "Nachtbinde",
-            "Nach Packungsanleitung",
-            "Vor dem Schlafen frisch anlegen; nach dem Aufwachen oder bei Bedarf früher wechseln."
+            "Mittlere Blutung",
+            "Alle 4 bis 8 Stunden oder früher",
+            "Nutze deine regelmäßigen Toilettenpausen."
+          ],
+          [
+            "Starke Periode",
+            "So oft wie nötig",
+            "Wechsle die Binde, bevor sie vollständig vollgesogen ist."
+          ],
+          [
+            "Nachts",
+            "Nach den Angaben auf der Verpackung",
+            "Lege vor dem Schlafengehen eine frische Binde ein."
           ],
           [
             "Slipeinlage",
-            "Regelmäßig und sobald sie feucht ist",
-            "Für leichte Blutung oder Schmierblutung."
+            "Alle paar Stunden oder sobald sie feucht ist",
+            "Verwende bei stärkerer Blutung eine Binde."
           ]
         ]
+      },
+      "note": "Deine Binde muss nicht erst voll sein, damit du sie wechseln kannst."
+    },
+    "heavy-flow": {
+      "title": "Wie oft Binde wechseln bei starker Periode?",
+      "paragraphs": {
+        "first": "Bei einer starken Periode solltest du deine Binde so oft wechseln, dass sie nicht vollständig vollgesogen ist oder ausläuft. Musst du regelmäßig alle 1 bis 2 Stunden eine neue Binde verwenden, empfiehlt der britische Gesundheitsdienst NHS, ärztlichen Rat einzuholen.",
+        "second": "Die Blutungsstärke kann sich im Laufe deiner Periode verändern. An manchen Tagen brauchst du deshalb deutlich mehr Binden als an anderen. Wenn du länger unterwegs bist, nimm lieber ein paar zusätzliche Binden mit.",
+        "third": "Laut NHS können auch folgende Anzeichen auf eine zu starke Monatsblutung hinweisen:"
+      },
+      "items": {
+        "double-protection": "Du brauchst zwei Menstruationsprodukte gleichzeitig, beispielsweise eine Binde und einen Tampon.",
+        "duration": "Deine Periode dauert länger als 7 Tage.",
+        "clots": "Du bemerkst Blutklumpen, die größer als etwa 2,5 cm sind.",
+        "leaks": "Du blutest durch deine Kleidung oder Bettwäsche.",
+        "daily-activities": "Du verzichtest wegen deiner Periode auf alltägliche Aktivitäten.",
+        "fatigue": "Du fühlst dich häufig müde oder kurzatmig."
+      },
+      "note": "Auch wenn deine Periode plötzlich stärker wird oder du sehr starke Regelschmerzen hast, solltest du das ärztlich abklären lassen."
+    },
+    "pads-per-day": {
+      "title": "Wie oft solltest du deine Binde am Tag wechseln?",
+      "paragraphs": {
+        "first": "Etwa 3 bis 6 Binden pro Tag sind ein grober Richtwert, wenn du deine Binde innerhalb von 24 Stunden alle 4 bis 8 Stunden wechselst. Bei einer stärkeren Blutung oder häufigeren Wechseln kann die Anzahl höher sein.",
+        "second": "Es gibt keine feste Anzahl an Binden, die du während deiner Periode täglich verwenden solltest. Entscheidend sind deine Blutungsstärke, die Saugfähigkeit deiner Binden und dein persönliches Wohlbefinden.",
+        "third": "Vielleicht brauchst du an den ersten Tagen deiner Periode mehr Binden als gegen Ende. Wenn ein langer Arbeitstag oder eine längere Zugfahrt ansteht, pack am besten ein paar zusätzliche Binden ein.",
+        "fourth": "Auch wenn du nur noch leicht blutest, solltest du nicht warten, bis deine Binde voll ist. Die CDC empfiehlt auch bei schwacher Blutung einen Wechsel alle paar Stunden."
       }
     },
-    "overnight-pads": {
-      "title": "Binden für die Nacht",
+    "overnight": {
+      "title": "Wie lange darf man eine Binde nachts tragen?",
       "paragraphs": {
-        "first": "Wähle ein Nachtprodukt und beachte seine Tragedauer. Lege vor dem Schlafen eine frische Binde an und wechsle sie beim Aufwachen oder früher, wenn sie voll oder unangenehm ist.",
-        "second": "Die Bezeichnung Nachtbinde bedeutet keine einheitliche Tragedauer für jedes Produkt. Musst du wegen starker Blutung regelmäßig sehr häufig wechseln, hole ärztlichen Rat ein."
+        "first": "Wie lange du eine Binde über Nacht tragen kannst, hängt von deiner Blutungsstärke und den Angaben des Herstellers ab. Eine allgemein gültige maximale Tragedauer für Nachtbinden gibt es nicht, da sich die Produkte je nach Marke unterscheiden.",
+        "second": "Wechsle deine Binde direkt vor dem Schlafengehen und nach dem Aufstehen. Wenn du sonntags gerne länger schläfst, achte darauf, die empfohlene Tragedauer deiner Nachtbinde nicht zu überschreiten.",
+        "third": "Eine Binde 12 Stunden lang zu tragen, ist auch bei leichter Blutung nicht als Gewohnheit empfehlenswert. Die ACOG rät dazu, Binden mindestens alle 4 bis 8 Stunden zu wechseln.",
+        "fourth": "Manche verwenden nachts zwei leicht überlappende Binden, um einen größeren Bereich der Unterwäsche abzudecken. Eine längere Nachtbinde kann allerdings bequemer sein. Wenn du regelmäßig zwei Menstruationsprodukte gleichzeitig brauchst, um deine Blutung aufzufangen, solltest du laut NHS ärztlichen Rat einholen."
       }
+    },
+    "full-pad-signs": {
+      "title": "Wann ist eine Binde voll und wann solltest du sie wechseln?",
+      "paragraphs": {
+        "first": "Eine Binde ist wahrscheinlich voll, wenn der größte Teil ihrer Saugfläche mit Blut durchtränkt ist oder sich das Blut bis zu den Rändern ausbreitet. Du solltest deine Binde allerdings schon vorher wechseln, besonders wenn sie sich feucht oder unangenehm anfühlt.",
+        "second": "An diesen fünf Anzeichen erkennst du, dass es Zeit für eine frische Binde ist:"
+      },
+      "items": {
+        "saturation": "Der größte Teil der Saugfläche ist mit Blut durchtränkt.",
+        "edges": "Das Blut breitet sich bis zu den Rändern der Binde aus.",
+        "wetness": "Die Binde fühlt sich feucht oder nass auf deiner Haut an.",
+        "discomfort": "Beim Gehen oder Sitzen spürst du unangenehmes Reiben.",
+        "elapsed-time": "Seit dem letzten Bindenwechsel sind bereits mehrere Stunden vergangen."
+      },
+      "note": "Kontrolliere deine Binde an stärkeren Tagen bei jedem Toilettengang. Da Binden unterschiedlich viel Flüssigkeit aufnehmen können, sagt die bisherige Tragedauer allein wenig darüber aus, wie voll deine Binde tatsächlich ist."
     },
     "liners": {
-      "title": "Slipeinlagen",
+      "title": "Wie oft sollte man Slipeinlagen wechseln?",
       "paragraphs": {
-        "first": "Die dünneren Einlagen eignen sich für leichte Blutung oder Schmierblutung. Wechsle sie regelmäßig sowie bei Feuchtigkeit oder Unbehagen. Für stärkere Blutung wähle ein geeignetes Produkt."
+        "first": "Eine Slipeinlage solltest du alle paar Stunden wechseln, bei Feuchtigkeit oder einem unangenehmen Tragegefühl auch früher. Beachte zusätzlich die Hinweise zur Tragedauer auf der Verpackung.",
+        "second": "Slipeinlagen sind dünner und weniger saugfähig als normale Damenbinden. Sie eignen sich für natürlichen Ausfluss, leichte Schmierblutungen oder die letzten Tage deiner Periode, wenn du nur noch wenig blutest.",
+        "third": "Auch wenn deine Slipeinlage noch sauber aussieht, kann sich im Laufe des Tages Feuchtigkeit ansammeln. Ein Wechsel in der Mittagspause oder nach dem Sport kann deshalb angenehmer sein.",
+        "fourth": "Wird deine Blutung stärker und ist deine Slipeinlage schon nach kurzer Zeit vollgesogen, greif lieber zu einer normalen Binde mit passender Saugstärke."
       }
     },
-    "signs-to-change": {
-      "title": "Zeit für eine frische Binde",
+    "comfort-and-skin": {
+      "title": "Warum solltest du deine Binde regelmäßig wechseln?",
+      "paragraphs": {
+        "first": "Ein regelmäßiger Bindenwechsel hilft, Auslaufen und unangenehme Gerüche zu vermeiden. Wenn du eine feuchte Binde zu lange trägst, können Feuchtigkeit und Reibung deine Haut reizen.",
+        "second": "Nach mehreren Stunden am Schreibtisch oder einem langen Spaziergang kann sich eine Binde unangenehm anfühlen. Eine frische Binde sorgt oft schon für ein besseres Tragegefühl, selbst wenn die bisherige noch nicht voll ist.",
+        "third": "Mit ein paar einfachen Gewohnheiten kannst du dir den Bindenwechsel im Alltag erleichtern."
+      },
       "items": {
-        "full": "Die Binde ist voll, nass oder unangenehm.",
-        "leaks": "Sie läuft aus oder ist verrutscht.",
-        "time": "Die laut Anleitung vorgesehene Zeit ist erreicht, auch bei leichter Blutung."
+        "spare-pads": "Bewahre ein paar Ersatzbinden in einem kleinen Täschchen in deiner Tasche auf.",
+        "underwear": "Trage atmungsaktive Unterwäsche, in der deine Binde bequem und sicher sitzt.",
+        "bathroom-breaks": "Nutze Toilettenpausen, um deine Binde zu kontrollieren und bei Bedarf zu wechseln.",
+        "comfort": "Wechsle deine Binde früher, wenn sie sich feucht anfühlt oder auf der Haut reibt."
       }
     },
     "mochi-reminder": {
-      "title": "Mochi erinnert dich auf Wunsch",
+      "title": "Mit Mochi den nächsten Bindenwechsel nicht vergessen",
       "paragraphs": {
-        "first": "Die freiwillige Wechsel-Erinnerung zeigt einen Countdown in der Dynamic Island und auf dem Sperrbildschirm. Laut Produktangaben gibt es Optionen für Tagesbinde, Nachtbinde und Slipeinlage mit frei gewählter Dauer.",
-        "second": "Ein Timer erinnert ans Prüfen. Er misst weder die Füllung noch bestätigt er eine geeignete Tragedauer. Wechsle bei Bedarf immer früher."
+        "first": "Mit der optionalen Bindenwechsel-Erinnerung von Mochi behältst du im Blick, wie lange du deine Binde bereits trägst. Ein Countdown auf dem Sperrbildschirm und in der Dynamic Island deines iPhones zeigt dir die verbleibende Zeit an, ohne dass du die App öffnen musst.",
+        "second": "Du kannst zwischen voreingestellten Zeiten für Tagesbinden, Nachtbinden und Slipeinlagen wählen. Alternativ legst du selbst eine Dauer fest, die zu deiner Blutungsstärke und den Herstellerangaben passt.",
+        "third": "Gerade wenn du mitten in einer Vorlesung sitzt, viel bei der Arbeit zu tun hast oder einen Nachmittag mit Freunden verbringst, kann so eine kleine Erinnerung praktisch sein.",
+        "fourth": "Der Timer kann allerdings nicht erkennen, wie voll deine Binde ist. Fühlt sie sich feucht oder unangenehm an, wechsle sie direkt, auch wenn der Countdown noch nicht abgelaufen ist."
       }
     }
   },
   "faq": {
     "hours": {
-      "question": "Kann ich die Binde bis zum Timer-Ende tragen?",
-      "answer": "Wechsle früher, wenn sie voll, nass oder unangenehm ist. Beachte die Anleitung. Ein Timer beurteilt weder Blutungsstärke noch Zustand der Binde."
+      "question": "Nach wie vielen Stunden sollte man seine Binde wechseln?",
+      "answer": "Die ACOG empfiehlt, eine Binde mindestens alle 4 bis 8 Stunden zu wechseln. Die CDC rät zu einem Wechsel alle paar Stunden. Ist deine Binde bereits voll, feucht oder unangenehm, solltest du sie früher wechseln."
     },
     "light": {
-      "question": "Muss ich bei leichter Blutung trotzdem wechseln?",
-      "answer": "Ja. Die CDC empfiehlt alle paar Stunden einen Wechsel, auch bei leichter Blutung, und bei stärkerer Blutung häufiger."
+      "question": "Wie oft muss man eine Binde bei schwacher Blutung wechseln?",
+      "answer": "Auch bei einer leichten Periode solltest du deine Binde alle paar Stunden wechseln. Du musst nicht warten, bis die Binde voll oder sichtbar durchtränkt ist."
     },
     "night": {
-      "question": "Haben alle Nachtbinden dieselbe Tragedauer?",
-      "answer": "Nein. Wähle ein Nachtprodukt und halte dich an seine Anleitung. Wechsle bei voller Binde oder Unbehagen früher."
+      "question": "Wie lange kann man eine Binde über Nacht tragen?",
+      "answer": "Die empfohlene Tragedauer einer Nachtbinde hängt vom jeweiligen Produkt ab. Lege vor dem Schlafengehen eine frische Binde ein und wechsle sie nach dem Aufstehen, ohne die vom Hersteller empfohlene Tragedauer zu überschreiten."
+    },
+    "twelve-hours": {
+      "question": "Kann man eine Binde 12 Stunden tragen?",
+      "answer": "Eine Binde regelmäßig 12 Stunden lang zu tragen, ist auch bei leichter Blutung nicht empfehlenswert. Die ACOG empfiehlt einen Wechsel mindestens alle 4 bis 8 Stunden oder früher, wenn es nötig ist."
+    },
+    "per-day": {
+      "question": "Wie viele Binden braucht man am Tag?",
+      "answer": "Etwa 3 bis 6 Binden am Tag sind ein grober Richtwert, der sich aus einem Wechsel alle 4 bis 8 Stunden innerhalb von 24 Stunden ergibt. Je nach Blutungsstärke, Saugfähigkeit der Binde und persönlichem Wohlbefinden kannst du mehr Binden benötigen."
+    },
+    "two-pads": {
+      "question": "Kann man nachts zwei Binden tragen?",
+      "answer": "Ja, du kannst zwei Binden leicht überlappend einlegen, um einen größeren Bereich deiner Unterwäsche abzudecken. Eine längere Nachtbinde ist möglicherweise bequemer. Brauchst du regelmäßig zwei Menstruationsprodukte gleichzeitig, um deine Blutung aufzufangen, solltest du laut NHS ärztlichen Rat einholen."
+    },
+    "liner": {
+      "question": "Wie oft muss man eine Slipeinlage wechseln?",
+      "answer": "Slipeinlagen solltest du alle paar Stunden wechseln oder sobald sie sich feucht oder unangenehm anfühlen. Beachte die Angaben auf der Verpackung und verwende bei stärkerer Blutung eine normale Binde."
     }
   }
 }

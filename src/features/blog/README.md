@@ -133,3 +133,26 @@ data, no-JavaScript reading, translated 404s, language switching, category filte
 clipboard sharing, native questions, mobile contents, keyboard FAQs, responsive
 layout, and desktop/mobile index, article and editorial screenshots. Existing site
 checks cover the shared navigation, footer and locale behavior.
+
+## SEO refresh (24 November 2026)
+
+Driven by the first Search Console export (13–22 November). Drafted section by section in
+ChatGPT from a fixed fact sheet, then checked against the cited sources before import:
+
+- **Pads** (`updatedAt` 2026-11-24): answer-first intro with ACOG's 4–8 hours, eight sections
+  covering heavy flow (NHS heavy-period signs), pads per day (labelled as a rough estimate),
+  overnight and 12-hour wear, full-pad signs, liners and skin comfort; seven FAQ items matching
+  real queries in each language ("wie oft Binde wechseln", "de quantas em quantas horas trocar o absorvente"…).
+- **Phases**: overview table, cycle-length section giving both womenshealth.gov (24–38 days) and
+  Cleveland Clinic (21–35 days) ranges with attribution. The French title leads with
+  "Cycle menstruel de la femme", the phrasing that already ranked.
+- **Moods**: one section per phase. Follicular and ovulation mood effects are framed as
+  "some people notice" because evidence is limited; PMS/PMDD figures come from womenshealth.gov;
+  includes an urgent-help line.
+- **New: Apple Watch period prediction** (`apple-watch-period-prediction`), sourced only from
+  Apple's Cycle Tracking support page. It makes no claim that Mochi has a Watch app or Health sync, and
+  reuses the predictions artwork until a dedicated illustration exists.
+
+No clinician review is claimed. `updatedAt` drives the visible "Updated" date, `dateModified`,
+Open Graph `modifiedTime` and the sitemap `lastmod`.
+The free next-period calculator lives outside the blog in `src/features/calculator`.

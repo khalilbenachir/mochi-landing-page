@@ -1,52 +1,158 @@
 {
-  "title": "Cambios de ánimo durante el ciclo menstrual",
-  "description": "Explora los cambios de ánimo durante el ciclo, qué anotar en un registro y cuándo pedir apoyo, sin reglas fijas sobre cómo deberías sentirte.",
-  "imageAlt": "Mochi azul con un bocadillo de pensamiento y un corazón rosa",
-  "intro": "Algunas personas notan cambios de ánimo antes de la regla y otras no. Los síntomas premenstruales varían y pueden cambiar con el tiempo. Un diario con fechas ayuda a describir tu experiencia, pero no diagnostica su causa.",
+  "title": "Cambios de humor durante el ciclo menstrual: 4 fases",
+  "description": "Descubre cómo cambia tu estado de ánimo en cada fase del ciclo menstrual, qué relación tiene con las hormonas y cómo aliviar los síntomas del SPM.",
+  "imageAlt": "Mochi con un corazón dentro de una burbuja de pensamiento",
+  "intro": "Tu estado de ánimo puede cambiar a lo largo del ciclo menstrual: algunas personas sienten alivio cuando empieza la regla y experimentan más irritabilidad, tristeza o cambios de humor antes de la siguiente menstruación. Las variaciones hormonales pueden influir en tus emociones, pero también lo hacen el descanso, el estrés y las molestias físicas. Conocer tus propios patrones emocionales puede ayudarte a identificar cuándo necesitas apoyo.",
   "sections": {
-    "premenstrual-changes": {
-      "title": "Cómo pueden ser los cambios premenstruales",
+    "mood-by-phase": {
+      "title": "Emociones en cada fase del ciclo menstrual",
       "paragraphs": {
-        "first": "El síndrome premenstrual puede incluir irritabilidad, ansiedad, tristeza o cambios de ánimo, además de síntomas físicos. Suelen aparecer antes de la regla y aliviarse tras su inicio.",
-        "second": "Una lista de síntomas no es una prueba. Si algo te molesta o afecta al día a día, consúltalo con un profesional sanitario."
-      }
-    },
-    "useful-notes": {
-      "title": "Describe tu día concreto",
-      "items": {
-        "date": "Anota la fecha y las palabras que mejor describan tu ánimo.",
-        "impact": "Añade cómo de intenso fue y cuánto afectó a tu día.",
-        "context": "Incluye contexto útil: sueño, estrés o un acontecimiento difícil."
+        "first": "Tu estado de ánimo puede variar durante las cuatro fases del ciclo menstrual: la menstruación, la fase folicular, la ovulación y la fase lútea. Los cambios de humor son especialmente frecuentes antes de la regla, cuando disminuyen los niveles de estrógenos y progesterona.",
+        "second": "Según la Oficina de Salud de la Mujer de Estados Unidos (US Office on Women's Health, womenshealth.gov), más del 90 % de las mujeres manifiestan algún síntoma premenstrual, como hinchazón abdominal, dolor de cabeza o cambios de humor. Las fluctuaciones hormonales pueden influir, pero cada persona vive su ciclo de manera diferente."
       },
-      "after": "También puedes anotar días normales o agradables. Ayudan a comparar, frente a un registro solo de días difíciles."
+      "table": {
+        "caption": "Cambios de humor y emociones durante las cuatro fases del ciclo menstrual",
+        "columns": [
+          "Fase del ciclo",
+          "Días orientativos (ciclo de 28 días)",
+          "Cambios hormonales",
+          "Lo que algunas personas experimentan"
+        ],
+        "rows": [
+          [
+            "Menstruación",
+            "Días 1 a 5",
+            "Niveles bajos de estrógenos y progesterona",
+            "Alivio al disminuir los síntomas del SPM, cansancio o irritabilidad."
+          ],
+          [
+            "Fase folicular",
+            "Días 1 a 14",
+            "Aumento de los estrógenos",
+            "Mejor estado de ánimo, más energía o motivación."
+          ],
+          [
+            "Ovulación",
+            "Alrededor del día 14",
+            "Aumento repentino de LH",
+            "Mayor confianza en ti misma, más ganas de socializar o ningún cambio perceptible."
+          ],
+          [
+            "Fase lútea",
+            "Días 15 a 28",
+            "Aumento de la progesterona, seguido de un descenso de los estrógenos y la progesterona",
+            "Cambios de humor, ansiedad, irritabilidad o tristeza antes de la regla."
+          ]
+        ]
+      },
+      "note": "La evidencia científica que relaciona emociones concretas con la fase folicular y la ovulación es limitada. El descanso, el estrés, las molestias físicas y las circunstancias personales también influyen en tu estado de ánimo."
     },
-    "avoid-rules": {
-      "title": "No hay una forma obligatoria de sentirte",
+    "period-mood": {
+      "title": "¿Qué emociones prevalecen durante la menstruación?",
       "paragraphs": {
-        "first": "No tienes que sentirte con energía, sociable, tranquila o cansada en un día concreto. Usa el diario para tu experiencia, no para ajustarte a un patrón.",
-        "second": "En Mochi, registrar el ánimo es opcional. La reacción de la mascota forma parte de la experiencia lúdica, no de una interpretación médica."
+        "first": "Durante la menstruación puedes sentirte más sensible, cansada o irritable de lo habitual. Otras personas experimentan una sensación de alivio cuando empiezan a desaparecer los síntomas del síndrome premenstrual (SPM). No existe un patrón emocional que se repita en todas las personas.",
+        "second": "Según el US Office on Women's Health, los síntomas del SPM suelen aliviarse durante los primeros días de la menstruación. Si has sentido ansiedad o cambios de humor antes de la regla, es posible que estas sensaciones disminuyan poco a poco cuando comienza el sangrado.",
+        "third": "Las molestias físicas también pueden afectar a tu estado de ánimo. Los cólicos menstruales, el cansancio o una mala noche de sueño pueden hacer que un día normal de trabajo resulte más agotador.",
+        "fourth": "Si sigues sintiéndote triste después de la regla, no atribuyas automáticamente ese malestar a las hormonas. La depresión y la ansiedad pueden presentar síntomas similares a los del SPM. Si el bajo estado de ánimo persiste o afecta a tu vida cotidiana, consulta con un profesional sanitario."
       }
     },
-    "support": {
-      "title": "Pide apoyo cuando lo necesites",
+    "follicular-mood": {
+      "title": "Fase folicular: cómo puede cambiar tu estado de ánimo",
       "paragraphs": {
-        "first": "Si los síntomas molestan, persisten o interfieren en tu vida, habla con un profesional cualificado. Lleva tus notas si te ayudan.",
-        "second": "No esperes a tener un historial largo. El diario es una forma de explicarte, no un requisito para recibir atención."
+        "first": "Durante la fase folicular, algunas personas notan una mejoría en su estado de ánimo, recuperan energía o sienten más motivación, especialmente cuando termina la regla. Sin embargo, la evidencia científica que vincula esta fase con determinados cambios emocionales sigue siendo limitada.",
+        "second": "Según Cleveland Clinic, los niveles de estrógenos aumentan durante la fase folicular, que comienza el primer día de la menstruación y termina con la ovulación. Estas variaciones hormonales pueden influir en cómo te sientes, pero no son el único factor.",
+        "third": "Cuando disminuyen los síntomas premenstruales y las molestias de la regla, algunas actividades cotidianas pueden resultarte más llevaderas. Quizá recuperes las ganas de hacer deporte o de quedar con tus amistades.",
+        "fourth": "También puedes sentir cansancio, ansiedad o tristeza durante esta fase. Si tu estado de ánimo no mejora después de la menstruación, no tienes por qué obligarte a estar más activa simplemente porque te encuentras en la fase folicular."
+      }
+    },
+    "ovulation-mood": {
+      "title": "Ovulación y estado de ánimo: qué cambios puedes notar",
+      "paragraphs": {
+        "first": "Alrededor de la ovulación, algunas personas notan un mejor estado de ánimo, más confianza en sí mismas o mayores ganas de socializar. Sin embargo, la evidencia científica que relaciona la ovulación con emociones específicas es limitada, y puede que tú no notes ningún cambio.",
+        "second": "Según Cleveland Clinic, la ovulación suele producirse alrededor del día 14 de un ciclo menstrual de 28 días. Un aumento repentino de la hormona luteinizante (LH) desencadena la liberación de un óvulo. El momento exacto puede variar de un ciclo a otro.",
+        "third": "Tal vez tengas más ganas de hacer planes con tus amistades o de asumir un nuevo reto en el trabajo. También puedes sentirte ansiosa, irritable o triste. Tu estado de ánimo, por sí solo, no permite saber si estás ovulando.",
+        "fourth": "Si notas cambios emocionales hacia la mitad de tu ciclo, prueba a registrarlos junto con la calidad de tu sueño y tu nivel de estrés para comprobar si se repiten durante los meses siguientes."
+      }
+    },
+    "luteal-mood": {
+      "title": "Fase lútea y estado de ánimo: los cambios de humor del SPM",
+      "paragraphs": {
+        "first": "Durante la fase lútea pueden aparecer cambios de humor, irritabilidad, ansiedad o tristeza, especialmente en los días previos a la regla. Estas alteraciones emocionales pueden formar parte del síndrome premenstrual (SPM).",
+        "second": "Después de la ovulación, aumentan los niveles de progesterona. Antes de la menstruación, disminuyen tanto la progesterona como los estrógenos. Estas fluctuaciones hormonales podrían contribuir al SPM, aunque todavía se desconoce su causa exacta.",
+        "third": "Según el US Office on Women's Health, hasta tres de cada cuatro mujeres experimentan SPM en algún momento, y la mayoría presenta síntomas leves. Entre los posibles síntomas emocionales y cambios de comportamiento se encuentran:"
+      },
+      "items": {
+        "irritability": "Te irritas o te frustras con más facilidad.",
+        "anxiety": "Sientes tensión emocional o ansiedad.",
+        "sadness": "Te sientes triste o tienes más ganas de llorar.",
+        "mood-swings": "Experimentas cambios repentinos de humor.",
+        "fatigue": "Sientes un cansancio poco habitual o notas cambios en tu sueño.",
+        "concentration": "Te cuesta concentrarte en las tareas cotidianas.",
+        "appetite": "Experimentas cambios de apetito o antojos de determinados alimentos.",
+        "sex-drive": "Tienes menos interés por el sexo."
+      },
+      "note": "Los síntomas del SPM suelen aparecer una o dos semanas antes de la menstruación y aliviarse durante los primeros días del sangrado."
+    },
+    "pmdd": {
+      "title": "Cuando los cambios de humor van más allá del SPM: el TDPM",
+      "paragraphs": {
+        "first": "Si los cambios de humor antes de la regla son tan intensos que interfieren en tu vida cotidiana, podría tratarse de algo más que un SPM habitual. El trastorno disfórico premenstrual (TDPM, o PMDD en inglés) es una forma más grave del síndrome premenstrual.",
+        "second": "Según el US Office on Women's Health, el TDPM afecta a menos del 5 % de las mujeres en edad fértil. Los síntomas emocionales intensos pueden dificultar el trabajo, las relaciones personales o el disfrute de las actividades cotidianas.",
+        "third": "La depresión y la ansiedad pueden presentar síntomas similares a los del SPM y empeorar antes o durante la menstruación. Si sueles sentirte triste después de la regla o experimentas dificultades emocionales durante todo el ciclo, no des por hecho que las hormonas son la única causa.",
+        "fourth": "Consulta con un médico o profesional de enfermería si los síntomas te causan malestar o interfieren en tu día a día. Llevar un registro de tus emociones y síntomas durante varios meses puede facilitar la consulta."
+      },
+      "note": "Si te sientes profundamente triste, sin esperanza o tienes pensamientos de hacerte daño, busca ayuda médica urgente o contacta de inmediato con los servicios de emergencia o de atención en situaciones de crisis de tu localidad."
+    },
+    "what-helps": {
+      "title": "¿Cómo aliviar los cambios de humor durante el ciclo menstrual?",
+      "paragraphs": {
+        "first": "Hacer ejercicio con regularidad, dormir lo suficiente, llevar una alimentación equilibrada y gestionar el estrés puede ayudar a aliviar los cambios de humor asociados al SPM. Conviene mantener estos hábitos durante todo el ciclo, no solo en los días previos a la menstruación.",
+        "second": "El US Office on Women's Health recomienda las siguientes medidas para ayudar a aliviar los síntomas premenstruales:"
+      },
+      "items": {
+        "exercise": "Practica ejercicio aeróbico con regularidad. Un paseo a paso ligero durante la pausa para comer también cuenta.",
+        "nutrition": "Lleva una alimentación equilibrada e intenta reducir el consumo de cafeína, sal y azúcar durante las dos semanas anteriores a la regla.",
+        "sleep": "Procura dormir alrededor de 8 horas cada noche.",
+        "stress-management": "Dedica tiempo a actividades que te ayuden a gestionar el estrés, como escribir un diario, practicar yoga o meditar.",
+        "social-support": "Habla con alguien de confianza cuando sientas que la situación te supera.",
+        "smoking": "Evita fumar."
+      },
+      "note": "Si los cambios de humor siguen causándote malestar o afectan a tu vida cotidiana a pesar de estos hábitos, consulta con un médico o profesional de enfermería."
+    },
+    "track-your-moods": {
+      "title": "Cómo registrar tus emociones durante el ciclo menstrual",
+      "paragraphs": {
+        "first": "Registrar tu estado de ánimo junto con las fechas de tu menstruación durante varios meses puede ayudarte a identificar patrones emocionales que se repiten. También te permite observar qué cambios de humor aparecen independientemente de la regla.",
+        "second": "Intenta anotar cómo te sientes cada día, incluso cuando no ocurre nada especial. Registra las fechas de tu menstruación, tus emociones, la calidad del sueño y cualquier situación que te haya generado estrés. Basta con dedicar unos minutos antes de acostarte.",
+        "third": "Mochi te permite registrar tu estado de ánimo y tus síntomas junto con las fechas de tu menstruación. Después de varios ciclos, quizá observes que sueles estar más irritable antes de la regla o que tu ánimo mejora cuando comienza el sangrado.",
+        "fourth": "Mochi no permite diagnosticar el SPM, el TDPM, la depresión ni los trastornos de ansiedad. Si tus dificultades emocionales afectan a tu vida cotidiana, puedes compartir tus registros de los últimos meses con un profesional sanitario para explicarle mejor cómo te has sentido."
       }
     }
   },
   "faq": {
-    "everyone": {
-      "question": "¿Todo el mundo cambia de ánimo antes de la regla?",
-      "answer": "No. Los síntomas premenstruales varían según la persona y pueden cambiar con el tiempo."
+    "phase-mood": {
+      "question": "¿Qué emociones se experimentan en cada fase del ciclo menstrual?",
+      "answer": "Algunas personas sienten alivio durante la menstruación, un mejor estado de ánimo en la fase folicular, mayor confianza durante la ovulación y cambios de humor en la fase lútea. Sin embargo, la evidencia científica que relaciona emociones concretas con la fase folicular y la ovulación es limitada, y cada persona experimenta el ciclo de manera diferente."
     },
-    "diagnosis": {
-      "question": "¿Registrar el ánimo diagnostica SPM o TDPM?",
-      "answer": "No. Puede ayudar a explicar el momento y el impacto de los síntomas, pero no es una prueba diagnóstica."
+    "luteal": {
+      "question": "¿Qué emociones prevalecen en la fase premenstrual?",
+      "answer": "Durante la fase premenstrual puedes experimentar irritabilidad, ansiedad, tristeza o cambios repentinos de humor. Estas emociones pueden estar relacionadas con las fluctuaciones de los estrógenos y la progesterona, aunque la causa exacta del síndrome premenstrual todavía se desconoce."
     },
-    "daily": {
-      "question": "¿Tengo que registrar mi ánimo cada día?",
-      "answer": "No. Elige una rutina útil. Anotar días distintos aporta contexto, pero no necesitas un registro perfecto para pedir ayuda."
+    "after-period": {
+      "question": "¿Por qué me siento triste después de la regla?",
+      "answer": "Sentirte triste después de la menstruación puede estar relacionado con el cansancio, la falta de sueño o el estrés, y no necesariamente con las hormonas. Los síntomas del SPM suelen aliviarse durante los primeros días de la regla. Si tu bajo estado de ánimo persiste o interfiere en tu vida cotidiana, consulta con un profesional sanitario."
+    },
+    "ovulation": {
+      "question": "¿La ovulación puede provocar cambios de humor?",
+      "answer": "Algunas personas experimentan cambios emocionales alrededor de la ovulación, pero la evidencia científica que vincula esta fase con cambios de humor específicos es limitada. Tu estado de ánimo, por sí solo, no permite determinar si estás ovulando."
+    },
+    "pms-or-more": {
+      "question": "¿Cómo saber si mis cambios de humor son por el síndrome premenstrual o algo más?",
+      "answer": "Los síntomas del SPM suelen comenzar después de la ovulación y aliviarse durante los primeros días de la menstruación, mientras que los síntomas graves que interfieren en tu vida cotidiana podrían indicar un TDPM u otro trastorno. Consulta con un profesional sanitario si los síntomas persisten o afectan a tus actividades habituales. Si te sientes profundamente triste, sin esperanza o tienes pensamientos de hacerte daño, busca ayuda médica urgente o contacta de inmediato con los servicios de emergencia o de atención en situaciones de crisis de tu localidad."
+    },
+    "help": {
+      "question": "¿Cómo reducir los cambios de humor antes de la regla?",
+      "answer": "El ejercicio aeróbico regular, dormir alrededor de 8 horas cada noche, una alimentación equilibrada y la gestión del estrés pueden ayudar a aliviar los síntomas del SPM. El US Office on Women's Health también recomienda reducir el consumo de cafeína, sal y azúcar durante las dos semanas anteriores a la menstruación. Registrar tu estado de ánimo durante varios meses puede ayudarte a identificar patrones emocionales recurrentes."
     }
   }
 }

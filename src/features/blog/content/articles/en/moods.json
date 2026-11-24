@@ -1,52 +1,158 @@
 {
-  "title": "Mood changes during your cycle, explained",
-  "description": "Explore mood changes during your menstrual cycle, what to note in a mood log, and when to ask for support, without fixed rules about how you should feel.",
-  "imageAlt": "Blue Mochi with a thought bubble containing a pink heart",
-  "intro": "Some people notice mood changes before a period, while others do not. Premenstrual symptoms differ between people and can change over time. A dated mood log can help you describe your experience, but it cannot diagnose the reason for it.",
+  "title": "Mood Changes During Your Menstrual Cycle: 4 Phases",
+  "description": "Explore mood changes during each phase of your menstrual cycle, why PMS can affect your emotions, what may help and when to seek medical advice.",
+  "imageAlt": "Mochi with a heart inside a thought bubble",
+  "intro": "Your mood may change throughout your menstrual cycle, with some people feeling better after their period begins and experiencing mood swings, irritability or sadness before their next period. Hormonal changes may play a role, but sleep, stress and physical discomfort also affect how you feel. Understanding your own emotional patterns can help you recognise when you might benefit from extra support.",
   "sections": {
-    "premenstrual-changes": {
-      "title": "What premenstrual changes can look like",
+    "mood-by-phase": {
+      "title": "How does your mood change during each menstrual cycle phase?",
       "paragraphs": {
-        "first": "PMS can include emotional symptoms such as irritability, anxiety, sadness or mood changes, alongside physical symptoms. Symptoms commonly occur before a period and ease after it starts.",
-        "second": "A list of symptoms is not a test. If something is bothering you or affecting daily life, ask a healthcare professional about it."
-      }
-    },
-    "useful-notes": {
-      "title": "Keep the notes specific to your day",
-      "items": {
-        "date": "Record the date and the mood words that feel right to you.",
-        "impact": "Add a short note about how strongly it affected your day.",
-        "context": "Include context you want to remember, such as sleep, stress or a difficult event."
+        "first": "Your mood may change throughout the four phases of your menstrual cycle: menstruation, the follicular phase, ovulation and the luteal phase. Mood changes are particularly common before your period, when estrogen and progesterone levels fall.",
+        "second": "According to the US Office on Women's Health, more than 90% of women report some premenstrual symptoms, such as bloating, headaches or moodiness. Hormonal changes may play a role, but not everyone experiences the same emotional patterns."
       },
-      "after": "You can log ordinary days too. A record that includes comfortable days is easier to discuss than a list made only when you felt bad."
+      "table": {
+        "caption": "Mood changes throughout the four phases of the menstrual cycle",
+        "columns": [
+          "Phase",
+          "Typical days (28-day cycle)",
+          "Hormone picture",
+          "What some people notice"
+        ],
+        "rows": [
+          [
+            "Menstruation",
+            "Days 1 to 5",
+            "Low estrogen and progesterone",
+            "Emotional relief as PMS fades, tiredness or irritability."
+          ],
+          [
+            "Follicular phase",
+            "Days 1 to 14",
+            "Rising estrogen",
+            "Improved mood, more energy or motivation."
+          ],
+          [
+            "Ovulation",
+            "Around day 14",
+            "LH surge",
+            "Greater confidence, sociability or no noticeable mood change."
+          ],
+          [
+            "Luteal phase",
+            "Days 15 to 28",
+            "Progesterone rises, then estrogen and progesterone fall",
+            "Mood swings, anxiety, irritability or sadness before the period."
+          ]
+        ]
+      },
+      "note": "Evidence linking specific moods to the follicular phase and ovulation is limited. Sleep, stress, physical discomfort and everyday events can also influence how you feel."
     },
-    "avoid-rules": {
-      "title": "Avoid fixed rules about how you should feel",
+    "period-mood": {
+      "title": "How does your mood change during your period?",
       "paragraphs": {
-        "first": "You do not need to feel energetic, social, calm or tired on a particular cycle day. Use a diary to record your own experience instead of fitting it to a template.",
-        "second": "In Mochi, mood logging is optional. A mascot reaction is part of the app experience; it is not a medical interpretation of your entry."
+        "first": "During your period, you may feel more emotional, tired or irritable, while others experience a sense of relief as premenstrual symptoms begin to fade. There is no single emotional pattern that everyone experiences during menstruation.",
+        "second": "According to the US Office on Women's Health, PMS symptoms usually ease within a few days after your period starts. If you've been feeling anxious or experiencing mood swings before your period, you may notice that these feelings gradually settle once bleeding begins.",
+        "third": "Physical discomfort can also affect your mood. Cramps, tiredness or a poor night's sleep can make an ordinary day at work feel more demanding than usual.",
+        "fourth": "If you still feel down after your period ends, don't automatically assume your hormones are responsible. Depression and anxiety can have symptoms similar to PMS. If low mood persists or affects your daily life, speak to a healthcare professional."
       }
     },
-    "support": {
-      "title": "Ask for support when you need it",
+    "follicular-mood": {
+      "title": "How does the follicular phase affect your mood?",
       "paragraphs": {
-        "first": "If mood symptoms bother you, interfere with everyday life, or persist, speak with a qualified healthcare professional. Bring your notes if you find them helpful.",
-        "second": "Do not wait to build a long record before asking for support. A diary is one way to explain what you noticed, not a requirement for care."
+        "first": "During the follicular phase, some people notice an improvement in their mood, increased energy or renewed motivation, particularly after their period ends. However, evidence linking specific emotional changes to this phase is limited, and feeling better is not guaranteed.",
+        "second": "According to Cleveland Clinic, estrogen levels rise during the follicular phase, which begins on the first day of your period and ends at ovulation. These hormonal changes may influence how you feel, although they are only part of the picture.",
+        "third": "As premenstrual symptoms ease and menstrual discomfort settles, you might find everyday tasks less demanding. Going to the gym or catching up with friends may feel more appealing than they did a week earlier.",
+        "fourth": "It's also possible to feel tired, anxious or low during this phase. If your mood doesn't improve after your period, there's no need to force yourself into a more active routine simply because of where you are in your cycle."
+      }
+    },
+    "ovulation-mood": {
+      "title": "How does ovulation affect your mood?",
+      "paragraphs": {
+        "first": "Around ovulation, some people notice a brighter mood, greater confidence or an increased desire to socialise. However, evidence linking specific emotional changes to ovulation is limited, and you may not notice any difference at all.",
+        "second": "According to Cleveland Clinic, ovulation usually occurs around day 14 of a 28-day menstrual cycle, when a sudden rise in luteinizing hormone (LH) triggers the release of an egg. The timing can vary from one cycle to another.",
+        "third": "You might feel more inclined to make plans with friends or take on something challenging at work. But feeling anxious, irritable or low around ovulation is also possible. Your mood alone cannot tell you whether you're ovulating.",
+        "fourth": "If you notice emotional changes around the middle of your cycle, try recording them alongside your sleep quality and stress levels to see whether a pattern emerges over several months."
+      }
+    },
+    "luteal-mood": {
+      "title": "Luteal phase mood changes and PMS",
+      "paragraphs": {
+        "first": "During the luteal phase, you may experience mood swings, irritability, anxiety or feelings of sadness, particularly in the days before your period. These emotional changes can be part of premenstrual syndrome (PMS).",
+        "second": "Progesterone levels rise after ovulation, then both progesterone and estrogen fall before your period. These hormonal changes may contribute to PMS, although researchers do not know its exact cause.",
+        "third": "According to the US Office on Women's Health, as many as 3 in 4 women experience PMS at some point, with most experiencing mild symptoms. Emotional and behavioural symptoms can include:"
+      },
+      "items": {
+        "irritability": "Feeling more easily irritated or frustrated.",
+        "anxiety": "Experiencing tension or anxiety.",
+        "sadness": "Feeling sad or crying more easily.",
+        "mood-swings": "Experiencing sudden changes in mood.",
+        "fatigue": "Feeling unusually tired or experiencing changes in sleep.",
+        "concentration": "Having difficulty concentrating on everyday tasks.",
+        "appetite": "Experiencing appetite changes or food cravings.",
+        "sex-drive": "Having less interest in sex."
+      },
+      "note": "PMS symptoms typically begin one to two weeks before your period and ease within a few days after bleeding starts."
+    },
+    "pmdd": {
+      "title": "When mood changes are more than PMS: understanding PMDD",
+      "paragraphs": {
+        "first": "If mood changes before your period are severe enough to disrupt your everyday life, they may be more than typical PMS. Premenstrual dysphoric disorder (PMDD) is a more severe form of PMS that can significantly affect your emotional well-being.",
+        "second": "According to the US Office on Women's Health, PMDD affects fewer than 5% of women of childbearing age. Severe mood changes can make it difficult to manage work, maintain relationships or enjoy everyday activities.",
+        "third": "Depression and anxiety can cause symptoms similar to PMS and may worsen before or during your period. If you regularly feel low after your period ends or experience emotional difficulties throughout your cycle, don't assume hormones are the only cause.",
+        "fourth": "Speak to a doctor or nurse if your symptoms bother you or interfere with daily life. Keeping a record of your moods and symptoms for a few months can help during your appointment."
+      },
+      "note": "If you feel very low, hopeless or have thoughts of harming yourself, seek urgent help from a doctor or local emergency or crisis services right away."
+    },
+    "what-helps": {
+      "title": "What helps with mood swings during your menstrual cycle?",
+      "paragraphs": {
+        "first": "Regular exercise, enough sleep, balanced meals and stress management may help ease mood changes associated with PMS. These habits are worth practising throughout your menstrual cycle, rather than waiting until your mood changes before your period.",
+        "second": "The US Office on Women's Health recommends the following approaches to help manage premenstrual symptoms:"
+      },
+      "items": {
+        "exercise": "Make regular aerobic exercise part of your routine, even if it's just a brisk walk during your lunch break.",
+        "nutrition": "Eat balanced meals and try reducing caffeine, salt and sugar during the two weeks before your period.",
+        "sleep": "Aim for around 8 hours of sleep each night.",
+        "stress-management": "Make time for activities that help you manage stress, such as journaling, yoga or meditation.",
+        "social-support": "Talk to a friend you trust when you're feeling overwhelmed.",
+        "smoking": "Avoid smoking."
+      },
+      "note": "If your mood changes continue to bother you or interfere with everyday life despite these habits, speak to a doctor or nurse about your symptoms."
+    },
+    "track-your-moods": {
+      "title": "How to track your mood throughout your menstrual cycle",
+      "paragraphs": {
+        "first": "Tracking your mood alongside your menstrual cycle for a few months can help you understand whether certain emotional changes follow a recurring pattern. It can also help you notice when your mood changes independently of your period.",
+        "second": "Try recording how you feel each day, even when nothing unusual happens. Note your period dates, emotional symptoms, sleep quality and anything particularly stressful that happened that day. A quick check-in before bed is enough to get started.",
+        "third": "Mochi lets you log your moods and symptoms alongside your period dates. Over several cycles, you may notice that irritability tends to appear before your period or that your mood improves once bleeding begins.",
+        "fourth": "Mochi cannot diagnose PMS, PMDD, depression or anxiety. If your emotional symptoms affect your daily life, sharing a few months of mood records with a doctor or nurse can help you discuss what you've been experiencing."
       }
     }
   },
   "faq": {
-    "everyone": {
-      "question": "Does everyone have mood changes before a period?",
-      "answer": "No. Premenstrual symptoms differ between people and may change over time."
+    "phase-mood": {
+      "question": "How does your mood change during each phase of the menstrual cycle?",
+      "answer": "Some people experience emotional relief during menstruation, improved mood during the follicular phase, greater confidence around ovulation and mood swings during the luteal phase. However, evidence linking specific moods to the follicular phase and ovulation is limited, and emotional patterns vary from person to person."
     },
-    "diagnosis": {
-      "question": "Can mood logging diagnose PMS or PMDD?",
-      "answer": "No. A log may help a healthcare professional understand timing and impact, but it is not a diagnostic test."
+    "luteal": {
+      "question": "Why does my mood change during the luteal phase?",
+      "answer": "Mood changes during the luteal phase may be related to fluctuations in estrogen and progesterone, although the exact cause of PMS is not fully understood. You may experience irritability, anxiety or sadness in the week or two before your period."
     },
-    "daily": {
-      "question": "Do I have to log my mood every day?",
-      "answer": "No. Choose a routine you find useful. Notes from different kinds of days can give you more to discuss, but you do not need a perfect record to ask for support."
+    "after-period": {
+      "question": "Why do I feel down after my period ends?",
+      "answer": "Feeling down after your period can be related to factors such as tiredness, poor sleep or stress, rather than hormonal changes alone. PMS symptoms usually ease within a few days after your period starts. If your low mood persists or affects your daily life, speak to a doctor or nurse."
+    },
+    "ovulation": {
+      "question": "Can ovulation cause mood swings?",
+      "answer": "Some people notice emotional changes around ovulation, but evidence linking specific mood swings to this phase is limited. Your mood alone cannot tell you whether you're ovulating."
+    },
+    "pms-or-more": {
+      "question": "How do I know if my mood swings are PMS or something more?",
+      "answer": "PMS symptoms typically begin after ovulation and ease within a few days after your period starts, while severe symptoms that disrupt daily life may indicate PMDD or another condition. Speak to a doctor or nurse if your symptoms persist or interfere with everyday activities. If you feel very low, hopeless or have thoughts of harming yourself, seek urgent help from a doctor or local emergency or crisis services right away."
+    },
+    "help": {
+      "question": "How can I reduce mood swings before my period?",
+      "answer": "Regular aerobic exercise, around 8 hours of sleep, balanced meals and stress management may help ease PMS symptoms. The US Office on Women's Health also recommends reducing caffeine, salt and sugar during the two weeks before your period. Tracking your mood for a few months can help you identify recurring patterns."
     }
   }
 }

@@ -304,6 +304,7 @@
     "navLabel": "Ligações legais e contacto",
     "privacy": "Política de privacidade",
     "terms": "Termos",
+    "calculator": "Calculadora do período",
     "contact": "Contacto",
     "disclaimer": "O Mochi não é um contracetivo e não substitui aconselhamento médico."
   },
@@ -523,6 +524,7 @@
     "byline": "Por Mochi",
     "publisher": "Mochi",
     "published": "Publicado em",
+    "updated": "Atualizado em",
     "readTime": "{minutes} min de leitura",
     "back": "Todos os artigos",
     "onThisPage": "Neste artigo",
@@ -664,5 +666,64 @@
     "accept": "Aceitar",
     "decline": "Recusar",
     "settings": "Definições de cookies"
+  },
+  "PeriodCalculator": {
+    "metadataTitle": "Calculadora do período: calcular próxima menstruação",
+    "metadataDescription": "Calcula gratuitamente a data da tua próxima menstruação, da ovulação e do período fértil. Sem registo de conta e sem guardar os teus dados pessoais.",
+    "eyebrow": "Ferramenta gratuita",
+    "title": "Calcular a próxima menstruação",
+    "intro": "Com a nossa calculadora do período gratuita, podes estimar quando começa a tua próxima menstruação, quando poderás ovular e quais serão os teus dias férteis. Os resultados baseiam-se na duração habitual do teu ciclo menstrual e são apenas estimativas.",
+    "form": {
+      "legend": "Dados do teu ciclo menstrual",
+      "lastPeriod": "Primeiro dia da última menstruação",
+      "cycleLength": "Duração média do ciclo (dias)",
+      "cycleHint": "Na idade adulta, o ciclo dura geralmente entre 24 e 38 dias. Não sabes ao certo? Mantém os 28 dias.",
+      "periodLength": "Duração média do período (dias)",
+      "periodHint": "Indica quantos dias costuma durar a tua menstruação.",
+      "submit": "Calcular o meu próximo período",
+      "reset": "Recomeçar"
+    },
+    "results": {
+      "heading": "Datas estimadas do teu ciclo",
+      "empty": "Introduz a data da última menstruação e os dados do teu ciclo para calculares as datas dos próximos períodos.",
+      "nextPeriod": "O teu próximo período",
+      "upcoming": "Próximos períodos",
+      "periodRange": "De {start} a {end}",
+      "ovulation": "Ovulação estimada",
+      "fertile": "Período fértil estimado",
+      "fertileRange": "De {start} a {end}",
+      "daysUntil": "{days, plural, =0 {Hoje} one {Daqui a # dia} other {Daqui a # dias}}"
+    },
+    "disclaimer": "As datas calculadas são estimativas e podem não corresponder ao teu ciclo real. Esta calculadora não deve ser utilizada como método contracetivo nem para diagnosticar problemas de saúde.",
+    "how": {
+      "title": "Como funciona a calculadora do período?",
+      "first": "Para calculares a data da próxima menstruação, basta somares a duração média do teu ciclo menstrual ao primeiro dia do último período. Por exemplo, se o teu período começou a 1 de março e o teu ciclo costuma durar 28 dias, a próxima menstruação deverá começar por volta de 29 de março. A calculadora repete este cálculo para os ciclos seguintes e tem em conta a duração habitual da menstruação para estimar quando poderá terminar cada período.",
+      "second": "A data estimada da ovulação é calculada subtraindo 14 dias à data prevista para o início do próximo período. Segundo a Cleveland Clinic, a fase lútea, que se segue à ovulação, dura cerca de 14 dias. O período fértil estimado inclui os cinco dias anteriores à data prevista da ovulação e o próprio dia da ovulação estimada. Como podes ovular mais cedo ou mais tarde do que o previsto, este cálculo não permite determinar com certeza quais são os teus dias férteis.",
+      "third": "Um ciclo de 28 dias é um ponto de partida, mas não tem de corresponder ao teu. Segundo o US Office on Women's Health (womenshealth.gov), um ciclo menstrual normal na idade adulta dura entre 24 e 38 dias. A Cleveland Clinic considera que ciclos de 21 a cerca de 35 dias também podem ser normais. Introduzir a duração média do teu ciclo permite obter estimativas mais ajustadas ao teu caso. Todos os cálculos são feitos diretamente no teu navegador. Os dados que introduzes não são guardados nem enviados para qualquer servidor."
+    },
+    "faq": {
+      "title": "Perguntas frequentes sobre o cálculo da próxima menstruação",
+      "next": {
+        "question": "Como calcular a data da minha próxima menstruação?",
+        "answer": "Soma a duração média do teu ciclo menstrual ao primeiro dia do último período para estimares quando começa o próximo. A duração do ciclo conta-se desde o primeiro dia de uma menstruação até ao primeiro dia da seguinte."
+      },
+      "ovulation": {
+        "question": "Como calcular a ovulação e o período fértil?",
+        "answer": "Subtrai cerca de 14 dias à data prevista do próximo período para estimares quando poderás ovular. O período fértil estimado inclui os cinco dias anteriores e o próprio dia da ovulação prevista. Este cálculo não confirma a ovulação e não deve ser utilizado como método contracetivo."
+      },
+      "accuracy": {
+        "question": "A calculadora do período é fiável?",
+        "answer": "Uma calculadora do período fornece estimativas com base na duração habitual do teu ciclo, sem garantir datas exatas. Os resultados podem ser menos fiáveis durante a adolescência, após uma gravidez recente, durante a amamentação, se utilizares contraceção hormonal ou em alturas de maior stress. Se o teu período estiver atrasado e existir a possibilidade de estares grávida, faz um teste de gravidez e fala com um médico ou enfermeiro."
+      },
+      "irregular": {
+        "question": "Como calcular a próxima menstruação se tenho um ciclo irregular?",
+        "answer": "Podes estimar a data do próximo período utilizando a duração média do teu ciclo, mas o resultado poderá ser menos fiável se tiveres ciclos irregulares. Registar as datas da menstruação durante alguns meses pode ajudar-te a conhecer melhor o teu ciclo. Fala com um médico ou enfermeiro se os teus ciclos durarem frequentemente menos de 24 dias ou mais de 38 dias."
+      }
+    },
+    "cta": {
+      "title": "Previsões do período adaptadas ao teu ciclo",
+      "body": "Conhece o Mochi, a tua aplicação gratuita de acompanhamento menstrual para iPhone. O Mochi utiliza as datas que registas para personalizar as previsões à medida que conhece melhor o teu ciclo. Funciona mesmo quando o teu telemóvel não tem ligação à Internet e não precisas de criar uma conta.",
+      "button": "Descarregar o Mochi gratuitamente"
+    }
   }
 }

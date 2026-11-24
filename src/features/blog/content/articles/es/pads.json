@@ -1,82 +1,163 @@
 {
-  "title": "¿Cada cuánto debes cambiar la compresa?",
-  "description": "Aprende cada cuánto cambiar la compresa, cuándo hacerlo antes y qué revisar por la noche o con un salvaslip, con fuentes de los CDC y ACOG.",
+  "title": "¿Cada cuánto cambiar la compresa? Cada 4 a 8 horas",
+  "description": "Descubre cada cuánto cambiar la compresa según tu flujo menstrual, cuántas horas puedes llevarla por la noche y cómo saber cuándo necesitas una nueva.",
   "imageAlt": "Mochi rosa junto a una compresa y un despertador morado",
-  "intro": "Cambia la compresa cada pocas horas, antes si está llena, húmeda o resulta incómoda. Sigue sus instrucciones y adáptate a tu flujo. Un recordatorio ayuda a comprobarla, pero puedes cambiarla antes de que suene.",
+  "intro": "Debes cambiarte la compresa al menos cada 4 a 8 horas, o antes si es necesario, según el Colegio Estadounidense de Obstetras y Ginecólogos (ACOG). Los Centros para el Control y la Prevención de Enfermedades (CDC) recomiendan cambiarla cada pocas horas, incluso cuando el sangrado es escaso. La frecuencia de cambio depende de tu flujo menstrual y del tipo de compresa que utilices.",
   "sections": {
-    "day-pads": {
-      "title": "Compresas de día",
+    "how-often": {
+      "title": "¿Cada cuánto se cambia una compresa?",
       "paragraphs": {
-        "first": "Los CDC recomiendan cambiarlas cada pocas horas, incluso con flujo leve. ACOG indica al menos cada 4 a 8 horas, o antes si están llenas, húmedas o incómodas. Son referencias generales, no un motivo para esperar si necesitas una limpia.",
-        "second": "Comprueba más a menudo con flujo abundante. Elige una absorción adecuada y sigue las instrucciones del envase."
+        "first": "Según el ACOG, debes cambiarte la compresa al menos cada 4 a 8 horas, o antes si está llena, húmeda o te resulta incómoda. Los CDC recomiendan cambiarla cada pocas horas, incluso durante los días de menor sangrado.",
+        "second": "El tiempo que puedes llevar una compresa depende de la cantidad de sangrado y de la capacidad de absorción del producto. Los días de flujo más abundante necesitarás cambiarla con mayor frecuencia. Si pasas muchas horas en clase o en el trabajo, aprovecha tus visitas al baño para revisar y cambiar tu compresa."
       },
       "table": {
-        "caption": "Guía práctica de compresas y salvaslips",
+        "caption": "Cada cuánto cambiar la compresa según tu flujo menstrual y el tipo de protección",
         "columns": [
-          "Producto",
-          "Cuándo cambiarlo",
-          "Ten en cuenta"
+          "Situación",
+          "Cuándo cambiarla",
+          "Consejo práctico"
         ],
         "rows": [
           [
-            "Compresa de día",
+            "Regla poco abundante",
             "Cada pocas horas",
-            "Antes con flujo abundante o molestias."
+            "Cámbiala aunque parezca casi limpia."
           ],
           [
-            "Compresa de noche",
-            "Según las instrucciones",
-            "Ponte una limpia al acostarte y cámbiala al despertar o antes si hace falta."
+            "Flujo moderado",
+            "Cada 4 a 8 horas o antes",
+            "Aprovecha tus visitas al baño para cambiarla."
+          ],
+          [
+            "Regla abundante",
+            "Siempre que sea necesario",
+            "No esperes a que esté completamente empapada."
+          ],
+          [
+            "Por la noche",
+            "Según las indicaciones del fabricante",
+            "Ponte una compresa limpia antes de acostarte."
           ],
           [
             "Salvaslip",
-            "Con regularidad y cuando esté húmedo",
-            "Para flujo leve o manchado."
+            "Cada pocas horas o cuando esté húmedo",
+            "Utiliza una compresa si aumenta el sangrado."
           ]
         ]
+      },
+      "note": "No hace falta esperar a que la compresa esté llena para cambiarla."
+    },
+    "heavy-flow": {
+      "title": "¿Cada cuánto cambiar la compresa si tienes una regla abundante?",
+      "paragraphs": {
+        "first": "Si tienes una regla abundante, cambia la compresa tantas veces como sea necesario, antes de que se empape por completo o tengas fugas. Si necesitas cambiarla habitualmente cada 1 o 2 horas, el servicio de salud británico (NHS) recomienda consultar con un médico.",
+        "second": "La cantidad de sangrado puede variar a lo largo de la menstruación. Es posible que algunos días necesites más compresas que otros. Si vas a pasar muchas horas fuera de casa, lleva algunas de repuesto en el bolso o la mochila.",
+        "third": "Según el NHS, estas otras señales también pueden indicar que conviene consultar con un profesional sanitario:"
+      },
+      "items": {
+        "double-protection": "Necesitas utilizar dos productos menstruales a la vez, como una compresa y un tampón.",
+        "duration": "La regla te dura más de 7 días.",
+        "clots": "Expulsas coágulos de sangre de más de unos 2,5 cm.",
+        "leaks": "El sangrado traspasa la ropa o mancha las sábanas.",
+        "daily-activities": "Dejas de hacer actividades cotidianas debido a la menstruación.",
+        "fatigue": "Sientes cansancio o falta de aire con frecuencia."
+      },
+      "note": "Consulta también con un médico si tus reglas se vuelven de repente más abundantes o muy dolorosas, aunque no necesites cambiarte la compresa tan a menudo."
+    },
+    "pads-per-day": {
+      "title": "¿Cuántas compresas se usan al día?",
+      "paragraphs": {
+        "first": "Utilizar entre 3 y 6 compresas al día es una estimación aproximada basada en un cambio cada 4 a 8 horas durante 24 horas. Puedes necesitar más si tienes una regla abundante o prefieres cambiarte con mayor frecuencia.",
+        "second": "No existe un número fijo de compresas que debas utilizar cada día durante la menstruación. Depende de la cantidad de sangrado, de la capacidad de absorción de tus compresas y de lo cómoda que te sientas al llevarlas.",
+        "third": "Es posible que necesites más compresas durante los primeros días de la regla que al final. Si tienes un viaje largo en tren o vas a pasar todo el día fuera, lleva un par más de las que crees que necesitarás.",
+        "fourth": "Aunque apenas tengas sangrado, no esperes a que la compresa esté llena. Los CDC aconsejan cambiarla cada pocas horas, independientemente de la cantidad de flujo menstrual."
       }
     },
-    "overnight-pads": {
-      "title": "Compresas de noche",
+    "overnight": {
+      "title": "¿Cuántas horas se puede llevar una compresa por la noche?",
       "paragraphs": {
-        "first": "Elige un producto nocturno y respeta sus instrucciones de uso. Ponte uno limpio antes de acostarte y cámbialo al despertar, o antes si está lleno o molesta.",
-        "second": "La etiqueta «noche» no garantiza la misma duración en todos los productos. Si el sangrado te obliga a cambiarlos muy a menudo de forma habitual, consulta con un profesional sanitario."
+        "first": "El tiempo que puedes llevar una compresa por la noche depende de tu flujo menstrual y de las indicaciones del fabricante. No existe un límite de horas universal para las compresas nocturnas, ya que sus características varían según la marca.",
+        "second": "Ponte una compresa de noche limpia justo antes de acostarte y cámbiala al despertarte. Si te gusta dormir hasta tarde los domingos, procura no superar el tiempo de uso recomendado en el envase.",
+        "third": "Llevar la misma compresa durante 12 horas no es una práctica recomendable como hábito, aunque tengas poco sangrado. El ACOG aconseja cambiarla al menos cada 4 a 8 horas.",
+        "fourth": "Hay quienes colocan dos compresas ligeramente superpuestas para cubrir una mayor superficie de la ropa interior y evitar manchas durante la noche. Una compresa nocturna más larga puede resultar más cómoda. Si necesitas habitualmente dos productos menstruales a la vez para contener el sangrado, el NHS recomienda consultar con un médico."
       }
+    },
+    "full-pad-signs": {
+      "title": "¿Cómo saber si una compresa está llena o necesitas cambiarla?",
+      "paragraphs": {
+        "first": "Es probable que tu compresa esté llena cuando la mayor parte de la superficie absorbente está empapada de sangre o el sangrado llega a los bordes. Sin embargo, conviene cambiarla antes de llegar a ese punto, especialmente si notas humedad o molestias.",
+        "second": "Estas cinco señales te indican que ha llegado el momento de ponerte una compresa limpia:"
+      },
+      "items": {
+        "saturation": "La mayor parte de la superficie absorbente está empapada de sangre.",
+        "edges": "La sangre se extiende hacia los bordes de la compresa.",
+        "wetness": "Notas humedad en la piel al llevar la compresa.",
+        "discomfort": "Sientes molestias o roces al caminar o moverte.",
+        "elapsed-time": "Han pasado varias horas desde el último cambio, aunque la compresa todavía no esté llena."
+      },
+      "note": "Durante los días de mayor sangrado, revisa tu compresa cada vez que vayas al baño. No todas las compresas absorben la misma cantidad de líquido, por lo que el tiempo de uso no basta para saber si están llenas."
     },
     "liners": {
-      "title": "Salvaslips",
+      "title": "¿Cada cuánto cambiar el salvaslip?",
       "paragraphs": {
-        "first": "Son más finos y sirven para flujo leve o manchado. Cámbialos con regularidad y cuando estén húmedos o molesten. Para un flujo mayor, usa un producto adecuado."
+        "first": "Por lo general, conviene cambiar el salvaslip cada pocas horas, o antes si está húmedo o te resulta incómodo. Consulta también las indicaciones del envase, ya que el tiempo de uso puede variar de un producto a otro.",
+        "second": "Los salvaslips son más finos y menos absorbentes que las compresas convencionales. Son útiles para recoger el flujo vaginal habitual, pequeños manchados o el sangrado escaso de los últimos días de la regla.",
+        "third": "Aunque el salvaslip parezca limpio, puede acumular humedad a lo largo del día. Cambiarlo durante la pausa para comer o después de hacer deporte puede ayudarte a sentirte más cómoda.",
+        "fourth": "Si aumenta el sangrado menstrual y tu salvaslip se empapa rápidamente, utiliza una compresa con una capacidad de absorción adecuada para tu flujo."
       }
     },
-    "signs-to-change": {
-      "title": "Señales de que toca cambiar",
+    "comfort-and-skin": {
+      "title": "¿Por qué es importante cambiar la compresa con frecuencia?",
+      "paragraphs": {
+        "first": "Cambiarte la compresa con frecuencia ayuda a evitar fugas, reducir los olores desagradables y sentirte más cómoda. Llevar una compresa húmeda durante demasiado tiempo puede irritar la piel debido a la humedad y al roce.",
+        "second": "Después de varias horas sentada en la oficina, un paseo largo o un viaje en coche, es posible que empieces a notar molestias. Ponerte una compresa limpia puede mejorar mucho la sensación de confort, aunque la anterior todavía no esté llena.",
+        "third": "Hay pequeños hábitos que pueden facilitarte los cambios de compresa cuando estás fuera de casa."
+      },
       "items": {
-        "full": "La compresa está llena, húmeda o resulta incómoda.",
-        "leaks": "Hay una fuga o el producto se ha movido.",
-        "time": "Ha llegado el momento indicado en las instrucciones, aunque el flujo sea leve."
+        "spare-pads": "Lleva algunas compresas de repuesto en un pequeño neceser dentro del bolso o la mochila.",
+        "underwear": "Utiliza ropa interior transpirable que mantenga la compresa bien colocada.",
+        "bathroom-breaks": "Aprovecha las visitas al baño para revisar tu compresa y cambiarla si hace falta.",
+        "comfort": "Cambia la compresa antes de lo previsto si notas humedad o roces."
       }
     },
     "mochi-reminder": {
-      "title": "Deja que Mochi te lo recuerde",
+      "title": "Cómo recordar cuándo cambiar la compresa con Mochi",
       "paragraphs": {
-        "first": "El recordatorio opcional muestra una cuenta atrás en la Dynamic Island y la pantalla bloqueada. La información del producto incluye opciones para compresas de día, de noche y salvaslips, con duración a elegir.",
-        "second": "El temporizador invita a comprobar el producto. No mide cuánto se ha llenado ni confirma una duración adecuada. Cámbialo antes cuando lo necesites."
+        "first": "Mochi incluye un recordatorio opcional que te ayuda a llevar la cuenta del tiempo que llevas usando la misma compresa. Puedes consultar una cuenta atrás directamente en la pantalla de bloqueo y en la Dynamic Island de tu iPhone, sin necesidad de abrir la aplicación.",
+        "second": "Puedes elegir entre tiempos preestablecidos para compresas de día, compresas de noche y salvaslips. También puedes configurar una duración personalizada según tu flujo menstrual y las indicaciones del fabricante.",
+        "third": "Resulta especialmente práctico cuando tienes mucho trabajo, estás preparando un examen o pasas la tarde con tus amigas. Así tienes una cosa menos de la que estar pendiente.",
+        "fourth": "El temporizador no puede detectar si tu compresa está llena. Si notas humedad o molestias, cámbiala en ese momento, aunque todavía quede tiempo en la cuenta atrás."
       }
     }
   },
   "faq": {
     "hours": {
-      "question": "¿Puedo mantener la compresa hasta que termine el temporizador?",
-      "answer": "Cámbiala antes si está llena, húmeda o molesta. Sigue las instrucciones. Un temporizador no evalúa tu flujo ni el estado del producto."
+      "question": "¿Cuántas horas se puede llevar una compresa?",
+      "answer": "El ACOG recomienda cambiar la compresa al menos cada 4 a 8 horas, mientras que los CDC aconsejan hacerlo cada pocas horas. Cámbiala antes si está llena, húmeda o te resulta incómoda."
     },
     "light": {
-      "question": "¿Debo cambiar la compresa aunque tenga poco flujo?",
-      "answer": "Sí. Los CDC aconsejan cambiarla cada pocas horas, incluso con flujo leve, y más a menudo si es abundante."
+      "question": "¿Cada cuánto hay que cambiar la compresa si tienes poca regla?",
+      "answer": "Debes cambiarte la compresa cada pocas horas, incluso si tienes una regla poco abundante. No hace falta esperar a que esté llena o completamente empapada para ponerte una limpia."
     },
     "night": {
-      "question": "¿Todas las compresas nocturnas duran lo mismo?",
-      "answer": "No. Elige una para uso nocturno y sigue su envase. Cámbiala antes si está llena o resulta incómoda."
+      "question": "¿Cuánto tiempo se puede llevar una compresa por la noche?",
+      "answer": "No existe un tiempo máximo universal para las compresas nocturnas, ya que las indicaciones varían según el producto. Ponte una compresa limpia antes de acostarte y cámbiala al despertarte, sin superar el tiempo de uso recomendado por el fabricante."
+    },
+    "twelve-hours": {
+      "question": "¿Se puede llevar una compresa durante 12 horas?",
+      "answer": "No es recomendable llevar habitualmente la misma compresa durante 12 horas, aunque el sangrado sea escaso. El ACOG aconseja cambiarla al menos cada 4 a 8 horas, o antes si es necesario."
+    },
+    "per-day": {
+      "question": "¿Cuántas compresas es normal usar al día?",
+      "answer": "Entre 3 y 6 compresas al día es una estimación aproximada si te cambias cada 4 a 8 horas durante 24 horas. Puedes necesitar más según la cantidad de sangrado, la capacidad de absorción de las compresas y tu comodidad."
+    },
+    "two-pads": {
+      "question": "¿Se pueden poner dos compresas por la noche?",
+      "answer": "Sí, puedes colocar dos compresas ligeramente superpuestas para cubrir una mayor superficie de la ropa interior, aunque una compresa nocturna más larga puede resultar más cómoda. Si necesitas habitualmente dos productos menstruales a la vez para contener el sangrado, el NHS recomienda consultar con un médico."
+    },
+    "liner": {
+      "question": "¿Cada cuánto tiempo hay que cambiar el salvaslip?",
+      "answer": "Cambia el salvaslip cada pocas horas, o antes si notas humedad o molestias. Sigue las indicaciones del envase y utiliza una compresa si el sangrado menstrual aumenta."
     }
   }
 }
