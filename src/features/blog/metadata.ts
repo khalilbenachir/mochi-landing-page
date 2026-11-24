@@ -4,9 +4,9 @@ import { getTranslations } from "next-intl/server";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { PUBLIC_SITE_URL, SITE_NAME, SITE_URL } from "@/features/landing/content/landing";
 import { LOCALE_META } from "@/i18n/routing";
-import { postModifiedAt, type BlogPost } from "./content/catalog";
+import { postModifiedAt, type BlogCategory, type BlogPost } from "./content/catalog";
 import { getArticleCopy } from "./content/copy";
-import { BLOG_LOCALES, blogPath, blogRoutes, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE, isBlogLocale, type BlogLocale } from "./locales";
+import { BLOG_LOCALES, blogPath, blogRoutes, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE, isBlogLocale, TOPICS_SEGMENT, type BlogLocale } from "./locales";
 
 /** Narrows the route locale, returning 404 for languages without published blog content. */
 export function requireBlogLocale(locale: string): BlogLocale {
@@ -68,4 +68,14 @@ export async function editorialMetadata(locale: BlogLocale) {
 export function articleMetadata(post: BlogPost, locale: BlogLocale) {
   const copy = getArticleCopy(post, locale);
   return blogMetadata({ locale, segments: [post.slug], title: `${copy.title} | ${SITE_NAME}`, description: copy.description, post });
+}
+
+export async function topicMetadata(category: BlogCategory, locale: BlogLocale) {
+  const t = await getTranslations({ locale, namespace: "Blog" });
+  return blogMetadata({
+    locale,
+    segments: [TOPICS_SEGMENT, category],
+    title: `${t(`topics.${category}.title`)} | ${SITE_NAME}`,
+    description: t(`topics.${category}.metadataDescription`),
+  });
 }

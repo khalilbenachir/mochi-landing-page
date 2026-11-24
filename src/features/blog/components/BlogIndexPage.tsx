@@ -10,6 +10,7 @@ import { BlogFilters } from "./BlogFilters";
 import { BlogShell } from "./BlogShell";
 import { BlogIndexStructuredData } from "./BlogStructuredData";
 import { PostCard } from "./PostCard";
+import { TopicLinks } from "./BlogTopicPage";
 
 export function BlogIndexPage() {
   const t = useTranslations("Blog");
@@ -72,6 +73,7 @@ export function BlogIndexPage() {
             </BlogFilters.Grid>
           </section>
         </BlogFilters.Root>
+        <TopicLinks />
         <aside className="mt-[26px] text-center text-[14px] font-semibold text-blog-muted">
           <Link href={routes.editorial} className="underline underline-offset-4 hover:text-mochi-pink-ink">
             {t("editorialNote")} {t("editorialLink")}

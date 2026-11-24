@@ -95,7 +95,9 @@ function ArticleHero({ post }: { post: BlogPost }) {
               {t("navigation")}
             </Link>
             <span aria-hidden="true">/</span>
-            <span>{category}</span>
+            <Link href={routes.topic(post.category)} className="underline-offset-4 hover:underline">
+              {category}
+            </Link>
           </nav>
           <BlogCard.Category>{category}</BlogCard.Category>
           <h1

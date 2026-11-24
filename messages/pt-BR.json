@@ -637,6 +637,36 @@
       "title": "Quando vem sua próxima menstruação?",
       "body": "Informe o primeiro dia da sua última menstruação e veja em segundos as próximas três, a ovulação e o período fértil estimados.",
       "button": "Abrir a calculadora"
+    },
+    "breadcrumb": "Trilha de navegação",
+    "topicEyebrow": "Tema",
+    "topicsHeading": "Explore por tema",
+    "topics": {
+      "cycle-basics": {
+        "title": "Entenda o ciclo menstrual",
+        "intro": "O ciclo menstrual tem quatro fases e, em adultas, costuma durar de 21 a 35 dias. Estes guias explicam cada fase, como acompanhar sua menstruação e como apps e relógios preveem o que vem depois, para você ler seu próprio padrão com confiança.",
+        "metadataDescription": "Entenda o ciclo menstrual: as 4 fases, a duração normal, como acompanhar a menstruação e como funcionam as previsões. Guias claros e com fontes."
+      },
+      "period-care": {
+        "title": "Cuidados na menstruação",
+        "intro": "Respostas práticas para os dias de menstruação: de quantas em quantas horas trocar o absorvente, quanta perda de sangue é normal e quais sinais pedem uma consulta. Cada guia é curto, sem julgamentos e baseado em fontes médicas.",
+        "metadataDescription": "Cuidados menstruais: de quantas em quantas horas trocar o absorvente, quanto sangue você perde, sinais de fluxo intenso e quando ir ao médico. Guias com fontes."
+      },
+      "symptoms-moods": {
+        "title": "Sintomas da menstruação e humor",
+        "intro": "Cólicas, desânimo e quedas de energia costumam acompanhar o ciclo. Estes guias explicam por que os sintomas mudam de uma fase para outra, o que costuma ajudar e quais sinais, como dor forte ou TDPM, merecem avaliação médica.",
+        "metadataDescription": "Cólica menstrual, TPM e mudanças de humor no ciclo: por que acontecem, o que ajuda e quando procurar um médico. Guias com fontes e sem julgamentos."
+      },
+      "privacy": {
+        "title": "Privacidade em apps de menstruação",
+        "intro": "Os dados do seu ciclo são dados de saúde. Estes guias mostram o que verificar antes de confiar em um app de menstruação (onde seus dados ficam, com quem são compartilhados, se é preciso criar conta) e comparam alternativas privadas.",
+        "metadataDescription": "Seu app de menstruação é privado? O que verificar, para onde vão seus dados e quais alternativas privadas ao Flo existem. Guias claros e práticos."
+      },
+      "using-mochi": {
+        "title": "Usando o Mochi",
+        "intro": "O Mochi é um app gratuito de acompanhamento menstrual para iPhone. Não precisa de conta, e os dados do seu ciclo ficam no seu iPhone, a menos que você ative o backup. Comece aqui: primeiro check-in, registro da menstruação e dos sintomas, e leitura das previsões.",
+        "metadataDescription": "Comece a usar o Mochi, o app de menstruação gratuito e privado para iPhone: primeiro check-in, registro da menstruação e sintomas, e leitura das previsões."
+      }
     }
   },
   "PeriodEducationFAQ": {

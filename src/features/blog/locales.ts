@@ -34,12 +34,16 @@ export function blogPath(locale: AppLocale, ...segments: string[]) {
 
 export const EDITORIAL_SLUG = "editorial-policy";
 
+/** Topic hubs live at `/blog/topics/<category>`. */
+export const TOPICS_SEGMENT = "topics";
+
 /** Every blog URL for one locale; components use this instead of writing paths. */
 export function blogRoutes(locale: AppLocale) {
   return {
     index: blogPath(locale),
     editorial: blogPath(locale, EDITORIAL_SLUG),
     post: (slug: string) => blogPath(locale, slug),
+    topic: (category: string) => blogPath(locale, TOPICS_SEGMENT, category),
   };
 }
 

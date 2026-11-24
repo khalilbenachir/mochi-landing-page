@@ -637,6 +637,36 @@
       "title": "Wann kommt deine nächste Periode?",
       "body": "Gib den ersten Tag deiner letzten Periode ein und sieh in Sekunden deine nächsten drei Perioden, den geschätzten Eisprung und deine fruchtbaren Tage.",
       "button": "Zum Periodenrechner"
+    },
+    "breadcrumb": "Brotkrumen-Navigation",
+    "topicEyebrow": "Thema",
+    "topicsHeading": "Nach Thema entdecken",
+    "topics": {
+      "cycle-basics": {
+        "title": "Zykluswissen: der Menstruationszyklus",
+        "intro": "Der Menstruationszyklus hat vier Phasen und dauert bei Erwachsenen meist 21 bis 35 Tage. Diese Ratgeber erklären jede Phase, wie du deine Periode trackst und wie Apps und Uhren den nächsten Zyklus vorhersagen, damit du dein eigenes Muster sicher liest.",
+        "metadataDescription": "Den Menstruationszyklus verstehen: die 4 Phasen, normale Zykluslänge, Periode tracken und wie Periodenvorhersagen funktionieren. Klare Ratgeber mit Quellen."
+      },
+      "period-care": {
+        "title": "Rund um die Periode",
+        "intro": "Praktische Antworten für die Tage deiner Periode: wie oft du die Binde wechseln solltest, wie viel Blutverlust normal ist und bei welchen Anzeichen sich ein Arztbesuch lohnt. Jeder Ratgeber ist kurz, wertfrei und stützt sich auf medizinische Quellen.",
+        "metadataDescription": "Rund um die Periode: wie oft Binde wechseln, wie viel Blut du verlierst, Anzeichen starker Blutungen und wann zum Arzt. Kurze Ratgeber mit Quellen."
+      },
+      "symptoms-moods": {
+        "title": "Periodensymptome und Stimmung",
+        "intro": "Krämpfe, Stimmungstiefs und Energielöcher folgen oft dem Zyklus. Diese Ratgeber erklären, warum sich Symptome von Phase zu Phase ändern, was meist hilft und welche Anzeichen, etwa starke Schmerzen oder PMDS, ärztlich abgeklärt werden sollten.",
+        "metadataDescription": "Regelschmerzen, PMS und Stimmungsschwankungen im Zyklus: warum sie entstehen, was hilft und wann du zum Arzt solltest. Wertfreie Ratgeber mit Quellen."
+      },
+      "privacy": {
+        "title": "Datenschutz bei Perioden-Apps",
+        "intro": "Deine Zyklusdaten sind Gesundheitsdaten. Diese Ratgeber zeigen, was du prüfen solltest, bevor du einer Perioden-App vertraust (wo deine Daten liegen, mit wem sie geteilt werden, ob du ein Konto brauchst), und vergleichen private Alternativen.",
+        "metadataDescription": "Ist deine Perioden-App privat? Was du prüfen solltest, wohin deine Daten gehen und welche privaten Alternativen zu Flo es gibt. Klare, praktische Ratgeber."
+      },
+      "using-mochi": {
+        "title": "Mochi nutzen",
+        "intro": "Mochi ist ein kostenloser Periodentracker für das iPhone. Du brauchst kein Konto, und deine Zyklusdaten bleiben auf deinem iPhone, außer du aktivierst das Backup. Hier startest du: erster Check-in, Periode und Symptome eintragen, Vorhersagen verstehen.",
+        "metadataDescription": "Starte mit Mochi, dem kostenlosen und privaten Periodentracker fürs iPhone: erster Check-in, Periode und Symptome eintragen, Vorhersagen verstehen."
+      }
     }
   },
   "PeriodEducationFAQ": {

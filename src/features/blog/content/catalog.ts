@@ -1,5 +1,5 @@
 import type { EditorialSourceId } from "@/lib/editorial-sources";
-import { blogPath, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE } from "../locales";
+import { blogPath, EDITORIAL_SLUG, FALLBACK_BLOG_LOCALE, TOPICS_SEGMENT } from "../locales";
 
 export type BlogPostId =
   | "tracking"
@@ -255,7 +255,29 @@ export const BLOG_POSTS: readonly BlogPost[] = CATALOG.map((post, index) => ({ p
 export const FEATURED_POST: BlogPost | undefined = BLOG_POSTS.find((post) => post.featured) ?? BLOG_POSTS[0];
 
 /** Path segments under `/blog` of every published page: the index, the editorial policy and each post. */
-export const BLOG_PAGE_SEGMENTS: readonly (readonly string[])[] = [[], [EDITORIAL_SLUG], ...BLOG_POSTS.map((post) => [post.slug])];
+/** Categories that have at least one post; each gets a topic hub page. */
+export const BLOG_TOPICS: readonly BlogCategory[] = BLOG_CATEGORIES.filter((category) => BLOG_POSTS.some((post) => post.category === category));
+
+export function isBlogTopic(value: string): value is BlogCategory {
+  return (BLOG_TOPICS as readonly string[]).includes(value);
+}
+
+/** A topic's posts, in catalog order. */
+export function topicPosts(category: BlogCategory) {
+  return BLOG_POSTS.filter((post) => post.category === category);
+}
+
+/** The newest update among a topic's posts. */
+export function topicModifiedAt(category: BlogCategory) {
+  return topicPosts(category).map(postModifiedAt).sort().at(-1)!;
+}
+
+export const BLOG_PAGE_SEGMENTS: readonly (readonly string[])[] = [
+  [],
+  [EDITORIAL_SLUG],
+  ...BLOG_TOPICS.map((category) => [TOPICS_SEGMENT, category]),
+  ...BLOG_POSTS.map((post) => [post.slug]),
+];
 /** Every published page in the fallback locale (the canonical English URLs). */
 export const BLOG_PATHS = BLOG_PAGE_SEGMENTS.map((segments) => blogPath(FALLBACK_BLOG_LOCALE, ...segments));
 
