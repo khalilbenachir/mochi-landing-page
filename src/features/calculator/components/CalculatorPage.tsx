@@ -93,7 +93,7 @@ export async function CalculatorPage({ locale, kind = "period" }: { locale: AppL
   return (
     <main id="top" className="flex-1 bg-white text-ink-navy">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, "\\u003c") }} />
-      <SiteHeader homeHref={home} sectionBase={home} localeRoute={`/${CALCULATORS[kind].slug}`} activePage="calculator" />
+      <SiteHeader homeHref={home} sectionBase={home} localeRoute={`/${CALCULATORS[kind].slug}`} activePage={kind === "ovulation" ? "ovulation" : "calculator"} />
 
       <section aria-labelledby="calculator-title" className={cn("relative overflow-hidden text-white", page.hero)}>
         {/* Calendar-cell confetti: the page's one playful flourish, decorative only. */}

@@ -13,7 +13,10 @@
     "blog": "Blog",
     "calculator": "Calculadora",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "calculators": "Calculadoras",
+    "periodCalculator": "Calculadora de menstruação",
+    "ovulationCalculator": "Calculadora de ovulação"
   },
   "LocaleSwitcher": {
     "label": "Idioma",

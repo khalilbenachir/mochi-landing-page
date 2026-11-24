@@ -13,7 +13,10 @@
     "blog": "Blog",
     "calculator": "Zyklusrechner",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "calculators": "Rechner",
+    "periodCalculator": "Periodenrechner",
+    "ovulationCalculator": "Eisprungrechner"
   },
   "LocaleSwitcher": {
     "label": "Sprache",
