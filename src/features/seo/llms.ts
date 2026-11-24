@@ -41,6 +41,7 @@ export function buildLlmsTxt() {
 
 - [Home](${url("/")}): what Mochi does, features, privacy and FAQ.
 - [Free period calculator](${url(calculatorPath(routing.defaultLocale))}): enter the first day of your last period, cycle length and period length to estimate your next 3 periods, ovulation day and fertile window.
+- [Free ovulation calculator](${url(calculatorPath(routing.defaultLocale, "ovulation"))}): enter the first day of your last period and your cycle length to estimate your ovulation day, fertile window and most fertile days for the next 3 cycles.
 - [Blog](${url(routes.index)}): sourced guides about the menstrual cycle, period care, symptoms and period tracker privacy.
 - [Editorial policy](${url(routes.editorial)}): how guides are researched, sourced and updated.
 - [Privacy policy](${url(localeRoutePath(routing.defaultLocale, "privacy"))}): what stays on the iPhone and how optional backup works.

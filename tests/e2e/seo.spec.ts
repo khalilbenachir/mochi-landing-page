@@ -10,11 +10,11 @@ import { FAQ_IDS, STRUCTURED_FEATURE_IDS } from "../../src/features/landing/cont
 import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
 import { BLOG_LOCALES, blogPath, FALLBACK_BLOG_LOCALE, parseBlogRoute } from "../../src/features/blog/locales";
 import { BLOG_PAGE_SEGMENTS, BLOG_POSTS, postModifiedAt } from "../../src/features/blog/content/catalog";
-import { CALCULATOR_SLUG } from "../../src/features/calculator/content/calculate";
+import { CALCULATOR_SLUG, OVULATION_CALCULATOR_SLUG } from "../../src/features/calculator/content/calculate";
 import { LEGAL_PAGE_SLUGS } from "../../src/features/legal/pages";
 
 /** Every non-blog page routed under each locale home, besides the home itself. */
-const LOCALIZED_SLUGS = [CALCULATOR_SLUG, ...LEGAL_PAGE_SLUGS];
+const LOCALIZED_SLUGS = [CALCULATOR_SLUG, OVULATION_CALCULATOR_SLUG, ...LEGAL_PAGE_SLUGS];
 import { LOCALE_META, localePath, localeRoutePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
 

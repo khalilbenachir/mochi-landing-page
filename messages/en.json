@@ -13,7 +13,10 @@
     "blog": "Blog",
     "calculator": "Calculator",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "calculators": "Calculators",
+    "periodCalculator": "Period calculator",
+    "ovulationCalculator": "Ovulation calculator"
   },
   "LocaleSwitcher": {
     "label": "Language",
@@ -308,7 +311,8 @@
     "terms": "Terms",
     "calculator": "Period calculator",
     "contact": "Contact",
-    "disclaimer": "Mochi is not a contraceptive and doesn’t replace medical advice."
+    "disclaimer": "Mochi is not a contraceptive and doesn’t replace medical advice.",
+    "ovulationCalculator": "Ovulation calculator"
   },
   "NotFound": {
     "metadataTitle": "Page not found | Mochi",
@@ -769,6 +773,83 @@
       "title": "Get period predictions based on your own cycle",
       "body": "Meet Mochi, your free period tracker for iPhone. Mochi learns from the period dates you log to personalise your predictions over time. It works offline, and you don't need to create an account.",
       "button": "Get Mochi for free"
+    },
+    "picker": {
+      "placeholder": "Pick the day it started",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "today": "Today",
+      "change": "Change date",
+      "decrease": "Fewer days",
+      "increase": "More days",
+      "days": "{count, plural, one {# day} other {# days}}"
+    },
+    "sibling": "Another free tool"
+  },
+  "OvulationCalculator": {
+    "metadataTitle": "Ovulation Calculator: Find Your Fertile Window",
+    "metadataDescription": "Free ovulation calculator: estimate your ovulation day and fertile window from your last period and cycle length. No account needed, nothing stored.",
+    "eyebrow": "Free tool",
+    "title": "Ovulation calculator",
+    "intro": "Estimate when you're likely to ovulate and which days make up your fertile window, based on the first day of your last period and your usual cycle length. Results are estimates, not a confirmation of ovulation.",
+    "heroAlt": "Mochi in round glasses looking through a magnifying glass at a highlighted day on a desk calendar",
+    "sibling": "Another free tool",
+    "form": {
+      "legend": "Tell us about your cycle",
+      "lastPeriod": "First day of your last period",
+      "cycleLength": "Average cycle length (days)",
+      "cycleHint": "Count from the first day of one period to the first day of the next. Not sure? Start with 28.",
+      "submit": "Find my fertile window",
+      "reset": "Start over"
+    },
+    "results": {
+      "heading": "Your estimated fertile days",
+      "empty": "Enter your last period date and cycle length to see your estimated ovulation day and fertile window.",
+      "ovulation": "Estimated ovulation",
+      "cycleDay": "Around day {day} of your cycle",
+      "daysUntil": "{days, plural, =0 {Today} one {In # day} other {In # days}}",
+      "fertile": "Fertile window",
+      "peak": "Most fertile days",
+      "range": "{start} to {end}",
+      "nextPeriod": "Next period expected",
+      "upcoming": "Your next ovulation dates",
+      "glance": "Your fertile window at a glance",
+      "legend": {
+        "period": "Next period",
+        "fertile": "Fertile window",
+        "ovulation": "Ovulation",
+        "today": "Today"
+      }
+    },
+    "disclaimer": "These dates are estimates based on an average cycle and may differ from when you actually ovulate. Do not use this calculator as contraception. If you're trying to get pregnant and have concerns, talk to a doctor or nurse.",
+    "how": {
+      "title": "How the ovulation calculator works",
+      "first": "The calculator first estimates when your next period will start by adding your average cycle length to the first day of your last period. Ovulation usually happens about 14 days before a period starts, because the luteal phase that follows ovulation lasts around 14 days, according to Cleveland Clinic. So in a 28-day cycle, ovulation is estimated around day 14, and in a 32-day cycle, around day 18.",
+      "second": "After ovulation, the egg can be fertilised for about 12 to 24 hours, but sperm can survive in the body for up to five days. That's why the fertile window shown here covers the five days before your estimated ovulation and the ovulation day itself. The two days before ovulation and ovulation day are highlighted as your most fertile days, because that's when the chance of pregnancy is highest.",
+      "third": "Your cycle can change from month to month, so ovulation may happen earlier or later than estimated, especially if your cycles are irregular. Tracking your periods, watching your cervical mucus or using ovulation tests can give you a clearer picture. Everything is calculated in your browser: your dates are never stored or sent to a server."
+    },
+    "faq": {
+      "title": "Questions about ovulation and your fertile window",
+      "calculate": {
+        "question": "How do I calculate my ovulation date?",
+        "answer": "Subtract 14 days from the date you expect your next period to start. For example, if your cycle lasts 30 days and your last period started on 1 March, your next period is due around 31 March, so ovulation is estimated around 17 March. This is an estimate, because the time between ovulation and your period can vary slightly."
+      },
+      "fertile": {
+        "question": "How long is the fertile window?",
+        "answer": "The fertile window usually lasts about six days: the five days before ovulation and the day of ovulation. Sperm can survive for up to five days, while the egg lives for about 12 to 24 hours after it's released, so sex in the days before ovulation can lead to pregnancy."
+      },
+      "signs": {
+        "question": "What are the signs of ovulation?",
+        "answer": "Common signs include clear, slippery and stretchy cervical mucus (similar to raw egg white), a small rise in basal body temperature after ovulation, mild pain on one side of the lower belly and a higher sex drive. Ovulation tests detect the rise in luteinising hormone (LH) that happens about 24 to 36 hours before ovulation."
+      },
+      "irregular": {
+        "question": "Does the ovulation calculator work with irregular cycles?",
+        "answer": "It can give a rough estimate, but it's less reliable when your cycle length changes a lot from month to month. Tracking your periods for a few months, watching for signs of ovulation or using ovulation tests can help. Speak to a doctor if your cycles are often shorter than 24 days or longer than 38 days, or if you've been trying to get pregnant for a year (six months if you're 35 or older)."
+      },
+      "contraception": {
+        "question": "Can I use an ovulation calculator to avoid pregnancy?",
+        "answer": "No. A calendar estimate can't tell you exactly when you ovulate, and ovulation can shift from one cycle to the next, so no day can be guaranteed safe. If you want to avoid pregnancy, talk to a doctor, nurse or pharmacist about reliable contraception."
+      }
     },
     "picker": {
       "placeholder": "Pick the day it started",

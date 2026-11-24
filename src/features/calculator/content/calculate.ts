@@ -1,5 +1,7 @@
 /** Public route segment under each locale home, e.g. `/period-calculator` or `/fr/period-calculator`. */
 export const CALCULATOR_SLUG = "period-calculator";
+/** The ovulation calculator, a sibling page with the same anatomy. */
+export const OVULATION_CALCULATOR_SLUG = "ovulation-calculator";
 
 /** Input bounds: wide enough for irregular and teen cycles, narrow enough to catch typos. */
 export const CYCLE_LENGTH = { min: 15, max: 60, fallback: 28 } as const;
@@ -10,6 +12,9 @@ export const LUTEAL_DAYS = 14;
 /** The fertile window shown: the five days before estimated ovulation plus the ovulation day. */
 export const FERTILE_DAYS_BEFORE_OVULATION = 5;
 export const UPCOMING_PERIODS = 3;
+/** "Most fertile" days: the two days before estimated ovulation plus the ovulation day. */
+export const PEAK_DAYS_BEFORE_OVULATION = 2;
+export const UPCOMING_OVULATIONS = 3;
 
 const DAY_MS = 86_400_000;
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -69,4 +74,31 @@ export function estimateCycles(lastStart: string, cycleLength: number, periodLen
   });
   const ovulation = addDays(periods[0]!.start, -LUTEAL_DAYS);
   return { periods, ovulation, fertile: { start: addDays(ovulation, -FERTILE_DAYS_BEFORE_OVULATION), end: ovulation } };
+}
+
+export type OvulationCycle = { ovulation: string; fertile: DateRange; peak: DateRange; nextPeriod: string };
+
+/**
+ * Ovulation estimate for the next cycles: each cycle's ovulation is LUTEAL_DAYS before the period
+ * that ends it. Starts with the first cycle whose ovulation is today or later, so a window that is
+ * already open still shows. Returns undefined for an invalid or future start date.
+ */
+export function estimateOvulation(lastStart: string, cycleLength: number, today: string): OvulationCycle[] | undefined {
+  if (parseDay(lastStart) === undefined || parseDay(today) === undefined) return undefined;
+  if (daysBetween(lastStart, today) < 0) return undefined;
+  const cycle = clampLength(cycleLength, CYCLE_LENGTH);
+  const first = Math.max(0, Math.floor((daysBetween(lastStart, today) + LUTEAL_DAYS - cycle) / cycle));
+  const cycles: OvulationCycle[] = [];
+  for (let index = first; cycles.length < UPCOMING_OVULATIONS; index += 1) {
+    const nextPeriod = addDays(lastStart, (index + 1) * cycle);
+    const ovulation = addDays(nextPeriod, -LUTEAL_DAYS);
+    if (ovulation < today) continue;
+    cycles.push({
+      ovulation,
+      fertile: { start: addDays(ovulation, -FERTILE_DAYS_BEFORE_OVULATION), end: ovulation },
+      peak: { start: addDays(ovulation, -PEAK_DAYS_BEFORE_OVULATION), end: ovulation },
+      nextPeriod,
+    });
+  }
+  return cycles;
 }

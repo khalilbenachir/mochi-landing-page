@@ -25,15 +25,15 @@ export type CalculatorCopy = {
   disclaimer: string;
 };
 
-type Translator = (key: string, values?: Record<string, string | number>) => string;
+export type Translator = (key: string, values?: Record<string, string | number>) => string;
 
 /** Today as a UTC calendar day in the visitor's own time zone. */
-function localToday() {
+export function localToday() {
   const now = new Date();
   return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())).toISOString().slice(0, 10);
 }
 
-const asDate = (day: string) => new Date(`${day}T00:00:00Z`);
+export const asDate = (day: string) => new Date(`${day}T00:00:00Z`);
 /** Monday-first column (0–6) of a UTC day. */
 const weekdayIndex = (day: string) => (asDate(day).getUTCDay() + 6) % 7;
 const monthStart = (day: string) => `${day.slice(0, 7)}-01`;
@@ -62,7 +62,7 @@ function Chevron({ flip }: { flip?: boolean }) {
 }
 
 /** A month grid in a popover: friendlier than the native field and identical in every browser. */
-function DatePicker({ id, label, value, onChange, today, locale, copy }: { id: string; label: string; value: string; onChange: (day: string) => void; today: string | undefined; locale: AppLocale; copy: CalculatorCopy["picker"] }) {
+export function DatePicker({ id, label, value, onChange, today, locale, copy }: { id: string; label: string; value: string; onChange: (day: string) => void; today: string | undefined; locale: AppLocale; copy: CalculatorCopy["picker"] }) {
   const [open, setOpen] = useState(false);
   const [month, setMonth] = useState(() => monthStart(value || today || "2026-01-01"));
   const [direction, setDirection] = useState<"next" | "prev">("next");
@@ -175,7 +175,7 @@ function DatePicker({ id, label, value, onChange, today, locale, copy }: { id: s
 }
 
 /** − value + with the unit spelled out; replaces the bare number field. */
-function Stepper({ id, label, hint, value, onChange, bounds, t, copy }: { id: string; label: string; hint: string; value: number; onChange: (value: number) => void; bounds: { min: number; max: number }; t: Translator; copy: CalculatorCopy["picker"] }) {
+export function Stepper({ id, label, hint, value, onChange, bounds, t, copy }: { id: string; label: string; hint: string; value: number; onChange: (value: number) => void; bounds: { min: number; max: number }; t: Translator; copy: CalculatorCopy["picker"] }) {
   const step = (by: number) => onChange(Math.min(bounds.max, Math.max(bounds.min, value + by)));
   const round = "grid size-[40px] flex-none cursor-pointer place-items-center rounded-full bg-blog-pink text-[22px] font-max leading-none text-cycle-period-ink disabled:cursor-not-allowed disabled:opacity-35";
   return (
@@ -204,7 +204,7 @@ function Stepper({ id, label, hint, value, onChange, bounds, t, copy }: { id: st
 type DayKind = "period" | "fertile" | "ovulation" | "plain";
 
 /** Week rows from this week to the end of the next period, coloured like the app's cycle wheel. */
-function CycleGlance({ estimate, today, locale, copy }: { estimate: CycleEstimate; today: string; locale: AppLocale; copy: CalculatorCopy["results"] }) {
+export function CycleGlance({ estimate, today, locale, copy }: { estimate: CycleEstimate; today: string; locale: AppLocale; copy: Pick<CalculatorCopy["results"], "glance" | "legend"> }) {
   const next = estimate.periods[0]!;
   // Start at whichever comes first, this week or the fertile window, so every marked day shows.
   const from = estimate.fertile.start < today ? estimate.fertile.start : today;

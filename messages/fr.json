@@ -13,7 +13,10 @@
     "blog": "Blog",
     "calculator": "Calculateur",
     "plus": "Mochi Plus",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "calculators": "Calculateurs",
+    "periodCalculator": "Calculateur de règles",
+    "ovulationCalculator": "Calculateur d’ovulation"
   },
   "LocaleSwitcher": {
     "label": "Langue",
@@ -308,7 +311,8 @@
     "terms": "Conditions",
     "calculator": "Calculateur de règles",
     "contact": "Contact",
-    "disclaimer": "Mochi n’est pas un moyen de contraception et ne remplace pas un avis médical."
+    "disclaimer": "Mochi n’est pas un moyen de contraception et ne remplace pas un avis médical.",
+    "ovulationCalculator": "Calculateur d’ovulation"
   },
   "NotFound": {
     "metadataTitle": "Page introuvable | Mochi",
@@ -769,6 +773,83 @@
       "title": "Des prévisions de règles adaptées à votre cycle",
       "body": "Découvrez Mochi, votre application gratuite de suivi des règles pour iPhone. Mochi s'appuie sur les dates que vous renseignez pour personnaliser vos prévisions au fil des cycles. L'application fonctionne hors ligne et ne nécessite pas de création de compte.",
       "button": "Télécharger Mochi gratuitement"
+    },
+    "picker": {
+      "placeholder": "Choisissez le premier jour",
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "today": "Aujourd’hui",
+      "change": "Modifier la date",
+      "decrease": "Moins de jours",
+      "increase": "Plus de jours",
+      "days": "{count, plural, one {# jour} other {# jours}}"
+    },
+    "sibling": "Un autre outil gratuit"
+  },
+  "OvulationCalculator": {
+    "metadataTitle": "Calculateur d’ovulation : trouvez votre période fertile",
+    "metadataDescription": "Calculateur d’ovulation gratuit : estimez votre jour d’ovulation et votre période fertile à partir de vos dernières règles. Sans compte, rien n’est stocké.",
+    "eyebrow": "Outil gratuit",
+    "title": "Calculateur d’ovulation",
+    "intro": "Estimez le jour où vous ovulerez probablement et les jours de votre période fertile, à partir du premier jour de vos dernières règles et de la durée habituelle de votre cycle. Les résultats sont des estimations, pas une confirmation de l’ovulation.",
+    "heroAlt": "Mochi avec des lunettes rondes regarde à la loupe un jour mis en évidence sur un calendrier de bureau",
+    "sibling": "Un autre outil gratuit",
+    "form": {
+      "legend": "Les informations sur votre cycle",
+      "lastPeriod": "Premier jour de vos dernières règles",
+      "cycleLength": "Durée moyenne du cycle (jours)",
+      "cycleHint": "Comptez du premier jour de vos règles au premier jour des règles suivantes. Vous ne savez pas ? Commencez par 28.",
+      "submit": "Trouver ma période fertile",
+      "reset": "Réinitialiser"
+    },
+    "results": {
+      "heading": "Vos jours fertiles estimés",
+      "empty": "Indiquez la date de vos dernières règles et la durée de votre cycle pour voir votre jour d’ovulation et votre période fertile estimés.",
+      "ovulation": "Ovulation estimée",
+      "cycleDay": "Vers le {day}e jour de votre cycle",
+      "daysUntil": "{days, plural, =0 {Aujourd’hui} one {Dans # jour} other {Dans # jours}}",
+      "fertile": "Période fertile",
+      "peak": "Jours les plus fertiles",
+      "range": "Du {start} au {end}",
+      "nextPeriod": "Prochaines règles prévues",
+      "upcoming": "Vos prochaines dates d’ovulation",
+      "glance": "Votre période fertile en un coup d’œil",
+      "legend": {
+        "period": "Prochaines règles",
+        "fertile": "Période fertile",
+        "ovulation": "Ovulation",
+        "today": "Aujourd’hui"
+      }
+    },
+    "disclaimer": "Ces dates sont des estimations fondées sur un cycle moyen et peuvent différer de votre ovulation réelle. N’utilisez pas ce calculateur comme moyen de contraception. Si vous essayez d’avoir un enfant et avez des inquiétudes, parlez-en à un médecin ou une sage-femme.",
+    "how": {
+      "title": "Comment fonctionne le calculateur d’ovulation",
+      "first": "Le calculateur estime d’abord la date de vos prochaines règles en ajoutant la durée moyenne de votre cycle au premier jour de vos dernières règles. L’ovulation a généralement lieu environ 14 jours avant le début des règles, car la phase lutéale qui suit l’ovulation dure environ 14 jours, selon la Cleveland Clinic. Dans un cycle de 28 jours, l’ovulation est donc estimée vers le 14e jour, et dans un cycle de 32 jours, vers le 18e jour.",
+      "second": "Après l’ovulation, l’ovule peut être fécondé pendant environ 12 à 24 heures, mais les spermatozoïdes peuvent survivre jusqu’à cinq jours dans le corps. C’est pourquoi la période fertile affichée couvre les cinq jours précédant votre ovulation estimée et le jour de l’ovulation. Les deux jours avant l’ovulation et le jour même sont mis en avant comme vos jours les plus fertiles, car c’est là que les chances de grossesse sont les plus élevées.",
+      "third": "Votre cycle peut varier d’un mois à l’autre : l’ovulation peut donc survenir plus tôt ou plus tard que prévu, surtout si vos cycles sont irréguliers. Suivre vos règles, observer votre glaire cervicale ou utiliser des tests d’ovulation peut vous donner une image plus précise. Tout est calculé dans votre navigateur : vos dates ne sont jamais enregistrées ni envoyées à un serveur."
+    },
+    "faq": {
+      "title": "Questions sur l’ovulation et la période fertile",
+      "calculate": {
+        "question": "Comment calculer sa date d’ovulation ?",
+        "answer": "Retirez 14 jours à la date prévue de vos prochaines règles. Par exemple, si votre cycle dure 30 jours et que vos dernières règles ont commencé le 1er mars, vos prochaines règles sont attendues vers le 31 mars : l’ovulation est donc estimée vers le 17 mars. C’est une estimation, car le délai entre l’ovulation et les règles peut légèrement varier."
+      },
+      "fertile": {
+        "question": "Combien de temps dure la période fertile ?",
+        "answer": "La période fertile dure en général environ six jours : les cinq jours qui précèdent l’ovulation et le jour de l’ovulation. Les spermatozoïdes peuvent survivre jusqu’à cinq jours, alors que l’ovule vit environ 12 à 24 heures après sa libération : un rapport dans les jours précédant l’ovulation peut donc mener à une grossesse."
+      },
+      "signs": {
+        "question": "Quels sont les signes de l’ovulation ?",
+        "answer": "Les signes fréquents sont une glaire cervicale claire, glissante et élastique (comme du blanc d’œuf cru), une légère hausse de la température basale après l’ovulation, une douleur légère d’un côté du bas-ventre et une libido plus élevée. Les tests d’ovulation détectent le pic d’hormone lutéinisante (LH), qui survient environ 24 à 36 heures avant l’ovulation."
+      },
+      "irregular": {
+        "question": "Le calculateur fonctionne-t-il avec des cycles irréguliers ?",
+        "answer": "Il peut donner une estimation approximative, mais il est moins fiable si la durée de votre cycle change beaucoup d’un mois à l’autre. Suivre vos règles pendant quelques mois, repérer les signes d’ovulation ou utiliser des tests d’ovulation peut vous aider. Consultez un médecin si vos cycles durent souvent moins de 24 jours ou plus de 38 jours, ou si vous essayez d’avoir un enfant depuis un an (six mois si vous avez 35 ans ou plus)."
+      },
+      "contraception": {
+        "question": "Peut-on utiliser un calculateur d’ovulation pour éviter une grossesse ?",
+        "answer": "Non. Une estimation par calendrier ne peut pas indiquer précisément le jour de votre ovulation, et celle-ci peut se décaler d’un cycle à l’autre : aucun jour ne peut être garanti sans risque. Si vous souhaitez éviter une grossesse, parlez à un médecin, une sage-femme ou un pharmacien d’une contraception fiable."
+      }
     },
     "picker": {
       "placeholder": "Choisissez le premier jour",

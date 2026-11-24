@@ -5,7 +5,7 @@ import { HeartOutline } from "@/features/landing/components/shared/decor";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
 import { TERMS_SUMMARY_ICONS } from "@/features/terms/content/terms";
-import { CALCULATOR_ASSETS, CALCULATOR_HERO_SIZE } from "@/features/calculator/content/assets";
+import { CALCULATOR_ART } from "@/features/calculator/content/assets";
 import { CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
 import { localeRoutePath } from "@/i18n/routing";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
@@ -242,9 +242,9 @@ function CalculatorPromo() {
       className="mt-[40px] grid grid-cols-[120px_1fr] items-center gap-x-[20px] rounded-[24px] border-2 border-blog-border bg-white p-[20px] max-phone:grid-cols-1 max-phone:justify-items-center max-phone:text-center"
     >
       <Image
-        src={CALCULATOR_ASSETS.hero}
-        width={CALCULATOR_HERO_SIZE.width}
-        height={CALCULATOR_HERO_SIZE.height}
+        src={CALCULATOR_ART.period.src}
+        width={CALCULATOR_ART.period.width}
+        height={CALCULATOR_ART.period.height}
         alt=""
         sizes="120px"
         className="h-auto w-[120px] -rotate-3"
