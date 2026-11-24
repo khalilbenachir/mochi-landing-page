@@ -1,0 +1,19 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-24",
+  "file": "public/calculator-art/calculator-mochi-planner.webp",
+  "references": [
+    "public/terms-art/terms-mochi-reader.webp"
+  ],
+  "use": "Hero of the period calculator page in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1024,
+    "height": 802,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box with 24px margin, then resized from 1402x1122."
+  },
+  "prompt": "Use the attached image ONLY as the character and style reference: the same pink mochi mascot (rounded drop/dome body, bold darker-pink outline, glossy white highlights, navy eyes, pink cheeks, small mouth, tiny round pink hands), the same purple round glasses, the same cream puffy cushion, same soft-shaded flat sticker style and palette. Create a NEW pose made for a \"next period calculator\" page. Mochi is the cycle planner: sitting on the cushion with the purple glasses, one eye winking and a proud, confident smile, holding a small pink pencil and drawing a pink circle around one day on a tall standing desk calendar beside it (simple grid page with a ring binding on top; four consecutive days filled soft pink, one day with a small pink heart, a light blue dot on another day). Floating around: a small cream alarm-clock-style countdown timer (no digits), a tiny pink droplet and two little lavender sparkles. Cheerful, clever, reassuring. No numbers, no letters, no words, no logos anywhere. Landscape 5:4, Mochi left of centre, calendar right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration.",
+  "revision": "Second version (same day): Mochi as the cycle planner with glasses, pencil, desk calendar and countdown clock, replacing the first calendar-holding pose."
+}

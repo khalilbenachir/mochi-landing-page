@@ -11,6 +11,7 @@
     "flavors": "Mochi",
     "privacy": "Confidentialité",
     "blog": "Blog",
+    "calculator": "Calculateur",
     "plus": "Mochi Plus",
     "faq": "FAQ"
   },
@@ -157,7 +158,8 @@
     "nextPeriodDate": "30 juin",
     "avgCycle": "Cycle moyen",
     "cycleLengthValue": "28 jours",
-    "mascotAlt": "Mochi observe les phases de la lune au télescope"
+    "mascotAlt": "Mochi observe les phases de la lune au télescope",
+    "calculatorLink": "Essayer le calculateur de règles"
   },
   "Privacy": {
     "title1": "Votre cycle reste",
@@ -630,7 +632,12 @@
     "inlineCtaTitle": "Mochi vous accompagne au quotidien.",
     "inlineCtaDescription": "Règles, humeur et petits rappels réunis sur votre iPhone.",
     "mobileContents": "Dans cet article",
-    "sourcesToggle": "Sources et informations éditoriales"
+    "sourcesToggle": "Sources et informations éditoriales",
+    "calculatorPromo": {
+      "title": "Quand arrivent vos prochaines règles ?",
+      "body": "Indiquez le premier jour de vos dernières règles et obtenez vos trois prochaines règles, votre ovulation et votre période fertile estimées en quelques secondes.",
+      "button": "Ouvrir le calculateur"
+    }
   },
   "PeriodEducationFAQ": {
     "sourcesLabel": "Sources",
@@ -673,6 +680,7 @@
     "eyebrow": "Outil gratuit",
     "title": "Calculer ses prochaines règles",
     "intro": "Notre calculateur de règles gratuit vous permet d'estimer la date de vos prochaines règles, de votre ovulation et de votre période fertile. Les résultats sont calculés à partir de la durée habituelle de votre cycle et restent indicatifs.",
+    "heroAlt": "Mochi avec ses lunettes entoure un jour du calendrier au crayon, à côté d’un petit réveil",
     "form": {
       "legend": "Les informations sur votre cycle",
       "lastPeriod": "Premier jour de vos dernières règles",
@@ -692,7 +700,14 @@
       "ovulation": "Date d'ovulation estimée",
       "fertile": "Période fertile estimée",
       "fertileRange": "Du {start} au {end}",
-      "daysUntil": "{days, plural, =0 {Aujourd’hui} one {Dans # jour} other {Dans # jours}}"
+      "daysUntil": "{days, plural, =0 {Aujourd’hui} one {Dans # jour} other {Dans # jours}}",
+      "glance": "Votre cycle en un coup d’œil",
+      "legend": {
+        "period": "Règles",
+        "fertile": "Période fertile",
+        "ovulation": "Ovulation",
+        "today": "Aujourd’hui"
+      }
     },
     "disclaimer": "Les dates calculées sont des estimations et peuvent différer de votre cycle réel. Ce calculateur ne doit pas être utilisé comme moyen de contraception ni pour établir un diagnostic médical.",
     "how": {
@@ -724,6 +739,16 @@
       "title": "Des prévisions de règles adaptées à votre cycle",
       "body": "Découvrez Mochi, votre application gratuite de suivi des règles pour iPhone. Mochi s'appuie sur les dates que vous renseignez pour personnaliser vos prévisions au fil des cycles. L'application fonctionne hors ligne et ne nécessite pas de création de compte.",
       "button": "Télécharger Mochi gratuitement"
+    },
+    "picker": {
+      "placeholder": "Choisissez le premier jour",
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "today": "Aujourd’hui",
+      "change": "Modifier la date",
+      "decrease": "Moins de jours",
+      "increase": "Plus de jours",
+      "days": "{count, plural, one {# jour} other {# jours}}"
     }
   }
 }

@@ -5,6 +5,9 @@ import { HeartOutline } from "@/features/landing/components/shared/decor";
 import { LANDING_ASSETS } from "@/features/landing/content/assets";
 import { SITE_URL } from "@/features/landing/content/landing";
 import { TERMS_SUMMARY_ICONS } from "@/features/terms/content/terms";
+import { CALCULATOR_ASSETS, CALCULATOR_HERO_SIZE } from "@/features/calculator/content/assets";
+import { CALCULATOR_SLUG } from "@/features/calculator/content/calculate";
+import { localeRoutePath } from "@/i18n/routing";
 import { sourceHref, type EditorialSourceId } from "@/lib/editorial-sources";
 import { BLOG_ART_SIZE, BLOG_POSTS, postModifiedAt, relatedPosts, type BlogPost, type BlogSection } from "../content/catalog";
 import { articleReadingMinutes, articleSourceIds, getArticleCopy, getArticleSection, type ArticleTable } from "../content/copy";
@@ -227,6 +230,40 @@ function ArticleCta() {
   );
 }
 
+/** Cycle articles hand readers to the calculator: the questions they read about, answered with their own dates. */
+function CalculatorPromo() {
+  const t = useTranslations("Blog");
+  const locale = useBlogLocale();
+  return (
+    <aside
+      aria-labelledby="calculator-promo-title"
+      className="mt-[40px] grid grid-cols-[120px_1fr] items-center gap-x-[20px] rounded-[24px] border-2 border-blog-border bg-white p-[20px] max-phone:grid-cols-1 max-phone:justify-items-center max-phone:text-center"
+    >
+      <Image
+        src={CALCULATOR_ASSETS.hero}
+        width={CALCULATOR_HERO_SIZE.width}
+        height={CALCULATOR_HERO_SIZE.height}
+        alt=""
+        sizes="120px"
+        className="h-auto w-[120px] -rotate-3"
+      />
+      <div className="min-w-0">
+        <h2 id="calculator-promo-title" className="text-[22px] font-max leading-[1.15]">
+          {t("calculatorPromo.title")}
+        </h2>
+        <p className="mt-[6px] text-[15px] font-semibold leading-[1.45]">{t("calculatorPromo.body")}</p>
+        <a
+          href={localeRoutePath(locale, CALCULATOR_SLUG)}
+          className="mt-[12px] inline-flex items-center gap-[8px] rounded-full bg-closing-band px-[18px] py-[10px] text-[15px] font-heavy text-white"
+        >
+          {t("calculatorPromo.button")}
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </aside>
+  );
+}
+
 function ArticleNotice() {
   const t = useTranslations("Blog");
   return (
@@ -336,6 +373,7 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
                   <ArticleSection key={section.id} post={post} section={section} />
                 ))}
               </BlogArticle.Content>
+              {post.category === "cycle-basics" ? <CalculatorPromo /> : null}
               <ArticleCta />
               <ArticleNotice />
               <ArticleQuestions post={post} />

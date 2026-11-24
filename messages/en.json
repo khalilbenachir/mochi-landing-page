@@ -11,6 +11,7 @@
     "flavors": "Flavors",
     "privacy": "Privacy",
     "blog": "Blog",
+    "calculator": "Calculator",
     "plus": "Mochi Plus",
     "faq": "FAQ"
   },
@@ -157,7 +158,8 @@
     "nextPeriodDate": "Jun 30",
     "avgCycle": "Avg cycle",
     "cycleLengthValue": "28 days",
-    "mascotAlt": "Mochi watching the moon phases through a telescope"
+    "mascotAlt": "Mochi watching the moon phases through a telescope",
+    "calculatorLink": "Try the free period calculator"
   },
   "Privacy": {
     "title1": "Your cycle stays",
@@ -630,7 +632,12 @@
     "inlineCtaTitle": "Let Mochi keep you company.",
     "inlineCtaDescription": "Period tracking, moods and gentle reminders, together on your iPhone.",
     "mobileContents": "In this article",
-    "sourcesToggle": "Sources and editorial information"
+    "sourcesToggle": "Sources and editorial information",
+    "calculatorPromo": {
+      "title": "When is your next period?",
+      "body": "Enter the first day of your last period and get your next three periods, estimated ovulation and fertile window in seconds.",
+      "button": "Open the calculator"
+    }
   },
   "PeriodEducationFAQ": {
     "sourcesLabel": "Sources",
@@ -673,6 +680,7 @@
     "eyebrow": "Free tool",
     "title": "Next period calculator",
     "intro": "Calculate when your next period is likely to start, along with your estimated ovulation date and fertile window. Your results are estimates based on your usual cycle length, not guaranteed dates.",
+    "heroAlt": "Mochi in round glasses circling a day on a calendar with a pencil, next to a little alarm clock",
     "form": {
       "legend": "Tell us about your cycle",
       "lastPeriod": "First day of your last period",
@@ -692,7 +700,14 @@
       "ovulation": "Estimated ovulation",
       "fertile": "Estimated fertile window",
       "fertileRange": "{start} to {end}",
-      "daysUntil": "{days, plural, =0 {Today} one {In # day} other {In # days}}"
+      "daysUntil": "{days, plural, =0 {Today} one {In # day} other {In # days}}",
+      "glance": "Your cycle at a glance",
+      "legend": {
+        "period": "Period",
+        "fertile": "Fertile window",
+        "ovulation": "Ovulation",
+        "today": "Today"
+      }
     },
     "disclaimer": "These dates are estimates and may differ from your actual cycle. Do not use this calculator as a method of contraception or to diagnose a health condition.",
     "how": {
@@ -724,6 +739,16 @@
       "title": "Get period predictions based on your own cycle",
       "body": "Meet Mochi, your free period tracker for iPhone. Mochi learns from the period dates you log to personalise your predictions over time. It works offline, and you don't need to create an account.",
       "button": "Get Mochi for free"
+    },
+    "picker": {
+      "placeholder": "Pick the day it started",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "today": "Today",
+      "change": "Change date",
+      "decrease": "Fewer days",
+      "increase": "More days",
+      "days": "{count, plural, one {# day} other {# days}}"
     }
   }
 }
