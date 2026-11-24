@@ -9,8 +9,12 @@ import { LANDING_ASSETS } from "../../src/features/landing/content/assets";
 import { FAQ_IDS, STRUCTURED_FEATURE_IDS } from "../../src/features/landing/content/landing";
 import { EDUCATION_FAQ } from "../../src/features/landing/content/education-faq";
 import { BLOG_LOCALES, blogPath, FALLBACK_BLOG_LOCALE, parseBlogRoute } from "../../src/features/blog/locales";
-import { BLOG_PAGE_SEGMENTS, BLOG_POSTS } from "../../src/features/blog/content/catalog";
+import { BLOG_PAGE_SEGMENTS, BLOG_POSTS, postModifiedAt } from "../../src/features/blog/content/catalog";
+import { CALCULATOR_SLUG } from "../../src/features/calculator/content/calculate";
 import { LEGAL_PAGE_SLUGS } from "../../src/features/legal/pages";
+
+/** Every non-blog page routed under each locale home, besides the home itself. */
+const LOCALIZED_SLUGS = [CALCULATOR_SLUG, ...LEGAL_PAGE_SLUGS];
 import { LOCALE_META, localePath, localeRoutePath, routing, type AppLocale } from "../../src/i18n/routing";
 import { baseOrigin } from "./origin";
 
@@ -252,22 +256,22 @@ test.describe("crawler endpoints", () => {
     expect(body).not.toContain("localhost:3000");
 
     const blocks = [...body.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1] ?? "");
-    expect(blocks).toHaveLength(routing.locales.length * 3 + blogUrls.length);
+    expect(blocks).toHaveLength(routing.locales.length * (1 + LOCALIZED_SLUGS.length) + blogUrls.length);
 
     const locs = blocks.map((block) => {
       const found = [...block.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1] ?? "");
       expect(found).toHaveLength(1);
       return norm(must(found[0]));
     });
-    expect(sorted(locs)).toEqual(sorted([...routing.locales.flatMap((locale) => [pageUrl(locale), ...LEGAL_PAGE_SLUGS.map((slug) => new URL(localeRoutePath(locale, slug), baseOrigin).href)]), ...blogUrls]));
+    expect(sorted(locs)).toEqual(sorted([...routing.locales.flatMap((locale) => [pageUrl(locale), ...LOCALIZED_SLUGS.map((slug) => new URL(localeRoutePath(locale, slug), baseOrigin).href)]), ...blogUrls]));
 
     for (const block of blocks) {
       const canonical = /<loc>([^<]+)<\/loc>/.exec(block)?.[1] ?? "";
       const blogRoute = parseBlogRoute(new URL(canonical).pathname);
       const post = BLOG_POSTS.find(({ slug }) => blogRoute?.rest.length === 1 && blogRoute.rest[0] === slug);
-      if (post) expect(block).toContain(`<lastmod>${post.publishedAt}</lastmod>`);
+      if (post) expect(block).toContain(`<lastmod>${postModifiedAt(post)}</lastmod>`);
       else expect(block).not.toContain("<lastmod>");
-      const slug = LEGAL_PAGE_SLUGS.find((candidate) => new RegExp(`<loc>[^<]*/${candidate}</loc>`).test(block));
+      const slug = LOCALIZED_SLUGS.find((candidate) => new RegExp(`<loc>[^<]*/${candidate}</loc>`).test(block));
       const expectedUrl = (locale: AppLocale) => slug ? new URL(localeRoutePath(locale, slug), baseOrigin).href : pageUrl(locale);
       const expectedAlternates: Record<string, string> = blogRoute ? {
         ...Object.fromEntries(BLOG_LOCALES.map((locale) => [locale, new URL(blogPath(locale, ...blogRoute.rest), baseOrigin).href])),
