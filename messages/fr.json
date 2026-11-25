@@ -393,6 +393,12 @@
         "body": "Nous ne partageons des données qu’avec les services qui font fonctionner Mochi, chacun limité à ce dont il a besoin : Supabase (compte et sauvegarde chiffrée, UE), PostHog (statistiques d’utilisation, UE), RevenueCat (statut de l’abonnement) et Apple (achats App Store, Se connecter avec Apple et trousseau iCloud).",
         "detail": "Ces prestataires traitent les données pour notre compte, selon leurs conditions de traitement des données. Nous ne vendons pas vos données et ne les partageons ni avec des annonceurs ni avec des courtiers en données."
       },
+      "waitlist": {
+        "nav": "Liste d’attente",
+        "title": "Si vous rejoignez la liste d’attente",
+        "body": "Si vous laissez votre e-mail sur notre site pour être prévenu(e) de l’arrivée de Mochi sur l’App Store, nous conservons cette adresse, la langue de la page et la date de votre inscription. Elles sont hébergées chez Supabase, sur des serveurs situés dans l’UE.",
+        "detail": "Nous l’utilisons uniquement pour vous envoyer un e-mail au lancement de Mochi, puis nous supprimons la liste. Elle n’est jamais partagée, vendue ni utilisée à des fins publicitaires. Pour en être retiré(e) plus tôt, écrivez-nous à l’adresse ci-dessous."
+      },
       "deletion": {
         "nav": "Supprimer vos données",
         "title": "Supprimer votre compte et vos données",
@@ -861,5 +867,22 @@
       "increase": "Plus de jours",
       "days": "{count, plural, one {# jour} other {# jours}}"
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Bientôt disponible",
+    "title": "Mochi arrive bientôt sur l’App Store",
+    "body": "Nous peaufinons les derniers détails. Laissez votre e-mail et nous vous préviendrons dès que Mochi sera disponible au téléchargement.",
+    "emailLabel": "Votre e-mail",
+    "placeholder": "vous@exemple.com",
+    "submit": "Me prévenir",
+    "sending": "Inscription…",
+    "consent": "Un seul e-mail au lancement de Mochi, rien d’autre. Votre adresse n’est jamais partagée.",
+    "privacyLink": "Politique de confidentialité",
+    "successTitle": "Vous êtes sur la liste",
+    "successBody": "Nous vous écrirons dès que Mochi sera sur l’App Store. Mochi a hâte de vous rencontrer.",
+    "invalid": "Veuillez saisir une adresse e-mail valide.",
+    "failed": "Un problème est survenu. Veuillez réessayer dans un instant.",
+    "close": "Fermer",
+    "imageAlt": "Mochi se détend sur un nuage avec son iPhone"
   }
 }

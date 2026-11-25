@@ -393,6 +393,12 @@
         "body": "Wir teilen Daten nur mit den Diensten, die Mochi betreiben, jeweils beschränkt auf das Nötige: Supabase (Konto und verschlüsseltes Backup, EU), PostHog (Nutzungsanalyse, EU), RevenueCat (Abo-Status) und Apple (App-Store-Käufe, „Mit Apple anmelden“ und iCloud-Schlüsselbund).",
         "detail": "Diese Dienstleister verarbeiten Daten in unserem Auftrag nach ihren Bedingungen zur Auftragsverarbeitung. Wir verkaufen deine Daten nicht und geben sie nicht an Werbetreibende oder Datenhändler weiter."
       },
+      "waitlist": {
+        "nav": "Warteliste",
+        "title": "Wenn du dich auf die Warteliste setzt",
+        "body": "Wenn du auf unserer Website deine E-Mail-Adresse hinterlässt, um vom Start von Mochi im App Store zu erfahren, speichern wir diese Adresse, die Sprache der Seite und das Datum deiner Anmeldung. Sie liegen bei Supabase auf Servern in der EU.",
+        "detail": "Wir nutzen sie nur, um dir zum Start von Mochi eine E-Mail zu schicken, und löschen die Liste danach. Sie wird nie weitergegeben, verkauft oder für Werbung genutzt. Wenn du früher entfernt werden möchtest, schreib uns an die Adresse unten."
+      },
       "deletion": {
         "nav": "Daten löschen",
         "title": "Konto und Daten löschen",
@@ -861,5 +867,22 @@
       "increase": "Mehr Tage",
       "days": "{count, plural, one {# Tag} other {# Tage}}"
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Bald verfügbar",
+    "title": "Mochi kommt bald in den App Store",
+    "body": "Wir legen gerade letzte Hand an. Hinterlasse deine E-Mail-Adresse und wir sagen dir Bescheid, sobald du Mochi herunterladen kannst.",
+    "emailLabel": "Deine E-Mail-Adresse",
+    "placeholder": "du@beispiel.de",
+    "submit": "Benachrichtige mich",
+    "sending": "Wird eingetragen …",
+    "consent": "Nur eine E-Mail zum Start von Mochi, sonst nichts. Wir geben deine Adresse nie weiter.",
+    "privacyLink": "Datenschutzerklärung",
+    "successTitle": "Du stehst auf der Liste",
+    "successBody": "Wir schreiben dir, sobald Mochi im App Store ist. Mochi freut sich schon auf dich.",
+    "invalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "failed": "Etwas ist schiefgelaufen. Bitte versuch es gleich noch einmal.",
+    "close": "Schließen",
+    "imageAlt": "Mochi entspannt sich mit seinem iPhone auf einer Wolke"
   }
 }

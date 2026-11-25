@@ -393,6 +393,12 @@
         "body": "Só compartilhamos dados com os serviços que fazem o Mochi funcionar, cada um limitado ao que precisa: Supabase (conta e backup criptografado, UE), PostHog (análise de uso, UE), RevenueCat (status da assinatura) e Apple (compras na App Store, Iniciar sessão com a Apple e Chaves do iCloud).",
         "detail": "Esses fornecedores tratam dados em nosso nome, de acordo com os termos de tratamento de dados deles. Não vendemos seus dados nem os compartilhamos com anunciantes ou corretores de dados."
       },
+      "waitlist": {
+        "nav": "Lista de espera",
+        "title": "Se você entrar na lista de espera",
+        "body": "Se você deixar seu e-mail no nosso site para saber quando o Mochi chegar à App Store, guardamos esse endereço, o idioma da página e a data da inscrição. Eles ficam na Supabase, em servidores na UE.",
+        "detail": "Usamos esse e-mail só para enviar uma mensagem quando o Mochi for lançado e depois apagamos a lista. Ele nunca é compartilhado, vendido nem usado para publicidade. Para sair da lista antes, escreva para o endereço abaixo."
+      },
       "deletion": {
         "nav": "Apagar seus dados",
         "title": "Exclua sua conta e seus dados",
@@ -861,5 +867,22 @@
       "increase": "Mais dias",
       "days": "{count, plural, one {# dia} other {# dias}}"
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Em breve",
+    "title": "O Mochi chega em breve à App Store",
+    "body": "Estamos dando os últimos retoques. Deixe seu e-mail e avisaremos assim que o Mochi estiver pronto para baixar.",
+    "emailLabel": "Seu e-mail",
+    "placeholder": "voce@exemplo.com",
+    "submit": "Me avise",
+    "sending": "Inscrevendo…",
+    "consent": "Só um e-mail quando o Mochi for lançado, nada mais. Nunca compartilhamos seu endereço.",
+    "privacyLink": "Política de privacidade",
+    "successTitle": "Você está na lista",
+    "successBody": "Vamos te avisar assim que o Mochi estiver na App Store. O Mochi não vê a hora de te conhecer.",
+    "invalid": "Digite um endereço de e-mail válido.",
+    "failed": "Algo deu errado. Tente novamente em instantes.",
+    "close": "Fechar",
+    "imageAlt": "Mochi relaxando em uma nuvem com seu iPhone"
   }
 }

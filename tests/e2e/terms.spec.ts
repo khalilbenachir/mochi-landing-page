@@ -143,14 +143,13 @@ test("language links keep terms and mobile navigation returns to localized home"
 });
 
 for (const prefix of ["", "/fr"]) {
-  test(`terms download links reach ${prefix || "English"} home`, async ({ page }) => {
+  test(`terms download links open the ${prefix || "English"} launch waitlist`, async ({ page }) => {
     await page.goto(`${prefix}/terms`);
     const download = page.locator('footer a[aria-label*="App Store"]').first();
-    const expected = `${prefix || "/"}#get`;
-    await expect(download).toHaveAttribute("href", expected);
+    await expect(download).toHaveAttribute("href", `${prefix || "/"}#get`);
     await download.click();
-    await expect(page).toHaveURL(new URL(expected, baseOrigin).toString());
-    await expect(page.locator("#get")).toBeVisible();
+    await expect(page.locator("dialog[open]")).toBeVisible();
+    await expect(page).toHaveURL(new URL(`${prefix}/terms`, baseOrigin).toString());
   });
 }
 

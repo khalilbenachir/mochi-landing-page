@@ -393,6 +393,12 @@
         "body": "Só partilhamos dados com os serviços que fazem o Mochi funcionar, cada um limitado ao que precisa: Supabase (conta e cópia encriptada, UE), PostHog (estatísticas de utilização, UE), RevenueCat (estado da subscrição) e Apple (compras na App Store, Iniciar sessão com a Apple e Porta-chaves iCloud).",
         "detail": "Estes fornecedores tratam dados em nosso nome, segundo os seus termos de tratamento de dados. Não vendemos os teus dados nem os partilhamos com anunciantes ou corretores de dados."
       },
+      "waitlist": {
+        "nav": "Lista de espera",
+        "title": "Se entrares na lista de espera",
+        "body": "Se deixares o teu e-mail no nosso site para saberes quando o Mochi chega à App Store, guardamos esse endereço, o idioma da página e a data da inscrição. Ficam alojados na Supabase, em servidores na UE.",
+        "detail": "Usamo-lo apenas para te enviar um e-mail quando o Mochi for lançado e depois apagamos a lista. Nunca é partilhado, vendido nem usado para publicidade. Para saíres da lista mais cedo, escreve-nos para o endereço abaixo."
+      },
       "deletion": {
         "nav": "Apagar os teus dados",
         "title": "Elimina a tua conta e os teus dados",
@@ -861,5 +867,22 @@
       "increase": "Mais dias",
       "days": "{count, plural, one {# dia} other {# dias}}"
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Brevemente",
+    "title": "O Mochi chega em breve à App Store",
+    "body": "Estamos a dar os últimos retoques. Deixa o teu e-mail e avisamos-te assim que o Mochi estiver pronto para descarregar.",
+    "emailLabel": "O teu e-mail",
+    "placeholder": "tu@exemplo.pt",
+    "submit": "Avisa-me",
+    "sending": "A inscrever…",
+    "consent": "Só um e-mail quando o Mochi for lançado, nada mais. Nunca partilhamos o teu endereço.",
+    "privacyLink": "Política de privacidade",
+    "successTitle": "Estás na lista",
+    "successBody": "Vamos escrever-te assim que o Mochi estiver na App Store. O Mochi está ansioso por te conhecer.",
+    "invalid": "Introduz um endereço de e-mail válido.",
+    "failed": "Algo correu mal. Tenta novamente daqui a pouco.",
+    "close": "Fechar",
+    "imageAlt": "Mochi a descansar numa nuvem com o seu iPhone"
   }
 }
