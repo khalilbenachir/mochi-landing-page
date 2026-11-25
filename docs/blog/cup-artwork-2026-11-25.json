@@ -1,0 +1,18 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-25",
+  "file": "public/blog-art/cup-care-mochi.webp",
+  "references": [
+    "public/blog-art/tampon-care-mochi.webp"
+  ],
+  "use": "Article hero, blog cards, related reading and generated social cards in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1200,
+    "height": 800,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box, fitted into 1120x740 and centred on a 1200x800 transparent canvas from 1536x1024."
+  },
+  "prompt": "Same character, same style and same cushion as the image you just made. New scene for a blog article about how long you can leave a menstrual cup in. Mochi sits on the cushion with a calm, caring smile, one tiny hand pointing at a round cream alarm clock beside it (simple clock face with two hands, no numbers). Next to the clock stands one menstrual cup in soft pastel lavender silicone: a bell-shaped cup with a short stem at the bottom, standing upright, clean and empty, shown simply and discreetly, with a small cream fabric pouch lying beside it. Floating around: a small pink droplet and two little lavender sparkles. Gentle, reassuring, practical mood, not clinical. No numbers, no letters, no words, no logos anywhere. Landscape 3:2, Mochi left of centre, clock and cup right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration."
+}

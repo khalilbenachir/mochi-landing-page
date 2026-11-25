@@ -594,7 +594,10 @@
       "tamponSafety": "FDA : tampons",
       "tamponsCanada": "Santé Canada : tampons hygiéniques",
       "toxicShock": "NHS : syndrome du choc toxique",
-      "tamponTooLong": "Cleveland Clinic : garder un tampon trop longtemps"
+      "tamponTooLong": "Cleveland Clinic : garder un tampon trop longtemps",
+      "menstrualCups": "FDA : coupes menstruelles",
+      "cupGuide": "Cleveland Clinic : coupes menstruelles",
+      "cupReview": "The Lancet Public Health : revue sur la coupe menstruelle (2019)"
     },
     "editorial": {
       "title": "Notre démarche éditoriale",

@@ -594,7 +594,10 @@
       "tamponSafety": "FDA: absorventes internos",
       "tamponsCanada": "Health Canada: absorventes internos",
       "toxicShock": "NHS: síndrome do choque tóxico",
-      "tamponTooLong": "Cleveland Clinic: absorvente interno por tempo demais"
+      "tamponTooLong": "Cleveland Clinic: absorvente interno por tempo demais",
+      "menstrualCups": "FDA: coletores menstruais",
+      "cupGuide": "Cleveland Clinic: coletores menstruais",
+      "cupReview": "The Lancet Public Health: revisão sobre o coletor menstrual (2019)"
     },
     "editorial": {
       "title": "Nossa abordagem editorial",

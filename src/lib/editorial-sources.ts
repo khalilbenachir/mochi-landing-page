@@ -46,6 +46,9 @@ export const EDITORIAL_SOURCE_URLS = {
   tamponsCanada: "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/menstrual-tampons.html",
   toxicShock: "https://www.nhs.uk/conditions/toxic-shock-syndrome/",
   tamponTooLong: "https://health.clevelandclinic.org/what-happens-if-you-leave-a-tampon-in-too-long/",
+  menstrualCups: "https://www.fda.gov/medical-devices/menstrual-product-options-facts-and-safe-use/menstrual-cups",
+  cupGuide: "https://health.clevelandclinic.org/menstrual-cup",
+  cupReview: "https://pubmed.ncbi.nlm.nih.gov/31324419/",
 } as const;
 
 export type EditorialSourceId = keyof typeof EDITORIAL_SOURCE_URLS;

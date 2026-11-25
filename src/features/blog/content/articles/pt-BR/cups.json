@@ -1,0 +1,180 @@
+{
+  "title": "Quanto tempo pode ficar com o coletor menstrual?",
+  "description": "Quanto tempo pode ficar com o coletor menstrual? Até 12 horas. Saiba quando esvaziar, se dá para dormir com ele, como saber se está cheio e como limpar.",
+  "imageAlt": "Mochi, um mascote rosa, ao lado de um coletor menstrual e de um pequeno despertador",
+  "intro": "Você pode ficar com o coletor menstrual por até 12 horas, segundo a FDA e a Cleveland Clinic. A maioria das pessoas esvazia a cada 8 a 12 horas, e com mais frequência nos dias de fluxo intenso. Essas 12 horas são um limite, não uma meta: o ritmo certo depende do seu fluxo, do tamanho do seu coletor e das instruções que vieram com ele.",
+  "sections": {
+    "how-long": {
+      "title": "Quanto tempo pode ficar com o coletor menstrual?",
+      "paragraphs": {
+        "first": "O coletor menstrual pode ficar até 12 horas antes de ser retirado, esvaziado e enxaguado. A FDA diz que ele costuma ser esvaziado a cada 8 a 12 horas, e a Cleveland Clinic dá o mesmo máximo de 12 horas. Algumas marcas indicam um tempo menor, então vale o que está na embalagem do seu coletor.",
+        "second": "Quem decide o quanto você chega perto das 12 horas é o seu fluxo. Nos primeiros dias, que costumam ser os mais intensos, talvez seja preciso esvaziar a cada 4 a 6 horas para não transbordar. Nos dias mais leves, de manhã e à noite pode bastar. Se você está começando, esvazie depois de 3 ou 4 horas nos primeiros dias: logo dá para ver quanto ele junta e se organizar.",
+        "third": "O limite de 12 horas vale mesmo que o coletor não esteja cheio. O sangue parado por muito tempo começa a ter cheiro, e o coletor precisa ser enxaguado com regularidade, seja qual for a quantidade."
+      },
+      "table": {
+        "caption": "Quando esvaziar o coletor menstrual em cada situação",
+        "columns": [
+          "Situação",
+          "Quando esvaziar",
+          "Dica"
+        ],
+        "rows": [
+          [
+            "Primeira vez",
+            "Depois de 3 a 4 horas",
+            "Veja quanto ele juntou para conhecer o seu fluxo."
+          ],
+          [
+            "Dias de fluxo intenso",
+            "A cada 4 a 8 horas, ou antes se vazar",
+            "Esvazie sempre que puder ir ao banheiro."
+          ],
+          [
+            "Dias de fluxo leve",
+            "Dentro de 12 horas",
+            "Não passe de 12 horas, mesmo que esteja quase vazio."
+          ],
+          [
+            "À noite",
+            "Logo antes de dormir e assim que acordar",
+            "Mantenha a noite toda abaixo de 12 horas."
+          ]
+        ]
+      },
+      "note": "Se as instruções do seu coletor indicarem menos de 12 horas, siga as instruções."
+    },
+    "overnight": {
+      "title": "É seguro dormir com coletor menstrual?",
+      "paragraphs": {
+        "first": "Sim, você pode dormir com o coletor menstrual, desde que ele não fique mais de 12 horas no total. Esvazie e enxágue logo antes de deitar e esvazie de novo assim que acordar.",
+        "second": "Esse é um dos principais motivos para muita gente trocar o absorvente interno pelo coletor. A FDA não recomenda usar o absorvente interno por mais de 8 horas, o que complica as noites longas. O coletor dá algumas horas a mais, então uma noite normal de sono costuma caber sem despertador.",
+        "third": "Se você for dormir mais do que o normal ou o fluxo noturno for muito intenso, um absorvente externo ou uma calcinha absorvente como reforço protege o lençol. Vazamento à noite geralmente quer dizer que o coletor encheu ou não abriu direito, não que tem algo errado."
+      }
+    },
+    "is-it-full": {
+      "title": "Como saber a hora de trocar o coletor menstrual?",
+      "paragraphs": {
+        "first": "O sinal mais claro é o vazamento. Segundo a Cleveland Clinic, vazar costuma significar que o coletor ficou tempo demais e encheu, ou que não foi colocado direito. Como não dá para ver dentro dele, a maioria aprende o próprio ritmo nos primeiros ciclos.",
+        "second": "Estes sinais mostram que está na hora de esvaziar:"
+      },
+      "items": {
+        "leaking": "Sangue na calcinha ou no protetor diário depois de algumas horas.",
+        "heaviness": "Sensação de peso ou de que o coletor desceu mais do que o normal.",
+        "measure-lines": "Na última troca, o sangue chegou à marcação de cima ou aos furinhos.",
+        "time": "Já estão quase 12 horas desde a última vez que você esvaziou."
+      },
+      "after": "Muitos coletores têm marcações de medida na lateral, então cada troca vira uma olhada rápida no seu fluxo. O NHS, o serviço de saúde britânico, recomenda procurar um médico se você precisa trocar o produto a cada 1 ou 2 horas, o que pode indicar menstruação intensa."
+    },
+    "left-in-too-long": {
+      "title": "O que acontece se deixar o coletor mais de 12 horas?",
+      "paragraphs": {
+        "first": "Se você deixar o coletor mais de 12 horas, o mais comum é vazar, ter um cheiro forte ou causar irritação. Tire assim que lembrar, esvazie, lave com água e sabonete neutro sem perfume e coloque de novo, ou dê um descanso usando um absorvente externo.",
+        "second": "Se você esqueceu por 24 horas, o conselho é o mesmo. Na maioria das vezes não acontece mais nada. Observe como você se sente nos dias seguintes e procure a ginecologista se notar corrimento diferente, cheiro que não passa, dor ou coceira.",
+        "third": "A síndrome do choque tóxico (SCT) é muito mais associada ao absorvente interno, mas já houve casos relatados com coletor menstrual. Uma revisão de 43 estudos publicada em 2019 na The Lancet Public Health encontrou cinco casos depois do uso do coletor. É raro, e o risco não pode ser comparado diretamente com o do absorvente interno, mas vale conhecer os sinais.",
+        "fourth": "Segundo o NHS, os sintomas do choque tóxico incluem:"
+      },
+      "items": {
+        "fever": "Febre alta que aparece de repente.",
+        "flu-like": "Sintomas parecidos com gripe, como dor no corpo, calafrios ou dor de cabeça.",
+        "stomach": "Enjoo, vômito ou diarreia.",
+        "rash": "Manchas vermelhas na pele parecidas com queimadura de sol.",
+        "dizziness": "Tontura ou desmaio.",
+        "confusion": "Confusão mental ou falta de ar."
+      },
+      "note": "Se você estiver com o coletor e tiver esses sintomas, tire-o e ligue para o SAMU (192). Avise o médico que você estava usando coletor menstrual."
+    },
+    "cup-or-tampon": {
+      "title": "Por que o coletor pode ficar mais tempo que o absorvente interno?",
+      "paragraphs": {
+        "first": [
+          "O coletor junta o sangue em vez de absorver, e esse é o principal motivo para ele poder ficar mais tempo. O absorvente interno absorve o sangue e a umidade ao redor, e a FDA limita o uso a 8 horas. Os detalhes estão no nosso guia sobre ",
+          {
+            "postId": "tampons",
+            "label": "quanto tempo pode ficar com absorvente interno"
+          },
+          "."
+        ],
+        "second": "Em proteção, o coletor se sai bem. A revisão da The Lancet Public Health mostrou que os vazamentos com coletor foram parecidos ou menores do que com absorventes externos e internos, e em 13 estudos cerca de 73% das pessoas queriam continuar usando depois de experimentar.",
+        "third": "O ponto fraco é a adaptação. Segundo a mesma revisão, a maioria precisa de alguns ciclos para se sentir à vontade colocando e tirando. A Cleveland Clinic conta que cerca de 10% de quem começa nota vazamentos no início, o que costuma melhorar com prática ou com outro tamanho."
+      },
+      "items": {
+        "wear-time": "Até 12 horas de uso, contra 8 do absorvente interno.",
+        "cost": "Reutilizável por anos, então sai mais barato com o tempo.",
+        "waste": "Muito menos lixo do que os produtos descartáveis.",
+        "practice": "Colocar e tirar exige prática.",
+        "cleaning": "Esvaziar em banheiro público é menos prático."
+      }
+    },
+    "cleaning": {
+      "title": "Como limpar o coletor menstrual?",
+      "paragraphs": {
+        "first": "Lave as mãos, enxágue o coletor e lave com água e sabonete neutro sem perfume toda vez que esvaziar. Muitas marcas sugerem começar com água fria, porque a água quente pode fazer o sangue manchar o silicone.",
+        "second": "Não precisa ferver toda vez. A FDA recomenda esterilizar no fim da menstruação, lavando e colocando em água fervente, normalmente por 1 a 2 minutos. A Cleveland Clinic fala em alguns minutos. Confira as instruções da sua marca, deixe secar bem e guarde em lugar fresco e seco, de preferência num saquinho de tecido em vez de uma caixa fechada.",
+        "third": "Se você estiver na rua sem pia, esvazie no vaso, limpe com papel higiênico ou enxágue com uma garrafinha de água e lave direito assim que puder. Ficar um pouco amarelado com o tempo é normal. Troque o coletor se ele ficar grudento, rachar, rasgar ou continuar com mau cheiro mesmo depois de fervido."
+      }
+    },
+    "who-should-check": {
+      "title": "Quem deve conversar com um médico antes de usar o coletor?",
+      "paragraphs": {
+        "first": "O coletor menstrual serve para a maioria das pessoas que menstruam, mas em algumas situações vale conversar antes com a sua ginecologista. A FDA e a Cleveland Clinic citam estas:"
+      },
+      "items": {
+        "iud": "Você usa DIU: o coletor pode mexer nos fios ou na posição, então pergunte antes à sua ginecologista.",
+        "after-birth": "Você teve bebê há pouco tempo ou está com infecção vaginal: o coletor é feito só para o sangue da menstruação.",
+        "latex": "Você tem alergia a látex: escolha um coletor de silicone medicinal.",
+        "prolapse": "Você tem prolapso uterino: o coletor pode não parar no lugar.",
+        "pain": "Colocar ou usar o coletor dói: pare e peça orientação a um profissional de saúde."
+      },
+      "note": "Pare de usar o coletor e procure um médico se notar coceira, manchas, dor ou inchaço."
+    },
+    "change-reminder": {
+      "title": "Como lembrar de esvaziar o coletor?",
+      "paragraphs": {
+        "first": "O jeito mais fácil é anotar a hora em que você coloca o coletor e programar um lembrete para a próxima troca, em até 12 horas ou antes nos dias de fluxo intenso. O coletor é tão confortável que é fácil esquecer, ainda mais num dia corrido.",
+        "second": "Mochi é um app de acompanhamento menstrual gratuito e privado para iPhone, com lembrete de troca embutido. Você ativa quando coloca o coletor e ele avisa quando é hora de esvaziar, com uma contagem regressiva discreta. Funciona offline, não pede conta e guarda os dados do seu ciclo no seu iPhone.",
+        "third": [
+          "Um lembrete ajuda a manter o ritmo, mas nunca espere o aviso se você não estiver se sentindo bem. Se em alguns dias você prefere absorvente externo, nosso guia sobre ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar o absorvente"
+          },
+          " também pode ajudar."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "more-than-12-hours": {
+      "question": "O que acontece se deixar o coletor mais de 12 horas?",
+      "answer": "O mais comum é vazar, ficar com cheiro forte ou irritar. Tire, esvazie e lave com água e sabonete neutro. Procure a ginecologista se notar corrimento diferente, dor ou coceira nos dias seguintes."
+    },
+    "downsides": {
+      "question": "Qual a desvantagem do coletor menstrual?",
+      "answer": "Achar o tamanho certo pode levar algumas tentativas, colocar e tirar exige prática e esvaziar em banheiro público é menos prático. A FDA também lembra que o coletor pode interferir no DIU."
+    },
+    "when-to-change": {
+      "question": "Como saber a hora de trocar o coletor menstrual?",
+      "answer": "Esvazie pelo menos a cada 12 horas, e antes se vazar ou você sentir peso. Nos dias intensos pode ser a cada 4 a 6 horas. Olhe até qual marcação o sangue chegou em cada troca para entender o seu ritmo."
+    },
+    "pee": {
+      "question": "Pode fazer xixi sem tirar o coletor menstrual?",
+      "answer": "Pode. O coletor fica na vagina e o xixi sai por outra abertura, a uretra. Não precisa tirar para ir ao banheiro. Se você fizer muita força, confira depois se ele continua no lugar."
+    },
+    "sleep": {
+      "question": "É seguro dormir com coletor menstrual?",
+      "answer": "Sim, desde que ele não passe de 12 horas no total. Esvazie logo antes de dormir e assim que acordar. Nas noites de fluxo muito intenso, um absorvente externo de reforço evita manchas no lençol."
+    },
+    "gynecologists": {
+      "question": "O que os ginecologistas falam sobre o coletor menstrual?",
+      "answer": "As fontes médicas costumam considerar o coletor uma opção segura. Uma revisão de 43 estudos publicada em 2019 na The Lancet Public Health encontrou vazamentos parecidos ou menores do que com absorventes e poucos problemas de segurança. A recomendação é ter cuidado se você usa DIU ou tem prolapso."
+    },
+    "versus-pads": {
+      "question": "É melhor usar coletor menstrual ou absorvente?",
+      "answer": "Depende do que você prefere. O coletor dura até 12 horas, é reutilizável e gera menos lixo, mas exige prática. O absorvente externo é mais simples de usar. O absorvente interno tem limite de 8 horas, segundo a FDA."
+    },
+    "hard-to-remove": {
+      "question": "Por que tenho dificuldade para remover o coletor menstrual?",
+      "answer": "Na maioria das vezes é o vácuo ou a tensão dos músculos. Relaxe, agache, faça uma leve força para baixo e aperte a base do coletor para soltar o vácuo antes de puxar. Se mesmo assim não sair, procure atendimento."
+    }
+  }
+}

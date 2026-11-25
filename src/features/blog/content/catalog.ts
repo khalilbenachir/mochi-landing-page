@@ -15,7 +15,8 @@ export type BlogPostId =
   | "bloodLoss"
   | "appleWatch"
   | "latePeriod"
-  | "tampons";
+  | "tampons"
+  | "cups";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -41,6 +42,24 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "cups",
+    category: "period-care",
+    slug: "how-long-can-you-leave-a-menstrual-cup-in",
+    image: "/blog-art/cup-care-mochi.webp",
+    tone: "bg-blog-lavender",
+    publishedAt: "2026-11-25",
+    sections: [
+      { id: "how-long", sources: ["menstrualCups", "cupGuide"] },
+      { id: "overnight", sources: ["menstrualCups", "cupGuide"] },
+      { id: "is-it-full", sources: ["cupGuide", "heavyPeriods"] },
+      { id: "left-in-too-long", sources: ["cupReview", "toxicShock"] },
+      { id: "cup-or-tampon", sources: ["cupReview", "tamponSafety", "cupGuide"] },
+      { id: "cleaning", sources: ["menstrualCups", "cupGuide"] },
+      { id: "who-should-check", sources: ["menstrualCups", "cupGuide"] },
+      { id: "change-reminder", sources: ["mochiFeatures", "toxicShock"] },
+    ],
+  },
   {
     id: "tampons",
     category: "period-care",

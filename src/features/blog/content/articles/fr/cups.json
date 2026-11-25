@@ -1,0 +1,180 @@
+{
+  "title": "Combien de temps peut-on garder une cup menstruelle ?",
+  "description": "Combien de temps garder une cup menstruelle ? Jusqu'à 12 heures. Quand la vider, peut-on dormir avec, comment savoir si elle est pleine et la nettoyer.",
+  "imageAlt": "Mochi, une mascotte rose, à côté d'une cup menstruelle et d'un petit réveil",
+  "intro": "Vous pouvez garder une cup menstruelle jusqu'à 12 heures, selon la FDA et la Cleveland Clinic. La plupart des personnes la vident toutes les 8 à 12 heures, et plus souvent les jours de flux abondant. Ces 12 heures sont un maximum, pas un objectif : le bon rythme dépend de votre flux, de la taille de votre cup et de sa notice.",
+  "sections": {
+    "how-long": {
+      "title": "Combien de temps peut-on garder une cup menstruelle ?",
+      "paragraphs": {
+        "first": "Une cup menstruelle peut rester en place jusqu'à 12 heures avant d'être retirée, vidée et rincée. La FDA indique qu'on la vide en général toutes les 8 à 12 heures, et la Cleveland Clinic donne le même maximum de 12 heures. Certaines marques fixent une durée plus courte : la notice de votre cup passe en premier.",
+        "second": "C'est votre flux qui décide. Les premiers jours, souvent les plus abondants, il faut parfois la vider toutes les 4 à 6 heures pour éviter qu'elle déborde. Les jours plus légers, matin et soir peuvent suffire. Si vous débutez, videz-la au bout de 3 ou 4 heures pendant un jour ou deux : vous verrez vite ce qu'elle recueille et pourrez vous organiser.",
+        "third": "La limite de 12 heures s'applique même si la cup n'est pas pleine. Le sang qui stagne trop longtemps finit par sentir, et la cup doit être rincée régulièrement, quelle que soit la quantité recueillie."
+      },
+      "table": {
+        "caption": "Quand vider sa cup menstruelle selon la situation",
+        "columns": [
+          "Situation",
+          "Quand la vider",
+          "Conseil"
+        ],
+        "rows": [
+          [
+            "Première utilisation",
+            "Au bout de 3 à 4 heures",
+            "Regardez la quantité recueillie pour apprendre votre flux."
+          ],
+          [
+            "Flux abondant",
+            "Toutes les 4 à 8 heures, ou plus tôt en cas de fuite",
+            "Videz-la à chaque passage aux toilettes possible."
+          ],
+          [
+            "Flux léger",
+            "Dans les 12 heures",
+            "Ne dépassez pas 12 heures, même si elle est presque vide."
+          ],
+          [
+            "La nuit",
+            "Juste avant de dormir et dès le réveil",
+            "Gardez la nuit entière sous les 12 heures."
+          ]
+        ]
+      },
+      "note": "Si la notice de votre cup indique une durée inférieure à 12 heures, suivez la notice."
+    },
+    "overnight": {
+      "title": "Peut-on dormir avec une cup menstruelle ?",
+      "paragraphs": {
+        "first": "Oui, vous pouvez dormir avec votre cup, tant qu'elle ne reste pas plus de 12 heures en tout. Videz-la et rincez-la juste avant de vous coucher, puis videz-la de nouveau dès votre réveil.",
+        "second": "C'est l'une des raisons pour lesquelles beaucoup de personnes quittent le tampon. La FDA déconseille de porter un tampon plus de 8 heures, ce qui complique les longues nuits. La cup laisse quelques heures de plus : une nuit normale passe en général sans réveil programmé.",
+        "third": "Certains sites conseillent de ne pas porter de cup la nuit, mais rien ne l'interdit si vous respectez les 12 heures. Si vous dormez plus longtemps que d'habitude ou si votre flux est très abondant la nuit, une serviette ou une culotte menstruelle en complément protège vos draps. Une fuite nocturne signifie souvent que la cup était pleine ou mal dépliée, pas qu'il y a un problème."
+      }
+    },
+    "is-it-full": {
+      "title": "Comment savoir si sa cup menstruelle est pleine ?",
+      "paragraphs": {
+        "first": "Le signe le plus clair, c'est la fuite. Selon la Cleveland Clinic, une fuite veut généralement dire que la cup est restée trop longtemps et qu'elle est pleine, ou qu'elle a été mal mise. Comme on ne voit pas l'intérieur, la plupart des personnes apprennent leur rythme pendant leurs premiers cycles.",
+        "second": "Voici les signes qu'il est temps de la vider :"
+      },
+      "items": {
+        "leaking": "Du sang sur votre culotte ou votre protège-slip après quelques heures.",
+        "heaviness": "Une sensation de lourdeur, ou l'impression que la cup est descendue.",
+        "measure-lines": "Au dernier changement, le sang atteignait la graduation du haut ou les petits trous.",
+        "time": "Vous approchez des 12 heures depuis la dernière vidange."
+      },
+      "after": "Beaucoup de cups ont des graduations sur le côté, ce qui transforme chaque changement en petit bilan de votre flux. Le NHS, le service de santé britannique, conseille de consulter si vous devez changer de protection toutes les 1 à 2 heures, ce qui peut indiquer des règles abondantes."
+    },
+    "left-in-too-long": {
+      "title": "Que se passe-t-il si on garde sa cup trop longtemps ?",
+      "paragraphs": {
+        "first": "Si vous gardez votre cup plus de 12 heures, le plus souvent vous aurez une fuite, une odeur forte ou une irritation. Retirez-la dès que vous y pensez, videz-la, lavez-la à l'eau avec un savon doux sans parfum, puis remettez-la ou passez à une serviette pour souffler un peu.",
+        "second": "Si vous l'avez oubliée 24 heures, le conseil est le même. La plupart du temps, il ne se passe rien de plus. Soyez attentive à votre état dans les jours qui suivent et consultez en cas de pertes inhabituelles, d'odeur qui persiste, de douleur ou de démangeaisons.",
+        "third": "Le syndrome du choc toxique (SCT) est bien plus souvent associé aux tampons, mais des cas ont été rapportés avec la cup. Une revue de 43 études publiée en 2019 dans The Lancet Public Health a recensé cinq cas après usage d'une cup. C'est rare, et on ne peut pas comparer directement le risque avec celui du tampon, mais il faut connaître les signes.",
+        "fourth": "Selon le NHS, les symptômes du choc toxique sont notamment :"
+      },
+      "items": {
+        "fever": "Une forte fièvre qui apparaît brusquement.",
+        "flu-like": "Des symptômes grippaux : courbatures, frissons, maux de tête.",
+        "stomach": "Des nausées, des vomissements ou une diarrhée.",
+        "rash": "Une éruption cutanée qui ressemble à un coup de soleil.",
+        "dizziness": "Des vertiges ou un malaise.",
+        "confusion": "Une confusion ou des difficultés à respirer."
+      },
+      "note": "Si vous portez une cup et ressentez ces symptômes, retirez-la et appelez le 15 ou le 112. Précisez au médecin que vous utilisiez une cup menstruelle."
+    },
+    "cup-or-tampon": {
+      "title": "Pourquoi peut-on garder une cup plus longtemps qu'un tampon ?",
+      "paragraphs": {
+        "first": [
+          "La cup recueille le sang au lieu de l'absorber, et c'est la principale raison pour laquelle elle peut rester plus longtemps. Le tampon absorbe le sang et l'humidité autour de lui, et la FDA limite son port à 8 heures. Tous les détails sont dans notre guide ",
+          {
+            "postId": "tampons",
+            "label": "combien de temps peut-on garder un tampon"
+          },
+          "."
+        ],
+        "second": "Côté protection, la cup tient la comparaison. La revue du Lancet Public Health a montré que les fuites étaient comparables ou moins fréquentes qu'avec les serviettes et les tampons, et dans 13 études, environ 73 % des personnes voulaient continuer après l'avoir essayée.",
+        "third": "La contrepartie, c'est l'apprentissage. Selon la même revue, il faut souvent quelques cycles pour être à l'aise avec la pose et le retrait. La Cleveland Clinic indique qu'environ 10 % des nouvelles utilisatrices ont des fuites au début, ce qui s'améliore en général avec la pratique ou une autre taille."
+      },
+      "items": {
+        "wear-time": "Jusqu'à 12 heures de port, contre 8 pour un tampon.",
+        "cost": "Réutilisable pendant des années, donc moins chère à la longue.",
+        "waste": "Beaucoup moins de déchets que les protections jetables.",
+        "practice": "La pose et le retrait demandent un peu d'entraînement.",
+        "cleaning": "La vider dans des toilettes publiques est moins pratique."
+      }
+    },
+    "cleaning": {
+      "title": "Comment nettoyer sa cup menstruelle ?",
+      "paragraphs": {
+        "first": "Lavez-vous les mains, puis rincez la cup et lavez-la à l'eau avec un savon doux sans parfum à chaque vidange. Beaucoup de marques conseillent de commencer à l'eau froide, car l'eau chaude peut faire marquer le sang sur le silicone.",
+        "second": "Inutile de la faire bouillir à chaque fois. La FDA recommande de la stériliser à la fin des règles en la lavant puis en la plongeant dans l'eau bouillante, en général 1 à 2 minutes. La Cleveland Clinic parle de quelques minutes. Vérifiez la notice de votre marque, laissez-la bien sécher et rangez-la au sec, idéalement dans une pochette en tissu plutôt qu'une boîte fermée.",
+        "third": "Quand vous êtes dehors sans lavabo, videz la cup dans les toilettes, essuyez-la avec du papier ou rincez-la avec une petite bouteille d'eau, puis lavez-la correctement dès que possible. Un léger jaunissement avec le temps est normal. Remplacez-la si elle devient collante, se fissure, se déchire ou garde une odeur même après ébullition. Sa durée de vie dépend de la marque : la notice l'indique."
+      }
+    },
+    "who-should-check": {
+      "title": "Qui devrait demander l'avis d'un médecin avant d'utiliser une cup ?",
+      "paragraphs": {
+        "first": "La cup menstruelle convient à la plupart des personnes réglées, mais certaines situations méritent d'en parler d'abord à un médecin ou à une sage-femme. La FDA et la Cleveland Clinic citent celles-ci :"
+      },
+      "items": {
+        "iud": "Vous avez un stérilet : la cup pourrait déplacer ses fils ou sa position, demandez d'abord à votre gynécologue.",
+        "after-birth": "Vous avez accouché récemment ou avez une infection vaginale : la cup est prévue uniquement pour le sang des règles.",
+        "latex": "Vous êtes allergique au latex : choisissez une cup en silicone médical.",
+        "prolapse": "Vous avez une descente d'organes : la cup risque de mal tenir en place.",
+        "pain": "La pose ou le port de la cup est douloureux : arrêtez et demandez conseil à un professionnel de santé."
+      },
+      "note": "Arrêtez la cup et consultez en cas de démangeaisons, d'éruption, de douleur ou de gonflement."
+    },
+    "change-reminder": {
+      "title": "Comment penser à vider sa cup ?",
+      "paragraphs": {
+        "first": "Le plus simple est de noter l'heure à laquelle vous mettez votre cup et de programmer un rappel pour le prochain changement, à 12 heures ou plus tôt les jours abondants. La cup est si confortable qu'on l'oublie facilement, surtout pendant une journée chargée.",
+        "second": "Mochi est un suivi de règles gratuit et privé pour iPhone, avec un rappel de changement intégré. Vous le lancez quand vous mettez votre cup, et il vous prévient quand il est temps de la vider, avec un compte à rebours discret. Il fonctionne hors ligne, sans compte, et garde vos données de cycle sur votre iPhone.",
+        "third": [
+          "Un rappel aide à garder le rythme, mais n'attendez jamais l'alerte si vous ne vous sentez pas bien. Si vous préférez les serviettes certains jours, notre guide ",
+          {
+            "postId": "pads",
+            "label": "à quelle fréquence changer sa serviette"
+          },
+          " vous aidera aussi."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "when-to-change": {
+      "question": "Quand faut-il changer sa cup menstruelle ?",
+      "answer": "Videz-la au moins toutes les 12 heures, et plus souvent les jours de flux abondant, parfois toutes les 4 à 6 heures. Si vous débutez, videz-la après 3 ou 4 heures pour voir ce qu'elle recueille, puis ajustez."
+    },
+    "sleep": {
+      "question": "Est-ce que je peux dormir avec ma cup ?",
+      "answer": "Oui, à condition de ne pas dépasser 12 heures au total. Videz-la juste avant de vous coucher et dès votre réveil. Les nuits de flux très abondant, une serviette ou une culotte menstruelle en complément évite les fuites sur les draps."
+    },
+    "gynecologists": {
+      "question": "Quels sont les avis des gynécologues sur la cup menstruelle ?",
+      "answer": "Les sources médicales la considèrent en général comme une option sûre. Une revue de 43 études publiée en 2019 dans The Lancet Public Health a trouvé des fuites comparables ou moindres qu'avec les serviettes et les tampons, et peu de problèmes de sécurité. Les médecins appellent à la prudence en cas de stérilet ou de descente d'organes."
+    },
+    "lifespan": {
+      "question": "Quelle est la durée de vie d'une cup menstruelle ?",
+      "answer": "Une cup en silicone se garde souvent plusieurs années, mais la durée exacte dépend de la marque et figure sur la notice. Remplacez-la plus tôt si elle devient collante, se fissure, se déchire ou garde une mauvaise odeur après ébullition."
+    },
+    "toxic-shock": {
+      "question": "Est-ce que la coupe menstruelle peut provoquer un choc toxique ?",
+      "answer": "C'est rare, mais possible. Une revue du Lancet Public Health a recensé cinq cas après usage d'une cup. Respectez les 12 heures, lavez-vous les mains avant de la manipuler, et retirez-la en urgence en cas de fièvre soudaine, d'éruption, de vomissements ou de vertiges."
+    },
+    "cleaning": {
+      "question": "Comment bien nettoyer sa cup ?",
+      "answer": "À chaque vidange, rincez-la et lavez-la à l'eau avec un savon doux sans parfum. À la fin des règles, faites-la bouillir 1 à 2 minutes selon la FDA, ou selon la notice de votre marque, puis laissez-la sécher avant de la ranger."
+    },
+    "stem": {
+      "question": "Est-ce que la tige de la cup doit sortir ?",
+      "answer": "Non. La cup doit être entièrement à l'intérieur du vagin, la tige y compris. Si la tige dépasse ou vous gêne, vous pouvez en général la raccourcir selon la notice. Elle sert seulement à attraper la cup au moment du retrait."
+    },
+    "suction": {
+      "question": "Est-ce que l'effet ventouse d'une coupe menstruelle est dangereux ?",
+      "answer": "L'effet ventouse est ce qui maintient la cup en place. Il devient gênant seulement si vous tirez sans le rompre. Pincez la base de la cup ou glissez un doigt sur le côté pour laisser entrer l'air, puis retirez-la doucement."
+    }
+  }
+}

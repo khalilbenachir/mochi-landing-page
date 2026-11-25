@@ -1,0 +1,180 @@
+{
+  "title": "¿Cuánto tiempo se puede llevar la copa menstrual?",
+  "description": "¿Cuánto tiempo se puede llevar la copa menstrual? Hasta 12 horas. Cuándo vaciarla, si puedes dormir con ella, cómo saber si está llena y cómo limpiarla.",
+  "imageAlt": "Mochi, una mascota rosa, junto a una copa menstrual y un pequeño despertador",
+  "intro": "Puedes llevar la copa menstrual hasta 12 horas, según la FDA y la Cleveland Clinic. La mayoría la vacía cada 8 a 12 horas, y con más frecuencia los días de mucho flujo. Esas 12 horas son un máximo, no un objetivo: el ritmo adecuado depende de tu flujo, del tamaño de tu copa y de sus instrucciones.",
+  "sections": {
+    "how-long": {
+      "title": "¿Cuánto tiempo se puede llevar la copa menstrual?",
+      "paragraphs": {
+        "first": "La copa menstrual puede quedarse puesta hasta 12 horas antes de sacarla, vaciarla y enjuagarla. La FDA explica que normalmente se vacía cada 8 a 12 horas, y la Cleveland Clinic da el mismo máximo de 12 horas. Algunas marcas indican un tiempo más corto, así que manda lo que diga la caja de tu copa.",
+        "second": "Tu flujo decide cuánto te acercas a esas 12 horas. Los primeros días, que suelen ser los más abundantes, quizá tengas que vaciarla cada 4 a 6 horas para que no se desborde. Los días más ligeros, por la mañana y por la noche puede bastar. Si es tu primera vez, vacíala a las 3 o 4 horas durante un par de días: enseguida verás cuánto recoge y podrás organizarte.",
+        "third": "El límite de 12 horas vale aunque la copa no esté llena. La sangre que se queda demasiado tiempo empieza a oler, y la copa hay que enjuagarla con regularidad, recoja lo que recoja."
+      },
+      "table": {
+        "caption": "Cuándo vaciar la copa menstrual según la situación",
+        "columns": [
+          "Situación",
+          "Cuándo vaciarla",
+          "Consejo"
+        ],
+        "rows": [
+          [
+            "Primera vez",
+            "A las 3 o 4 horas",
+            "Mira cuánto ha recogido para conocer tu flujo."
+          ],
+          [
+            "Días de mucho flujo",
+            "Cada 4 a 8 horas, o antes si se escapa",
+            "Vacíala cada vez que vayas al baño, si puedes."
+          ],
+          [
+            "Días de poco flujo",
+            "Antes de 12 horas",
+            "No pases de 12 horas aunque esté casi vacía."
+          ],
+          [
+            "Por la noche",
+            "Justo antes de dormir y nada más levantarte",
+            "Que la noche entera no supere las 12 horas."
+          ]
+        ]
+      },
+      "note": "Si las instrucciones de tu copa indican menos de 12 horas, sigue las instrucciones."
+    },
+    "overnight": {
+      "title": "¿Se puede dormir con la copa menstrual puesta?",
+      "paragraphs": {
+        "first": "Sí, puedes dormir con la copa menstrual siempre que no la lleves más de 12 horas en total. Vacíala y enjuágala justo antes de acostarte y vuelve a vaciarla en cuanto te levantes.",
+        "second": "Es uno de los motivos principales por los que mucha gente deja el tampón. La FDA desaconseja llevar un tampón más de 8 horas, lo que complica las noches largas. La copa te da unas horas más, así que una noche normal suele caber sin poner alarma.",
+        "third": "Si vas a dormir más de lo habitual o tu flujo nocturno es muy abundante, una compresa o unas bragas menstruales de apoyo protegen las sábanas. Si se escapa algo por la noche, lo normal es que la copa estuviera llena o no se hubiera abierto del todo, no que pase nada raro."
+      }
+    },
+    "is-it-full": {
+      "title": "¿Cómo saber si la copa menstrual está llena?",
+      "paragraphs": {
+        "first": "La señal más clara es que se escape. Según la Cleveland Clinic, las fugas suelen significar que la copa lleva demasiado tiempo y está llena, o que no está bien colocada. Como no ves el interior, casi todo el mundo aprende su ritmo durante los primeros ciclos.",
+        "second": "Estas señales te indican que toca vaciarla:"
+      },
+      "items": {
+        "leaking": "Manchas en la braga o en el salvaslip tras unas horas de uso.",
+        "heaviness": "Sensación de peso o de que la copa ha bajado más de lo normal.",
+        "measure-lines": "En el último cambio, la sangre llegaba a la marca de arriba o a los agujeritos.",
+        "time": "Se acercan las 12 horas desde la última vez que la vaciaste."
+      },
+      "after": "Muchas copas tienen marcas de medida en el lateral, así que cada cambio te sirve para ver cómo va tu flujo. El NHS, el servicio de salud británico, recomienda consultar si tienes que cambiar de producto cada 1 o 2 horas, porque puede indicar reglas abundantes."
+    },
+    "left-in-too-long": {
+      "title": "¿Qué pasa si llevas la copa menstrual más de 12 horas?",
+      "paragraphs": {
+        "first": "Si llevas la copa más de 12 horas, lo más habitual son fugas, un olor fuerte e irritación. Sácala en cuanto te acuerdes, vacíala, lávala con agua y un jabón suave sin perfume, y vuelve a ponértela o descansa un rato con una compresa.",
+        "second": "Si te la has dejado 24 horas por despiste, el consejo es el mismo. Casi siempre no pasa nada más. Fíjate en cómo te encuentras los días siguientes y ve al médico si notas un flujo raro, un olor que no se va, dolor o picor.",
+        "third": "El síndrome de shock tóxico (SST) se asocia mucho más a los tampones, pero también se han descrito casos con copa menstrual. Una revisión de 43 estudios publicada en 2019 en The Lancet Public Health encontró cinco casos tras usar copa. Es raro, y el riesgo no se puede comparar directamente con el del tampón, pero conviene conocer las señales.",
+        "fourth": "Según el NHS, los síntomas del shock tóxico incluyen:"
+      },
+      "items": {
+        "fever": "Fiebre alta que aparece de repente.",
+        "flu-like": "Síntomas parecidos a la gripe, como dolor muscular, escalofríos o dolor de cabeza.",
+        "stomach": "Náuseas, vómitos o diarrea.",
+        "rash": "Una erupción en la piel parecida a una quemadura de sol.",
+        "dizziness": "Mareo o desmayo.",
+        "confusion": "Confusión o dificultad para respirar."
+      },
+      "note": "Si llevas la copa y tienes estos síntomas, sácala y llama al 112. Dile al médico que estabas usando una copa menstrual."
+    },
+    "cup-or-tampon": {
+      "title": "¿Por qué la copa se puede llevar más tiempo que un tampón?",
+      "paragraphs": {
+        "first": [
+          "La copa recoge la sangre en lugar de absorberla, y esa es la razón principal por la que puede quedarse más tiempo. El tampón absorbe la sangre y la humedad de alrededor, y la FDA limita su uso a 8 horas. Tienes todos los detalles en nuestra guía sobre ",
+          {
+            "postId": "tampons",
+            "label": "cuánto tiempo se puede llevar un tampón"
+          },
+          "."
+        ],
+        "second": "En protección, la copa sale bien parada. La revisión de The Lancet Public Health vio que las fugas con copa eran parecidas o menores que con compresas y tampones, y en 13 estudios alrededor del 73 % quería seguir usándola después de probarla.",
+        "third": "La pega es el aprendizaje. Según la misma revisión, la mayoría necesita unos cuantos ciclos para sentirse cómoda poniéndola y quitándola. La Cleveland Clinic cuenta que cerca del 10 % de quienes empiezan nota fugas al principio, algo que suele mejorar con práctica o con otra talla."
+      },
+      "items": {
+        "wear-time": "Hasta 12 horas de uso, frente a 8 con un tampón.",
+        "cost": "Reutilizable durante años, así que sale más barata a la larga.",
+        "waste": "Mucha menos basura que los productos desechables.",
+        "practice": "Ponerla y quitarla requiere práctica.",
+        "cleaning": "Vaciarla en un baño público es menos cómodo."
+      }
+    },
+    "cleaning": {
+      "title": "¿Cómo se limpia la copa menstrual?",
+      "paragraphs": {
+        "first": "Lávate las manos, enjuaga la copa y lávala con agua y un jabón suave sin perfume cada vez que la vacíes. Muchas marcas aconsejan empezar con agua fría, porque el agua caliente puede hacer que la sangre manche la silicona.",
+        "second": "No hace falta hervirla cada vez. La FDA recomienda esterilizarla al final de la regla lavándola y metiéndola en agua hirviendo, normalmente de 1 a 2 minutos. La Cleveland Clinic habla de unos minutos. Revisa las instrucciones de tu marca, deja que se seque bien y guárdala en un sitio fresco y seco, mejor en una bolsita transpirable que en una caja cerrada.",
+        "third": "Si estás fuera y no tienes lavabo, vacíala en el inodoro, límpiala con papel o enjuágala con una botella de agua, y lávala bien en cuanto puedas. Que amarillee un poco con el tiempo es normal. Cámbiala si se vuelve pegajosa, se agrieta, se rompe o sigue oliendo después de hervirla."
+      }
+    },
+    "who-should-check": {
+      "title": "¿Quién debería consultar antes de usar una copa menstrual?",
+      "paragraphs": {
+        "first": "La copa menstrual sirve a la mayoría de personas que tienen la regla, pero en algunas situaciones conviene hablarlo antes con tu ginecólogo o tu médico de cabecera. La FDA y la Cleveland Clinic señalan estas:"
+      },
+      "items": {
+        "iud": "Llevas DIU: la copa podría mover los hilos o su posición, consulta antes con tu ginecólogo.",
+        "after-birth": "Has dado a luz hace poco o tienes una infección vaginal: la copa está pensada solo para la sangre de la regla.",
+        "latex": "Tienes alergia al látex: elige una copa de silicona médica.",
+        "prolapse": "Tienes un prolapso uterino: puede que la copa no se sujete bien.",
+        "pain": "Ponerla o llevarla te duele: déjala y pide consejo a un profesional sanitario."
+      },
+      "note": "Deja de usar la copa y ve al médico si notas picor, erupción, dolor o hinchazón."
+    },
+    "change-reminder": {
+      "title": "¿Cómo acordarte de vaciar la copa?",
+      "paragraphs": {
+        "first": "Lo más fácil es apuntar la hora a la que te pones la copa y programar un aviso para el siguiente cambio, a las 12 horas o antes los días de mucho flujo. La copa es tan cómoda que es fácil olvidarla, sobre todo en un día ajetreado.",
+        "second": "Mochi es una app de seguimiento de la regla gratuita y privada para iPhone, con un recordatorio de cambio integrado. Lo activas al ponerte la copa y te avisa cuando toca vaciarla, con una cuenta atrás discreta. Funciona sin conexión, no necesita cuenta y guarda los datos de tu ciclo en tu iPhone.",
+        "third": [
+          "Un recordatorio ayuda a coger el ritmo, pero nunca esperes al aviso si te encuentras mal. Si algunos días prefieres compresas, nuestra guía sobre ",
+          {
+            "postId": "pads",
+            "label": "cada cuánto cambiar la compresa"
+          },
+          " también te puede servir."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "more-than-12-hours": {
+      "question": "¿Qué pasa si llevas la copa menstrual más de 12 horas?",
+      "answer": "Lo más probable es que haya fugas, mal olor o irritación. Sácala, vacíala y lávala con agua y jabón suave. Ve al médico si notas un flujo raro, dolor o picor en los días siguientes."
+    },
+    "twenty-four-hours": {
+      "question": "¿Qué pasa si me dejo la copa menstrual 24 horas?",
+      "answer": "Sácala en cuanto te des cuenta, lávala y fíjate en cómo te encuentras. Casi siempre no pasa nada, pero busca atención urgente si tienes fiebre repentina, erupción, vómitos o mareo, porque pueden ser señales de shock tóxico."
+    },
+    "sleep": {
+      "question": "¿Es bueno dormir con la copa menstrual puesta?",
+      "answer": "Sí, siempre que no pases de 12 horas en total. Vacíala justo antes de acostarte y nada más levantarte. Si tu flujo nocturno es muy abundante, una compresa de apoyo evita sustos con las sábanas."
+    },
+    "gynecologists": {
+      "question": "¿Qué opinan los ginecólogos de la copa menstrual?",
+      "answer": "Las fuentes médicas la consideran en general una opción segura. Una revisión de 43 estudios publicada en 2019 en The Lancet Public Health encontró fugas parecidas o menores que con compresas y tampones y pocos problemas de seguridad. Piden precaución si llevas DIU o tienes un prolapso."
+    },
+    "toxic-shock": {
+      "question": "¿Cómo saber si tengo shock tóxico por copa menstrual?",
+      "answer": "Las señales son fiebre alta repentina, síntomas de gripe, vómitos o diarrea, una erupción parecida a una quemadura de sol, mareo o confusión. Es raro, pero si los notas con la copa puesta, sácala y llama al 112."
+    },
+    "stuck": {
+      "question": "¿Qué hacer si no sale la copa menstrual?",
+      "answer": "Respira y relaja los músculos: con prisa cuesta más. Agáchate, empuja suavemente hacia abajo como si fueras al baño y pellizca la base de la copa para romper el vacío antes de tirar. Si aun así no sale, pide ayuda en tu centro de salud."
+    },
+    "pee": {
+      "question": "¿Se puede orinar con la copa menstrual?",
+      "answer": "Sí. La copa va en la vagina y la orina sale por otro orificio, la uretra. No hace falta quitarla para hacer pis. Si al ir al baño haces mucha fuerza, comprueba después que sigue en su sitio."
+    },
+    "swimming": {
+      "question": "¿Se puede ir a la piscina con una copa menstrual?",
+      "answer": "Sí. La copa queda dentro de la vagina y no absorbe agua, así que puedes nadar con ella. Vacíala antes de ir y procura no pasar de 12 horas desde la última vez que la vaciaste."
+    }
+  }
+}

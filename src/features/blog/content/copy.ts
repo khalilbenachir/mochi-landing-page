@@ -3,6 +3,7 @@ import { BLOG_POSTS, type BlogPost, type BlogPostId } from "./catalog";
 import enAppleWatch from "./articles/en/appleWatch.json";
 import enLatePeriod from "./articles/en/latePeriod.json";
 import enTampons from "./articles/en/tampons.json";
+import enCups from "./articles/en/cups.json";
 import enBloodLoss from "./articles/en/bloodLoss.json";
 import enCramps from "./articles/en/cramps.json";
 import enFloAlternatives from "./articles/en/floAlternatives.json";
@@ -17,6 +18,7 @@ import enTracking from "./articles/en/tracking.json";
 import frAppleWatch from "./articles/fr/appleWatch.json";
 import frLatePeriod from "./articles/fr/latePeriod.json";
 import frTampons from "./articles/fr/tampons.json";
+import frCups from "./articles/fr/cups.json";
 import frBloodLoss from "./articles/fr/bloodLoss.json";
 import frCramps from "./articles/fr/cramps.json";
 import frFloAlternatives from "./articles/fr/floAlternatives.json";
@@ -31,6 +33,7 @@ import frTracking from "./articles/fr/tracking.json";
 import deAppleWatch from "./articles/de/appleWatch.json";
 import deLatePeriod from "./articles/de/latePeriod.json";
 import deTampons from "./articles/de/tampons.json";
+import deCups from "./articles/de/cups.json";
 import deBloodLoss from "./articles/de/bloodLoss.json";
 import deCramps from "./articles/de/cramps.json";
 import deFloAlternatives from "./articles/de/floAlternatives.json";
@@ -45,6 +48,7 @@ import deTracking from "./articles/de/tracking.json";
 import esAppleWatch from "./articles/es/appleWatch.json";
 import esLatePeriod from "./articles/es/latePeriod.json";
 import esTampons from "./articles/es/tampons.json";
+import esCups from "./articles/es/cups.json";
 import esBloodLoss from "./articles/es/bloodLoss.json";
 import esCramps from "./articles/es/cramps.json";
 import esFloAlternatives from "./articles/es/floAlternatives.json";
@@ -59,6 +63,7 @@ import esTracking from "./articles/es/tracking.json";
 import ptBRAppleWatch from "./articles/pt-BR/appleWatch.json";
 import ptBRLatePeriod from "./articles/pt-BR/latePeriod.json";
 import ptBRTampons from "./articles/pt-BR/tampons.json";
+import ptBRCups from "./articles/pt-BR/cups.json";
 import ptBRBloodLoss from "./articles/pt-BR/bloodLoss.json";
 import ptBRCramps from "./articles/pt-BR/cramps.json";
 import ptBRFloAlternatives from "./articles/pt-BR/floAlternatives.json";
@@ -73,6 +78,7 @@ import ptBRTracking from "./articles/pt-BR/tracking.json";
 import ptPTAppleWatch from "./articles/pt-PT/appleWatch.json";
 import ptPTLatePeriod from "./articles/pt-PT/latePeriod.json";
 import ptPTTampons from "./articles/pt-PT/tampons.json";
+import ptPTCups from "./articles/pt-PT/cups.json";
 import ptPTBloodLoss from "./articles/pt-PT/bloodLoss.json";
 import ptPTCramps from "./articles/pt-PT/cramps.json";
 import ptPTFloAlternatives from "./articles/pt-PT/floAlternatives.json";
@@ -128,6 +134,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: enAppleWatch,
     latePeriod: enLatePeriod,
     tampons: enTampons,
+    cups: enCups,
     bloodLoss: enBloodLoss,
     floAlternatives: enFloAlternatives,
     cramps: enCramps,
@@ -144,6 +151,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: frAppleWatch,
     latePeriod: frLatePeriod,
     tampons: frTampons,
+    cups: frCups,
     bloodLoss: frBloodLoss,
     floAlternatives: frFloAlternatives,
     cramps: frCramps,
@@ -160,6 +168,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: deAppleWatch,
     latePeriod: deLatePeriod,
     tampons: deTampons,
+    cups: deCups,
     bloodLoss: deBloodLoss,
     floAlternatives: deFloAlternatives,
     cramps: deCramps,
@@ -176,6 +185,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: esAppleWatch,
     latePeriod: esLatePeriod,
     tampons: esTampons,
+    cups: esCups,
     bloodLoss: esBloodLoss,
     floAlternatives: esFloAlternatives,
     cramps: esCramps,
@@ -192,6 +202,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: ptBRAppleWatch,
     latePeriod: ptBRLatePeriod,
     tampons: ptBRTampons,
+    cups: ptBRCups,
     bloodLoss: ptBRBloodLoss,
     floAlternatives: ptBRFloAlternatives,
     cramps: ptBRCramps,
@@ -208,6 +219,7 @@ const ARTICLE_INPUTS: Record<BlogLocale, Record<BlogPostId, ArticleCopyInput>> =
     appleWatch: ptPTAppleWatch,
     latePeriod: ptPTLatePeriod,
     tampons: ptPTTampons,
+    cups: ptPTCups,
     bloodLoss: ptPTBloodLoss,
     floAlternatives: ptPTFloAlternatives,
     cramps: ptPTCramps,

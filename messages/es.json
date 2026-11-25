@@ -594,7 +594,10 @@
       "tamponSafety": "FDA: tampones",
       "tamponsCanada": "Salud Canadá: tampones menstruales",
       "toxicShock": "NHS: síndrome de shock tóxico",
-      "tamponTooLong": "Cleveland Clinic: dejarse un tampón demasiado tiempo"
+      "tamponTooLong": "Cleveland Clinic: dejarse un tampón demasiado tiempo",
+      "menstrualCups": "FDA: copas menstruales",
+      "cupGuide": "Cleveland Clinic: copas menstruales",
+      "cupReview": "The Lancet Public Health: revisión sobre la copa menstrual (2019)"
     },
     "editorial": {
       "title": "Nuestro criterio editorial",
