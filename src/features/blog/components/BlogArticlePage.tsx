@@ -143,7 +143,8 @@ function QuickAnswer({ intro }: { intro: string }) {
     <section id="quick-answer" aria-labelledby="quick-answer-title" className="flex scroll-mt-[24px] items-end gap-[14px] max-phone:gap-[10px]">
       <Image
         src={LANDING_ASSETS.faces.headerHappy}
-        alt={imageAlt("mochi")} aria-hidden="true"
+        alt={imageAlt("mochi")}
+        aria-hidden="true"
         width={256}
         height={238}
         className="mb-[-4px] h-auto w-[72px] shrink-0 -rotate-6 max-phone:w-[52px]"
@@ -219,7 +220,8 @@ function ArticleCta() {
         src="/blog-art/companion-mochi.webp"
         width={600}
         height={530}
-        alt={imageAlt("mochi")} aria-hidden="true"
+        alt={imageAlt("mochi")}
+        aria-hidden="true"
         sizes="(max-width: 760px) 130px, 170px"
         className="relative z-1 -mt-[64px] -ml-[6px] h-auto w-[170px] max-w-none -rotate-6 animate-float [filter:drop-shadow(0_8px_10px_var(--color-blog-cta-shadow))] max-poster:w-[140px] max-nav:absolute max-nav:left-1/2 max-nav:top-[-62px] max-nav:m-0 max-nav:w-[130px] max-nav:-translate-x-1/2"
       />
@@ -250,7 +252,8 @@ function CalculatorPromo() {
         src={CALCULATOR_ART.period.src}
         width={CALCULATOR_ART.period.width}
         height={CALCULATOR_ART.period.height}
-        alt={imageAlt("mochi")} aria-hidden="true"
+        alt={imageAlt("mochi")}
+        aria-hidden="true"
         sizes="120px"
         className="h-auto w-[120px] -rotate-3"
       />
@@ -276,7 +279,14 @@ function ArticleNotice() {
   const t = useTranslations("Blog");
   return (
     <aside className="mt-[14px] flex items-center gap-[12px] rounded-[18px] bg-journal-warning px-[16px] py-[10px] text-[14px] font-medium leading-[1.5]">
-      <Image src={TERMS_SUMMARY_ICONS.warning} alt={imageAlt("icon")} aria-hidden="true" width={256} height={270} className="h-auto w-[40px] shrink-0 -rotate-6" />
+      <Image
+        src={TERMS_SUMMARY_ICONS.warning}
+        alt={imageAlt("icon")}
+        aria-hidden="true"
+        width={256}
+        height={270}
+        className="h-auto w-[40px] shrink-0 -rotate-6"
+      />
       <p>{t("articleNotice")}</p>
     </aside>
   );

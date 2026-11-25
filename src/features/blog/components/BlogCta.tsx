@@ -51,7 +51,8 @@ function Artwork({
       src={src}
       width={width}
       height={height}
-      alt={imageAlt("mochi")} aria-hidden="true"
+      alt={imageAlt("mochi")}
+      aria-hidden="true"
       sizes="(max-width: 760px) 135px, 190px"
       className={cn("absolute -bottom-[12px] right-[22px] h-auto w-[190px] max-nav:right-[4px] max-nav:bottom-0 max-nav:w-[135px] max-phone:hidden", className)}
     />
