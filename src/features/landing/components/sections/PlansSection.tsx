@@ -12,6 +12,7 @@ const PLAN_ITEM = "flex items-start gap-10 text-u-11 font-extrabold leading-[1.2
 
 /** "Free to download. Mochi Plus is optional." with the two plan cards. */
 export function PlansSection() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Plans");
   const common = useTranslations("Common");
 
@@ -23,7 +24,7 @@ export function PlansSection() {
         </h2>
         <HeartOutline className="absolute left-222 bottom-[calc(var(--section-space)*0.45)] w-32 rotate-10 text-brand-coral max-poster:hidden" strokeWidth={2.6} />
         <div className="absolute left-96 bottom-[calc(var(--section-space)*0.2)] w-100 max-poster:hidden" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.freeMochi} alt="" width={420} height={352} sizes="12vw" />
+          <Image className="h-auto w-full" src={LANDING_ASSETS.freeMochi} alt={imageAlt("mochi")} aria-hidden="true" width={420} height={352} sizes="12vw" />
         </div>
 
         <div className={cn(PLAN, "w-223 bg-white [box-shadow:0_calc(3*var(--spacing))_calc(10*var(--spacing))_var(--color-plans-free-shadow)] max-poster:mt-[24px]")}>
@@ -32,7 +33,7 @@ export function PlansSection() {
         </div>
 
         <div className="absolute z-3 left-726 top-[calc(var(--section-space)-90*var(--spacing))] w-128 max-poster:[--spacing:calc(min(100vw-32px,420px)/262)] max-poster:relative max-poster:left-auto max-poster:top-auto max-poster:mt-[18px] max-poster:-mb-16 max-poster:w-96 max-poster:translate-x-84" aria-hidden="true">
-          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt="" width={480} height={442} sizes="(max-width: 1099px) 30vw, 10vw" />
+          <Image className="h-auto w-full" src={LANDING_ASSETS.plusMochi} alt={imageAlt("mochi")} aria-hidden="true" width={480} height={442} sizes="(max-width: 1099px) 30vw, 10vw" />
         </div>
         <div className={cn(PLAN, "ml-6 w-262 bg-plans-plus-bg max-poster:ml-0 text-white")}>
           <h3 className={PLAN_TITLE}>{t("plusName")} — <span className="inline-grid h-22 place-items-center rounded-u-7 bg-white px-10 text-u-12.5 text-plans-price-pill-text">{PLUS_PRICE ?? common("optional")}</span></h3>

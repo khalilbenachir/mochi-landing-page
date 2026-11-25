@@ -31,7 +31,13 @@
     "appStore": "App Store",
     "free": "Gratis",
     "optional": "Optional",
-    "backToTop": "Mochi: Periodentracker, nach oben"
+    "backToTop": "Mochi: Periodentracker, nach oben",
+    "imageAlt": {
+      "mochi": "Mochi, das rosa Maskottchen",
+      "appIcon": "App-Symbol von Mochi",
+      "flavorCard": "Mochi-Sortenkarte",
+      "icon": "Kleines illustriertes Symbol"
+    }
   },
   "Hero": {
     "title1": "Deine kostenlose",

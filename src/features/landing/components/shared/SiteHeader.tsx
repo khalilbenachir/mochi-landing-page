@@ -37,6 +37,7 @@ const CALCULATOR_LINKS = [
 ] as const;
 
 export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = "", activePage }: SiteHeaderProps) {
+  const imageAlt = useTranslations("Common.imageAlt");
   const navigation = useTranslations("Navigation");
   const common = useTranslations("Common");
   const locale = useLocale() as AppLocale;
@@ -62,7 +63,7 @@ export function SiteHeader({ homeHref = "#top", sectionBase = "", localeRoute = 
           className="flex shrink-0 items-center gap-6 text-white text-u-25 font-ultra leading-none tracking-[-0.02em] max-poster:gap-[8px] max-poster:text-[26px] max-nav:text-[24px]"
           aria-label={common("brandHome")}
         >
-          <Image className="w-35 h-auto max-poster:w-[37px] max-nav:w-[34px]" src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} priority />
+          <Image className="w-35 h-auto max-poster:w-[37px] max-nav:w-[34px]" src={LANDING_ASSETS.faces.headerHappy} alt={imageAlt("mochi")} aria-hidden="true" width={256} height={238} priority />
           <span>{common("brand")}</span>
         </a>
         <nav className="absolute left-225 flex gap-45 max-poster:static max-poster:ml-auto max-poster:mr-[28px] max-poster:gap-[28px] max-nav:hidden" aria-label={navigation("mainLabel")}>

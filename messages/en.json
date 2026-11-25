@@ -31,7 +31,13 @@
     "appStore": "App Store",
     "free": "Free",
     "optional": "Optional",
-    "backToTop": "Mochi: period tracker, back to top"
+    "backToTop": "Mochi: period tracker, back to top",
+    "imageAlt": {
+      "mochi": "Mochi, the pink mascot",
+      "appIcon": "Mochi app icon",
+      "flavorCard": "Mochi flavor card",
+      "icon": "Small illustrated icon"
+    }
   },
   "Hero": {
     "title1": "The cute, private",

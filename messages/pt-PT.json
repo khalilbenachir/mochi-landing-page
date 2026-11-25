@@ -31,7 +31,13 @@
     "appStore": "App Store",
     "free": "Grátis",
     "optional": "Opcional",
-    "backToTop": "Mochi: registo do período, voltar ao topo"
+    "backToTop": "Mochi: registo do período, voltar ao topo",
+    "imageAlt": {
+      "mochi": "Mochi, a mascote cor-de-rosa",
+      "appIcon": "Ícone da app Mochi",
+      "flavorCard": "Cartão de sabor do Mochi",
+      "icon": "Pequeno ícone ilustrado"
+    }
   },
   "Hero": {
     "title1": "O seu calendário",

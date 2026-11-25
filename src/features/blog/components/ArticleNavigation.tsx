@@ -13,6 +13,7 @@ type Props = {
   title: string;
   labels: {
     heading: string;
+    mochiAlt: string;
     share: string;
     copy: string;
     copied: string;
@@ -30,7 +31,7 @@ const shareButton =
 export function ArticleNavigation({ items, url, title, labels }: Props) {
   return (
     <SideMenu.Root items={items}>
-      <SideMenu.Header title={labels.heading}>
+      <SideMenu.Header title={labels.heading} mochiAlt={labels.mochiAlt}>
         <SideMenu.Progress />
       </SideMenu.Header>
       <SideMenu.Body>

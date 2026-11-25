@@ -12,6 +12,7 @@ import { PostCard } from "./PostCard";
 
 /** A topic hub: a crawlable page per category with an answer-first intro and every guide in it. */
 export function BlogTopicPage({ category }: { category: BlogCategory }) {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   const routes = useBlogRoutes();
   const posts = topicPosts(category);
@@ -51,7 +52,7 @@ export function BlogTopicPage({ category }: { category: BlogCategory }) {
                 lead.tone,
               )}
             >
-              <Image src={lead.image} {...BLOG_ART_SIZE} alt="" priority sizes="400px" className="h-auto w-full" />
+              <Image src={lead.image} {...BLOG_ART_SIZE} alt={imageAlt("mochi")} aria-hidden="true" priority sizes="400px" className="h-auto w-full" />
             </div>
           ) : null}
         </BlogShell.Container>

@@ -11,6 +11,8 @@ import { PrivacySummaryIcon } from "./PrivacySummaryIcon";
 type PrivacyContentProps = {
   sections: PolicySectionCopy[];
   navLabel: string;
+  mochiAlt: string;
+  iconAlt: string;
   callout: string;
   email: string;
 };
@@ -37,7 +39,7 @@ function sectionFromHash(hash: string) {
  * stays searchable. This client island scrolls to the section named by the URL hash and moves focus
  * to its heading; the side menu is the shared SideMenu.
  */
-export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyContentProps) {
+export function PrivacyContent({ sections, navLabel, mochiAlt, iconAlt, callout, email }: PrivacyContentProps) {
   const hash = useSyncExternalStore(subscribeToHash, getHash, getServerHash);
   const target = sectionFromHash(hash);
 
@@ -51,7 +53,7 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
   return (
     <div className="grid min-h-492 grid-cols-[278fr_660fr] items-start gap-28 max-nav:grid-cols-1 max-nav:gap-[28px]">
       <SideMenu.Root items={sections.map(({ id, nav }) => ({ id, label: nav }))}>
-        <SideMenu.Header title={navLabel}>
+        <SideMenu.Header title={navLabel} mochiAlt={mochiAlt}>
           <SideMenu.Progress />
         </SideMenu.Header>
         <SideMenu.Body>
@@ -69,7 +71,7 @@ export function PrivacyContent({ sections, navLabel, callout, email }: PrivacyCo
             <p className="pl-14 max-nav:pl-0">{body}</p>
             <p className="mt-11 pl-14 max-nav:mt-[12px] max-nav:pl-0">{detail}</p>
             {id === "device" ? (
-              <LegalCallout icon={<PrivacySummaryIcon id="lock" className={LEGAL_CALLOUT_ICON} />}>{callout}</LegalCallout>
+              <LegalCallout icon={<PrivacySummaryIcon id="lock" alt={iconAlt} className={LEGAL_CALLOUT_ICON} />}>{callout}</LegalCallout>
             ) : null}
             {id === "contact" ? (
               <a href={`mailto:${email}`} className="mt-20 inline-flex max-w-full items-center gap-10 rounded-full bg-brand-coral px-24 py-13 wrap-anywhere font-black text-white hover:bg-mochi-pink-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral">

@@ -8,6 +8,7 @@ import { useBlogLocale, useBlogRoutes } from "../i18n";
 import { BlogCard } from "./BlogCard";
 
 export function PostCard({ post, featured = false }: { post: BlogPost; featured?: boolean }) {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   const locale = useBlogLocale();
   const copy = getArticleCopy(post, locale);
@@ -26,7 +27,7 @@ export function PostCard({ post, featured = false }: { post: BlogPost; featured?
         <BlogCard.Meta>
           {featured ? (
             <>
-              <Image src={LANDING_ASSETS.appIcon} width={38} height={38} alt="" className="size-[38px] rounded-full" />
+              <Image src={LANDING_ASSETS.appIcon} width={38} height={38} alt={imageAlt("appIcon")} aria-hidden="true" className="size-[38px] rounded-full" />
               <span className="font-heavy">{t("byline")}</span>
               <span aria-hidden="true">·</span>
             </>

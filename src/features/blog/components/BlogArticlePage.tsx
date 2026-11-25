@@ -77,6 +77,7 @@ function ArticleTableView({ table: { caption, columns, rows } }: { table: Articl
 }
 
 function ArticleHero({ post }: { post: BlogPost }) {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   const format = useFormatter();
   const locale = useBlogLocale();
@@ -109,7 +110,7 @@ function ArticleHero({ post }: { post: BlogPost }) {
           </h1>
           <p className="mt-[10px] text-[20px] font-semibold leading-[1.3] max-phone:text-[18px]">{copy.description}</p>
           <BlogArticle.Meta>
-            <Image src={LANDING_ASSETS.appIcon} width={36} height={36} alt="" className="size-[36px] rounded-full" />
+            <Image src={LANDING_ASSETS.appIcon} width={36} height={36} alt={imageAlt("appIcon")} aria-hidden="true" className="size-[36px] rounded-full" />
             <Link href={routes.editorial} className="font-heavy underline-offset-4 hover:underline">
               {t("byline")}
             </Link>
@@ -136,12 +137,13 @@ function ArticleHero({ post }: { post: BlogPost }) {
 }
 
 function QuickAnswer({ intro }: { intro: string }) {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   return (
     <section id="quick-answer" aria-labelledby="quick-answer-title" className="flex scroll-mt-[24px] items-end gap-[14px] max-phone:gap-[10px]">
       <Image
         src={LANDING_ASSETS.faces.headerHappy}
-        alt=""
+        alt={imageAlt("mochi")} aria-hidden="true"
         width={256}
         height={238}
         className="mb-[-4px] h-auto w-[72px] shrink-0 -rotate-6 max-phone:w-[52px]"
@@ -201,6 +203,7 @@ function ArticleSection({ post, section: { id, sources } }: { post: BlogPost; se
 
 /** In-article app CTA: the companion Mochi pops over a violet card, next to the App Store badge. */
 function ArticleCta() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   return (
     <section
@@ -216,7 +219,7 @@ function ArticleCta() {
         src="/blog-art/companion-mochi.webp"
         width={600}
         height={530}
-        alt=""
+        alt={imageAlt("mochi")} aria-hidden="true"
         sizes="(max-width: 760px) 130px, 170px"
         className="relative z-1 -mt-[64px] -ml-[6px] h-auto w-[170px] max-w-none -rotate-6 animate-float [filter:drop-shadow(0_8px_10px_var(--color-blog-cta-shadow))] max-poster:w-[140px] max-nav:absolute max-nav:left-1/2 max-nav:top-[-62px] max-nav:m-0 max-nav:w-[130px] max-nav:-translate-x-1/2"
       />
@@ -235,6 +238,7 @@ function ArticleCta() {
 
 /** Cycle articles hand readers to the calculator: the questions they read about, answered with their own dates. */
 function CalculatorPromo() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   const locale = useBlogLocale();
   return (
@@ -246,7 +250,7 @@ function CalculatorPromo() {
         src={CALCULATOR_ART.period.src}
         width={CALCULATOR_ART.period.width}
         height={CALCULATOR_ART.period.height}
-        alt=""
+        alt={imageAlt("mochi")} aria-hidden="true"
         sizes="120px"
         className="h-auto w-[120px] -rotate-3"
       />
@@ -268,10 +272,11 @@ function CalculatorPromo() {
 }
 
 function ArticleNotice() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Blog");
   return (
     <aside className="mt-[14px] flex items-center gap-[12px] rounded-[18px] bg-journal-warning px-[16px] py-[10px] text-[14px] font-medium leading-[1.5]">
-      <Image src={TERMS_SUMMARY_ICONS.warning} alt="" width={256} height={270} className="h-auto w-[40px] shrink-0 -rotate-6" />
+      <Image src={TERMS_SUMMARY_ICONS.warning} alt={imageAlt("icon")} aria-hidden="true" width={256} height={270} className="h-auto w-[40px] shrink-0 -rotate-6" />
       <p>{t("articleNotice")}</p>
     </aside>
   );
@@ -331,7 +336,9 @@ export function BlogArticlePage({ post }: { post: BlogPost }) {
     { id: "quick-answer", label: t("quickAnswer") },
     ...post.sections.map(({ id }) => ({ id, label: getArticleSection(post, id, locale).title })),
   ];
+  const imageAlt = useTranslations("Common.imageAlt");
   const shareLabels = {
+    mochiAlt: imageAlt("mochi"),
     heading: t("onThisPage"),
     share: t("shareHeading"),
     copy: t("copyLink"),

@@ -15,6 +15,7 @@ const PILE = [
 
 /** A candy capsule machine holding the collection; Ube pops out of the chute as today's reward. */
 function MochiMachine() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Flavors");
   const inDome = FLAVOR_CATALOG.filter((flavor) => flavor.id !== "ube");
 
@@ -24,7 +25,7 @@ function MochiMachine() {
       <div className="relative aspect-[330/270] overflow-hidden rounded-t-[50%_44%] border-6 border-white bg-white/35 [box-shadow:inset_0_-12px_0_rgb(255_255_255/0.35)] max-poster:border-[6px]">
         <span className="absolute top-[10%] left-[12%] h-[34%] w-[9%] -rotate-12 rounded-full bg-white/70" />
         {inDome.map((flavor, index) => (
-          <Image key={flavor.id} src={FLAVOR_CARD_ASSETS[flavor.id]} alt="" width={380} height={262} sizes="90px" className={cn("absolute h-auto w-[25%]", PILE[index])} />
+          <Image key={flavor.id} src={FLAVOR_CARD_ASSETS[flavor.id]} alt={imageAlt("flavorCard")} aria-hidden="true" width={380} height={262} sizes="90px" className={cn("absolute h-auto w-[25%]", PILE[index])} />
         ))}
       </div>
       <div className="relative -mt-6 rounded-u-30 bg-brand-coral px-26 pt-20 pb-24 [box-shadow:0_8px_0_var(--color-flavors-card-shadow)] max-poster:-mt-[6px] max-poster:rounded-[30px] max-poster:px-[26px] max-poster:pt-[20px] max-poster:pb-[24px]">
@@ -33,7 +34,7 @@ function MochiMachine() {
             <span className="h-10 w-46 rotate-[-30deg] rounded-full bg-mochi-pink-ink max-poster:h-[10px] max-poster:w-[46px]" />
           </span>
           <span className="relative grid h-74 w-120 place-items-end justify-center overflow-visible rounded-u-22 bg-ink-deep pb-6 max-poster:h-[74px] max-poster:w-[120px] max-poster:rounded-[22px] max-poster:pb-[6px]">
-            <Image src={FLAVOR_CARD_ASSETS.ube} alt="" width={380} height={262} sizes="90px" className="h-auto w-84 -mb-2 animate-float max-poster:w-[84px]" />
+            <Image src={FLAVOR_CARD_ASSETS.ube} alt={imageAlt("flavorCard")} aria-hidden="true" width={380} height={262} sizes="90px" className="h-auto w-84 -mb-2 animate-float max-poster:w-[84px]" />
           </span>
         </div>
       </div>
