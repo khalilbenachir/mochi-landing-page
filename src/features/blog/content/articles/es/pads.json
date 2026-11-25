@@ -79,7 +79,20 @@
         "first": "El tiempo que puedes llevar una compresa por la noche depende de tu flujo menstrual y de las indicaciones del fabricante. No existe un límite de horas universal para las compresas nocturnas, ya que sus características varían según la marca.",
         "second": "Ponte una compresa de noche limpia justo antes de acostarte y cámbiala al despertarte. Si te gusta dormir hasta tarde los domingos, procura no superar el tiempo de uso recomendado en el envase.",
         "third": "Llevar la misma compresa durante 12 horas no es una práctica recomendable como hábito, aunque tengas poco sangrado. El ACOG aconseja cambiarla al menos cada 4 a 8 horas.",
-        "fourth": "Hay quienes colocan dos compresas ligeramente superpuestas para cubrir una mayor superficie de la ropa interior y evitar manchas durante la noche. Una compresa nocturna más larga puede resultar más cómoda. Si necesitas habitualmente dos productos menstruales a la vez para contener el sangrado, el NHS recomienda consultar con un médico."
+        "fourth": "Hay quienes colocan dos compresas ligeramente superpuestas para cubrir una mayor superficie de la ropa interior y evitar manchas durante la noche. Una compresa nocturna más larga puede resultar más cómoda. Si necesitas habitualmente dos productos menstruales a la vez para contener el sangrado, el NHS recomienda consultar con un médico.",
+        "fifth": [
+          "¿Prefieres algo interno por la noche? La copa menstrual puede llevarse hasta 12 horas, más que un tampón. En nuestras guías sobre ",
+          {
+            "postId": "tampons",
+            "label": "cuánto tiempo se puede llevar un tampón"
+          },
+          " y ",
+          {
+            "postId": "cups",
+            "label": "cuánto tiempo se puede llevar la copa menstrual"
+          },
+          " tienes los límites de cada uno."
+        ]
       }
     },
     "full-pad-signs": {

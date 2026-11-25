@@ -102,7 +102,20 @@
       "title": "¿Cuándo es mejor utilizar una compresa o unas bragas menstruales?",
       "paragraphs": {
         "first": "Una compresa o unas bragas menstruales son una mejor opción si tienes previsto dormir más de 8 horas, si tu regla es muy escasa o si retirar el tampón te resulta incómodo porque está seco. Health Canada también recomienda evitar por completo el uso de tampones si alguna vez has tenido un síndrome de shock tóxico (SST).",
-        "second": "No tienes que elegir un único producto menstrual para todos los días de tu regla. Health Canada recomienda alternar el uso de tampones y compresas. Quizá prefieras utilizar un tampón durante el día, una compresa por la noche y unas bragas menstruales al final de la regla. Elige lo que te resulte más cómodo y se adapte a tu rutina."
+        "second": "No tienes que elegir un único producto menstrual para todos los días de tu regla. Health Canada recomienda alternar el uso de tampones y compresas. Quizá prefieras utilizar un tampón durante el día, una compresa por la noche y unas bragas menstruales al final de la regla. Elige lo que te resulte más cómodo y se adapte a tu rutina.",
+        "third": [
+          "Si quieres algo que dure más que un tampón, la copa menstrual puede llevarse hasta 12 horas. Lee nuestra guía sobre ",
+          {
+            "postId": "cups",
+            "label": "cuánto tiempo se puede llevar la copa menstrual"
+          },
+          ", o la de ",
+          {
+            "postId": "pads",
+            "label": "cada cuánto cambiar la compresa"
+          },
+          " si por la noche pasas a compresas."
+        ]
       },
       "items": {
         "long-nights": "Utiliza una compresa o unas bragas menstruales si tienes previsto dormir más de 8 horas.",

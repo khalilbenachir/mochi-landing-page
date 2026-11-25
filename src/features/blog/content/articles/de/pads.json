@@ -79,7 +79,20 @@
         "first": "Wie lange du eine Binde über Nacht tragen kannst, hängt von deiner Blutungsstärke und den Angaben des Herstellers ab. Eine allgemein gültige maximale Tragedauer für Nachtbinden gibt es nicht, da sich die Produkte je nach Marke unterscheiden.",
         "second": "Wechsle deine Binde direkt vor dem Schlafengehen und nach dem Aufstehen. Wenn du sonntags gerne länger schläfst, achte darauf, die empfohlene Tragedauer deiner Nachtbinde nicht zu überschreiten.",
         "third": "Eine Binde 12 Stunden lang zu tragen, ist auch bei leichter Blutung nicht als Gewohnheit empfehlenswert. Die ACOG rät dazu, Binden mindestens alle 4 bis 8 Stunden zu wechseln.",
-        "fourth": "Manche verwenden nachts zwei leicht überlappende Binden, um einen größeren Bereich der Unterwäsche abzudecken. Eine längere Nachtbinde kann allerdings bequemer sein. Wenn du regelmäßig zwei Menstruationsprodukte gleichzeitig brauchst, um deine Blutung aufzufangen, solltest du laut NHS ärztlichen Rat einholen."
+        "fourth": "Manche verwenden nachts zwei leicht überlappende Binden, um einen größeren Bereich der Unterwäsche abzudecken. Eine längere Nachtbinde kann allerdings bequemer sein. Wenn du regelmäßig zwei Menstruationsprodukte gleichzeitig brauchst, um deine Blutung aufzufangen, solltest du laut NHS ärztlichen Rat einholen.",
+        "fifth": [
+          "Du nutzt nachts lieber etwas zum Einführen? Eine Menstruationstasse darf bis zu 12 Stunden drin bleiben, also länger als ein Tampon. In unseren Ratgebern ",
+          {
+            "postId": "tampons",
+            "label": "wie lange man einen Tampon drin lassen darf"
+          },
+          " und ",
+          {
+            "postId": "cups",
+            "label": "wie lange man eine Menstruationstasse drin lassen kann"
+          },
+          " findest du die Grenzen für beides."
+        ]
       }
     },
     "full-pad-signs": {

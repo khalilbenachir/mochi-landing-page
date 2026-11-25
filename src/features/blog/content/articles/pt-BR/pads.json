@@ -79,7 +79,20 @@
         "first": "O tempo que você pode usar um absorvente noturno depende do seu fluxo menstrual e das orientações do fabricante. Não existe um limite de horas que seja válido para todos os absorventes noturnos, pois as características variam de uma marca para outra.",
         "second": "Coloque um absorvente limpo antes de dormir e troque-o ao acordar. Se você gosta de dormir até mais tarde aos domingos, fique de olho no tempo de uso recomendado na embalagem.",
         "third": "Ficar com o mesmo absorvente por 12 horas não é um hábito recomendado, mesmo quando o fluxo é leve. O ACOG orienta fazer a troca pelo menos a cada 4 a 8 horas.",
-        "fourth": "Algumas pessoas usam dois absorventes parcialmente sobrepostos para cobrir uma área maior da calcinha e evitar vazamentos durante a noite. Um absorvente noturno mais comprido pode ser mais confortável. Se você precisa usar dois produtos menstruais ao mesmo tempo com frequência para conter o sangramento, o NHS recomenda procurar um médico."
+        "fourth": "Algumas pessoas usam dois absorventes parcialmente sobrepostos para cobrir uma área maior da calcinha e evitar vazamentos durante a noite. Um absorvente noturno mais comprido pode ser mais confortável. Se você precisa usar dois produtos menstruais ao mesmo tempo com frequência para conter o sangramento, o NHS recomenda procurar um médico.",
+        "fifth": [
+          "Prefere algo interno à noite? O coletor menstrual pode ficar até 12 horas, mais do que o absorvente interno. Nossos guias sobre ",
+          {
+            "postId": "tampons",
+            "label": "quanto tempo pode ficar com absorvente interno"
+          },
+          " e ",
+          {
+            "postId": "cups",
+            "label": "quanto tempo pode ficar com o coletor menstrual"
+          },
+          " explicam os limites de cada um."
+        ]
       }
     },
     "full-pad-signs": {

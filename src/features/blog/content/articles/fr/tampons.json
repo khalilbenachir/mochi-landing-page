@@ -102,7 +102,20 @@
       "title": "Quand privilégier une serviette hygiénique ou une culotte menstruelle ?",
       "paragraphs": {
         "first": "Une serviette hygiénique ou une culotte menstruelle est préférable si vous prévoyez de dormir plus de 8 heures, si vos règles sont très peu abondantes ou si votre tampon est sec et inconfortable au moment du retrait. Santé Canada recommande également de ne plus utiliser de tampons si vous avez déjà eu un syndrome du choc toxique (SCT).",
-        "second": "Vous n'avez pas besoin d'utiliser le même type de protection pendant toute la durée de vos règles. Santé Canada recommande d'alterner les tampons et les serviettes hygiéniques. Vous pouvez porter un tampon en journée, une serviette la nuit et une culotte menstruelle en fin de règles. Choisissez les protections qui vous conviennent le mieux au quotidien."
+        "second": "Vous n'avez pas besoin d'utiliser le même type de protection pendant toute la durée de vos règles. Santé Canada recommande d'alterner les tampons et les serviettes hygiéniques. Vous pouvez porter un tampon en journée, une serviette la nuit et une culotte menstruelle en fin de règles. Choisissez les protections qui vous conviennent le mieux au quotidien.",
+        "third": [
+          "Si vous voulez porter une protection plus longtemps qu'un tampon, une cup menstruelle peut rester jusqu'à 12 heures. Consultez notre guide ",
+          {
+            "postId": "cups",
+            "label": "combien de temps peut-on garder une cup menstruelle"
+          },
+          ", ou celui sur ",
+          {
+            "postId": "pads",
+            "label": "la fréquence de changement de serviette"
+          },
+          " si vous passez aux serviettes pour la nuit."
+        ]
       },
       "items": {
         "long-nights": "Privilégiez une serviette hygiénique ou une culotte menstruelle si vous prévoyez de dormir plus de 8 heures.",

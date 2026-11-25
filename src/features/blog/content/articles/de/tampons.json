@@ -102,7 +102,20 @@
       "title": "Wann ist eine Binde oder Periodenunterwäsche die bessere Wahl?",
       "paragraphs": {
         "first": "Eine Binde oder Periodenunterwäsche ist die bessere Wahl, wenn du voraussichtlich länger als 8 Stunden schläfst, deine Periode sehr schwach ist oder sich dein Tampon beim Herausziehen trocken und unangenehm anfühlt. Health Canada empfiehlt außerdem, vollständig auf Tampons zu verzichten, wenn du bereits ein toxisches Schocksyndrom (TSS) hattest.",
-        "second": "Du musst dich nicht für ein einziges Periodenprodukt während deiner gesamten Periode entscheiden. Health Canada empfiehlt, zwischen Tampons und Binden abzuwechseln. Vielleicht möchtest du tagsüber einen Tampon, nachts eine Binde und gegen Ende deiner Periode Periodenunterwäsche tragen. Wähle die Produkte, mit denen du dich wohlfühlst und die zu deinem Alltag passen."
+        "second": "Du musst dich nicht für ein einziges Periodenprodukt während deiner gesamten Periode entscheiden. Health Canada empfiehlt, zwischen Tampons und Binden abzuwechseln. Vielleicht möchtest du tagsüber einen Tampon, nachts eine Binde und gegen Ende deiner Periode Periodenunterwäsche tragen. Wähle die Produkte, mit denen du dich wohlfühlst und die zu deinem Alltag passen.",
+        "third": [
+          "Wenn du etwas länger tragen möchtest als einen Tampon, darf eine Menstruationstasse bis zu 12 Stunden drin bleiben. Mehr dazu in unserem Ratgeber ",
+          {
+            "postId": "cups",
+            "label": "wie lange man eine Menstruationstasse drin lassen kann"
+          },
+          ", und wenn du nachts auf Binden wechselst, in unserem Ratgeber ",
+          {
+            "postId": "pads",
+            "label": "wie oft man die Binde wechseln sollte"
+          },
+          "."
+        ]
       },
       "items": {
         "long-nights": "Verwende eine Binde oder Periodenunterwäsche, wenn du voraussichtlich länger als 8 Stunden schläfst.",
