@@ -7,7 +7,10 @@ import { notFound } from "next/navigation";
 import { PLATFORM_COLORS } from "@/app/platform-colors";
 import { AnalyticsConsent } from "@/components/analytics/AnalyticsConsent";
 import { ClosingSection } from "@/features/landing/components/sections/ClosingSection";
+import { APP_STORE_LIVE } from "@/features/landing/components/shared/AppStoreBadges";
 import { SiteFooter } from "@/features/landing/components/shared/SiteFooter";
+import { LANDING_ASSETS } from "@/features/landing/content/assets";
+import { WaitlistDialog } from "@/features/waitlist/components/WaitlistDialog.client";
 import { localePath, routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -38,6 +41,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   setRequestLocale(locale);
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const consent = await getTranslations("Consent");
+  const waitlist = await getTranslations("Waitlist");
   const homePath = localePath(locale);
   const privacyHref = homePath === "/" ? "/privacy" : `${homePath}/privacy`;
 
@@ -47,6 +51,30 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         {children}
         <ClosingSection />
         <SiteFooter homePath={homePath} />
+        {APP_STORE_LIVE ? null : (
+          <WaitlistDialog
+            locale={locale}
+            privacyHref={`${privacyHref}#waitlist`}
+            image={{ src: LANDING_ASSETS.accountMochi, width: 680, height: 616 }}
+            copy={{
+              eyebrow: waitlist("eyebrow"),
+              title: waitlist("title"),
+              body: waitlist("body"),
+              emailLabel: waitlist("emailLabel"),
+              placeholder: waitlist("placeholder"),
+              submit: waitlist("submit"),
+              sending: waitlist("sending"),
+              consent: waitlist("consent"),
+              privacyLink: waitlist("privacyLink"),
+              successTitle: waitlist("successTitle"),
+              successBody: waitlist("successBody"),
+              invalid: waitlist("invalid"),
+              failed: waitlist("failed"),
+              close: waitlist("close"),
+              imageAlt: waitlist("imageAlt"),
+            }}
+          />
+        )}
         <Analytics />
         {gtmId && (
           <AnalyticsConsent

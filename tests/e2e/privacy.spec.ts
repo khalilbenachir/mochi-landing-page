@@ -20,7 +20,7 @@ for (const locale of routing.locales) {
       await expect(page.locator("main")).toHaveCount(1);
       await expect(page.locator("h1")).toHaveCount(1);
       await expect(page.locator("body > footer")).toHaveCount(1);
-      await expect(page.locator("aside nav a")).toHaveCount(10);
+      await expect(page.locator("aside nav a")).toHaveCount(11);
       await expect(page.locator('section[aria-labelledby="privacy-summary"] a')).toHaveCount(4);
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBe(0);
       const textOverflow = await page.locator('h1, aside nav a span, section[aria-labelledby="privacy-summary"] h3').evaluateAll((elements) =>
@@ -88,14 +88,18 @@ test("privacy links support keyboard activation and encoded or invalid hashes", 
 });
 
 for (const prefix of ["", "/fr"] as const) {
-  test(`secondary-page download links reach the ${prefix || "English"} home download section`, async ({ page }) => {
+  test(`secondary-page download links open the ${prefix || "English"} launch waitlist`, async ({ page }) => {
     await page.goto(`${prefix}/privacy`);
     const download = page.locator('footer a[aria-label*="App Store"]').first();
-    const expected = `${prefix || "/"}#get`;
-    await expect(download).toHaveAttribute("href", expected);
+    // Without JavaScript the link still reaches the home download section.
+    await expect(download).toHaveAttribute("href", `${prefix || "/"}#get`);
     await download.click();
-    await expect(page).toHaveURL(new URL(expected, baseOrigin).toString());
-    await expect(page.locator("#get")).toBeVisible();
+    const dialog = page.locator("dialog[open]");
+    await expect(dialog).toBeVisible();
+    await expect(dialog.locator('input[type="email"]')).toBeFocused();
+    await expect(page).toHaveURL(new URL(`${prefix}/privacy`, baseOrigin).toString());
+    await page.keyboard.press("Escape");
+    await expect(dialog).toHaveCount(0);
   });
 
   test(`footer contact link opens the ${prefix || "English"} privacy contact section`, async ({ page }) => {

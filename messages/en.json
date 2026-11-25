@@ -393,6 +393,12 @@
         "body": "We share data only with the services that run Mochi, each limited to what it needs: Supabase (account and encrypted backup, EU), PostHog (usage analytics, EU), RevenueCat (subscription status) and Apple (App Store purchases, Sign in with Apple and iCloud Keychain).",
         "detail": "These providers process data on our behalf under their data processing terms. We don’t sell your data or share it with advertisers or data brokers."
       },
+      "waitlist": {
+        "nav": "Launch waitlist",
+        "title": "If you join the launch waitlist",
+        "body": "If you leave your email on our website to hear when Mochi reaches the App Store, we store that address, the language of the page and the date you signed up. It's kept with Supabase, on servers in the EU.",
+        "detail": "We use it only to send you one email when Mochi launches, then delete the list. It's never shared, sold or used for advertising. To be removed sooner, email us at the address below."
+      },
       "deletion": {
         "nav": "Delete your data",
         "title": "Delete your account and data",
@@ -861,5 +867,22 @@
       "increase": "More days",
       "days": "{count, plural, one {# day} other {# days}}"
     }
+  },
+  "Waitlist": {
+    "eyebrow": "Coming soon",
+    "title": "Mochi is almost on the App Store",
+    "body": "We're putting the finishing touches on Mochi. Leave your email and we'll tell you the moment it's ready to download.",
+    "emailLabel": "Your email",
+    "placeholder": "you@example.com",
+    "submit": "Notify me",
+    "sending": "Adding you…",
+    "consent": "One email when Mochi launches, nothing else. We never share your address.",
+    "privacyLink": "Privacy policy",
+    "successTitle": "You're on the list",
+    "successBody": "We'll email you as soon as Mochi is on the App Store. Mochi can't wait to meet you.",
+    "invalid": "Please enter a valid email address.",
+    "failed": "Something went wrong. Please try again in a moment.",
+    "close": "Close",
+    "imageAlt": "Mochi relaxing on a cloud with its iPhone"
   }
 }
