@@ -79,7 +79,20 @@
         "first": "How long you can wear a pad overnight depends on the product's recommended wear time and your menstrual flow. There is no universal time limit for overnight pads, as their absorbency and wear instructions vary by brand.",
         "second": "Put on a fresh overnight pad just before going to bed and change it when you wake up, staying within the manufacturer's recommended wear time.",
         "third": "Can you wear a pad for 12 hours? Wearing the same pad for 12 hours is not recommended as a routine, even if your flow is light. ACOG advises changing pads at least every 4 to 8 hours.",
-        "fourth": "Some people wear two overlapping pads at night for extra coverage against leaks. However, a longer overnight pad may be more comfortable. If you regularly need two period products at once to manage your bleeding, the NHS recommends speaking to a doctor."
+        "fourth": "Some people wear two overlapping pads at night for extra coverage against leaks. However, a longer overnight pad may be more comfortable. If you regularly need two period products at once to manage your bleeding, the NHS recommends speaking to a doctor.",
+        "fifth": [
+          "Prefer internal protection at night? A menstrual cup can stay in for up to 12 hours, which is longer than a tampon. Our guides on ",
+          {
+            "postId": "tampons",
+            "label": "how long you can leave a tampon in"
+          },
+          " and ",
+          {
+            "postId": "cups",
+            "label": "how long you can leave a menstrual cup in"
+          },
+          " explain the limits for each."
+        ]
       }
     },
     "full-pad-signs": {

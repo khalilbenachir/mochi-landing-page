@@ -102,7 +102,20 @@
       "title": "When is a pad or period underwear the better choice?",
       "paragraphs": {
         "first": "A pad or period underwear is a better choice when you expect to sleep for more than 8 hours, when your flow is very light or when removing a tampon feels dry or uncomfortable. Health Canada also recommends avoiding tampons altogether if you have ever had toxic shock syndrome (TSS).",
-        "second": "You do not have to choose between tampons and pads for your entire period. Health Canada recommends alternating between tampons and pads. You might prefer a tampon during the day, a pad at night and period underwear towards the end of your period. Choose whatever feels comfortable and suits your routine."
+        "second": "You do not have to choose between tampons and pads for your entire period. Health Canada recommends alternating between tampons and pads. You might prefer a tampon during the day, a pad at night and period underwear towards the end of your period. Choose whatever feels comfortable and suits your routine.",
+        "third": [
+          "If you'd like longer wear than a tampon allows, a menstrual cup can stay in for up to 12 hours. See our guide on ",
+          {
+            "postId": "cups",
+            "label": "how long you can leave a menstrual cup in"
+          },
+          ", or on ",
+          {
+            "postId": "pads",
+            "label": "how often to change your pad"
+          },
+          " if you're switching to pads for the night."
+        ]
       },
       "items": {
         "long-nights": "Choose a pad or period underwear if you expect to sleep for longer than 8 hours.",

@@ -79,7 +79,20 @@
         "first": "La durée de port d'une serviette hygiénique la nuit dépend de votre flux et des recommandations du fabricant. Il n'existe pas de durée maximale universelle pour les serviettes de nuit, car leurs caractéristiques varient selon les marques.",
         "second": "Mettez une serviette de nuit propre juste avant de vous coucher, puis changez-la au réveil. Si vous faites la grasse matinée le dimanche, veillez à respecter la durée de port indiquée sur l'emballage.",
         "third": "Garder la même serviette hygiénique pendant 12 heures n'est pas une habitude recommandée, même lorsque vos règles sont peu abondantes. L'ACOG préconise un changement au moins toutes les 4 à 8 heures.",
-        "fourth": "Certaines personnes superposent légèrement deux serviettes pour mieux couvrir leur sous-vêtement pendant la nuit. Une serviette de nuit plus longue peut toutefois être plus confortable. Si vous avez régulièrement besoin de deux protections menstruelles simultanément pour gérer votre flux, le NHS recommande de consulter un médecin."
+        "fourth": "Certaines personnes superposent légèrement deux serviettes pour mieux couvrir leur sous-vêtement pendant la nuit. Une serviette de nuit plus longue peut toutefois être plus confortable. Si vous avez régulièrement besoin de deux protections menstruelles simultanément pour gérer votre flux, le NHS recommande de consulter un médecin.",
+        "fifth": [
+          "Vous préférez une protection interne la nuit ? Une cup menstruelle peut rester jusqu'à 12 heures, plus longtemps qu'un tampon. Nos guides ",
+          {
+            "postId": "tampons",
+            "label": "combien de temps peut-on garder un tampon"
+          },
+          " et ",
+          {
+            "postId": "cups",
+            "label": "combien de temps peut-on garder une cup menstruelle"
+          },
+          " détaillent les limites de chacun."
+        ]
       }
     },
     "full-pad-signs": {

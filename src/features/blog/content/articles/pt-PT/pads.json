@@ -79,7 +79,20 @@
         "first": "O tempo durante o qual podes usar um penso noturno depende do teu fluxo menstrual e das indicações do fabricante. Não existe um limite de utilização universal para os pensos de noite, uma vez que as suas características variam de marca para marca.",
         "second": "Coloca um penso limpo imediatamente antes de te deitares e troca-o quando acordares. Se gostas de dormir até mais tarde ao domingo, tem em atenção o tempo de utilização recomendado na embalagem.",
         "third": "Usar o mesmo penso higiénico durante 12 horas não é um hábito recomendado, mesmo quando o fluxo é ligeiro. O ACOG aconselha a troca pelo menos a cada 4 a 8 horas.",
-        "fourth": "Há quem utilize dois pensos ligeiramente sobrepostos para cobrir uma área maior da roupa interior e evitar manchas durante a noite. Um penso noturno mais comprido pode ser mais confortável. Se precisas regularmente de utilizar dois produtos menstruais em simultâneo para conter o fluxo, o NHS recomenda consultares um médico."
+        "fourth": "Há quem utilize dois pensos ligeiramente sobrepostos para cobrir uma área maior da roupa interior e evitar manchas durante a noite. Um penso noturno mais comprido pode ser mais confortável. Se precisas regularmente de utilizar dois produtos menstruais em simultâneo para conter o fluxo, o NHS recomenda consultares um médico.",
+        "fifth": [
+          "Preferes algo interno à noite? O copo menstrual pode ficar até 12 horas, mais do que um tampão. Os nossos guias sobre ",
+          {
+            "postId": "tampons",
+            "label": "quanto tempo podes ficar com o tampão"
+          },
+          " e ",
+          {
+            "postId": "cups",
+            "label": "quanto tempo podes ficar com o copo menstrual"
+          },
+          " explicam os limites de cada um."
+        ]
       }
     },
     "full-pad-signs": {

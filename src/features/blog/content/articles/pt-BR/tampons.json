@@ -102,7 +102,20 @@
       "title": "Quando é melhor usar absorvente externo ou calcinha menstrual?",
       "paragraphs": {
         "first": "O absorvente externo ou a calcinha menstrual é uma opção melhor quando você pretende dormir mais de 8 horas, quando seu fluxo menstrual está muito leve ou quando retirar o absorvente interno causa desconforto por estar seco. A Health Canada também recomenda evitar completamente os absorventes internos se você já teve a síndrome do choque tóxico (SCT).",
-        "second": "Você não precisa escolher um único tipo de absorvente durante toda a menstruação. A Health Canada recomenda alternar entre absorventes internos e externos. Você pode preferir usar um absorvente interno durante o dia, um absorvente externo à noite e uma calcinha menstrual no final da menstruação. Escolha o que for mais confortável e adequado à sua rotina."
+        "second": "Você não precisa escolher um único tipo de absorvente durante toda a menstruação. A Health Canada recomenda alternar entre absorventes internos e externos. Você pode preferir usar um absorvente interno durante o dia, um absorvente externo à noite e uma calcinha menstrual no final da menstruação. Escolha o que for mais confortável e adequado à sua rotina.",
+        "third": [
+          "Se você quer algo que dure mais que o absorvente interno, o coletor menstrual pode ficar até 12 horas. Veja nosso guia sobre ",
+          {
+            "postId": "cups",
+            "label": "quanto tempo pode ficar com o coletor menstrual"
+          },
+          ", ou o de ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar o absorvente"
+          },
+          " se à noite você prefere o absorvente externo."
+        ]
       },
       "items": {
         "long-nights": "Prefira um absorvente externo ou uma calcinha menstrual se pretende dormir mais de 8 horas.",

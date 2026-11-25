@@ -102,7 +102,20 @@
       "title": "Quando é preferível utilizar um penso higiénico ou umas cuecas menstruais?",
       "paragraphs": {
         "first": "Um penso higiénico ou umas cuecas menstruais são uma melhor opção se planeias dormir mais de 8 horas, se o teu fluxo menstrual é muito ligeiro ou se retirar o tampão te causa desconforto por estar seco. A Health Canada também recomenda evitar completamente a utilização de tampões se já tiveste a síndrome do choque tóxico (SCT).",
-        "second": "Não tens de escolher um único produto menstrual durante todo o período. A Health Canada recomenda alternar entre tampões e pensos higiénicos. Podes preferir utilizar um tampão durante o dia, um penso higiénico à noite e umas cuecas menstruais no final do período. Escolhe aquilo que te proporciona maior conforto e se adapta melhor à tua rotina."
+        "second": "Não tens de escolher um único produto menstrual durante todo o período. A Health Canada recomenda alternar entre tampões e pensos higiénicos. Podes preferir utilizar um tampão durante o dia, um penso higiénico à noite e umas cuecas menstruais no final do período. Escolhe aquilo que te proporciona maior conforto e se adapta melhor à tua rotina.",
+        "third": [
+          "Se queres algo que dure mais do que um tampão, o copo menstrual pode ficar até 12 horas. Vê o nosso guia sobre ",
+          {
+            "postId": "cups",
+            "label": "quanto tempo podes ficar com o copo menstrual"
+          },
+          ", ou o de ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar o penso"
+          },
+          " se à noite passas para pensos higiénicos."
+        ]
       },
       "items": {
         "long-nights": "Opta por um penso higiénico ou umas cuecas menstruais se planeias dormir mais de 8 horas.",
