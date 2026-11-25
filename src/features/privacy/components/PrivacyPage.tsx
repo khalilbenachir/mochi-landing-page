@@ -22,6 +22,7 @@ const SUMMARY_CARDS = [
 export function PrivacyPage() {
   const locale = useLocale();
   const t = useTranslations("PrivacyPolicy");
+  const imageAlt = useTranslations("Common.imageAlt");
   const home = localePath(locale);
   const updated = new Intl.DateTimeFormat(locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(POLICY_UPDATED_AT));
   const sections = POLICY_SECTION_IDS.map((id) => ({ id, nav: t(`sections.${id}.nav`), title: t(`sections.${id}.title`), body: t(`sections.${id}.body`), detail: t(`sections.${id}.detail`) }));
@@ -56,7 +57,7 @@ export function PrivacyPage() {
                   key={key}
                   href={`#${id}`}
                   prominence="featured"
-                  icon={<PrivacySummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
+                  icon={<PrivacySummaryIcon id={key} alt={imageAlt("icon")} className="size-52 max-nav:size-[46px]" />}
                   title={t(`cards.${key}.title`)}
                   description={t(`cards.${key}.body`)}
                 />
@@ -67,7 +68,7 @@ export function PrivacyPage() {
       </section>
 
       <PosterStage spacing="none" className="px-31 pt-24 pb-28 max-nav:px-[20px] max-nav:py-[28px]">
-        <PrivacyContent sections={sections} navLabel={t("onThisPage")} callout={t("callout")} email={PRIVACY_CONTACT_EMAIL} />
+        <PrivacyContent sections={sections} navLabel={t("onThisPage")} mochiAlt={imageAlt("mochi")} iconAlt={imageAlt("icon")} callout={t("callout")} email={PRIVACY_CONTACT_EMAIL} />
       </PosterStage>
 
       <LegalContactBanner.Root headingId="privacy-contact-title">

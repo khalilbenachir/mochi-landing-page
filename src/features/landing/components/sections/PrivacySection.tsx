@@ -15,6 +15,7 @@ const STAYS = [["dates"], ["logs"], ["reminders1", "reminders2"]] as const;
 
 /** Section 6: what stays on the phone, in the app's own privacy wording, with Mochi keeping it cozy. */
 export function PrivacySection() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Privacy");
 
   return (
@@ -32,7 +33,7 @@ export function PrivacySection() {
           <ul className="mt-22 grid grid-cols-3 gap-12 max-poster:mt-[26px] max-poster:gap-[12px] max-phone:grid-cols-1">
             {PROMISES.map(({ id, icon }) => (
               <li key={id} className="relative flex flex-col items-center rounded-u-22 border-2 border-white/10 bg-white/6 px-10 pt-12 pb-13 text-center max-poster:px-[12px] max-poster:py-[16px] max-phone:flex-row max-phone:gap-[14px] max-phone:text-left">
-                <Image src={icon} alt="" width={256} height={256} className="size-64 flex-none -rotate-3 max-poster:size-[64px] max-phone:size-[56px]" />
+                <Image src={icon} alt={imageAlt("icon")} aria-hidden="true" width={256} height={256} className="size-64 flex-none -rotate-3 max-poster:size-[64px] max-phone:size-[56px]" />
                 <div className="mt-4 flex flex-col items-center max-phone:mt-0 max-phone:items-start">
                   <b className="text-u-[13.6] font-max leading-[1.1] max-poster:text-[17px]">{t(`promises.${id}.title`)}</b>
                   <span className="mt-2 text-u-[10.6] font-demibold leading-[1.25] text-privacy-promise-detail-text max-poster:mt-[4px] max-poster:text-[13.5px]">

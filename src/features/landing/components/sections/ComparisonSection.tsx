@@ -41,6 +41,7 @@ const BODY_CELL = "text-u-11 max-tablet:text-[13px] max-tablet:leading-[1.2]";
 
 /** "Why Mochi?": Mochi against a typical period app. */
 export function ComparisonSection() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Comparison");
   const showCaption = ["fr", "de", "pt-BR"].includes(useLocale());
 
@@ -56,7 +57,7 @@ export function ComparisonSection() {
           </span> <span className="ml-17 block max-poster:ml-0 max-poster:inline max-poster:whitespace-normal">{t("title2")}</span>
         </h2>
         <div className="absolute z-1 left-72 bottom-[calc(var(--section-space)*0.2)] w-98 after:absolute after:left-[-12%] after:right-[-14%] after:-bottom-5 after:h-12 after:rounded-[50%] after:bg-comparison-mochi-cell-bg max-poster:hidden" aria-hidden="true">
-          <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.whyMochi} alt="" width={420} height={418} sizes="12vw" />
+          <Image className="relative z-1 h-auto w-full" src={LANDING_ASSETS.whyMochi} alt={imageAlt("mochi")} aria-hidden="true" width={420} height={418} sizes="12vw" />
         </div>
 
         <div className="hidden max-tablet:mt-[24px] max-tablet:block">

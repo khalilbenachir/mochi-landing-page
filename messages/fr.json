@@ -31,7 +31,13 @@
     "appStore": "l’App Store",
     "free": "Gratuit",
     "optional": "En option",
-    "backToTop": "Mochi : suivi des règles, retour en haut"
+    "backToTop": "Mochi : suivi des règles, retour en haut",
+    "imageAlt": {
+      "mochi": "Mochi, la mascotte rose",
+      "appIcon": "Icône de l'app Mochi",
+      "flavorCard": "Carte parfum Mochi",
+      "icon": "Petite icône illustrée"
+    }
   },
   "Hero": {
     "title1": "Votre calendrier",

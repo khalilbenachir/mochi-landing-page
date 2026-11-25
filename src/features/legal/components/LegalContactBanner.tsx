@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import type { ComponentProps, ReactNode } from "react";
 import { Button } from "@/features/landing/components/shared/Button";
@@ -24,7 +25,8 @@ function LegalContactBannerRoot({ headingId, children }: LegalContactBannerRootP
 }
 
 function LegalContactBannerArtwork({ src }: { src: string }) {
-  return <Image src={src} width={600} height={400} alt="" sizes="(max-width: 760px) 180px, 21vw" className="-mb-10 -ml-5 w-196 self-end max-nav:order-2 max-nav:mx-auto max-nav:mb-[-28px] max-nav:w-[180px] max-nav:self-center" />;
+  const imageAlt = useTranslations("Common.imageAlt");
+  return <Image src={src} width={600} height={400} alt={imageAlt("mochi")} aria-hidden="true" sizes="(max-width: 760px) 180px, 21vw" className="-mb-10 -ml-5 w-196 self-end max-nav:order-2 max-nav:mx-auto max-nav:mb-[-28px] max-nav:w-[180px] max-nav:self-center" />;
 }
 
 function LegalContactBannerContent({ className, ...props }: ComponentProps<"div">) {

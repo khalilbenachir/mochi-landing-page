@@ -79,10 +79,10 @@ function Counter({ className }: { className?: string }) {
 }
 
 /** Mochi and the title; on small screens the same row is the button that opens the menu. */
-function Header({ title, children }: { title: string; children?: ReactNode }) {
+function Header({ title, mochiAlt, children }: { title: string; mochiAlt: string; children?: ReactNode }) {
   const { expanded, toggle, bodyId } = useSideMenu();
   const mochi = (
-    <Image src={LANDING_ASSETS.faces.headerHappy} alt="" width={256} height={238} className="h-auto w-[34px] shrink-0 -rotate-6 max-nav:w-[30px]" />
+    <Image src={LANDING_ASSETS.faces.headerHappy} alt={mochiAlt} aria-hidden="true" width={256} height={238} className="h-auto w-[34px] shrink-0 -rotate-6 max-nav:w-[30px]" />
   );
   return (
     <div className="bg-[linear-gradient(180deg,var(--color-blog-pink),transparent)] px-[18px] pb-[14px] pt-[16px] max-nav:p-[14px]">

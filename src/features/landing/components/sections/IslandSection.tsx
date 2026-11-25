@@ -15,6 +15,7 @@ function Drop() {
 
 /** Section 2: the pad change reminder, shown live in a Dynamic Island. */
 export function IslandSection() {
+  const imageAlt = useTranslations("Common.imageAlt");
   const t = useTranslations("Island");
 
   return (
@@ -40,7 +41,7 @@ export function IslandSection() {
               className="absolute z-2 left-123 top-16 flex h-54 w-238 items-center pl-9 pr-7 rounded-full bg-black text-white [box-shadow:0_calc(3*var(--spacing))_calc(8*var(--spacing))_var(--color-island-notch-shadow)] max-phone:left-1/2 max-phone:-translate-x-1/2"
               aria-hidden="true"
             >
-              <Image className="h-auto w-56 flex-none" src={LANDING_ASSETS.islandMochi} alt="" width={220} height={150} />
+              <Image className="h-auto w-56 flex-none" src={LANDING_ASSETS.islandMochi} alt={imageAlt("mochi")} aria-hidden="true" width={220} height={150} />
               <span className="grid flex-1 justify-items-center leading-none">
                 <small className="text-u-11 font-extrabold">{t("timerPrefix")}</small>
                 <IslandCountdown className="mt-3 text-u-22 font-black tracking-[0.01em] tabular-nums" />

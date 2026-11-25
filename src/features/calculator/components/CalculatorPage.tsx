@@ -32,6 +32,7 @@ const HOW_TONES = ["bg-blog-pink", "bg-blog-lavender", "bg-cycle-fertile-tint"] 
 
 /** Same anatomy as the privacy and terms pages: coloured hero band, then white content bands. */
 export async function CalculatorPage({ locale, kind = "period" }: { locale: AppLocale; kind?: CalculatorKind }) {
+  const imageAlt = await getTranslations("Common.imageAlt");
   const page = PAGES[kind];
   // Both namespaces share the page keys (title, intro, how, faq, cta…); the form copy differs.
   const t = (await getTranslations({ locale, namespace: CALCULATORS[kind].namespace })) as unknown as Translate;
@@ -160,7 +161,7 @@ export async function CalculatorPage({ locale, kind = "period" }: { locale: AppL
             href={calculatorPath(locale, page.sibling)}
             className="group flex items-center gap-14 rounded-u-12 border-2 border-blog-border p-12 transition-colors hover:border-ink-navy max-poster:gap-[16px] max-poster:rounded-[18px] max-poster:p-[18px]"
           >
-            <Image src={CALCULATOR_ART[page.sibling].src} width={CALCULATOR_ART[page.sibling].width} height={CALCULATOR_ART[page.sibling].height} alt="" sizes="120px" className="h-auto w-60 flex-none max-poster:w-[84px]" />
+            <Image src={CALCULATOR_ART[page.sibling].src} width={CALCULATOR_ART[page.sibling].width} height={CALCULATOR_ART[page.sibling].height} alt={imageAlt("mochi")} aria-hidden="true" sizes="120px" className="h-auto w-60 flex-none max-poster:w-[84px]" />
             <span className="min-w-0 flex-1">
               <span className="block text-u-[9] font-heavy uppercase tracking-[0.1em] text-blog-muted max-poster:text-[12px]">{t("sibling")}</span>
               <span id="calculator-sibling" className="mt-2 block text-u-[13] font-max leading-[1.15] max-poster:text-[20px]">

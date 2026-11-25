@@ -16,6 +16,7 @@ import { TermsSummaryIcon } from "./TermsIcon";
 export function TermsPage() {
   const locale = useLocale();
   const t = useTranslations("TermsOfUse");
+  const imageAlt = useTranslations("Common.imageAlt");
   const home = localePath(locale);
   const privacyHref = localeRoutePath(locale, "privacy");
   const updated = new Intl.DateTimeFormat(locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(TERMS_UPDATED_AT));
@@ -51,7 +52,7 @@ export function TermsPage() {
                   key={key}
                   href={section ? `#${section}` : privacyHref}
                   prominence="featured"
-                  icon={<TermsSummaryIcon id={key} className="size-52 max-nav:size-[46px]" />}
+                  icon={<TermsSummaryIcon id={key} alt={imageAlt("icon")} className="size-52 max-nav:size-[46px]" />}
                   title={t(`cards.${key}.title`)}
                   description={t(`cards.${key}.body`)}
                 />
@@ -64,7 +65,7 @@ export function TermsPage() {
       <PosterStage spacing="none" className="px-31 pt-24 pb-28 max-nav:px-[20px] max-nav:py-[28px]">
         <TermsContent.Root>
           <SideMenu.Root items={sections.map(({ id, nav }) => ({ id, label: nav }))}>
-            <SideMenu.Header title={t("onThisPage")}>
+            <SideMenu.Header title={t("onThisPage")} mochiAlt={imageAlt("mochi")}>
               <SideMenu.Progress />
             </SideMenu.Header>
             <SideMenu.Body>
@@ -77,7 +78,7 @@ export function TermsPage() {
                 <TermsContent.Heading id={`${id}-title`}>{title}</TermsContent.Heading>
                 <TermsContent.Text>{body}</TermsContent.Text>
                 <TermsContent.Text detail>{detail}</TermsContent.Text>
-                {id === "health" ? <TermsContent.Callout>{t("callout")}</TermsContent.Callout> : null}
+                {id === "health" ? <TermsContent.Callout iconAlt={imageAlt("icon")}>{t("callout")}</TermsContent.Callout> : null}
                 {id === "subscriptions" || id === "content" ? <TermsContent.Link href={id === "subscriptions" ? appleSubscriptionsUrl(locale) : privacyHref}>{id === "subscriptions" ? t("subscriptionsLink") : t("privacyLink")}</TermsContent.Link> : null}
                 {id === "contact" ? <TermsContent.ContactLink href={`mailto:${PRIVACY_CONTACT_EMAIL}`}>{PRIVACY_CONTACT_EMAIL}</TermsContent.ContactLink> : null}
               </TermsContent.Section>

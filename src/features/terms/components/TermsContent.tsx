@@ -64,9 +64,9 @@ function TermsContentText({ detail = false, className, ...props }: ComponentProp
   return <p className={cn("pl-14 max-nav:pl-0", detail && "mt-11 max-nav:mt-[12px]", className)} {...props} />;
 }
 
-function TermsContentCallout({ children }: { children: ReactNode }) {
+function TermsContentCallout({ iconAlt, children }: { iconAlt: string; children: ReactNode }) {
   return (
-    <LegalCallout tone="cream" icon={<TermsSummaryIcon id="warning" className={LEGAL_CALLOUT_ICON} />}>
+    <LegalCallout tone="cream" icon={<TermsSummaryIcon id="warning" alt={iconAlt} className={LEGAL_CALLOUT_ICON} />}>
       {children}
     </LegalCallout>
   );

@@ -7,6 +7,7 @@ import { FaqAccordion } from "./FaqAccordion";
 
 /** Section 7: the FAQ, the same questions as the FAQPage structured data. */
 export async function FaqSection() {
+  const imageAlt = await getTranslations("Common.imageAlt");
   const locale = await getLocale();
   const [t, items] = await Promise.all([getTranslations("FAQ"), getLandingFaqItems(locale)]);
 
@@ -18,7 +19,7 @@ export async function FaqSection() {
             <span className="block max-poster:inline">{t("title1")}</span> <span className="block max-poster:inline">{t("title2")}</span> <span className="block max-poster:inline">{t("title3")}</span>
           </h2>
           <div className="relative mb-12 ml-56 mt-32 w-130 shrink-0 max-poster:hidden" aria-hidden="true">
-            <Image className="h-auto w-full" src={LANDING_ASSETS.faqMochi} alt="" width={480} height={735} sizes="14vw" />
+            <Image className="h-auto w-full" src={LANDING_ASSETS.faqMochi} alt={imageAlt("mochi")} aria-hidden="true" width={480} height={735} sizes="14vw" />
           </div>
         </div>
 
