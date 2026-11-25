@@ -594,7 +594,10 @@
       "tamponSafety": "FDA: Tampons",
       "tamponsCanada": "Health Canada: Menstruationstampons",
       "toxicShock": "NHS: Toxisches Schocksyndrom",
-      "tamponTooLong": "Cleveland Clinic: Tampon zu lange drin"
+      "tamponTooLong": "Cleveland Clinic: Tampon zu lange drin",
+      "menstrualCups": "FDA: Menstruationstassen",
+      "cupGuide": "Cleveland Clinic: Menstruationstassen",
+      "cupReview": "The Lancet Public Health: Übersichtsarbeit zu Menstruationstassen (2019)"
     },
     "editorial": {
       "title": "Unsere redaktionellen Grundsätze",

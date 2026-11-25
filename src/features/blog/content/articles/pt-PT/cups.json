@@ -1,0 +1,180 @@
+{
+  "title": "Quanto tempo posso ficar com o copo menstrual?",
+  "description": "Quanto tempo posso ficar com o copo menstrual? Até 12 horas. Sabe quando o esvaziar, se podes dormir com ele, como saber se está cheio e como o limpar.",
+  "imageAlt": "Mochi, uma mascote cor-de-rosa, ao lado de um copo menstrual e de um pequeno despertador",
+  "intro": "Podes ficar com o copo menstrual até 12 horas, segundo a FDA e a Cleveland Clinic. A maioria das pessoas esvazia-o a cada 8 a 12 horas, e mais vezes nos dias de fluxo abundante. Estas 12 horas são um limite, não um objetivo: o ritmo certo depende do teu fluxo, do tamanho do teu copo e das instruções que o acompanham.",
+  "sections": {
+    "how-long": {
+      "title": "Quantas horas posso ficar com o copo menstrual?",
+      "paragraphs": {
+        "first": "O copo menstrual pode ficar colocado até 12 horas antes de o retirares, esvaziares e passares por água. A FDA refere que normalmente é esvaziado a cada 8 a 12 horas, e a Cleveland Clinic indica o mesmo máximo de 12 horas. Algumas marcas indicam um tempo mais curto, por isso vale o que diz a embalagem do teu copo.",
+        "second": "É o teu fluxo que decide quanto te aproximas das 12 horas. Nos primeiros dias, que costumam ser os mais abundantes, talvez tenhas de o esvaziar a cada 4 a 6 horas para não transbordar. Nos dias mais leves, de manhã e à noite pode chegar. Se estás a começar, esvazia-o ao fim de 3 ou 4 horas nos primeiros dias: depressa vês quanto recolhe e consegues organizar-te.",
+        "third": "O limite de 12 horas aplica-se mesmo que o copo não esteja cheio. O sangue parado demasiado tempo começa a cheirar, e o copo deve ser lavado com regularidade, seja qual for a quantidade."
+      },
+      "table": {
+        "caption": "Quando esvaziar o copo menstrual em cada situação",
+        "columns": [
+          "Situação",
+          "Quando esvaziar",
+          "Dica"
+        ],
+        "rows": [
+          [
+            "Primeira utilização",
+            "Ao fim de 3 a 4 horas",
+            "Vê quanto recolheu para conheceres o teu fluxo."
+          ],
+          [
+            "Dias de fluxo abundante",
+            "A cada 4 a 8 horas, ou antes se verter",
+            "Esvazia-o sempre que fores à casa de banho, se puderes."
+          ],
+          [
+            "Dias de fluxo leve",
+            "Dentro de 12 horas",
+            "Não passes das 12 horas, mesmo que esteja quase vazio."
+          ],
+          [
+            "À noite",
+            "Mesmo antes de dormir e logo ao acordar",
+            "Mantém a noite inteira abaixo das 12 horas."
+          ]
+        ]
+      },
+      "note": "Se as instruções do teu copo indicarem menos de 12 horas, segue as instruções."
+    },
+    "overnight": {
+      "title": "Posso dormir com um copo menstrual?",
+      "paragraphs": {
+        "first": "Sim, podes dormir com o copo menstrual, desde que não fique mais de 12 horas no total. Esvazia-o e lava-o mesmo antes de te deitares e volta a esvaziá-lo logo que acordes.",
+        "second": "É uma das principais razões pelas quais muitas pessoas trocam o tampão pelo copo. A FDA desaconselha usar um tampão mais de 8 horas, o que complica as noites longas. O copo dá-te mais algumas horas, por isso uma noite normal costuma caber sem despertador.",
+        "third": "Se fores dormir mais do que o habitual ou se o teu fluxo à noite for muito abundante, um penso higiénico ou umas cuecas menstruais como reforço protegem os lençóis. Uma fuga durante a noite quer normalmente dizer que o copo encheu ou não abriu por completo, não que haja algum problema."
+      }
+    },
+    "is-it-full": {
+      "title": "Como saber se o copo menstrual está cheio?",
+      "paragraphs": {
+        "first": "O sinal mais claro é haver fugas. Segundo a Cleveland Clinic, as fugas costumam significar que o copo esteve demasiado tempo e está cheio, ou que não ficou bem colocado. Como não consegues ver o interior, a maioria das pessoas aprende o seu ritmo nos primeiros ciclos.",
+        "second": "Estes sinais indicam que está na hora de o esvaziar:"
+      },
+      "items": {
+        "leaking": "Sangue nas cuecas ou no penso diário ao fim de algumas horas.",
+        "heaviness": "Sensação de peso ou de que o copo desceu mais do que o normal.",
+        "measure-lines": "Na última troca, o sangue chegava à marca de cima ou aos furinhos.",
+        "time": "Já passaram quase 12 horas desde a última vez que o esvaziaste."
+      },
+      "after": "Muitos copos têm marcas de medida na lateral, o que transforma cada troca numa olhadela rápida ao teu fluxo. O NHS, o serviço de saúde britânico, aconselha a falar com um médico se precisares de trocar de produto a cada 1 ou 2 horas, porque pode indicar períodos abundantes."
+    },
+    "left-in-too-long": {
+      "title": "O que acontece se ficar com o copo mais de 12 horas?",
+      "paragraphs": {
+        "first": "Se ficares com o copo mais de 12 horas, o mais habitual são fugas, um cheiro forte e irritação. Retira-o assim que te lembrares, esvazia-o, lava-o com água e um sabonete suave sem perfume e volta a colocá-lo, ou faz uma pausa com um penso higiénico.",
+        "second": "Se te esqueceste dele durante 24 horas, o conselho é o mesmo. Na maior parte das vezes não acontece mais nada. Repara em como te sentes nos dias seguintes e fala com o teu médico de família se notares um corrimento diferente, um cheiro que não passa, dor ou comichão.",
+        "third": "A síndrome do choque tóxico (SCT) está muito mais associada aos tampões, mas também já foram descritos casos com o copo menstrual. Uma revisão de 43 estudos publicada em 2019 na The Lancet Public Health encontrou cinco casos após o uso do copo. É raro, e o risco não pode ser comparado diretamente com o dos tampões, mas convém conheceres os sinais.",
+        "fourth": "Segundo o NHS, os sintomas do choque tóxico incluem:"
+      },
+      "items": {
+        "fever": "Febre alta que aparece de repente.",
+        "flu-like": "Sintomas parecidos com os da gripe, como dores musculares, arrepios ou dor de cabeça.",
+        "stomach": "Náuseas, vómitos ou diarreia.",
+        "rash": "Uma erupção na pele parecida com uma queimadura solar.",
+        "dizziness": "Tonturas ou desmaio.",
+        "confusion": "Confusão ou dificuldade em respirar."
+      },
+      "note": "Se tiveres o copo colocado e sentires estes sintomas, retira-o e liga para o 112. Diz ao médico que estavas a usar um copo menstrual."
+    },
+    "cup-or-tampon": {
+      "title": "Porque é que o copo pode ficar mais tempo do que um tampão?",
+      "paragraphs": {
+        "first": [
+          "O copo recolhe o sangue em vez de o absorver, e é essa a principal razão para poder ficar mais tempo. O tampão absorve o sangue e a humidade à sua volta, e a FDA limita o seu uso a 8 horas. Tens todos os pormenores no nosso guia sobre ",
+          {
+            "postId": "tampons",
+            "label": "quanto tempo podes ficar com o tampão"
+          },
+          "."
+        ],
+        "second": "Em proteção, o copo sai-se bem. A revisão da The Lancet Public Health mostrou que as fugas com o copo eram semelhantes ou menores do que com pensos e tampões, e em 13 estudos cerca de 73% das pessoas queriam continuar a usá-lo depois de experimentar.",
+        "third": "O ponto fraco é a adaptação. Segundo a mesma revisão, a maioria precisa de alguns ciclos para se sentir à vontade a colocá-lo e a retirá-lo. A Cleveland Clinic refere que cerca de 10% de quem começa nota fugas no início, o que costuma melhorar com prática ou com outro tamanho."
+      },
+      "items": {
+        "wear-time": "Até 12 horas de uso, contra 8 de um tampão.",
+        "cost": "Reutilizável durante anos, por isso fica mais barato com o tempo.",
+        "waste": "Muito menos lixo do que os produtos descartáveis.",
+        "practice": "Colocar e retirar exige prática.",
+        "cleaning": "Esvaziá-lo numa casa de banho pública é menos prático."
+      }
+    },
+    "cleaning": {
+      "title": "Como higienizar o copo menstrual?",
+      "paragraphs": {
+        "first": "Lava as mãos, passa o copo por água e lava-o com água e um sabonete suave sem perfume sempre que o esvaziares. Muitas marcas sugerem começar com água fria, porque a água quente pode fazer com que o sangue manche o silicone.",
+        "second": "Não precisas de o ferver sempre. A FDA recomenda esterilizá-lo no fim do período, lavando-o e mergulhando-o em água a ferver, normalmente durante 1 a 2 minutos. A Cleveland Clinic fala em alguns minutos. Confirma as instruções da tua marca, deixa-o secar bem e guarda-o num sítio fresco e seco, de preferência numa bolsa de tecido em vez de uma caixa fechada.",
+        "third": "Se estiveres fora e sem lavatório, esvazia-o na sanita, limpa-o com papel higiénico ou passa-o por água de uma garrafa e lava-o bem assim que puderes. É normal que fique um pouco amarelado com o tempo. Substitui-o se ficar pegajoso, rachar, rasgar ou continuar a cheirar mesmo depois de fervido."
+      }
+    },
+    "who-should-check": {
+      "title": "Quem deve falar com um médico antes de usar o copo?",
+      "paragraphs": {
+        "first": "O copo menstrual serve à maioria das pessoas que têm período, mas há situações em que vale a pena falar primeiro com o teu médico de família ou ginecologista. A FDA e a Cleveland Clinic referem estas:"
+      },
+      "items": {
+        "iud": "Tens um DIU: o copo pode mexer nos fios ou na posição, por isso pergunta primeiro ao teu ginecologista.",
+        "after-birth": "Tiveste um bebé há pouco tempo ou tens uma infeção vaginal: o copo destina-se apenas ao sangue do período.",
+        "latex": "És alérgica ao látex: escolhe um copo de silicone médico.",
+        "prolapse": "Tens um prolapso uterino: o copo pode não ficar bem preso.",
+        "pain": "Colocar ou usar o copo dói: para e pede conselho a um profissional de saúde."
+      },
+      "note": "Deixa de usar o copo e consulta um médico se notares comichão, erupção, dor ou inchaço."
+    },
+    "change-reminder": {
+      "title": "Como te lembrares de esvaziar o copo?",
+      "paragraphs": {
+        "first": "O mais simples é apontares a hora em que colocas o copo e programares um lembrete para a troca seguinte, às 12 horas ou antes nos dias de fluxo abundante. O copo é tão confortável que é fácil esquecê-lo, sobretudo num dia cheio.",
+        "second": "O Mochi é uma app de acompanhamento do período gratuita e privada para iPhone, com um lembrete de troca integrado. Ativas o lembrete quando colocas o copo e ele avisa-te quando é hora de o esvaziar, com uma contagem decrescente discreta. Funciona sem internet, não precisa de conta e guarda os dados do teu ciclo no teu iPhone.",
+        "third": [
+          "Um lembrete ajuda a manter o ritmo, mas nunca esperes pelo aviso se não te sentires bem. Se em alguns dias preferes pensos, o nosso guia sobre ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar o penso"
+          },
+          " também te pode ajudar."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "sleep": {
+      "question": "Posso dormir com um copo menstrual?",
+      "answer": "Sim, desde que não passe das 12 horas no total. Esvazia-o mesmo antes de te deitares e logo ao acordar. Nas noites de fluxo muito abundante, um penso higiénico de reforço evita manchas nos lençóis."
+    },
+    "pros-and-cons": {
+      "question": "Quais são as vantagens e desvantagens do copo menstrual?",
+      "answer": "Dura até 12 horas, é reutilizável durante anos e gera muito menos lixo. Em contrapartida, encontrar o tamanho certo pode levar algumas tentativas, colocar e retirar exige prática e esvaziá-lo numa casa de banho pública é menos prático. A FDA lembra ainda que pode interferir com o DIU."
+    },
+    "how-it-works": {
+      "question": "Como funciona o copo menstrual?",
+      "answer": "É um copo flexível, normalmente de silicone, que se dobra para entrar na vagina e depois se abre, criando uma ligeira vedação. Em vez de absorver, recolhe o sangue. Retiras, esvazias, lavas e voltas a colocar, no máximo a cada 12 horas."
+    },
+    "how-many-hours": {
+      "question": "Quantas horas posso ficar com o copo menstrual?",
+      "answer": "Até 12 horas, segundo a FDA e a Cleveland Clinic. Nos dias de fluxo abundante vais provavelmente precisar de o esvaziar antes, por vezes a cada 4 a 6 horas. Se a embalagem do teu copo indicar menos tempo, segue a embalagem."
+    },
+    "more-than-12-hours": {
+      "question": "O que acontece se ficar com o copo mais de 12 horas?",
+      "answer": "O mais comum são fugas, mau cheiro ou irritação. Retira-o, esvazia-o e lava-o. Fala com o teu médico se notares corrimento diferente, dor ou comichão, e liga para o 112 se tiveres febre repentina, erupção, vómitos ou tonturas."
+    },
+    "cup-or-disc": {
+      "question": "Qual a diferença entre um copo menstrual e um disco menstrual?",
+      "answer": "O copo fica mais abaixo na vagina e segura-se por uma ligeira sucção. O disco é mais achatado e fica encaixado mais acima, junto ao colo do útero, sem sucção. A maioria dos discos também tem um limite de 12 horas, mas confirma as instruções da marca."
+    },
+    "placed-correctly": {
+      "question": "Como saber se o copo menstrual está bem colocado?",
+      "answer": "Se estiver bem colocado, não o sentes e não há fugas. Passa um dedo à volta da base para confirmar que abriu por completo. Se sentires uma dobra, roda-o ligeiramente ou puxa-o um pouco para baixo e volta a empurrar para que se abra."
+    },
+    "sanitize": {
+      "question": "Como higienizar o copo menstrual?",
+      "answer": "Em cada troca, lava-o com água e sabonete suave sem perfume. No fim do período, ferve-o durante 1 a 2 minutos, segundo a FDA, ou de acordo com as instruções da marca, e deixa-o secar bem antes de o guardar."
+    }
+  }
+}

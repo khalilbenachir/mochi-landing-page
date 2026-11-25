@@ -594,7 +594,10 @@
       "tamponSafety": "FDA: Tampons",
       "tamponsCanada": "Health Canada: Menstrual tampons",
       "toxicShock": "NHS: Toxic shock syndrome",
-      "tamponTooLong": "Cleveland Clinic: Leaving a tampon in too long"
+      "tamponTooLong": "Cleveland Clinic: Leaving a tampon in too long",
+      "menstrualCups": "FDA: Menstrual cups",
+      "cupGuide": "Cleveland Clinic: Menstrual cups",
+      "cupReview": "The Lancet Public Health: Menstrual cup review (2019)"
     },
     "editorial": {
       "title": "Our editorial approach",
