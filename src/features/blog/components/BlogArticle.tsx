@@ -2,6 +2,7 @@ import type { ComponentProps, ReactNode } from "react";
 import { Rays } from "@/features/landing/components/shared/decor";
 import type { SourceLink } from "@/lib/editorial-sources";
 import { cn } from "@/lib/utils";
+import { BlogDisclosure } from "./BlogDisclosure.client";
 
 function Root({ className, ...props }: ComponentProps<"article">) {
   return <article className={cn("w-full", className)} {...props} />;
@@ -66,13 +67,8 @@ function SectionSources({ label, sources }: { label: string; sources: SourceLink
 
 function Sources({ heading, sources, children }: { heading: string; sources: SourceLink[]; children?: ReactNode }) {
   return (
-    <details className="mt-[26px] rounded-[15px] border border-blog-border bg-landing-canvas px-[18px] py-[14px]">
-      <summary className="cursor-pointer">
-        <h2 id="article-sources" className="inline text-[17px] font-heavy text-ink-navy">
-          {heading}
-        </h2>
-      </summary>
-      <ul className="mt-[16px] grid gap-[10px] text-[13px] font-semibold leading-[1.4]">
+    <BlogDisclosure id="article-sources" heading={heading}>
+      <ul className="mt-[2px] grid gap-[10px] text-[13px] font-semibold leading-[1.4]">
         {sources.map(({ href, label }) => (
           <li key={href}>
             <a
@@ -85,7 +81,7 @@ function Sources({ heading, sources, children }: { heading: string; sources: Sou
         ))}
       </ul>
       {children}
-    </details>
+    </BlogDisclosure>
   );
 }
 
