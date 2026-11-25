@@ -42,6 +42,10 @@ export const EDITORIAL_SOURCE_URLS = {
   dripIos: "https://apps.apple.com/us/app/drip-period-cycle-tracker/id1584564949",
   dripAndroid: "https://play.google.com/store/apps/details?id=com.drip",
   appleCycle: "https://support.apple.com/en-us/120356",
+  tamponSafety: "https://www.fda.gov/medical-devices/menstrual-product-options-facts-and-safe-use/tampons",
+  tamponsCanada: "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/menstrual-tampons.html",
+  toxicShock: "https://www.nhs.uk/conditions/toxic-shock-syndrome/",
+  tamponTooLong: "https://health.clevelandclinic.org/what-happens-if-you-leave-a-tampon-in-too-long/",
 } as const;
 
 export type EditorialSourceId = keyof typeof EDITORIAL_SOURCE_URLS;

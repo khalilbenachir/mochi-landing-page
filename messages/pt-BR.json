@@ -590,7 +590,11 @@
       "heavyBleedingGuidance": "NICE: diretrizes sobre sangramento menstrual intenso",
       "heavyFlowVolume": "Healthdirect: fluxo intenso e volume de sangue",
       "periodBlood": "Cleveland Clinic: cor do sangue menstrual",
-      "fertilityCycleDay": "The Fertility Center: dia 1 do ciclo"
+      "fertilityCycleDay": "The Fertility Center: dia 1 do ciclo",
+      "tamponSafety": "FDA: absorventes internos",
+      "tamponsCanada": "Health Canada: absorventes internos",
+      "toxicShock": "NHS: síndrome do choque tóxico",
+      "tamponTooLong": "Cleveland Clinic: absorvente interno por tempo demais"
     },
     "editorial": {
       "title": "Nossa abordagem editorial",

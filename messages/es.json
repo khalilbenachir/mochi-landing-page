@@ -590,7 +590,11 @@
       "heavyBleedingGuidance": "NICE: guía sobre sangrado menstrual abundante",
       "heavyFlowVolume": "Healthdirect: reglas abundantes y volumen sanguíneo",
       "periodBlood": "Cleveland Clinic: color de la sangre menstrual",
-      "fertilityCycleDay": "The Fertility Center: día 1 del ciclo"
+      "fertilityCycleDay": "The Fertility Center: día 1 del ciclo",
+      "tamponSafety": "FDA: tampones",
+      "tamponsCanada": "Salud Canadá: tampones menstruales",
+      "toxicShock": "NHS: síndrome de shock tóxico",
+      "tamponTooLong": "Cleveland Clinic: dejarse un tampón demasiado tiempo"
     },
     "editorial": {
       "title": "Nuestro criterio editorial",

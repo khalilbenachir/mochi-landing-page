@@ -1,0 +1,18 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-25",
+  "file": "public/blog-art/tampon-care-mochi.webp",
+  "references": [
+    "public/blog-art/pad-care-mochi.webp"
+  ],
+  "use": "Article hero, blog cards, related reading and generated social cards in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1200,
+    "height": 800,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box, fitted into 1120x740 and centred on a 1200x800 transparent canvas from 1536x1024."
+  },
+  "prompt": "Use the attached image ONLY as the character and style reference: the same pink mochi mascot (rounded drop/dome body, bold darker-pink outline, glossy white highlights, navy eyes, pink cheeks, small mouth, tiny round pink hands), the same cream puffy cushion and the same soft-shaded flat sticker style and palette. Create a NEW scene for a blog article about how long you can leave a tampon in. Mochi sits on the cushion with a calm, caring, knowing smile, one tiny hand pointing at a round cream alarm clock beside it (simple clock face with two hands, no numbers). Next to the clock stands a small pastel pink rectangular box with a soft lavender droplet symbol on it (no text) and, in front of it, one individually wrapped tampon in a simple pastel lavender wrapper, shown discreetly and cleanly. Floating around: a small pink droplet and two little lavender sparkles. Gentle, reassuring, practical mood, not clinical. No numbers, no letters, no words, no logos anywhere. Landscape 3:2, Mochi left of centre, clock and box right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration."
+}
