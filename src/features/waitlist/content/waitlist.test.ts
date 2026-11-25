@@ -14,16 +14,23 @@ describe("waitlist", () => {
     expect(normalizeEmail(`${"a".repeat(250)}@example.com`)).toBeUndefined();
   });
 
-  it("inserts the address, ignoring duplicates, with the visitor's language", async () => {
+  it("inserts the address with the visitor's language", async () => {
     const fetcher = ok();
     const result = await joinWaitlist({ email: "Me@Example.com", locale: "fr" }, env, fetcher);
     expect(result).toEqual({ status: 200, body: { ok: true } });
     const [url, init] = (fetcher as unknown as ReturnType<typeof vi.fn>).mock.calls[0]!;
-    expect(url).toBe("https://example.supabase.co/rest/v1/waitlist?on_conflict=email");
-    expect(init.headers.Prefer).toBe("resolution=ignore-duplicates,return=minimal");
+    expect(url).toBe("https://example.supabase.co/rest/v1/waitlist");
+    expect(init.headers.Prefer).toBe("return=minimal");
     expect(init.headers.apikey).toBe("anon-key");
     expect(init.headers.Authorization).toBeUndefined();
     expect(JSON.parse(init.body)).toEqual({ email: "me@example.com", locale: "fr", source: "website" });
+  });
+
+  it("treats an address that is already on the list as success", async () => {
+    const duplicate = vi.fn(async () => new Response(JSON.stringify({ code: "23505" }), { status: 409 })) as unknown as typeof fetch;
+    expect(await joinWaitlist({ email: "me@example.com" }, env, duplicate)).toEqual({ status: 200, body: { ok: true } });
+    const otherConflict = vi.fn(async () => new Response(JSON.stringify({ code: "42501" }), { status: 409 })) as unknown as typeof fetch;
+    expect((await joinWaitlist({ email: "me@example.com" }, env, otherConflict)).status).toBe(502);
   });
 
   it("also sends legacy JWT anon keys as a bearer token", async () => {

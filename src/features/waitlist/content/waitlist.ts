@@ -14,9 +14,10 @@ export type WaitlistResult = { status: 200 | 400 | 502 | 503; body: { ok: true }
 export type WaitlistEnv = { url?: string; key?: string };
 
 /**
- * Adds an email to the Supabase `waitlist` table (docs/supabase/waitlist.sql). The table only
- * accepts inserts, and a repeated address is silently ignored, so a visitor can sign up twice
- * without an error and nothing about other signups is ever revealed.
+ * Adds an email to the Supabase `waitlist` table (docs/supabase/waitlist.sql). The public key may
+ * only INSERT, so this is a plain insert: an upsert (`ON CONFLICT DO NOTHING`) would need a read
+ * policy under row-level security. A repeated address hits the unique index (409, code 23505) and
+ * counts as success, so signing up twice is harmless and reveals nothing about other signups.
  */
 export async function joinWaitlist(input: unknown, env: WaitlistEnv, fetcher: typeof fetch = fetch): Promise<WaitlistResult> {
   if (!env.url || !env.key) return { status: 503, body: { error: "unavailable" } };
@@ -27,16 +28,17 @@ export async function joinWaitlist(input: unknown, env: WaitlistEnv, fetcher: ty
   if (!address) return { status: 400, body: { error: "invalid" } };
   const language = routing.locales.includes(locale as AppLocale) ? (locale as AppLocale) : null;
 
-  const response = await fetcher(`${env.url.replace(/\/$/, "")}/rest/v1/waitlist?on_conflict=email`, {
+  const response = await fetcher(`${env.url.replace(/\/$/, "")}/rest/v1/waitlist`, {
     method: "POST",
     headers: {
       apikey: env.key,
       // Legacy anon keys are JWTs and also go in Authorization; new `sb_publishable_…` keys must not.
       ...(env.key.startsWith("eyJ") ? { Authorization: `Bearer ${env.key}` } : {}),
       "Content-Type": "application/json",
-      Prefer: "resolution=ignore-duplicates,return=minimal",
+      Prefer: "return=minimal",
     },
     body: JSON.stringify({ email: address, locale: language, source: "website" }),
   });
-  return response.ok ? { status: 200, body: { ok: true } } : { status: 502, body: { error: "failed" } };
+  const alreadyJoined = response.status === 409 && (await response.json().catch(() => null))?.code === "23505";
+  return response.ok || alreadyJoined ? { status: 200, body: { ok: true } } : { status: 502, body: { error: "failed" } };
 }

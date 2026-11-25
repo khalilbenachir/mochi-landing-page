@@ -11,7 +11,8 @@ create table if not exists public.waitlist (
   constraint waitlist_email_format check (email = lower(email) and char_length(email) <= 254 and position('@' in email) > 1)
 );
 
--- One row per address; the API inserts with ON CONFLICT (email) DO NOTHING.
+-- One row per address. The API sends a plain insert and treats the duplicate-key error
+-- (409 / 23505) as success: an upsert would need a SELECT policy, which we don't want.
 create unique index if not exists waitlist_email_key on public.waitlist (email);
 
 -- The website key may only INSERT. No SELECT, UPDATE or DELETE policy exists, so the list
