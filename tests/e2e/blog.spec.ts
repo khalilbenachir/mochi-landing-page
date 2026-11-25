@@ -53,9 +53,9 @@ for (const post of BLOG_POSTS) {
 
     // The FAQPage carries exactly the questions and answers the article shows, in order.
     const faq = graph["@graph"].find((node: { "@type": string }) => node["@type"] === "FAQPage");
-    const questions = page.locator('section[aria-labelledby="article-questions"] details');
+    const questions = page.locator('section[aria-labelledby="article-questions"] h3 + [role="region"]');
     const visible = await questions.evaluateAll((items) => items.map((item) => ({
-      question: item.querySelector("summary span")?.textContent ?? "",
+      question: item.previousElementSibling?.querySelector("button span")?.textContent ?? "",
       answer: item.querySelector("p")?.textContent ?? "",
     })));
     expect(visible).toEqual(Object.values(copy.faq));
@@ -270,11 +270,12 @@ test("article contents, copy link and native questions work", async ({ page, con
   await page.getByRole("button", { name: en.Blog.copyLink }).click();
   await expect(page.getByRole("status")).toHaveText(en.Blog.copiedLink);
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(`${baseOrigin}/blog/how-often-to-change-your-pad`);
-  const questions = page.locator('details[name="faq-pads"]');
-  await expect(questions.first()).toHaveAttribute("open", "");
-  await questions.nth(1).locator("summary").click();
-  await expect(questions.nth(1)).toHaveAttribute("open", "");
-  await expect(questions.first()).not.toHaveAttribute("open");
+  // One answer open at a time: opening the second question closes the first.
+  const questions = page.locator('section[aria-labelledby="article-questions"] h3 button');
+  await expect(questions.first()).toHaveAttribute("aria-expanded", "true");
+  await questions.nth(1).click();
+  await expect(questions.nth(1)).toHaveAttribute("aria-expanded", "true");
+  await expect(questions.first()).toHaveAttribute("aria-expanded", "false");
 });
 
 test("mobile article contents can be expanded", async ({ page }) => {

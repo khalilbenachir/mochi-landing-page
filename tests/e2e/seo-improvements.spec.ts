@@ -83,8 +83,9 @@ for (const locale of BLOG_LOCALES) {
     const privateFaq = copy.faq.private!;
     const answer = faq.mainEntity.find((item: { name: string }) => item.name === privateFaq.question).acceptedAnswer.text;
     expect(answer).toBe(privateFaq.answer);
-    const question = page.locator("details").filter({ has: page.locator("summary", { hasText: privateFaq.question }) });
-    await question.locator("summary").click();
-    await expect(question.locator("p")).toHaveText(answer);
+    const question = page.getByRole("button", { name: privateFaq.question, exact: true });
+    await question.click();
+    await expect(question).toHaveAttribute("aria-expanded", "true");
+    await expect(page.getByRole("region", { name: privateFaq.question, exact: true })).toHaveText(answer);
   });
 }

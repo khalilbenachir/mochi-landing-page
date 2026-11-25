@@ -18,6 +18,7 @@ import { ArticleNavigation } from "./ArticleNavigation";
 import { BlogArticle } from "./BlogArticle";
 import { BlogCard } from "./BlogCard";
 import { BlogCta } from "./BlogCta";
+import { BlogFaq } from "./BlogFaq.client";
 import { BlogShell } from "./BlogShell";
 import { BlogStructuredData } from "./BlogStructuredData";
 import { PostCard } from "./PostCard";
@@ -284,25 +285,7 @@ function ArticleQuestions({ post }: { post: BlogPost }) {
       <BlogArticle.Heading id="article-questions" className="mb-[14px]">
         {t("questionsHeading")}
       </BlogArticle.Heading>
-      {Object.entries(copy.faq).map(([id, item], index) => (
-        <details
-          key={id}
-          name={`faq-${post.id}`}
-          open={index === 0}
-          className="group/question mt-[5px] rounded-[14px] border border-blog-border bg-white px-[18px] [box-shadow:0_2px_5px_var(--color-blog-shadow)]"
-        >
-          <summary className="flex cursor-pointer items-start justify-between gap-[18px] py-[11px] text-[17px] font-heavy leading-[1.2] [&::-webkit-details-marker]:hidden">
-            <span>{item.question}</span>
-            <span aria-hidden="true" className="font-normal group-open/question:hidden">
-              +
-            </span>
-            <span aria-hidden="true" className="hidden font-normal group-open/question:inline">
-              −
-            </span>
-          </summary>
-          <p className="pb-[14px] text-[15px] font-normal leading-[1.5] text-ink-slate">{item.answer}</p>
-        </details>
-      ))}
+      <BlogFaq items={Object.entries(copy.faq).map(([id, { question, answer }]) => ({ id, question, answer }))} />
     </section>
   );
 }
