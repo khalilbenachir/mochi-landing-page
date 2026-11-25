@@ -590,7 +590,11 @@
       "heavyBleedingGuidance": "NICE : recommandations sur les règles abondantes",
       "heavyFlowVolume": "Healthdirect : règles abondantes et volume sanguin",
       "periodBlood": "Cleveland Clinic : couleur du sang menstruel",
-      "fertilityCycleDay": "The Fertility Center : premier jour du cycle"
+      "fertilityCycleDay": "The Fertility Center : premier jour du cycle",
+      "tamponSafety": "FDA : tampons",
+      "tamponsCanada": "Santé Canada : tampons hygiéniques",
+      "toxicShock": "NHS : syndrome du choc toxique",
+      "tamponTooLong": "Cleveland Clinic : garder un tampon trop longtemps"
     },
     "editorial": {
       "title": "Notre démarche éditoriale",

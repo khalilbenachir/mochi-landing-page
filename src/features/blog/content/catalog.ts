@@ -14,7 +14,8 @@ export type BlogPostId =
   | "floAlternatives"
   | "bloodLoss"
   | "appleWatch"
-  | "latePeriod";
+  | "latePeriod"
+  | "tampons";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -40,6 +41,24 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "tampons",
+    category: "period-care",
+    slug: "how-long-can-you-leave-a-tampon-in",
+    image: "/blog-art/tampon-care-mochi.webp",
+    tone: "bg-blog-mint",
+    publishedAt: "2026-11-25",
+    sections: [
+      { id: "how-long", sources: ["tamponSafety", "tamponTooLong"] },
+      { id: "overnight", sources: ["tamponSafety", "tamponsCanada"] },
+      { id: "heavy-and-light-flow", sources: ["tamponSafety", "tamponTooLong"] },
+      { id: "swimming-and-peeing", sources: ["tamponSafety"] },
+      { id: "toxic-shock-syndrome", sources: ["toxicShock", "tamponSafety"] },
+      { id: "left-in-too-long", sources: ["toxicShock", "tamponSafety"] },
+      { id: "tampon-or-pad", sources: ["tamponsCanada"] },
+      { id: "change-reminder", sources: ["mochiFeatures", "toxicShock"] },
+    ],
+  },
   {
     id: "latePeriod",
     category: "symptoms-moods",

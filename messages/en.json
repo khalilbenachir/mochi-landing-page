@@ -590,7 +590,11 @@
       "heavyBleedingGuidance": "NICE: Heavy menstrual bleeding guidance",
       "heavyFlowVolume": "Healthdirect: Heavy periods and blood volume",
       "periodBlood": "Cleveland Clinic: Period blood color",
-      "fertilityCycleDay": "The Fertility Center: Cycle Day 1"
+      "fertilityCycleDay": "The Fertility Center: Cycle Day 1",
+      "tamponSafety": "FDA: Tampons",
+      "tamponsCanada": "Health Canada: Menstrual tampons",
+      "toxicShock": "NHS: Toxic shock syndrome",
+      "tamponTooLong": "Cleveland Clinic: Leaving a tampon in too long"
     },
     "editorial": {
       "title": "Our editorial approach",
