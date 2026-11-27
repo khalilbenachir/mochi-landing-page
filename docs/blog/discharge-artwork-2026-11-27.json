@@ -1,0 +1,19 @@
+{
+  "tool": "ChatGPT built-in image generation",
+  "generatedOn": "2026-11-27",
+  "file": "public/blog-art/discharge-mochi.webp",
+  "references": [
+    "public/blog-art/cup-care-mochi.webp",
+    "public/blog-art/tampon-care-mochi.webp"
+  ],
+  "use": "Article hero, blog cards, related reading and generated social cards in all six languages",
+  "output": {
+    "format": "WebP",
+    "width": 1200,
+    "height": 800,
+    "quality": 82,
+    "transparent": true,
+    "note": "Trimmed to the alpha bounding box, fitted into 1120x740 and centred on a 1200x800 transparent canvas from 1536x1024."
+  },
+  "prompt": "Same character, same style and same cushion as the images you made in this chat. New scene for a blog article about vaginal discharge before your period, shown in a gentle, discreet, non-clinical way. Mochi sits on the cushion with a calm, reassuring, knowing smile, one tiny hand pointing at a small cream wall calendar page beside it (a simple grid of little squares with two squares softly circled in pink, no numbers, no letters). In front of the calendar lies one small individually wrapped panty liner in a soft pastel lavender wrapper, plain and clean. Floating around: one small clear water droplet with a white shine, a tiny pink heart and two little lavender sparkles. Nothing graphic, nothing anatomical. Gentle, caring mood. No numbers, no letters, no words, no logos anywhere. Landscape 3:2, Mochi left of centre, calendar and liner right, generous margins, everything fully visible. Background: genuinely TRANSPARENT (alpha), no floor, no shadow panel, no backdrop. Clean antialiased cutout edges. Output only the illustration."
+}

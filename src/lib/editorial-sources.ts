@@ -49,6 +49,10 @@ export const EDITORIAL_SOURCE_URLS = {
   menstrualCups: "https://www.fda.gov/medical-devices/menstrual-product-options-facts-and-safe-use/menstrual-cups",
   cupGuide: "https://health.clevelandclinic.org/menstrual-cup",
   cupReview: "https://pubmed.ncbi.nlm.nih.gov/31324419/",
+  vaginalDischarge: "https://www.nhs.uk/symptoms/vaginal-discharge/",
+  dischargeGuide: "https://my.clevelandclinic.org/health/symptoms/4719-vaginal-discharge",
+  cervicalMucus: "https://my.clevelandclinic.org/health/body/21957-cervical-mucus",
+  pregnancySigns: "https://www.nhs.uk/pregnancy/trying-for-a-baby/signs-and-symptoms-of-pregnancy/",
 } as const;
 
 export type EditorialSourceId = keyof typeof EDITORIAL_SOURCE_URLS;

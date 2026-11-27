@@ -603,7 +603,11 @@
       "tamponTooLong": "Cleveland Clinic: Leaving a tampon in too long",
       "menstrualCups": "FDA: Menstrual cups",
       "cupGuide": "Cleveland Clinic: Menstrual cups",
-      "cupReview": "The Lancet Public Health: Menstrual cup review (2019)"
+      "cupReview": "The Lancet Public Health: Menstrual cup review (2019)",
+      "vaginalDischarge": "NHS: Vaginal discharge",
+      "dischargeGuide": "Cleveland Clinic: Vaginal discharge",
+      "cervicalMucus": "Cleveland Clinic: Cervical mucus",
+      "pregnancySigns": "NHS: Signs and symptoms of pregnancy"
     },
     "editorial": {
       "title": "Our editorial approach",

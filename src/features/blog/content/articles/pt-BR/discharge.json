@@ -1,0 +1,177 @@
+{
+  "title": "Corrimento antes da menstruação: o que é normal",
+  "description": "É normal ter corrimento antes da menstruação? Veja como ele muda no ciclo, se pode indicar gravidez e quais cores ou cheiros pedem uma consulta.",
+  "imageAlt": "Mochi, um mascote rosa, ao lado de um calendário e de um pequeno protetor diário",
+  "intro": "Ter corrimento antes da menstruação é normal. O NHS, o serviço de saúde britânico, lembra que a maioria das mulheres tem, e que o corrimento saudável é transparente ou branco, grosso e pegajoso ou escorregadio e úmido, sem cheiro forte. Ele muda ao longo do ciclo: mais úmido e claro perto da ovulação, e depois geralmente mais grosso, pegajoso ou escasso até a menstruação descer.",
+  "sections": {
+    "before-period": {
+      "title": "É normal ter corrimento antes da menstruação?",
+      "paragraphs": {
+        "first": "Sim. O corrimento é produzido por glândulas do colo do útero e da vagina, e mantém a vagina limpa e úmida. Segundo o NHS, ele é normal enquanto não tiver cheiro forte ou desagradável, for transparente ou branco e for grosso e pegajoso ou escorregadio e úmido.",
+        "second": "Nos dias antes da menstruação, muitas pessoas notam um corrimento branco, grosso ou cremoso. Outras quase não têm ou se sentem mais secas que o normal. A Cleveland Clinic descreve o corrimento depois da ovulação como seco ou quase seco até a menstruação, mas cada corpo é diferente, e os dois casos podem ser normais.",
+        "third": "O que importa é o que é normal para você. Mudança de cor, cheiro ou textura, ou coceira e ardência, são os sinais que merecem atenção, e não o simples fato de ter corrimento."
+      }
+    },
+    "through-your-cycle": {
+      "title": "Como o corrimento muda ao longo do ciclo?",
+      "paragraphs": {
+        "first": "Seus hormônios mudam a quantidade e a textura do corrimento ao longo do mês. A Cleveland Clinic descreve um padrão típico para um ciclo de 28 dias. Se o seu ciclo for mais curto ou mais longo, os dias mudam, então encare isso como fases aproximadas, não como datas exatas.",
+        "second": [
+          "O corrimento mais úmido e escorregadio costuma aparecer perto da ovulação, por isso é chamado de muco fértil. Nosso guia sobre as ",
+          {
+            "postId": "phases",
+            "label": "quatro fases do ciclo menstrual"
+          },
+          " explica o que acontece no seu corpo em cada fase."
+        ]
+      },
+      "table": {
+        "caption": "Corrimento comum em cada fase de um ciclo de 28 dias, segundo a Cleveland Clinic",
+        "columns": [
+          "Fase",
+          "Mais ou menos",
+          "Como o corrimento costuma ser"
+        ],
+        "rows": [
+          [
+            "Logo depois da menstruação",
+            "Dias 1 a 4",
+            "Seco ou um pouco pegajoso, branco ou levemente amarelado."
+          ],
+          [
+            "Antes da ovulação",
+            "Dias 4 a 9",
+            "Pegajoso no começo, depois cremoso, turvo e mais úmido."
+          ],
+          [
+            "Perto da ovulação",
+            "Dias 10 a 14",
+            "Transparente, elástico e escorregadio, como clara de ovo crua."
+          ],
+          [
+            "Depois da ovulação até a menstruação",
+            "Dias 15 a 28",
+            "Mais grosso e pegajoso, ou seco ou quase seco."
+          ]
+        ]
+      },
+      "note": "O NHS acrescenta que o corrimento costuma ser maior na gravidez, depois da relação sexual e com alguns anticoncepcionais."
+    },
+    "period-coming": {
+      "title": "O corrimento indica que a menstruação vai descer?",
+      "paragraphs": {
+        "first": "Sozinho, o corrimento não diz em que dia a menstruação vai descer. O corrimento branco ou cremoso pode aparecer alguns dias antes ou nem aparecer, e o padrão pode mudar de um ciclo para outro.",
+        "second": "Outras mudanças nas uma ou duas semanas antes da menstruação costumam dizer mais. O Office on Women's Health, dos Estados Unidos, cita entre os sintomas pré-menstruais:"
+      },
+      "items": {
+        "breasts": "Seios inchados ou doloridos.",
+        "bloating": "Inchaço ou gases.",
+        "cramps": "Cólica, dor de cabeça ou nas costas.",
+        "tiredness": "Cansaço ou sono ruim.",
+        "cravings": "Mudanças no apetite ou vontade de comer doce.",
+        "mood": "Mudanças de humor, irritação ou tristeza."
+      },
+      "after": "O jeito mais confiável de saber quando vem a próxima menstruação é registrar os seus ciclos. Depois de alguns meses, as datas mostram o seu ritmo muito melhor do que um sintoma isolado."
+    },
+    "pregnancy": {
+      "title": "Corrimento antes da menstruação ou gravidez: como saber?",
+      "paragraphs": {
+        "first": "O corrimento não mostra se você está grávida. O NHS cita \"mais corrimento vaginal\" entre os possíveis primeiros sinais de gravidez, mas ter mais corrimento também é normal antes da menstruação, perto da ovulação e depois da relação. A Cleveland Clinic é clara: o muco cervical não consegue prever uma gravidez, e só um teste confirma.",
+        "second": "Segundo o NHS, a maioria dos testes de gravidez pode ser feita a partir do primeiro dia de atraso da menstruação. Se você não sabe quando ela deveria descer, faça o teste pelo menos 21 dias depois da última relação sem proteção. Alguns testes muito sensíveis funcionam alguns dias antes.",
+        "third": [
+          "Às vezes aparece um corrimento rosado ou marrom no começo da gravidez, mas ele tem muitas outras causas. Se a menstruação atrasou e o teste deu negativo, nosso guia sobre ",
+          {
+            "postId": "latePeriod",
+            "label": "menstruação atrasada sem gravidez"
+          },
+          " traz os motivos mais comuns."
+        ]
+      }
+    },
+    "types": {
+      "title": "Corrimento pegajoso, cremoso, clara de ovo ou aguado: o que significa?",
+      "paragraphs": {
+        "first": "O corrimento saudável costuma ter algumas texturas. Veja o que cada uma geralmente significa, segundo a Cleveland Clinic e o NHS:"
+      },
+      "items": {
+        "sticky": "Pegajoso: comum depois da menstruação e na segunda metade do ciclo.",
+        "creamy": "Cremoso ou branco leitoso: comum antes da ovulação e nos dias antes da menstruação.",
+        "egg-white": "Clara de ovo: transparente, elástico e escorregadio, sinal de que você está perto da ovulação.",
+        "watery": "Aguado: fino e transparente, muitas vezes perto da ovulação.",
+        "none": "Pouco ou nenhum: também é normal, principalmente logo depois da menstruação."
+      },
+      "after": "Corrimento transparente ou branco é normal, segundo a Cleveland Clinic. Corrimento amarelo, verde ou cinza pode indicar infecção, e o marrom ou vermelho costuma estar ligado à menstruação ou à gravidez. Se ele aparecer fora da menstruação, fale com a sua ginecologista."
+    },
+    "not-normal": {
+      "title": "Quando o corrimento não é normal?",
+      "paragraphs": {
+        "first": "Vale procurar uma consulta quando o corrimento muda em relação ao seu normal, principalmente com outros sintomas. O NHS associa algumas mudanças a infecções comuns e tratáveis:"
+      },
+      "items": {
+        "fishy": "Cheiro de peixe pode ser vaginose bacteriana.",
+        "cottage-cheese": "Corrimento branco e grosso, parecido com leite talhado, muitas vezes com coceira, pode ser candidíase.",
+        "green-yellow": "Corrimento verde, amarelo ou espumoso pode ser tricomoníase.",
+        "pain-bleeding": "Corrimento com dor pélvica ou sangramento pode ser clamídia ou gonorreia.",
+        "sores": "Corrimento com bolhas ou feridas pode ser herpes genital."
+      },
+      "note": "Não tente se diagnosticar sozinha. Procure sua ginecologista ou uma unidade de saúde se o corrimento mudar de cor, cheiro ou textura, se aumentar muito, ou se você tiver coceira, ardência, dor ao fazer xixi, dor pélvica ou sangramento fora da menstruação ou depois da relação."
+    },
+    "comfort": {
+      "title": "Como ficar confortável com o corrimento?",
+      "paragraphs": {
+        "first": "Não dá para evitar o corrimento, e nem precisa: é assim que a vagina se limpa. O NHS recomenda lavar com cuidado a pele ao redor da vagina com água morna e sabonete suave sem perfume.",
+        "second": "Evite sabonetes e géis perfumados, desodorantes íntimos e lenços com perfume, e não faça ducha vaginal. Eles podem irritar a pele e desequilibrar a flora natural, o que favorece justamente as infecções que mudam o corrimento.",
+        "third": [
+          "Se em alguns dias você tem muito corrimento, a Cleveland Clinic diz que um protetor diário pode ajudar. Troque a cada poucas horas para a umidade não ficar na pele. Nosso guia sobre ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar absorventes e protetores"
+          },
+          " traz mais dicas."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "Por que registrar o seu corrimento?",
+      "paragraphs": {
+        "first": "Registrar o corrimento por alguns ciclos mostra o que é normal para o seu corpo, e assim uma mudança estranha fica mais fácil de perceber. Também ajuda a entender mais ou menos em que fase do ciclo você está, principalmente quando aparece o corrimento clara de ovo.",
+        "second": "No Mochi você registra o corrimento todo dia como pegajoso, cremoso, clara de ovo, aguado, incomum ou nenhum, junto com a menstruação, o humor e os sintomas. Você vê o padrão no calendário e, se algo mudar, tem um histórico para mostrar à sua ginecologista. O Mochi é um app de acompanhamento menstrual gratuito e privado para iPhone que guarda seus dados no seu celular.",
+        "third": "Acompanhar o corrimento não é método anticoncepcional. A Cleveland Clinic lembra que o muco cervical sozinho não é uma forma confiável de evitar a gravidez, e o Mochi nunca apresenta as previsões como anticoncepção."
+      }
+    }
+  },
+  "faq": {
+    "signs": {
+      "question": "Quais são os sinais de que a menstruação vai descer?",
+      "answer": "Os mais comuns são seios doloridos, inchaço, cólica, cansaço, vontade de comer doce e mudanças de humor, uma a duas semanas antes. O corrimento branco também pode aparecer, mas não diz o dia exato."
+    },
+    "fluid-before": {
+      "question": "Qual é o líquido que sai antes da menstruação descer?",
+      "answer": "Geralmente é corrimento branco, grosso ou cremoso, e no último dia pode sair um pouco marrom. É normal se não tiver cheiro forte, coceira ou ardência."
+    },
+    "pregnancy-mucus": {
+      "question": "Qual muco indica início de gravidez?",
+      "answer": "Nenhum confirma. O NHS cita mais corrimento que o normal, sem cheiro ou irritação, como possível sinal precoce, mas ele é muito parecido com o corrimento antes da menstruação. Só o teste de gravidez dá a resposta."
+    },
+    "normal": {
+      "question": "É normal ter corrimento antes da menstruação?",
+      "answer": "Sim. Corrimento branco, transparente, grosso ou pegajoso, sem cheiro forte, é normal antes da menstruação, segundo o NHS. Procure uma consulta só se ele mudar de cor, cheiro ou textura, ou vier com coceira."
+    },
+    "pregnancy-or-period": {
+      "question": "Como saber se o corrimento é de gravidez ou menstruação?",
+      "answer": "Pelo corrimento não dá para saber. Os sinais da TPM e do começo da gravidez são muito parecidos. Faça um teste de gravidez a partir do primeiro dia de atraso da menstruação."
+    },
+    "how-many-days": {
+      "question": "Quantos dias depois do corrimento branco desce a menstruação?",
+      "answer": "Não existe um número fixo. O corrimento branco pode aparecer alguns dias antes da menstruação, às vezes antes, e em alguns ciclos nem aparece. As datas dos seus ciclos dão uma previsão melhor."
+    },
+    "yellow": {
+      "question": "Corrimento amarelo antes da menstruação é normal?",
+      "answer": "Um tom levemente amarelado quando o corrimento seca na calcinha pode ser normal. Corrimento amarelo ou verde com cheiro, coceira ou espuma pode ser uma infecção, como a tricomoníase, então procure sua ginecologista."
+    },
+    "no-discharge": {
+      "question": "É normal não ter corrimento antes da menstruação?",
+      "answer": "Sim. A Cleveland Clinic descreve o corrimento depois da ovulação como muitas vezes seco ou quase seco até a menstruação. Não ter corrimento não é, sozinho, sinal de problema nem de gravidez."
+    }
+  }
+}

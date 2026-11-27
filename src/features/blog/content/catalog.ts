@@ -16,7 +16,8 @@ export type BlogPostId =
   | "appleWatch"
   | "latePeriod"
   | "tampons"
-  | "cups";
+  | "cups"
+  | "discharge";
 export type BlogCategory = "cycle-basics" | "period-care" | "symptoms-moods" | "privacy" | "using-mochi";
 
 export const BLOG_CATEGORIES: readonly BlogCategory[] = ["cycle-basics", "period-care", "symptoms-moods", "privacy", "using-mochi"];
@@ -42,6 +43,24 @@ export type BlogPost = {
 
 /** Catalog order breaks ties between posts released on the same day. */
 const CATALOG: readonly BlogPost[] = [
+  {
+    id: "discharge",
+    category: "symptoms-moods",
+    slug: "discharge-before-period",
+    image: "/blog-art/discharge-mochi.webp",
+    tone: "bg-blog-pink",
+    publishedAt: "2026-11-27",
+    sections: [
+      { id: "before-period", sources: ["vaginalDischarge", "cervicalMucus"] },
+      { id: "through-your-cycle", sources: ["cervicalMucus", "vaginalDischarge"] },
+      { id: "period-coming", sources: ["cervicalMucus", "pms"] },
+      { id: "pregnancy", sources: ["pregnancySigns", "cervicalMucus", "pregnancyTests"] },
+      { id: "types", sources: ["vaginalDischarge", "dischargeGuide", "cervicalMucus"] },
+      { id: "not-normal", sources: ["vaginalDischarge", "dischargeGuide"] },
+      { id: "comfort", sources: ["vaginalDischarge", "dischargeGuide"] },
+      { id: "tracking", sources: ["cervicalMucus", "mochiFeatures"] },
+    ],
+  },
   {
     id: "cups",
     category: "period-care",
