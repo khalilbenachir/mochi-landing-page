@@ -1,0 +1,177 @@
+{
+  "title": "Flujo antes de la regla: qué es normal y qué significa",
+  "description": "¿Es normal el flujo antes de la regla? Cómo cambia durante el ciclo, si puede indicar embarazo y qué colores u olores son motivo para ir al médico.",
+  "imageAlt": "Mochi, una mascota rosa, junto a un calendario y un pequeño salvaslip",
+  "intro": "Tener flujo antes de la regla es normal. El NHS, el servicio de salud británico, recuerda que la mayoría de mujeres y chicas lo tiene, y que el flujo sano es transparente o blanco, espeso y pegajoso o resbaladizo y húmedo, sin olor fuerte. Cambia a lo largo del ciclo: más húmedo y claro en torno a la ovulación, y después normalmente más espeso, pegajoso o escaso hasta que llega la regla.",
+  "sections": {
+    "before-period": {
+      "title": "¿Es normal tener flujo antes de la regla?",
+      "paragraphs": {
+        "first": "Sí. El flujo lo producen glándulas del cuello del útero y de la vagina, y mantiene la vagina limpia y húmeda. Según el NHS, es normal siempre que no tenga un olor fuerte o desagradable, sea transparente o blanco, y sea espeso y pegajoso o resbaladizo y húmedo.",
+        "second": "En los días antes de la regla, mucha gente nota flujo blanco, espeso o cremoso. Otras personas apenas tienen o se notan más secas de lo normal. La Cleveland Clinic describe el flujo después de la ovulación como seco o casi seco hasta la regla, pero cada cuerpo es distinto, y las dos cosas pueden ser normales.",
+        "third": "Lo que importa es lo que es normal para ti. Un cambio de color, olor o textura, o picor e irritación, son las señales a las que debes prestar atención, no el simple hecho de tener flujo."
+      }
+    },
+    "through-your-cycle": {
+      "title": "¿Cómo cambia el flujo a lo largo del ciclo?",
+      "paragraphs": {
+        "first": "Tus hormonas cambian la cantidad y la textura del flujo durante el mes. La Cleveland Clinic describe un patrón típico para un ciclo de 28 días. Si tu ciclo es más corto o más largo, los días se mueven, así que tómalos como etapas aproximadas y no como fechas exactas.",
+        "second": [
+          "El flujo más húmedo y resbaladizo suele aparecer en torno a la ovulación, por eso se le llama moco fértil. Nuestra guía sobre las ",
+          {
+            "postId": "phases",
+            "label": "cuatro fases del ciclo menstrual"
+          },
+          " explica qué pasa en tu cuerpo en cada etapa."
+        ]
+      },
+      "table": {
+        "caption": "Flujo habitual en cada etapa de un ciclo de 28 días, según la Cleveland Clinic",
+        "columns": [
+          "Etapa",
+          "Aproximadamente",
+          "Cómo suele ser el flujo"
+        ],
+        "rows": [
+          [
+            "Justo después de la regla",
+            "Días 1 a 4",
+            "Seco o algo pegajoso, blanco o un poco amarillento."
+          ],
+          [
+            "Antes de la ovulación",
+            "Días 4 a 9",
+            "Pegajoso al principio, luego cremoso, turbio y más húmedo."
+          ],
+          [
+            "En torno a la ovulación",
+            "Días 10 a 14",
+            "Transparente, elástico y resbaladizo, como clara de huevo cruda."
+          ],
+          [
+            "Después de la ovulación hasta la regla",
+            "Días 15 a 28",
+            "Más espeso y pegajoso, o seco o casi seco."
+          ]
+        ]
+      },
+      "note": "El NHS añade que el flujo suele ser más abundante durante el embarazo, después de tener relaciones y con algunos anticonceptivos."
+    },
+    "period-coming": {
+      "title": "¿El flujo avisa de que te va a venir la regla?",
+      "paragraphs": {
+        "first": "El flujo por sí solo no te dice qué día te va a bajar la regla. El flujo blanco o cremoso puede aparecer unos días antes o no aparecer, y el patrón puede cambiar de un ciclo a otro.",
+        "second": "Otros cambios en las una o dos semanas antes de la regla suelen decir más. La Office on Women's Health de Estados Unidos cita, entre otros, estos síntomas premenstruales:"
+      },
+      "items": {
+        "breasts": "Pechos hinchados o sensibles.",
+        "bloating": "Hinchazón o gases.",
+        "cramps": "Dolor tipo cólico, de cabeza o de espalda.",
+        "tiredness": "Cansancio o dormir mal.",
+        "cravings": "Cambios de apetito o antojos.",
+        "mood": "Cambios de humor, irritabilidad o bajón de ánimo."
+      },
+      "after": "La forma más fiable de saber cuándo te toca la próxima regla es registrar tus ciclos. Tras unos meses, las fechas muestran tu propio ritmo mucho mejor que cualquier síntoma suelto."
+    },
+    "pregnancy": {
+      "title": "¿Flujo premenstrual o embarazo? Cómo distinguirlos",
+      "paragraphs": {
+        "first": "El flujo no te dice si estás embarazada. El NHS cita «más flujo vaginal» entre los posibles primeros síntomas del embarazo, pero tener más flujo también es normal antes de la regla, en torno a la ovulación y después de tener relaciones. La Cleveland Clinic lo deja claro: el moco cervical no puede predecir un embarazo, y solo una prueba lo confirma.",
+        "second": "Según el NHS, la mayoría de pruebas de embarazo se pueden hacer desde el primer día de retraso de la regla. Si no sabes cuándo te toca, haz la prueba al menos 21 días después de la última relación sin protección. Algunas pruebas muy sensibles funcionan unos días antes.",
+        "third": [
+          "A veces aparece flujo rosado o marrón al principio del embarazo, pero tiene muchas otras causas. Si la regla se retrasa y la prueba da negativo, nuestra guía sobre el ",
+          {
+            "postId": "latePeriod",
+            "label": "retraso de la regla sin embarazo"
+          },
+          " repasa los motivos más habituales."
+        ]
+      }
+    },
+    "types": {
+      "title": "Flujo pegajoso, cremoso, clara de huevo o líquido: qué significa",
+      "paragraphs": {
+        "first": "El flujo sano suele encajar en unas pocas texturas. Esto es lo que suele significar cada una, según la Cleveland Clinic y el NHS:"
+      },
+      "items": {
+        "sticky": "Pegajoso: habitual después de la regla y en la segunda mitad del ciclo.",
+        "creamy": "Cremoso o blanco lechoso: habitual antes de la ovulación y en los días previos a la regla.",
+        "egg-white": "Clara de huevo: transparente, elástico y resbaladizo, señal de que estás cerca de la ovulación.",
+        "watery": "Líquido: fino y transparente, a menudo en torno a la ovulación.",
+        "none": "Poco o nada: también es normal, sobre todo justo después de la regla."
+      },
+      "after": "El flujo transparente o blanco es normal, según la Cleveland Clinic. El amarillo, verde o gris puede indicar una infección, y el marrón o rojo suele estar relacionado con la regla o con un embarazo. Si lo ves fuera de la regla, coméntaselo a tu médico."
+    },
+    "not-normal": {
+      "title": "¿Cuándo el flujo no es normal?",
+      "paragraphs": {
+        "first": "Conviene consultar cuando tu flujo cambia respecto a lo habitual, sobre todo si aparecen otros síntomas. El NHS relaciona algunos cambios con infecciones frecuentes y fáciles de tratar:"
+      },
+      "items": {
+        "fishy": "Un olor a pescado puede ser vaginosis bacteriana.",
+        "cottage-cheese": "Un flujo blanco y espeso como requesón, a menudo con picor, puede ser candidiasis.",
+        "green-yellow": "Un flujo verde, amarillo o espumoso puede ser tricomoniasis.",
+        "pain-bleeding": "Flujo con dolor pélvico o sangrado puede ser clamidia o gonorrea.",
+        "sores": "Flujo con ampollas o llagas puede ser herpes genital."
+      },
+      "note": "No intentes diagnosticarte tú misma. Ve a tu médico de cabecera, a tu ginecólogo o a un centro de salud sexual si tu flujo cambia de color, olor o textura, si tienes más de lo normal o si notas picor, irritación, dolor al orinar, dolor pélvico o sangrado entre reglas o después de tener relaciones."
+    },
+    "comfort": {
+      "title": "¿Cómo estar cómoda con el flujo?",
+      "paragraphs": {
+        "first": "El flujo no se puede evitar, ni hace falta: es la forma en que la vagina se limpia sola. El NHS recomienda lavar con suavidad la piel alrededor de la vagina con agua tibia y un jabón suave sin perfume.",
+        "second": "Evita jabones y geles perfumados, desodorantes y toallitas con aroma, y no te hagas duchas vaginales. Pueden irritar la piel y alterar el equilibrio natural, lo que favorece justo las infecciones que cambian el flujo.",
+        "third": [
+          "Si algunos días tienes mucho flujo, la Cleveland Clinic indica que un salvaslip puede ayudar. Cámbialo cada pocas horas para que la humedad no se quede pegada a la piel. En nuestra guía sobre ",
+          {
+            "postId": "pads",
+            "label": "cada cuánto cambiar compresas y salvaslips"
+          },
+          " tienes más consejos."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "¿Por qué apuntar tu flujo?",
+      "paragraphs": {
+        "first": "Apuntar tu flujo durante unos ciclos te enseña qué es normal para tu cuerpo, y así cualquier cambio raro salta antes a la vista. También ayuda a saber más o menos en qué punto del ciclo estás, sobre todo cuando aparece el flujo tipo clara de huevo.",
+        "second": "En Mochi puedes registrar cada día tu flujo como pegajoso, cremoso, clara de huevo, líquido, inusual o nada, junto con la regla, el ánimo y los síntomas. Ves el patrón en el calendario y, si algo cambia, tienes un registro para enseñárselo a tu médico. Mochi es una app de seguimiento de la regla gratuita y privada para iPhone que guarda tus datos en tu teléfono.",
+        "third": "Seguir el flujo no es un método anticonceptivo. La Cleveland Clinic recuerda que el moco cervical por sí solo no es una forma fiable de evitar un embarazo, y Mochi nunca presenta sus predicciones como anticoncepción."
+      }
+    }
+  },
+  "faq": {
+    "before-period": {
+      "question": "¿Cómo es el flujo cuando te va a venir la regla?",
+      "answer": "Suele ser blanco, espeso, cremoso o pegajoso, aunque a veces casi no hay. Las dos cosas son normales si no huele fuerte ni pica. Justo antes de la regla puede volverse un poco marrón."
+    },
+    "premenstrual-or-pregnancy": {
+      "question": "¿Cómo saber si es flujo premenstrual o embarazo?",
+      "answer": "Por el flujo no se puede saber. Un poco más de flujo puede ser un síntoma temprano de embarazo, pero también pasa antes de la regla y en la ovulación. Haz una prueba de embarazo desde el primer día de retraso."
+    },
+    "period-soon": {
+      "question": "¿Cómo saber si ya me va a venir la regla?",
+      "answer": "Las señales más habituales son pechos sensibles, hinchazón, dolor tipo cólico, cansancio, antojos y cambios de humor, una o dos semanas antes. Registrar tus ciclos te da la fecha más fiable."
+    },
+    "pregnancy-type": {
+      "question": "¿Qué tipo de flujo indica embarazo?",
+      "answer": "Ninguno lo confirma. El NHS cita más flujo de lo normal, sin olor ni irritación, como posible señal temprana, pero es muy parecido al flujo antes de la regla. Solo una prueba de embarazo te da la respuesta."
+    },
+    "how-many-days": {
+      "question": "¿Cuántos días antes de la regla aparece el flujo?",
+      "answer": "No hay un número fijo. El flujo blanco puede aparecer unos días antes de la regla, a veces antes, y en algunos ciclos no aparece. Las fechas de tus ciclos dan una estimación mejor que el flujo."
+    },
+    "three-types": {
+      "question": "¿Cuáles son los tipos de flujo?",
+      "answer": "El flujo sano suele ser pegajoso, cremoso, tipo clara de huevo o líquido, según el momento del ciclo. Si es verde, amarillo, gris, huele a pescado o parece requesón, puede ser una infección y conviene consultar."
+    },
+    "no-discharge": {
+      "question": "¿Es normal no tener flujo antes de la regla?",
+      "answer": "Sí. La Cleveland Clinic describe el flujo después de la ovulación como a menudo seco o casi seco hasta la regla. No tener flujo no es, por sí solo, señal de un problema ni de embarazo."
+    },
+    "what-comes-out": {
+      "question": "¿Qué te sale antes de que te baje la regla?",
+      "answer": "Muchas veces un flujo blanco o cremoso, y en el último día puede verse algo marrón o rosado. Si sale sangre fuera de la fecha esperada, o el flujo huele mal o pica, coméntaselo a tu médico."
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "title": "Ausfluss vor der Periode: Was ist normal?",
+  "description": "Ist Ausfluss vor der Periode normal? Wie er sich im Zyklus verändert, ob er auf eine Schwangerschaft hinweist und wann du ärztlichen Rat brauchst.",
+  "imageAlt": "Mochi, ein rosa Maskottchen, neben einem Kalender und einer kleinen Slipeinlage",
+  "intro": "Ausfluss vor der Periode ist normal. Laut dem britischen Gesundheitsdienst NHS haben ihn die meisten Frauen und Mädchen, und gesunder Ausfluss ist klar oder weiß, dick und klebrig oder glitschig und feucht, ohne starken Geruch. Er verändert sich im Lauf des Zyklus: um den Eisprung feuchter und klarer, danach meist dicker, klebriger oder trockener bis zur Periode.",
+  "sections": {
+    "before-period": {
+      "title": "Ist Ausfluss vor der Periode normal?",
+      "paragraphs": {
+        "first": "Ja. Ausfluss wird von Drüsen in Gebärmutterhals und Scheide gebildet und hält die Scheide sauber und feucht. Laut NHS ist er normal, solange er nicht stark oder unangenehm riecht, klar oder weiß ist und entweder dick und klebrig oder glitschig und feucht.",
+        "second": "In den Tagen vor der Periode bemerken viele weißen, dicken oder cremigen Ausfluss. Andere haben kaum welchen oder fühlen sich trockener als sonst. Die Cleveland Clinic beschreibt den Ausfluss nach dem Eisprung bis zur Periode als trocken oder fast trocken, aber jeder Körper ist anders, und beides kann normal sein.",
+        "third": "Entscheidend ist, was für dich normal ist. Auf eine Veränderung von Farbe, Geruch oder Konsistenz oder auf Juckreiz und Brennen solltest du achten, nicht auf die Tatsache, dass du Ausfluss hast."
+      }
+    },
+    "through-your-cycle": {
+      "title": "Wie verändert sich der Ausfluss im Zyklus?",
+      "paragraphs": {
+        "first": "Deine Hormone verändern Menge und Konsistenz des Ausflusses im Lauf des Monats. Die Cleveland Clinic beschreibt ein typisches Muster für einen 28-Tage-Zyklus. Ist dein Zyklus kürzer oder länger, verschieben sich die Tage. Sieh sie also als grobe Phasen, nicht als genaue Daten.",
+        "second": [
+          "Der feuchteste, glitschigste Ausfluss kommt meist um den Eisprung. Deshalb heißt dieser Zervixschleim auch fruchtbarer Schleim. Unser Ratgeber zu den ",
+          {
+            "postId": "phases",
+            "label": "vier Phasen des Menstruationszyklus"
+          },
+          " erklärt, was in jeder Phase in deinem Körper passiert."
+        ]
+      },
+      "table": {
+        "caption": "Typischer Ausfluss in jeder Phase eines 28-Tage-Zyklus laut Cleveland Clinic",
+        "columns": [
+          "Phase",
+          "Ungefähr",
+          "Wie der Ausfluss oft ist"
+        ],
+        "rows": [
+          [
+            "Direkt nach der Periode",
+            "Tag 1 bis 4",
+            "Trocken oder leicht klebrig, weiß oder leicht gelblich."
+          ],
+          [
+            "Vor dem Eisprung",
+            "Tag 4 bis 9",
+            "Erst klebrig, dann cremig, trüb und feuchter."
+          ],
+          [
+            "Um den Eisprung",
+            "Tag 10 bis 14",
+            "Klar, dehnbar und glitschig wie rohes Eiweiß."
+          ],
+          [
+            "Nach dem Eisprung bis zur Periode",
+            "Tag 15 bis 28",
+            "Dicker und klebriger oder trocken bis fast trocken."
+          ]
+        ]
+      },
+      "note": "Der NHS ergänzt, dass Ausfluss in der Schwangerschaft, nach dem Sex und bei manchen Verhütungsmitteln oft stärker ist."
+    },
+    "period-coming": {
+      "title": "Kündigt Ausfluss die Periode an?",
+      "paragraphs": {
+        "first": "Ausfluss allein verrät nicht, an welchem Tag deine Periode kommt. Weißer oder cremiger Ausfluss kann einige Tage vorher auftreten oder ganz fehlen, und das Muster kann sich von Zyklus zu Zyklus ändern.",
+        "second": "Andere Veränderungen in den ein, zwei Wochen vor der Periode sagen oft mehr. Das US-amerikanische Office on Women's Health nennt unter anderem diese prämenstruellen Beschwerden:"
+      },
+      "items": {
+        "breasts": "Geschwollene oder empfindliche Brüste.",
+        "bloating": "Blähbauch oder Blähungen.",
+        "cramps": "Krämpfe, Kopf- oder Rückenschmerzen.",
+        "tiredness": "Müdigkeit oder schlechter Schlaf.",
+        "cravings": "Veränderter Appetit oder Heißhunger.",
+        "mood": "Stimmungsschwankungen, Gereiztheit oder Niedergeschlagenheit."
+      },
+      "after": "Am zuverlässigsten weißt du, wann deine nächste Periode fällig ist, wenn du deinen Zyklus trackst. Nach ein paar Monaten zeigen deine Daten dein eigenes Muster viel besser als ein einzelnes Anzeichen."
+    },
+    "pregnancy": {
+      "title": "Ausfluss vor der Periode oder Schwangerschaft: Wie unterscheidet man das?",
+      "paragraphs": {
+        "first": "Am Ausfluss kannst du nicht erkennen, ob du schwanger bist. Der NHS nennt „mehr vaginalen Ausfluss“ als mögliches frühes Anzeichen, aber mehr Ausfluss ist auch vor der Periode, um den Eisprung und nach dem Sex normal. Die Cleveland Clinic sagt klar: Zervixschleim kann keine Schwangerschaft vorhersagen, Gewissheit gibt nur ein Test.",
+        "second": "Laut NHS kannst du die meisten Schwangerschaftstests ab dem ersten Tag der ausgebliebenen Periode machen. Weißt du nicht, wann deine Periode fällig ist, teste frühestens 21 Tage nach dem letzten ungeschützten Sex. Manche sehr empfindliche Tests funktionieren ein paar Tage früher.",
+        "third": [
+          "Rosa oder bräunlicher Ausfluss kann in der Frühschwangerschaft vorkommen, hat aber auch viele andere Ursachen. Ist deine Periode verspätet und der Test negativ, findest du die häufigsten Gründe in unserem Ratgeber zur ",
+          {
+            "postId": "latePeriod",
+            "label": "verspäteten Periode ohne Schwangerschaft"
+          },
+          "."
+        ]
+      }
+    },
+    "types": {
+      "title": "Was bedeutet klebriger, cremiger, eiweißartiger oder wässriger Ausfluss?",
+      "paragraphs": {
+        "first": "Gesunder Ausfluss lässt sich meist in ein paar Konsistenzen einteilen. Das bedeuten sie in der Regel, laut Cleveland Clinic und NHS:"
+      },
+      "items": {
+        "sticky": "Klebrig: häufig nach der Periode und in der zweiten Zyklushälfte.",
+        "creamy": "Cremig oder milchig weiß: häufig vor dem Eisprung und in den Tagen vor der Periode.",
+        "egg-white": "Eiweißartig: klar, dehnbar und glitschig, ein Zeichen, dass du um den Eisprung herum bist.",
+        "watery": "Wässrig: dünn und klar, oft um den Eisprung.",
+        "none": "Wenig oder keiner: ebenfalls normal, besonders direkt nach der Periode."
+      },
+      "after": "Klarer oder weißer Ausfluss ist laut Cleveland Clinic normal. Gelber, grüner oder grauer Ausfluss kann auf eine Infektion hindeuten, brauner oder roter hängt meist mit der Periode oder einer Schwangerschaft zusammen. Siehst du ihn außerhalb deiner Periode, sprich mit deiner Frauenärztin oder deinem Frauenarzt."
+    },
+    "not-normal": {
+      "title": "Wann ist Ausfluss nicht normal?",
+      "paragraphs": {
+        "first": "Ärztlichen Rat brauchst du, wenn sich dein Ausfluss im Vergleich zu sonst verändert, vor allem mit weiteren Beschwerden. Der NHS bringt bestimmte Veränderungen mit häufigen, gut behandelbaren Infektionen in Verbindung:"
+      },
+      "items": {
+        "fishy": "Fischiger Geruch kann auf eine bakterielle Vaginose hindeuten.",
+        "cottage-cheese": "Dicker, weißer, krümeliger Ausfluss wie Hüttenkäse, oft mit Juckreiz, kann ein Scheidenpilz sein.",
+        "green-yellow": "Grüner, gelber oder schaumiger Ausfluss kann auf Trichomonaden hindeuten.",
+        "pain-bleeding": "Ausfluss mit Unterleibsschmerzen oder Blutungen kann auf Chlamydien oder Gonorrhö hindeuten.",
+        "sores": "Ausfluss mit Bläschen oder offenen Stellen kann auf Genitalherpes hindeuten."
+      },
+      "note": "Stell dir keine Diagnose selbst. Geh zu deiner Frauenärztin oder deinem Frauenarzt, wenn sich Farbe, Geruch oder Konsistenz ändern, du mehr Ausfluss als sonst hast oder Juckreiz, Brennen, Schmerzen beim Pinkeln, Unterleibsschmerzen oder Blutungen zwischen den Perioden oder nach dem Sex bemerkst."
+    },
+    "comfort": {
+      "title": "Wie fühlst du dich mit Ausfluss wohl?",
+      "paragraphs": {
+        "first": "Ausfluss lässt sich nicht verhindern, und das musst du auch nicht: So reinigt sich die Scheide selbst. Der NHS empfiehlt, die Haut rund um die Scheide sanft mit warmem Wasser und einer milden, parfümfreien Seife zu waschen.",
+        "second": "Verzichte auf parfümierte Seifen, Gele, Deos und Feuchttücher mit Duft und spül die Scheide nicht von innen aus. Das kann die Haut reizen und das natürliche Gleichgewicht stören, und genau das begünstigt Infektionen, die den Ausfluss verändern.",
+        "third": [
+          "Wenn du an manchen Tagen viel Ausfluss hast, kann laut Cleveland Clinic eine Slipeinlage helfen. Wechsle sie alle paar Stunden, damit keine Feuchtigkeit auf der Haut bleibt. Mehr Tipps findest du in unserem Ratgeber ",
+          {
+            "postId": "pads",
+            "label": "wie oft man Binden und Slipeinlagen wechselt"
+          },
+          "."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "Warum lohnt es sich, den Ausfluss zu notieren?",
+      "paragraphs": {
+        "first": "Wenn du deinen Ausfluss ein paar Zyklen lang notierst, siehst du, was für deinen Körper normal ist, und eine ungewöhnliche Veränderung fällt schneller auf. Es hilft auch, grob einzuschätzen, wo du im Zyklus stehst, vor allem wenn eiweißartiger Ausfluss auftaucht.",
+        "second": "In Mochi kannst du deinen Ausfluss jeden Tag als klebrig, cremig, eiweißartig, wässrig, ungewöhnlich oder keiner eintragen, zusammen mit Periode, Stimmung und Beschwerden. Du siehst das Muster im Kalender und hast bei einer Veränderung Aufzeichnungen für deine Ärztin oder deinen Arzt. Mochi ist ein kostenloser, privater Periodentracker fürs iPhone, der deine Daten auf deinem Handy behält.",
+        "third": "Den Ausfluss zu beobachten ist keine Verhütungsmethode. Die Cleveland Clinic weist darauf hin, dass Zervixschleim allein kein zuverlässiger Schutz vor einer Schwangerschaft ist, und Mochi stellt seine Vorhersagen nie als Verhütung dar."
+      }
+    }
+  },
+  "faq": {
+    "how-many-days": {
+      "question": "Wie viele Tage vor der Periode kommt der Ausfluss?",
+      "answer": "Das ist nicht festgelegt. Weißer Ausfluss kann einige Tage vor der Periode auftreten, manchmal früher, und in manchen Zyklen gar nicht. Deine notierten Zyklusdaten geben eine bessere Schätzung als der Ausfluss."
+    },
+    "signs": {
+      "question": "Was sind Anzeichen, dass die Periode kommt?",
+      "answer": "Häufig sind empfindliche Brüste, Blähbauch, Krämpfe, Müdigkeit, Heißhunger und Stimmungsschwankungen, ein bis zwei Wochen vorher. Auch weißer Ausfluss kann auftreten, verrät aber nicht den genauen Tag."
+    },
+    "pregnant": {
+      "question": "Wie sieht der Ausfluss vor der Periode aus, wenn man schwanger ist?",
+      "answer": "Er kann laut NHS etwas stärker sein, ohne Geruch oder Reizung, sieht aber oft aus wie der übliche Ausfluss vor der Periode. Keine Art von Ausfluss bestätigt eine Schwangerschaft, das kann nur ein Test ab dem ersten Tag der ausgebliebenen Periode."
+    },
+    "creamy": {
+      "question": "Was bedeutet cremiger Ausfluss vor der Periode?",
+      "answer": "Weißer, cremiger Ausfluss ist vor der Periode häufig und normal, solange er nicht stark riecht, juckt oder krümelig wie Hüttenkäse ist. Er sagt weder sicher voraus, wann die Periode kommt, noch ob du schwanger bist."
+    },
+    "no-period": {
+      "question": "Warum Ausfluss, aber keine Periode?",
+      "answer": "Ausfluss kann der Periode einige Tage vorausgehen oder weitergehen, wenn der Zyklus länger ist als gedacht. Ist deine Periode überfällig, mach einen Schwangerschaftstest. Ist er negativ und die Periode bleibt aus, sprich mit deiner Frauenärztin oder deinem Frauenarzt."
+    },
+    "tell-pregnancy": {
+      "question": "Kann man am Ausfluss merken, ob man schwanger ist?",
+      "answer": "Nein. Mehr Ausfluss kann ein frühes Anzeichen sein, kommt aber genauso vor der Periode und um den Eisprung vor. Laut Cleveland Clinic kann Zervixschleim keine Schwangerschaft vorhersagen, Gewissheit gibt nur ein Test."
+    },
+    "one-day-before": {
+      "question": "Wie sieht Ausfluss 1 Tag vor der Periode aus?",
+      "answer": "Oft weiß, dick, cremig oder klebrig, manchmal auch kaum vorhanden. Kurz vor der Blutung kann er leicht bräunlich werden. Beides ist normal, solange er nicht stark riecht und nichts juckt oder brennt."
+    },
+    "yellowish": {
+      "question": "Ist gelblicher Ausfluss vor der Periode normal?",
+      "answer": "Ein leicht gelblicher Schimmer, wenn der Ausfluss in der Unterwäsche trocknet, kann normal sein. Gelber oder grüner Ausfluss mit Geruch, Juckreiz oder Schaum kann eine Infektion sein, zum Beispiel Trichomonaden. Lass das ärztlich abklären."
+    }
+  }
+}

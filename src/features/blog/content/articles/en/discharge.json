@@ -1,0 +1,177 @@
+{
+  "title": "Discharge before period: what's normal and what it means",
+  "description": "Is discharge before your period normal? See how it changes through your cycle, if it can mean pregnancy, and which colors or smells need a doctor.",
+  "imageAlt": "Mochi, a pink mascot, next to a calendar and a small panty liner",
+  "intro": "Discharge before your period is normal. The NHS says most women and girls get it, and that healthy discharge is clear or white, thick and sticky or slippery and wet, with no strong smell. It changes through your cycle: wetter and clearer around ovulation, then usually thicker, stickier or drier until your period starts.",
+  "sections": {
+    "before-period": {
+      "title": "Is it normal to have discharge before your period?",
+      "paragraphs": {
+        "first": "Yes. Discharge is fluid made by glands in your cervix and vagina, and it keeps the vagina clean and moist. According to the NHS, it's normal as long as it has no strong or unpleasant smell, is clear or white, and is either thick and sticky or slippery and wet.",
+        "second": "In the days before a period, many people notice white, thick or creamy discharge. Others notice very little, or feel drier than usual. Cleveland Clinic describes discharge after ovulation as dry or nearly dry until the period, but bodies vary, and both patterns can be normal.",
+        "third": "What matters most is what's normal for you. A change in color, smell or texture, or itching and soreness, are the signs worth paying attention to, not the simple fact of having discharge."
+      }
+    },
+    "through-your-cycle": {
+      "title": "How does discharge change through your cycle?",
+      "paragraphs": {
+        "first": "Your hormones change the amount and texture of your discharge across the month. Cleveland Clinic describes a typical pattern for a 28-day cycle. The days shift if your cycle is shorter or longer, so treat these as rough stages rather than exact dates.",
+        "second": [
+          "The wettest, most slippery discharge usually comes around ovulation, which is why it's often called fertile mucus. Our guide to the ",
+          {
+            "postId": "phases",
+            "label": "four phases of the menstrual cycle"
+          },
+          " explains what happens in your body at each stage."
+        ]
+      },
+      "table": {
+        "caption": "Typical discharge at each stage of a 28-day cycle, according to Cleveland Clinic",
+        "columns": [
+          "Stage",
+          "Roughly",
+          "What discharge is often like"
+        ],
+        "rows": [
+          [
+            "Right after your period",
+            "Days 1 to 4",
+            "Dry or tacky, white or slightly yellow."
+          ],
+          [
+            "Before ovulation",
+            "Days 4 to 9",
+            "Sticky at first, then creamy, cloudy and wetter."
+          ],
+          [
+            "Around ovulation",
+            "Days 10 to 14",
+            "Clear, stretchy and slippery, like raw egg white."
+          ],
+          [
+            "After ovulation until your period",
+            "Days 15 to 28",
+            "Thicker and stickier, or dry or nearly dry."
+          ]
+        ]
+      },
+      "note": "The NHS adds that discharge is often heavier during pregnancy, after sex and with some types of birth control."
+    },
+    "period-coming": {
+      "title": "Does discharge mean your period is coming?",
+      "paragraphs": {
+        "first": "Discharge on its own isn't a reliable sign that your period will start on a particular day. White or creamy discharge can appear several days before a period, or not at all, and the pattern can change from one cycle to the next.",
+        "second": "Other changes in the week or two before your period are often more telling. The US Office on Women's Health lists these among common premenstrual symptoms:"
+      },
+      "items": {
+        "breasts": "Swollen or tender breasts.",
+        "bloating": "Bloating or a gassy feeling.",
+        "cramps": "Cramping, headaches or backache.",
+        "tiredness": "Feeling tired or sleeping badly.",
+        "cravings": "Appetite changes or food cravings.",
+        "mood": "Mood swings, irritability or feeling low."
+      },
+      "after": "The most dependable way to know when your next period is due is to track your cycles. After a few months, the dates show your own pattern far better than any single symptom."
+    },
+    "pregnancy": {
+      "title": "Discharge before your period or pregnancy: how can you tell?",
+      "paragraphs": {
+        "first": "Discharge can't tell you if you're pregnant. The NHS lists \"more vaginal discharge\" as one possible early sign of pregnancy, but extra discharge is also normal before a period, around ovulation and after sex. Cleveland Clinic is clear that cervical mucus can't predict pregnancy and that a test is the way to confirm it.",
+        "second": "According to the NHS, you can take most pregnancy tests from the first day of a missed period. If you don't know when your period is due, test at least 21 days after you last had unprotected sex. Some very sensitive tests work a few days earlier.",
+        "third": [
+          "Pink or brown discharge can sometimes appear in early pregnancy, but it has many other causes too. If your period is late and your test is negative, our guide to a ",
+          {
+            "postId": "latePeriod",
+            "label": "late period when you're not pregnant"
+          },
+          " goes through the common reasons."
+        ]
+      }
+    },
+    "types": {
+      "title": "What do sticky, creamy, egg white and watery discharge mean?",
+      "paragraphs": {
+        "first": "Most healthy discharge falls into a few textures. Here's what each one usually means, based on Cleveland Clinic and the NHS:"
+      },
+      "items": {
+        "sticky": "Sticky or tacky: common after your period and in the second half of your cycle.",
+        "creamy": "Creamy or milky white: common before ovulation and in the days before your period.",
+        "egg-white": "Egg white: clear, stretchy and slippery, a sign that you're around ovulation.",
+        "watery": "Watery: thin and clear, often around ovulation.",
+        "none": "Little or none: also normal, especially just after your period."
+      },
+      "after": "Clear or white discharge is normal, according to Cleveland Clinic. Yellow, green or gray discharge can point to an infection, and brown or red discharge is usually linked to your period or pregnancy. If you see brown or red when your period isn't due, mention it to a doctor."
+    },
+    "not-normal": {
+      "title": "When is discharge not normal?",
+      "paragraphs": {
+        "first": "Discharge needs a doctor's attention when it changes from what's normal for you, especially if other symptoms come with it. The NHS links certain changes to common, treatable infections:"
+      },
+      "items": {
+        "fishy": "A fishy smell can be bacterial vaginosis.",
+        "cottage-cheese": "Thick, white discharge like cottage cheese, often with itching, can be thrush.",
+        "green-yellow": "Green, yellow or frothy discharge can be trichomoniasis.",
+        "pain-bleeding": "Discharge with pelvic pain or bleeding can be chlamydia or gonorrhea.",
+        "sores": "Discharge with blisters or sores can be genital herpes."
+      },
+      "note": "Don't try to diagnose yourself. See a doctor or a sexual health clinic if your discharge changes color, smell or texture, you have more than usual, or you notice itching, soreness, pain when peeing, pelvic pain or bleeding between periods or after sex."
+    },
+    "comfort": {
+      "title": "How can you stay comfortable with discharge?",
+      "paragraphs": {
+        "first": "You can't stop discharge, and you don't need to: it's how the vagina keeps itself clean. The NHS recommends washing the skin around your vagina gently with warm water and a mild, unperfumed soap.",
+        "second": "Skip perfumed soaps, gels, deodorants and scented wipes, and don't wash inside your vagina (douching). These can irritate the skin and upset the natural balance, which can lead to the very infections that change your discharge.",
+        "third": [
+          "If you have a lot of discharge on some days, Cleveland Clinic says a panty liner can help. Change it every few hours so moisture doesn't sit against your skin. Our guide on ",
+          {
+            "postId": "pads",
+            "label": "how often to change pads and liners"
+          },
+          " has more tips."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "Why track your discharge?",
+      "paragraphs": {
+        "first": "Noting your discharge for a few cycles shows you what's normal for your body, which makes an unusual change easier to spot. It can also help you see roughly where you are in your cycle, especially when egg-white discharge appears.",
+        "second": "Mochi lets you log discharge each day as sticky, creamy, egg white, watery, unusual or none, alongside your period, moods and symptoms. You see the pattern on your calendar, and if something changes, you have a record to show your doctor. Mochi is a free, private period tracker for iPhone that keeps your data on your phone.",
+        "third": "Tracking discharge isn't a form of birth control. Cleveland Clinic notes that cervical mucus alone isn't a reliable way to avoid pregnancy, and Mochi never presents its predictions as contraception."
+      }
+    }
+  },
+  "faq": {
+    "period-soon": {
+      "question": "Does discharge mean you will start your period soon?",
+      "answer": "Not necessarily. White or creamy discharge often appears in the days before a period, but it can also show up a week or more earlier, or not at all. Tracking your cycle dates is a more reliable way to know when your period is due."
+    },
+    "pregnancy-discharge": {
+      "question": "What kind of discharge indicates pregnancy?",
+      "answer": "No type of discharge can confirm pregnancy. The NHS lists more discharge than usual as a possible early sign, but that also happens before periods and around ovulation. A pregnancy test is the only reliable way to know, from the first day of a missed period."
+    },
+    "wetter": {
+      "question": "Why am I wetter right before my period?",
+      "answer": "Hormone changes in the second half of your cycle can make discharge thicker, creamier or more noticeable for some people. As long as it's clear or white, with no strong smell, itching or soreness, it's usually normal."
+    },
+    "feels-like-period": {
+      "question": "Why do I feel like my period is coming but it's discharge?",
+      "answer": "Discharge before a period can feel wet, much like the start of bleeding. It's common and harmless if it looks clear or white. If you keep feeling wet with no period and your period is late, take a pregnancy test."
+    },
+    "how-long-before": {
+      "question": "How long until I get my period if I have white discharge?",
+      "answer": "There's no fixed number of days. White discharge can appear several days before a period, sometimes earlier, and some cycles have none. Your own tracked cycles give a better estimate than discharge."
+    },
+    "no-discharge": {
+      "question": "Is it normal to have no discharge before your period?",
+      "answer": "Yes. Cleveland Clinic describes discharge after ovulation as often dry or nearly dry until the period. Having little or none isn't a sign of a problem or of pregnancy on its own."
+    },
+    "yellow": {
+      "question": "Is yellow discharge before a period normal?",
+      "answer": "A slight yellow tinge when discharge dries on underwear can be normal. Yellow or green discharge with a smell, itching or frothiness can be an infection such as trichomoniasis, so see a doctor or sexual health clinic."
+    },
+    "lot-of-discharge": {
+      "question": "Does a lot of discharge come before your period?",
+      "answer": "Some people notice more discharge before their period, others less. Discharge is usually heaviest and wettest around ovulation. A sudden increase compared with your normal, especially with itching or a smell, is worth checking with a doctor."
+    }
+  }
+}

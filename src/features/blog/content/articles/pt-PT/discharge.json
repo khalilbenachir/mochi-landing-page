@@ -1,0 +1,177 @@
+{
+  "title": "Corrimento antes do período: o que é normal",
+  "description": "É normal ter corrimento antes do período? Vê como muda ao longo do ciclo, se pode indicar gravidez e que cores ou cheiros justificam ir ao médico.",
+  "imageAlt": "Mochi, uma mascote cor-de-rosa, ao lado de um calendário e de um pequeno penso diário",
+  "intro": "Ter corrimento antes do período é normal. O NHS, o serviço de saúde britânico, lembra que a maioria das mulheres o tem, e que um corrimento saudável é transparente ou branco, espesso e pegajoso ou escorregadio e húmido, sem cheiro forte. Muda ao longo do ciclo: mais húmido e claro perto da ovulação, e depois normalmente mais espesso, pegajoso ou escasso até o período chegar.",
+  "sections": {
+    "before-period": {
+      "title": "É normal ter corrimento antes do período?",
+      "paragraphs": {
+        "first": "Sim. O corrimento é produzido por glândulas do colo do útero e da vagina, e mantém a vagina limpa e húmida. Segundo o NHS, é normal desde que não tenha cheiro forte ou desagradável, seja transparente ou branco e seja espesso e pegajoso ou escorregadio e húmido.",
+        "second": "Nos dias antes do período, muitas pessoas notam um corrimento branco, espesso ou cremoso. Outras quase não têm ou sentem-se mais secas do que o habitual. A Cleveland Clinic descreve o corrimento depois da ovulação como seco ou quase seco até ao período, mas cada corpo é diferente, e ambos os casos podem ser normais.",
+        "third": "O que interessa é o que é normal para ti. Uma mudança de cor, cheiro ou textura, ou comichão e irritação, são os sinais a ter em conta, e não o simples facto de teres corrimento."
+      }
+    },
+    "through-your-cycle": {
+      "title": "Como muda o corrimento ao longo do ciclo?",
+      "paragraphs": {
+        "first": "As tuas hormonas mudam a quantidade e a textura do corrimento ao longo do mês. A Cleveland Clinic descreve um padrão típico para um ciclo de 28 dias. Se o teu ciclo for mais curto ou mais longo, os dias mudam, por isso vê-os como fases aproximadas e não como datas exatas.",
+        "second": [
+          "O corrimento mais húmido e escorregadio costuma surgir perto da ovulação, e por isso chama-se muco fértil. O nosso guia sobre as ",
+          {
+            "postId": "phases",
+            "label": "quatro fases do ciclo menstrual"
+          },
+          " explica o que acontece no teu corpo em cada fase."
+        ]
+      },
+      "table": {
+        "caption": "Corrimento habitual em cada fase de um ciclo de 28 dias, segundo a Cleveland Clinic",
+        "columns": [
+          "Fase",
+          "Aproximadamente",
+          "Como o corrimento costuma ser"
+        ],
+        "rows": [
+          [
+            "Logo a seguir ao período",
+            "Dias 1 a 4",
+            "Seco ou ligeiramente pegajoso, branco ou um pouco amarelado."
+          ],
+          [
+            "Antes da ovulação",
+            "Dias 4 a 9",
+            "Pegajoso no início, depois cremoso, turvo e mais húmido."
+          ],
+          [
+            "Perto da ovulação",
+            "Dias 10 a 14",
+            "Transparente, elástico e escorregadio, como clara de ovo crua."
+          ],
+          [
+            "Depois da ovulação até ao período",
+            "Dias 15 a 28",
+            "Mais espesso e pegajoso, ou seco ou quase seco."
+          ]
+        ]
+      },
+      "note": "O NHS acrescenta que o corrimento costuma ser mais abundante durante a gravidez, depois das relações sexuais e com alguns métodos contracetivos."
+    },
+    "period-coming": {
+      "title": "O corrimento indica que o período está para vir?",
+      "paragraphs": {
+        "first": "Sozinho, o corrimento não te diz em que dia o período vai chegar. O corrimento branco ou cremoso pode aparecer alguns dias antes ou nem aparecer, e o padrão pode mudar de um ciclo para o outro.",
+        "second": "Outras mudanças nas uma ou duas semanas antes do período costumam dizer mais. O Office on Women's Health dos Estados Unidos refere, entre outros, estes sintomas pré-menstruais:"
+      },
+      "items": {
+        "breasts": "Mamas inchadas ou sensíveis.",
+        "bloating": "Inchaço ou gases.",
+        "cramps": "Cólicas, dores de cabeça ou de costas.",
+        "tiredness": "Cansaço ou dormir mal.",
+        "cravings": "Mudanças no apetite ou desejos por comida.",
+        "mood": "Alterações de humor, irritabilidade ou tristeza."
+      },
+      "after": "A forma mais fiável de saber quando vem o próximo período é registares os teus ciclos. Ao fim de alguns meses, as datas mostram o teu ritmo muito melhor do que qualquer sintoma isolado."
+    },
+    "pregnancy": {
+      "title": "Corrimento antes do período ou gravidez: como distinguir?",
+      "paragraphs": {
+        "first": "O corrimento não te diz se estás grávida. O NHS refere \"mais corrimento vaginal\" entre os possíveis primeiros sinais de gravidez, mas ter mais corrimento também é normal antes do período, perto da ovulação e depois das relações. A Cleveland Clinic é clara: o muco cervical não consegue prever uma gravidez, e só um teste a confirma.",
+        "second": "Segundo o NHS, a maioria dos testes de gravidez pode ser feita a partir do primeiro dia de atraso do período. Se não sabes quando o período devia chegar, faz o teste pelo menos 21 dias depois da última relação sem proteção. Alguns testes muito sensíveis funcionam uns dias antes.",
+        "third": [
+          "Por vezes surge um corrimento cor-de-rosa ou castanho no início da gravidez, mas tem muitas outras causas. Se o período está atrasado e o teste deu negativo, o nosso guia sobre o ",
+          {
+            "postId": "latePeriod",
+            "label": "período atrasado sem gravidez"
+          },
+          " apresenta as razões mais comuns."
+        ]
+      }
+    },
+    "types": {
+      "title": "Corrimento pegajoso, cremoso, clara de ovo ou aquoso: o que significa?",
+      "paragraphs": {
+        "first": "O corrimento saudável costuma ter algumas texturas. Eis o que cada uma costuma significar, segundo a Cleveland Clinic e o NHS:"
+      },
+      "items": {
+        "sticky": "Pegajoso: frequente depois do período e na segunda metade do ciclo.",
+        "creamy": "Cremoso ou branco leitoso: frequente antes da ovulação e nos dias antes do período.",
+        "egg-white": "Clara de ovo: transparente, elástico e escorregadio, sinal de que estás perto da ovulação.",
+        "watery": "Aquoso: fino e transparente, muitas vezes perto da ovulação.",
+        "none": "Pouco ou nenhum: também é normal, sobretudo logo depois do período."
+      },
+      "after": "O corrimento transparente ou branco é normal, segundo a Cleveland Clinic. Um corrimento amarelo, verde ou cinzento pode indicar uma infeção, e o castanho ou vermelho costuma estar ligado ao período ou a uma gravidez. Se o vires fora do período, fala com o teu médico."
+    },
+    "not-normal": {
+      "title": "Quando é que o corrimento não é normal?",
+      "paragraphs": {
+        "first": "Deves procurar uma consulta quando o teu corrimento muda em relação ao habitual, sobretudo com outros sintomas. O NHS associa algumas mudanças a infeções frequentes e fáceis de tratar:"
+      },
+      "items": {
+        "fishy": "Um cheiro a peixe pode ser vaginose bacteriana.",
+        "cottage-cheese": "Corrimento branco e espesso, parecido com requeijão, muitas vezes com comichão, pode ser candidíase.",
+        "green-yellow": "Corrimento verde, amarelo ou espumoso pode ser tricomoníase.",
+        "pain-bleeding": "Corrimento com dor pélvica ou hemorragia pode ser clamídia ou gonorreia.",
+        "sores": "Corrimento com bolhas ou feridas pode ser herpes genital."
+      },
+      "note": "Não tentes fazer o diagnóstico sozinha. Fala com o teu médico de família, ginecologista ou uma consulta de saúde sexual se o corrimento mudar de cor, cheiro ou textura, se aumentar muito, ou se tiveres comichão, irritação, dor ao urinar, dor pélvica ou hemorragia entre períodos ou depois das relações."
+    },
+    "comfort": {
+      "title": "Como te sentires confortável com o corrimento?",
+      "paragraphs": {
+        "first": "Não é possível evitar o corrimento, nem é preciso: é assim que a vagina se limpa sozinha. O NHS recomenda lavar com cuidado a pele à volta da vagina com água morna e um sabonete suave sem perfume.",
+        "second": "Evita sabonetes e géis perfumados, desodorizantes e toalhitas com perfume, e não faças duches vaginais. Podem irritar a pele e alterar o equilíbrio natural, o que favorece precisamente as infeções que mudam o corrimento.",
+        "third": [
+          "Se em alguns dias tiveres muito corrimento, a Cleveland Clinic indica que um penso diário pode ajudar. Troca-o a cada poucas horas para a humidade não ficar junto à pele. O nosso guia sobre ",
+          {
+            "postId": "pads",
+            "label": "de quanto em quanto tempo trocar pensos e pensos diários"
+          },
+          " tem mais dicas."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "Porque vale a pena registar o corrimento?",
+      "paragraphs": {
+        "first": "Registar o corrimento durante alguns ciclos mostra-te o que é normal para o teu corpo, e assim uma mudança estranha nota-se mais depressa. Também ajuda a perceber, mais ou menos, em que fase do ciclo estás, sobretudo quando surge o corrimento clara de ovo.",
+        "second": "No Mochi podes registar o corrimento todos os dias como pegajoso, cremoso, clara de ovo, aquoso, invulgar ou nenhum, junto com o período, o humor e os sintomas. Vês o padrão no calendário e, se algo mudar, tens um registo para mostrar ao teu médico. O Mochi é uma app de acompanhamento do período gratuita e privada para iPhone, que guarda os teus dados no teu telemóvel.",
+        "third": "Acompanhar o corrimento não é um método contracetivo. A Cleveland Clinic lembra que o muco cervical sozinho não é uma forma fiável de evitar a gravidez, e o Mochi nunca apresenta as previsões como contraceção."
+      }
+    }
+  },
+  "faq": {
+    "pregnancy-type": {
+      "question": "Que tipo de corrimento pode indicar gravidez?",
+      "answer": "Nenhum confirma uma gravidez. O NHS refere mais corrimento do que o habitual, sem cheiro nem irritação, como possível sinal precoce, mas é muito parecido com o corrimento antes do período. Só um teste de gravidez te dá a resposta."
+    },
+    "period-coming": {
+      "question": "Como saber se o período está para vir?",
+      "answer": "Os sinais mais comuns são mamas sensíveis, inchaço, cólicas, cansaço, desejos por comida e alterações de humor, uma a duas semanas antes. Registar os teus ciclos dá-te a data mais fiável."
+    },
+    "pasty-white": {
+      "question": "O que significa ter corrimento branco pastoso?",
+      "answer": "Um corrimento branco e pastoso é frequente antes do período e na segunda metade do ciclo, e é normal se não tiver cheiro forte nem causar comichão. Se for granuloso como requeijão e vier com comichão, pode ser candidíase."
+    },
+    "after-ovulation": {
+      "question": "Como é o corrimento após a ovulação?",
+      "answer": "Depois da ovulação, o corrimento costuma ficar mais espesso e pegajoso, ou seco ou quase seco até ao período, segundo a Cleveland Clinic. O corrimento escorregadio tipo clara de ovo normalmente desaparece."
+    },
+    "a-lot": {
+      "question": "É normal ter muito corrimento antes da menstruação?",
+      "answer": "Algumas pessoas têm mais corrimento antes do período, outras menos. Costuma ser mais abundante e húmido perto da ovulação. Um aumento repentino em relação ao teu normal, sobretudo com comichão ou cheiro, merece uma consulta."
+    },
+    "colour": {
+      "question": "Qual é a cor do muco antes da menstruação?",
+      "answer": "Normalmente branco ou transparente, por vezes ligeiramente amarelado quando seca nas cuecas. No último dia antes do período pode ficar um pouco castanho. Verde, cinzento ou amarelo com cheiro pode ser uma infeção."
+    },
+    "egg-white": {
+      "question": "O que significa ter corrimento clara de ovo?",
+      "answer": "É um corrimento transparente, elástico e escorregadio que surge perto da ovulação e costuma durar três ou quatro dias, segundo a Cleveland Clinic. Indica a fase mais fértil do ciclo, mas sozinho não é um método contracetivo fiável."
+    },
+    "yellow": {
+      "question": "O que significa corrimento amarelo?",
+      "answer": "Um tom ligeiramente amarelado quando o corrimento seca pode ser normal. Corrimento amarelo ou verde com cheiro, comichão ou espuma pode ser uma infeção, como a tricomoníase, por isso fala com o teu médico."
+    }
+  }
+}

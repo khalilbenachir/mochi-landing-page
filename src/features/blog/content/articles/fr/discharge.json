@@ -1,0 +1,177 @@
+{
+  "title": "Pertes blanches avant les règles : ce qui est normal",
+  "description": "Pertes blanches avant les règles : est-ce normal ? Leur évolution au fil du cycle, le lien avec la grossesse et les signes qui doivent faire consulter.",
+  "imageAlt": "Mochi, une mascotte rose, à côté d'un calendrier et d'un petit protège-slip",
+  "intro": "Avoir des pertes blanches avant les règles est normal. Le NHS, le service de santé britannique, rappelle que la plupart des femmes en ont, et que des pertes saines sont claires ou blanches, épaisses et collantes ou glissantes et humides, sans odeur forte. Elles changent au fil du cycle : plus abondantes et transparentes autour de l'ovulation, puis souvent plus épaisses, collantes ou rares jusqu'aux règles.",
+  "sections": {
+    "before-period": {
+      "title": "Est-ce normal d'avoir des pertes blanches avant les règles ?",
+      "paragraphs": {
+        "first": "Oui. Les pertes vaginales sont produites par des glandes du col de l'utérus et du vagin, et elles gardent le vagin propre et humide. Selon le NHS, elles sont normales tant qu'elles n'ont pas d'odeur forte ou désagréable, qu'elles sont claires ou blanches, et épaisses et collantes ou glissantes et humides.",
+        "second": "Dans les jours qui précèdent les règles, beaucoup de femmes remarquent des pertes blanches, épaisses ou crémeuses. D'autres en ont très peu, ou se sentent plus sèches que d'habitude. La Cleveland Clinic décrit des pertes sèches ou presque après l'ovulation et jusqu'aux règles, mais chaque corps est différent, et les deux cas peuvent être normaux.",
+        "third": "L'essentiel, c'est ce qui est normal pour vous. Un changement de couleur, d'odeur ou de texture, ou des démangeaisons et des irritations, sont les vrais signaux à surveiller, pas le simple fait d'avoir des pertes."
+      }
+    },
+    "through-your-cycle": {
+      "title": "Comment les pertes changent-elles au cours du cycle ?",
+      "paragraphs": {
+        "first": "Vos hormones modifient la quantité et la texture de vos pertes tout au long du mois. La Cleveland Clinic décrit un schéma type pour un cycle de 28 jours. Les jours se décalent si votre cycle est plus court ou plus long : voyez-les comme des étapes approximatives, pas des dates précises.",
+        "second": [
+          "Les pertes les plus humides et glissantes apparaissent en général autour de l'ovulation, d'où leur nom de glaire fertile. Notre guide sur ",
+          {
+            "postId": "phases",
+            "label": "les quatre phases du cycle menstruel"
+          },
+          " explique ce qui se passe dans votre corps à chaque étape."
+        ]
+      },
+      "table": {
+        "caption": "Pertes habituelles à chaque étape d'un cycle de 28 jours, selon la Cleveland Clinic",
+        "columns": [
+          "Étape",
+          "Environ",
+          "Aspect fréquent des pertes"
+        ],
+        "rows": [
+          [
+            "Juste après les règles",
+            "Jours 1 à 4",
+            "Sèches ou légèrement collantes, blanches ou un peu jaunâtres."
+          ],
+          [
+            "Avant l'ovulation",
+            "Jours 4 à 9",
+            "Collantes au début, puis crémeuses, troubles et plus humides."
+          ],
+          [
+            "Autour de l'ovulation",
+            "Jours 10 à 14",
+            "Transparentes, élastiques et glissantes, comme du blanc d'œuf cru."
+          ],
+          [
+            "Après l'ovulation jusqu'aux règles",
+            "Jours 15 à 28",
+            "Plus épaisses et collantes, ou sèches ou presque."
+          ]
+        ]
+      },
+      "note": "Le NHS ajoute que les pertes sont souvent plus abondantes pendant la grossesse, après un rapport sexuel et avec certaines contraceptions."
+    },
+    "period-coming": {
+      "title": "Les pertes blanches annoncent-elles l'arrivée des règles ?",
+      "paragraphs": {
+        "first": "À elles seules, les pertes ne permettent pas de savoir quel jour vos règles vont arriver. Des pertes blanches ou crémeuses peuvent apparaître plusieurs jours avant, ou pas du tout, et le schéma peut changer d'un cycle à l'autre.",
+        "second": "D'autres changements dans la semaine ou les deux semaines qui précèdent les règles sont souvent plus parlants. L'Office on Women's Health américain cite notamment ces symptômes prémenstruels :"
+      },
+      "items": {
+        "breasts": "Des seins gonflés ou sensibles.",
+        "bloating": "Des ballonnements ou des gaz.",
+        "cramps": "Des crampes, des maux de tête ou de dos.",
+        "tiredness": "De la fatigue ou un sommeil perturbé.",
+        "cravings": "Des changements d'appétit ou des envies de manger.",
+        "mood": "Des sautes d'humeur, de l'irritabilité ou un moral en baisse."
+      },
+      "after": "Le moyen le plus fiable de savoir quand arrivent vos prochaines règles reste de suivre votre cycle. Au bout de quelques mois, vos dates montrent votre propre rythme bien mieux qu'un symptôme isolé."
+    },
+    "pregnancy": {
+      "title": "Pertes avant les règles ou grossesse : comment faire la différence ?",
+      "paragraphs": {
+        "first": "Les pertes ne permettent pas de savoir si vous êtes enceinte. Le NHS cite « plus de pertes vaginales » parmi les signes possibles de début de grossesse, mais des pertes plus abondantes sont aussi normales avant les règles, autour de l'ovulation et après un rapport. La Cleveland Clinic est claire : la glaire cervicale ne peut pas prédire une grossesse, et seul un test permet de la confirmer.",
+        "second": "Selon le NHS, la plupart des tests de grossesse peuvent se faire dès le premier jour de retard des règles. Si vous ne savez pas quand vos règles sont prévues, faites le test au moins 21 jours après votre dernier rapport non protégé. Certains tests très sensibles fonctionnent quelques jours plus tôt.",
+        "third": [
+          "Des pertes rosées ou brunes peuvent parfois apparaître en début de grossesse, mais elles ont bien d'autres causes. Si vos règles sont en retard et que votre test est négatif, notre guide sur le ",
+          {
+            "postId": "latePeriod",
+            "label": "retard de règles sans grossesse"
+          },
+          " passe en revue les causes fréquentes."
+        ]
+      }
+    },
+    "types": {
+      "title": "Pertes collantes, crémeuses, blanc d'œuf, liquides : que signifient-elles ?",
+      "paragraphs": {
+        "first": "La plupart des pertes normales se rangent dans quelques textures. Voici ce que chacune signifie en général, d'après la Cleveland Clinic et le NHS :"
+      },
+      "items": {
+        "sticky": "Collantes : fréquentes après les règles et dans la seconde moitié du cycle.",
+        "creamy": "Crémeuses ou laiteuses : fréquentes avant l'ovulation et dans les jours qui précèdent les règles.",
+        "egg-white": "Blanc d'œuf : transparentes, élastiques et glissantes, signe que vous êtes autour de l'ovulation.",
+        "watery": "Liquides : fines et transparentes, souvent autour de l'ovulation.",
+        "none": "Peu ou pas de pertes : c'est aussi normal, surtout juste après les règles."
+      },
+      "after": "Des pertes claires ou blanches sont normales, selon la Cleveland Clinic. Des pertes jaunes, vertes ou grises peuvent signaler une infection, et des pertes brunes ou rouges sont en général liées aux règles ou à une grossesse. Si vous en voyez en dehors de vos règles, parlez-en à un médecin."
+    },
+    "not-normal": {
+      "title": "Quand les pertes ne sont-elles pas normales ?",
+      "paragraphs": {
+        "first": "Il faut consulter quand vos pertes changent par rapport à d'habitude, surtout si d'autres symptômes s'ajoutent. Le NHS associe certains changements à des infections fréquentes et faciles à soigner :"
+      },
+      "items": {
+        "fishy": "Une odeur de poisson peut indiquer une vaginose bactérienne.",
+        "cottage-cheese": "Des pertes blanches et épaisses comme du fromage blanc granuleux, souvent avec des démangeaisons, peuvent indiquer une mycose.",
+        "green-yellow": "Des pertes vertes, jaunes ou mousseuses peuvent indiquer une trichomonase.",
+        "pain-bleeding": "Des pertes avec des douleurs pelviennes ou des saignements peuvent indiquer une chlamydia ou une gonorrhée.",
+        "sores": "Des pertes avec des cloques ou des plaies peuvent indiquer un herpès génital."
+      },
+      "note": "N'essayez pas de poser vous-même le diagnostic. Consultez votre médecin, un gynécologue, une sage-femme ou un centre de santé sexuelle si vos pertes changent de couleur, d'odeur ou de texture, si vous en avez plus que d'habitude, ou en cas de démangeaisons, d'irritation, de douleur en urinant, de douleur pelvienne ou de saignements entre les règles ou après un rapport."
+    },
+    "comfort": {
+      "title": "Comment rester à l'aise avec ses pertes ?",
+      "paragraphs": {
+        "first": "On ne peut pas empêcher les pertes, et ce n'est pas nécessaire : c'est ainsi que le vagin se nettoie. Le NHS conseille de laver doucement la peau autour du vagin à l'eau tiède, avec un savon doux non parfumé.",
+        "second": "Évitez les savons et gels parfumés, les déodorants et les lingettes parfumées, et ne faites pas de douche vaginale. Ils peuvent irriter la peau et perturber l'équilibre naturel, ce qui favorise justement les infections qui modifient les pertes.",
+        "third": [
+          "Si vous avez beaucoup de pertes certains jours, la Cleveland Clinic indique qu'un protège-slip peut aider. Changez-le toutes les quelques heures pour que l'humidité ne reste pas contre la peau. Notre guide sur ",
+          {
+            "postId": "pads",
+            "label": "la fréquence de changement des serviettes et protège-slips"
+          },
+          " donne d'autres conseils."
+        ]
+      }
+    },
+    "tracking": {
+      "title": "Pourquoi noter ses pertes ?",
+      "paragraphs": {
+        "first": "Noter vos pertes pendant quelques cycles vous montre ce qui est normal pour votre corps, et un changement inhabituel saute ensuite plus vite aux yeux. Cela aide aussi à situer à peu près où vous en êtes dans votre cycle, surtout quand les pertes blanc d'œuf apparaissent.",
+        "second": "Mochi vous permet de noter vos pertes chaque jour, collantes, crémeuses, blanc d'œuf, liquides, inhabituelles ou absentes, avec vos règles, votre humeur et vos symptômes. Vous voyez le schéma sur votre calendrier et, si quelque chose change, vous avez un historique à montrer à votre médecin. Mochi est un suivi de règles gratuit et privé pour iPhone, qui garde vos données sur votre téléphone.",
+        "third": "Suivre ses pertes n'est pas une méthode de contraception. La Cleveland Clinic rappelle que la glaire cervicale seule n'est pas un moyen fiable d'éviter une grossesse, et Mochi ne présente jamais ses prévisions comme une contraception."
+      }
+    }
+  },
+  "faq": {
+    "signs": {
+      "question": "Quels sont les signes qui annoncent l'arrivée des règles ?",
+      "answer": "Les plus fréquents sont des seins sensibles, des ballonnements, des crampes, de la fatigue, des envies de manger et des sautes d'humeur, une à deux semaines avant. Des pertes blanches peuvent aussi apparaître, mais elles ne disent pas le jour exact."
+    },
+    "how-long-before": {
+      "question": "Combien de temps avant les règles les pertes blanches peuvent-elles apparaître ?",
+      "answer": "Il n'y a pas de délai fixe. Elles peuvent apparaître plusieurs jours avant les règles, parfois plus tôt, et certains cycles n'en ont pas. Vos dates de cycle notées donnent une meilleure estimation que les pertes."
+    },
+    "pregnant": {
+      "question": "Comment sont les pertes avant les règles si on est enceinte ?",
+      "answer": "Elles peuvent être un peu plus abondantes, sans odeur ni irritation, selon le NHS, mais elles ressemblent souvent aux pertes habituelles avant les règles. Aucun type de pertes ne confirme une grossesse : seul un test le peut, dès le premier jour de retard."
+    },
+    "discharge-no-period": {
+      "question": "Pourquoi ai-je mes pertes blanches mais pas mes règles ?",
+      "answer": "Les pertes blanches peuvent précéder les règles de plusieurs jours, ou continuer si le cycle est plus long que prévu. Si vos règles sont en retard, faites un test de grossesse. S'il est négatif et que le retard dure, parlez-en à votre médecin."
+    },
+    "period-or-pregnancy": {
+      "question": "Comment différencier l'arrivée des règles et la grossesse ?",
+      "answer": "Les symptômes du syndrome prémenstruel et ceux du début de grossesse se ressemblent beaucoup : seins sensibles, fatigue, pertes. La seule façon de faire la différence est un test de grossesse, à partir du premier jour de retard."
+    },
+    "approaching": {
+      "question": "Comment sont les pertes à l'approche des règles ?",
+      "answer": "Souvent blanches, épaisses, crémeuses ou collantes, mais parfois rares ou absentes. Les deux sont normaux tant qu'il n'y a pas d'odeur forte, de démangeaisons ou de changement de couleur."
+    },
+    "no-discharge": {
+      "question": "Est-ce normal de ne pas avoir de pertes avant les règles ?",
+      "answer": "Oui. La Cleveland Clinic décrit des pertes souvent sèches ou presque après l'ovulation et jusqu'aux règles. L'absence de pertes n'est, à elle seule, ni un signe de problème ni un signe de grossesse."
+    },
+    "belly-pain": {
+      "question": "Pertes blanches et mal au ventre mais pas de règles : que faire ?",
+      "answer": "Des crampes et des pertes blanches sont fréquentes juste avant les règles. Si vos règles sont en retard, faites un test de grossesse. Consultez si la douleur est forte, si les pertes changent d'odeur ou de couleur, ou en cas de fièvre."
+    }
+  }
+}

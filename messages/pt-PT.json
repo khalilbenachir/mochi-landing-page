@@ -603,7 +603,11 @@
       "tamponTooLong": "Cleveland Clinic: tampão durante demasiado tempo",
       "menstrualCups": "FDA: copos menstruais",
       "cupGuide": "Cleveland Clinic: copos menstruais",
-      "cupReview": "The Lancet Public Health: revisão sobre o copo menstrual (2019)"
+      "cupReview": "The Lancet Public Health: revisão sobre o copo menstrual (2019)",
+      "vaginalDischarge": "NHS: corrimento vaginal",
+      "dischargeGuide": "Cleveland Clinic: corrimento vaginal",
+      "cervicalMucus": "Cleveland Clinic: muco cervical",
+      "pregnancySigns": "NHS: sinais e sintomas de gravidez"
     },
     "editorial": {
       "title": "A nossa abordagem editorial",
